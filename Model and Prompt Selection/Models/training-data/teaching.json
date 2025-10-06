@@ -1,0 +1,95 @@
+{
+  "domain": "Teaching",
+  "prompt": "Examine current research on early literacy development and evaluate evidence-based approaches for supporting pre-reading skills in diverse learners aged 3 to 6 years.",
+  "rubric": {
+    "rubric_id": "rub_teaching_0025",
+    "criteria": [
+      {
+        "criterion_id": "c1",
+        "name": "Understanding of Early Literacy Development",
+        "description": "Demonstrates knowledge of foundational early literacy skills (e.g., phonological awareness, vocabulary, print knowledge) and developmental milestones for ages 3 to 6 years.",
+        "performance_descriptors": {
+          "excellent": "Demonstrates deep understanding of multiple early literacy components and clearly explains developmental progression with relevant examples.",
+          "good": "Demonstrates clear understanding of key early literacy components and typical development.",
+          "average": "Demonstrates basic understanding; coverage of developmental aspects is general.",
+          "needs_improvement": "Superficial or unclear explanation of literacy components or development.",
+          "poor": "Fails to demonstrate understanding of early literacy development."
+        }
+      },
+      {
+        "criterion_id": "c2",
+        "name": "Evaluation of Evidence-Based Approaches",
+        "description": "Critically evaluates instructional methods and interventions shown to support pre-reading skills (e.g., dialogic reading, phonemic games, shared book reading).",
+        "performance_descriptors": {
+          "excellent": "Provides insightful evaluation of multiple evidence-based strategies with critical commentary and research support.",
+          "good": "Explains and supports at least one or two approaches with credible evidence.",
+          "average": "Describes common strategies with limited analysis or research links.",
+          "needs_improvement": "Mentions strategies with minimal connection to evidence.",
+          "poor": "Fails to evaluate or explain instructional approaches."
+        }
+      },
+      {
+        "criterion_id": "c3",
+        "name": "Consideration of Diversity and Inclusion",
+        "description": "Addresses how approaches can be adapted for learners with diverse linguistic, cultural, and developmental needs.",
+        "performance_descriptors": {
+          "excellent": "Thoughtfully discusses diverse learner needs with examples and inclusive practices drawn from research.",
+          "good": "Identifies key considerations for diverse learners with some application.",
+          "average": "Mentions diversity but without detailed application.",
+          "needs_improvement": "Minimal attention to learner diversity.",
+          "poor": "Fails to consider diversity or inclusion."
+        }
+      },
+      {
+        "criterion_id": "c4",
+        "name": "Research Integration and Referencing",
+        "description": "Uses and integrates relevant, credible academic sources effectively and references them appropriately.",
+        "performance_descriptors": {
+          "excellent": "Integrates extensive peer-reviewed sources with accurate citation and strong alignment with arguments.",
+          "good": "Uses several appropriate sources with correct citation.",
+          "average": "Uses some academic sources but with limited integration or citation errors.",
+          "needs_improvement": "Relies on few or weak sources; citation is inconsistent.",
+          "poor": "Sources are absent or unreliable; no referencing."
+        }
+      },
+      {
+        "criterion_id": "c5",
+        "name": "Structure and Academic Writing",
+        "description": "Essay is logically structured with clear introduction, body, and conclusion; academic style is maintained with correct grammar and syntax.",
+        "performance_descriptors": {
+          "excellent": "Highly structured and coherent essay with academic tone, precise language, and no grammatical errors.",
+          "good": "Well-structured and mostly formal; few minor grammatical or expression issues.",
+          "average": "Basic structure is present; academic tone inconsistently used.",
+          "needs_improvement": "Poor flow or informal writing; many language issues.",
+          "poor": "Disorganised, informal, and difficult to follow."
+        }
+      }
+    ]
+  },
+  "submissions": [
+    {
+      "final_submission": "Current research on early literacy development highlights the foundational role of phonological awareness, vocabulary acquisition, and print knowledge in preparing children aged 3 to 6 for reading. Children typically progress from recognizing environmental print and basic letter-sound associations at age 3 to developing phonemic segmentation and decoding skills by age 6. Evidence-based strategies such as dialogic reading and phonemic awareness games have proven highly effective in this stage, particularly when implemented consistently and in developmentally appropriate ways (Justice & Ezell, 2002; Lonigan et al., 2008). For instance, dialogic reading not only enhances vocabulary but also fosters narrative skills and inferencing abilities. Importantly, these approaches must be adapted for diverse learners. For children from multilingual backgrounds, integrating home languages and culturally relevant stories can enhance engagement and comprehension. Similarly, for children with developmental delays, visual supports and multisensory activities can scaffold learning. This inclusive lens ensures equitable access to literacy development. A wide range of peer-reviewed sources inform these practices, including Neuman and Wright (2014) on literacy equity and Snow (2006) on instructional responsiveness. The argument presented is grounded in current evidence, framed within a structured and academically rigorous paragraph that reflects clarity, coherence, and a formal writing style.",
+      "label_type": "AI"
+    },
+    {
+      "final_submission": "Early literacy development involves acquiring key skills such as phonological awareness, vocabulary, and an understanding of print, which typically emerge between the ages of 3 and 6. Children often begin by recognizing letters and sounds and gradually move towards blending phonemes and understanding word structures. Evidence-based approaches like shared book reading and phonemic games support these developments, with research showing that repeated reading and interactive questioning can boost vocabulary and listening comprehension (Whitehurst et al., 1994). Additionally, strategies can be adjusted to support children from diverse cultural and linguistic backgrounds—for example, using bilingual books or incorporating culturally familiar content can enhance relevance and motivation. While this response touches on important considerations for inclusion, more detail on implementation could strengthen the analysis. Nonetheless, academic sources are used appropriately, and the writing follows a logical structure with a mostly formal tone and minimal grammatical issues.",
+      "label_type": "AI"
+    },
+    {
+      "final_submission": "Early literacy development is such a critical phase in a child's life, especially between the ages of 3 and 6, where so much foundational learning takes place. During this period, children typically begin developing core pre-reading skills like phonological awareness, vocabulary knowledge, and an understanding of print concepts. Phonological awareness, in particular, is a strong predictor of later reading success—it includes the ability to recognize and manipulate sounds in spoken words, like rhyming or identifying beginning sounds. According to Lonigan et al. (2000), this skill emerges gradually, often starting with larger sound chunks (like syllables) and becoming more refined over time (e.g., phonemes). Alongside this, vocabulary acquisition expands rapidly through exposure to rich language environments. Young children also start to grasp print conventions—knowing that print carries meaning and how to handle a book—which sets the stage for decoding and comprehension later on.",
+      "label_type": "Human"
+    },
+    {
+      "final_submission": "Learning to read doesn't just start when a child enters school—early literacy development begins much earlier, especially between the ages of 3 and 6. During this time, children start to develop key pre-reading skills like phonological awareness, vocabulary, and knowledge about print. For example, they begin to understand that words are made up of sounds, and they start to recognise letters and how to handle a book. These skills are the building blocks that help children learn to read later on. Most children show certain patterns in their development, like being able to rhyme simple words around age 4 or recognising a few letters of the alphabet before starting school.",
+      "label_type": "Human"
+    },
+    {
+      "final_submission": "Early literacy development is a critical phase for children aged between 3 and 6. During this foundational period, children typically begin developing core pre-reading skills like phonological awareness, vocabulary knowledge, and an understanding of print concepts. Phonological awareness, in particular, is a strong predictor of later reading success. It includes the ability to recognize and manipulate sounds in spoken words, like rhyming or identifying beginning sounds. According to Lonigan et al. (2000), this skill emerges gradually, often starting with larger sound chunks (e.g. syllables) and becoming more refined over time (e.g. phonemes). The child rapidly acquires new vocabulary through exposure to rich language environments. He or she also starts to grasp print conventions by knowing that print carries meaning and how to handle a book. This sets the stage for decoding and comprehension later on.",
+      "label_type": "Hybrid"
+    },
+    {
+      "final_submission": "Literacy development in children does not need to begin with school age. Indeed, key skills such as phonological awareness, vocabulary, and an understanding of print could be developed much earlier, especially between the ages of 3 and 6. During this foundational period, it has been observed that children begin to understand that words are made up of sounds. They also learn to recognise letters and handle books. Around the age of four, most children are able to rhyme simple words or recognise a few letters of the alphabet. All of these skills form the foundation that helps children learn to read later on.",
+      "label_type": "Hybrid"
+    }
+  ]
+}

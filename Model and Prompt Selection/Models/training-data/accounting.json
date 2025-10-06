@@ -1,0 +1,83 @@
+{
+  "domain": "Accounting",
+  "prompt": "Analyze the impact of blockchain technology on traditional accounting practices, including auditing and financial reporting.",
+  "rubric": {
+    "rubric_id": "rub_accounting_0001",
+    "criteria": [
+        {
+          "criterion_id": "c1",
+          "name": "Understanding of Blockchain Concepts",
+          "description": "Demonstrates knowledge of blockchain principles (decentralization, immutability, smart contracts) and their relevance to accounting.",
+          "performance_descriptors": {
+            "excellent": "Clearly explains multiple blockchain concepts and maps each to relevant accounting applications.",
+            "good": "Accurately describes 1–2 blockchain concepts and gives examples.",
+            "average": "Mentions blockchain concepts but with limited detail.",
+            "needs_improvement": "Basic or unclear understanding of concepts.",
+            "poor": "Fails to explain blockchain accurately."
+          }
+        },
+        {
+          "criterion_id": "c2",
+          "name": "Analysis of Accounting Impact",
+          "description": "Evaluates how blockchain technology affects auditing, financial reporting, and data integrity.",
+          "performance_descriptors": {
+            "excellent": "Insightfully discusses enhanced transparency, automation, audit trails, and associated challenges.",
+            "good": "Explains basic benefits like improved data accuracy or reduced reconciliation.",
+            "average": "Makes general claims without detailed analysis.",
+            "needs_improvement": "Mentions impact with minimal support.",
+            "poor": "No clear link to accounting outcomes."
+          }
+        },
+        {
+          "criterion_id": "c3",
+          "name": "Use of Real-World Examples/Case Studies",
+          "description": "Incorporates actual or realistic examples of blockchain application in accounting or finance.",
+          "performance_descriptors": {
+            "excellent": "Provides multiple well-explained examples with relevance.",
+            "good": "Provides at least one relevant example.",
+            "average": "Mentions example(s) with little context.",
+            "needs_improvement": "Example(s) are vague or unrelated.",
+            "poor": "No examples given."
+        }
+        },
+        {
+          "criterion_id": "c4",
+          "name": "Structure and Academic Style",
+          "description": "Presents arguments in a well-structured, formal academic tone.",
+          "performance_descriptors": {
+            "excellent": "Highly coherent essay with formal tone and logical flow.",
+            "good": "Mostly well-structured with clear transitions.",
+            "average": "Some structure; style inconsistently academic.",
+            "needs_improvement": "Unclear flow or casual language.",
+            "poor": "Disorganised or informal."
+          }
+        }
+    ]
+  },
+  "submissions": [
+    {
+      "final_submission": "Blockchain technology, defined by its decentralization, immutability, and transparency, is transforming traditional accounting practices, particularly in auditing and financial reporting. Its core principles—decentralized ledgers, immutable records, and smart contracts—enable significant improvements in efficiency and trust. Smart contracts automate tasks like invoicing and reconciliation, reducing errors and intermediaries. For auditing, blockchain’s immutable records create tamper-proof audit trails, simplifying verification and enhancing fraud detection. Real-time financial reporting becomes feasible as transactions are instantly recorded on a shared ledger, improving transparency and decision-making. For example, Ernst & Young uses its Blockchain Analyzer to audit cryptocurrency transactions, streamlining assurance processes, while JPMorgan’s Quorum platform facilitates efficient interbank reconciliations. However, challenges persist. Regulatory uncertainty, such as the lack of clear accounting standards for blockchain assets, complicates compliance. Scalability issues in public blockchains and the high cost of integrating with legacy systems pose barriers, particularly for smaller firms. Additionally, adopting blockchain requires significant technical expertise. Despite these hurdles, blockchain’s potential to enhance data integrity and automation signals a transformative shift in accounting, as demonstrated by firms like PwC exploring blockchain-based auditing tools. As technology and regulations evolve, blockchain will likely redefine trust and efficiency in accounting practices.",
+      "label_type": "AI"
+    },
+    {
+      "final_submission": "Blockchain technology, defined by its decentralization, immutability, and transparency, is revolutionizing traditional accounting practices, particularly in auditing and financial reporting. Its core principles—decentralized ledgers, immutable records, and smart contracts—enable significant improvements in efficiency, trust, and accuracy. This essay explores blockchain’s transformative effects, supported by real-world applications and challenges. Blockchain’s immutability ensures financial records are tamper-proof, creating reliable audit trails that simplify verification and enhance fraud detection. For instance, Ernst & Young (EY) employs its Blockchain Analyzer to audit cryptocurrency transactions, streamlining assurance processes. Smart contracts automate tasks like invoicing or reconciliation, reducing manual errors and intermediaries. This automation supports real-time financial reporting, allowing companies to produce accurate, transparent financial statements instantly, as demonstrated by IBM’s blockchain-based supply chain financing, which minimizes reporting delays.",
+      "label_type": "AI"
+    },
+    {
+      "final_submission":"As a business student fascinated by tech, I see blockchain revolutionizing traditional accounting. Its decentralized, tamper-proof ledger could transform bookkeeping, auditing, and financial reporting, though it’s not without challenges. In bookkeeping, blockchain’s real-time, cryptographically secure transaction recording reduces errors and fraud. Unlike centralized databases prone to mistakes, blockchain’s distributed ledger ensures accuracy, automating tasks like reconciliations. Companies like IBM are already using it for supply chain finance, cutting paperwork. Auditing could benefit hugely. Blockchain’s “triple-entry” system creates a verifiable transaction record, slashing audit times. Firms like Deloitte are testing this, showing faster, cheaper audits. But, if bad data enters, it’s still a problem—garbage in, garbage out. For financial reporting, blockchain enables real-time updates, giving stakeholders instant insights. A 2023 study suggested this could boost market efficiency, but companies might resist such transparency.  Challenges include high setup costs, lack of accounting standards for blockchain, and privacy concerns. It’s a trust-building tool, great for fraud prevention, but not a full replacement for traditional systems yet. In short, blockchain promises efficiency and trust in accounting but needs time to mature. Accountants must adapt gradually, blending old and new methods.",
+      "label_type": "Human"
+    },
+    {
+      "final_submission": "As a business student fascinated by tech, I see blockchain reshaping accounting, auditing, and financial reporting, though it’s not without challenges. Blockchain’s decentralized, tamper-proof ledger records transactions transparently, reducing errors in bookkeeping. Unlike traditional double-entry systems, blockchain’s “triple-entry” approach creates a verifiable, shared record, cutting down on manual reconciliations. For example, companies like IBM use blockchain for supply chain finance, automating transaction entries. Auditing could be revolutionized too. Real-time access to immutable records means auditors can verify transactions faster, slashing time and costs. Firms like Deloitte are testing this, showing promising results. However, blockchain’s only as good as the data entered—mistakes or fraud at input still cause issues. Financial reporting might shift to real-time with blockchain, giving stakeholders instant insights into a company’s finances, potentially boosting market transparency. But here’s the catch: implementing blockchain is pricey, and small firms might struggle. Plus, accounting standards like GAAP aren’t blockchain-ready, and privacy concerns loom large with transparent ledgers. Critically, blockchain enhances trust but will not replace traditional accounting soon. It’s more of a complementary tool, best for specific cases. Accountants must adapt gradually, balancing innovation with practical hurdles like cost and regulation.",
+      "label_type": "Human"
+    },
+    {
+      "final_submission": "Blockchain technology significantly reshapes traditional accounting practices, including auditing and financial reporting, by enhancing transparency, efficiency, and accuracy. Its decentralized, immutable ledger ensures real-time, tamper-proof transaction records, reducing errors and fraud. In accounting, blockchain automates bookkeeping through smart contracts, minimizing manual entries and enabling instant reconciliation. This streamlines processes like accounts payable and receivable, cutting costs and time. For auditing, blockchain provides a verifiable, chronological record of transactions, simplifying the audit trail. Auditors can access unalterable data, reducing reliance on sampling and enhancing accuracy. Real-time auditing becomes feasible, potentially replacing periodic reviews with continuous monitoring. However, challenges arise, such as the need for auditors to develop blockchain expertise and address privacy concerns with transparent ledgers. In financial reporting, blockchain ensures data integrity, fostering trust in financial statements. It enables faster reporting cycles and reduces discrepancies between entities. Yet, adoption requires significant investment in infrastructure and regulatory alignment. While blockchain promises efficiency and reliability, its integration demands a shift in skills, standards, and processes, reshaping the accounting profession.",
+      "label_type": "Hybrid"
+    },
+    {
+      "final_submission": "Blockchain technology significantly transforms traditional accounting practices, enhancing efficiency, transparency, and security. Its decentralized, immutable ledger ensures real-time, tamper-proof recording of transactions, reducing errors and fraud risks. In financial reporting, blockchain enables automated, accurate data aggregation, streamlining processes like reconciliation and ensuring compliance with standards. Smart contracts automate routine tasks, such as invoice settlements, minimizing manual intervention and costs. In auditing, blockchain shifts the focus from sample-based verification to comprehensive, real-time data analysis. Auditors can access a transparent audit trail, improving accuracy and reducing audit time. However, challenges arise, including the need for new auditing standards to address blockchain-specific risks like smart contract vulnerabilities. Accountants must adapt to technical skills, such as understanding distributed ledger technology. While blockchain enhances trust and efficiency, it disrupts traditional roles, requiring firms to invest in training and infrastructure. Regulatory uncertainty and scalability issues also pose hurdles. Overall, blockchain fosters a more reliable, automated accounting ecosystem but demands significant adaptation from professionals to fully realize its potential.",
+      "label_type": "Hybrid"
+    }
+  ]
+}

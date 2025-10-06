@@ -1,0 +1,83 @@
+{
+  "domain": "Psychology",
+  "prompt": "Critically evaluate the role of cognitive biases in human decision-making. Select at least three cognitive biases (e.g., confirmation bias, anchoring, availability heuristic) and explain how they influence decision-making in real-world scenarios (e.g., healthcare, law, relationships, consumer behavior). Discuss the psychological theories behind them and explore how awareness or mitigation strategies can improve judgment.",
+  "rubric": {
+    "rubric_id": "rub_psychology_0001",
+    "criteria": [
+      {
+        "criterion_id": "c1",
+        "name": "Conceptual Understanding of Biases",
+        "description": "Demonstrates comprehension of selected biases, including theoretical foundations.",
+        "performance_descriptors": {
+          "excellent": "Shows precise and in-depth understanding of cognitive biases, with clear links to relevant psychological theories.",
+          "good": "Understands biases well, though one may be less developed. Sound theoretical support.",
+          "average": "Adequate explanation of at least two biases; minor inaccuracies present.",
+          "needs_improvement": "Limited explanation with surface-level or confused understanding of biases.",
+          "poor": "Major misunderstanding or misrepresentation of the biases or their definitions."
+        }
+      },
+      {
+        "criterion_id": "c2",
+        "name": "Application to Real-World Scenarios",
+        "description": "Applies biases meaningfully to examples from everyday or professional contexts.",
+        "performance_descriptors": {
+          "excellent": "Applies biases to a variety of insightful and relevant real-world cases, with clear articulation of cause-effect.",
+          "good": "Examples are appropriate and mostly well explained; some links may be weaker.",
+          "average": "Includes examples, but explanation lacks depth or connection is unclear.",
+          "needs_improvement": "Examples are vague, generic, or disconnected from biases.",
+          "poor": "No real-world application present."
+        }
+      },
+      {
+        "criterion_id": "c3",
+        "name": "Critical Evaluation and Mitigation Strategies",
+        "description": "Explores ways to recognize or reduce the impact of cognitive biases.",
+        "performance_descriptors": {
+          "excellent": "Provides thoughtful, research-backed strategies to mitigate biases and reflects on psychological implications.",
+          "good": "Discusses plausible strategies, though some may be underdeveloped or lacking in depth.",
+          "average": "Mentions bias mitigation with limited detail or superficial treatment.",
+          "needs_improvement": "Strategies are unclear or unrelated to specific biases.",
+          "poor": "No discussion of mitigation or critical reflection."
+        }
+      },
+      {
+        "criterion_id": "c4",
+        "name": "Structure and Academic Writing",
+        "description": "Quality of writing, paragraph flow, citations, and tone.",
+        "performance_descriptors": {
+          "excellent": "Highly coherent and academic in tone, with flawless grammar and proper referencing.",
+          "good": "Mostly clear and professional; occasional grammar or structural issues.",
+          "average": "Organization is present but with inconsistencies or awkward phrasing.",
+          "needs_improvement": "Structure and tone hinder clarity; referencing or grammar needs work.",
+          "poor": "Disorganized, informal, or unacademic; serious issues with readability."
+        }
+      }
+    ]
+  },
+  "submissions": [
+    {
+      "final_submission": "Cognitive biases significantly influence human decision-making, often leading to systematic errors in judgment. For instance, confirmation bias leads individuals to seek out information that aligns with their preexisting beliefs, which can skew decision-making in fields like healthcare, where a doctor might ignore conflicting evidence (Nickerson, 1998). Anchoring biases affect consumer behavior, as initial price points can shape perceptions of value, influencing purchasing decisions (Tversky & Kahneman, 1974). The availability heuristic biases individuals in legal settings, where recent or vivid events may unduly influence verdicts. Awareness of these biases and strategies like critical reflection, seeking diverse perspectives, and using data-driven decision tools can mitigate their impact, improving overall judgment. \n References \n Nickerson, R. S. (1998). Confirmation bias: A ubiquitous phenomenon in many guises. Review of General Psychology, 2(2), 175–220. https://doi.org/10.1037/1089-2680.2.2.175 \n Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. Science, 185(4157), 1124–1131. https://doi.org/10.1126/science.185.4157.1124",
+      "label_type": "AI"
+    },
+    {
+      "final_submission": "Cognitive biases play a crucial role in shaping decision-making, often leading to irrational or suboptimal choices. Confirmation bias affects decision-making in relationships, as individuals tend to focus on information that confirms their existing views of a partner, overlooking potential red flags (Nickerson, 1998). Anchoring bias can influence consumer behavior, where the initial exposure to a product's price sets a reference point, impacting subsequent judgments about its value (Tversky & Kahneman, 1974). In the healthcare field, the availability heuristic might cause doctors to rely on recent cases or highly memorable symptoms when diagnosing patients, potentially leading to misdiagnosis. Recognizing these biases and using strategies like considering alternative perspectives and relying on objective data can reduce their influence and improve decision-making.\n References \n Nickerson, R. S. (1998). Confirmation bias: A ubiquitous phenomenon in many guises. Review of General Psychology, 2(2), 175–220. https://doi.org/10.1037/1089-2680.2.2.175 \n Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. Science, 185(4157), 1124–1131. https://doi.org/10.1126/science.185.4157.1124",
+      "label_type": "AI"
+    },
+    {
+      "final_submission": "Cognitive biases have a big influence on how we make decisions, often without us even realizing it. For instance, confirmation bias makes us focus on information that matches what we already believe (Nickerson, 1998), while anchoring can make us overly reliant on the first thing we hear or see (Tversky & Kahneman, 1974). The availability heuristic leads us to overestimate how likely something is based on how easily we can recall examples of it. By recognizing these biases and using strategies like challenging our own thinking or seeking out different viewpoints, we can make more balanced and thoughtful decisions, especially in areas like healthcare or when making purchases.\n References \n Nickerson, R. S. (1998). Confirmation bias: A ubiquitous phenomenon in many guises. Review of General Psychology, 2(2), 175–220. https://doi.org/10.1037/1089-2680.2.2.175 \n Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. Science, 185(4157), 1124–1131. https://doi.org/10.1126/science.185.4157.1124",
+      "label_type": "Human"
+    },
+    {
+      "final_submission": "Cognitive biases shape how we make decisions by twisting our judgment in ways we're often unaware of. For example, confirmation bias makes us seek out information that backs up what we already believe (Nickerson, 1998), while anchoring causes us to base decisions on the first piece of info we hear, even if it’s irrelevant (Tversky & Kahneman, 1974). In real life, this can show up in situations like law, where a judge might give too much weight to the first testimony they hear, or in consumer behavior, where marketers use anchoring to get us to buy things. Becoming aware of these biases and taking time to reflect or practice mindfulness can help us make better, more balanced decisions.\n References \n Nickerson, R. S. (1998). Confirmation bias: A ubiquitous phenomenon in many guises. Review of General Psychology, 2(2), 175–220. https://doi.org/10.1037/1089-2680.2.2.175 \n Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. Science, 185(4157), 1124–1131. https://doi.org/10.1126/science.185.4157.1124",
+      "label_type": "Human"
+    },
+    {
+      "final_submission": "Cognitive biases, such as confirmation bias, anchoring, and the availability heuristic, will be able to shape human decision-making by distorting perceptions and judgments based on a lot of reasons. This includes prior beliefs (Nickerson, 1998), initial information (Tversky & Kahneman, 1974), or recent experiences. These biases manifest in areas like healthcare, law, and consumer behavior, where they can lead to bad decisions and reinforce flawed thinking. Awareness of these biases, combined with strategies like critical thinking, counterfactual reasoning, and diverse perspectives, can help mitigate their influence and improve judgment.\n References \n Nickerson, R. S. (1998). Confirmation bias: A ubiquitous phenomenon in many guises. Review of General Psychology, 2(2), 175–220. https://doi.org/10.1037/1089-2680.2.2.175 \n Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. Science, 185(4157), 1124–1131. https://doi.org/10.1126/science.185.4157.1124",
+      "label_type": "Hybrid"
+    },
+    {
+      "final_submission": "Cognitive biases, such as confirmation bias (Nickerson, 1998), anchoring (Tversky & Kahneman, 1974), and the availability heuristic, affect decision-making by leading individuals to rely on bias information or patterns. These biases can have significant implications in areas like healthcare, law, and consumer behavior, often resulting in bad choices or judgments. Mitigating their impact requires strategies like reflective thinking, seeking diverse viewpoints, and promoting awareness of cognitive distortions.\n References \n Nickerson, R. S. (1998). Confirmation bias: A ubiquitous phenomenon in many guises. Review of General Psychology, 2(2), 175–220. https://doi.org/10.1037/1089-2680.2.2.175 \n Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. Science, 185(4157), 1124–1131. https://doi.org/10.1126/science.185.4157.1124",
+      "label_type": "Hybrid"
+    }
+  ]
+}
