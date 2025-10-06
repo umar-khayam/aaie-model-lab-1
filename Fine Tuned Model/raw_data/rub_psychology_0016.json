@@ -1,0 +1,419 @@
+{
+    "domain": "Psychology",
+    "prompt": "Discuss the role of working memory in complex cognition, evaluating models (e.g., Baddeley-Hitch) and links to reasoning, language, and learning.",
+    "rubric": {
+        "rubric_id": "rub_psychology_0016",
+        "criteria": [
+            {
+                "criterion_id": "c1",
+                "name": "Model Understanding",
+                "description": "Explains key working memory models and components.",
+                "performance_descriptors": {
+                    "excellent": "Accurately details phonological loop, visuospatial sketchpad, central executive, episodic buffer, and alternative models (e.g., embedded-processes).",
+                    "good": "Covers main components with minor omissions.",
+                    "average": "General explanation with occasional inaccuracies.",
+                    "needs_improvement": "Partial or confused treatment of models.",
+                    "poor": "Fails to explain core components."
+                },
+                "weight": 20
+            },
+            {
+                "criterion_id": "c2",
+                "name": "Evidence and Tasks",
+                "description": "Links models to tasks and empirical findings.",
+                "performance_descriptors": {
+                    "excellent": "Connects components to tasks (digit span, complex span, n-back), neural correlates, and individual differences.",
+                    "good": "Provides relevant tasks with some evidence.",
+                    "average": "Mentions tasks without strong linkage.",
+                    "needs_improvement": "Sparse or incorrect examples.",
+                    "poor": "No empirical grounding."
+                },
+                "weight": 10
+            },
+            {
+                "criterion_id": "c3",
+                "name": "Applications to Cognition and Learning",
+                "description": "Explains how working memory supports reasoning, language, and learning.",
+                "performance_descriptors": {
+                    "excellent": "Provides nuanced links to reading comprehension, math problem solving, language processing, and instructional design implications.",
+                    "good": "Clear applications with some nuance.",
+                    "average": "General claims without depth.",
+                    "needs_improvement": "Weak or unclear applications.",
+                    "poor": "No applications presented."
+                },
+                "weight": 20
+            },
+            {
+                "criterion_id": "c4",
+                "name": "Limitations and Critiques",
+                "description": "Critically evaluates models and training claims.",
+                "performance_descriptors": {
+                    "excellent": "Addresses limits of domain-general claims, transfer effects in training, and measurement challenges.",
+                    "good": "Notes several critiques with some analysis.",
+                    "average": "Superficial critique.",
+                    "needs_improvement": "Minimal critical evaluation.",
+                    "poor": "No critique."
+                },
+                "weight": 30
+            },
+            {
+                "criterion_id": "c5",
+                "name": "Clarity and Structure",
+                "description": "Organization and writing quality.",
+                "performance_descriptors": {
+                    "excellent": "Highly organized, precise, and fluent.",
+                    "good": "Generally clear with minor issues.",
+                    "average": "Adequate clarity; some disjointed passages.",
+                    "needs_improvement": "Disorganized or unclear.",
+                    "poor": "Incoherent."
+                },
+                "weight": 20
+            }
+        ]
+    },
+    "submissions": [
+        {
+            "quality": "Excellent",
+            "authorship": "ai",
+            "key_points": [
+                "Details the Baddeley-Hitch model (phonological loop, visuospatial sketchpad, central executive, episodic buffer) and alternatives.",
+                "Maps tasks to components (e.g., digit span to loop, complex span to executive).",
+                "Relates working memory capacity to reasoning, reading comprehension, and math problem-solving.",
+                "Evaluates claims about working memory training (near vs. far transfer).",
+                "Translates findings to instructional design (managing cognitive load)."
+            ],
+            "llm_questions": [
+                "Explain the components of the Baddeley-Hitch model.",
+                "What is the evidence for n-back training transfer effects?",
+                "How does working memory capacity relate to reading comprehension?",
+                "Design a classroom activity that reduces cognitive load.",
+                "Compare complex span and simple span tasks."
+            ],
+            "llm_answers": [
+                "The model includes a central executive that coordinates the phonological loop (verbal/acoustic info) and the visuospatial sketchpad (visual/spatial info), with an episodic buffer to integrate multi-modal information.",
+                "Evidence shows reliable near transfer (to similar tasks) but mixed/weak far transfer to broader reasoning or academic outcomes.",
+                "Higher WM capacity predicts better reading comprehension as it helps maintain propositions, resolve pronouns, and suppress irrelevant meanings.",
+                "Use worked examples, present diagrams with audio narration instead of dense text, and sequence problems from fully worked to independent practice.",
+                "Simple span measures storage (e.g., digit span). Complex span combines storage with processing (e.g., solving math problems while remembering words) and correlates more strongly with reasoning."
+            ],
+            "final_submission": "Working memory (WM) supports the temporary maintenance and manipulation of information. In the Baddeley–Hitch framework, the central executive allocates attention across the phonological loop, visuospatial sketchpad, and an episodic buffer that integrates representations.\n\nTask evidence aligns with these mechanisms: digit spans rely on the phonological loop, Corsi spans index visuospatial maintenance, and complex spans reveal executive coordination. Individual differences in WM capacity predict fluid reasoning and reading comprehension.\n\nTraining claims require caution. N-back training yields near transfer but inconsistent far transfer to reasoning or academic performance. Pedagogically, WM principles inform cognitive load management, such as using worked examples and reducing split-attention.\n\nIn sum, WM is central to reasoning, language, and learning. The Baddeley–Hitch model is useful for mapping functions, while newer models refine our understanding. Effective application lies in structuring tasks that respect WM constraints.",
+            "feedback": {
+                "c1": "Excellent. Comprehensive and precise explanation. (20/20)",
+                "c2": "Excellent. Strong task-to-component mapping. (10/10)",
+                "c3": "Excellent. Nuanced links to cognition and learning. (20/20)",
+                "c4": "Excellent. Balanced critique of training. (30/30)",
+                "c5": "Excellent. Clear, well-structured, and fluent. (20/20)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1,2,3],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Excellent",
+            "authorship": "human",
+            "key_points": [
+                "Details the Baddeley-Hitch model (phonological loop, visuospatial sketchpad, central executive, episodic buffer) and alternatives.",
+                "Maps tasks to components (e.g., digit span to loop, complex span to executive).",
+                "Relates working memory capacity to reasoning, reading comprehension, and math problem-solving.",
+                "Evaluates claims about working memory training (near vs. far transfer).",
+                "Translates findings to instructional design (managing cognitive load)."
+            ],
+            "final_submission": "Working memory is the cognitive system that allows for the temporary storage and manipulation of information, which is essential for complex tasks like reasoning and learning. The most influential model, proposed by Baddeley and Hitch, describes a multi-component system. It includes a central executive, which acts as an attentional control system, and two subsidiary 'slave' systems: the phonological loop for verbal and auditory information, and the visuospatial sketchpad for visual and spatial information. A later addition, the episodic buffer, integrates information from these components with long-term memory.\n\nTask evidence aligns with these mechanisms: digit spans rely on the phonological loop, Corsi spans index visuospatial maintenance, and complex spans reveal executive coordination. Individual differences in WM capacity predict fluid reasoning and reading comprehension.\n\nThe claims around working memory training must be approached with caution. While tasks like n-back can lead to improvements on similar tasks (near transfer), the evidence for 'far transfer'—meaning improvements in broader cognitive abilities like general intelligence—is often weak and inconsistent. From an educational standpoint, a more fruitful application of WM research is in managing cognitive load. This involves designing instructional materials that reduce unnecessary mental effort (extraneous load) to free up cognitive resources for learning.\n\nIn sum, WM is central to reasoning, language, and learning. The Baddeley–Hitch model is useful for mapping functions, while newer models refine our understanding. Effective application lies in structuring tasks that respect WM constraints.",
+             "feedback": {
+                "c1": "Excellent. Comprehensive and precise explanation. (20/20)",
+                "c2": "Excellent. Strong task-to-component mapping. (10/10)",
+                "c3": "Excellent. Nuanced links to cognition and learning. (20/20)",
+                "c4": "Excellent. Balanced critique of training. (30/30)",
+                "c5": "Excellent. Clear, well-structured, and fluent. (20/20)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [1,3],
+                "human_paragraph_indices": [0,2],
+                "hybrid_paragraph_indices": [],
+                "notes": "Human fully rewrote the introduction and the paragraph on training and cognitive load."
+            }
+        },
+        {
+            "quality": "Excellent",
+            "authorship": "hybrid",
+            "key_points": [
+                "Details the Baddeley-Hitch model (phonological loop, visuospatial sketchpad, central executive, episodic buffer) and alternatives.",
+                "Maps tasks to components (e.g., digit span to loop, complex span to executive).",
+                "Relates working memory capacity to reasoning, reading comprehension, and math problem-solving.",
+                "Evaluates claims about working memory training (near vs. far transfer).",
+                "Translates findings to instructional design (managing cognitive load)."
+            ],
+            "final_submission": "Working memory (WM) supports the temporary maintenance and manipulation of information. In the Baddeley–Hitch framework, the central executive allocates attention across the phonological loop, visuospatial sketchpad, and an episodic buffer that integrates representations.\n\nTask-based evidence strongly aligns with these proposed mechanisms: simple digit and word spans clearly rely on the phonological loop, while Corsi block-tapping tasks index visuospatial maintenance. Furthermore, more complex span tasks effectively reveal the costs of executive coordination. Individual differences in this overall WM capacity are a strong predictor of fluid reasoning and reading comprehension.\n\nTraining claims require caution. N-back training yields near transfer but inconsistent far transfer to reasoning or academic performance. Pedagogically, WM principles inform cognitive load management, such as using worked examples and reducing split-attention.\n\nIn sum, WM is central to reasoning, language, and learning. The Baddeley–Hitch model is useful for mapping functions, while newer models refine our understanding. Effective application lies in structuring tasks that respect WM constraints.",
+             "feedback": {
+                "c1": "Excellent. Comprehensive and precise explanation. (20/20)",
+                "c2": "Excellent. Strong task-to-component mapping. (10/10)",
+                "c3": "Excellent. Nuanced links to cognition and learning. (20/20)",
+                "c4": "Excellent. Balanced critique of training. (30/30)",
+                "c5": "Excellent. Clear, well-structured, and fluent. (20/20)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,2,3],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [1],
+                "notes": "Slightly modified the task evidence paragraph for better flow and added examples."
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "ai",
+            "key_points": [
+                "Explains Baddeley-Hitch components with minor omissions.",
+                "Provides key tasks and general evidence links.",
+                "Connects WM to reasoning and reading with examples.",
+                "Briefly notes training transfer limits.",
+                "Mostly clear structure."
+            ],
+            "llm_questions": [
+                "Explain the components of the Baddeley-Hitch model.",
+                "What is the evidence for n-back training?",
+                "How does working memory relate to reading?"
+            ],
+            "llm_answers": [
+                "The model includes a central executive, phonological loop, and visuospatial sketchpad, with an episodic buffer for integration.",
+                "N-back training shows improvements on similar tasks, but broader gains are small or inconsistent.",
+                "Higher WM supports holding sentences in mind and ignoring distractors, which is key for comprehension."
+            ],
+            "final_submission": "The Baddeley–Hitch model outlines a central executive controller with verbal and visuospatial stores, and an episodic buffer for integration. Tasks such as digit span (verbal) and complex span (dual demands) demonstrate component functions and predict differences in reasoning and academic skills. Training on tasks like n-back provides near transfer but limited generalization. In classrooms, reducing extraneous cognitive load frees resources for learning. Overall, WM is a key enabler of complex cognition.",
+            "feedback": {
+                "c1": "Good. Accurate with small omissions. (16/20)",
+                "c2": "Good. Appropriate tasks and general evidence. (8/10)",
+                "c3": "Good. Clear applications with some depth. (16/20)",
+                "c4": "Good. Notes transfer limits briefly. (24/30)",
+                "c5": "Good. Organized and readable. (16/20)",
+                "total": "80/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "ai",
+            "key_points": [
+                "Accurately details the Baddeley-Hitch model.",
+                "Provides relevant empirical tasks.",
+                "Clearly explains applications to learning.",
+                "Acknowledges limitations of WM training.",
+                "Generally well-organized."
+            ],
+            "llm_questions": [
+                "Elaborate on the function of the episodic buffer.",
+                "What are common tasks to measure the visuospatial sketchpad?",
+                "How does working memory impact second language acquisition?"
+            ],
+            "llm_answers": [
+                "The episodic buffer integrates information from the phonological loop, visuospatial sketchpad, and long-term memory into coherent episodes.",
+                "The Corsi Block Tapping Task and mental rotation tasks.",
+                "It supports phonological processing, syntactic parsing, and lexical access, with a larger phonological loop capacity correlating with better vocabulary acquisition."
+            ],
+            "final_submission": "Working memory (WM) is a cognitive system for temporarily holding and manipulating information. The Baddeley-Hitch model posits a central executive governing a phonological loop for verbal information and a visuospatial sketchpad for visual data, with an episodic buffer to integrate information.\n\nEmpirical evidence comes from tasks like the digit span (phonological loop) and Corsi block-tapping (visuospatial sketchpad). Individual differences in WM capacity predict performance in fluid intelligence and reading comprehension.\n\nIn learning, WM is salient. In reading, it helps hold sentences active and integrate new information. In math, it supports retaining intermediate calculations. Understanding WM limitations helps design instruction that manages cognitive load. While WM training can improve performance on trained tasks, evidence for far transfer to broader cognitive abilities is mixed.",
+            "feedback": {
+                "c1": "Excellent. Comprehensive and precise explanation of the model. (19/20)",
+                "c2": "Good. Provides relevant tasks with sufficient empirical grounding. (8/10)",
+                "c3": "Good. Clear applications to learning with appropriate examples. (16/20)",
+                "c4": "Needs Improvement. The critique on training lacks depth. (15/30)",
+                "c5": "Good. Well-organized with clear writing. (16/20)",
+                "total": "74/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1,2],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "ai",
+            "key_points": [
+                "Basic description of the Baddeley-Hitch model.",
+                "Lists tasks but links are shallow.",
+                "General statements on reading/math links.",
+                "Minimal critique of training claims.",
+                "Simple structure."
+            ],
+            "llm_questions": [
+                "Explain the components of the Baddeley-Hitch model simply.",
+                "Does training help working memory?",
+                "How does working memory help in school?"
+            ],
+            "llm_answers": [
+                "WM has parts for words (loop) and images (sketchpad) controlled by attention (executive).",
+                "Training helps on similar tasks, but other benefits are unclear.",
+                "People with higher WM can hold more information, so they understand texts better."
+            ],
+            "final_submission": "Working memory includes a verbal and a visual part under an executive controller. It helps with understanding texts and solving problems. Tasks like digit span and n-back measure it. Training sometimes helps on similar tasks but may not transfer widely. Teachers can reduce overload by using examples and simpler materials.",
+            "feedback": {
+                "c1": "Average. Correct but simplified. (13/20)",
+                "c2": "Average. Tasks listed without detailed mapping. (6/10)",
+                "c3": "Average. Applications are general. (13/20)",
+                "c4": "Average. Minimal critique of transfer. (20/30)",
+                "c5": "Average. Adequate structure. (13/20)",
+                "total": "65/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "ai",
+            "key_points": [
+                "Confused understanding of WM models.",
+                "Good presentation of empirical evidence and tasks.",
+                "Excellent applications of WM to learning scenarios.",
+                "Average level of critique.",
+                "Disjointed and hard-to-follow structure."
+            ],
+            "llm_questions": [
+                "How does the n-back task target executive functions?",
+                "What instructional design principles are informed by WM research?",
+                "What is the 'unit-of-analysis' problem in WM research?"
+            ],
+            "llm_answers": [
+                "It demands continuous updating, monitoring, and inhibition, directly taxing executive processes.",
+                "Managing cognitive load (reducing extraneous, optimizing intrinsic), dual coding, spaced practice, and scaffolding.",
+                "It's the challenge of determining the fundamental capacity limit: is it items, features, or chunks?"
+            ],
+            "final_submission": "Working memory is fundamental for thinking. The Baddeley-Hitch model describes a central executive that manages a phonological loop and a visuospatial sketchpad. Empirical research supports this with tasks like digit span and the n-back task, which measures updating capabilities.\n\nApplications of working memory principles are vast. In learning, managing cognitive load is paramount. This can be mitigated through instructional strategies like presenting information visually and auditorily simultaneously. Critiques of working memory models, especially concerning training, are important. While training can improve performance on the trained task, evidence for transfer to general intelligence is weak. The structure of this essay is a bit disjointed, but the content has some strengths.",
+            "feedback": {
+                "c1": "Needs Improvement. The explanation of models is muddled. (10/20)",
+                "c2": "Good. Presents a good range of empirical evidence. (8/10)",
+                "c3": "Excellent. Provides nuanced and well-developed applications. (19/20)",
+                "c4": "Average. Notes some relevant critiques. (20/30)",
+                "c5": "Needs Improvement. The essay's organization is weak. (10/20)",
+                "total": "67/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "ai",
+            "key_points": [
+                "Partial model coverage; confusion between components.",
+                "Few or inaccurate task links.",
+                "Vague applications to learning.",
+                "Little critical evaluation.",
+                "Loose organization."
+            ],
+            "llm_questions": [
+                "What are the parts of working memory?",
+                "Does training work?",
+                "How does it help students?"
+            ],
+            "llm_answers": [
+                "The model has memory and attention without clear parts.",
+                "N-back training can raise intelligence.",
+                "WM and reading are related."
+            ],
+            "final_submission": "Working memory is memory plus attention. It makes thinking better. N-back training can raise intelligence by a lot. Teachers should tell students to concentrate. There are tasks like span tasks that measure it.",
+            "feedback": {
+                "c1": "Needs Improvement. Components are conflated. (10/20)",
+                "c2": "Needs Improvement. Overstated training claims. (5/10)",
+                "c3": "Needs Improvement. Applications are vague. (10/20)",
+                "c4": "Needs Improvement. Little to no critique. (15/30)",
+                "c5": "Needs Improvement. Disorganized and brief. (10/20)",
+                "total": "50/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "ai",
+            "key_points": [
+                "Basic and generalized understanding of the Baddeley-Hitch model.",
+                "Sparse and generic examples of empirical tasks.",
+                "Applications to learning are stated broadly.",
+                "Critique is minimal.",
+                "Passable but superficial structure."
+            ],
+            "llm_questions": [
+                "How do the phonological loop and visuospatial sketchpad differ?",
+                "Provide a concrete example of how WM affects math problem-solving.",
+                "What challenges exist in measuring WM capacity?"
+            ],
+            "llm_answers": [
+                "The phonological loop handles auditory and verbal information, while the visuospatial sketchpad handles visual and spatial information.",
+                "In a problem like 34 x 27, you must remember intermediate steps, like carrying the 2 from 4 x 7 = 28.",
+                "Challenges include distinguishing WM from attention, the 'unit-of-analysis' problem (items vs. chunks), and the influence of prior knowledge."
+            ],
+            "final_submission": "Working memory is a mental workspace for processing information. The Baddeley-Hitch model has a central executive, a phonological loop for sounds, and a visuospatial sketchpad for visuals. An episodic buffer combines these.\n\nEvidence for working memory comes from experiments where people remember things, like repeating numbers. These tasks show our capacity is limited. When we do two things at once, our working memory gets overloaded.\n\nWorking memory is important for learning. In math, it helps us remember numbers. In reading, it helps us understand sentences. Teachers can use this by breaking down information into smaller parts.\n\nWorking memory training has critiques. While people might get better at the training tasks, these improvements don't always transfer to other tasks. The models can also be seen as too simple.",
+            "feedback": {
+                "c1": "Average. Provides a general overview of the model. (12/20)",
+                "c2": "Needs Improvement. Offers only sparse and generic examples of tasks. (4/10)",
+                "c3": "Needs Improvement. Applications are stated broadly without detail. (9/20)",
+                "c4": "Needs Improvement. Acknowledges critiques but provides minimal analysis. (14/30)",
+                "c5": "Average. The essay has an adequate structure but is superficial. (12/20)",
+                "total": "51/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1,2,3],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Poor",
+            "authorship": "ai",
+            "key_points": [
+                "Misrepresents models.",
+                "No valid task links.",
+                "No real applications or critique.",
+                "Incoherent writing."
+            ],
+            "llm_questions": [
+                "Is working memory long-term memory?",
+                "Does training change personality?",
+                "Is reading related to memory?"
+            ],
+            "llm_answers": [
+                "Yes, working memory is just long-term memory.",
+                "Yes, n-back training changes your personality.",
+                "No, reading is unrelated to memory capacity."
+            ],
+            "final_submission": "Working memory is long-term storage and not needed for thinking. Training changes who you are, and reading does not use working memory. Teachers should present everything at once to make students learn faster.",
+            "feedback": {
+                "c1": "Poor. Fundamental misunderstandings of WM. (4/20)",
+                "c2": "Poor. No empirical grounding. (2/10)",
+                "c3": "Poor. No meaningful applications. (4/20)",
+                "c4": "Poor. No critique. (6/30)",
+                "c5": "Poor. Incoherent and inaccurate. (4/20)",
+                "total": "20/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        }
+    ]
+}

@@ -1,0 +1,421 @@
+{
+    "domain": "Psychology",
+    "prompt": "Examine attachment theory from infancy to adulthood, comparing attachment styles, measurement methods, and implications for relationships and mental health.",
+    "rubric": {
+        "rubric_id": "rub_psychology_0017",
+        "criteria": [
+            {
+                "criterion_id": "c1",
+                "name": "Theory and Styles",
+                "description": "Explains secure, avoidant, ambivalent/resistant, and disorganized attachment.",
+                "performance_descriptors": {
+                    "excellent": "Accurately defines styles, developmental origins, and behavioral patterns across stages of life.",
+                    "good": "Correct definitions with minor omissions.",
+                    "average": "Basic descriptions with occasional inaccuracies.",
+                    "needs_improvement": "Partial or unclear understanding.",
+                    "poor": "Incorrect or missing definitions."
+                },
+                "weight": 30
+            },
+            {
+                "criterion_id": "c2",
+                "name": "Assessment Methods",
+                "description": "Describes Strange Situation, Adult Attachment Interview, and self-report measures.",
+                "performance_descriptors": {
+                    "excellent": "Explains procedures, scoring, reliability/validity, and cross-cultural issues.",
+                    "good": "Describes methods with acceptable accuracy.",
+                    "average": "Mentions methods briefly without depth.",
+                    "needs_improvement": "Sparse or inaccurate coverage.",
+                    "poor": "No meaningful method discussion."
+                },
+                "weight": 10
+            },
+            {
+                "criterion_id": "c3",
+                "name": "Implications and Outcomes",
+                "description": "Links attachment to relationship patterns and mental health.",
+                "performance_descriptors": {
+                    "excellent": "Connects styles to intimacy, conflict patterns, emotion regulation, and risk for psychopathology with nuance.",
+                    "good": "Reasonable links to outcomes with some depth.",
+                    "average": "General associations without nuance.",
+                    "needs_improvement": "Weak or unsupported links.",
+                    "poor": "No outcome discussion."
+                },
+                "weight": 20
+            },
+            {
+                "criterion_id": "c4",
+                "name": "Critical Perspectives",
+                "description": "Considers limitations, stability, and context.",
+                "performance_descriptors": {
+                    "excellent": "Evaluates stability across lifespan, role of environment, culture, and measurement controversies.",
+                    "good": "Notes several critiques with some evaluation.",
+                    "average": "Superficial critique.",
+                    "needs_improvement": "Minimal critical analysis.",
+                    "poor": "No critique."
+                },
+                "weight": 25
+            },
+            {
+                "criterion_id": "c5",
+                "name": "Organization and Clarity",
+                "description": "Clear structure and writing.",
+                "performance_descriptors": {
+                    "excellent": "Cohesive, well-signposted, and precise.",
+                    "good": "Mostly clear with minor issues.",
+                    "average": "Adequate clarity; some redundancy.",
+                    "needs_improvement": "Disorganized or unclear.",
+                    "poor": "Incoherent."
+                },
+                "weight": 15
+            }
+        ]
+    },
+    "submissions": [
+        {
+            "quality": "Excellent",
+            "authorship": "ai",
+            "key_points": [
+                "Defines infant and adult attachment styles (secure, avoidant, ambivalent, disorganized) with behavioral markers.",
+                "Details the Strange Situation and Adult Attachment Interview, including scoring and validity.",
+                "Links styles to intimacy, conflict resolution, emotion regulation, and psychopathology risk.",
+                "Discusses stability vs. malleability, context, and cultural considerations.",
+                "Outlines clinical implications for therapy and relationship interventions."
+            ],
+            "llm_questions": [
+                "Summarize the four attachment styles with real-life examples.",
+                "How does the Strange Situation classify attachment?",
+                "What are the adult attachment dimensions in self-report models?",
+                "How does attachment style influence conflict resolution?",
+                "What is known about attachment stability across the lifespan?"
+            ],
+            "llm_answers": [
+                "Secure: comfortable with intimacy and autonomy. Avoidant: values self-reliance, uncomfortable with dependence. Ambivalent: worries about abandonment, desires extreme closeness. Disorganized: may show unresolved trauma and dysregulated strategies.",
+                "It uses separations and reunions with a caregiver to observe an infant's proximity-seeking, exploration, and comfort-seeking behaviors, classifying them based on the coherence of their strategy.",
+                "Self-report models often use two dimensions—anxiety (fear of rejection) and avoidance (discomfort with closeness)—to map adult styles.",
+                "Secure individuals engage in constructive problem-solving. Avoidant partners withdraw. Anxious partners may escalate conflict while seeking reassurance.",
+                "Attachment shows moderate stability but can be changed by context, such as supportive partners, therapy, or significant life stress."
+            ],
+            "final_submission": "Attachment theory explains how early caregiver–infant relationships organize expectations about safety and support that generalize to later relationships. In infancy, secure attachment features effective proximity seeking; avoidant minimizes bids for closeness; ambivalent shows intense distress; disorganized reflects contradictory responses. Adult models translate these into dimensions of anxiety and avoidance.\n\nAssessment spans lab observations (the Strange Situation for infants) and interviews (the Adult Attachment Interview). Self-report measures for adults offer efficiency but less depth. Reliability and validity are strongest when methods align with constructs and cultural norms are considered.\n\nAttachment styles predict relationship processes: security supports constructive conflict and emotion regulation; avoidance relates to withdrawal; anxiety predicts hyperactivation and reassurance seeking; disorganization is linked to dysregulation and psychopathology risk.\n\nYet attachment is not destiny. Stability is moderate and context-sensitive—supportive partners and therapy can foster change. Cultural practices also shape caregiving signals. Clinically, interventions aim to enhance reflective functioning and build secure base behaviors.",
+            "feedback": {
+                "c1": "Excellent. Precise definitions across the lifespan. (30/30)",
+                "c2": "Excellent. Strong, accurate coverage of assessment methods. (10/10)",
+                "c3": "Excellent. Nuanced links to relationship outcomes. (20/20)",
+                "c4": "Excellent. Thoughtful discussion of stability and culture. (25/25)",
+                "c5": "Excellent. Cohesive structure and precise language. (15/15)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1,2,3],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Excellent",
+            "authorship": "human",
+             "key_points": [
+                "Defines infant and adult attachment styles (secure, avoidant, ambivalent, disorganized) with behavioral markers.",
+                "Details the Strange Situation and Adult Attachment Interview, including scoring and validity.",
+                "Links styles to intimacy, conflict resolution, emotion regulation, and psychopathology risk.",
+                "Discusses stability vs. malleability, context, and cultural considerations.",
+                "Outlines clinical implications for therapy and relationship interventions."
+            ],
+            "final_submission": "Attachment theory, originally developed by John Bowlby, provides a framework for understanding the deep emotional bonds formed between individuals, beginning in infancy and continuing throughout life. It posits that our earliest relationships with caregivers create internal working models of the self and others, which in turn shape our expectations in future relationships. The primary attachment styles identified in infants are secure, avoidant, ambivalent/resistant, and disorganized, each reflecting different patterns of caregiver responsiveness.\n\nAssessment spans lab observations (the Strange Situation for infants) and interviews (the Adult Attachment Interview). Self-report measures for adults offer efficiency but less depth. Reliability and validity are strongest when methods align with constructs and cultural norms are considered.\n\nAttachment styles have profound implications for our adult relationships and mental well-being. A secure attachment history is linked to more stable relationships, effective emotion regulation, and resilience. Conversely, insecure styles can create challenges; for instance, an avoidant style may lead to difficulty with intimacy, while an anxious-ambivalent style can manifest as a constant fear of abandonment. These patterns are not merely relational quirks; they are also associated with a higher risk for various forms of psychopathology.\n\nYet attachment is not destiny. Stability is moderate and context-sensitive—supportive partners and therapy can foster change. Cultural practices also shape caregiving signals. Clinically, interventions aim to enhance reflective functioning and build secure base behaviors.",
+            "feedback": {
+                "c1": "Excellent. Precise definitions across the lifespan. (30/30)",
+                "c2": "Excellent. Strong, accurate coverage of assessment methods. (10/10)",
+                "c3": "Excellent. Nuanced links to relationship outcomes. (20/20)",
+                "c4": "Excellent. Thoughtful discussion of stability and culture. (25/25)",
+                "c5": "Excellent. Cohesive structure and precise language. (15/15)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [1,3],
+                "human_paragraph_indices": [0,2],
+                "hybrid_paragraph_indices": [],
+                "notes": "Human fully rewrote the introduction and the paragraph on implications and outcomes."
+            }
+        },
+        {
+            "quality": "Excellent",
+            "authorship": "hybrid",
+            "key_points": [
+                "Defines infant and adult attachment styles (secure, avoidant, ambivalent, disorganized) with behavioral markers.",
+                "Details the Strange Situation and Adult Attachment Interview, including scoring and validity.",
+                "Links styles to intimacy, conflict resolution, emotion regulation, and psychopathology risk.",
+                "Discusses stability vs. malleability, context, and cultural considerations.",
+                "Outlines clinical implications for therapy and relationship interventions."
+            ],
+            "final_submission": "Attachment theory explains how early caregiver–infant relationships organize expectations about safety and support that generalize to later relationships. In infancy, secure attachment features effective proximity seeking; avoidant minimizes bids for closeness; ambivalent shows intense distress; disorganized reflects contradictory responses. Adult models translate these into dimensions of anxiety and avoidance.\n\nAssessment of these styles spans various methods, from lab observations to in-depth interviews. The famous Strange Situation is used to classify infants based on their exploration and reunion behavior, while the Adult Attachment Interview examines the coherence of an individual's narrative about their childhood. Self-report measures are also widely used for adults, offering efficiency but perhaps trading depth for brevity.\n\nAttachment styles predict relationship processes: security supports constructive conflict and emotion regulation; avoidance relates to withdrawal; anxiety predicts hyperactivation and reassurance seeking; disorganization is linked to dysregulation and psychopathology risk.\n\nYet attachment is not destiny. Stability is moderate and context-sensitive—supportive partners and therapy can foster change. Cultural practices also shape caregiving signals. Clinically, interventions aim to enhance reflective functioning and build secure base behaviors.",
+            "feedback": {
+                "c1": "Excellent. Precise definitions across the lifespan. (30/30)",
+                "c2": "Excellent. Strong, accurate coverage of assessment methods. (10/10)",
+                "c3": "Excellent. Nuanced links to relationship outcomes. (20/20)",
+                "c4": "Excellent. Thoughtful discussion of stability and culture. (25/25)",
+                "c5": "Excellent. Cohesive structure and precise language. (15/15)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,2,3],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [1],
+                "notes": "Slightly modified the assessment paragraph for better flow and clarity."
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "ai",
+            "key_points": [
+                "Correct definitions of styles with minor omissions.",
+                "Describes the Strange Situation and adult measures broadly.",
+                "Explains relationship patterns and some mental health links.",
+                "Briefly notes stability and culture.",
+                "Clear, organized structure."
+            ],
+            "llm_questions": [
+                "Summarize the attachment styles.",
+                "How does the Strange Situation classify attachment?",
+                "What are adult attachment dimensions?",
+                "How does attachment influence conflict?"
+            ],
+            "llm_answers": [
+                "Secure: comfortable with closeness; avoidant: prefers distance; ambivalent: seeks closeness but is hard to soothe; disorganized: confused responses.",
+                "It observes infant reactions during separations and reunions to assign categories.",
+                "Two dimensions—anxiety and avoidance—combine to identify adult patterns.",
+                "Secure partners problem-solve; avoidant partners withdraw; anxious partners pursue reassurance."
+            ],
+            "final_submission": "Attachment styles describe how people approach closeness. The Strange Situation classifies infant strategies, while adult measures place people on anxiety and avoidance dimensions. Secure attachment predicts constructive conflict resolution; avoidance relates to withdrawal; anxiety involves reassurance seeking. Styles are moderately stable but can shift with life events. Clinically, promoting sensitivity and secure-base behavior supports healthier bonds.",
+            "feedback": {
+                "c1": "Good. Accurate definitions. (24/30)",
+                "c2": "Good. Covers key assessments. (8/10)",
+                "c3": "Good. Solid links to relationship processes. (16/20)",
+                "c4": "Good. Brief note on stability. (20/25)",
+                "c5": "Good. Clear and organized. (12/15)",
+                "total": "80/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "ai",
+            "key_points": [
+                "Detailed definitions of infant and adult attachment styles.",
+                "Accurate description of assessment methods.",
+                "Strong connections between attachment and relationship dynamics.",
+                "Superficial treatment of critical perspectives.",
+                "Disorganized structure."
+            ],
+            "llm_questions": [
+                "What are the behavioral patterns of disorganized attachment?",
+                "How does the Adult Attachment Interview differ from self-report measures?",
+                "Discuss the role of attachment in emotion regulation."
+            ],
+            "llm_answers": [
+                "In infants, it manifests as contradictory behaviors or freezing. In adults, it often presents as unresolved trauma, leading to dysregulated strategies in relationships.",
+                "The AAI assesses the coherence of an individual's narrative about their childhood, while self-report measures gauge explicit attitudes related to anxiety and avoidance.",
+                "Secure attachment fosters effective emotion regulation. Insecure styles can lead to dysregulation: avoidant individuals suppress emotions, while ambivalent individuals hyper-activate distress."
+            ],
+            "final_submission": "Attachment theory provides a lens for understanding social development. In infants, patterns emerge: secure, avoidant, ambivalent, and disorganized. These have parallels in adult styles, conceptualized along anxiety and avoidance dimensions.\n\nAssessment methods vary. The Strange Situation Procedure is for infants. For adults, the Adult Attachment Interview delves into narratives, while self-report questionnaires measure anxiety and avoidance.\n\nThe implications are far-reaching. Secure attachment is associated with greater relationship satisfaction and better mental health. Insecure styles are linked to difficulties in intimacy and higher vulnerability to psychopathology. The theory's stability and cultural relevance are debated. The structure of this paper is a bit disorganized, but the content is strong.",
+            "feedback": {
+                "c1": "Excellent. Comprehensive definitions. (28/30)",
+                "c2": "Good. Describes methods well. (8/10)",
+                "c3": "Excellent. Strong connections to outcomes. (19/20)",
+                "c4": "Average. Mentions critical perspectives but offers a superficial evaluation. (17/25)",
+                "c5": "Needs Improvement. The submission lacks clear organization. (8/15)",
+                "total": "80/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1,2],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "ai",
+            "key_points": [
+                "Basic style descriptions.",
+                "Briefly mentions one or two assessment tools.",
+                "General outcome links without nuance.",
+                "Minimal critique of stability/culture.",
+                "Simple, clear structure."
+            ],
+            "llm_questions": [
+                "Summarize the attachment styles.",
+                "How is infant attachment classified?",
+                "What do adult attachment questionnaires measure?"
+            ],
+            "llm_answers": [
+                "Secure likes closeness, avoidant keeps distance, ambivalent is unsure, and disorganized is mixed.",
+                "Infants are classified in the Strange Situation.",
+                "They assess anxiety and avoidance in relationships."
+            ],
+            "final_submission": "Attachment theory groups patterns like secure, avoidant, ambivalent, and disorganized. Infants are classified in the Strange Situation; adults are measured with interviews or questionnaires that assess anxiety and avoidance. Styles relate to how people handle conflict and emotions. There is some stability across life, but it can change. Improving sensitivity can help relationships.",
+            "feedback": {
+                "c1": "Average. Correct but simplified. (20/30)",
+                "c2": "Average. Methods mentioned without detail. (6/10)",
+                "c3": "Average. Outcome links are general. (13/20)",
+                "c4": "Average. Limited critique. (16/25)",
+                "c5": "Average. Basic organization. (10/15)",
+                "total": "65/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "ai",
+            "key_points": [
+                "Simplified descriptions of attachment styles.",
+                "Basic mention of assessment methods.",
+                "General associations between attachment and outcomes.",
+                "Minimal critical analysis.",
+                "Adequate organization."
+            ],
+            "llm_questions": [
+                "What is the difference between secure and ambivalent attachment in infants?",
+                "What does 'internal working models' mean?",
+                "How could the critical perspectives section be strengthened?"
+            ],
+            "llm_answers": [
+                "Secure infants are easily comforted by their caregiver, while ambivalent infants are highly distressed and difficult to soothe.",
+                "They are mental representations of self, others, and relationships, developed in early childhood, that guide future social interactions.",
+                "By introducing specific scholarly debates, such as the ecological validity of the Strange Situation or the stability of attachment over time."
+            ],
+            "final_submission": "Attachment theory describes how humans form emotional bonds. The main styles are secure, avoidant, ambivalent, and disorganized. Secure infants are comfortable exploring, while avoidant infants tend to ignore their caregiver. Ambivalent infants are very distressed by separation and hard to soothe.\n\nThese patterns shape adult relationships. Attachment is measured using questionnaires or interviews. The Strange Situation is used for infants. Secure individuals generally have more satisfying relationships. Insecure attachment can lead to challenges, like fear of abandonment. While influential, the theory has limitations regarding stability and cultural context.",
+            "feedback": {
+                "c1": "Good. Provides mostly accurate descriptions of the styles. (23/30)",
+                "c2": "Average. Mentions assessment methods but without detail. (6/10)",
+                "c3": "Average. General associations are presented but lack nuance. (14/20)",
+                "c4": "Needs Improvement. Offers minimal critical analysis. (11/25)",
+                "c5": "Average. Adequately organized. (10/15)",
+                "total": "64/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "ai",
+            "key_points": [
+                "Incomplete or vague definitions.",
+                "Sparse or inaccurate method coverage.",
+                "Weak links to outcomes.",
+                "Minimal critical analysis.",
+                "Loose organization."
+            ],
+            "llm_questions": [
+                "What are the attachment styles?",
+                "Are there tests for attachment?",
+                "Does it affect relationships?"
+            ],
+            "llm_answers": [
+                "Secure, avoidant, and others that are mixed up.",
+                "Yes, there are lab tasks and questionnaires.",
+                "Yes, it can affect how people handle relationships."
+            ],
+            "final_submission": "Attachment styles are different ways people act in relationships. There are tests like lab tasks and questionnaires to figure them out. The effects on relationships are not always strong. People may or may not change over time. The writing is disorganized.",
+            "feedback": {
+                "c1": "Needs Improvement. Vague definitions. (15/30)",
+                "c2": "Needs Improvement. Poor description of assessments. (5/10)",
+                "c3": "Needs Improvement. Weak outcome links. (10/20)",
+                "c4": "Needs Improvement. Little critical analysis. (13/25)",
+                "c5": "Needs Improvement. Disorganized and brief. (7/15)",
+                "total": "50/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "ai",
+            "key_points": [
+                "Some correct concepts but definitions are unclear.",
+                "Sparse coverage of assessment methods.",
+                "Weak links between attachment and outcomes.",
+                "Very limited critical analysis.",
+                "Disorganized structure."
+            ],
+            "llm_questions": [
+                "What is the primary difference between avoidant and disorganized attachment?",
+                "Can you name one challenge with the Strange Situation Procedure?",
+                "How might attachment styles impact adult friendships?"
+            ],
+            "llm_answers": [
+                "Avoidant attachment involves a consistent pattern of minimizing emotional expression, while disorganized attachment involves contradictory and unpredictable behaviors.",
+                "Its potential lack of ecological validity, as it is an artificial lab setting.",
+                "An anxious attachment style might struggle with boundaries in friendships, while an avoidant style might be seen as distant."
+            ],
+            "final_submission": "Attachment theory is about how people connect. There are different styles like secure, avoidant, ambivalent, and disorganized. These come from how parents treat their children.\n\nResearchers use the Strange Situation to see a baby's attachment style. For adults, they use surveys. But these tests are not always clear.\n\nAttachment types affect relationships. Secure people might have good relationships. Insecure people might have more trouble. It can also affect how they feel, making them more anxious. There isn't much discussion about whether attachment can change or if it works for everyone in the world. The organization is a bit messy.",
+            "feedback": {
+                "c1": "Good. Provides a basic understanding of the styles. (24/30)",
+                "c2": "Needs Improvement. Provides sparse descriptions of the methods. (5/10)",
+                "c3": "Needs Improvement. The links to outcomes are weak and generalized. (10/20)",
+                "c4": "Poor. Minimal to no critical analysis. (8/25)",
+                "c5": "Needs Improvement. The submission is disorganized and hard to follow. (7/15)",
+                "total": "54/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1,2],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Poor",
+            "authorship": "ai",
+            "key_points": [
+                "Major misunderstandings of styles.",
+                "No valid assessment explanation.",
+                "No clear outcomes or critique.",
+                "Incoherent writing."
+            ],
+            "llm_questions": [
+                "What is attachment?",
+                "What is the Strange Situation?",
+                "Does attachment change?"
+            ],
+            "llm_answers": [
+                "Attachment is just being attached a lot or a little.",
+                "The Strange Situation is an intelligence test for infants.",
+                "Attachment changes randomly."
+            ],
+            "final_submission": "Attachment simply means closeness. Tests for it are for intelligence and do not classify relationships. There are no real effects on mental health or relationships. Everyone changes randomly over time.",
+            "feedback": {
+                "c1": "Poor. Fundamental misconceptions. (6/30)",
+                "c2": "Poor. Assessment methods misrepresented. (2/10)",
+                "c3": "Poor. No meaningful linkage to outcomes. (4/20)",
+                "c4": "Poor. No critique. (5/25)",
+                "c5": "Poor. Incoherent presentation. (3/15)",
+                "total": "20/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        }
+    ]
+}

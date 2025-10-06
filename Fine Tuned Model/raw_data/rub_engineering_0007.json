@@ -1,0 +1,359 @@
+{
+    "domain": "Engineering",
+    "prompt": "Discuss the analytical approach a structural engineer takes when designing a mid-rise building in an earthquake-prone zone. Highlight how seismic loads are considered, equations used in structural analysis, safety margins, and design documentation.",
+    "rubric": {
+        "rubric_id": "rub_engineering_0007",
+        "criteria": [
+            {
+                "criterion_id": "c1",
+                "name": "Seismic Load Consideration",
+                "description": "Demonstrates understanding of seismic forces and how they impact structural design.",
+                "performance_descriptors": {
+                    "excellent": "Clearly identifies seismic loads, site conditions, and applies relevant codes.",
+                    "good": "Identifies basic seismic loads and references building codes.",
+                    "average": "Mentions earthquake forces with limited detail.",
+                    "needs_improvement": "Brief or unclear understanding of seismic impact.",
+                    "poor": "No mention of seismic considerations."
+                },
+                "weight": 10
+            },
+            {
+                "criterion_id": "c2",
+                "name": "Use of Structural Analysis Methods",
+                "description": "Applies appropriate structural models, equations, and analytical techniques.",
+                "performance_descriptors": {
+                    "excellent": "Correctly applies dynamic/static models and explains assumptions.",
+                    "good": "Finds suitable equations with minor detail gaps.",
+                    "average": "Finds some equations ; lacks clarity or completeness.",
+                    "needs_improvement": "Incorrect or minimal analysis applied.",
+                    "poor": "No use of structural equations or methods."
+                },
+                "weight": 35
+            },
+            {
+                "criterion_id": "c3",
+                "name": "Safety Factors and Design Margin",
+                "description": "Explains use of safety factors and code-based margins in design.",
+                "performance_descriptors": {
+                    "excellent": "Integrates code-based safety margins with strong rationale.",
+                    "good": "Applies safety factors based on standards.",
+                    "average": "Mentions safety but lacks full integration.",
+                    "needs_improvement": "Unclear or incomplete explanation.",
+                    "poor": "No reference to safety or design codes."
+                },
+                "weight": 30
+            },
+            {
+                "criterion_id": "c4",
+                "name": "Documentation and Communication",
+                "description": "Presents the design using clear drawings, models, and technical reporting.",
+                "performance_descriptors": {
+                    "excellent": "Professional and well-structured technical report included.",
+                    "good": "Clear explanation with supporting validations  .",
+                    "average": "Basic explanation with some validations or structure .",
+                    "needs_improvement": "Weak explanation or disorganized layout.",
+                    "poor": "Lacks any meaningful documentation or validations ."
+                },
+                "weight": 25
+            }
+        ]
+    },
+    "submissions": [
+        {
+            "quality": "Excellent",
+            "key_points": [
+                "Seismic forces on buildings are estimated using base shear equations, such as V = Cs × W, where the seismic coefficient and building weight are factored in",
+                "Engineers use methods like static equivalent analysis and modal response spectrum analysis to predict how a structure will behave during an earthquake",
+                "Safety factors are applied through load combinations, following standards such as AS1170.4 or IBC requirements, to ensure structures can withstand unexpected stresses",
+                "Design codes like Eurocode 8, ASCE 7, and AS1170.4 provide detailed guidance on how to make structures earthquake-resistant",
+                "Final documentation typically includes structural reports and detailed calculation result reports for review and approval"
+            ],
+            "llm_questions": [
+                "How are seismic forces calculated for buildings?",
+                "What analysis methods are used for earthquake design?",
+                "What safety factors are applied in seismic zones?",
+                "What building codes govern earthquake-resistant structures?",
+                "How are structural designs documented for approval?"
+            ],
+            "llm_answers": [
+                "Seismic forces are primarily calculated using the Equivalent Lateral Force (ELF) procedure, which determines the total horizontal force, or base shear (V), at the base of the structure. The governing equation is V = Cs × W, where W is the effective seismic weight of the building and Cs is the seismic response coefficient. Cs is determined based on site-specific soil conditions (Site Class), the building's fundamental period (T), the mapped spectral response accelerations (Ss and S1), and the structure's importance factor (Ie) and response modification coefficient (R).",
+                "For seismic design, engineers typically use two primary methods. The first is the Equivalent Lateral Force (ELF) method, a static analysis suitable for regular, less complex buildings. The second is Modal Response Spectrum Analysis (MRSA), a dynamic method required for taller or irregularly shaped structures. MRSA provides a more accurate representation of the building's response by considering multiple modes of vibration, combining them to estimate the peak response. For critical facilities, a more complex nonlinear time history analysis might be employed.",
+                "Safety factors in seismic design are integrated through Load and Resistance Factor Design (LRFD). This is achieved by applying load factors to various load types (dead, live, seismic) in prescribed load combinations, such as 1.2D + 1.0E + 0.5L. Additionally, resistance factors (phi, φ) are applied to the nominal strength of materials and members to account for uncertainties in material properties and construction quality. These factors ensure that the designed strength significantly exceeds the expected loads.",
+                "The primary building code governing seismic design in the United States is ASCE 7, 'Minimum Design Loads for Buildings and Other Structures,' which is often adopted by the International Building Code (IBC). Other international standards include Eurocode 8 in Europe, NZS 1170.5 in New Zealand, and the National Building Code of Canada. These codes provide methodologies for calculating seismic loads, detailing requirements for structural systems, and ensuring life safety.",
+                "Structural designs are documented through a comprehensive set of documents for review and approval by the local building authority. This package typically includes a structural design report outlining the design philosophy, codes used, and key assumptions. It also contains detailed structural calculations, computer model outputs (e.g., from ETABS or SAP2000), and a full set of construction drawings that specify member sizes, connections, and material requirements, including seismic detailing."
+            ],
+            "final_submission": "The analytical approach to designing a mid-rise building in a seismic zone is a rigorous, code-driven process focused on life safety and structural integrity. The process begins with a site-specific geotechnical investigation to determine the soil properties and classify the site per ASCE 7-16, which directly influences the design response spectrum.\n\nFirst, seismic loads are quantified. The primary method for a regular mid-rise structure is the Equivalent Lateral Force (ELF) procedure. The base shear (V), representing the total horizontal force, is calculated using the equation V = Cs * W. Here, W is the effective seismic weight (including dead loads and portions of live loads), and Cs is the seismic response coefficient. Cs is a function of the mapped spectral accelerations (Ss and S1), the site class, the building's importance factor (Ie), and the response modification coefficient (R) of the chosen lateral force-resisting system. For more complex or irregular structures, a Modal Response Spectrum Analysis (MRSA) is required. This dynamic analysis method provides a more refined understanding of the building's behavior by evaluating its response across multiple natural vibration modes.\n\nOnce the forces are determined, they are applied to a structural model, often created in software like ETABS or SAP2000. Safety margins are explicitly integrated through Load and Resistance Factor Design (LRFD). The analysis is performed using load combinations specified in ASCE 7, such as 1.2D + 1.0E + f1*L, which magnify the applied loads. The capacity of each structural element is then checked against these factored loads, ensuring the design strength (φRn) exceeds the required strength (Ru). The resistance factor (φ) accounts for material and construction variability, providing an additional layer of safety.\n\nFinally, the entire process is meticulously documented for peer review and regulatory approval. This documentation includes a comprehensive structural design report that outlines the methodology, assumptions, and governing codes. It is accompanied by detailed calculations, outputs from the analysis software, and a complete set of structural drawings. These drawings illustrate element sizes, reinforcement, connection details, and specific seismic detailing requirements, ensuring the design intent is clearly communicated and can be built as specified.",
+            "feedback": {
+                "c1": "Excellent. The submission clearly identifies the process of determining seismic loads, referencing specific site conditions (site class) and the application of relevant codes like ASCE 7-16. It correctly defines the components of the base shear calculation. (10/10)",
+                "c2": "Excellent. The response correctly applies and differentiates between static (ELF) and dynamic (MRSA) models, explaining the context for their use. It also mentions the use of software like ETABS, demonstrating a practical understanding of modern analysis techniques. (35/35)",
+                "c3": "Excellent. The submission demonstrates a strong command of safety margins by explaining the LRFD methodology, including both load factors in combinations and resistance factors (φ), and provides a clear rationale for their application. (30/30)",
+                "c4": "Excellent. The description of the documentation process is professional and well-structured, correctly identifying the key components of a final design package, such as the design report, calculations, and detailed drawings. (25/25)",
+                "total": "100/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "key_points": [
+                "Describes site class and importance level",
+                "Outlines base shear and distribution to stories",
+                "Explains modeling assumptions and damping choices",
+                "Summarizes code checks and drift limits"
+            ],
+            "llm_questions": [
+                "Which site parameters affect Cs?",
+                "How is base shear distributed vertically?",
+                "What assumptions guide modal analysis?",
+                "How are drift and detailing limits expressed in text?"
+            ],
+            "llm_answers": [
+                "The main site parameters affecting the seismic response coefficient (Cs) are the mapped short-period (Ss) and 1-second period (S1) spectral response accelerations, which are based on the building's geographic location. Additionally, the Site Class, which ranges from A (hard rock) to F (soft soils requiring site-specific evaluation), significantly modifies these values to reflect how local soil conditions amplify ground shaking.",
+                "The total base shear (V) is distributed vertically along the height of the building to each floor level. According to the ELF procedure, the lateral force (Fx) at any level 'x' is calculated as Fx = Cvx * V, where Cvx is a vertical distribution factor. This factor is a function of the height of the level above the base and the mass at that level, generally resulting in an inverted triangular force distribution where higher floors experience greater forces.",
+                "Key assumptions in modal analysis include the structure behaving linearly and sparsely elastically, which allows the use of superposition. Damping is also assumed, typically as a percentage of critical damping (e.g., 5% for concrete structures), and is assumed to be uniform throughout the structure. The mass of the building is usually lumped at the floor levels for simplification in the analytical model.",
+                "Inter-story drift, which is the relative lateral displacement between two consecutive floors, is a critical serviceability check. Codes specify allowable drift limits, often expressed as a percentage of the story height (e.g., 2% of Hstory), to prevent excessive damage to non-structural components and avoid P-delta effects. Detailing limits, such as reinforcement spacing in concrete columns, are specified in code chapters (like ACI 318 Chapter 18) to ensure ductile behavior."
+            ],
+            "final_submission": "When a structural engineer designs a mid-rise building in an area with high seismic activity, they follow a systematic approach defined by building codes. The first step is to understand the seismic hazard at the site. This involves determining the site soil class and using seismic hazard maps to find the ground motion parameters. These parameters, along with the building's intended use (which sets an importance factor), are used to calculate the seismic design forces.\n\nThe primary calculation is for the base shear, which is the total horizontal force the earthquake is expected to exert on the building's base. The formula V = Cs * W is used, where V is the base shear. This force is then distributed to each floor level, typically with more force being applied to the higher floors. Engineers use computer software to create a 3D model of the building and apply these calculated lateral forces.\n\nTo ensure safety, the design incorporates significant safety margins. This is done through load combinations, where seismic loads are combined with other loads like dead load and live load. The material strengths are also reduced by a factor to account for real-world imperfections. For example, the design must check for inter-story drift to make sure the building doesn't sway too much and damage windows or partitions. The structural system, such as a moment frame or shear wall system, must also be detailed properly to behave in a ductile manner, meaning it can deform without a sudden collapse.\n\nFinally, the design is communicated through a set of documents. This includes a report that explains the design choices and criteria, a full set of calculations that prove the design meets code requirements, and construction drawings. The drawings show the sizes of all beams and columns, the amount of steel reinforcement, and how the connections should be made. This package is submitted to the city for approval before construction can begin.",
+            "feedback": {
+                "c1": "Good. The submission correctly identifies basic seismic loads like base shear and references the importance of building codes and site parameters. It could be improved by naming a specific code or detailing the inputs for Cs. (8/10)",
+                "c2": "Good. A suitable analysis method (applying lateral forces to a model) is described, and the base shear equation is identified. The explanation lacks detail on the assumptions made in the model or when a more advanced analysis might be needed. (28/35)",
+                "c3": "Good. The response correctly applies the concept of safety factors through load combinations and mentions serviceability checks like drift. The rationale is present but not as deeply integrated as in an excellent submission. (24/30)",
+                "c4": "Good. The explanation of the documentation is clear and covers the main components: a report, calculations, and drawings. It provides a solid overview of the necessary validations for the design. (20/25)",
+                "total": "80/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "key_points": [
+                "Mentions using code spectra and basic models",
+                "Provides rough force estimates",
+                "States safety factors without detail",
+                "Gives a short note on documentation"
+            ],
+            "llm_questions": [
+                "What minimum inputs define the design spectrum?",
+                "When is static analysis acceptable?",
+                "What are typical drift criteria?",
+                "What belongs in a calculation summary?"
+            ],
+            "llm_answers": [
+                "To define the design spectrum, you need to know the building's location to get the seismic hazard level from a map, and you also need to know what kind of soil the building is on. These two things, the seismic zone and the soil type, are the minimum inputs required to start the calculation.",
+                "Static analysis is generally acceptable for shorter, regular-shaped buildings. If a building is not too tall and doesn't have a strange shape, you can use the simpler static method to figure out the earthquake forces. For very tall or complex buildings, you have to use a more complicated dynamic analysis.",
+                "Drift criteria are rules about how much a building is allowed to sway side-to-side during an earthquake. Typically, the rule is that the movement between one floor and the next can't be more than a small percentage of the floor's height. This is to protect things like windows and walls from breaking during a quake.",
+                "A calculation summary should include the main design inputs, like the building code used and the material strengths. It should also show the final results, such as the major forces on the building, and confirm that the key structural elements like beams and columns are strong enough to handle those forces according to the code's safety rules."
+            ],
+            "final_submission": "For a mid-rise building in an earthquake zone, a structural engineer has to think about how the ground shaking will affect the structure. The main goal is to prevent collapse so people can get out safely. The engineer has to calculate the forces that an earthquake will put on the building.\n\nThey do this using equations from the building code. There is a main equation to find the total force at the bottom of the building, which depends on how heavy the building is and where it is located. After finding this total force, it is spread out among the different floors of the building. This is usually done with a computer program that has a model of the building frame.\n\nSafety is very important in the design. Engineers use safety factors to make sure the building is stronger than it needs to be for the calculated forces. This provides a margin for error and for earthquakes that might be stronger than expected. The engineer checks that the building will not drift, or sway, too much, as this can cause a lot of damage.\n\nOnce the design is finished, the engineer prepares documents to show their work. This includes a report and some calculations that prove the building is safe. These documents are given to the city to get a permit to build. The documents have to be clear so that other people can understand the design.",
+            "feedback": {
+                "c1": "Average. The submission mentions that earthquake forces need to be calculated and that they depend on the building's weight and location. However, the detail is limited and lacks specific terminology like 'base shear' or 'site class'. (6/10)",
+                "c2": "Average. The response mentions using equations from the code and a computer model, which is correct. However, it lacks clarity on what the equations are or what kind of analysis is being performed, making it an incomplete description. (23/35)",
+                "c3": "Average. Safety factors are mentioned as a concept to make the building 'stronger than it needs to be,' but there is no integration with code-based load combinations or material strength reduction factors. The explanation is superficial. (20/30)",
+                "c4": "Average. The submission provides a basic statement about documentation, noting that a report and calculations are prepared for a permit. It lacks detail on the structure or content of these documents. (16/25)",
+                "total": "65/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "key_points": [
+                "Seismic inputs are unspecified",
+                "Modeling approach is unclear",
+                "Safety checks are incomplete",
+                "Reporting lacks structure"
+            ],
+            "llm_questions": [
+                "Which inputs must be listed before analysis?",
+                "How do you justify a chosen analysis method?",
+                "Which code checks are non-negotiable?",
+                "How do you structure a brief seismic design report?"
+            ],
+            "llm_answers": [
+                "Before starting an analysis, you need to know some basic information about the building. This includes things like how tall it is and what materials you are using, for example, if it's steel or concrete. You also need to know where the building will be built, because that affects the design.",
+                "You justify an analysis method by following the standard procedures. If you are designing a simple building, you can use a simple method. If the building is more complicated, you have to use a more advanced method. It's about choosing the right tool for the job based on the project's requirements.",
+                "The non-negotiable code checks are the ones that ensure the building is safe. You have to make sure that the building's parts are strong enough and that the building won't fall down. The specific checks depend on the building, but the main goal is always to make sure it meets the safety standards.",
+                "To structure a brief seismic design report, you should start with an introduction that describes the building. Then, you should have a section that talks about the design and the forces you used. Finally, you should have a conclusion that says the design is safe. You should also include some of the important calculations."
+            ],
+            "final_submission": "Designing a building in a place with earthquakes is a serious job for a structural engineer. They must make sure the building will be safe for people. The engineer has to analyze the building to see how it will act when the ground moves. The design must be strong enough to handle these movements.\n\nFirst, the engineer looks at the building plans. They use these plans to make a model. They have to consider all the forces, including gravity and wind, and also the earthquake force. The earthquake force pushes the building from side to side, so the building needs to be stiff. The engineer adds things to the structure to make it stronger.\n\nThere are rules that engineers must follow to make sure the design is safe. These rules are about making sure the parts of the building don't break. Safety is the most important thing. If the building is not safe, people could get hurt. The engineer does many checks to be sure.\n\nThe final step is to make a report. This report tells other people what the engineer did. It shows that the building is designed correctly and follows the rules. It's important for the report to be organized so everyone can understand it. The engineer's job is to make a good, safe building.",
+            "feedback": {
+                "c1": "Needs Improvement. The submission has a brief and unclear understanding of seismic impact, referring to it simply as a force that 'pushes the building from side to side.' It does not specify any inputs or methods for quantifying this force. (5/10)",
+                "c2": "Needs Improvement. The description of the analysis is minimal and vague ('make a model,' 'adds things to make it stronger'). No specific analytical techniques or equations are mentioned, indicating a very limited application of structural analysis principles. (18/35)",
+                "c3": "Needs Improvement. The explanation of safety is incomplete. It states that 'rules' must be followed and 'checks' are done, but it provides no detail on what these safety measures are or how they are implemented in the design. (15/30)",
+                "c4": "Needs Improvement. The submission's explanation of documentation is weak and disorganized. It mentions a report but gives no meaningful information about its structure, content, or purpose beyond vaguely stating that it 'tells other people what the engineer did'. (13/25)",
+                "total": "51/100"
+            }
+        },
+        {
+            "quality": "Poor",
+            "key_points": [
+                "No identification of seismic demands",
+                "No valid analysis methods",
+                "No safety or code references",
+                "No coherent documentation"
+            ],
+            "llm_questions": [
+                "What is the baseline workflow for seismic design?",
+                "Why are code references essential?",
+                "How do you capture assumptions textually?",
+                "What are core elements of approval packages?"
+            ],
+            "llm_answers": [
+                "The baseline workflow for any design is to first figure out what you need to build. Then, you draw a plan for it. After you have a plan, you check to make sure it will work and is strong enough. Finally, you create the final drawings so that someone can build it.",
+                "Code references are essential because they are the rules you have to follow. If you don't follow the rules, you can get in trouble, and the building might not be approved. They tell you the minimum requirements for making a building that is considered safe by the government.",
+                "To capture assumptions textually, you just need to write them down clearly. You should make a list of all the things you assumed at the beginning of your report. For example, you can write down the type of materials you plan to use or other general information about the project that you decided on.",
+                "The core elements of an approval package are all the documents that you need to give to the city to get a permit. This usually includes the main drawings of the building, like the floor plans and elevations. You also need to include any other forms or reports that the city asks for to show your work."
+            ],
+            "final_submission": "A structural engineer designs buildings. For a mid-rise building, they have to make sure it is strong and will not fall down. The engineer starts with the architect's drawings. They use these drawings to decide where to put the columns and beams. The columns hold up the building, and the beams hold up the floors.\n\nThe engineer has to calculate the loads on the building. The main load is from gravity, which is the weight of the building materials and everything inside it. The engineer makes sure that the columns and beams are big enough to carry all of this weight down to the foundation. The foundation is also very important because it holds the entire building up from the ground. A good foundation is key to a good building.\n\nMaterials are also important. The engineer can choose to use steel or concrete. Both are very strong materials. The choice depends on the building and how much it costs. The engineer needs to make sure the materials are good quality.\n\nFinally, the engineer creates the final plans. These plans are very detailed and show the construction workers exactly how to build the structure. The plans have to be very accurate. This is how a structural engineer designs a building.",
+            "feedback": {
+                "c1": "Poor. The submission makes no mention of seismic considerations whatsoever. The discussion is limited to gravity loads, completely failing to address the core requirement of the prompt regarding earthquake-prone zones. (2/10)",
+                "c2": "Poor. There is no use of structural equations or methods relevant to seismic analysis. The text describes the general role of columns and beams but does not touch upon any analytical techniques for lateral loads. (7/35)",
+                "c3": "Poor. The response makes no reference to safety factors, design margins, or building codes. The concept of safety is not addressed in a technical or engineering context. (6/30)",
+                "c4": "Poor. While the submission mentions 'final plans,' it lacks any meaningful discussion of documentation, technical reporting, or the validation process required for an engineering design. The description is superficial and not relevant to the prompt. (5/25)",
+                "total": "20/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "key_points": [
+                "Identifies site-specific seismic inputs like site class and spectral accelerations (Ss, S1).",
+                "Utilizes both Equivalent Lateral Force (ELF) and Modal Response Spectrum Analysis (MRSA) where appropriate.",
+                "Emphasizes Load and Resistance Factor Design (LRFD) with explicit load combinations and resistance factors.",
+                "Mentions the importance of ductile detailing for seismic performance.",
+                "Details a comprehensive documentation package, including design reports, calculations, and construction drawings."
+            ],
+            "llm_questions": [
+                "What specific site parameters are critical for seismic load determination?",
+                "When would a structural engineer opt for MRSA over ELF?",
+                "How does LRFD ensure safety against seismic events?",
+                "What is the significance of ductile detailing in seismic design?",
+                "What key elements should a comprehensive structural design report include?"
+            ],
+            "llm_answers": [
+                "For seismic load determination, critical site parameters include the Site Class (ranging from hard rock to soft soil), mapped spectral response accelerations at short periods (Ss) and at a 1-second period (S1), and the building's importance factor (Ie). These values, obtained from geotechnical reports and seismic hazard maps, directly influence the seismic design category and the calculated base shear.",
+                "An engineer would typically opt for Modal Response Spectrum Analysis (MRSA) for taller, more complex, or irregularly shaped mid-rise buildings. While ELF is suitable for regular, shorter structures, MRSA provides a more accurate representation of the building's dynamic response by accounting for multiple modes of vibration and their contributions to the overall structural behavior during an earthquake.",
+                "LRFD ensures safety by applying load factors to seismic and other loads (e.g., 1.0E + 0.75L + 0.7D) to account for uncertainties in load magnitudes, and by applying resistance factors (φ) to material strengths (e.g., 0.9 for steel tension) to account for material variability and construction quality. This dual-factor approach ensures the designed strength significantly exceeds the anticipated demand.",
+                "Ductile detailing is paramount in seismic design to ensure that structural elements can undergo significant inelastic deformation without a sudden loss of strength or collapse. This is achieved through specific reinforcement requirements (e.g., closely spaced stirrups in concrete columns), connection designs, and capacity design principles that force plastic hinges to form in predictable locations, allowing the structure to absorb seismic energy.",
+                "A comprehensive structural design report should include an executive summary, project description, applicable codes and standards, seismic hazard analysis details (site class, design parameters), description of the structural system, analysis methodology (ELF/MRSA), key design assumptions, results of critical checks (drift, strength, stability), and a summary of critical design values. It should effectively communicate the design philosophy and compliance."
+            ],
+            "final_submission": "The structural engineer's analytical approach to designing a mid-rise building in an earthquake-prone zone begins with a meticulous seismic hazard assessment. This involves a thorough review of geotechnical reports to determine the Site Class, which characterizes the soil conditions, and referencing seismic hazard maps (e.g., USGS maps) to obtain site-specific spectral response accelerations (Ss and S1). These inputs, along with the building's occupancy and importance factor (Ie), are crucial for establishing the seismic design category and subsequently calculating the design base shear. The base shear, representing the total lateral seismic force at the base of the structure, is often initially calculated using the Equivalent Lateral Force (ELF) procedure (V = Cs * W), where Cs is the seismic response coefficient and W is the effective seismic weight. For more complex or taller mid-rise buildings, a Modal Response Spectrum Analysis (MRSA) is employed to capture the building's dynamic characteristics and multiple modes of vibration more accurately.\n\nStructural analysis is then performed using advanced finite element software (e.g., ETABS, SAP2000) where the building is modeled with its lateral force resisting system (e.g., special moment resisting frames, shear walls). The calculated seismic forces are applied, and the structural response (forces, moments, displacements, drifts) is evaluated. Throughout this process, safety margins are integrated using Load and Resistance Factor Design (LRFD) principles. This involves applying specific load factors to the seismic loads in prescribed load combinations (e.g., 1.2D + 1.0E + 0.5L + 0.2S for strength design) and reducing the nominal strength of materials and members with resistance factors (φ). This dual approach ensures that the design capacity significantly exceeds the demand under factored loads, providing a robust margin against uncertainties and extreme events. Additionally, specific ductile detailing requirements, as mandated by codes like ACI 318 or AISC 341, are incorporated to ensure the structure can dissipate seismic energy through controlled inelastic deformations without brittle failure.\n\nFinally, comprehensive design documentation is paramount for regulatory approval and construction. This typically includes a detailed structural design report outlining the project scope, design criteria, analytical methods, assumptions, and a summary of results. It is accompanied by complete structural calculations, including hand calculations and software outputs, demonstrating compliance with code provisions. A full set of construction drawings, illustrating member sizes, reinforcement details, connection designs, and specific seismic detailing, ensures the design intent is clearly communicated to the construction team. These documents undergo rigorous internal and often external peer review to validate the design's safety and constructability.",
+            "feedback": {
+                "c1": "Excellent. The submission provides a highly detailed and accurate description of seismic load consideration, covering site class, spectral accelerations (Ss, S1), importance factor, and both ELF and MRSA application contexts. (9.5/10)",
+                "c2": "Excellent. The response demonstrates a comprehensive understanding of structural analysis methods, correctly identifying both static and dynamic approaches, mentioning specific software, and linking them to building complexity. The depth of explanation for LRFD and ductile detailing is strong. (32/35)",
+                "c3": "Good. The submission effectively integrates code-based safety margins through a clear explanation of LRFD, including load and resistance factors. The rationale for ductile detailing further strengthens this criterion. It provides a strong basis for safety, aligning with a high-level understanding. (26/30)",
+                "c4": "Excellent. The description of documentation is professional, well-structured, and comprehensive, detailing the various components (design report, calculations, drawings) and highlighting the importance of peer review. (24/25)",
+                "total": "91.5/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "key_points": [
+                "Mentions seismic loads as forces from ground shaking, without specific calculation methods.",
+                "Refers to computer modeling generally, but lacks specific analysis types or equations.",
+                "Understands safety factors are for strength, but not specific code integration (LRFD/ASD).",
+                "Basic identification of documentation as 'plans and reports' for permits."
+            ],
+            "llm_questions": [
+                "How do engineers generally estimate the force of an earthquake on a building?",
+                "What kind of computer models do engineers use for buildings?",
+                "Why are safety factors important in building design?",
+                "What are the main documents needed to get a building permit?"
+            ],
+            "llm_answers": [
+                "Engineers generally estimate earthquake forces by looking at where the building is located and how heavy it is. They use standard tables and formulas from building codes that tell them what force to expect for a building of a certain size in a specific seismic area. It's about getting a 'design' force that the building must withstand.",
+                "Engineers use computer models that are like virtual versions of the building. These models let them see how forces like gravity, wind, and earthquakes move through the structure. They can create a 3D model that shows beams, columns, and floors, and then apply forces to simulate real-world conditions.",
+                "Safety factors are important because they make sure the building is much stronger than the forces it's expected to experience. This extra strength acts as a buffer against unexpected events, variations in material strength, or errors during construction. It's all about ensuring the building remains safe even under higher-than-expected loads.",
+                "The main documents needed for a building permit typically include architectural drawings (floor plans, elevations), structural drawings (showing beams, columns, foundations), and sometimes a structural report that explains the design choices and calculations. These documents demonstrate that the design meets local building codes and safety standards."
+            ],
+            "final_submission": "Designing a mid-rise building in an earthquake-prone zone requires a careful analytical approach from a structural engineer. The first step involves understanding that earthquakes generate significant lateral forces that the building must resist. The engineer considers how the ground shaking will translate into forces acting on the structure. This isn't just about the building's weight, but also its stiffness and how it will move. While specific equations are used, the general idea is to estimate a total base shear, which is the overall horizontal force at the foundation level.\n\nFor structural analysis, engineers rely heavily on computer modeling. They build a virtual representation of the building, including its columns, beams, and shear walls. This model helps them understand how the building will deform and how forces will distribute throughout the structure when subjected to earthquake loads. While the submission doesn't delve into specific dynamic analysis methods, the intent is to ensure the building's components can withstand these calculated forces. The software helps visualize load paths and potential stress concentrations.\n\nSafety margins are crucial. Engineers incorporate safety factors by making sure that the structural elements are designed to be stronger than the calculated forces. This means they apply factors to the loads, increasing them, and sometimes factors to the material strengths, reducing them, to create a buffer. This ensures the building has enough reserve strength to perform safely during an earthquake, preventing collapse. The goal is to provide a robust design that can handle the unpredictability of seismic events.\n\nFinally, the entire design process culminates in design documentation. This typically involves preparing a set of structural drawings that clearly depict all structural elements, their sizes, and connections. A structural report is also usually prepared, explaining the design criteria, methods used, and key assumptions. These documents are then submitted to local authorities for review and approval, confirming that the building design complies with all relevant building codes and safety regulations before construction can commence. Clear communication through these documents is essential.",
+            "feedback": {
+                "c1": "Average. The submission mentions seismic loads as forces from ground shaking and considers building weight and stiffness. However, it lacks specific methods or terminology for calculating these loads, staying at a general level of understanding. (7/10)",
+                "c2": "Average. The response correctly identifies the use of computer modeling for structural analysis but remains vague on specific analysis types (e.g., static equivalent, response spectrum) or mathematical equations. It describes the tool without detailing its application. (24/35)",
+                "c3": "Average. The explanation correctly identifies the purpose of safety factors (making elements stronger, reserve strength) but lacks explicit integration with code-mandated load combinations or resistance factors, which are key to 'code-based margins.' (20/30)",
+                "c4": "Good. The submission provides a clear explanation of the documentation, identifying structural drawings and a report as key components for review and approval by authorities. It highlights the importance of clear communication. (20/25)",
+                "total": "71/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "key_points": [
+                "Basic acknowledgement of earthquake forces impacting buildings.",
+                "Minimal detail on specific structural analysis methods or formulas.",
+                "General statements about 'safety' without explaining safety factors or design codes.",
+                "Mentions 'plans' and 'reports' for showing work, but lacks structure or purpose detail."
+            ],
+            "llm_questions": [
+                "What are the main causes of building damage during an earthquake?",
+                "How do engineers make buildings strong enough to resist shaking?",
+                "What is the most important thing about safety in building design?",
+                "What information should be included in drawings for construction workers?"
+            ],
+            "llm_answers": [
+                "Buildings are damaged during an earthquake mainly because the ground moves back and forth, causing the building to shake. If the building isn't designed to flex or move with the ground, its parts can break, leading to cracks or even collapse.",
+                "Engineers make buildings strong by choosing the right materials, like steel or concrete, and arranging them in a way that can handle the forces. They design elements like shear walls or strong frames that can absorb or redirect the earthquake energy.",
+                "The most important thing about safety in building design is to ensure that even in a very strong earthquake, the building will not collapse, allowing people inside to evacuate safely. It's about protecting lives first and foremost.",
+                "Drawings for construction workers should include all the dimensions, the types of materials to use, and how different parts of the building connect. For example, they'll show where the reinforcing bars go in concrete or how steel beams are bolted together."
+            ],
+            "final_submission": "When a structural engineer designs a mid-rise building in an earthquake-prone zone, their primary concern is to ensure the building can withstand the shaking. Earthquakes generate powerful forces that can push and pull the structure, so the design must account for these movements. The engineer needs to figure out how much force the building will experience from the ground moving, which is generally called seismic load. This often involves looking at historical data for the area.\n\nRegarding structural analysis, the engineer will create a conceptual model of the building. They think about how the columns and beams will work together to resist these lateral forces. While the submission doesn't go into specific equations, the idea is to ensure that each part of the building, from the foundation to the roof, is designed to be stable during an earthquake. This means making sure the frame is robust and can transfer these forces effectively. They use simplified calculations to estimate the strength needed for the main structural elements, ensuring they are not overloaded.\n\nSafety is, of course, a critical aspect of the design. Engineers incorporate a general 'safety margin' by designing components to be stronger than what is strictly required by the basic calculated forces. This buffer helps to account for unexpected increases in load or variations in material strength. The engineer also ensures that the building will not sway too much, which could cause non-structural damage or discomfort, although the exact code-based safety factors are not explicitly detailed in the approach. It's more about a general philosophy of over-design for protection.\n\nFor design documentation, the engineer prepares drawings and reports to communicate the design. These documents show how the building should be constructed to meet the safety requirements. They include structural plans that outline the layout of the load-bearing elements and a brief report that summarizes the design considerations. These documents are important for getting permits and for guiding the construction team, ensuring everyone understands the structural intent and approved methods. The clarity of these documents is vital for successful execution.",
+            "feedback": {
+                "c1": "Average. The submission acknowledges seismic loads and their impact from ground movement but lacks specific details on how these loads are quantified or the types of inputs used (e.g., site class, spectral accelerations). (6/10)",
+                "c2": "Needs Improvement. The description of structural analysis is vague, referring to a 'conceptual model' and 'simplified calculations' without mentioning specific analysis methods (e.g., static, dynamic) or equations. It outlines the goal but not the means. (18/35)",
+                "c3": "Needs Improvement. The submission discusses 'safety margin' and designing components to be 'stronger' but fails to explain how these are implemented through code-based safety factors, load combinations, or resistance factors. The explanation is general rather than technical. (15/30)",
+                "c4": "Good. The submission clearly identifies the components of documentation (drawings, reports) and their purpose for permits and construction guidance, demonstrating a decent understanding of communication. (20/25)",
+                "total": "59/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "key_points": [
+                "Briefly mentions ground shaking as the source of seismic forces.",
+                "Refers to 'calculating forces' with no specific method or equations.",
+                "Limited explanation of safety beyond 'stronger is better' concept.",
+                "Basic mention of design reports, but lacking structure or key content."
+            ],
+            "llm_questions": [
+                "What is the main challenge of designing in an earthquake area?",
+                "How do engineers start their calculations for a building?",
+                "Why can't engineers just build everything extra thick and strong for safety?",
+                "What is the most basic information needed in a construction plan?"
+            ],
+            "llm_answers": [
+                "The main challenge is that earthquakes can happen suddenly and cause very strong, unpredictable forces. Engineers have to design buildings that can handle these forces without breaking apart or collapsing, which is tricky because you can't be sure exactly when or how hard an earthquake will hit.",
+                "Engineers start their calculations by gathering information about the building's size, its materials, and what it will be used for. They also look at where it's being built to understand the local conditions, like soil type and potential for earthquake activity.",
+                "Engineers can't just build everything extra thick and strong because it becomes too expensive and heavy. Over-designing can also make a building too stiff, which might not perform well in an earthquake. There's a balance to be struck between strength, flexibility, cost, and practicality.",
+                "The most basic information needed in a construction plan includes the overall dimensions of the building, the location of major structural parts like columns and walls, and the types of materials to be used. It gives a general overview of how the building goes together."
+            ],
+            "final_submission": "The analytical approach for a structural engineer designing a mid-rise building in an earthquake-prone zone is centered on ensuring the structure can withstand the dynamic forces. The engineer must first consider the seismic loads, which arise from ground shaking during an earthquake. This involves assessing the potential intensity of shaking in the specific geographical area. While the submission acknowledges the presence of these forces, it doesn't specify the methods or codes used to quantify them, beyond understanding that the building needs to resist them.\n\nIn terms of structural analysis methods, the engineer would need to calculate the forces that these seismic loads impart on the building. This usually involves creating a structural model, perhaps using a computer program, to see how the building's frame will respond. However, the submission provides very limited detail on the specific types of analysis (e.g., static or dynamic), the equations involved, or the assumptions made in these models. It simply states that calculations are done to ensure the building can 'take the shaking,' indicating a basic understanding without technical depth.\n\nSafety margins are a general concept applied to ensure the building is robust. The engineer aims to make the building stronger than the minimum required for normal conditions. This is often achieved by adding more material or reinforcing certain parts. However, the explanation lacks specific reference to code-mandated safety factors, such as load factors (e.g., from ASCE 7) or material resistance factors, which are fundamental to engineering safety in seismic design. The discussion on safety is general, without integration of standard engineering practice.\n\nFor design documentation, the engineer prepares reports and plans to formalize the design. These documents are intended to communicate the structural scheme and prove its viability. While the submission mentions that these are prepared, it lacks specifics on the content or structure of a professional technical report for seismic design. It doesn't detail what validations or calculations would be included, or how these documents facilitate the approval process beyond simply being 'documentation.' The overall presentation of documentation is rudimentary.",
+            "feedback": {
+                "c1": "Needs Improvement. The submission briefly mentions ground shaking but offers no specifics on how seismic loads are considered or quantified, lacking any reference to codes, site conditions, or calculation methodologies. (5/10)",
+                "c2": "Needs Improvement. The discussion of structural analysis is vague, referring to general 'calculations' and 'structural models' without naming specific methods, equations, or software. It indicates minimal application of analytical techniques. (17/35)",
+                "c3": "Needs Improvement. The explanation of safety is incomplete, limited to a general idea of making the building 'stronger' without referring to code-based safety factors, load combinations, or design margins. The rationale is superficial. (15/30)",
+                "c4": "Average. The submission mentions preparing reports and plans to 'formalize the design' and 'prove its viability,' showing a basic understanding of documentation's purpose, but it lacks detail on content or structure. (16/25)",
+                "total": "53/100"
+            }
+        },
+        {
+            "quality": "Poor",
+            "key_points": [
+                "Superficial mention of earthquake forces as 'ground movement'.",
+                "No specific structural analysis methods or equations provided.",
+                "Only a vague reference to 'safety' without any technical detail or code integration.",
+                "Documentation mentioned as 'drawings' but with no professional context or content."
+            ],
+            "llm_questions": [
+                "What is the simplest way to describe what an earthquake does to a building?",
+                "How do engineers figure out if a beam is strong enough?",
+                "What does 'safety' mean in terms of how a building is made?",
+                "What are construction drawings used for?"
+            ],
+            "llm_answers": [
+                "The simplest way to describe what an earthquake does is that it shakes the ground violently. When the ground shakes, the bottom of the building moves, but the top of the building wants to stay still, causing the building to bend and sway.",
+                "Engineers figure out if a beam is strong enough by calculating the forces that will act on it, like the weight of the floor above. Then they compare those forces to how much load the beam's material and size can handle before it breaks or bends too much.",
+                "In building design, 'safety' means making sure the building won't fall down and will protect people inside during expected events like wind or smaller earthquakes. It also means using good materials and construction practices so the building lasts.",
+                "Construction drawings are used by the builders to know exactly how to put the building together. They show all the measurements, where everything goes, and what materials to use for each part of the structure."
+            ],
+            "final_submission": "Designing a mid-rise building involves a structural engineer ensuring it stands up and is safe. When it's in an earthquake area, this means thinking about how the ground will move. The engineer knows that ground movement can push the building, so they have to make the building strong enough to resist these pushes. This consideration of 'ground movement' is a basic part of the design, ensuring the building doesn't just fall over when an earthquake happens.\n\nFor structural analysis, the engineer looks at the building's layout. They use simple principles to figure out where to put the walls and columns so that they can carry all the weight. They might draw diagrams to show how forces travel through the building. The goal is to make sure all parts are connected well and can stand on their own. However, the submission does not detail any specific mathematical equations or advanced analysis methods, focusing more on a general 'common sense' approach to structural stability rather than technical calculation or modeling for seismic effects.\n\nSafety is a primary concern for any building. The engineer makes sure that the building has enough strength so that it doesn't break easily. This involves designing the main parts, like the beams and columns, to be solid and capable of supporting the loads. There's a general understanding that components should be robust, but the specific application of safety factors or integration with building codes to define 'design margin' is absent from this explanation. It's more about building things to 'feel' strong.\n\nDocumentation is the final step where the engineer makes drawings. These drawings show where all the parts of the building go and how they connect. They are given to the construction workers so they know how to build the structure. The submission mentions these drawings but does not elaborate on their technical content, purpose for regulatory review, or the inclusion of any specific technical reports or calculations. It's a very basic understanding of what design documentation entails.",
+            "feedback": {
+                "c1": "Poor. The submission provides only a superficial mention of earthquake forces as 'ground movement,' with no specific details on how these loads are identified, quantified, or linked to codes. (2/10)",
+                "c2": "Poor. There is no use of structural equations or methods relevant to seismic analysis. The text describes general structural components but fails to address any analytical techniques for lateral loads or complex structural behavior. (6/35)",
+                "c3": "Needs Improvement. The explanation of safety is vague and non-technical, referring to 'enough strength' and 'solid' parts but completely lacking any reference to safety factors, design margins, or building codes. (14/30)",
+                "c4": "Needs Improvement. While the submission mentions 'drawings' for construction workers, it lacks any meaningful discussion of technical reporting, validation, or the professional content required for engineering documentation. (12/25)",
+                "total": "34/100"
+            }
+        }
+    ]
+}

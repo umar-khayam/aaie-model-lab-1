@@ -1,0 +1,425 @@
+{
+    "domain": "Psychology",
+    "prompt": "Critically evaluate Maslow’s Hierarchy of Needs and its relevance to modern motivation research and workplace psychology.",
+    "rubric": {
+        "rubric_id": "rub_psychology_0012",
+        "criteria": [
+            {
+                "criterion_id": "c1",
+                "name": "Understanding of Maslow's Theory",
+                "description": "Demonstrates accurate knowledge of Maslow's hierarchy and its theoretical foundations.",
+                "performance_descriptors": {
+                    "excellent": "Provides an in-depth, accurate explanation of all five levels (and self-transcendence if applicable) with historical context.",
+                    "good": "Accurately explains the hierarchy, with minor omissions.",
+                    "average": "Covers the basic stages but may show gaps or oversimplification.",
+                    "needs_improvement": "Partial or unclear explanation with notable inaccuracies.",
+                    "poor": "Fails to describe the hierarchy correctly."
+                },
+                "weight": 20
+            },
+            {
+                "criterion_id": "c2",
+                "name": "Critical Evaluation",
+                "description": "Evaluates strengths, weaknesses, and modern critiques of the theory.",
+                "performance_descriptors": {
+                    "excellent": "Expertly critiques the model with reference to cultural bias, empirical validity, and current psychological perspectives.",
+                    "good": "Provides a reasonable evaluation with some depth.",
+                    "average": "Offers a limited or general evaluation without much depth.",
+                    "needs_improvement": "Evaluation is minimal or underdeveloped.",
+                    "poor": "No substantial evaluation provided."
+                },
+                "weight": 25
+            },
+            {
+                "criterion_id": "c3",
+                "name": "Application to Workplace Psychology",
+                "description": "Applies the theory to modern organizational and workplace contexts.",
+                "performance_descriptors": {
+                    "excellent": "Insightfully connects the hierarchy to contemporary motivation practices, HR strategies, and employee engagement.",
+                    "good": "Applies theory to workplace contexts with reasonable clarity.",
+                    "average": "Makes general statements about application without specifics.",
+                    "needs_improvement": "Links to workplace are unclear or poorly supported.",
+                    "poor": "No real-world application provided."
+                },
+                "weight": 15
+            },
+            {
+                "criterion_id": "c4",
+                "name": "Structure and Clarity",
+                "description": "Organizes ideas logically with a coherent flow.",
+                "performance_descriptors": {
+                    "excellent": "Essay is exceptionally well-organized with precise transitions and a logical progression.",
+                    "good": "Generally clear and logical, with small lapses.",
+                    "average": "Some organization issues but still understandable.",
+                    "needs_improvement": "Disorganized in parts, making comprehension harder.",
+                    "poor": "Very poor organization and clarity."
+                },
+                "weight": 40
+            }
+        ]
+    },
+    "submissions": [
+        {
+            "quality": "Excellent",
+            "authorship": "ai",
+            "key_points": [
+                "Explains all levels of Maslow’s hierarchy plus self-transcendence.",
+                "Critiques cultural bias, empirical support, and linear progression assumptions.",
+                "Compares with modern theories such as Self-Determination Theory.",
+                "Applies to HR, employee engagement, wellness, and career development.",
+                "References workplace motivation research for relevance."
+            ],
+            "llm_questions": [
+                "Explain Maslow's hierarchy of needs with examples in daily life.",
+                "What are the main criticisms of Maslow’s hierarchy?",
+                "How can Maslow’s model be applied in workplace motivation strategies?",
+                "Compare Maslow’s hierarchy to Self-Determination Theory."
+            ],
+            "llm_answers": [
+                "Maslow’s hierarchy describes five ascending levels: physiological, safety, love/belonging, esteem, and self-actualization. Later, he suggested self-transcendence. Examples: eating and shelter (physiological/safety), friendships (belonging), promotions (esteem), and personal growth projects (self-actualization).",
+                "Criticisms include cultural bias toward individualism, limited empirical validation of strict ordering, and neglect of situational variability. Research shows needs are often pursued simultaneously.",
+                "In workplaces, organizations meet physiological/safety via fair pay and safe conditions; belonging via teamwork; esteem through recognition; self-actualization via creativity and growth opportunities.",
+                "Self-Determination Theory emphasizes autonomy, competence, and relatedness as universal needs with strong empirical support, functioning concurrently rather than hierarchically."
+            ],
+            "final_submission": "Maslow’s hierarchy of needs remains one of psychology’s most influential frameworks for understanding human motivation. It posits that individuals progress through a sequence of needs, from physiological and safety requirements to social belonging, esteem, and ultimately self-actualization. Maslow later introduced self-transcendence, emphasizing purpose beyond the self.\n\nHowever, the model has been criticized for its lack of empirical evidence and overly rigid sequencing. Studies suggest that people pursue multiple needs simultaneously and that the order varies by culture and context. For example, individuals in crisis might prioritize safety over all else, while others might seek belonging even at the cost of safety.\n\nFurthermore, the theory is critiqued for its cultural bias toward Western individualism, particularly in its emphasis on self-actualization. Modern theories such as Self-Determination Theory provide empirically supported alternatives, emphasizing autonomy, competence, and relatedness as fundamental psychological needs that operate concurrently.\n\nDespite limitations, Maslow’s theory continues to inform workplace psychology. Employers address physiological and safety needs through salaries and safe conditions; belonging needs through inclusive cultures; esteem needs through recognition and advancement; and self-actualization needs through opportunities for creativity and growth.\n\nIn conclusion, Maslow’s model is not a definitive scientific account of motivation but a useful heuristic that highlights the importance of holistic need fulfillment, even as modern theories refine or replace its assumptions.",
+            "feedback": {
+                "c1": "Excellent. Comprehensive explanation of all levels including self-transcendence. (20/20)",
+                "c2": "Excellent. Nuanced critique covering cultural bias and empirical validity. (25/25)",
+                "c3": "Excellent. Rich application to workplace practices. (15/15)",
+                "c4": "Excellent. Essay is coherent and logically structured. (40/40)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Excellent",
+            "authorship": "human",
+            "key_points": [
+                "Explains all levels of Maslow’s hierarchy plus self-transcendence.",
+                "Critiques cultural bias, empirical support, and linear progression assumptions.",
+                "Compares with modern theories such as Self-Determination Theory.",
+                "Applies to HR, employee engagement, wellness, and career development.",
+                "References workplace motivation research for relevance."
+            ],
+             "llm_questions": [
+                "Explain Maslow's hierarchy of needs with examples in daily life.",
+                "What are the main criticisms of Maslow’s hierarchy?",
+                "How can Maslow’s model be applied in workplace motivation strategies?",
+                "Compare Maslow’s hierarchy to Self-Determination Theory."
+            ],
+            "llm_answers": [
+                "Maslow’s hierarchy describes five ascending levels: physiological, safety, love/belonging, esteem, and self-actualization. Later, he suggested self-transcendence. Examples: eating and shelter (physiological/safety), friendships (belonging), promotions (esteem), and personal growth projects (self-actualization).",
+                "Criticisms include cultural bias toward individualism, limited empirical validation of strict ordering, and neglect of situational variability. Research shows needs are often pursued simultaneously.",
+                "In workplaces, organizations meet physiological/safety via fair pay and safe conditions; belonging via teamwork; esteem through recognition; self-actualization via creativity and growth opportunities.",
+                "Self-Determination Theory emphasizes autonomy, competence, and relatedness as universal needs with strong empirical support, functioning concurrently rather than hierarchically."
+            ],
+            "final_submission": "Abraham Maslow's hierarchy of needs provides a foundational, pyramid-shaped model for understanding what drives people. It starts with our most basic survival needs at the bottom—like food and shelter—and moves up through safety, social connection, and self-esteem, to the peak of self-actualization. The core concept is that we must satisfy the lower-level needs before we can truly focus on the higher ones, an idea that has been incredibly influential in and out of psychology.\n\nHowever, the model has been criticized for its lack of empirical evidence and overly rigid sequencing. Studies suggest that people pursue multiple needs simultaneously and that the order varies by culture and context. For example, individuals in crisis might prioritize safety over all else, while others might seek belonging even at the cost of safety.\n\nFurthermore, the theory is critiqued for its cultural bias toward Western individualism, particularly in its emphasis on self-actualization. Modern theories such as Self-Determination Theory provide empirically supported alternatives, emphasizing autonomy, competence, and relatedness as fundamental psychological needs that operate concurrently.\n\nDespite limitations, Maslow’s theory continues to inform workplace psychology. Employers address physiological and safety needs through salaries and safe conditions; belonging needs through inclusive cultures; esteem needs through recognition and advancement; and self-actualization needs through opportunities for creativity and growth.\n\nUltimately, while Maslow’s hierarchy may lack the empirical rigor of contemporary motivational theories, its lasting legacy is undeniable. It serves as an accessible and powerful reminder that human motivation is multifaceted and that to truly engage people, whether in the workplace or society at large, we must consider the whole person—from their basic need for security to their highest aspirations for growth and meaning.",
+            "feedback": {
+                "c1": "Excellent. Comprehensive explanation of all levels. (20/20)",
+                "c2": "Excellent. Nuanced critique covering cultural bias and empirical validity. (25/25)",
+                "c3": "Excellent. Rich application to workplace practices. (15/15)",
+                "c4": "Excellent. Essay is coherent and logically structured. (40/40)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [
+                    1,
+                    2,
+                    3
+                ],
+                "human_paragraph_indices": [
+                    0,
+                    4
+                ],
+                "notes": "Human fully rewrote intro and conclusion paragraphs."
+            }
+        },
+        {
+            "quality": "Excellent",
+            "authorship": "hybrid",
+            "key_points": [
+                "Explains all levels of Maslow’s hierarchy plus self-transcendence.",
+                "Critiques cultural bias, empirical support, and linear progression assumptions.",
+                "Compares with modern theories such as Self-Determination Theory.",
+                "Applies to HR, employee engagement, wellness, and career development.",
+                "References workplace motivation research for relevance."
+            ],
+             "llm_questions": [
+                "Explain Maslow's hierarchy of needs with examples in daily life.",
+                "What are the main criticisms of Maslow’s hierarchy?",
+                "How can Maslow’s model be applied in workplace motivation strategies?",
+                "Compare Maslow’s hierarchy to Self-Determination Theory."
+            ],
+            "llm_answers": [
+                "Maslow’s hierarchy describes five ascending levels: physiological, safety, love/belonging, esteem, and self-actualization. Later, he suggested self-transcendence. Examples: eating and shelter (physiological/safety), friendships (belonging), promotions (esteem), and personal growth projects (self-actualization).",
+                "Criticisms include cultural bias toward individualism, limited empirical validation of strict ordering, and neglect of situational variability. Research shows needs are often pursued simultaneously.",
+                "In workplaces, organizations meet physiological/safety via fair pay and safe conditions; belonging via teamwork; esteem through recognition; self-actualization via creativity and growth opportunities.",
+                "Self-Determination Theory emphasizes autonomy, competence, and relatedness as universal needs with strong empirical support, functioning concurrently rather than hierarchically."
+            ],
+            "final_submission": "Maslow’s hierarchy of needs remains one of psychology’s most influential frameworks for understanding human motivation. It posits that individuals progress through a sequence of needs, from physiological and safety requirements to social belonging, esteem, and ultimately self-actualization. Maslow later introduced self-transcendence, emphasizing purpose beyond the self.\n\nHowever, the model has been criticized for its lack of empirical evidence and overly rigid sequencing. Studies suggest that people pursue multiple needs simultaneously and that the order varies by culture and context. For example, individuals in crisis might prioritize safety over all else, while others might seek belonging even at the cost of safety.\n\nFurthermore, the theory is critiqued for its cultural bias toward Western individualism, particularly in its emphasis on self-actualization. Modern theories such as Self-Determination Theory provide empirically supported alternatives, emphasizing autonomy, competence, and relatedness as fundamental psychological needs that operate concurrently.\n\nDespite its limitations, Maslow’s theory continues to provide valuable insights for workplace psychology. For example, employers can address physiological and safety needs through competitive salaries, robust benefits, and a physically safe work environment. They can foster a sense of belonging through inclusive team cultures and collaborative projects. Esteem needs can be met through public recognition and clear paths for advancement, and self-actualization can be supported by providing opportunities for creativity, autonomy, and professional development. In this way, the hierarchy serves as a practical checklist for creating a motivating organizational environment.\n\nIn conclusion, Maslow’s model is not a definitive scientific account of motivation but a useful heuristic that highlights the importance of holistic need fulfillment, even as modern theories refine or replace its assumptions.",
+            "feedback": {
+                "c1": "Excellent. Comprehensive explanation of all levels. (20/20)",
+                "c2": "Excellent. Nuanced critique covering cultural bias and empirical validity. (25/25)",
+                "c3": "Excellent. Rich application to workplace practices. (15/15)",
+                "c4": "Excellent. Essay is coherent and logically structured. (40/40)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [
+                    0,
+                    1,
+                    2,
+                    4
+                ],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [
+                    3
+                ],
+                "notes": "Slightly modified the workplace psychology paragraph for better flow and added phrases."
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "ai",
+            "key_points": [
+                "Accurately explains the five levels of the hierarchy.",
+                "Briefly mentions cultural bias and empirical weakness.",
+                "Applies the theory to the workplace with at least one example.",
+                "The structure is mostly clear."
+            ],
+            "llm_questions": [
+                "What are Maslow’s five levels?",
+                "Give a simple workplace application of Maslow’s model.",
+                "What is one criticism of the hierarchy?"
+            ],
+            "llm_answers": [
+                "The five levels are physiological, safety, love/belonging, esteem, and self-actualization.",
+                "In the workplace, pay and safe conditions meet basic needs; teamwork helps belonging; promotions support esteem.",
+                "A criticism is that it lacks strong scientific evidence for its rigid order."
+            ],
+            "final_submission": "Maslow’s hierarchy of needs suggests people are motivated to fulfill lower needs before higher ones. It includes physiological, safety, belonging, esteem, and self-actualization. In workplaces, pay and safe conditions address the basics, while teamwork and recognition meet higher needs. Although still widely used, critics note weak empirical support and cultural bias. Overall, the model offers a helpful framework.",
+            "feedback": {
+                "c1": "Good. Covers the hierarchy correctly. (16/20)",
+                "c2": "Good. Mentions critiques but without much detail. (20/25)",
+                "c3": "Good. Applies to workplace contexts with examples. (12/15)",
+                "c4": "Good. Generally clear and logical. (32/40)",
+                "total": "80/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "ai",
+            "key_points": [
+                "Excellent understanding of Maslow's theory, but fails to organize the information clearly.",
+                "Strong critical evaluation points are present but lost in disorganized paragraphs.",
+                "Good application to workplace psychology.",
+                "Significant issues with structure and clarity."
+            ],
+            "llm_questions": [
+                "How does self-transcendence broaden Maslow's hierarchy?",
+                "What are the most significant contemporary critiques of the theory?",
+                "How can a strong understanding of a theory be undermined by poor presentation?"
+            ],
+            "llm_answers": [
+                "Self-transcendence extends the hierarchy beyond individual fulfillment to include motivations for serving something greater than oneself.",
+                "Contemporary critiques emphasize its cultural specificity, lack of empirical support for a rigid hierarchy, and its failure to account for simultaneous need pursuit.",
+                "Poor presentation can obscure insights by making it difficult for the reader to follow the logical progression, distinguish main points from supporting details, or appreciate the depth of the analysis."
+            ],
+            "final_submission": "Maslow's Hierarchy of Needs posits a progression of five fundamental needs: physiological, safety, love/belonging, esteem, and self-actualization, with a later addition of self-transcendence. Its conceptual strength is its holistic view of human motivation. However, its rigid, linear progression is a significant point of contention, as empirical evidence fails to support a strict order. Cultural biases are also evident, with its emphasis on self-actualization resonating more with individualistic cultures. Modern research suggests needs can be pursued simultaneously. In workplace psychology, Maslow's framework informs strategies for motivation, such as ensuring adequate compensation (physiological/safety), fostering team cohesion (belonging), and providing recognition (esteem) and growth opportunities (self-actualization). However, a rigid application can be problematic, ignoring individual variances. The content shows a strong grasp of the theory and its critiques, but the presentation is very disorganized, making it hard to follow.",
+            "feedback": {
+                "c1": "Excellent. Demonstrates a comprehensive understanding. (19/20)",
+                "c2": "Excellent. Provides a sophisticated critical evaluation. (23/25)",
+                "c3": "Good. Applies the theory to workplace contexts well. (12/15)",
+                "c4": "Needs Improvement. The structure is highly disorganized, which obscures the strong content. (20/40)",
+                "total": "74/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "ai",
+            "key_points": [
+                "Explains the basics of the hierarchy.",
+                "Gives a generic application to the workplace.",
+                "Evaluation is brief and shallow.",
+                "Simple, clear structure."
+            ],
+            "llm_questions": [
+                "What is Maslow’s hierarchy in simple terms?",
+                "How does it apply at work?"
+            ],
+            "llm_answers": [
+                "It is a model with five levels of needs from basic to advanced.",
+                "At work, companies can meet these needs by paying salaries and giving recognition."
+            ],
+            "final_submission": "Maslow’s hierarchy is a theory about human needs. It says people start with basic needs like food and safety, then move to belonging, esteem, and finally self-actualization. In jobs, pay and recognition can motivate workers. The theory has been useful but also criticized for being too simple.",
+            "feedback": {
+                "c1": "Average. Basic explanation. (13/20)",
+                "c2": "Average. Minimal critical evaluation. (16/25)",
+                "c3": "Average. Workplace applications are general. (10/15)",
+                "c4": "Average. Structure is present but undeveloped. (26/40)",
+                "total": "65/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "ai",
+            "key_points": [
+                "Accurate explanation of the five core levels of Maslow's hierarchy.",
+                "Limited depth in critical evaluation.",
+                "Provides general applications to workplace scenarios.",
+                "Well-structured and easy to read."
+            ],
+            "llm_questions": [
+                "Can Maslow's hierarchy be used in all cultures?",
+                "How do companies use Maslow's ideas to motivate employees?",
+                "What is one common criticism of Maslow's theory?"
+            ],
+            "llm_answers": [
+                "No, its focus on individual self-actualization may not align with collectivist cultures.",
+                "By providing competitive salaries, fostering teamwork, and offering recognition and growth opportunities.",
+                "A valid criticism is the lack of strong empirical evidence for the strict, sequential progression of needs."
+            ],
+            "final_submission": "Maslow’s Hierarchy of Needs is a theory that proposes humans are motivated by five basic needs in a pyramid. The first level is physiological needs, like food and water. Once met, individuals move to safety needs. The third level is love and belonging. Above this are esteem needs. At the top is self-actualization.\n\nThe theory is influential but has critics. A common criticism is the lack of evidence for its rigid order. Research shows people often pursue multiple needs at once, and the order can vary by culture.\n\nDespite this, Maslow's Hierarchy is relevant in workplace psychology. Organizations apply its principles to design motivational strategies. For example, a competitive salary addresses physiological needs, while team-building activities address belonging needs. Recognition programs help with esteem.",
+            "feedback": {
+                "c1": "Good. Explains the five core levels accurately. (16/20)",
+                "c2": "Needs Improvement. The critical evaluation is underdeveloped. (12/25)",
+                "c3": "Average. Provides general but correct applications. (9/15)",
+                "c4": "Good. The essay is well-structured and clear. (30/40)",
+                "total": "67/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1,2],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "ai",
+            "key_points": [
+                "Unclear and partial definition of the hierarchy.",
+                "Minimal evaluation.",
+                "Vague examples.",
+                "Weak structure."
+            ],
+            "llm_questions": [
+                "what is maslow needs",
+                "how is it used in jobs"
+            ],
+            "llm_answers": [
+                "Maslow needs are things people want in order, like food, safety, and love.",
+                "Jobs can use it by giving money and recognition."
+            ],
+            "final_submission": "Maslow’s theory says people need things in order like food, safety, love, and respect. In jobs, money and respect are examples. The theory is not always right and has problems. It is used sometimes in companies but not always well.",
+            "feedback": {
+                "c1": "Needs Improvement. Incomplete description. (10/20)",
+                "c2": "Needs Improvement. Evaluation is almost absent. (13/25)",
+                "c3": "Needs Improvement. Workplace examples are minimal. (7/15)",
+                "c4": "Needs Improvement. Weak organization. (20/40)",
+                "total": "50/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "ai",
+            "key_points": [
+                "A partial and somewhat confused understanding of Maslow's theory.",
+                "Minimal and ineffective critical evaluation.",
+                "Vague and generic attempts at workplace application.",
+                "Some attempt at structure, but clarity is poor."
+            ],
+            "llm_questions": [
+                "What is one part of Maslow's theory that is difficult to understand?",
+                "How can someone improve their critical evaluation skills?",
+                "Give a simple example of meeting a 'belonging' need at work."
+            ],
+            "llm_answers": [
+                "It's hard to understand if needs must always be met in order.",
+                "By identifying assumptions, looking for evidence, and considering different perspectives.",
+                "Organizing team lunches or social events."
+            ],
+            "final_submission": "Maslow’s Hierarchy of Needs is a theory about what people want. It says there are levels of needs. First, people need things to live. After that, they need to feel safe. Then, they need friends. Next, people want to feel important. The highest level is self-actualization.\n\nThis theory has issues. It is not always true that everyone follows these steps. Sometimes people might skip a step. The theory might be mostly for people in some countries, not all over the world.\n\nIn the workplace, Maslow’s theory can be used. Companies should make sure people get paid enough. Then, they should help employees feel like part of a team. After that, giving promotions can make people feel respected.",
+            "feedback": {
+                "c1": "Needs Improvement. Provides a partial understanding of the hierarchy. (10/20)",
+                "c2": "Poor. Offers minimal critical evaluation. (8/25)",
+                "c3": "Needs Improvement. Attempts to apply the theory but with very generic examples. (7/15)",
+                "c4": "Average. There's an attempt at structure, but clarity is lacking. (25/40)",
+                "total": "50/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1,2],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Poor",
+            "authorship": "ai",
+            "key_points": [
+                "Misunderstands or confuses the levels of the hierarchy.",
+                "No evaluation.",
+                "No workplace application.",
+                "Very disorganized writing."
+            ],
+            "llm_questions": [
+                "what is maslow",
+                "why is it important"
+            ],
+            "llm_answers": [
+                "Maslow is a person in psychology.",
+                "It is important because people want things."
+            ],
+            "final_submission": "Maslow was a psychologist. He said people want things. Like food and money. This is important because jobs need to give people things. That is Maslow.",
+            "feedback": {
+                "c1": "Poor. Does not explain the hierarchy. (4/20)",
+                "c2": "Poor. No evaluation or critique. (5/25)",
+                "c3": "Poor. No real-world application provided. (3/15)",
+                "c4": "Poor. Very weak structure and clarity. (8/40)",
+                "total": "20/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        }
+    ]
+}

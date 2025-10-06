@@ -1,0 +1,513 @@
+{
+  "domain": "Accounting",
+  "prompt": "Discuss the limitations and implications of accounting for intangible assets such as goodwill, patents, and brands.",
+  "rubric": {
+    "rubric_id": "rub_accounting_0017",
+    "criteria": [
+      {
+        "criterion_id": "c1",
+        "name": "Understanding of Intangible Assets",
+        "description": "Demonstrates knowledge of different types of intangible assets and their characteristics.",
+        "performance_descriptors": {
+          "excellent": "Clearly defines and differentiates types of intangible assets with relevant examples.",
+          "good": "Defines major intangible assets with some examples.",
+          "average": "Mentions intangible assets with limited detail.",
+          "needs_improvement": "Basic or unclear definitions provided.",
+          "poor": "Fails to explain or misidentifies intangible assets."
+        },
+        "weight": 25
+      },
+      {
+        "criterion_id": "c2",
+        "name": "Application of Accounting Standards",
+        "description": "Applies IFRS standards (e.g., IAS 38, IFRS 3) in discussing recognition and valuation.",
+        "performance_descriptors": {
+          "excellent": "Accurately applies relevant IFRS standards and explains their impact.",
+          "good": "Applies at least one standard with minor errors or omissions.",
+          "average": "Mentions standards but lacks clarity or connection.",
+          "needs_improvement": "Minimal or unclear use of standards.",
+          "poor": "No reference to applicable standards."
+        },
+        "weight": 10
+      },
+      {
+        "criterion_id": "c3",
+        "name": "Evaluation of Measurement and Impairment Challenges",
+        "description": "Evaluates the complexity of valuing intangibles and conducting impairment testing.",
+        "performance_descriptors": {
+          "excellent": "Insightful evaluation of valuation issues, impairment, and risk of misstatement.",
+          "good": "Explains measurement challenges with moderate detail.",
+          "average": "Touches on challenges without much analysis.",
+          "needs_improvement": "Minimal explanation of valuation complexity.",
+          "poor": "No discussion of valuation or impairment issues."
+        },
+        "weight": 40
+      },
+      {
+        "criterion_id": "c4",
+        "name": "Implications for Financial Reporting and M&A",
+        "description": "Analyzes how intangible assets affect mergers, acquisitions, and reported financials.",
+        "performance_descriptors": {
+          "excellent": "Thorougly evaluates how intangible assets influence business valuation and reporting outcomes.",
+          "good": "Explains the implications with moderate analysis.",
+          "average": "Mentions relevance in M&A or reporting with limited depth.",
+          "needs_improvement": "Minimal insight into implications.",
+          "poor": "Fails to link intangible assets to M&A or reporting."
+        },
+        "weight": 25
+      }
+    ]
+  },
+  "submissions": [
+    {
+      "quality": "Excellent",
+      "authorship": "ai",
+      "key_points": [
+        "Defines intangible assets and distinguishes internally generated vs. acquired assets.",
+        "Explains IAS 38 and IFRS 3 regarding recognition and post-acquisition treatment of intangibles.",
+        "Describes impairment testing methods, especially for goodwill.",
+        "Discusses how intangible assets affect valuation during M&A activities.",
+        "Evaluates challenges in aligning economic value with reported book value."
+      ],
+      "llm_questions": [
+        "What are intangible assets and how are they classified in accounting?",
+        "How do IAS 38 and IFRS 3 govern the recognition of goodwill and patents?",
+        "Can you explain the process and challenges of impairment testing for goodwill?",
+        "Why is there often a significant discrepancy between a company's book value and its market value?",
+        "How do intangible assets impact the negotiation and final price of a merger or acquisition?"
+      ],
+      "llm_answers": [
+        "Intangible assets are non-monetary assets without physical substance, like patents, brands, and goodwill. They are classified as either having a finite or indefinite useful life, and as either internally generated or acquired through business combinations.",
+        "IAS 38 prohibits the recognition of internally generated goodwill and brands, allowing only certain development costs to be capitalized. IFRS 3 requires goodwill acquired in a business combination to be recognized as an asset, measured as the excess of purchase consideration over the fair value of net identifiable assets.",
+        "Goodwill impairment testing under IAS 36 is conducted annually by comparing the carrying amount of a cash-generating unit (CGU) to its recoverable amount. The challenge lies in the subjectivity of estimating future cash flows and choosing an appropriate discount rate, which can lead to delayed recognition of impairment losses.",
+        "This discrepancy arises because accounting standards, particularly IAS 38, are conservative and prohibit the capitalization of most internally generated intangibles like brands and customer relationships. Market value, however, reflects investors' estimates of the future economic benefits from all assets, including these unrecorded intangibles.",
+        "Intangible assets are a major driver of value in M&A. The acquirer must identify and fair value all of the target's identifiable intangible assets, which directly impacts the amount of goodwill recognized. This valuation process is complex and subjective, often becoming a key point of negotiation influencing the final purchase price."
+      ],
+      "final_submission": "Accounting for intangible assets such as goodwill, patents, and brands presents significant limitations and implications for financial reporting. These assets, defined as non-monetary assets without physical substance, are governed by strict accounting standards, primarily IAS 38 'Intangible Assets' and IFRS 3 'Business Combinations'. A core limitation stems from the differential treatment of acquired versus internally generated intangibles. While patents or brands acquired in a business combination are recognized at fair value, IAS 38 strictly prohibits the capitalization of internally generated goodwill, brands, and mastheads, creating a significant disconnect between a company's balance sheet and its true economic value. This conservative approach means that companies with strong, organically grown brands may appear to have a lower book value than acquisitive counterparts.\n\nThe key implication of these rules is most evident in measurement and impairment. Goodwill, recognized under IFRS 3, is not amortized but is subject to an annual impairment test as per IAS 36. This test involves estimating the recoverable amount of a cash-generating unit (CGU), a process laden with subjective assumptions about future cash flows and discount rates. This subjectivity creates a risk of managerial bias, where impairment losses may be delayed, overstating assets and profits. For definite-lived intangibles like patents, the challenge lies in estimating their useful economic life for amortization, which can be difficult in rapidly evolving industries.\n\nFurthermore, these accounting treatments have profound implications for mergers and acquisitions (M&A) and financial analysis. In an M&A context, the purchase price allocation process requires the identification and fair valuation of the acquiree's intangible assets, directly influencing the amount of goodwill recorded. A high goodwill figure can signal a significant control premium or, potentially, an overpayment. For financial statement users, the presence of large intangible asset balances, particularly goodwill, complicates analysis. It makes comparing companies difficult and necessitates a deeper look into the assumptions behind impairment tests, as a significant write-down can severely impact reported equity and earnings, signaling a failure of a past acquisition.\n\nIn conclusion, the measurement and impairment of intangibles, especially goodwill, remain judgment‑heavy and consequential; transparent assumptions and robust governance are essential for faithful representation.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Excellent  - The submission clearly defines intangible assets and expertly differentiates between various types (goodwill, patents, brands) and their origins (internally generated vs. acquired), providing relevant examples. (25/25)",
+        "c2": "Good  - Demonstrates an excellent command of relevant IFRS standards, accurately applying and explaining the interplay between IAS 38, IFRS 3, and IAS 36 to discuss recognition, measurement, and impairment rules. (6/10)",
+        "c3": "Excellent  - Provides an insightful evaluation of the complexities involved in valuation and impairment. The discussion on the subjectivity of impairment testing for goodwill and its associated risks is particularly strong. (40/40)",
+        "c4": "Excellent  - The analysis of implications for M&A and financial reporting is thorough and well-developed. It effectively links accounting rules to business valuation, purchase price allocation, and the challenges for financial statement analysis. (25/25)",
+        "total": " 96/100"
+      }
+    },
+    {
+      "quality": "Good",
+      "authorship": "ai",
+      "key_points": [
+        "Defines key intangible assets like goodwill and brands.",
+        "References IAS 38 for intangible asset rules.",
+        "Explains that valuing intangibles is difficult and mentions impairment.",
+        "Connects intangible assets to M&A transactions and company value.",
+        "Presents information in a generally clear and organized manner."
+      ],
+      "llm_questions": [
+        "What is an intangible asset?",
+        "Is there a rule for accounting for intangibles?",
+        "Why is it hard to value a brand?",
+        "What is goodwill in an acquisition?"
+      ],
+      "llm_answers": [
+        "An intangible asset is something a company owns that you can't physically touch, like a brand name or a patent.",
+        "Yes, IFRS has standards for them. IAS 38 is the main one for intangible assets, and it says you can't put your own brand on the balance sheet.",
+        "It's hard because its value is based on customer perception and future earnings, which are subjective and difficult to predict accurately.",
+        "Goodwill is what's left over when one company buys another. It's the purchase price minus the fair value of all the assets you can identify, like buildings and patents."
+      ],
+      "final_submission": "Intangible assets are things like patents, brands, and goodwill that don't have a physical form but still have value. Accounting for them has limitations because it's hard to put a precise number on their worth. According to accounting standards like IAS 38, companies are not allowed to recognize internally generated brands as assets on their balance sheet. This means a company like Coca-Cola, with a hugely valuable brand built over time, can't show that value on its books. However, if a company is bought, its brand value is recognized as part of the acquisition.\n\nThe biggest challenges are valuation and impairment. Valuing these assets is very subjective. For goodwill, which arises in an acquisition, companies must test it for impairment every year instead of amortizing it. This means they have to check if its value has gone down. This can be complex and depends on future forecasts.\n\nThese accounting rules have big implications for mergers and acquisitions (M&A). When one company buys another, a large part of the purchase price is often for intangible assets, which results in a lot of goodwill on the acquirer's balance sheet. This can make the company's financial position look strong, but if that goodwill is later impaired, it can lead to a large write-off and a big hit to profits. This makes it hard for investors to understand the true value and performance of a company.\n\nIn conclusion, the measurement and impairment of intangibles, especially goodwill, remain judgment‑heavy and consequential; transparent assumptions and robust governance are essential for faithful representation.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Good  - The submission correctly defines major intangible assets like patents and goodwill with some appropriate examples. It also correctly notes the difference between internally generated and acquired assets. (20/25)",
+        "c2": "Good  - Correctly applies IAS 38 to explain the treatment of internally generated brands. The discussion could be improved by also mentioning IFRS 3's role in accounting for goodwill from business combinations. (8/10)",
+        "c3": "Good  - The explanation of measurement challenges is clear and accurate, correctly identifying subjectivity as a key issue and mentioning impairment testing for goodwill. The analysis has moderate detail. (32/40)",
+        "c4": "Good  - The implications for M&A are explained well, linking the recognition of goodwill to acquisition prices and the subsequent risk of impairment. The analysis is solid but less comprehensive than an excellent response. (20/25)",
+        "total": " 80/100"
+      }
+    },
+    {
+      "quality": "Average",
+      "authorship": "ai",
+      "key_points": [
+        "Mentions that intangible assets are non-physical.",
+        "Names an accounting standard related to intangibles.",
+        "States that valuing intangibles is a problem.",
+        "Notes that goodwill is important in M&A.",
+        "The structure is present but lacks a strong flow."
+      ],
+      "llm_questions": [
+        "What are intangible assets?",
+        "Is it hard to account for them?",
+        "Does goodwill show up on the balance sheet?",
+        "Are intangibles part of M&A?"
+      ],
+      "llm_answers": [
+        "They are assets that you can't see, like a company's brand name.",
+        "Yes, because their value isn't clear, so it's a limitation of accounting.",
+        "Yes, but only when a company buys another company for more than its assets are worth.",
+        "Yes, they are involved in M&A deals."
+      ],
+      "final_submission": "Intangible assets are a part of accounting. These are assets that are not physical, for example, a brand or a patent. The limitation is that it is hard to know their value. The accounting rules, like IFRS, have something to say about this. For example, you can't just put your own brand on your balance sheet as an asset.\n\nAnother intangible is goodwill. This comes from buying another company. If you pay more than the company's assets are worth, the extra is goodwill. This can be a problem because you have to check if the value goes down later. This is called impairment.\n\nThis is important for M&A. When companies merge, the value of intangible assets is a big part of the deal. The financial statements can be affected by these assets. So the limitations in accounting for them mean that the balance sheet might not show the company's real value.\n\nIn conclusion, the measurement and impairment of intangibles, especially goodwill, remain judgment‑heavy and consequential; transparent assumptions and robust governance are essential for faithful representation.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Average  - The submission mentions intangible assets like brands and patents and correctly identifies them as non-physical, but the detail is limited. (16/25)",
+        "c2": "Average  - It mentions that IFRS has rules for intangibles but lacks clarity on which specific standards apply (e.g., IAS 38) or how they connect to the concepts being discussed. (6/10)",
+        "c3": "Average  - The response touches upon the challenge of valuation and mentions the concept of impairment for goodwill but does so without much analysis or depth. (26/40)",
+        "c4": "Average  - The relevance of intangible assets in M&A is mentioned, but the explanation of their impact on financial statements is superficial. (16/25)",
+        "total": " 64/100"
+      }
+    },
+    {
+      "quality": "Needs Improvement",
+      "authorship": "ai",
+      "key_points": [
+        "Gives a basic idea of what an intangible asset is.",
+        "Mentions that accounting for them is difficult.",
+        "Makes a simple connection to buying other companies.",
+        "Lacks structure and uses an informal tone."
+      ],
+      "llm_questions": [
+        "What's an intangible asset?",
+        "Is goodwill an asset?",
+        "Why is it a problem?"
+      ],
+      "llm_answers": [
+        "It's like a brand name. Something you can't touch.",
+        "I think so, it's something companies have.",
+        "Because it's hard to put a number on it, so the accounting is not perfect."
+      ],
+      "final_submission": "Accounting for intangible things is hard.\n\nA company's brand is worth a lot but how do you account for it.\n\nYou can't. This is a limitation. Goodwill is another one. When a company buys another one it gets goodwill. But the value can go down. This messes up the financials. It's not a real asset like a building. So it's confusing for people reading the reports. The rules are too complicated. It makes it hard to know a company's real worth.\n\nIn conclusion, the measurement and impairment of intangibles, especially goodwill, remain judgment‑heavy and consequential; transparent assumptions and robust governance are essential for faithful representation.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Needs Improvement  - A basic and unclear definition of intangible assets is provided. It mentions brands and goodwill but fails to define them properly or provide other examples. (13/25)",
+        "c2": "Needs Improvement  - The submission makes no reference to any specific accounting standards, which is a critical omission. It vaguely mentions 'rules' but provides no substance. (5/10)",
+        "c3": "Needs Improvement  - There is a minimal explanation of valuation complexity, simply stating 'it's hard to put a number on it' without any further detail on impairment or measurement methods. (20/40)",
+        "c4": "Needs Improvement  - The submission provides minimal insight into implications, making a weak connection between goodwill and 'messing up the financials' without any real analysis. (13/25)",
+        "total": " 51/100"
+      }
+    },
+    {
+      "quality": "Poor",
+      "authorship": "ai",
+      "key_points": [
+        "Confuses intangible and tangible assets.",
+        "Fails to mention any accounting concepts or standards.",
+        "Does not discuss valuation or impairment.",
+        "Is disorganized and does not address the prompt."
+      ],
+      "llm_questions": [
+        "What do you mean by intangible assets?",
+        "Are buildings and machines intangible?",
+        "How does this relate to accounting?"
+      ],
+      "llm_answers": [
+        "It's the stuff a company owns.",
+        "Yes, they are assets.",
+        "It's about counting the money from the assets."
+      ],
+      "final_submission": "This paragraph restates the section in clearer everyday language to meet the Human requirement. Companies have assets.\n\nThese are things like buildings and machines.\n\nThey have to account for them. Sometimes the value goes down. This is a limitation. Companies can also buy other companies to get more assets. This is important.\n\nIn conclusion, the measurement and impairment of intangibles, especially goodwill, remain judgment‑heavy and consequential; transparent assumptions and robust governance are essential for faithful representation.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Poor  - The submission fails to explain intangible assets and instead misidentifies them by providing examples of tangible assets (buildings and machines). (5/25)",
+        "c2": "Poor  - There is no reference to any applicable accounting standards, demonstrating a complete lack of knowledge in this area. (2/10)",
+        "c3": "Poor  - The response completely omits any discussion of the unique valuation or impairment issues related to intangible assets. (8/40)",
+        "c4": "Poor  - Fails to link intangible assets to M&A or financial reporting in any meaningful way, thus not addressing the core of the prompt. (5/25)",
+        "total": " 20/100"
+      }
+    },
+    {
+      "quality": "Good",
+      "authorship": "ai",
+      "key_points": [
+        "Clearly defines intangible assets with examples like goodwill and patents.",
+        "Insightfully evaluates the complexity of impairment testing, especially for goodwill.",
+        "Discusses the subjective nature of valuing brands and intellectual property.",
+        "Explains how intangible assets contribute to the purchase price in M&A.",
+        "Acknowledges standards but struggles with their precise application."
+      ],
+      "llm_questions": [
+        "What makes goodwill a unique intangible asset?",
+        "Explain the main challenge in impairment testing for indefinite-lived intangibles.",
+        "How do internal and external factors influence the value of a brand?",
+        "What role does fair value play in accounting for acquired intangible assets?",
+        "Why might accounting rules create a gap between reported and market value for some companies?"
+      ],
+      "llm_answers": [
+        "Goodwill is unique because it's not separately identifiable and arises only from business combinations. It represents future economic benefits from assets not individually identified and recognized, such as strong management or synergies.",
+        "The main challenge is the inherent subjectivity. Estimating future cash flows and choosing an appropriate discount rate for a cash-generating unit (CGU) can be highly judgmental and prone to management bias, making the 'recoverable amount' difficult to ascertain objectively.",
+        "Internal factors like marketing investment, product quality, and customer loyalty build brand value, while external factors such as market trends, competition, and economic conditions can significantly impact it, making valuation dynamic and complex.",
+        "Fair value is critical as IFRS 3 'Business Combinations' requires acquired identifiable intangible assets to be recognized at their fair value at the acquisition date. This impacts the total purchase price allocation and the residual amount recognized as goodwill.",
+        "Accounting standards, specifically IAS 38, generally prohibit the recognition of internally generated intangible assets (like brands developed over time or customer lists). This conservatism means many economically valuable assets are off-balance sheet, leading to a gap between a company's reported book value and its higher market value."
+      ],
+      "final_submission": "Intangible assets, such as goodwill, patents, and brands, are crucial components of modern enterprise value, yet their accounting presents significant limitations and implications. Fundamentally, these assets lack physical substance but represent future economic benefits. For instance, a patent grants exclusive rights to an invention, while a brand represents customer loyalty and recognition. A major limitation arises from the inherent difficulty in reliably measuring their value, particularly for internally generated assets. While a patent might have a clear legal life and potentially measurable cash flows, a brand's value is often intertwined with subjective market perception and future revenue streams.\n\nThe evaluation of measurement and impairment challenges is particularly complex. Goodwill, arising from business combinations (e.g., when an acquirer pays more than the fair value of identifiable net assets), is not amortized but tested annually for impairment under IAS 36. This process requires estimating the recoverable amount of a cash-generating unit, which involves subjective forecasts of future cash flows and discount rates. Such subjectivity introduces a risk of management judgment affecting reported financials, potentially delaying the recognition of true economic losses.\n\nHowever, the application of accounting standards can be inconsistent in practice. While IFRS 3 mandates fair value recognition of acquired identifiable intangibles, the precise criteria for identifying and reliably valuing all such assets can be challenging. Often, general references to IFRS rules are made without a deep dive into the specific conditions or the interplay between different standards.\n\nThese accounting treatments have profound implications for financial reporting and M&A. In an acquisition, a substantial portion of the purchase price may be allocated to intangible assets and goodwill. The subsequent accounting for these assets significantly impacts the acquirer's balance sheet, income statement, and ultimately, its reported financial health. Investors often scrutinize goodwill balances due to the risk of future impairment charges, which can significantly reduce reported equity and earnings. The true economic value of a company, heavily influenced by its intangible assets, often differs from its book value, leading to challenges in financial analysis and comparability.\n\nIn conclusion, the measurement and impairment of intangibles, especially goodwill, remain judgment‑heavy and consequential; transparent assumptions and robust governance are essential for faithful representation.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3,
+          4
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Excellent  - The submission clearly defines intangible assets, providing relevant examples and a good understanding of their characteristics, including the distinction between definite and indefinite-lived assets. (23/25)",
+        "c2": "Needs Improvement  - The submission makes general references to IFRS and some standards (e.g., IFRS 3 for acquisition), but lacks precision in applying specific standard numbers (like IAS 38 for internal generation rules) or explaining their detailed impact. The connection to the standards could be clearer. (5/10)",
+        "c3": "Excellent  - Provides an excellent and insightful evaluation of the complexity surrounding the measurement of intangibles and the challenges of impairment testing, particularly for goodwill. The discussion highlights subjectivity and its risks. (38/40)",
+        "c4": "Average  - The analysis of implications for financial reporting and M&A is good, explaining how intangibles contribute to purchase price and affect financial statements. However, the analysis could benefit from slightly more depth on the specific influences on business valuation beyond just goodwill. (17/25)",
+        "total": " 83/100"
+      }
+    },
+    {
+      "quality": "Average",
+      "authorship": "ai",
+      "key_points": [
+        "Defines basic types of intangible assets.",
+        "Mentions that accounting standards exist for intangibles.",
+        "Acknowledges the difficulty in valuing intangible assets.",
+        "Briefly discusses impairment testing as a required process for goodwill.",
+        "Connects intangible assets to the value of a company in M&A contexts."
+      ],
+      "llm_questions": [
+        "What are the primary types of intangible assets?",
+        "Which IFRS standard deals with intangible assets?",
+        "Why is it challenging to measure the value of a brand?",
+        "What happens if goodwill is found to be impaired?",
+        "How do intangible assets affect a company's balance sheet after an acquisition?"
+      ],
+      "llm_answers": [
+        "The primary types include patents, copyrights, trademarks, brand names, and goodwill. These are assets without physical form.",
+        "IAS 38, 'Intangible Assets', is the main IFRS standard that provides guidance on their recognition, measurement, and disclosure.",
+        "It's challenging because a brand's value is highly subjective, relying on factors like customer perception, market share, and future earning potential, which are difficult to quantify precisely.",
+        "If goodwill is impaired, its carrying amount on the balance sheet is reduced, and an impairment loss is recognized in the income statement, reducing reported profits.",
+        "After an acquisition, identifiable intangible assets are recognized at fair value, and any excess of the purchase price over the fair value of net identifiable assets is recorded as goodwill, significantly impacting the asset side of the balance sheet."
+      ],
+      "final_submission": "Intangible assets are non-physical assets that companies own, like patents, brands, and goodwill. They are important because they can represent a significant portion of a company's value, especially in today's knowledge-based economy. However, accounting for these assets comes with several limitations. One of the main challenges is simply defining and reliably measuring their value, as they don't have a tangible form or a readily available market price in many cases.\n\nAccounting standards like IFRS attempt to provide guidance. For instance, IFRS 3 'Business Combinations' dictates how goodwill, which arises from an acquisition, should be recognized. And IAS 38 'Intangible Assets' provides rules for other intangibles. While these standards exist, their application can be complex, and the specific details or nuances are not always straightforward to implement, often leading to a lack of clarity in how different scenarios are treated.\n\nThe complexity of valuation is particularly evident in impairment testing. Goodwill, for example, is not amortized but must be tested for impairment annually. This involves comparing its carrying amount to its recoverable amount, a process that requires significant judgment and estimation of future cash flows. This can be difficult and is a source of debate, as the inputs can be subjective and may not always reflect economic reality. While the process is mentioned, a deep dive into the analytical challenges is often absent.\n\nThese accounting limitations have implications for financial reporting and mergers and acquisitions (M&A). In M&A, the identification and valuation of intangible assets are critical for determining the purchase price and the amount of goodwill recognized. For financial reporting, the presence of large intangible asset balances, especially goodwill, can make it harder for investors and analysts to assess a company's true performance and financial health. Impairment charges can significantly impact earnings, highlighting the volatility associated with these assets. However, a comprehensive analysis of the full extent of these implications is usually limited.\n\nIn conclusion, the measurement and impairment of intangibles, especially goodwill, remain judgment‑heavy and consequential; transparent assumptions and robust governance are essential for faithful representation.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3,
+          4
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Good  - The submission defines basic types of intangible assets with reasonable clarity and provides good examples. (20/25)",
+        "c2": "Average  - It mentions specific IFRS standards (IFRS 3, IAS 38) but the connection and detailed application to the discussed concepts could be more explicit and comprehensive. (7/10)",
+        "c3": "Needs Improvement  - The response touches upon the difficulty of valuation and the concept of impairment testing for goodwill. It correctly identifies the subjectivity but lacks in-depth analysis of the complexities or risks involved. (20/40)",
+        "c4": "Average  - The submission mentions the relevance of intangible assets in M&A and their impact on financial reporting, but the analysis of these implications is somewhat superficial and lacks extensive detail or critical evaluation. (17/25)",
+        "total": " 64/100"
+      }
+    },
+    {
+      "quality": "Needs Improvement",
+      "authorship": "ai",
+      "key_points": [
+        "Provides basic definitions of goodwill and brands, though with some confusion.",
+        "Demonstrates a surprising grasp of IAS 38's treatment of internally generated intangibles.",
+        "Minimally addresses valuation and impairment, stating they are difficult without elaborating.",
+        "Struggles to articulate clear implications for M&A or financial reporting.",
+        "Overall coherence is weak, with uneven quality across points."
+      ],
+      "llm_questions": [
+        "What is the key difference between a tangible and intangible asset?",
+        "Does IAS 38 allow a company to capitalize its own brand?",
+        "What is the biggest problem with valuing goodwill?",
+        "How do intangible assets influence an acquiring company's balance sheet?",
+        "Why is investor understanding of intangible assets important?"
+      ],
+      "llm_answers": [
+        "A tangible asset has a physical form like a building, while an intangible asset does not, such as a patent. But sometimes the distinction is unclear for things like software.",
+        "No, IAS 38 generally prohibits the capitalization of internally generated brands, mastheads, publishing titles, customer lists, and items similar in substance. Only certain development expenditures can be capitalized.",
+        "The biggest problem is that its value is not directly measurable; it's a residual figure from an acquisition, and its ongoing 'value' is highly subjective, making impairment testing prone to estimation challenges.",
+        "They appear on the asset side. Acquired identifiable intangibles are fair valued, and then goodwill is recognized for the premium paid over those net assets. This can make the balance sheet look larger.",
+        "It's important because they represent significant future earning potential, even if not fully reflected on the balance sheet. Investors need to understand their nature and the risks associated with their accounting treatment to assess true company value."
+      ],
+      "final_submission": "Intangible assets are things a company has that you can't touch, like a brand name or goodwill. They are important, but their accounting is definitely a limitation. For example, a company's own brand, built up over years, is clearly valuable but isn't always put on the balance sheet. This is confusing because if they buy another company's brand, then it gets listed. This rule about internally generated intangibles is governed by IAS 38, which stops companies from putting their own brands on the books.\n\nGoodwill is another kind of intangible asset, created when one company buys another for more than its identifiable assets are worth. It's supposed to represent things like customer loyalty or good management. The problem with goodwill is that its value is really hard to measure, and companies have to check it for impairment every year. This 'impairment test' is difficult because you have to guess about future earnings, which is very subjective. However, the details of how this is actually done, and the deep complexities involved, are often not fully explored, just mentioned as a challenge.\n\nWhen it comes to the implications for financial reporting and M&A, the picture becomes quite muddy. While these assets are clearly involved in acquisitions, the impact on business valuation or the overall financial statements is not always well-articulated. There's a general sense that they 'matter' for M&A, but a clear, analytical link explaining how they influence the deal structure, post-acquisition reporting, or investor perception is minimal. The rules make things opaque for outside observers, and it can be hard to see the real effects.\n\nIn conclusion, the measurement and impairment of intangibles, especially goodwill, remain judgment‑heavy and consequential; transparent assumptions and robust governance are essential for faithful representation.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Needs Improvement  - The submission provides basic definitions of intangible assets like goodwill and brands, but there's some slight confusion in the initial explanation, and the examples are limited. (10/25)",
+        "c2": "Good  - Surprisingly, the submission accurately references IAS 38 and correctly explains its prohibition on capitalizing internally generated brands, showing a good grasp of a specific standard. (8/10)",
+        "c3": "Needs Improvement  - The response minimally explains the complexity of valuation and impairment, merely stating that it's 'hard' and 'subjective' without delving into specific methods, assumptions, or risks associated with impairment testing. (22/40)",
+        "c4": "Poor  - The submission provides very minimal insight into the implications for M&A and financial reporting. It states that intangibles 'matter' but fails to connect them analytically to business valuation, financial statement outcomes, or investor decisions. (8/25)",
+        "total": " 48/100"
+      }
+    },
+    {
+      "quality": "Average",
+      "authorship": "ai",
+      "key_points": [
+        "Mentions intangible assets are non-physical, providing common examples.",
+        "Refers to IFRS as providing rules for intangibles, but without specific detail.",
+        "Acknowledges that valuation and impairment are challenges for these assets.",
+        "Notes that intangibles play a role in M&A deals and financial reports.",
+        "The discussion generally stays at a superficial level across all criteria."
+      ],
+      "llm_questions": [
+        "Can you name a few intangible assets?",
+        "What are some accounting rules for them?",
+        "Is it easy to put a price on a patent?",
+        "How does goodwill appear on a balance sheet?",
+        "Why do investors care about intangible assets?"
+      ],
+      "llm_answers": [
+        "Sure, common ones are brands, patents, copyrights, and something called goodwill.",
+        "There are standards like IFRS that provide guidance, saying how to recognize and measure them, but it can be complicated.",
+        "It's not always easy. Patents have a legal life, but their economic value depends on many factors, so valuing them accurately is a challenge.",
+        "Goodwill appears on the asset side, usually when one company buys another for more than the fair value of its identifiable assets.",
+        "Investors care because these assets often represent a significant portion of a company's future earning power, even if they're tricky to account for on the balance sheet."
+      ],
+      "final_submission": "Intangible assets are things that a company owns but you can't physically touch, such as a strong brand name, specific patents for technology, or the reputation a business has built, often called goodwill. The accounting for these types of assets comes with its own set of limitations and also has important implications for how a company's financial performance is reported and understood.\n\nOne significant limitation is the inherent difficulty in accurately valuing these assets. Unlike a building or a piece of machinery, the value of a brand or a customer list is not always clear-cut. Accounting standards, generally referred to as IFRS in many parts of the world, do provide guidelines for how to recognize and measure these assets. However, these guidelines often involve significant judgment calls. For example, specific standards exist, but the explanation of their nuanced application to different types of intangibles or scenarios often remains at a general level, without delving into the specific requirements of IAS 38 or IFRS 3 in detail.\n\nThe challenges extend to how these assets are maintained on the books, particularly concerning impairment. For goodwill, which typically arises from a business acquisition, companies are required to test its value annually to see if it has gone down, a process known as impairment testing. This involves making estimates about future performance, which can be subjective. The discussion on these challenges often acknowledges their existence but doesn't usually offer a deep analytical breakdown of the underlying complexities or the precise accounting procedures involved.\n\nThese limitations and accounting treatments have noticeable implications for financial reporting and for activities like mergers and acquisitions (M&A). Intangible assets, especially goodwill, are a major component of acquisition deals, influencing how much one company pays for another. Their presence on the balance sheet and the potential for impairment charges can significantly affect a company's reported profits and overall financial health. For financial statement users, this means that understanding the full value and risk profile of a company requires looking beyond just the tangible assets, even though the accounting treatment for intangibles can make this analysis challenging due to limited depth in explanations.\n\nIn conclusion, the measurement and impairment of intangibles, especially goodwill, remain judgment‑heavy and consequential; transparent assumptions and robust governance are essential for faithful representation.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3,
+          4
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Average  - The submission correctly identifies intangible assets as non-physical and provides common examples, demonstrating a basic but adequate understanding. (17/25)",
+        "c2": "Average  - It generally refers to IFRS standards as providing rules for intangibles but lacks specific application or clear connection to particular concepts (e.g., IAS 38's role in recognition or IFRS 3 for goodwill). (6/10)",
+        "c3": "Average  - The response acknowledges the challenges of valuation and impairment testing for goodwill, stating the process involves estimates and subjectivity, but it does so without much analytical depth or explanation of the complexities involved. (28/40)",
+        "c4": "Average  - The submission mentions the role of intangibles in M&A deals and their impact on financial reports, but the analysis of these implications is limited in depth and critical evaluation. (17/25)",
+        "total": " 68/100"
+      }
+    },
+    {
+      "quality": "Excellent",
+      "authorship": "ai",
+      "key_points": [
+        "Provides comprehensive definitions and differentiations of intangible assets.",
+        "Articulates the nuanced application of IAS 38, IFRS 3, and IAS 36, with a minor omission.",
+        "Offers a highly insightful and critical evaluation of valuation and impairment complexities.",
+        "Thoroughly analyzes the implications for M&A, business valuation, and financial analysis.",
+        "Discusses the 'true economic value' vs. reported value discrepancy in depth."
+      ],
+      "llm_questions": [
+        "Beyond definition, what are the key characteristics that differentiate types of intangible assets?",
+        "How do specific IFRS standards influence a company's ability to recognize intangible assets?",
+        "What are the major sources of estimation uncertainty in goodwill impairment testing?",
+        "Elaborate on the impact of intangible assets on a company's share price and market perception.",
+        "How does the conservative nature of intangible asset accounting affect strategic decision-making?"
+      ],
+      "llm_answers": [
+        "Key differentiators include whether they are identifiable (like patents) or unidentifiable (goodwill), their useful life (definite vs. indefinite), and their origin (internally generated vs. acquired). These distinctions heavily influence their accounting treatment.",
+        "IAS 38 severely restricts the capitalization of internally generated intangibles such as brands and customer lists, whereas IFRS 3 mandates the fair valuation and recognition of *acquired* identifiable intangibles and the resulting goodwill, directly shaping a company's balance sheet assets.",
+        "Major sources include forecasts of future revenue growth rates, profit margins, capital expenditure, and the discount rate applied to future cash flows. Small changes in these subjective assumptions can lead to vastly different impairment outcomes.",
+        "Intangible assets, particularly strong brands and cutting-edge technology, often underpin a company's long-term growth and competitive advantage. While not always fully on the balance sheet, they drive market capitalization, investor confidence, and ultimately, share price, often leading to a significant gap between book and market value.",
+        "The conservative accounting can lead to under-reporting of true economic assets, potentially affecting capital allocation decisions, M&A valuations (as 'unrecorded' intangibles are still part of the deal), and even internal performance metrics if they solely focus on reported book values rather than economic value creation."
+      ],
+      "final_submission": "The accounting for intangible assets—goodwill, patents, and brands—is fraught with limitations and carries profound implications for financial reporting and corporate strategy. Intangible assets, defined by their lack of physical substance and identifiability (for most), are recognized based on strict criteria. A primary limitation lies in the differential treatment between internally generated and externally acquired intangibles. IAS 38 dictates that internally generated goodwill, brands, and customer lists cannot be capitalized, creating a significant disparity between a company's accounting value and its economic reality, particularly for firms with strong organic brand equity. Conversely, IFRS 3 mandates the fair valuation of identifiable intangible assets acquired in business combinations, which then contributes to the calculation of goodwill.\n\nThe evaluation of measurement and impairment challenges forms the crux of the complexity. Valuing definite-lived intangibles requires estimates of useful life and revenue streams, while indefinite-lived intangibles, like goodwill, are subject to annual impairment testing under IAS 36. This test involves comparing the carrying amount of a cash-generating unit (CGU) with its recoverable amount (the higher of fair value less costs to sell and value in use). The 'value in use' calculation, in particular, relies on highly subjective forecasts of future cash flows and discount rates. This inherent subjectivity presents a significant risk of earnings manipulation and delayed recognition of asset write-downs, challenging the reliability of reported financial statements.\n\nWhile the application of IFRS standards is generally robust, specific nuances can occasionally be overlooked. For instance, the precise conditions for capitalizing development costs under IAS 38, distinct from the prohibition on internally generated brands, might not always be fully elaborated, leading to a minor gap in the comprehensiveness of standard application.\n\nThe implications for financial reporting and M&A are extensive. In M&A, the purchase price allocation process is heavily influenced by the identification and valuation of intangible assets, directly determining the amount of goodwill recognized. High goodwill balances can signal significant strategic premiums paid by acquirers. For financial statement users, the presence of substantial intangible assets necessitates careful analysis beyond traditional tangible metrics. Impairment losses on goodwill can severely impact equity and profitability, signaling failed acquisitions or deteriorating economic conditions. The disparity between accounting values and market valuations, largely due to unrecorded internally generated intangibles, complicates financial analysis and capital market efficiency, requiring investors to 'look through' the financial statements to discern true economic value.\n\nIn conclusion, the measurement and impairment of intangibles, especially goodwill, remain judgment‑heavy and consequential; transparent assumptions and robust governance are essential for faithful representation.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3,
+          4
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Excellent  - The submission provides comprehensive definitions and clearly differentiates various types of intangible assets, including their origin and characteristics, with excellent examples. (24/25)",
+        "c2": "Excellent  - Accurately applies and explains the interplay of IAS 38, IFRS 3, and IAS 36. The discussion demonstrates a strong command of recognition, measurement, and impairment rules, with only a very minor omission regarding the specific nuances of development cost capitalization. (9/10)",
+        "c3": "Excellent  - Offers a highly insightful and critical evaluation of the complexities involved in valuation and impairment, particularly for goodwill. The discussion on subjectivity, estimation uncertainty, and risks of earnings manipulation is exceptional. (39/40)",
+        "c4": "Excellent  - Provides a thorough and analytical evaluation of how intangible assets influence business valuation, M&A outcomes, and broader financial reporting. The discussion effectively links accounting rules to strategic implications and challenges for financial analysis. (24/25)",
+        "total": " 96/100"
+      }
+    }
+  ]
+}

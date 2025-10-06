@@ -1,0 +1,422 @@
+{
+    "domain": "Psychology",
+    "prompt": "Critically evaluate the biopsychosocial model of health and illness, including its advantages over reductionist models and challenges in clinical implementation.",
+    "rubric": {
+        "rubric_id": "rub_psychology_0018",
+        "criteria": [
+            {
+                "criterion_id": "c1",
+                "name": "Model Comprehension",
+                "description": "Explains biological, psychological, and social dimensions and their interactions.",
+                "performance_descriptors": {
+                    "excellent": "Integrates components with clear interaction examples and historical context.",
+                    "good": "Accurate explanation with minor omissions.",
+                    "average": "General overview with limited integration.",
+                    "needs_improvement": "Partial or unclear account.",
+                    "poor": "Incorrect or incomplete description."
+                },
+                "weight": 30
+            },
+            {
+                "criterion_id": "c2",
+                "name": "Comparative Evaluation",
+                "description": "Contrasts with biomedical/reductionist approaches.",
+                "performance_descriptors": {
+                    "excellent": "Analyzes strengths (holism, personalization) and critiques (operationalization, resource burden).",
+                    "good": "Clear comparison with some nuance.",
+                    "average": "Surface-level comparison.",
+                    "needs_improvement": "Limited contrast or inaccuracies.",
+                    "poor": "No meaningful comparison."
+                },
+                "weight": 30
+            },
+            {
+                "criterion_id": "c3",
+                "name": "Clinical Application",
+                "description": "Translates theory into assessment and intervention.",
+                "performance_descriptors": {
+                    "excellent": "Provides structured case formulation and multidisciplinary plans; addresses implementation barriers.",
+                    "good": "Offers practical examples with moderate specificity.",
+                    "average": "General applications without detail.",
+                    "needs_improvement": "Vague or minimal applications.",
+                    "poor": "No application."
+                },
+                "weight": 20
+            },
+            {
+                "criterion_id": "c4",
+                "name": "Evidence Integration",
+                "description": "Uses empirical support and real-world cases.",
+                "performance_descriptors": {
+                    "excellent": "Integrates studies and clinical cases showing model utility and limits.",
+                    "good": "Includes relevant evidence with minor gaps.",
+                    "average": "General references to evidence.",
+                    "needs_improvement": "Sparse or weak evidence.",
+                    "poor": "No evidence."
+                },
+                "weight": 10
+            },
+            {
+                "criterion_id": "c5",
+                "name": "Clarity and Structure",
+                "description": "Organization and coherence.",
+                "performance_descriptors": {
+                    "excellent": "Well-structured and persuasive.",
+                    "good": "Clear with minor issues.",
+                    "average": "Adequate clarity.",
+                    "needs_improvement": "Disorganized.",
+                    "poor": "Incoherent."
+                },
+                "weight": 10
+            }
+        ]
+    },
+    "submissions": [
+        {
+            "quality": "Excellent",
+            "authorship": "ai",
+            "key_points": [
+                "Defines the biopsychosocial (BPS) model and provides historical context (George Engel).",
+                "Contrasts it with the biomedical model, noting both its holistic advantages and operational challenges.",
+                "Provides a case formulation template incorporating biological, psychological, and social factors.",
+                "Discusses multidisciplinary teamwork and coordination issues.",
+                "Considers equity, culture, and social determinants of health."
+            ],
+            "llm_questions": [
+                "Create a biopsychosocial case formulation for chronic pain.",
+                "What are common barriers to implementing the BPS model in clinics?",
+                "How do social determinants influence health outcomes?",
+                "Compare biomedical vs. biopsychosocial approaches in diabetes care.",
+                "Design a multidisciplinary care plan using the model."
+            ],
+            "llm_answers": [
+                "Chronic pain BPS formulation: Biological (central sensitization, sleep disturbance), Psychological (catastrophizing, fear-avoidance beliefs), Social (job insecurity, limited family support).",
+                "Barriers include time constraints, fragmented services, limited reimbursement for team care, and training gaps.",
+                "Social determinants (income, education, housing) shape exposure to risks, access to care, and stress physiology.",
+                "Biomedical diabetes care focuses on glycemic control and pharmacology. BPS adds motivational interviewing, depression screening, cultural diet patterns, and family support.",
+                "A multidisciplinary plan would involve a PCP, psychologist, physiotherapist, social worker, and nurse educator with shared goals."
+            ],
+            "final_submission": "The biopsychosocial (BPS) model, advanced by George Engel, critiques reductionism by positioning illness as a product of interacting biological, psychological, and social processes. Compared with the biomedical model, BPS improves explanatory breadth: depression amplifies pain; poverty degrades sleep and diet; coping styles shape adherence.\n\nClinically, BPS begins with a structured formulation: charting biological drivers, psychological factors, and social context. These inform shared goals and multidisciplinary plans. In diabetes, pharmacotherapy is paired with culturally appropriate nutrition and social support. In chronic pain, graded activity and CBT interrupt maintenance loops of avoidance.\n\nEvidence for BPS-informed care includes improved adherence and patient satisfaction, especially where psychosocial barriers are salient. However, implementation is constrained by resource intensity and variable fidelity. The model’s value lies in coordinating interventions across levels.\n\nIn sum, the BPS model reframes illness as multilevel and contextual. Its advantage is practical when systems support psychosocial screening and team communication; without these, its holistic promise can be blunted by operational realities.",
+            "feedback": {
+                "c1": "Excellent. Integrates components with clear interactions. (30/30)",
+                "c2": "Excellent. Nuanced comparison highlighting strengths and challenges. (30/30)",
+                "c3": "Excellent. Actionable formulation and multidisciplinary planning. (20/20)",
+                "c4": "Excellent. Integrates empirical support alongside limits. (10/10)",
+                "c5": "Excellent. Cohesive, well-structured, and persuasive. (10/10)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1,2,3],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Excellent",
+            "authorship": "human",
+             "key_points": [
+                "Defines the biopsychosocial (BPS) model and provides historical context (George Engel).",
+                "Contrasts it with the biomedical model, noting both its holistic advantages and operational challenges.",
+                "Provides a case formulation template incorporating biological, psychological, and social factors.",
+                "Discusses multidisciplinary teamwork and coordination issues.",
+                "Considers equity, culture, and social determinants of health."
+            ],
+            "final_submission": "The biopsychosocial (BPS) model, famously championed by George Engel, represents a paradigm shift from purely biomedical explanations of illness. It argues that health and disease are best understood as the result of a dynamic interplay between biological factors (like genetics and pathogens), psychological factors (such as stress, beliefs, and behaviors), and social factors (including socioeconomic status, culture, and relationships). This holistic perspective provides a much richer and more personalized understanding of a patient's condition compared to a reductionist biomedical model that might focus solely on the disease pathology.\n\nClinically, applying the BPS model begins with a comprehensive formulation that considers all three domains. For a patient with chronic pain, this would mean looking beyond the physical injury (biological) to explore their fear-avoidance beliefs and coping strategies (psychological), as well as their work environment and family support system (social). This leads to an integrated, multidisciplinary treatment plan. For instance, in diabetes management, a BPS approach would supplement medication with culturally sensitive dietary counseling, stress management techniques, and family-based support interventions.\n\nEvidence for BPS-informed care includes improved adherence and patient satisfaction, especially where psychosocial barriers are salient. However, implementation is constrained by resource intensity and variable fidelity. The model’s value lies in coordinating interventions across levels.\n\nIn summary, the BPS model reframes illness as a complex, contextual phenomenon. Its primary advantage is its capacity to guide more comprehensive and humane care, though its practical application is often challenged by the very healthcare systems it seeks to reform.",
+             "feedback": {
+                "c1": "Excellent. Integrates components with clear interactions. (30/30)",
+                "c2": "Excellent. Nuanced comparison highlighting strengths and challenges. (30/30)",
+                "c3": "Excellent. Actionable formulation and multidisciplinary planning. (20/20)",
+                "c4": "Excellent. Integrates empirical support alongside limits. (10/10)",
+                "c5": "Excellent. Cohesive, well-structured, and persuasive. (10/10)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [2,3],
+                "human_paragraph_indices": [0,1],
+                "hybrid_paragraph_indices": [],
+                "notes": "Human fully rewrote the introduction and clinical application paragraphs."
+            }
+        },
+        {
+            "quality": "Excellent",
+            "authorship": "hybrid",
+            "key_points": [
+                "Defines the biopsychosocial (BPS) model and provides historical context (George Engel).",
+                "Contrasts it with the biomedical model, noting both its holistic advantages and operational challenges.",
+                "Provides a case formulation template incorporating biological, psychological, and social factors.",
+                "Discusses multidisciplinary teamwork and coordination issues.",
+                "Considers equity, culture, and social determinants of health."
+            ],
+            "final_submission": "The biopsychosocial (BPS) model, advanced by George Engel, critiques reductionism by positioning illness as a product of interacting biological, psychological, and social processes. Compared with the traditional biomedical model, the BPS framework offers far greater explanatory breadth and potential for personalization: for example, depression can amplify pain perception, while poverty might degrade sleep and diet, and a patient's coping style will certainly shape their adherence to treatment.\n\nClinically, BPS begins with a structured formulation: charting biological drivers, psychological factors, and social context. These inform shared goals and multidisciplinary plans. In diabetes, pharmacotherapy is paired with culturally appropriate nutrition and social support. In chronic pain, graded activity and CBT interrupt maintenance loops of avoidance.\n\nEvidence for BPS-informed care includes improved adherence and patient satisfaction, especially where psychosocial barriers are salient. However, implementation is constrained by resource intensity and variable fidelity. The model’s value lies in coordinating interventions across levels.\n\nIn sum, the BPS model reframes illness as multilevel and contextual. Its advantage is practical when systems support psychosocial screening and team communication; without these, its holistic promise can be blunted by operational realities.",
+             "feedback": {
+                "c1": "Excellent. Integrates components with clear interactions. (30/30)",
+                "c2": "Excellent. Nuanced comparison highlighting strengths and challenges. (30/30)",
+                "c3": "Excellent. Actionable formulation and multidisciplinary planning. (20/20)",
+                "c4": "Excellent. Integrates empirical support alongside limits. (10/10)",
+                "c5": "Excellent. Cohesive, well-structured, and persuasive. (10/10)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [1,2,3],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [0],
+                "notes": "Slightly modified the introduction paragraph for better flow and added examples."
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "ai",
+            "key_points": [
+                "Accurate definition with minor omissions.",
+                "Clear comparison to the biomedical approach.",
+                "Concrete but briefer formulation and plan examples.",
+                "Briefly notes barriers and social determinants of health.",
+                "Some evidence references."
+            ],
+            "llm_questions": [
+                "What is the BPS model?",
+                "How does it differ from the biomedical model?",
+                "Give a clinical example.",
+                "What is a barrier to implementation?"
+            ],
+            "llm_answers": [
+                "It's a model that expands care to include thoughts, emotions, and social context, not just disease mechanisms.",
+                "It's more holistic, integrating behavior change and social supports with medical treatment.",
+                "For chronic pain, a BPS plan might involve medication plus CBT and graded physical activity.",
+                "Barriers include time constraints, reimbursement issues, and difficulties in care coordination."
+            ],
+            "final_submission": "The BPS model expands care beyond disease mechanisms to include thoughts, emotions, and social context. It contrasts with the biomedical model by integrating behavior change and social supports with medical treatment. Practical use involves a brief formulation and a coordinated plan (e.g., medication plus CBT for chronic pain). Barriers—time, reimbursement, coordination—limit reach, yet programs that screen for psychosocial risks and use team care show better patient engagement.",
+            "feedback": {
+                "c1": "Good. Accurate overview. (24/30)",
+                "c2": "Good. Clear contrast. (24/30)",
+                "c3": "Good. Practical applications are present but brief. (16/20)",
+                "c4": "Good. Mentions evidence generally. (8/10)",
+                "c5": "Good. Clear and organized. (8/10)",
+                "total": "80/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "ai",
+            "key_points": [
+                "Thorough explanation of BPS dimensions.",
+                "Strong comparison with reductionist models.",
+                "Clinical applications are somewhat generic.",
+                "Good integration of supporting evidence.",
+                "Generally clear and well-structured."
+            ],
+            "llm_questions": [
+                "Discuss the historical context of the BPS model.",
+                "Provide an example of a psychological factor influencing a biological outcome.",
+                "How does the BPS model address health equity?"
+            ],
+            "llm_answers": [
+                "It emerged as a reaction to the limitations of the biomedical model, popularized by George Engel in the 1970s.",
+                "Chronic stress can lead to sustained cortisol release, contributing to inflammation and impaired immune function.",
+                "By recognizing social determinants of health, it offers a framework to identify and address systemic inequalities."
+            ],
+            "final_submission": "The Biopsychosocial (BPS) model posits that health and illness are products of the interplay between biological, psychological, and social factors. It moves beyond the reductionist biomedical model by acknowledging that psychological states and social contexts profoundly influence disease. For example, a patient with heart disease has biological risk factors, but their psychological stress from work or lack of social support could exacerbate their condition.\n\nThe BPS model's advantage is its holistic approach, promoting personalized care. However, implementation faces challenges. Operationalizing the complex interactions can be difficult and resource-intensive. Despite these hurdles, evidence supports the utility of the BPS model in managing chronic conditions and promoting well-being.",
+            "feedback": {
+                "c1": "Excellent. Comprehensive explanation of BPS dimensions. (28/30)",
+                "c2": "Excellent. Clear and nuanced comparison. (27/30)",
+                "c3": "Average. Applications are present but general. (14/20)",
+                "c4": "Good. Relevant evidence is integrated effectively. (8/10)",
+                "c5": "Good. The submission is well-structured and clear. (8/10)",
+                "total": "85/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "ai",
+            "key_points": [
+                "General definition of the BPS model.",
+                "Surface-level comparison to biomedical model.",
+                "Generic clinical applications.",
+                "Minimal detail on barriers or evidence.",
+                "Simple, clear structure."
+            ],
+            "llm_questions": [
+                "What are the three parts of the BPS model?",
+                "How is it different from a biological view of disease?",
+                "Give a simple example of a BPS approach to stress."
+            ],
+            "llm_answers": [
+                "Biological, psychological, and social factors.",
+                "It adds psychological and social aspects, not just focusing on the body.",
+                "For stress: biologically, ensure sleep; psychologically, practice mindfulness; socially, seek support from friends."
+            ],
+            "final_submission": "BPS includes biological, psychological, and social factors. It differs from biomedical models by also considering thoughts and social life. A plan might involve medicine plus therapy and some exercise. There are barriers like time and cost. Evidence is mixed but suggests benefits in some settings.",
+            "feedback": {
+                "c1": "Average. Definitions are correct but limited. (20/30)",
+                "c2": "Average. Comparison is superficial. (20/30)",
+                "c3": "Average. Applications are generic. (13/20)",
+                "c4": "Average. Little evidence cited. (6/10)",
+                "c5": "Average. Basic organization. (6/10)",
+                "total": "65/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "ai",
+            "key_points": [
+                "Adequate understanding of BPS components.",
+                "Surface-level comparison to biomedical model.",
+                "Clinical applications are general.",
+                "Very limited use of evidence.",
+                "Well-organized and easy to follow."
+            ],
+            "llm_questions": [
+                "What are the three main components of the BPS model?",
+                "How does it differ from a purely biological view?",
+                "What kind of evidence would support the BPS model?"
+            ],
+            "llm_answers": [
+                "Biological, psychological, and social factors.",
+                "It adds psychological (thoughts, feelings) and social (environment, relationships) aspects.",
+                "Studies showing that patients who receive both medical and psychosocial support have better outcomes."
+            ],
+            "final_submission": "The biopsychosocial (BPS) model is a framework for understanding health that considers the interplay of biological, psychological, and social factors. This contrasts with biomedical approaches, which focus solely on biological mechanisms. The BPS model argues that health is influenced by thoughts, emotions, behaviors, and social environment.\n\nThe advantage of the BPS model is its ability to offer a more complete picture of a patient's health. However, it faces challenges in clinical implementation, as integrating these factors can be complex and time-consuming. Despite this, the BPS model encourages a more patient-centered approach to care.",
+            "feedback": {
+                "c1": "Average. Provides a correct overview of the model. (21/30)",
+                "c2": "Average. Offers a basic comparison to reductionist models. (19/30)",
+                "c3": "Average. General applications are provided. (13/20)",
+                "c4": "Needs Improvement. Evidence integration is minimal. (5/10)",
+                "c5": "Excellent. The submission is very well-organized and clear. (9/10)",
+                "total": "67/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "ai",
+            "key_points": [
+                "Partial or unclear description of the BPS model.",
+                "Weak comparison to the biomedical model.",
+                "Vague clinical applications.",
+                "Sparse attention to barriers.",
+                "Loose structure."
+            ],
+            "llm_questions": [
+                "What is the BPS model?",
+                "Is it different from biomedical care?",
+                "Are there any barriers?"
+            ],
+            "llm_answers": [
+                "The BPS model mentions biology, psychology, and some social aspects.",
+                "The differences from biomedical care are small.",
+                "Barriers exist but are not central to the model."
+            ],
+            "final_submission": "The BPS model mentions biology and psychology, with some social aspects. It may be used in clinics, but the differences from biomedical care are small. A plan could involve different clinicians, though details are not necessary. Barriers exist but are not a major focus.",
+            "feedback": {
+                "c1": "Needs Improvement. Incomplete account. (15/30)",
+                "c2": "Needs Improvement. Minimal, inaccurate comparison. (15/30)",
+                "c3": "Needs Improvement. Vague applications. (10/20)",
+                "c4": "Needs Improvement. Little to no evidence. (5/10)",
+                "c5": "Needs Improvement. Disorganized writing. (5/10)",
+                "total": "50/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "ai",
+            "key_points": [
+                "Basic understanding of components, but vague interactions.",
+                "Limited and inaccurate comparison to reductionist models.",
+                "Clinical applications are extremely general.",
+                "Very sparse reference to evidence.",
+                "Passable structure but lacks coherence."
+            ],
+            "llm_questions": [
+                "List one biological, psychological, and social factor relevant to health.",
+                "Why is it hard to apply the BPS model in a busy clinic?",
+                "How can a community help someone with health issues?"
+            ],
+            "llm_answers": [
+                "Biological: genetics; Psychological: stress; Social: family support.",
+                "Doctors have limited time and focus on physical symptoms first.",
+                "By providing support groups, accessible resources, and reducing social isolation."
+            ],
+            "final_submission": "The biopsychosocial (BPS) model suggests health is shaped by biological aspects, like genetics; psychological aspects, like mood; and social aspects, like family. It is meant to be more complete than older models that only consider the body. The advantage is that it helps doctors think about more than just the physical problem.\n\nComparing the BPS model with reductionist ones, it is broader but doesn't clearly show how reductionist models fall short. Clinical application is also general, suggesting involving different professionals without specific roles. There is a lack of strong evidence to back up claims. The structure is okay, but more coherence would improve it.",
+            "feedback": {
+                "c1": "Good. Accurately identifies the three core components. (23/30)",
+                "c2": "Needs Improvement. The comparison is superficial. (15/30)",
+                "c3": "Needs Improvement. Clinical applications are general. (9/20)",
+                "c4": "Needs Improvement. Evidence integration is weak. (5/10)",
+                "c5": "Average. The structure is adequate but lacks coherence. (6/10)",
+                "total": "58/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Poor",
+            "authorship": "ai",
+            "key_points": [
+                "Incorrect model description.",
+                "No real comparison.",
+                "No usable applications.",
+                "No evidence.",
+                "Incoherent writing."
+            ],
+            "llm_questions": [
+                "What is the BPS model?",
+                "Does it have barriers?",
+                "Are social determinants important?"
+            ],
+            "llm_answers": [
+                "BPS only looks at biology and ignores psychology and society.",
+                "No, there are no barriers to its implementation.",
+                "No, social determinants do not affect health."
+            ],
+            "final_submission": "The BPS model is the same as biomedical care. Social factors don’t matter for health, and evidence is not necessary to prove this. One clinician can do everything, so a team is not needed.",
+            "feedback": {
+                "c1": "Poor. Misrepresents core principles. (6/30)",
+                "c2": "Poor. No valid comparison. (6/30)",
+                "c3": "Poor. No clinical application. (4/20)",
+                "c4": "Poor. No evidence integration. (2/10)",
+                "c5": "Poor. Incoherent. (2/10)",
+                "total": "20/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        }
+    ]
+}

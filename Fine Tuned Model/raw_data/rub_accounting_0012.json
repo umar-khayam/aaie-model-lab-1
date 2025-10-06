@@ -1,0 +1,446 @@
+{
+  "domain": "Accounting",
+  "prompt": "Discuss how the adoption of IFRS influences financial transparency and comparability for multinational companies.",
+  "rubric": {
+    "rubric_id": "rub_accounting_0012",
+    "criteria": [
+      {
+        "criterion_id": "c1",
+        "name": "Understanding of IFRS Framework",
+        "description": "Demonstrates knowledge of International Financial Reporting Standards and their role in global accounting harmonization.",
+        "performance_descriptors": {
+          "excellent": "Clearly explains IFRS principles, objectives, and distinguishes from local GAAP standards with comprehensive understanding.",
+          "good": "Accurately describes IFRS framework and shows understanding of harmonization concept.",
+          "average": "Mentions IFRS with basic understanding but limited detail on framework.",
+          "needs_improvement": "Basic or unclear understanding of IFRS principles.",
+          "poor": "Fails to explain IFRS accurately or shows fundamental misunderstanding."
+        },
+        "weight": 40
+      },
+      {
+        "criterion_id": "c2",
+        "name": "Analysis of Transparency and Comparability Impact",
+        "description": "Evaluates how IFRS adoption affects financial transparency and enables cross-border business comparisons.",
+        "performance_descriptors": {
+          "excellent": "Insightfully discusses transparency improvements, comparability benefits, and impact on stakeholder decision-making.",
+          "good": "Explains how IFRS enhances transparency and enables better company comparisons.",
+          "average": "Makes general claims about transparency without detailed analysis.",
+          "needs_improvement": "Mentions transparency/comparability with minimal supporting evidence.",
+          "poor": "No clear link between IFRS and transparency/comparability outcomes."
+        },
+        "weight": 40
+      },
+      {
+        "criterion_id": "c3",
+        "name": "Discussion of Implementation Challenges and Adaptations",
+        "description": "Addresses transition difficulties, country-specific adaptations, and practical implementation issues.",
+        "performance_descriptors": {
+          "excellent": "Comprehensively discusses transition costs, training needs, system changes, and country-specific challenges with nuanced understanding.",
+          "good": "Identifies key implementation challenges and discusses adaptation processes.",
+          "average": "Mentions some challenges but lacks depth in analysis.",
+          "needs_improvement": "Limited discussion of implementation issues.",
+          "poor": "Fails to address challenges or provides superficial treatment."
+        },
+        "weight": 10
+      },
+      {
+        "criterion_id": "c4",
+        "name": "Use of Real-World Examples and Evidence",
+        "description": "Incorporates actual examples of companies, countries, or sectors that have adopted IFRS, including M&A contexts.",
+        "performance_descriptors": {
+          "excellent": "Provides multiple relevant examples from different contexts (companies, countries, M&A) with clear connections to arguments.",
+          "good": "Provides at least one detailed, relevant example with proper context.",
+          "average": "Mentions example(s) but with limited explanation or relevance.",
+          "needs_improvement": "Example(s) are vague, poorly explained, or weakly connected to topic.",
+          "poor": "No examples provided or examples are irrelevant."
+        },
+        "weight": 10
+      }
+    ]
+  },
+  "submissions": [
+    {
+      "quality": "Excellent",
+      "authorship": "ai",
+      "key_points": [
+        "Understand the IFRS framework and its role in harmonizing global accounting standards.",
+        "Analyze how IFRS adoption enhances financial transparency and enables meaningful cross-border comparisons.",
+        "Evaluate the challenges companies face during IFRS transition, including costs, training, and system changes.",
+        "Discuss country-specific adaptations and variations in IFRS implementation.",
+        "Examine the role of IFRS in facilitating mergers, acquisitions, and international investment decisions.",
+        "Include real-world examples of companies, countries, or sectors that have successfully adopted IFRS.",
+        "Address the impact on investor confidence and capital market efficiency.",
+        "Write using formal academic style with proper financial terminology and logical argumentation."
+      ],
+      "llm_questions": [
+        "What are the main objectives and principles of International Financial Reporting Standards (IFRS)?",
+        "How does IFRS adoption improve financial transparency compared to local accounting standards?",
+        "What are the key benefits of having comparable financial statements across different countries?",
+        "What challenges do companies typically face when transitioning from local GAAP to IFRS?",
+        "Can you provide examples of countries or companies that have successfully implemented IFRS?"
+      ],
+      "llm_answers": [
+        "The main objectives of IFRS, issued by the IASB, are to develop a single set of high-quality, understandable, enforceable, and globally accepted financial reporting standards. Its principles-based approach, focusing on economic substance over legal form, contrasts with the more rules-based nature of standards like US GAAP.",
+        "IFRS enhances transparency by requiring more detailed disclosures (e.g., in IFRS 9 for financial instruments) and enforcing consistent recognition and measurement criteria for assets and liabilities globally. This reduces information asymmetry and gives investors a clearer view of a company's financial health, regardless of its home country.",
+        "Comparability allows investors, analysts, and other stakeholders to make more informed decisions by directly comparing the financial performance and position of companies in different jurisdictions. This reduces the cost of capital, facilitates cross-border M&A, and promotes more efficient allocation of resources in global capital markets.",
+        "Challenges are significant and include high initial costs for system overhauls and staff training, the complexity of applying principles-based standards which require significant judgment, and managing data conversion. Moreover, cultural and legal differences between countries can complicate uniform application.",
+        "The European Union's mandatory adoption in 2005 for listed companies is a prime example. Major multinational corporations like Siemens and Nestlé use IFRS, which allows them to present a single, coherent set of financial statements to a global investor base, simplifying their reporting and enhancing comparability with peers worldwide."
+      ],
+      "final_submission": "The adoption of International Financial Reporting Standards (IFRS) represents a monumental shift towards a unified global language for business, fundamentally enhancing financial clarity and comparability for multinational companies (MNCs).\n\nBy replacing a patchwork of local Generally Accepted Accounting Principles (GAAP), the IFRS framework, which is principles-based rather than rules-based like US GAAP, aims to provide a true and fair view of a company's financial position.\n\nThis significantly improves transparency by demanding more extensive disclosures and consistent accounting treatments for complex transactions, such as financial instruments (IFRS 9) and revenue recognition (IFRS 15). For stakeholders, this means financial statements from a German company like Siemens are prepared on the same basis as those from a Brazilian company like Petrobras, assuming both use IFRS. This direct comparability empowers investors to make more informed capital allocation decisions and conduct more accurate peer analysis without the costly and complex process of reconciling different accounting standards. The increased comparability was particularly evident in the EU post-2005 mandatory adoption, which studies have shown led to increased cross-border investment and more efficient M&A valuations. However, the transition is not without its hurdles. Implementation challenges are substantial, encompassing high costs related to IT system overhauls, extensive employee training, and the inherent complexities of applying a principles-based system that requires significant professional judgment. Furthermore, while IFRS aims for harmonization, country-specific 'carve-outs' or adaptations, such as those initially seen in the EU regarding hedge accounting, can dilute pure comparability. Despite these challenges, the overarching influence of IFRS on MNCs is profoundly positive, fostering a more integrated and efficient global capital market by providing stakeholders with a clearer, more comparable lens through which to view corporate performance.\n\nIn conclusion, IFRS enhances transparency and cross‑border comparability, but its principles‑based design requires judgement, investment in capability, and careful local adoption to realize those benefits consistently.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [2,3],
+        "human_paragraph_indices": [0],
+        "hybrid_paragraph_indices": [1],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Excellent - Excellent. The submission demonstrates a comprehensive understanding of the IFRS framework, clearly articulating its principles-based nature and correctly distinguishing it from the rules-based approach of standards like US GAAP. The objectives of harmonization are well-explained. (40/40)",
+        "c2": "Excellent - Excellent. The analysis of transparency and comparability is insightful and detailed. The response moves beyond general statements to explain *how* specific standards like IFRS 9 and IFRS 15 contribute to transparency and directly links comparability to improved stakeholder decision-making and M&A valuations. (40/40)",
+        "c3": "Good - Good. The discussion of challenges is nuanced and comprehensive. It covers key issues such as costs, training, and system changes, but also astutely points out the complexities of applying a principles-based system and the issue of country-specific 'carve-outs' that can undermine full harmonization. (6/10)",
+        "c4": "Excellent - Excellent. Multiple relevant examples are skillfully integrated to support the arguments. The mention of Siemens and Petrobras effectively illustrates the global scope, while the reference to the EU's 2005 adoption provides a crucial real-world context for the benefits and challenges discussed. (10/10)",
+        "total": "96/100"
+      }
+    },
+    {
+      "quality": "Good",
+      "authorship": "ai",
+      "key_points": [
+        "Accurately describes IFRS and its goal of harmonization.",
+        "Explains how IFRS makes financial statements more transparent and easier to compare.",
+        "Identifies major challenges of implementation like cost and training.",
+        "Provides a relevant example of a company or region adopting IFRS.",
+        "Structures the response with a clear introduction, body, and conclusion."
+      ],
+      "llm_questions": [
+        "What is the main goal of IFRS?",
+        "How does IFRS help investors?",
+        "Is it hard for companies to switch to IFRS?",
+        "Can you give an example of IFRS being used?"
+      ],
+      "llm_answers": [
+        "The main goal of IFRS is to create a common accounting language so that financial statements are consistent and reliable across international borders.",
+        "IFRS helps investors by making it easier to compare companies from different countries. This makes financial information more transparent and helps them make better investment decisions.",
+        "Yes, it can be very challenging. Companies often face high costs to update their accounting systems, need to train their staff, and must adjust to a new way of reporting financial information.",
+        "A good example is the European Union, which made IFRS mandatory for all listed companies in 2005. This helped create a single market for capital by making company financials comparable across all member states."
+      ],
+      "final_submission": "The adoption of International Financial Reporting Standards (IFRS) has a major impact on multinational companies by improving financial clarity and comparability.\n\nThe main purpose of IFRS is to harmonize accounting standards across the globe, creating a single set of rules that companies can follow.\n\nThis makes business information clearer for everyone. When companies use the same standards, it becomes much easier for investors and analysts to compare their financial performance. For example, an investor can look at the financial statements of two different European telecommunication companies and make a fair comparison because both report under IFRS. This enhances transparency because companies must provide detailed disclosures about their finances. However, switching to IFRS is not easy. The process can be expensive and time-consuming. Companies need to invest in new IT systems and train their accounting staff on the new rules. There are also significant differences from local standards, like US GAAP, that must be managed during the transition. In conclusion, while there are challenges to adopting IFRS, the benefits of greater transparency and comparability provide significant advantages for multinational companies operating in a global market.\n\nIn conclusion, IFRS enhances transparency and cross‑border comparability, but its principles‑based design requires judgement, investment in capability, and careful local adoption to realize those benefits consistently.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [2,3],
+        "human_paragraph_indices": [0],
+        "hybrid_paragraph_indices": [1],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Good - Good. The submission accurately describes the IFRS framework and correctly identifies its main goal of harmonization. The core concept is well understood. (32/40)",
+        "c2": "Good - Good. The response clearly explains how IFRS enhances both transparency and comparability. It correctly links these benefits to better decision-making for investors and analysts. (32/40)",
+        "c3": "Good - Good. Key implementation challenges, specifically cost and training, are correctly identified. The discussion provides a solid overview of the main difficulties companies face. (8/10)",
+        "c4": "Good - Good. The submission provides a relevant and detailed example of the European Union's adoption of IFRS, explaining its impact on comparability within the region. The example is well-chosen and supports the argument effectively. (8/10)",
+        "total": " 80/100"
+      }
+    },
+    {
+      "quality": "Average",
+      "authorship": "ai",
+      "key_points": [
+        "States what IFRS stands for with a basic definition.",
+        "Makes a general claim that IFRS helps with transparency.",
+        "Mentions that switching to IFRS can be difficult.",
+        "Includes a company or country name as an example.",
+        "Has a basic structure (beginning, middle, end)."
+      ],
+      "llm_questions": [
+        "What is IFRS?",
+        "Does IFRS make things better for companies?",
+        "Are there any problems with IFRS?",
+        "Do all companies use IFRS?"
+      ],
+      "llm_answers": [
+        "IFRS stands for International Financial Reporting Standards. They are accounting rules used in many countries.",
+        "Yes, it makes their financial reports easier for people in other countries to understand. This helps them look more transparent.",
+        "Yes, it can be hard to change from the old rules to the new IFRS rules. It costs money.",
+        "No, not all companies. For example, companies in the United States often use a different set of rules called US GAAP."
+      ],
+      "final_submission": "IFRS (International Financial Reporting Standards) is a set of accounting rules that many companies around the world use.\n\nWhen multinational companies adopt IFRS, it helps with financial transparency and comparability.\n\nThis is because everyone is using the same rules, so it makes it easier to see how one company is doing compared to another. This transparency is good for investors. For example, a company in Europe will use IFRS. However, implementing IFRS is not always easy. There are challenges that companies face when they switch over. It can cost a lot of money and take time. In summary, IFRS is important for global business because it makes financial statements more comparable and transparent, even though it can be hard to implement.\n\nIn conclusion, IFRS enhances transparency and cross‑border comparability, but its principles‑based design requires judgement, investment in capability, and careful local adoption to realize those benefits consistently.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [2,3],
+        "human_paragraph_indices": [0],
+        "hybrid_paragraph_indices": [1],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Average - Average. The submission provides a basic definition of IFRS but offers limited detail on the framework itself or the concept of harmonization. (26/40)",
+        "c2": "Average - Average. The response makes general claims that IFRS improves transparency and comparability but does not provide a detailed analysis of *how* or *why*. The link to stakeholder benefits is stated but not explored. (26/40)",
+        "c3": "Average - Average. The submission mentions that there are challenges and costs associated with implementation but lacks any depth. The specific types of challenges are not discussed. (6/10)",
+        "c4": "Average - Average. An example ('a company in Europe') is mentioned, but it is very vague and lacks the specific detail needed to effectively support the argument. The relevance is not clearly explained. (6/10)",
+        "total": "Unscored – 64/100"
+      }
+    },
+    {
+      "quality": "Needs Improvement",
+      "authorship": "ai",
+      "key_points": [
+        "Mentions IFRS but with an unclear definition.",
+        "States that IFRS is related to transparency but provides no support.",
+        "Vaguely alludes to implementation being an issue.",
+        "May mention an irrelevant example.",
+        "Lacks a clear organizational structure."
+      ],
+      "llm_questions": [
+        "What are financial rules?",
+        "Why do companies need rules?",
+        "Is IFRS from the USA?",
+        "What is transparency?"
+      ],
+      "llm_answers": [
+        "They are rules for how companies do their money reports.",
+        "So that people know they are not lying about their money.",
+        "No, I think it's from somewhere else. The USA has its own rules.",
+        "It means you can see what is happening clearly."
+      ],
+      "final_submission": "This paragraph restates the section in clearer everyday language to meet the Human requirement. IFRS is a standard for accounting.\n\nCompanies use it.\n\nIt is supposed to make things more transparent. When companies use it, people can compare them better. A lot of companies have to adopt it like maybe big ones in other countries. It is hard to do this. The old way is different. So IFRS helps transparency and comparability for multinational companies because it's a global thing.\n\nIn conclusion, IFRS enhances transparency and cross‑border comparability, but its principles‑based design requires judgement, investment in capability, and careful local adoption to realize those benefits consistently.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [2,3],
+        "human_paragraph_indices": [0],
+        "hybrid_paragraph_indices": [1],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Needs Improvement - Needs Improvement. The submission provides a very basic and unclear definition of IFRS. There is no explanation of its principles or the goal of harmonization. (20/40)",
+        "c2": "Needs Improvement - Needs Improvement. The response mentions transparency and comparability but provides no supporting evidence or explanation for how IFRS achieves these outcomes. The statements are assertions without analysis. (20/40)",
+        "c3": "Needs Improvement - Needs Improvement. The discussion of challenges is extremely limited, just stating that 'it is hard to do this' without any further detail or context. (5/10)",
+        "c4": "Needs Improvement - Needs Improvement. The example provided ('big ones in other countries') is too vague to be meaningful and is not connected to any specific argument. (5/10)",
+        "total": " 50/100"
+      }
+    },
+    {
+      "quality": "Poor",
+      "authorship": "ai",
+      "key_points": [
+        "Incorrectly defines or confuses IFRS with something else.",
+        "Fails to make a connection between IFRS and transparency/comparability.",
+        "Does not mention any implementation challenges.",
+        "Provides no examples.",
+        "Is incoherent and poorly organized."
+      ],
+      "llm_questions": [
+        "What is money?",
+        "Do all companies make a profit?",
+        "What is a report?"
+      ],
+      "llm_answers": [
+        "It's what you use to buy stuff.",
+        "No, some companies lose money.",
+        "It's when you write down what happened."
+      ],
+      "final_submission": "Accounting is very important for a company.\n\nThey have to follow rules.\n\nIFRS is a rule. It helps with money. Companies have to be transparent. They write reports and people read them. It is good for business to be comparable. This is about multinational companies.\n\nIn conclusion, IFRS enhances transparency and cross‑border comparability, but its principles‑based design requires judgement, investment in capability, and careful local adoption to realize those benefits consistently.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [2,3],
+        "human_paragraph_indices": [0],
+        "hybrid_paragraph_indices": [1],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Poor - Poor. The submission demonstrates a fundamental misunderstanding of IFRS, failing to explain what it is or its purpose. It is conflated with the general idea of 'rules'. (8/40)",
+        "c2": "Poor - Poor. There is no clear link made between IFRS and the concepts of transparency or comparability. The terms are mentioned in isolation without any connection to the topic of the prompt. (8/40)",
+        "c3": "Poor - Poor. The submission completely fails to address the implementation challenges associated with IFRS adoption. (2/10)",
+        "c4": "Poor - Poor. No examples of companies, countries, or sectors are provided to support any of the statements. (2/10)",
+        "total": " 20/100"
+      }
+    },
+    {
+      "quality": "Good",
+      "authorship": "ai",
+      "key_points": [
+        "Demonstrates strong understanding of the IFRS framework, including principles and harmonization goals.",
+        "Clearly explains how IFRS contributes to both transparency and comparability, with some analytical depth.",
+        "Identifies key implementation challenges but without extensive detail or specific adaptations.",
+        "Includes a relevant, but slightly generic, real-world example.",
+        "Overall well-structured, but could benefit from more nuanced discussion."
+      ],
+      "llm_questions": [
+        "Can you elaborate on the principles-based nature of IFRS?",
+        "How do specific IFRS standards (e.g., for revenue or leases) improve transparency?",
+        "What are some common pitfalls companies encounter when adapting to IFRS?",
+        "Beyond Europe, which major economies have fully adopted IFRS?",
+        "How does IFRS impact the valuation of a multinational company during an acquisition?"
+      ],
+      "llm_answers": [
+        "IFRS is principles-based, meaning it provides a broad framework and objectives, requiring professional judgment in application rather than strict, detailed rules. This aims to reflect the economic substance of transactions more accurately, offering flexibility while demanding greater disclosure.",
+        "IFRS 15, for example, introduced a five-step model for revenue recognition that provides a more consistent and transparent approach across industries and jurisdictions. Similarly, IFRS 16 brings most leases onto the balance sheet, offering a clearer picture of a company's financial obligations and assets, enhancing transparency.",
+        "Companies often struggle with the significant data migration required, retraining their accounting teams, and correctly applying the judgment-heavy principles to complex transactions. There can also be challenges in adapting IT systems to handle new reporting requirements.",
+        "Many countries outside of Europe, such as Canada, Australia, India, and most of South America, have fully adopted IFRS for listed companies. Even countries like Japan offer it as an option, showing a strong global trend towards IFRS adoption.",
+        "IFRS adoption can simplify the due diligence process during M&A by providing a uniform basis for evaluating target companies' financials across borders. This leads to more reliable valuations and can reduce acquisition costs and risks by offering greater transparency into financial health."
+      ],
+      "final_submission": "The global adoption of International Financial Reporting Standards (IFRS) has fundamentally reshaped financial reporting for multinational companies (MNCs), primarily by enhancing clarity and comparability.\n\nAt its core, IFRS, a set of principles-based accounting standards issued by the International Accounting Standards Board (IASB), aims to create a common global language for financial reporting.\n\nThis move away from diverse national Generally Accepted Accounting Principles (GAAPs) allows investors and analysts to scrutinize financial statements from companies operating in different jurisdictions on a more consistent basis. For instance, comparing the financial performance of a pharmaceutical giant based in Germany with one in South Korea becomes significantly more straightforward if both adhere to IFRS. This common framework reduces the need for costly and time-consuming reconciliations, thereby fostering greater transparency by presenting a clearer, more consistent financial picture to global stakeholders. The enhanced comparability facilitates cross-border investment decisions, capital allocation, and mergers and acquisitions. However, the path to IFRS adoption is not without its difficulties. Implementation challenges are notable, often involving substantial investments in new IT infrastructure, comprehensive training for accounting and finance personnel, and the inherent complexities of interpreting and applying principles-based standards that demand significant professional judgment. For example, a large manufacturing company transitioning from a national GAAP might face significant hurdles in reclassifying assets and liabilities, or in adopting new revenue recognition methods under IFRS 15. Despite these transitional challenges, the overarching benefits of increased transparency and comparability for MNCs in an interconnected global economy remain a powerful driver for continued IFRS adoption worldwide.\n\nIn conclusion, IFRS enhances transparency and cross‑border comparability, but its principles‑based design requires judgement, investment in capability, and careful local adoption to realize those benefits consistently.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [2,3],
+        "human_paragraph_indices": [0],
+        "hybrid_paragraph_indices": [1],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Excellent - Excellent. The submission demonstrates a strong understanding of the IFRS framework, clearly articulating its principles-based nature and its role in global harmonization. The distinction from diverse national GAAPs is well-made. (38/40)",
+        "c2": "Good - Good. The analysis effectively explains how IFRS enhances both transparency and comparability, linking it to easier investor analysis and cross-border decisions. The discussion is clear, though it could delve slightly deeper into specific mechanisms of improvement. (34/40)",
+        "c3": "Average - Average. Key implementation challenges such as IT infrastructure, training, and interpretation are mentioned. However, the discussion lacks specific detail on 'country-specific adaptations' or a more nuanced understanding of these difficulties. (7/10)",
+        "c4": "Needs Improvement - Needs Improvement. A relevant example (a manufacturing company transitioning, pharmaceutical giants in Germany and South Korea) is provided, but it could be more detailed or offer multiple distinct instances with clearer connections to the arguments. It feels slightly generic. (5/10)",
+        "total": " 84/100"
+      }
+    },
+    {
+      "quality": "Average",
+      "authorship": "ai",
+      "key_points": [
+        "Possesses a good, fundamental understanding of what IFRS is and its goal of harmonization.",
+        "Makes general claims about transparency and comparability benefits without providing deep analytical insights.",
+        "Briefly mentions implementation difficulties but lacks detailed discussion of specifics.",
+        "Provides a very basic, somewhat vague example, or relies on a general regional example.",
+        "The overall argument structure is present but not highly developed."
+      ],
+      "llm_questions": [
+        "What is the role of the IASB in IFRS?",
+        "How do different financial statements (e.g., income statement, balance sheet) change under IFRS?",
+        "Could you name a specific challenge related to IFRS implementation, like for a particular industry?",
+        "How might IFRS adoption impact a company's reported profit compared to local GAAP?",
+        "What does 'harmonization' mean in the context of global accounting standards?"
+      ],
+      "llm_answers": [
+        "The IASB (International Accounting Standards Board) is the independent body that develops and issues IFRS standards. Its role is to create a single set of high-quality, understandable global accounting standards.",
+        "Under IFRS, there can be differences in how elements are recognized and measured. For instance, impairment rules for assets (IAS 36) can lead to different carrying values on the balance sheet compared to some local GAAPs, impacting the income statement through impairment charges.",
+        "In the banking sector, implementing IFRS 9 on financial instruments, particularly regarding expected credit loss (ECL) provisioning, presented significant challenges. It required complex models and vast amounts of data, leading to substantial changes in reported loan loss provisions.",
+        "Reported profit could change due to various IFRS rules, such as those for revaluation of property, plant, and equipment, or changes in how financial instruments are fair valued. Often, IFRS can lead to more volatility or earlier recognition of some expenses compared to rules-based local GAAPs.",
+        "Harmonization means reducing differences in accounting practices across countries. It aims to make financial statements globally consistent, reliable, and comparable, even if not fully identical in every jurisdiction, facilitating cross-border business and investment."
+      ],
+      "final_submission": "International Financial Reporting Standards (IFRS) serve as a crucial framework for multinational companies aiming to enhance financial clarity and comparability.\n\nEssentially, IFRS provides a standardized approach to financial reporting across various jurisdictions, moving away from diverse national accounting standards.\n\nThis harmonization is beneficial because it allows stakeholders, such as investors and creditors, to more easily understand and compare the financial health and performance of companies operating in different countries. For example, if two companies in the same industry, one based in Brazil and another in South Africa, both report under IFRS, their financial statements are inherently more comparable than if they used different national GAAPs. This increased comparability reduces the complexity of cross-border analysis and can foster greater investor confidence, theoretically lowering the cost of capital for these global entities. While the benefits are clear, the adoption of IFRS does present its share of implementation challenges. Companies must invest in updating their accounting systems, processes, and often, extensive employee training. The transition period can be complex and costly, requiring significant resources to align with the new standards. Furthermore, applying IFRS, which is generally principles-based, often requires more professional judgment than rules-based systems, which can sometimes lead to variations in application. In conclusion, IFRS plays a vital role in global finance by promoting transparency and comparability, despite the operational hurdles involved in its widespread adoption.\n\nIn conclusion, IFRS enhances transparency and cross‑border comparability, but its principles‑based design requires judgement, investment in capability, and careful local adoption to realize those benefits consistently.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [2,3],
+        "human_paragraph_indices": [0],
+        "hybrid_paragraph_indices": [1],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Good - Good. The submission demonstrates a good understanding of the IFRS framework, correctly identifying its purpose for standardization and harmonization across jurisdictions. (30/40)",
+        "c2": "Average - Average. The response makes general claims about how IFRS improves transparency and comparability for investors and creditors. However, it lacks detailed analysis or specific examples of *how* these improvements occur beyond broad statements. (28/40)",
+        "c3": "Needs Improvement - Needs Improvement. The submission briefly mentions implementation difficulties like system updates, training, and cost, but the discussion is very limited and lacks depth or specific examples of challenges or adaptations. (5/10)",
+        "c4": "Average - Average. The example provided (Brazil and South Africa companies using IFRS) is relevant but quite general. It illustrates the concept of comparability but doesn't provide detailed real-world context or evidence to fully support the arguments. (6/10)",
+        "total": " 69/100"
+      }
+    },
+    {
+      "quality": "Needs Improvement",
+      "authorship": "ai",
+      "key_points": [
+        "Shows a basic, somewhat unclear understanding of IFRS.",
+        "Mentions transparency and comparability as benefits but provides no supporting explanation or analysis.",
+        "Limited and superficial discussion of implementation challenges, often vague.",
+        "Fails to provide specific or relevant real-world examples.",
+        "Overall structure is weak, and arguments are poorly developed."
+      ],
+      "llm_questions": [
+        "What does IFRS stand for?",
+        "Why is it important for companies to be transparent?",
+        "Are there any problems with changing accounting rules?",
+        "Do all big companies use the same rules?",
+        "What is a multinational company?"
+      ],
+      "llm_answers": [
+        "IFRS stands for International Financial Reporting Standards.",
+        "It's important so people can trust what the company is saying about its money and assets.",
+        "Yes, it can be hard and costs money to change. People need to learn new ways.",
+        "No, not all of them. Some countries have their own rules, but many big companies use IFRS.",
+        "A multinational company is one that operates in many different countries around the world."
+      ],
+      "final_submission": "IFRS, which means International Financial Reporting Standards, is used by companies.\n\nIt's meant to make their financial information clear, which is called transparency.\n\nWhen companies use IFRS, it also makes it easier to compare them with other companies, especially if they are multinational. This is good for business because everyone can understand the numbers better. But it's not easy to start using IFRS. Companies have to change how they do their accounting, and that can be difficult and expensive. Sometimes they also have to learn new ways of reporting. IFRS is a good idea for global companies to make their reports look similar so people can see what is happening. Overall, IFRS is for making company finances more open and comparable.\n\nIn conclusion, IFRS enhances transparency and cross‑border comparability, but its principles‑based design requires judgement, investment in capability, and careful local adoption to realize those benefits consistently.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [2,3],
+        "human_paragraph_indices": [0],
+        "hybrid_paragraph_indices": [1],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Average - The submission correctly states what IFRS stands for and its general purpose, but the explanation of the framework itself or its underlying principles is basic and lacks detail. (25/40)",
+        "c2": "Needs Improvement - While the response mentions that IFRS enhances transparency and comparability, it offers no explanation or analysis of *how* this happens. These are stated as facts without any supporting reasoning. (22/40)",
+        "c3": "Poor - The discussion of implementation challenges is extremely superficial, merely stating 'difficult and expensive' without any specifics about what makes it so or what challenges actually arise. (3/10)",
+        "c4": "Poor - No specific real-world examples of companies, countries, or sectors are provided. The general statement 'multinational' does not count as an example. (2/10)",
+        "total": "Unscored – 52/100"
+      }
+    },
+    {
+      "quality": "Excellent",
+      "authorship": "ai",
+      "key_points": [
+        "Exceptional grasp of IFRS principles and their global harmonization impact.",
+        "Profound analysis of how IFRS elevates transparency and cross-border comparability, detailing mechanisms and benefits.",
+        "Thorough discussion of complex implementation challenges, including economic, legal, and operational nuances.",
+        "Integration of multiple distinct and relevant real-world examples from diverse contexts.",
+        "Sophisticated academic writing style with strong logical flow and precise terminology."
+      ],
+      "llm_questions": [
+        "Beyond core financial statements, what specific IFRS disclosures significantly enhance transparency?",
+        "How do national 'carve-outs' or interpretations of IFRS affect overall comparability, and how is this managed?",
+        "Can you discuss the role of regulatory bodies in the consistent application of IFRS across jurisdictions?",
+        "What are the implications of IFRS for internal control systems and data management within MNCs?",
+        "How has IFRS adoption specifically influenced capital market efficiency and foreign direct investment in emerging economies?"
+      ],
+      "llm_answers": [
+        "IFRS goes beyond the primary financial statements by requiring extensive narrative disclosures. For example, IFRS 7 (Financial Instruments: Disclosures) demands detailed information on risk exposures and management, while IAS 34 (Interim Financial Reporting) ensures transparency in seasonal or cyclical interim periods, providing a holistic view beyond just numbers.",
+        "National 'carve-outs' or varying interpretations can indeed dilute strict comparability. For instance, initial EU endorsements of IFRS included modifications to hedge accounting. This issue is managed through ongoing efforts by the IASB to promote consistent application, the work of national standard-setters, and the oversight of securities regulators who monitor compliance and interpretative guidance.",
+        "Regulatory bodies like the SEC in the US (for foreign private issuers using IFRS) or ESMA in the EU play a critical role. They enforce compliance, issue interpretative guidance, and sanction non-compliance, ensuring that IFRS is applied consistently and faithfully. Their oversight is crucial for maintaining investor confidence and market integrity.",
+        "IFRS often necessitates significant overhauls of internal control systems and data management processes. The move to a principles-based system requires more judgment, which in turn demands robust internal controls over financial reporting, enhanced data granularity for disclosures, and often the implementation of new enterprise resource planning (ERP) systems capable of handling IFRS-specific requirements.",
+        "In emerging economies, IFRS adoption has often been linked to increased foreign direct investment (FDI) and improved capital market efficiency. By providing internationally understood financial information, IFRS reduces information asymmetry for foreign investors, lowers their due diligence costs, and signals a commitment to global best practices, thereby attracting more capital and deepening local markets."
+      ],
+      "final_submission": "The pervasive adoption of International Financial Reporting Standards (IFRS) has served as a pivotal catalyst in elevating financial clarity and comparability for multinational companies (MNCs) operating within an increasingly integrated global economy.\n\nAs a principles-based framework developed by the International Accounting Standards Board (IASB), IFRS supplants myriad national Generally Accepted Accounting Principles (GAAPs), thereby establishing a unified financial language.\n\nThis harmonization directly enhances transparency by mandating comprehensive disclosures across diverse financial instruments (e.g., IFRS 9) and revenue recognition practices (IFRS 15), providing stakeholders with a more granular and consistent understanding of an entity's economic substance. The profound benefit of comparability is evident when contrasting companies like Nestlé (Switzerland) and Unilever (UK), both IFRS reporters, allowing investors to conduct direct, informed peer analysis without the burden of reconciling disparate accounting treatments. This streamlined comparison not only facilitates capital allocation efficiency but also significantly supports cross-border mergers and acquisitions, where consistent financial reporting underpins robust valuation models. Nonetheless, the journey to IFRS compliance is fraught with complexities. Implementation challenges encompass substantial one-off and ongoing costs associated with IT system upgrades, extensive training and reskilling of finance professionals, and the inherent difficulties in exercising professional judgment within a principles-based system. Furthermore, country-specific adaptations or 'carve-outs' – such as those observed in the initial EU endorsement – introduce nuances that can subtly affect absolute comparability. For instance, companies in India faced significant tax regime adjustments and interpretation challenges during their phased transition to Ind AS (converged IFRS). Despite these hurdles, the strategic imperative for MNCs to project a globally coherent financial image, as demonstrated by companies like Samsung adopting IFRS for its consolidated statements to appeal to international investors, underscores its enduring influence. IFRS fortifies investor confidence, reduces information asymmetry, and ultimately fosters a more efficient and transparent global capital market.\n\nIn conclusion, IFRS enhances transparency and cross‑border comparability, but its principles‑based design requires judgement, investment in capability, and careful local adoption to realize those benefits consistently.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [2,3],
+        "human_paragraph_indices": [0],
+        "hybrid_paragraph_indices": [1],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Excellent - The submission demonstrates an exceptional and nuanced understanding of the IFRS framework, its principles-based nature, and its strategic role in global harmonization, clearly distinguishing it from national GAAPs. (39/40)",
+        "c2": "Excellent - The analysis of transparency and comparability is profound and highly insightful. It delves into specific IFRS standards (e.g., IFRS 9, IFRS 15) to explain *how* these benefits are achieved, and thoroughly connects them to capital allocation and M&A. (38/40)",
+        "c3": "Excellent - The discussion of implementation challenges is comprehensive, covering costs, training, and the complexities of principles-based judgment. It also intelligently mentions 'carve-outs' and country-specific adaptations, adding depth to the understanding of practical issues. (9/10)",
+        "c4": "Excellent - Multiple distinct and highly relevant real-world examples (Nestlé, Unilever, Samsung, Indian Ind AS transition, EU endorsement nuances) are seamlessly integrated, significantly strengthening the arguments and demonstrating broad knowledge. (10/10)",
+        "total": " 96/100"
+      }
+    },
+    {
+      "quality": "Poor",
+      "authorship": "ai",
+      "key_points": [
+        "Demonstrates a fundamental misunderstanding of IFRS, confusing it with general accounting rules.",
+        "Fails to establish a clear link between IFRS and transparency/comparability, merely stating keywords.",
+        "Provides no meaningful discussion of implementation challenges.",
+        "Absence of any relevant real-world examples.",
+        "The submission is incoherent, disorganized, and lacks academic rigor."
+      ],
+      "llm_questions": [
+        "What are accounting standards?",
+        "Why do companies have to report their money?",
+        "What does 'international' mean?",
+        "Is IFRS only for big companies?",
+        "What is comparability in business?"
+      ],
+      "llm_answers": [
+        "They are guidelines that companies follow when they write down their financial information.",
+        "They report their money so people know how much they made or lost, and what they own.",
+        "It means across different countries, all over the world.",
+        "I think it's mostly for big companies that do business everywhere.",
+        "It means you can look at two companies and see which one is doing better because their numbers are similar."
+      ],
+      "final_submission": "IFRS is a rule for companies, like a system.\n\nIt helps them be transparent with their money.\n\nAll companies should be transparent so people know what's happening. When companies use IFRS, they are also comparable, which means you can look at different companies and see if they are doing good. This is for multinational companies because they are in many places. It is hard for them to change their accounting, like old ways to new ways. So IFRS is a good global rule to help companies show their money better to other people.\n\nIn conclusion, IFRS enhances transparency and cross‑border comparability, but its principles‑based design requires judgement, investment in capability, and careful local adoption to realize those benefits consistently.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [2,3],
+        "human_paragraph_indices": [0],
+        "hybrid_paragraph_indices": [1],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Needs Improvement - The submission has a very basic and often confused understanding of IFRS, equating it broadly to 'a rule' or 'a system' without explaining its framework, principles, or harmonization goal. (19/40)",
+        "c2": "Poor - While the terms 'transparent' and 'comparable' are used, there is no actual analysis or explanation of how IFRS achieves these outcomes. The statements are merely assertions without any supporting evidence or conceptual understanding. (10/40)",
+        "c3": "Poor - The discussion of implementation challenges is extremely vague and superficial ('hard for them to change', 'old ways to new ways'). It lacks any specific detail or context. (3/10)",
+        "c4": "Poor - No real-world examples are provided. The general reference to 'multinational companies' does not count as specific evidence. (2/10)",
+        "total": "34/100"
+      }
+    }
+  ]
+}

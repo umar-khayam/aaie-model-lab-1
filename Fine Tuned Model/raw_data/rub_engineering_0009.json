@@ -1,0 +1,356 @@
+{
+    "domain": "Engineering",
+    "prompt": "Describe how a software engineer decomposes a complex user requirement into smaller solvable problems, designs system architecture, tests individual components, and documents the development process. Include discussion on logical reasoning and organized solution flow.",
+    "rubric": {
+        "rubric_id": "rub_engineering_0009",
+        "criteria": [
+            {
+                "criterion_id": "c1",
+                "name": "Problem Decomposition and Requirement Analysis",
+                "description": "Explains how complex problems are broken into smaller, manageable tasks.",
+                "performance_descriptors": {
+                    "excellent": "Demonstrates thorough understanding of user requirements and breaks them into clear sub-problems.",
+                    "good": "Breaks problem into parts with good clarity; minor gaps in logic.",
+                    "average": "Basic breakdown of problem with limited linkage to requirements.",
+                    "needs_improvement": "Breakdown unclear or missing connections.",
+                    "poor": "No meaningful decomposition of the problem."
+                },
+                "weight": 30
+            },
+            {
+                "criterion_id": "c2",
+                "name": "System Design and Architecture",
+                "description": "Describes the architecture and design patterns used in the solution.",
+                "performance_descriptors": {
+                    "excellent": "Applies appropriate architectural model with clear rationale and components.",
+                    "good": "Architecture described with relevant components.",
+                    "average": "Basic design structure provided with minimal details.",
+                    "needs_improvement": "Unclear or disjointed system design.",
+                    "poor": "No design architecture presented."
+                },
+                "weight": 35
+            },
+            {
+                "criterion_id": "c3",
+                "name": "Component Testing and Validation",
+                "description": "Explains how individual modules are tested and integrated.",
+                "performance_descriptors": {
+                    "excellent": "Comprehensive explanation of testing strategies and integration methods.",
+                    "good": "Describes testing steps and integration checks.",
+                    "average": "Mentions testing but with limited strategy.",
+                    "needs_improvement": "Minimal or unclear testing process.",
+                    "poor": "No testing or validation explained."
+                },
+                "weight": 10
+            },
+            {
+                "criterion_id": "c4",
+                "name": "Documentation and Development Process",
+                "description": "Presents organized documentation with clear development phases and rationale.",
+                "performance_descriptors": {
+                    "excellent": "Well-structured documentation with clear flow and stakeholder communication.",
+                    "good": "Organized summary of phases with most key details.",
+                    "average": "Partial documentation; some steps missing or unclear.",
+                    "needs_improvement": "Disorganized or incomplete documentation.",
+                    "poor": "No clear documentation or explanation of process."
+                },
+                "weight": 25
+            }
+        ]
+    },
+    "submissions": [
+        {
+            "quality": "Excellent",
+            "key_points": [
+                "Problem decomposition involves breaking complex requirements into smaller, manageable functional modules",
+                "System architecture is chosen based on scalability, maintainability, and alignment with system goals",
+                "Modular testing verifies correctness of individual components in isolation",
+                "Integration testing ensures proper interaction and logical consistency between modules.",
+                "Software documentation emphasizes clear requirement specifications, test cases, and version control records as part of structured reporting."
+            ],
+            "llm_questions": [
+                "What is problem decomposition in software engineering?",
+                "How is system architecture theoretically selected?",
+                "What is the purpose of modular testing in theory?",
+                "How does integration testing ensure correct system behavior?",
+                "What should software documentation emphasize in theory?"
+            ],
+            "llm_answers": [
+                "Problem decomposition is a foundational technique where a complex software requirement is systematically broken down into smaller, more manageable, and independently solvable parts. This often involves processes like functional decomposition, where the system is analyzed based on its functions. In Agile methodologies, this translates to breaking down large 'Epics' into smaller 'User Stories,' which represent specific user-facing value, and then further into 'Tasks,' which are the concrete engineering actions required. This approach reduces cognitive load, enables parallel development by different teams, and simplifies estimation and testing.",
+                "System architecture selection is a critical, multi-faceted process guided by both functional and non-functional requirements (NFRs). NFRs like scalability, performance, security, and maintainability are key drivers. An engineer evaluates various architectural patterns (e.g., Microservices, Monolithic, Event-Driven, MVC) against these requirements. The decision involves a trade-off analysis; for instance, a microservices architecture offers high scalability and team autonomy but introduces complexity in deployment and inter-service communication. The final choice is a strategic decision that aligns technical implementation with long-term business goals, often documented in an Architecture Decision Record (ADR).",
+                "Modular testing, commonly known as unit testing, serves to verify the correctness of the smallest testable parts of an application—individual functions, methods, or components—in isolation from the rest of the system. Its primary purpose is to ensure that each 'unit' of code behaves as intended according to its specification. By using techniques like mocking and stubbing to isolate dependencies, developers can test a component's logic without being affected by external systems. This practice is crucial for catching bugs early in the development cycle, facilitating refactoring, and serving as a form of living documentation for the code's behavior.",
+                "Integration testing ensures that different modules or services, which have been individually unit-tested, function correctly when combined. It focuses on verifying the interactions, interfaces, and data flow between components. Common strategies include top-down, bottom-up, and 'big bang' integration. For example, in a microservices architecture, integration tests would verify that an 'Order' service can correctly call the 'Payment' service via its API and handle the response properly. This stage is vital for uncovering issues related to data formatting, network communication, and mismatched interface contracts that would not be apparent during unit testing.",
+                "Effective software documentation should be comprehensive, accessible, and targeted to its audience. It typically emphasizes several key areas: 1) Requirement Specifications: Documents like Product Requirements Documents (PRDs) that clearly define what the system must do. 2) Architectural Design: High-level diagrams, data models, and ADRs that explain the 'why' behind design choices. 3) API Documentation: Precise specifications for APIs (e.g., using OpenAPI/Swagger) so other developers know how to interact with a service. 4) Code-Level Documentation: Well-commented code and READMEs for setup and usage. 5) User-Facing Documentation: Guides and tutorials for end-users. All documentation should be version-controlled and treated as a living part of the project."
+            ],
+            "final_submission": "A systematic and disciplined software engineering process transforms a complex user requirement from an abstract idea into a robust, functional product through a structured flow of decomposition, design, testing, and documentation. This process is rooted in logical reasoning and ensures clarity, maintainability, and quality.\n\nThe initial phase, problem decomposition, involves translating a high-level requirement, such as 'Create a user review system for an e-commerce platform,' into granular, actionable components. An engineer would first break this down into epics like 'User Authentication,' 'Review Submission,' and 'Review Moderation.' Each epic is then further decomposed into user stories with specific acceptance criteria, such as, 'As a logged-in user, I want to submit a star rating and text review for a product I purchased.' These stories are then broken into technical tasks, like 'Create a `reviews` table in the database' or 'Build a REST API endpoint for POST /reviews.' This hierarchical breakdown ensures every aspect of the requirement is mapped to a concrete piece of work.\n\nNext, the engineer designs the system architecture. Based on non-functional requirements like scalability and fault tolerance, a microservices architecture might be chosen. This design would isolate the 'Review Service' from the 'Product' and 'User' services. The rationale is clear: a surge in review submissions should not impact the core checkout functionality. The design specifies the service's API contract (e.g., endpoints, request/response payloads), data schema, and its communication method with other services, perhaps via an asynchronous message queue for resilience. This organized design provides a clear blueprint for development.\n\nWith a design in place, development and testing proceed in tandem. For the 'Review Service,' unit tests are written to validate individual functions, such as a function that calculates the average star rating for a product. Mocks are used to simulate database calls, ensuring the logic is tested in isolation. Following this, integration tests are crucial. These tests verify that the 'Review Service' correctly fetches product data from the 'Product Service' and user data from the 'User Service.' This multi-layered testing strategy systematically validates correctness from the smallest unit to inter-service collaboration.\n\nFinally, the entire process is underpinned by comprehensive documentation. An OpenAPI/Swagger specification meticulously documents the API for other teams. An Architecture Decision Record (ADR) explains why the microservice pattern was chosen over a monolithic approach. Code is well-commented, and a README file provides setup and deployment instructions. All changes are tracked in a version control system with clear, descriptive commit messages. This structured documentation ensures the system is understandable, maintainable, and transferable, completing the logical flow from concept to production-ready software.",
+            "feedback": {
+                "c1": "Excellent. Demonstrates a thorough understanding by breaking down a complex requirement into epics, user stories, and technical tasks with clear, logical connections. (30/30)",
+                "c2": "Excellent. Applies a microservices architectural model with a clear rationale based on scalability and maintainability. The components and their interactions are well-defined. (35/35)",
+                "c3": "Excellent. Provides a comprehensive explanation of the testing pyramid, detailing strategies from unit testing with mocks to complex integration tests, showing a deep understanding of validation. (10/10)",
+                "c4": "Excellent. Presents a well-structured documentation strategy that covers API specifications, internal design decisions, and version control, highlighting a commitment to clear stakeholder communication. (25/25)",
+                "total": "100/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "key_points": [
+                "Identifies core user stories and acceptance criteria",
+                "Chooses an architecture pattern and outlines components",
+                "Describes unit tests with expected outcomes",
+                "Explains integration strategy and interfaces"
+            ],
+            "llm_questions": [
+                "How are user stories translated into tasks?",
+                "Which architecture patterns fit different contexts?",
+                "What defines a good unit test case?",
+                "How do you plan interface contracts for integration?"
+            ],
+            "llm_answers": [
+                "Once a user story and its acceptance criteria are defined (e.g., 'As a user, I can log in with my email and password'), an engineering team translates it into specific technical tasks. This involves identifying all the work needed across the technology stack. For the login example, tasks might include: 'Create a backend API endpoint POST /login', 'Design the database schema for the `users` table', 'Build the frontend login form with email and password fields', and 'Write a validation function for email format.' Each task is typically small enough to be completed by one developer in a short amount of time.",
+                "Architecture patterns provide templates for structuring a software system. For a standard web application, a Model-View-Controller (MVC) pattern is very common; it separates business logic (Model), user interface (View), and user input handling (Controller). For larger, more complex systems that require high scalability and independent team workflows, a Microservices architecture is often a better fit. This pattern breaks the application into a collection of small, independent services. The choice depends on factors like team size, scalability needs, and the complexity of the domain.",
+                "A good unit test case is defined by several key characteristics. First, it should be isolated, meaning it tests one small piece of functionality without relying on external systems like databases or networks (these are often 'mocked'). Second, it should be deterministic, always producing the same result for the same input. Third, it should be clear and readable, often following an 'Arrange-Act-Assert' pattern where you set up the test, execute the code, and then verify the outcome. Good unit tests also cover not just the 'happy path' but also edge cases and potential error conditions.",
+                "Planning interface contracts for integration is essential to ensure different software components or services can communicate effectively. This plan, often called an API contract, clearly defines the rules of interaction. It specifies the API endpoints (e.g., `/users/{id}`), the expected HTTP methods (GET, POST, etc.), the structure of request and response bodies (often using JSON), required headers, and status codes for success or failure. Using a formal specification like OpenAPI (Swagger) helps enforce this contract and allows teams to develop and test their components in parallel with confidence."
+            ],
+            "final_submission": "A software engineer follows a structured process to turn a complex user need into a working piece of software. This involves breaking the problem down, designing a solution, testing it thoroughly, and keeping good records. The whole process follows a logical flow to make sure the final product is reliable and well-built.\n\nFirst, the engineer performs problem decomposition. They take the user's main requirement, for instance, 'I need a blog on my website,' and break it down into smaller user stories. These might include 'As an admin, I can write and publish a new post,' and 'As a visitor, I can read posts and leave comments.' These stories clarify what needs to be built. The stories are then broken down further into technical tasks for the development team to work on.\n\nWith the requirements clear, the next step is system design. The engineer chooses an appropriate architecture. For a standard blog, a Model-View-Controller (MVC) architecture is a solid choice. The Model would manage the blog post data (saving, retrieving from the database). The View would be the HTML templates that display the blog posts to the user. The Controller would handle incoming user requests, like someone clicking on a post, and coordinate between the Model and the View to send back the correct response. This separation keeps the code organized.\n\nAs the components are built, they must be tested. The engineer writes unit tests for individual functions, such as a function that validates a comment before saving it to ensure it's not empty. This checks the small parts in isolation. After the individual parts are working, integration testing is performed. This ensures that the components work together correctly—for example, confirming that when a user submits a comment through the View, the Controller correctly processes it and the Model saves it to the database. \n\nThroughout the project, good documentation is maintained. This includes commenting the code to explain complex parts and creating a README file that explains how to set up and run the project. A log of major changes and decisions is also kept. This documentation is crucial for future maintenance and for new developers joining the team. It provides a clear summary of the development process and the system's structure.",
+            "feedback": {
+                "c1": "Good. The problem is broken into parts with good clarity, translating requirements into user stories. The logical flow is present, though some deeper analysis of acceptance criteria could be beneficial. (24/30)",
+                "c2": "Good. A relevant architecture (MVC) is described with its key components. The rationale is present, but could be expanded upon with more specific project constraints. (28/35)",
+                "c3": "Good. Describes clear testing steps including unit and integration checks. The explanation of test cases is solid, though a more comprehensive strategy could be outlined. (8/10)",
+                "c4": "Good. Provides an organized summary of development phases and documentation practices like READMEs. Most key details are included, but it lacks detail on stakeholder communication. (20/25)",
+                "total": "80/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "key_points": [
+                "Lists features without detailed analysis",
+                "Provides a basic component diagram in words",
+                "Mentions tests but not coverage criteria",
+                "Notes the need for documentation"
+            ],
+            "llm_questions": [
+                "How do you refine features into testable tasks?",
+                "What minimal artifacts describe an architecture?",
+                "How do you choose test coverage targets?",
+                "What sections make a concise dev log?"
+            ],
+            "llm_answers": [
+                "To refine a feature into testable tasks, you need to think about all the steps required to make it work. First, you list the main actions a user can take. For example, for a 'user profile' feature, the actions are viewing, editing, and saving. Then, for each action, you can create tasks like 'build the user interface for the profile page,' 'write the code to load user data,' and 'create the save button functionality.' This makes it easier to build and test each part separately.",
+                "The minimal artifacts to describe an architecture are usually a simple diagram and a short description. The diagram, often just boxes and arrows, shows the main parts of the system and how they connect. For example, a box for the 'Frontend', one for the 'Backend', and one for the 'Database', with arrows showing how data flows between them. The description should briefly explain what each part does and what technology it uses, like 'Frontend is a React app' and 'Backend is a Python API'.",
+                "Choosing test coverage targets is about deciding how much of your code should be checked by automated tests. A common goal is around 70-80%, but it's not just about the number. You should focus on testing the most critical parts of your application, like payment processing or user authentication. For less important parts, you might accept lower coverage. It's a balance between confidence that your code works and the time it takes to write tests.",
+                "A concise dev log, or development log, helps track progress. It should have a few simple sections for each entry. A good format includes: the date, a brief summary of what you worked on ('Implemented user login'), a list of specific changes or key accomplishments, and a section for any problems you encountered or questions you have. Keeping it simple ensures it's easy to maintain regularly."
+            ],
+            "final_submission": "When a software engineer gets a complex task, they have to have a plan. The process for making software involves a few main steps. They have to understand the problem, make a design, test their work, and write down what they did. This helps make sure the project goes smoothly and other people can understand the code later on.\n\nFirst, they do problem decomposition. This means they take the big requirement from the user and break it into a list of smaller features. For a project like building a new website, the features might be a home page, an about page, and a contact form. By making a list, the engineer knows what they need to build, one piece at a time. This is the first step in organizing the work.\n\nNext comes the system design. The engineer thinks about how the software will be structured. There is usually a part the user sees, called the frontend, and a part that runs on the server, called the backend. There is also a database to store information. The engineer decides how these parts will talk to each other. This is like a blueprint for the code.\n\nAfter writing some code, testing is very important. The engineer needs to make sure each component works correctly. They run tests on the individual parts to catch bugs early. Then they do more tests to see if all the parts work together. For example, they check if the contact form on the frontend successfully sends the information to the backend.\n\nFinally, the process needs to be documented. The engineer writes comments in the code to explain what it does. They might also create a document that explains the whole system. This is important so that if someone else has to work on the code, they can understand it. Documentation helps with maintaining the software over time.",
+            "feedback": {
+                "c1": "Average. Offers a basic breakdown of the problem by listing features, but the linkage to specific user requirements is limited and lacks detail. (20/30)",
+                "c2": "Average. A basic design structure is provided, mentioning a UI, business logic, and database, but minimal details are given about how they interact or the rationale for this structure. (23/35)",
+                "c3": "Average. Mentions that testing is performed, but a clear strategy, such as types of tests or coverage goals, is not well-defined. (6/10)",
+                "c4": "Average. Notes the need for documentation, but the description is partial, and key steps in the development process are either missing or unclear. (16/25)",
+                "total": "65/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "key_points": [
+                "Requirements are ambiguous",
+                "Architecture rationale is missing",
+                "Testing plan is incomplete",
+                "Documentation lacks structure"
+            ],
+            "llm_questions": [
+                "How do you clarify ambiguous requirements?",
+                "What criteria justify architecture selection?",
+                "Which tests are mandatory before integration?",
+                "How do you format a simple change log?"
+            ],
+            "llm_answers": [
+                "To clarify ambiguous requirements, you should talk to the person who gave them to you. You can ask them more questions to understand what they really want. It's a good idea to give examples to make sure you are on the same page. Writing down the requirements after you talk can also help make things clearer for everyone involved.",
+                "To justify an architecture selection, you need to explain why you picked it. The criteria are usually things like if it will be fast enough or if it's easy to add new things later. You pick the one that you think is good for the project. The cost and what your team already knows how to use are also important factors to consider.",
+                "The tests that are mandatory before integration are the ones that check if the basic parts work. You have to make sure each module does what it's supposed to do on its own. These are usually called unit tests. If you don't do these, then when you try to put everything together, you won't know where the problems are coming from.",
+                "To format a simple change log, you just need to write down the changes you made. You can make a list with the date for each change. Under the date, write a short sentence about what you did, like 'Fixed a bug on the login page' or 'Added a new button.' There is no single correct way, as long as it is understandable."
+            ],
+            "final_submission": "A software engineer has a complex job. They get a requirement and have to turn it into a working program. This involves using logical reasoning. First they have to think about the problem. They break it down. Breaking a problem down is important because big problems are hard to solve all at once. So you make them into smaller problems.\n\nAfter you think about the problem, you have to design the system. This is where you decide how the program will work. You might have different parts in your system. For example a database. The design needs to make sense. Without a good design, the code will be a mess and hard to manage. So the engineer has to be organized.\n\nThen the engineer writes the code. After the code is written, it needs to be tested. Testing is how you find bugs. You run the program and see if it does what you expect. If it doesn't, you have to fix it. All the different components need to be tested. This part is very important for quality. You have to test everything.\n\nFinally, you have to document what you did. Documentation is writing about your program so other people can understand it. You might explain the design or how to use the program. The flow of the solution is from the problem to the final code. This organized process helps the engineer be successful in their work and create good software for users.",
+            "feedback": {
+                "c1": "Needs Improvement. The submission mentions breaking down the problem, but the explanation is unclear and there are no connections made to the user requirement. (15/30)",
+                "c2": "Needs Improvement. The system design is disjointed; it mentions parts of a system like a database but does not present a coherent architecture or plan. (18/35)",
+                "c3": "Needs Improvement. The testing process is minimal and unclear. It only vaguely states that testing is done to find bugs without describing any process or method. (5/10)",
+                "c4": "Needs Improvement. The documentation approach is disorganized and incomplete, lacking any clear structure or explanation of the development process. (13/25)",
+                "total": "51/100"
+            }
+        },
+        {
+            "quality": "Poor",
+            "key_points": [
+                "No decomposition of the requirement",
+                "No viable design choices explained",
+                "No testing evidence",
+                "No coherent documentation"
+            ],
+            "llm_questions": [
+                "What is the minimal lifecycle to follow?",
+                "Why is traceability critical?",
+                "How do you prove correctness at module level?",
+                "What happens without structured records?"
+            ],
+            "llm_answers": [
+                "The minimal lifecycle to follow is to first plan what you will do, then write the code, and then test it to see if it works. This is a very basic process but covers the most essential steps in making any software.",
+                "Traceability is critical because it's important to be able to track things. It helps connect the requirements to the code and tests. This way, you can see why a certain piece of code exists and make sure everything that was asked for has been built.",
+                "To prove correctness at a module level, you have to run the program and see what it does. If the module gives you the right output for the inputs you give it, then you can say it is correct. This is the main way to check if your code is working as you expect it to.",
+                "Without structured records, it becomes very hard to manage a project. If you don't write down what you did, you will forget. If a new person joins the team, they will have no idea how the system works. It also makes it difficult to find the cause of bugs or to make future improvements."
+            ],
+            "final_submission": "Software engineering is about making computer programs. It is a very technical field and requires a lot of skill. An engineer's job is to solve problems using code. They get a task from a user or a company and they have to build a solution. The solution has to work properly and be useful. This requires a lot of logical thinking and being very organized in your work. You have to write code in a programming language that the computer can understand.\n\nTo make a program, you first need to understand what the program is supposed to do. This is a key step. If you don't understand the problem, you cannot solve it. So you have to spend time thinking about the requirements. After you understand, you can start building. Building software involves writing a lot of code. This code tells the computer what to do step by step. \n\nGood software is organized. It's not just a bunch of random code. There should be some kind of structure to it. This makes it easier to work on. It is also important that the software does not have errors. Errors, or bugs, make the program crash or do the wrong thing. So engineers spend a lot of time trying to prevent bugs. They do this by being careful when they code. This entire process shows how an engineer builds a system.",
+            "feedback": {
+                "c1": "Poor. There is no meaningful decomposition of the problem presented; the submission does not explain how a complex requirement is broken down. (6/30)",
+                "c2": "Poor. No design architecture is presented or described. The submission fails to address how a system would be structured. (7/35)",
+                "c3": "Poor. Testing and validation are not explained. There is no mention of how components would be verified or integrated. (2/10)",
+                "c4": "Poor. The submission provides no clear documentation or explanation of the development process. The entire flow is missing. (5/25)",
+                "total": "20/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "key_points": [
+                "Thorough problem decomposition into well-defined tasks",
+                "Clear and logical system design, though rationale for specific patterns could be deeper",
+                "Comprehensive testing strategy covering unit and integration aspects",
+                "Documentation efforts are present but lack a formal, structured approach"
+            ],
+            "llm_questions": [
+                "How do you ensure user requirements are fully captured during decomposition?",
+                "What are the trade-offs of choosing a particular architectural pattern?",
+                "Describe the role of test-driven development (TDD) in component testing.",
+                "What are best practices for maintaining living documentation in an agile environment?"
+            ],
+            "llm_answers": [
+                "To ensure user requirements are fully captured during decomposition, a software engineer employs several techniques. First, elicitation techniques like interviews, workshops, and use case modeling are used to gather detailed requirements. These are then structured into user stories or functional specifications, each with clear acceptance criteria. During decomposition, these high-level requirements are broken down into smaller, testable tasks. Techniques like 'impact mapping' or 'story mapping' help visualize the entire scope and ensure no critical paths are missed. Continuous communication with stakeholders throughout the decomposition phase is vital to validate the understanding and refine the granularity of tasks.",
+                "Choosing an architectural pattern involves significant trade-offs. For instance, a Monolithic architecture is simpler to develop and deploy initially, making it suitable for smaller teams or less complex applications, but it can become a bottleneck for scalability and maintainability as the system grows. Conversely, a Microservices architecture offers high scalability, resilience, and independent deployment, but introduces complexities in service communication, data consistency, and operational overhead. An Event-Driven architecture provides loose coupling and responsiveness but adds complexity in debugging and managing event flows. The 'best' choice always depends on the project's specific non-functional requirements, team size, budget, and time-to-market constraints.",
+                "Test-Driven Development (TDD) is a development practice where you write tests *before* writing the actual code. The process follows a 'Red-Green-Refactor' cycle: 1) Red: Write a small test that fails (because the feature isn't implemented yet). 2) Green: Write the minimum amount of code required to make the test pass. 3) Refactor: Improve the code while ensuring all tests still pass. In component testing (unit testing), TDD forces developers to think about the component's interface and behavior upfront, leading to cleaner, more modular code with inherent testability. It acts as a living specification and significantly reduces the number of bugs introduced during development.",
+                "Maintaining living documentation in an agile environment requires embedding documentation into the development workflow rather than treating it as an afterthought. Best practices include: 1) Code as documentation: Write clean, self-documenting code with meaningful variable names and well-placed comments. 2) Automated tests as documentation: Well-written unit and integration tests describe the expected behavior of components. 3) Architecture Decision Records (ADRs): Short, focused documents explaining key architectural decisions and their rationale. 4) README files: Comprehensive READMEs for repositories explaining setup, deployment, and basic usage. 5) Wiki or Confluence pages: For higher-level conceptual and user-facing documentation, regularly updated and reviewed by the team. Tools that integrate documentation with code, like Swagger for APIs, also promote 'living' docs."
+            ],
+            "final_submission": "The process of developing software from a complex user requirement demands a highly organized and logical approach. A skilled software engineer meticulously navigates through problem decomposition, system architecture design, rigorous testing, and comprehensive documentation to deliver a robust and functional product.\n\nProblem decomposition begins by taking a broad requirement, such as 'Develop a secure online banking portal,' and breaking it down into manageable, independent modules. This involves identifying key epics like 'Account Management,' 'Transaction Processing,' and 'User Authentication.' Each epic is then translated into detailed user stories, for example, 'As a registered user, I can securely log in to my account,' complete with specific acceptance criteria that define success. Further breakdown identifies granular tasks for each story, such as 'Implement multifactor authentication' or 'Design database schema for user profiles.' This hierarchical approach ensures clarity and addresses all facets of the requirement systematically.\n\nFollowing decomposition, the system architecture is designed. For a banking portal, a multi-tiered architecture would be appropriate, separating the presentation layer (web/mobile apps), application layer (business logic, APIs), and data layer (databases). The design would specify technologies for each layer, communication protocols (e.g., RESTful APIs, gRPC), and security measures like encryption and access controls. While the choice of a multi-tiered approach is logical for security and scalability, a deeper rationale for specific patterns within each tier (e.g., microservices vs. monolithic for the application layer) would strengthen the design considerably.\n\nComponent testing and validation are integral throughout development. Unit tests are written for individual functions, such as validating user input or calculating transaction fees, ensuring each code segment works correctly in isolation. Integration tests verify interactions between components, for instance, confirming that the authentication service correctly communicates with the account management service after a successful login. This multi-stage testing prevents defects from propagating and ensures the system's reliability at every level.\n\nFinally, the development process is supported by documentation. While the importance of documenting APIs, code logic, and deployment procedures is understood, the current approach lacks a truly formal and structured system. There are comments in code, and basic READMEs are provided, but a more comprehensive strategy for versioning documentation, creating architectural decision records (ADRs), and ensuring it is accessible and consistently updated for all stakeholders is needed. This would enhance maintainability and knowledge transfer significantly.",
+            "feedback": {
+                "c1": "Excellent. Demonstrates a thorough understanding of user requirements and breaks them into clear, actionable sub-problems from epics to granular tasks with strong examples. (30/30)",
+                "c2": "Good. A clear multi-tiered architecture is described with relevant components and technologies. The design is logical, but the rationale for choosing specific patterns could be expanded. (28/35)",
+                "c3": "Excellent. Provides a comprehensive explanation of testing strategies, including unit and integration tests, demonstrating a deep understanding of validation methods. (10/10)",
+                "c4": "Needs Improvement. While the importance of documentation is understood, the approach described is present but lacks a formal, well-structured system for consistent updates and stakeholder communication. (13/25)",
+                "total": "81/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "key_points": [
+                "Identifies basic functional requirements",
+                "Outlines a general three-tier architecture concept",
+                "Mentions unit and integration testing without detailed strategies",
+                "Describes the development process and documentation as sequential steps"
+            ],
+            "llm_questions": [
+                "How can functional requirements be distinguished from non-functional requirements?",
+                "What are the primary benefits of a modular system design?",
+                "How do mocks and stubs aid in unit testing?",
+                "Why is version control essential for documentation, not just code?"
+            ],
+            "llm_answers": [
+                "Functional requirements (FRs) define what the system *must do* to achieve its purpose, often described as features or behaviors. For example, 'The system must allow users to log in.' Non-functional requirements (NFRs), on the other hand, specify *how* the system should perform, focusing on quality attributes like performance, security, usability, and scalability. For instance, 'The system must respond to login requests within 2 seconds' is an NFR related to performance. FRs are about capabilities, while NFRs are about constraints and quality of those capabilities. Both are crucial for a successful product.",
+                "The primary benefits of a modular system design include improved maintainability, enhanced reusability, and easier scalability. By breaking a system into smaller, independent modules, it becomes simpler to understand, develop, and test individual parts without affecting the entire system. This also allows different teams to work on different modules in parallel. Furthermore, well-designed modules can be reused across different projects or within the same system, reducing development time and effort. Finally, modularity often facilitates scaling specific parts of the application that experience higher load, without needing to scale the entire system.",
+                "Mocks and stubs are crucial tools in unit testing to isolate the component being tested from its dependencies. A **stub** is a dummy object that holds predefined data and returns it when its methods are called, effectively simulating the behavior of a real dependency. For example, a database stub might return a fixed list of users. A **mock** is similar but also includes assertions about how its methods were called during the test, allowing verification of interactions. Both allow developers to focus on testing the logic of a single unit without the complexities or side effects of its external collaborators, making tests faster, more reliable, and reproducible.",
+                "Version control is essential for documentation, not just code, for several reasons. Firstly, it provides a complete history of changes, allowing teams to track who changed what and when, which is vital for accountability and debugging. Secondly, it enables collaboration, as multiple team members can work on documentation concurrently, merging changes safely. Thirdly, it acts as a backup system, protecting against accidental data loss and allowing rollbacks to previous versions if needed. Finally, linking documentation versions to specific code releases ensures that the documentation accurately reflects the state of the software at any given time, improving consistency and clarity for users and developers alike."
+            ],
+            "final_submission": "A software engineer faces the challenge of transforming a complex user requirement into a functional system. This process is structured into several logical phases: understanding the problem, designing the solution, testing its components, and documenting the entire journey. An organized solution flow ensures efficiency and clarity.\n\nProblem decomposition begins with identifying the core functional requirements from the user. For a system like an inventory management tool, this might involve features such as 'Add new items,' 'Track stock levels,' and 'Generate reports.' The engineer breaks these larger features down into smaller, more manageable tasks. For instance, 'Add new items' could be broken into 'Create item entry form,' 'Validate input data,' and 'Store item in database.' This initial breakdown helps clarify the scope and defines discrete work packages, though further refinement into detailed user stories or acceptance criteria would provide more robust clarity.\n\nNext, the system design and architecture are conceptualized. A common approach is a three-tier architecture: a user interface tier (e.g., a web application), a business logic tier (e.g., a backend API server), and a data storage tier (e.g., a database). The engineer outlines how these tiers interact—for example, the UI sends requests to the API, which then interacts with the database. This provides a basic structural blueprint. However, the design could benefit from more specific details about the technologies chosen for each tier or the rationale behind selecting this particular architecture over others.\n\nComponent testing and validation are performed to ensure quality. Unit tests are carried out on individual functions, like validating the format of an item ID. Following this, integration tests are used to verify that different components work together, such as ensuring that adding an item via the UI successfully updates the database through the API. While testing is clearly an understood step, a more defined strategy including specific test methodologies or tools would enhance the explanation of how issues are systematically identified and resolved.\n\nFinally, documentation is generated throughout the development process. This includes code comments to explain complex logic and user manuals for the final product. The development process itself is generally sequential, moving from requirements to design, then implementation and testing, before deployment. The documentation is updated at various stages to reflect changes. While the overall flow is logical, a more proactive and integrated approach to documentation, potentially involving version control for documents and regular review cycles, would significantly improve its utility and maintainability, especially for stakeholder communication.",
+            "feedback": {
+                "c1": "Average. Provides a basic breakdown of the problem into functional requirements and smaller tasks, but the linkage to explicit user requirements and deeper analysis is limited. (20/30)",
+                "c2": "Average. A basic three-tier design structure is outlined with minimal details on specific technologies or the rationale behind architectural choices. (23/35)",
+                "c3": "Average. Mentions unit and integration testing steps but with limited strategy or specific examples of how complex validation is performed. (7/10)",
+                "c4": "Good. Describes the development process with a clear, logical flow and mentions documentation at various stages, including comments and user manuals. Most key details are included. (20/25)",
+                "total": "70/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "key_points": [
+                "Vague understanding of problem decomposition",
+                "Limited and unclear description of system design",
+                "Minimal mention of testing without any specific methods",
+                "Documentation is acknowledged but lacks any practical process or structure"
+            ],
+            "llm_questions": [
+                "What is the first step when a new project starts?",
+                "Why is it bad to skip the design phase?",
+                "How do you know if your code works?",
+                "What is the simplest way to keep track of project changes?"
+            ],
+            "llm_answers": [
+                "When a new project starts, the first step is usually to understand what the project is supposed to do. This means talking to the people who want the software and figuring out their needs. It's like planning before you build a house; you need to know what kind of house they want, how many rooms, etc., before you start drawing blueprints.",
+                "Skipping the design phase is bad because it often leads to a messy and hard-to-manage project later on. Without a clear design, developers might build parts that don't fit together well, or they might have to redo a lot of work. It's like trying to build a house without blueprints; you'll likely run into many problems and waste a lot of time and materials.",
+                "You know if your code works by running it and checking if it behaves as expected. For small pieces of code, you can manually test it with different inputs. For larger systems, you write automated tests that check if specific parts of the code produce the correct output or perform the right actions. If the tests pass and the system does what users want, then it's generally considered to be working.",
+                "The simplest way to keep track of project changes is to use a version control system like Git. Every time you make changes to your code or documents, you 'commit' them with a message explaining what you did. This creates a history of all modifications. If something goes wrong, you can easily go back to an earlier version. For less technical work, even a simple shared document where everyone notes their changes with dates can help."
+            ],
+            "final_submission": "A software engineer's job involves taking a user's big idea and turning it into a working computer program. This requires a lot of logical thinking and a good flow of work. It’s important to be organized throughout the whole process so the software is good and doesn't have many problems.\n\nFirst, the engineer needs to understand the problem. They need to figure out what the user actually wants the software to do. This is like breaking down a big task into smaller, easier-to-handle pieces. For example, if a user wants a 'photo-sharing app,' the engineer might think about 'uploading photos,' 'viewing photos,' and 'adding comments.' This helps to see the different parts of the problem, though the exact connection between these parts and the overall user requirement is not fully clear.\n\nNext, the engineer has to design how the system will work. This means planning the different parts of the software. There will be a part that the user interacts with (the frontend), and a part that handles data behind the scenes (the backend), and a place to store information (the database). They need to figure out how these pieces will connect. However, the description of this system design is quite generic, without specific examples of how the components would actually be structured or interact, making it disjointed.\n\nAfter designing and coding, testing is a crucial step. The engineer tests the different parts of the code to make sure they work correctly. This involves running the software to see if it does what it's supposed to. If there are bugs, they need to be fixed. The description mentions testing is done to find bugs but doesn't elaborate on any specific testing methods or a comprehensive strategy for how individual components are verified or how they integrate.\n\nFinally, documentation is a part of the process. The engineer writes notes about the code and the system so that other people can understand it later. This helps with maintaining the software over time. While acknowledging the need for documentation, the explanation of the development process and how documentation fits into it is quite basic and lacks details on specific types of documentation, its structure, or how it contributes to an organized solution flow for different stakeholders.",
+            "feedback": {
+                "c1": "Needs Improvement. The submission mentions breaking down the problem into smaller pieces, but the explanation lacks clarity and specific connections to how this directly stems from or addresses a complex user requirement. (15/30)",
+                "c2": "Poor. Mentions system parts like frontend, backend, and database, but provides no actual design architecture, structural plan, or coherent explanation of their interaction. (7/35)",
+                "c3": "Needs Improvement. The testing process is minimally described. It vaguely states that testing is done to find bugs, but without any specific methods, strategies, or integration steps. (5/10)",
+                "c4": "Poor. The submission acknowledges documentation but provides no clear explanation of its structure, contents, or how it integrates into an organized development process. (5/25)",
+                "total": "32/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "key_points": [
+                "Basic identification of features from requirements",
+                "Outlines a standard client-server design but lacks depth",
+                "Mentions functional testing and bug fixing",
+                "Documents major project phases but misses detail on communication and rationale"
+            ],
+            "llm_questions": [
+                "What is the difference between functional and non-functional requirements?",
+                "Explain the purpose of API contracts in system design.",
+                "What are acceptance tests and how do they differ from unit tests?",
+                "How can internal documentation aid developer onboarding?"
+            ],
+            "llm_answers": [
+                "Functional requirements describe what the system *does* (e.g., 'The system allows users to search for products'). Non-functional requirements describe *how* the system performs its functions (e.g., 'The system must load search results within 1 second'). Functional requirements define features, while non-functional requirements define quality attributes like performance, security, and usability. Both are essential for a complete understanding of what needs to be built.",
+                "API contracts serve as a formal agreement between different parts of a system (or different services) on how they will communicate. They define the structure of requests and responses, the data types, the available endpoints, and the expected behaviors. The purpose is to ensure interoperability and allow independent development. If an API's contract is well-defined, one team can build a client while another builds the server, confident that they will integrate correctly, reducing integration issues and facilitating parallel development.",
+                "Unit tests verify individual, isolated components (e.g., a single function or method) to ensure they work correctly in isolation. Acceptance tests, on the other hand, are high-level tests that verify the entire system or a major feature from an end-user perspective, based on the defined acceptance criteria. They ensure the software meets the business requirements and user expectations. While unit tests are for developers, acceptance tests are often derived from user stories and validated by business stakeholders.",
+                "Internal documentation is incredibly valuable for developer onboarding. It includes things like setup guides for the development environment, architecture diagrams, API specifications, code comments, and project wikis. This organized knowledge base allows new developers to quickly understand the system's structure, how different parts interact, and the reasoning behind key design decisions. It reduces the time spent asking basic questions, minimizes ramp-up time, and helps new team members become productive contributors much faster."
+            ],
+            "final_submission": "A software engineer approaches a complex user requirement by first breaking it down into smaller, manageable parts, followed by designing the system, meticulously testing components, and documenting the entire process. This systematic approach ensures logical reasoning and an organized solution flow.\n\nInitially, problem decomposition involves translating a broad user requirement, such as 'Develop an online course registration system,' into core functional components. This typically means identifying key features like 'Student Registration,' 'Course Enrollment,' and 'Grade Management.' These features are then further broken down into actionable tasks. For example, 'Student Registration' might lead to tasks like 'Design student database schema,' 'Create registration form,' and 'Implement user authentication.' This provides a basic framework, listing out what needs to be built, but could benefit from more explicit linking to user personas or detailed acceptance criteria to ensure full requirement coverage.\n\nNext, the system architecture is designed. A common pattern for web applications is a client-server model. The client (web browser) sends requests to a server, which processes the logic and interacts with a database. The design specifies that the client handles the user interface, the server handles business rules and data access, and a relational database stores all student and course information. This provides a clear, standard structure, but the submission lacks a detailed discussion of the rationale for choosing this particular pattern, or deeper insight into specific design patterns within the server component.\n\nComponent testing and validation are carried out during and after development. Individual functions or modules are tested to ensure they perform correctly, such as a function that validates student ID formats. Integration tests are also conducted to verify that different parts of the system work together seamlessly; for instance, ensuring that a student enrolling in a course correctly updates both the student's record and the course's roster. The testing process outlined focuses on finding and fixing bugs, which is crucial, but it could be enhanced by discussing more formal testing strategies like test automation or test coverage metrics.\n\nFinally, documentation is maintained throughout the development lifecycle. This includes outlining the different phases of the project (e.g., requirements gathering, design, implementation, testing, deployment) and documenting major decisions. The project also maintains basic code comments and internal notes on significant features. While an organized summary of phases is presented, the documentation aspect could be improved by providing more detail on how formal documentation (like API specs or architecture diagrams) is managed, versioned, and communicated to various stakeholders to ensure transparency and maintainability.",
+            "feedback": {
+                "c1": "Average. Provides a basic breakdown of the problem by identifying functional components and related tasks, but the linkage to specific user requirements is limited and lacks depth. (20/30)",
+                "c2": "Average. A basic client-server design structure is provided, outlining key components, but minimal details are given about their interaction or the rationale for this structure. (23/35)",
+                "c3": "Good. Describes testing steps including functional testing and bug fixing, and mentions both individual module and integration checks. (8/10)",
+                "c4": "Good. Provides an organized summary of development phases and documentation practices like code comments and internal notes. Most key details are included. (20/25)",
+                "total": "71/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "key_points": [
+                "Adequate problem breakdown into manageable features",
+                "Basic architectural overview with common components",
+                "Mentions unit and integration testing but without detailed methodology",
+                "Provides structured development process but limited depth in documentation details"
+            ],
+            "llm_questions": [
+                "What is the role of use cases in problem decomposition?",
+                "How do design patterns contribute to a robust system architecture?",
+                "When should end-to-end testing be prioritized over unit testing?",
+                "What is the 'Single Source of Truth' principle in documentation?"
+            ],
+            "llm_answers": [
+                "Use cases are a powerful tool in problem decomposition for software engineers. A use case describes a sequence of interactions between an external actor (like a user) and the system to achieve a particular goal. By identifying and detailing these use cases (e.g., 'Register new user,' 'Submit product review'), engineers can systematically break down a large system into distinct, self-contained functional units. This helps clarify user requirements, identify system boundaries, and define the scope of individual features, making the complex problem more manageable.",
+                "Design patterns are reusable solutions to common problems in software design. They contribute to a robust system architecture by providing proven templates for how to structure code and components. For example, the Observer pattern helps manage dependencies between objects, and the Factory pattern provides a standardized way to create objects. Using design patterns leads to more maintainable, scalable, and understandable code; it also promotes best practices, reduces development time, and makes the system more resilient to changes because it's built on well-tested, common solutions.",
+                "End-to-end (E2E) testing should be prioritized over unit testing when verifying critical user flows or business processes that span multiple components and external systems. While unit tests ensure individual parts work, E2E tests validate that the entire application, from user interface to database, functions as expected in a real-world scenario. They are more complex and slower than unit tests, but crucial for ensuring overall system health and detecting integration issues that unit tests might miss. Unit tests should always be done first, but E2E tests are essential for final system validation.",
+                "The 'Single Source of Truth' (SSOT) principle in documentation means that for any piece of information, there should only be one primary, authoritative place where it is stored and updated. This prevents inconsistencies, out-of-date information, and confusion. For example, if API specifications are documented, they should reside in a single tool (like Swagger/OpenAPI) that is linked from all other relevant places. Adhering to SSOT ensures that when information changes, it is updated in one location, and all consumers of that information automatically access the most current version."
+            ],
+            "final_submission": "A software engineer tackles complex user requirements through a structured process encompassing problem decomposition, system design, component testing, and diligent documentation. This systematic approach ensures logical clarity and an organized flow from concept to delivery.\n\nProblem decomposition is initiated by analyzing a high-level user requirement, such as 'Implement a task management application,' and breaking it down into distinct features. These might include 'User Authentication,' 'Task Creation and Management,' and 'Notification System.' Each feature is then further broken into smaller, more specific sub-problems or modules. For example, 'User Authentication' could involve 'User Registration,' 'Login/Logout,' and 'Password Reset.' This method provides a clear, manageable list of components to build, effectively reducing the initial complexity of the overall problem. The approach outlines what needs to be done, although deeper analysis of user stories and acceptance criteria could further refine the granularity.\n\nNext, the system design and architecture are conceptualized. A common architecture for such an application would be a client-server model, where a web or mobile client interacts with a backend server that handles business logic and data persistence. The design would specify the use of a RESTful API for communication between the client and server, and a database (e.g., PostgreSQL) for storing task and user data. This provides a fundamental structure with recognized components, but the rationale for selecting REST over other protocols, or specific design patterns within the server-side, is not thoroughly detailed, leaving some areas open to interpretation.\n\nComponent testing and validation are crucial for ensuring the reliability of the system. This involves writing unit tests for individual functions, such as validating a task's due date or checking the format of a user's email during registration. Integration tests are also performed to verify that different modules, like the task creation module and the notification system, communicate and work together correctly. While the importance of testing is recognized and different levels are mentioned, the submission could benefit from a more comprehensive description of the testing methodology, including test coverage goals or automated testing frameworks used.\n\nFinally, the development process is meticulously documented. The phases, from initial requirements gathering through design, implementation, and deployment, are clearly outlined. Key decisions made during the process are noted, and code is commented to explain complex logic. However, the depth of documentation for stakeholder communication, such as formal API specifications, detailed architectural diagrams, or user training guides, is not explicitly covered. While the organized flow of the process is evident, a more detailed approach to documentation would enhance maintainability and knowledge transfer, completing the logical progression of software development.",
+            "feedback": {
+                "c1": "Average. Provides an adequate breakdown of the problem into distinct features and modules, but lacks explicit linkage to detailed user requirements or advanced decomposition techniques. (20/30)",
+                "c2": "Average. Outlines a basic client-server architectural model with common components and interactions, but minimal details are given about specific design patterns or the rationale for choices. (23/35)",
+                "c3": "Good. Describes both unit and integration testing steps with relevant examples, demonstrating an understanding of how components are validated. (8/10)",
+                "c4": "Good. Presents an organized summary of development phases and mentions key documentation efforts like code comments and decision notes. (20/25)",
+                "total": "71/100"
+            }
+        }
+    ]
+}

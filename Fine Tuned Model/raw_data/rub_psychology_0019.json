@@ -1,0 +1,465 @@
+{
+    "domain": "Psychology",
+    "prompt": "Assess social identity theory and its applications to intergroup relations, prejudice, and organizational behavior.",
+    "rubric": {
+        "rubric_id": "rub_psychology_0019",
+        "criteria": [
+            {
+                "criterion_id": "c1",
+                "name": "Core Concepts",
+                "description": "Explains social categorization, identification, and comparison; in-group bias; self-esteem hypothesis.",
+                "performance_descriptors": {
+                    "excellent": "Accurate, nuanced explanation including depersonalization and contextual factors.",
+                    "good": "Accurate with minor omissions.",
+                    "average": "Basic explanation; limited nuance.",
+                    "needs_improvement": "Partial or unclear.",
+                    "poor": "Incorrect or missing concepts."
+                },
+                "weight": 20
+            },
+            {
+                "criterion_id": "c2",
+                "name": "Evidence and Classic Studies",
+                "description": "Integrates key findings and paradigms.",
+                "performance_descriptors": {
+                    "excellent": "Discusses minimal group paradigm, intergroup bias, and boundary conditions; contrasts with self-categorization theory.",
+                    "good": "Covers major studies with acceptable accuracy.",
+                    "average": "Mentions studies briefly.",
+                    "needs_improvement": "Sparse or inaccurate references.",
+                    "poor": "No relevant evidence."
+                },
+                "weight": 10
+            },
+            {
+                "criterion_id": "c3",
+                "name": "Applications",
+                "description": "Applies theory to prejudice reduction, conflict, and organizations.",
+                "performance_descriptors": {
+                    "excellent": "Proposes evidence-informed strategies (e.g., superordinate identities, contact conditions) and organizational identity interventions.",
+                    "good": "Reasonable applications with some detail.",
+                    "average": "General applications without specifics.",
+                    "needs_improvement": "Minimal or vague applications.",
+                    "poor": "No application."
+                },
+                "weight": 35
+            },
+            {
+                "criterion_id": "c4",
+                "name": "Critical Evaluation",
+                "description": "Considers limitations and alternatives.",
+                "performance_descriptors": {
+                    "excellent": "Evaluates scope conditions, role of norms, and interplay with realistic conflict theory and system-justification perspectives.",
+                    "good": "Notes several critiques with some analysis.",
+                    "average": "Superficial critique.",
+                    "needs_improvement": "Minimal critical evaluation.",
+                    "poor": "No critique."
+                },
+                "weight": 25
+            },
+            {
+                "criterion_id": "c5",
+                "name": "Clarity and Structure",
+                "description": "Organization and writing quality.",
+                "performance_descriptors": {
+                    "excellent": "Cohesive and well-structured.",
+                    "good": "Clear with minor issues.",
+                    "average": "Adequate clarity.",
+                    "needs_improvement": "Disorganized.",
+                    "poor": "Incoherent."
+                },
+                "weight": 10
+            }
+        ]
+    },
+    "submissions": [
+        {
+            "quality": "Excellent",
+            "authorship": "ai",
+            "key_points": [
+                "Define social categorization → identification → comparison and depersonalization; explain in-group bias and positive distinctiveness.",
+                "Cover minimal group paradigm findings and boundary conditions (status, norms, permeability).",
+                "Apply to prejudice reduction (optimal contact, common in-group identity, recategorization) and organizational identity (mergers, culture).",
+                "Contrast SIT with realistic conflict theory and system justification; integrate self-categorization theory.",
+                "Discuss norm salience, leadership, and context shaping identity expression."
+            ],
+            "llm_questions": [
+                "Summarize the minimal group paradigm and its implications.",
+                "What conditions optimize intergroup contact to reduce prejudice?",
+                "How can superordinate identities reduce conflict?",
+                "Apply social identity theory to organizational change.",
+                "Compare social identity with realistic conflict theory."
+            ],
+            "llm_answers": [
+                "The minimal group paradigm shows that mere categorization into arbitrary groups produces in-group favoritism (e.g., allocating more points to one’s group) even without history, incentives, or interaction. It implies that identity-based motives for positive distinctiveness can drive bias independent of material conflict.",
+                "Optimal contact includes equal status, common goals, cooperation, and institutional support. Additions such as friendship potential and norm setting strengthen effects; poorly structured contact can backfire by confirming stereotypes.",
+                "Superordinate identities recategorize former subgroups under a shared ‘we,’ shifting comparisons to an external out-group and reducing within-superordinate conflict. Dual-identity framing (retain subgroup plus superordinate) preserves subgroup value while promoting cooperation.",
+                "During mergers, leaders craft a shared organizational identity (vision, symbols, rituals) while acknowledging legacy subgroup identities. Practices include inclusive branding, cross-team projects, and norm setting that rewards intergroup cooperation.",
+                "SIT emphasizes symbolic status and identity-based comparison; realistic conflict theory centers on competition over scarce resources. Both explain bias; together they show that material threat and identity motives can interact, with norms and status shaping which dominates."
+            ],
+            "final_submission": "Social identity theory (SIT) explains intergroup behavior through social categorization, identification with a group, and comparison that seeks positive distinctiveness. When category membership is salient, people depersonalize—perceiving self and others in terms of group prototypes—producing in-group bias even in minimal conditions.\n\nClassic demonstrations show favoritism without material conflict, highlighting identity motives. Evidence further reveals boundary conditions: norms that value fairness can suppress bias; status and legitimacy beliefs modulate comparison; permeability of group boundaries shifts strategies from mobility to social creativity or competition. Self-categorization theory clarifies how context selects the level of identity (personal, subgroup, superordinate), shaping behavior.\n\nApplications follow directly. Prejudice reduction is strongest when contact is structured around equal status, cooperation toward common goals, and institutional support, with opportunities for meaningful interaction. Recategorization into a superordinate identity—sometimes paired with dual-identity framing—reduces conflict while protecting subgroup value. In organizations, identity work is central to mergers and culture change: leaders articulate an inclusive ‘we,’ align incentives to cross-group collaboration, and establish norms that reward intergroup helping.\n\nCritically, SIT does not render resources irrelevant. Realistic conflict and system-justification perspectives add that competition and hierarchy maintenance shape identities and norms. Identity is also dynamic: salient contexts, leadership cues, and societal narratives can amplify or attenuate bias. Thus, effective interventions coordinate identity reframing with structural changes that alter incentives and norms.\n\nOverall, SIT offers a flexible account of how belonging and comparison drive intergroup relations, informing practical strategies for prejudice reduction and organizational integration while benefiting from integration with complementary theories.",
+            "feedback": {
+                "c1": "Excellent. Nuanced account of categorization, identification, comparison, depersonalization, and positive distinctiveness. (20/20)",
+                "c2": "Excellent. Integrates minimal group evidence and scope conditions; links to self-categorization theory. (10/10)",
+                "c3": "Excellent. Actionable strategies for contact, recategorization, and organizational identity. (35/35)",
+                "c4": "Excellent. Balanced critique with RCT and system-justification integration. (25/25)",
+                "c5": "Excellent. Cohesive, well-structured, and precise. (10/10)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Excellent",
+            "authorship": "human",
+            "key_points": [
+                "Define social categorization → identification → comparison and depersonalization; explain in-group bias and positive distinctiveness.",
+                "Cover minimal group paradigm findings and boundary conditions (status, norms, permeability).",
+                "Apply to prejudice reduction (optimal contact, common in-group identity, recategorization) and organizational identity (mergers, culture).",
+                "Contrast SIT with realistic conflict theory and system justification; integrate self-categorization theory.",
+                "Discuss norm salience, leadership, and context shaping identity expression."
+            ],
+            "final_submission": "Social identity theory (SIT) provides a compelling framework for understanding intergroup behavior, which it explains through three core processes: social categorization, identification with a social group, and a comparative process aimed at achieving positive distinctiveness for one's in-group. When a particular group membership becomes prominent, individuals tend to depersonalize, seeing themselves and others more as representatives of their group rather than as unique individuals. This cognitive shift is a key driver of in-group bias, even in the most minimal of group settings.\n\nClassic demonstrations show favoritism without material conflict, highlighting identity motives. Evidence further reveals boundary conditions: norms that value fairness can suppress bias; status and legitimacy beliefs modulate comparison; permeability of group boundaries shifts strategies from mobility to social creativity or competition. Self-categorization theory clarifies how context selects the level of identity (personal, subgroup, superordinate), shaping behavior.\n\nThe applications that stem from SIT are both direct and impactful. For reducing prejudice, the theory suggests that contact between groups is most effective when it is structured to include equal status, cooperative efforts towards common goals, and strong institutional support. Furthermore, strategies like recategorizing different groups into a single, superordinate identity can effectively reduce conflict. In the business world, this is central to managing company mergers and shaping organizational culture, where leaders must forge an inclusive shared identity while respecting existing sub-group loyalties.\n\nCritically, SIT does not render resources irrelevant. Realistic conflict and system-justification perspectives add that competition and hierarchy maintenance shape identities and norms. Identity is also dynamic: salient contexts, leadership cues, and societal narratives can amplify or attenuate bias. Thus, effective interventions coordinate identity reframing with structural changes that alter incentives and norms.\n\nOverall, SIT offers a flexible account of how belonging and comparison drive intergroup relations, informing practical strategies for prejudice reduction and organizational integration while benefiting from integration with complementary theories.",
+            "feedback": {
+                "c1": "Excellent. Nuanced account of categorization, identification, comparison, depersonalization, and positive distinctiveness. (20/20)",
+                "c2": "Excellent. Integrates minimal group evidence and scope conditions; links to self-categorization theory. (10/10)",
+                "c3": "Excellent. Actionable strategies for contact, recategorization, and organizational identity. (35/35)",
+                "c4": "Excellent. Balanced critique with RCT and system-justification integration. (25/25)",
+                "c5": "Excellent. Cohesive, well-structured, and precise. (10/10)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [
+                    1,
+                    3,
+                    4
+                ],
+                "human_paragraph_indices": [
+                    0,
+                    2
+                ],
+                "hybrid_paragraph_indices": [],
+                "notes": "Human fully rewrote the introduction and applications paragraphs."
+            }
+        },
+        {
+            "quality": "Excellent",
+            "authorship": "hybrid",
+            "key_points": [
+                "Define social categorization → identification → comparison and depersonalization; explain in-group bias and positive distinctiveness.",
+                "Cover minimal group paradigm findings and boundary conditions (status, norms, permeability).",
+                "Apply to prejudice reduction (optimal contact, common in-group identity, recategorization) and organizational identity (mergers, culture).",
+                "Contrast SIT with realistic conflict theory and system justification; integrate self-categorization theory.",
+                "Discuss norm salience, leadership, and context shaping identity expression."
+            ],
+            "final_submission": "Social identity theory (SIT) explains intergroup behavior through social categorization, identification with a group, and comparison that seeks positive distinctiveness. When category membership is salient, people depersonalize—perceiving self and others in terms of group prototypes—producing in-group bias even in minimal conditions.\n\nClassic research, such as the minimal group studies, demonstrates favoritism even without any material conflict, which powerfully highlights identity-based motives. This evidence also reveals important boundary conditions: for instance, group norms that value fairness can suppress bias, and the perceived legitimacy of group status can modulate the nature of intergroup comparison. An extension of this, self-categorization theory, further clarifies how a given context selects the most relevant level of identity (e.g., personal, subgroup, or a larger superordinate group), which in turn shapes behavior.\n\nApplications follow directly. Prejudice reduction is strongest when contact is structured around equal status, cooperation toward common goals, and institutional support, with opportunities for meaningful interaction. Recategorization into a superordinate identity—sometimes paired with dual-identity framing—reduces conflict while protecting subgroup value. In organizations, identity work is central to mergers and culture change: leaders articulate an inclusive ‘we,’ align incentives to cross-group collaboration, and establish norms that reward intergroup helping.\n\nCritically, SIT does not render resources irrelevant. Realistic conflict and system-justification perspectives add that competition and hierarchy maintenance shape identities and norms. Identity is also dynamic: salient contexts, leadership cues, and societal narratives can amplify or attenuate bias. Thus, effective interventions coordinate identity reframing with structural changes that alter incentives and norms.\n\nOverall, SIT offers a flexible account of how belonging and comparison drive intergroup relations, informing practical strategies for prejudice reduction and organizational integration while benefiting from integration with complementary theories.",
+            "feedback": {
+                "c1": "Excellent. Nuanced account of categorization, identification, comparison, depersonalization, and positive distinctiveness. (20/20)",
+                "c2": "Excellent. Integrates minimal group evidence and scope conditions; links to self-categorization theory. (10/10)",
+                "c3": "Excellent. Actionable strategies for contact, recategorization, and organizational identity. (35/35)",
+                "c4": "Excellent. Balanced critique with RCT and system-justification integration. (25/25)",
+                "c5": "Excellent. Cohesive, well-structured, and precise. (10/10)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [
+                    0,
+                    2,
+                    3,
+                    4
+                ],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [
+                    1
+                ],
+                "notes": "Slightly modified the paragraph on classic demonstrations for better flow and added phrases."
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "ai",
+            "key_points": [
+                "Accurate definitions of SIT processes and in-group bias.",
+                "Covers major studies like the minimal group paradigm.",
+                "Applies theory to contact and superordinate identity strategies.",
+                "Briefly mentions alternative theories like realistic conflict.",
+                "Clear and organized structure."
+            ],
+            "llm_questions": [
+                "Summarize the minimal group paradigm.",
+                "What conditions optimize intergroup contact?",
+                "How can superordinate identities reduce conflict?",
+                "Compare SIT with realistic conflict theory."
+            ],
+            "llm_answers": [
+                "Minimal group studies show bias arises from mere categorization, implying identity motives can drive favoritism.",
+                "Equal status, cooperation, common goals, and institutional support improve contact outcomes.",
+                "Creating a shared identity shifts focus from subgroup competition to a common ‘we’.",
+                "SIT focuses on identity and status; realistic conflict theory focuses on competition over resources."
+            ],
+            "final_submission": "SIT proposes that categorization and identification lead people to favor in-groups, seeking positive distinctiveness. Minimal group findings confirm bias even with trivial categories. Prejudice reduction works best when contact is structured around equal status and shared goals, and when groups adopt a common identity. In organizations, identity work during mergers helps reduce intergroup barriers. While SIT emphasizes symbolic status, resource competition from realistic conflict theory also matters.",
+            "feedback": {
+                "c1": "Good. Concepts accurate with minor omissions. (16/20)",
+                "c2": "Good. Major studies covered. (8/10)",
+                "c3": "Good. Practical applications with clear examples. (28/35)",
+                "c4": "Good. Mentions alternatives briefly. (20/25)",
+                "c5": "Good. Clear and organized. (8/10)",
+                "total": "80/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [
+                    0
+                ],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "ai",
+            "key_points": [
+                "Explains social categorization, identification, and positive distinctiveness.",
+                "Uses classic studies like the minimal group paradigm effectively.",
+                "Applies the theory to prejudice reduction and organizational identity.",
+                "Provides a basic critical evaluation.",
+                "Generally clear and well-structured."
+            ],
+            "llm_questions": [
+                "How does positive distinctiveness drive intergroup behavior?",
+                "What were the key findings of Tajfel's minimal group studies?",
+                "Provide two examples of SIT's application in organizations."
+            ],
+            "llm_answers": [
+                "Positive distinctiveness is the motivation to achieve a positive social identity by comparing one's in-group favorably to out-groups, leading to in-group bias.",
+                "Tajfel's studies showed that arbitrary categorization into groups was sufficient to induce in-group favoritism in resource allocation.",
+                "1) Explaining inter-departmental conflict. 2) Boosting employee morale and commitment through a strong organizational identity."
+            ],
+            "final_submission": "Social identity theory (SIT) posits that individuals derive self-concept from group memberships. It involves social categorization, identification, and comparison to achieve positive distinctiveness, often leading to in-group bias.\n\nClassic research by Tajfel, particularly the minimal group paradigm, showed that even arbitrary categorization can elicit in-group favoritism, highlighting the psychological drive for a positive social identity.\n\nSIT has applications in prejudice reduction, such as the common in-group identity model, and in organizational behavior, where it explains employee loyalty and inter-departmental rivalries.\n\nHowever, SIT has limitations. Critics argue it may overemphasize cognitive aspects and not fully account for material competition, as highlighted by realistic conflict theory. Despite this, SIT remains a cornerstone of understanding intergroup relations.",
+            "feedback": {
+                "c1": "Excellent. Nuanced account of core concepts. (18/20)",
+                "c2": "Excellent. Integrates minimal group evidence well. (9/10)",
+                "c3": "Good. Offers solid, practical applications. (28/35)",
+                "c4": "Average. Provides a basic critical evaluation. (16/25)",
+                "c5": "Average. Generally clear but could be more concise. (7/10)",
+                "total": "78/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "ai",
+            "key_points": [
+                "Basic SIT definitions and in-group bias.",
+                "Briefly mentions the minimal group paradigm.",
+                "General ideas on contact/superordinate identity.",
+                "Limited organizational application.",
+                "Simple, clear structure."
+            ],
+            "llm_questions": [
+                "What does the minimal group paradigm show?",
+                "How can contact reduce prejudice?",
+                "How can a shared identity help?"
+            ],
+            "llm_answers": [
+                "It shows people favor their own group even when the groups are random.",
+                "Having equal status and working together helps contact work.",
+                "A larger shared identity can help people see each other as one group."
+            ],
+            "final_submission": "SIT explains why people like their own groups and sometimes treat others less fairly. Minimal group studies show this can happen even with random groups. Contact that is equal and cooperative, plus a shared identity, can improve relations. In companies, setting common goals and values can help teams work together. Other theories point to resource competition, which also influences conflict.",
+            "feedback": {
+                "c1": "Average. Correct but simplistic treatment. (13/20)",
+                "c2": "Average. Evidence referenced without detail. (6/10)",
+                "c3": "Average. Applications are generic. (23/35)",
+                "c4": "Average. Brief mention of alternatives. (16/25)",
+                "c5": "Average. Basic structure. (6/10)",
+                "total": "64/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [
+                    0
+                ],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "ai",
+            "key_points": [
+                "Muddled understanding of core SIT concepts.",
+                "Mentions classic studies but doesn't elaborate.",
+                "Good grasp of practical applications in prejudice reduction.",
+                "Lacks substantial critical evaluation.",
+                "Adequately clear and structured."
+            ],
+            "llm_questions": [
+                "How does identification differ from categorization in SIT?",
+                "What did the minimal group paradigm show?",
+                "Propose two strategies for reducing intergroup conflict."
+            ],
+            "llm_answers": [
+                "Identification is when an individual internalizes a group's identity as part of their self-concept, while categorization is just placing oneself or others into a category.",
+                "It showed that even in the absence of real conflict, people would favor their own group members.",
+                "1) Creating a superordinate identity. 2) Implementing cooperative intergroup contact under optimal conditions."
+            ],
+            "final_submission": "Social identity theory suggests that our self-concept is tied to the groups we belong to. It starts with social categorization, then we identify with our group. We want our group to be seen positively, so we compare it to other groups, which leads to favoring our own group.\n\nEvidence for this comes from studies like the minimal group paradigm, which showed that even when people were assigned to groups based on trivial criteria, they still showed favoritism.\n\nSIT has useful applications. To reduce prejudice, one strategy is to create a superordinate identity, making groups feel like 'us' instead of 'us vs. them'. In organizations, leaders can build a strong corporate culture to help integrate teams.\n\nHowever, SIT isn't perfect. It doesn't always fully explain how individual differences play a role, or how real-world competition might also cause conflict. The structure of the essay is clear enough, but the concepts could be explained better.",
+            "feedback": {
+                "c1": "Needs Improvement. Conceptual confusion is present. (10/20)",
+                "c2": "Average. Mentions the minimal group paradigm but lacks clear elaboration. (7/10)",
+                "c3": "Good. Demonstrates a good grasp of practical applications. (28/35)",
+                "c4": "Poor. Provides minimal critical evaluation. (8/25)",
+                "c5": "Average. Adequately clear and structured. (7/10)",
+                "total": "60/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "ai",
+            "key_points": [
+                "Partial or vague definitions.",
+                "Sparse or inaccurate use of evidence.",
+                "Applications are unclear or minimal.",
+                "Little critique.",
+                "Loose organization."
+            ],
+            "llm_questions": [
+                "What is social identity theory about?",
+                "Are there studies on it?",
+                "How can it be used?"
+            ],
+            "llm_answers": [
+                "It's about groups and how people feel about them.",
+                "Yes, there are studies that show favoritism.",
+                "Contact should be positive, and leaders can ask people to work together."
+            ],
+            "final_submission": "SIT is about groups and how people feel about them. There are studies with groups that show favoritism, but the details are not central. Contact should be generally positive, and leaders can ask people to work together. Other theories exist but are not very connected.",
+            "feedback": {
+                "c1": "Needs Improvement. Core constructs are vague. (10/20)",
+                "c2": "Needs Improvement. Evidence is minimal. (5/10)",
+                "c3": "Needs Improvement. Applications are underspecified. (18/35)",
+                "c4": "Needs Improvement. Little analytical critique. (13/25)",
+                "c5": "Needs Improvement. Disorganized writing. (5/10)",
+                "total": "51/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [
+                    0
+                ],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "ai",
+            "key_points": [
+                "Struggles with defining core SIT concepts.",
+                "Vaguely mentions 'studies' with no specific evidence.",
+                "Applications are extremely vague.",
+                "Critical evaluation is superficial.",
+                "Writing is generally clear, but the structure is weak."
+            ],
+            "llm_questions": [
+                "What are the main components of social identity theory?",
+                "Can you describe a study that supports SIT?",
+                "How can SIT be used to reduce prejudice?"
+            ],
+            "llm_answers": [
+                "The main components are social categorization, identification, and comparison.",
+                "Tajfel's minimal group paradigm, which demonstrated in-group favoritism from arbitrary group assignment.",
+                "By fostering superordinate identities or structuring intergroup contact to promote cooperation."
+            ],
+            "final_submission": "Social identity theory (SIT) is about how people see themselves through group memberships. It suggests we categorize ourselves and others into groups, and then we identify with those groups. This makes us want our group to be seen as good, so we favor our own group.\n\nThere are studies that look at groups, and some have shown how people in different groups behave. They often find that people prefer their own group. But the details are often left out.\n\nTo make people from different groups get along better, you could try to make them see themselves as part of a bigger group. In a company, you could try to build a new, shared culture. However, the submission often stops at these general suggestions.\n\nThe theory might not consider everything. Sometimes people act based on personal gain. But the critique here is very brief.",
+            "feedback": {
+                "c1": "Poor. Fundamental misinterpretations of core concepts. (8/20)",
+                "c2": "Needs Improvement. Mentions 'studies' generally but provides no specific evidence. (5/10)",
+                "c3": "Needs Improvement. Applications are vague. (19/35)",
+                "c4": "Needs Improvement. Critical evaluation is superficial. (12/25)",
+                "c5": "Average. Adequate clarity and structure. (7/10)",
+                "total": "51/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Poor",
+            "authorship": "ai",
+            "key_points": [
+                "Misunderstands key SIT concepts.",
+                "No valid evidence.",
+                "No practical applications.",
+                "No critique.",
+                "Incoherent structure."
+            ],
+            "llm_questions": [
+                "What is social identity theory?",
+                "Do people favor their own group?",
+                "Does identity matter in organizations?"
+            ],
+            "llm_answers": [
+                "It says identity does not affect intergroup relations.",
+                "Studies show no favoritism.",
+                "Organizations should not worry about group identities."
+            ],
+            "final_submission": "Social identity theory says identity does not affect intergroup relations. Studies show no favoritism and no need for structure in contact. Organizations should not worry about group identities. There are no meaningful differences between SIT and other theories.",
+            "feedback": {
+                "c1": "Poor. Fundamental misconceptions. (4/20)",
+                "c2": "Poor. Lacks accurate evidence. (2/10)",
+                "c3": "Poor. No actionable application. (7/35)",
+                "c4": "Poor. No critical engagement. (5/25)",
+                "c5": "Poor. Incoherent and inaccurate. (2/10)",
+                "total": "20/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [
+                    0
+                ],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        }
+    ]
+}

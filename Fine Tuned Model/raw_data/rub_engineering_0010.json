@@ -1,0 +1,371 @@
+{
+    "domain": "Engineering",
+    "prompt": "A factory faces delays in its assembly line. As an industrial engineer, describe how you would define the problem, collect relevant data, model the process, and present your improvement plan using theoretical explanations.",
+    "rubric": {
+        "rubric_id": "rub_engineering_0010",
+        "criteria": [
+            {
+                "criterion_id": "c1",
+                "name": "Problem Definition and Data Collection",
+                "description": "Clearly defines workflow inefficiencies and outlines data collection methods.",
+                "performance_descriptors": {
+                    "excellent": "Accurately identifies bottlenecks and selects suitable data collection strategies.",
+                    "good": "Defines key issues with some data methods discussed.",
+                    "average": "General description of delays with limited data strategy.",
+                    "needs_improvement": "Vague description of problem or inconsistent data ideas.",
+                    "poor": "No clear problem statement or data collection method."
+                },
+                "weight": 30
+            },
+            {
+                "criterion_id": "c2",
+                "name": "Process Modeling and Theoretical Analysis",
+                "description": "Explains conceptual approaches to modeling and analyzing workflows.",
+                "performance_descriptors": {
+                    "excellent": "Provides a strong theoretical explanation of process modeling and its role in understanding workflow behavior.",
+                    "good": "Explains modeling approaches with some conceptual clarity.",
+                    "average": "Mentions process modeling in general terms without detail.",
+                    "needs_improvement": "Minimal or vague reference to process modeling.",
+                    "poor": "No explanation of process modeling."
+                },
+                "weight": 30
+            },
+            {
+                "criterion_id": "c3",
+                "name": "Optimization Strategies",
+                "description": "Explains theoretical strategies for improving efficiency and reducing delays.",
+                "performance_descriptors": {
+                    "excellent": "Clearly explains workload balancing, bottleneck elimination, and resource alignment as optimization strategies.",
+                    "good": "Mentions relevant optimization strategies with some explanation.",
+                    "average": "Lists strategies but with limited theoretical detail.",
+                    "needs_improvement": "Mentions strategies vaguely without clear explanation.",
+                    "poor": "No optimization strategies provided."
+                },
+                "weight": 30
+            },
+            {
+                "criterion_id": "c4",
+                "name": "Communication of Improvement Plan",
+                "description": "Presents the solution logically and emphasizes structured theoretical reporting.",
+                "performance_descriptors": {
+                    "excellent": "Communicates a well-structured plan with strong theoretical justification of improvements.",
+                    "good": "Explains improvement plan with adequate clarity.",
+                    "average": "Provides a plan with limited explanation.",
+                    "needs_improvement": "Plan is vague or lacks clarity.",
+                    "poor": "No clear improvement plan communicated."
+                },
+                "weight": 10
+            }
+        ]
+    },
+    "submissions": [
+        {
+            "quality": "Excellent",
+            "key_points": [
+                "Delays in production lines are identified by analyzing downtime trends, workstation idle-time patterns, and overall throughput performance.",
+                "Conceptual models of workflows help engineers understand process behavior and identify inefficiencies.",
+                "Optimization strategies focus on balancing workloads, eliminating bottlenecks, and reorganizing tasks to improve flow.",
+                "Cycle time reduction is discussed as a theoretical outcome of better coordination and task sequencing.",
+                "Improvements are communicated through structured reporting that emphasizes reasoning and logical explanation."
+            ],
+            "llm_questions": [
+                "How do you identify delays in a production line using theoretical reasoning?",
+                "What conceptual approaches help model manufacturing processes?",
+                "What strategies improve efficiency and reduce delays in assembly lines?",
+                "Why is workload balancing important in reducing production time?",
+                "How should workflow improvements be explained in structured reports?"
+            ],
+            "llm_answers": [
+                "Theoretically, delays are identified by analyzing the relationship between cycle time, throughput, and Work-In-Process (WIP) as defined by Little's Law. We would compare the actual cycle time of each station against the Takt time (customer demand rate). Any station consistently exceeding the Takt time is a bottleneck. We would also use statistical process control (SPC) charts to monitor station processing times, identifying patterns of deviation or excessive variability that indicate systemic issues rather than random occurrences.",
+                "Conceptual modeling is crucial for understanding process dynamics. A primary tool is Discrete-Event Simulation (DES), which creates a dynamic model of the system to test 'what-if' scenarios without disrupting the actual line. Another approach is Value Stream Mapping (VSM), a Lean methodology that visually maps the flow of materials and information, clearly distinguishing value-added from non-value-added activities. For complex systems with concurrent operations, Petri nets can be used to model and analyze the system's behavior, including resource conflicts and deadlocks.",
+                "Several theoretical strategies apply. The Theory of Constraints (TOC) dictates that we must identify the primary bottleneck and subordinate all other processes to its capacity, ensuring it is never starved for work. Lean manufacturing principles focus on eliminating the seven wastes ('muda'), such as waiting, overproduction, and unnecessary motion. Furthermore, implementing line balancing algorithms, like the Ranked Positional Weight method, can redistribute tasks among workstations to ensure a more even workload and smoother flow, directly reducing idle time and queues.",
+                "Workload balancing is critical because an imbalanced line is inherently inefficient. The overall production rate is dictated by the slowest station (the bottleneck). Stations upstream of the bottleneck will be forced to stop, creating idle time (starvation), while stations downstream will build up excess Work-In-Progress (WIP), increasing holding costs and lead times. By balancing the line, we aim to make each station's cycle time as close as possible to the Takt time, which maximizes resource utilization and minimizes the total time a product spends in the system.",
+                "A structured report should follow a logical progression. Start with an executive summary stating the key findings and recommendations. Follow this with a detailed problem statement, supported by baseline data (e.g., OEE, cycle times). Next, present the process model and analysis, explaining the theoretical framework used (e.g., queueing theory, VSM) and how it led to identifying root causes. The proposed improvements section should detail each recommendation, providing a clear theoretical justification (e.g., 'By applying SMED principles, we project a 50% reduction in changeover time'). Conclude with an implementation plan, ROI analysis, and metrics for monitoring success."
+            ],
+            "final_submission": "As an industrial engineer tasked with addressing assembly line delays, my approach would be a systematic, data-driven process founded on established theoretical principles. \n\nFirst, problem definition and data collection would begin by quantifying the issue beyond anecdotal reports. I would establish key performance indicators (KPIs) such as Overall Equipment Effectiveness (OEE), cycle time per station, and throughput rate. Data would be collected via a combination of time-and-motion studies, analysis of machine control system logs, and direct observation. This initial data allows for Pareto analysis to identify the 20% of issues causing 80% of the delays, ensuring our efforts are focused on the most significant bottlenecks, a core concept in process improvement.\n\nSecond, with baseline data established, I would develop a conceptual process model. A Value Stream Map (VSM) would be my initial tool to visualize the entire workflow, distinguishing value-added steps from non-value-added waste (muda). For a more dynamic analysis of stochastic elements like machine breakdowns or variable processing times, I would construct a Discrete-Event Simulation (DES) model. This model would allow for experimentation with potential changes in a risk-free virtual environment, predicting their impact on throughput and WIP based on queueing theory.\n\nThird, for optimization, my strategies would be guided by the Theory of Constraints (TOC). The DES model and VSM would pinpoint the primary constraint. The strategy would then be to elevate this bottleneck's capacity by ensuring it never waits for inputs and that its quality control is impeccable. In parallel, I would apply line balancing heuristics to redistribute tasks from the bottleneck to underutilized stations, aiming to equalize cycle times across the line and bring them closer to the required Takt time. This ensures a smoother, more continuous flow.\n\nFinally, the improvement plan would be communicated in a structured report. It would begin with the quantified problem statement, followed by the VSM and simulation analysis that theoretically justifies the identified bottlenecks. Each proposed solution—be it workload re-balancing, implementing a kanban system to control WIP, or introducing preventative maintenance—would be presented with a clear theoretical rationale and its predicted quantitative impact based on the simulation model. This ensures that the recommendations are not just suggestions but are well-reasoned engineering solutions with a high probability of success.",
+            "feedback": {
+                "c1": "Excellent. You accurately identified specific performance metrics like OEE and cycle time to define the problem. Your data collection plan is robust, combining time studies, log analysis, and observation, and you correctly reference Pareto analysis to focus efforts. (30/30)",
+                "c2": "Excellent. Your explanation of process modeling is theoretically strong. You not only mention VSM and DES but also clearly articulate their distinct purposes—VSM for waste visualization and DES for dynamic, stochastic analysis. Referencing queueing theory shows a deep understanding. (30/30)",
+                "c3": "Excellent. You've clearly explained a multi-faceted optimization approach. Your integration of the Theory of Constraints as the guiding principle with line balancing as a specific tactic is a sophisticated and effective strategy. The focus on Takt time demonstrates a clear grasp of lean principles. (30/30)",
+                "c4": "Excellent. The communication plan is exceptionally well-structured and logical. You outline a clear report structure that moves from problem definition to data-backed analysis and theoretically justified solutions, which is the hallmark of professional engineering communication. (10/10)",
+                "total": "100/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "key_points": [
+                "Frames the problem with clear scope and metrics",
+                "Proposes data sources like time studies and logs",
+                "Outlines a queueing or flow-based model conceptually",
+                "Explains expected effects of balancing and pacing"
+            ],
+            "llm_questions": [
+                "Which baseline metrics define delay severity?",
+                "What data sources are most informative?",
+                "What simple modeling concepts describe flow?",
+                "How do you express expected outcomes in text?"
+            ],
+            "llm_answers": [
+                "To define the severity of a delay, you need clear baseline metrics. The most important ones are throughput, which is the number of units produced per unit of time; cycle time, the total time it takes for one unit to go through the entire process; and Work-In-Progress (WIP), the number of units currently in the assembly line. A high cycle time and high WIP combined with low throughput clearly indicates a severe delay problem.",
+                "The most informative data sources are typically a mix of automated and manual collection. Machine logs from PLCs or other control systems can provide accurate, unbiased data on uptime, downtime, and processing times. However, this should be supplemented with manual time-and-motion studies conducted with a stopwatch to capture human-led tasks and identify wasted motion. Finally, interviewing operators provides valuable qualitative context that numbers alone cannot capture.",
+                "A simple yet powerful conceptual model for flow is a process flow diagram, or flowchart. This visually maps each step of the assembly line in sequence. You can enhance it by adding the average processing time and wait time at each step. This helps you calculate the total cycle time and immediately see where the largest delays are occurring. This visualization makes it easy to identify potential bottlenecks—the step with the longest processing time that dictates the pace of the entire line.",
+                "Expected outcomes should be expressed in clear, measurable, and specific terms. Instead of saying 'the line will be faster,' you should state, 'By reallocating two tasks from Station 4 to Station 3, we project a 15% reduction in overall cycle time and a 10% increase in hourly throughput.' This connects a specific action to a quantifiable result, making the proposal more credible and allowing for straightforward verification after implementation."
+            ],
+            "final_submission": "To address delays in a factory assembly line, my first step as an industrial engineer is to clearly define the problem. I would begin by establishing baseline performance metrics. The key issues are likely excessive cycle times and low throughput. I would measure the current output per hour and the total time it takes for a single product to move from the first station to the last. For data collection, I would use a combination of stopwatch time studies for each workstation and analysis of any available production logs to understand downtime patterns.\n\nOnce I have this data, I will model the process. A detailed process flowchart would be the first step, mapping every task, transfer, and inspection point. This visual model helps everyone understand the current state of the workflow. I would then annotate this map with the average time taken at each step, which will help us pinpoint the bottleneck—the slowest station that is constraining the entire line's output. This is a basic form of process analysis that helps identify where queues are likely to form.\n\nWith the bottleneck identified, I can propose optimization strategies. A primary strategy would be workload balancing. I would analyze the tasks performed at the bottleneck station to see if any can be offloaded to other stations that have more idle time. Another strategy would be to reduce setup or changeover times at critical stations, as this is often a hidden source of delay. The theoretical basis is that by increasing the capacity of the bottleneck and smoothing the flow of work, the overall system's throughput will increase.\n\nFinally, I would present my improvement plan. The plan would start by showing the data on the current delays and the process map identifying the bottleneck. I would then clearly list the proposed changes, such as 'Reassign task X from Station 5 to Station 4' or 'Implement a new tool jig at Station 2 to reduce setup time.' For each change, I would explain how it addresses the bottleneck or reduces waste, and I would provide a realistic estimate of the expected improvement, such as a 10% increase in units per hour.",
+            "feedback": {
+                "c1": "Good. You've clearly defined the problem using key metrics like cycle time and throughput. Your plan to use time studies and production logs is a solid data collection strategy. (22/30)",
+                "c2": "Good. You explained a clear modeling approach using a process flowchart annotated with times. This demonstrates a good conceptual understanding of how to visualize a process to find a bottleneck. (25/30)",
+                "c3": "Good. You mentioned relevant optimization strategies like workload balancing and reducing setup times. The explanation correctly links these actions to improving bottleneck performance. (25/30)",
+                "c4": "Good. Your improvement plan is explained with adequate clarity. You structure it logically, moving from data to the proposed changes and their expected outcomes, making it easy to follow. (8/10)",
+                "total": "80/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "key_points": [
+                "Describes delays generally",
+                "Mentions collecting some timing data",
+                "Refers to simple workflow notions",
+                "Lists a few improvement ideas"
+            ],
+            "llm_questions": [
+                "What minimum data should be recorded?",
+                "How can a simple conceptual model be written?",
+                "Which stations tend to become bottlenecks?",
+                "What basic checks confirm improvement?"
+            ],
+            "llm_answers": [
+                "At a bare minimum, you need to record the processing time at each major station in the assembly line. You should use a stopwatch and time how long it takes for a worker or machine to complete their main task for several products and then take an average. It's also important to note any significant downtime or periods when a station is waiting for parts. This gives you a basic picture of where time is being spent.",
+                "A simple conceptual model can be written out as a list of steps or drawn as a basic flowchart. Use boxes for each station or task (e.g., 'Station 1: Mount Part A') and arrows to show the direction of flow to the next station (e.g., '-> Station 2: Weld Seam'). This map, even without detailed timings, helps you visualize the entire process and ensures you haven't forgotten any steps. It's the foundation for any deeper analysis.",
+                "Bottlenecks are typically the stations that take the longest to complete their task. If one station takes 3 minutes and all the others take 1 minute, that 3-minute station is the bottleneck. It could also be a station that is unreliable and breaks down frequently, or a station that requires a lengthy setup between different types of products. You can usually spot them by looking for the place where unfinished products are piling up.",
+                "To confirm an improvement, the most basic check is to measure the same things you measured before you made the change. First, check your overall output: are you producing more units per hour or per day? Second, check the total production time: does it take less time for a single product to get through the whole line? If the answer to both of these questions is yes, then your change was likely a success."
+            ],
+            "final_submission": "As an industrial engineer looking at a factory with assembly line delays, I would need to figure out what's going wrong. The main problem is that things are taking too long, and production is slow. \n\nTo start, I would need to collect some data. I would go to the assembly line and watch the workers. I’d use a stopwatch to time how long each main step takes. I would do this a few times for each station to get an average time. This would help me see which steps are the slowest. The slow steps are probably where the delays are coming from.\n\nNext, I would make a model of the process. I would probably draw a flowchart that shows how the product moves from one station to the next. This helps to see the whole workflow in one picture. I'd write the times I measured next to each box in the flowchart. The box with the highest time is likely the bottleneck, which is what slows everything else down.\n\nFor an improvement plan, I would suggest some ways to fix the bottleneck. Maybe the task at that station is too complicated, so we could try to simplify it. Or maybe we could add another worker to the slow station to help out. Other ideas could be to make sure workers have all their tools and parts nearby so they don't have to walk around looking for them.\n\nI would present this plan by first showing the flowchart with the slow station circled. Then I would list my ideas, like 'add a person to station C' or 'reorganize the parts bin at station A'. This would be my plan to make the line faster.",
+            "feedback": {
+                "c1": "Average. You have a general description of the problem as 'things are taking too long'. Your data collection strategy is limited to timing stations with a stopwatch, but it's a valid starting point. (22/30)",
+                "c2": "Average. You mention creating a process model by drawing a flowchart and adding times to it. This is a correct but very general description of modeling, lacking in further detail or theoretical depth. (22/30)",
+                "c3": "Average. You've listed some potential strategies like simplifying tasks or adding a worker. However, these are presented as simple ideas with limited theoretical detail on why they would be effective (e.g., how they impact utilization or flow). (20/30)",
+                "c4": "Average. You've provided a basic plan by suggesting you would show the flowchart and list your ideas. The explanation for these ideas is limited, and the plan lacks a strong, structured justification. (6/10)",
+                "total": "70/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "key_points": [
+                "Problem scope is unclear",
+                "Data plan is inconsistent",
+                "Modeling idea is not connected to delays",
+                "Improvements are not justified"
+            ],
+            "llm_questions": [
+                "How do you define scope and boundaries?",
+                "What makes a data plan usable?",
+                "How do you link a model to observed issues?",
+                "How do you state a rationale for each change?"
+            ],
+            "llm_answers": [
+                "Defining scope and boundaries means deciding exactly what you will and will not analyze. For an assembly line, you need to state the starting point (e.g., 'when raw materials arrive at Station 1') and the ending point (e.g., 'when the final product is packaged'). This prevents 'scope creep,' where the project becomes too large and unmanageable. You should also define what a 'delay' is—is it any stop, or only stops longer than five minutes? Clear boundaries make the problem solvable.",
+                "A data plan is usable if it's clear, consistent, and relevant. It needs to specify exactly what data to collect (e.g., 'processing time in seconds'), how to collect it (e.g., 'using stopwatch model X'), and who is responsible for collecting it. It should also state the sampling plan, for instance, 'measure 10 consecutive units at the top of each hour.' Without this clarity, different people might collect different data in different ways, making the results useless.",
+                "A model is only useful if it helps explain the real-world issues you've observed. If your data shows a long wait time before Station 3, your process model (like a flowchart) must visually represent that queue. You can draw a triangle symbol for 'inventory' or 'wait' right before the box for Station 3. This directly links the abstract model to the tangible problem, showing stakeholders *where* the issue you measured is occurring in the process.",
+                "Stating a rationale means explaining the 'why' behind your suggestion. It connects your proposed action to a desired outcome. Instead of just saying 'Add a new machine,' you should say, 'Add a new machine at Station 4 because our data shows it is the primary bottleneck operating at 98% capacity, and this action is projected to increase overall line throughput by 20%.' This rationale justifies the cost and effort of the change."
+            ],
+            "final_submission": "To fix the factory's assembly line, we need to deal with the delays. The problem is that the line is not efficient. As an engineer, I would look at the line and see where things are getting stuck. It seems like some stations are slower than others.\n\nMy plan would be to collect data. We can ask the workers to write down how long things take, or maybe install some cameras to watch the process. We need to get a lot of information about what is happening. The data should tell us what the problem is. Maybe it's a machine problem or a person problem.\n\nAfter we have the data, we can try to understand it. We can make a chart of the workflow to see how it is supposed to work. This model will show us the steps. We can compare the model to the data we collected to see what is wrong. It's important to have a model so we know what we are trying to fix.\n\nFor the improvement plan, I think we should try a few things. We could try moving workers around to different spots to see if that helps. Or maybe we should have a meeting to talk about being more efficient. The plan is to try different solutions and see what works best for the factory. We need to make the line faster so the factory can make more products and not have so many delays. This is how I would approach the problem.",
+            "feedback": {
+                "c1": "Needs Improvement. The description of the problem is very vague, stating the 'line is not efficient' without defining what that means. The data collection ideas are inconsistent, suggesting both worker logs and cameras without a clear, systematic plan. (20/30)",
+                "c2": "Needs Improvement. You make a minimal reference to making a 'chart of the workflow,' but you don't explain how this model would be used to analyze the process or what theoretical principles would apply. The connection between the model and the data is not clearly explained. (18/30)",
+                "c3": "Needs Improvement. The strategies mentioned, like 'moving workers around' or 'having a meeting,' are mentioned vaguely and without any clear explanation or engineering rationale. They are not presented as defined optimization strategies. (7/30)",
+                "c4": "Needs Improvement. The improvement plan is vague and lacks clarity. It suggests 'trying different solutions' without a structured proposal or justification for any specific action. It does not constitute a clear, communicable plan. (5/10)",
+                "total": "50/100"
+            }
+        },
+        {
+            "quality": "Poor",
+            "key_points": [
+                "No defined problem",
+                "No relevant data collection",
+                "No modeling approach",
+                "No communicable plan"
+            ],
+            "llm_questions": [
+                "What is the minimal structure for an improvement study?",
+                "Why is baseline data essential?",
+                "What risks follow from no modeling?",
+                "How do you make a one-page plan?"
+            ],
+            "llm_answers": [
+                "A minimal, effective structure for an improvement study follows four basic steps, often called the PDCA cycle (Plan-Do-Check-Act). First, PLAN: define the problem and propose a solution with a measurable goal. Second, DO: implement the proposed solution on a small scale. Third, CHECK: measure the results and see if you achieved your goal. Fourth, ACT: if the solution worked, implement it fully. If not, learn from it and start the cycle over. This structure ensures your actions are deliberate and evidence-based.",
+                "Baseline data is essential because it is your starting point—your 'before' picture. Without it, you have no objective way to prove that any changes you made actually resulted in an improvement. You might *feel* like the line is faster, but you can't quantify it. Management will need to see hard numbers, such as 'We reduced cycle time from 15 minutes to 11 minutes,' to justify the investment and approve future projects. Baseline data turns opinions into facts.",
+                "Without modeling a process, you risk solving the wrong problem or causing unintended consequences. For example, you might speed up one station, only to create a massive bottleneck at the next station down the line, making the overall situation worse. A model, even a simple one, helps you see the entire system and understand how the different parts interact. It helps you predict the impact of a change before you spend time and money implementing it on the factory floor.",
+                "To make a one-page plan, use clear headings and bullet points for readability. Start with 'Problem Statement:' and in one sentence, describe the issue (e.g., 'Assembly line output is 20% below target due to delays at the painting station.'). Then, have a section for 'Proposed Actions:' and list 2-3 specific, high-impact actions (e.g., '1. Pre-heat parts before they enter the paint booth. 2. Create a dedicated prep area to run in parallel.'). Finally, have a 'Expected Outcome:' section stating the measurable goal (e.g., 'Increase line output by 15% within 30 days.')."
+            ],
+            "final_submission": "The factory is having problems because the assembly line is too slow. This is bad for business. As an engineer, my job is to fix it.\n\nTo fix the factory, you need to make the workers work harder. They are probably being lazy and that is why there are delays. We should tell them to speed up. Also, the machines are probably old. If the factory buys all new machines, they will be faster and won't break down. This is the best way to solve the problem because new things are always better than old things.\n\nWe don't need to collect data because it is obvious what the problem is. Watching the line for a few minutes is enough. You can see that people are talking too much and not working. It is a waste of time to use stopwatches and make charts. You just need to use common sense. \n\nSo my plan is simple. First, tell the manager to get tougher on the workers. Second, tell the owner to spend money on new equipment. If they do these two things, the factory will be much more efficient and all the delays will stop. This is the best way to do it and it will work.",
+            "feedback": {
+                "c1": "Poor. There is no clear, data-based problem statement. The submission makes unsubstantiated claims about worker performance without proposing any method for collecting relevant data. This fails to meet the criterion's requirements. (9/30)",
+                "c2": "Poor. The submission explicitly rejects the idea of modeling ('a waste of time to... make charts'), providing no explanation of process modeling or analysis whatsoever. (5/30)",
+                "c3": "Poor. No valid optimization strategies are provided. The suggestions to 'work harder' and 'buy new machines' are not presented as part of a systematic or theoretical engineering approach. (5/30)",
+                "c4": "Poor. There is no clear, communicable improvement plan based on engineering principles. The submission offers a set of opinions without any structure, logic, or professional justification. (2/10)",
+                "total": "21/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "key_points": [
+                "Pinpoints specific delay points with observable symptoms like queues and wait times.",
+                "Utilizes a mix of automated logs and direct observation for data collection, aiming for quantitative and qualitative insights.",
+                "Proposes Value Stream Mapping for process visualization and Lean principles for analysis.",
+                "Discusses common Lean optimization strategies like waste reduction and flow improvement, but lacks deep theoretical modeling insight.",
+                "Presents a clear, structured plan with actionable steps and expected benefits, though the theoretical justification could be stronger."
+            ],
+            "llm_questions": [
+                "How do specific observable symptoms help define an assembly line problem?",
+                "What data collection methods provide both quantitative and qualitative insights?",
+                "What is the role of Value Stream Mapping in problem identification?",
+                "Which Lean principles are most applicable to reducing assembly line delays?",
+                "How do you structure an improvement plan to ensure clarity for stakeholders?"
+            ],
+            "llm_answers": [
+                "Observable symptoms are crucial for initially pinpointing the problem. For instance, visible queues of unfinished products before a specific workstation clearly indicate a bottleneck. Frequent stopping of machines suggests maintenance issues or upstream supply problems. Operators standing idle for extended periods point to line imbalance or material shortages. By documenting these symptoms, we can quantify their frequency and duration, allowing for a data-driven definition of the problem beyond mere anecdotal evidence.",
+                "To get both quantitative and qualitative insights, a multi-pronged approach is best. Automated machine logs provide precise, high-volume quantitative data on cycle times, downtime, and throughput without human bias. However, this should be complemented by direct observation through time-and-motion studies, which can uncover qualitative aspects like inefficient worker movements or poorly designed workstations. Interviews with line operators and supervisors offer invaluable qualitative context on systemic issues, morale, and practical challenges not captured by data alone.",
+                "Value Stream Mapping (VSM) serves as a powerful visual tool for problem identification. It graphically depicts the entire flow of materials and information required to bring a product to the customer, from raw materials to delivery. By distinguishing between value-added and non-value-added activities (waste), VSM immediately highlights areas of delay, excessive inventory, redundant steps, and information gaps. It helps to 'see the waste' in a systematic way, forming a strong basis for improvement initiatives.",
+                "Lean principles are highly applicable to reducing assembly line delays. The principle of 'Flow' aims to ensure continuous movement of products without interruption, directly addressing delays. 'Pull' systems, like Kanban, prevent overproduction and excessive Work-In-Progress (WIP) by producing only what is needed, when it is needed. 'Waste Reduction' (Muda) is paramount, targeting activities like waiting, unnecessary motion, and over-processing that contribute to delays and inefficiencies. 'Standardized Work' ensures consistency and reduces variability, a common cause of unexpected delays.",
+                "To ensure clarity, an improvement plan should be structured logically. Start with an executive summary outlining the problem, proposed solution, and expected benefits. Follow with a detailed 'Current State Analysis' supported by data and a process map. The 'Proposed Changes' section should list specific actions, their location, and who is responsible, along with a theoretical rationale for *why* each change will work (e.g., 'Implementing SMED at Station 3 will reduce changeover time, aligning with Lean principles of waste reduction'). Conclude with an 'Implementation Timeline' and 'Measurement of Success' metrics."
+            ],
+            "final_submission": "Addressing assembly line delays requires a methodical approach, starting with a clear problem definition. I would define the problem by observing specific symptoms: frequent accumulation of Work-In-Process (WIP) before certain stations, extended idle times for operators, and inconsistent cycle times across the line. These observations would be quantified by establishing baseline metrics such as overall throughput, average cycle time per product, and the percentage of time each station is delayed. My initial data collection would involve reviewing existing production logs for machine uptime and downtime, alongside conducting targeted time-and-motion studies at suspected bottleneck stations. This blend ensures both objective machine data and granular insights into human-led processes.\n\nFor process modeling and theoretical analysis, I would begin by constructing a Value Stream Map (VSM) of the entire assembly line. This visual tool, rooted in Lean methodology, would help identify both value-added and non-value-added steps, highlighting areas of waste (Muda) such as excessive waiting, unnecessary motion, and over-processing. By mapping the flow of materials and information, we can conceptually understand the true lead time and identify where delays are systemically embedded, rather than merely treating symptoms. The VSM would serve as a conceptual model to pinpoint the primary constraints in the system, guiding subsequent analytical efforts.\n\nMy optimization strategies would draw heavily from Lean principles. Once the VSM identifies key areas of waste and bottlenecks, I would propose targeted interventions. This might include implementing 5S methodology to improve workstation organization and reduce search times, applying Single-Minute Exchange of Die (SMED) principles to drastically cut down changeover times at critical machines, or introducing a Kanban system to control WIP levels and establish a pull-based production flow. The theoretical basis for these strategies is to eliminate waste, improve flow, and balance the workload, thereby increasing efficiency and reducing overall cycle time.\n\nThe improvement plan would be communicated through a comprehensive report. It would start with a clear problem statement backed by the collected data and the current state VSM. Each proposed optimization strategy would be detailed, explaining the specific action, the Lean principle it leverages, and the expected quantitative benefits (e.g., 'Reducing changeover time at Station 4 by 50% is projected to increase daily throughput by 10%, based on SMED principles'). The plan would also include an implementation timeline, assigned responsibilities, and key performance indicators (KPIs) for monitoring the success of the improvements, ensuring accountability and measurable progress.",
+            "feedback": {
+                "c1": "Excellent. You precisely define the problem by linking observable symptoms to quantifiable metrics (WIP, idle times, cycle times) and outline robust data collection methods, including both logs and time studies. (28/30)",
+                "c2": "Good. Your explanation of Value Stream Mapping as a conceptual model for identifying waste and constraints is solid. While strong on Lean, it could benefit from mentioning more advanced theoretical modeling like simulation for dynamic analysis. (25/30)",
+                "c3": "Good. You propose relevant Lean optimization strategies (5S, SMED, Kanban) with good explanations of their purpose. The theoretical connection to waste elimination and flow improvement is clear. (25/30)",
+                "c4": "Good. The communication plan is structured logically, moving from data to VSM to detailed solutions with expected benefits. The emphasis on specific actions, Lean principles, and KPIs demonstrates adequate clarity and logical presentation. (8/10)",
+                "total": "86/100"
+            }
+        },
+        {
+            "quality": "Excellent",
+            "key_points": [
+                "Defines delays with strong quantitative measures like Takt Time and OEE, supported by systematic data acquisition.",
+                "Demonstrates a deep theoretical understanding of discrete-event simulation (DES) and its application in process analysis.",
+                "Proposes advanced optimization techniques, specifically integrating Theory of Constraints (TOC) with Lean principles for bottleneck management.",
+                "Articulates a highly structured communication plan that emphasizes theoretical justification and data-driven projections.",
+                "Highlights the importance of risk-free 'what-if' analysis through simulation."
+            ],
+            "llm_questions": [
+                "How would you integrate Takt Time and OEE in problem definition?",
+                "Explain the theoretical underpinnings of Discrete-Event Simulation for this scenario.",
+                "How can TOC and Lean principles be combined for maximum optimization impact?",
+                "What specific metrics would you use to measure the success of an improvement plan?",
+                "Beyond initial presentation, how do you sustain communication throughout implementation?"
+            ],
+            "llm_answers": [
+                "Takt Time and Overall Equipment Effectiveness (OEE) are critical for precise problem definition. Takt Time, the rate at which products must be completed to meet customer demand, immediately highlights if the current production rate (cycle time) is insufficient. If actual cycle times consistently exceed Takt Time, delays are inherent. OEE, comprising Availability, Performance, and Quality, offers a holistic view of equipment efficiency. A low OEE score at a specific workstation points directly to the root causes of delays—be it frequent breakdowns (availability), slow speeds (performance), or rework (quality). Integrating these provides quantifiable, high-level indicators of systemic inefficiency.",
+                "Discrete-Event Simulation (DES) models the system as a sequence of events occurring over time, changing the system's state. Theoretically, it's founded on probability and statistics to represent the stochastic nature of real-world processes (e.g., variable processing times, machine failures). For an assembly line, DES allows us to create a virtual replica where we define entities (products), resources (machines, workers), queues (WIP), and process logic. This enables 'what-if' scenario testing without disrupting actual operations, quantifying the impact of changes (e.g., adding a resource, reducing setup time) on key performance indicators like throughput, lead time, and resource utilization, based on Monte Carlo methods.",
+                "TOC and Lean principles are highly complementary. TOC's primary focus is on identifying and exploiting the single greatest constraint (bottleneck) that limits overall system throughput. Lean's strength lies in systematically eliminating all forms of waste (Muda) from processes. The optimal combination starts with TOC to find and elevate the constraint. Once the bottleneck is identified, Lean tools (e.g., SMED to reduce changeover, 5S to improve organization, error-proofing to reduce defects) can be applied *specifically to the bottleneck* and processes feeding it, to maximize its effectiveness. This ensures that improvement efforts are concentrated where they will yield the greatest impact on the entire system's performance.",
+                "To measure success, a clear set of metrics tied to the problem definition is essential. Primary metrics would include: 1. **Overall Throughput**: Units produced per hour/day. 2. **Average Cycle Time**: Time from start to finish for a single product. 3. **Work-In-Progress (WIP) Levels**: Average number of units in the line. 4. **On-Time Delivery Rate**: Percentage of orders delivered by due date. 5. **Labor Utilization**: Percentage of time workers are engaged in value-added tasks. 6. **OEE**: For critical machines. These metrics directly reflect the project's goals of reducing delays and improving efficiency.",
+                "Sustained communication is vital. Beyond the initial presentation, I would establish regular progress meetings (e.g., weekly stand-ups) with key stakeholders using a visual management board (e.g., Kanban or Gantt chart) to track implementation steps, highlight successes, and address emerging issues. Monthly performance reviews would compare actual results against projected improvements using the defined KPIs. A feedback loop mechanism for operators would be implemented to capture ground-level insights and foster continuous improvement, ensuring the plan remains adaptive and supported."
+            ],
+            "final_submission": "As an industrial engineer confronted with assembly line delays, my initial step would be a rigorous problem definition, leveraging established metrics. I would quantify the problem by comparing the actual station cycle times against the ideal Takt Time derived from customer demand. Furthermore, I would assess the Overall Equipment Effectiveness (OEE) for critical workstations, disaggregating it into availability, performance, and quality losses to precisely identify where and why delays occur. Data collection would involve comprehensive automated logging from PLC systems for cycle times, micro-stops, and defect rates, augmented by targeted Gemba walks and operator interviews to capture qualitative insights and validate observed discrepancies.\n\nWith a robust dataset, I would proceed to process modeling and theoretical analysis. My primary tool would be Discrete-Event Simulation (DES). This conceptual approach allows for the creation of a dynamic, stochastic model of the assembly line, representing entities (products), resources (machines, operators), and their interactions. The theoretical basis of DES lies in queueing theory and probability, enabling us to model the variability inherent in real-world processes. This simulation model would serve as a risk-free sandbox to test various 'what-if' scenarios, predicting the impact of proposed changes on key performance indicators such as throughput, Work-In-Process (WIP) levels, and resource utilization, without disrupting physical operations.\n\nOptimization strategies would be systematically developed, guided by the Theory of Constraints (TOC) and Lean principles. The DES model would confirm the primary bottleneck (the constraint) that dictates the entire line's output. The core strategy would be to 'elevate' this constraint, ensuring it is never starved or blocked. This involves applying Lean techniques like Single-Minute Exchange of Die (SMED) to reduce changeover times at the bottleneck, optimizing its scheduling, and ensuring upstream processes feed it continuously. Simultaneously, other non-bottleneck processes would be 'subordinated' to the pace of the constraint, preventing overproduction (a Lean waste) and excessive WIP, thereby smoothing flow and maximizing system efficiency.\n\nFinally, the improvement plan would be communicated with meticulous theoretical justification. The presentation would begin with a data-driven overview of the defined problem and the findings from the DES analysis, clearly identifying the bottleneck. Each proposed solution—e.g., 'implementing a dedicated setup team at the paint booth bottleneck based on SMED principles' or 're-balancing tasks using a ranked positional weights algorithm' —would be accompanied by its theoretical rationale and quantified, simulated benefits. The plan would include a detailed implementation roadmap, resource requirements, and a set of key performance indicators (e.g., 20% increase in hourly throughput, 30% reduction in average cycle time) for continuous monitoring and post-implementation validation, ensuring the proposed changes are not only understood but also empirically verifiable and sustainable.",
+            "feedback": {
+                "c1": "Excellent. You integrate Takt Time and OEE effectively for problem definition and propose systematic data collection using automated logs and Gemba walks, demonstrating a high level of expertise. (29/30)",
+                "c2": "Excellent. Your explanation of Discrete-Event Simulation is highly theoretical and clear, demonstrating a deep understanding of its application for dynamic and stochastic process analysis, including its reliance on queueing theory. (28/30)",
+                "c3": "Excellent. You expertly combine Theory of Constraints and Lean principles, showcasing a sophisticated approach to bottleneck management and waste elimination. The strategic focus on the constraint is well-explained. (27/30)",
+                "c4": "Excellent. The communication plan is exceptionally well-structured, emphasizing theoretical justification and data-driven simulation results. The inclusion of a detailed roadmap and verifiable KPIs reflects an outstanding grasp of professional communication. (8/10)",
+                "total": "92/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "key_points": [
+                "Identifies common issues like idle time and material shortages generally.",
+                "Suggests basic data collection methods such as manual timing and feedback from workers.",
+                "Proposes a simple workflow diagram but lacks deeper theoretical modeling insights.",
+                "Lists general optimization ideas like reorganizing workstations and worker training.",
+                "Communicates the plan in a straightforward manner but without robust theoretical backing or detailed quantification."
+            ],
+            "llm_questions": [
+                "How do you distinguish between symptoms and root causes of delays?",
+                "What are the limitations of manual data collection methods?",
+                "How does a simple workflow diagram aid initial analysis?",
+                "What are basic principles for optimizing workstation layout?",
+                "How can you present a plan to non-technical stakeholders effectively?"
+            ],
+            "llm_answers": [
+                "Distinguishing symptoms from root causes is crucial. A symptom is what you observe (e.g., 'Station 3 has a long queue'). A root cause is the underlying reason (e.g., 'Machine at Station 3 frequently breaks down due to lack of preventative maintenance,' or 'The preceding station, Station 2, produces too slowly to feed Station 3 adequately'). To find root causes, techniques like the '5 Whys' or Fishbone diagrams are used to delve deeper beyond the immediate observation.",
+                "Manual data collection, like using stopwatches or paper logs, has several limitations. It can be prone to human error, inconsistency between observers, and is labor-intensive, making it difficult to collect large volumes of data for extended periods. It also tends to be subjective, as the act of observing can alter worker behavior (Hawthorne effect). While useful for initial qualitative insights or short-term studies, it's often insufficient for comprehensive analysis of complex systems.",
+                "A simple workflow diagram, such as a basic flowchart, is a foundational tool for initial analysis. It visually represents the sequence of steps, decision points, and connections in a process. This helps in understanding the overall flow, identifying potential areas where activities might be redundant, out of sequence, or where materials might be backtracking. It's excellent for communicating the process to all team members and for identifying obvious bottlenecks or pinch points before moving to more complex modeling.",
+                "Basic principles for optimizing workstation layout center on minimizing movement and maximizing accessibility. This includes arranging tools and materials within easy reach (e.g., using a U-shaped layout for a single operator), placing frequently used items closest to the operator, and ensuring a smooth flow of materials through the station (e.g., input on one side, output on the other). The goal is to reduce wasted motion, improve ergonomics, and decrease cycle time within that specific workstation.",
+                "To present a plan effectively to non-technical stakeholders, focus on clarity, impact, and simplicity. Avoid jargon. Start with the 'what' (the problem) and the 'so what' (its impact on the business, like lost revenue). Then, explain the 'how' (your proposed solution) using analogies or simple visual aids. Emphasize the 'why' (the benefits: 'This will reduce delays by 15%, saving $X per month'). Keep it concise, high-level, and focused on outcomes that matter to them, like cost savings, increased output, or improved safety."
+            ],
+            "final_submission": "To tackle delays on the factory assembly line, my first task as an industrial engineer would be to understand the exact nature of the problem. Anecdotal evidence suggests issues like materials running out at certain stations, or workers waiting for the next step. I would define the problem as 'unacceptable variability in process times leading to unpredictable output and accumulation of Work-In-Process (WIP)'. For data collection, I would primarily rely on manual timing studies using stopwatches at each critical station to establish average processing times. Additionally, I would conduct informal interviews with line operators to gather qualitative data on common frustrations, recurring issues, and perceived bottlenecks.\n\nFollowing data collection, I would create a simple process model. This would take the form of a detailed flowchart, visually mapping every step of the assembly process, including transport and inspection points. Each box in the flowchart would be annotated with the average processing time collected from my studies. While not a dynamic simulation, this static model helps to visualize the sequence of operations and highlight any steps with significantly longer durations, which are potential bottlenecks. It provides a conceptual understanding of the workflow and identifies areas where work might be accumulating.\n\nFor optimization strategies, my focus would be on practical, observable improvements. If the flowchart reveals a station with consistently longer processing times, I would propose line balancing through task reallocation where feasible, or considering additional tooling/fixtures to speed up the operation. If material shortages are identified, I would suggest implementing a basic visual inventory management system (like a two-bin system) to ensure continuous supply. The theoretical explanation here leans on basic efficiency principles: by removing obvious roadblocks and ensuring steady material flow, the overall speed of the line should increase.\n\nThe improvement plan would be presented in a clear, concise document. It would start with the problem statement, supported by summary data (e.g., 'Station C has an average cycle time of 2.5 minutes, while others average 1.0 minute'). The process flowchart with the identified bottleneck would be central. The proposed solutions, such as 'Redistribute tasks from Station C to Station B to balance workload' or 'Implement a visual Kanban system for component X at Station A,' would be listed with a brief explanation of how each directly addresses a identified delay. I would conclude with expected outcomes, such as 'a projected 10-15% increase in daily throughput' and 'a reduction in operator idle time by 20%', allowing stakeholders to grasp the practical benefits.",
+            "feedback": {
+                "c1": "Good. You define the problem by focusing on variability and WIP, and propose clear data collection via manual timing and operator interviews. This is a practical, if basic, approach. (25/30)",
+                "c2": "Average. You describe creating a detailed flowchart with annotated times, which is a valid modeling approach for initial understanding. However, it lacks theoretical depth regarding dynamic process behavior or advanced analytical tools. (22/30)",
+                "c3": "Needs Improvement. The optimization strategies (line balancing, inventory system) are practical but are presented with limited theoretical explanation beyond 'basic efficiency principles.' More detail on how these impact flow or throughput is needed. (23/30)",
+                "c4": "Average. The communication plan is straightforward and includes key elements like data summaries, the flowchart, and specific solutions. However, the theoretical justification for the solutions could be stronger and more detailed. (8/10)",
+                "total": "78/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "key_points": [
+                "Identifies issues in a general sense, such as 'slow production' and 'waiting'.",
+                "Data collection is vaguely defined, relying on observation without systematic methods.",
+                "Mentions drawing a 'picture' of the steps, but without theoretical rigor for process modeling.",
+                "Proposes reactive and simplistic solutions like 'speeding up' or 'adding workers' without deeper analysis.",
+                "Communication plan lacks structure and relies on general statements rather than data-driven proposals."
+            ],
+            "llm_questions": [
+                "Why is quantifying delays more effective than general descriptions?",
+                "What are some common pitfalls of unsystematic data collection?",
+                "How can even a basic model predict consequences of changes?",
+                "Why are vague improvement ideas less impactful?",
+                "What's the difference between a list of ideas and a structured plan?"
+            ],
+            "llm_answers": [
+                "Quantifying delays turns subjective observations into objective facts. Instead of saying 'production is slow,' you say 'average cycle time is 15 minutes, 5 minutes over target.' This allows for clear goal setting, objective measurement of improvement, and provides concrete evidence for investment decisions. General descriptions can be misinterpreted and don't provide a baseline for progress tracking.",
+                "Unsystematic data collection often leads to incomplete or biased information. Pitfalls include: inconsistent measurement (different people timing different ways), focusing only on easily observable issues while missing hidden ones, lack of sufficient sample size for statistical validity, and not collecting data over a representative period (e.g., only during peak hours). This can result in inaccurate problem diagnoses and ineffective solutions.",
+                "Even a basic model, like a simple flowchart with estimated timings, can predict consequences by revealing dependencies. If you identify a step that takes 5 minutes, and all subsequent steps rely on its output, then speeding up an earlier 1-minute step won't improve overall throughput. The model helps visualize the critical path and understand that the slowest step (bottleneck) dictates the system's pace, thus showing where changes will or won't have an effect.",
+                "Vague improvement ideas are less impactful because they lack specific actions, targets, and theoretical justification. For example, 'speed up workers' is not actionable; it doesn't specify how. 'Improve efficiency' is a goal, not a strategy. Impactful ideas are precise: 'Implement a pull system for material replenishment at Station 2 to reduce material waiting time by 20%,' which outlines the what, how, and expected outcome, and links to a theoretical approach.",
+                "A list of ideas is merely a collection of unorganized thoughts. A structured plan, conversely, organizes these ideas into a logical sequence, includes a clear problem statement, provides data and analysis to support the ideas, details specific actions, assigns responsibilities, sets timelines, and defines measurable outcomes. It transforms disparate thoughts into a coherent, actionable strategy that can be executed and evaluated systematically."
+            ],
+            "final_submission": "To address the delays in the factory's assembly line, my approach as an industrial engineer would start by identifying where things are going wrong. I see that products sometimes stop moving, and workers are waiting. The problem is that the line isn't running smoothly.\n\nFor data collection, I would observe the line. I'd watch different stations and try to estimate how long things take. I might ask workers what they think the main problems are. My goal is to get a general idea of the slow points, like maybe a machine that's often idle, or a step that takes a lot of time for people to do. This informal observation would give me a sense of the issues.\n\nAfter observing, I would attempt to make a simple representation of the process. This would essentially be a drawing or a basic list of steps that shows how the product moves from start to finish. I'd put down the general steps like 'assembly', 'inspection', and 'packaging'. This 'picture' helps to visualize the sequence, but it wouldn't involve any complex calculations or theoretical analysis. It's just to get a broad overview of the workflow.\n\nFor an improvement plan, I would propose some straightforward solutions. If I saw that a specific worker was struggling or a machine was often breaking down, I might suggest providing more training or getting that machine checked. Other ideas would be to tell everyone to try to work faster, or to make sure that parts are always available. The main goal is to simply make things move more quickly and prevent items from stopping. These are general ideas that I think could help.\n\nMy presentation of this plan would be quite informal. I'd explain what I saw (the stoppages) and then suggest my ideas, such as 'let's make sure the parts are always ready' or 'maybe we can train the workers better'. I would emphasize the need for the line to be more efficient, without going into specific metrics or detailed theoretical justifications.",
+            "feedback": {
+                "c1": "Needs Improvement. The problem definition is general ('line isn't running smoothly'), and data collection relies on vague 'observation' and 'asking workers' without a systematic plan or quantifiable metrics. (13/30)",
+                "c2": "Needs Improvement. You mention drawing a 'picture' or 'list of steps' for the workflow. This is a very minimal conceptualization of process modeling, lacking any theoretical basis or analytical depth. (15/30)",
+                "c3": "Poor. The optimization strategies are simplistic and reactive ('speed up workers,' 'train better') lacking any clear engineering rationale or specific theoretical underpinnings. They are more general suggestions than defined strategies. (10/30)",
+                "c4": "Needs Improvement. The communication plan is informal and lacks structure. It provides general ideas without specific actions, justifications, or measurable outcomes, making it difficult to implement or evaluate. (4/10)",
+                "total": "42/100"
+            }
+        },
+        {
+            "quality": "Poor",
+            "key_points": [
+                "Very vague problem definition, merely stating 'delays'.",
+                "No clear data collection methods proposed, relies on intuition.",
+                "No mention or understanding of process modeling.",
+                "Proposes irrelevant or ineffective 'strategies' based on assumptions.",
+                "No coherent plan is communicated, just a collection of unrelated suggestions."
+            ],
+            "llm_questions": [
+                "Why is a specific problem statement important?",
+                "What's wrong with making assumptions without data?",
+                "What's the absolute simplest way to visually represent a process?",
+                "How do you ensure suggested improvements are relevant?",
+                "Why is it important to justify proposed changes?"
+            ],
+            "llm_answers": [
+                "A specific problem statement acts as a compass for the entire improvement project. It clearly defines what needs to be solved (e.g., 'reduce widget assembly time from 10 to 7 minutes'), preventing scope creep and ensuring all efforts are focused. Without specificity, efforts can be scattered, resources wasted on non-issues, and it becomes impossible to measure success. It also communicates clearly to all stakeholders what the project aims to achieve.",
+                "Making assumptions without data is highly risky because it can lead to solving the wrong problem or implementing ineffective solutions. You might assume worker laziness is the cause, when in reality it's a machine breakdown issue or a poor workstation layout. This wastes time, money, and can even worsen morale or create new problems. Data provides objective evidence to validate or refute assumptions, guiding you to the true root causes.",
+                "The absolute simplest way to visually represent a process is a basic sequence list or a very high-level block diagram. A sequence list would simply be 'Step 1: Get Part A. Step 2: Attach Part A. Step 3: Inspect.' A block diagram would use boxes for each major step and arrows to show flow, without getting into details of timings or decisions. It helps to ensure all key steps are accounted for.",
+                "To ensure suggested improvements are relevant, they must directly address the identified root causes of the problem. This means: 1. Conducting thorough problem definition and data analysis to identify specific bottlenecks or inefficiencies. 2. Linking each proposed solution explicitly to a diagnosed problem (e.g., 'We will add a buffer stock at Station X because data shows it frequently starves due to upstream variability'). 3. Prioritizing improvements based on their potential impact on key metrics.",
+                "Justifying proposed changes is crucial for gaining buy-in, ensuring resource allocation, and maintaining accountability. Justification explains the 'why' behind an action, providing the theoretical or empirical basis for expecting a positive outcome. It also helps in anticipating potential risks and designing effective monitoring plans. Without justification, changes appear arbitrary and are less likely to be supported or successfully implemented."
+            ],
+            "final_submission": "The factory has delays, and as an engineer, I need to figure out why the line is slow. It's just not working right.\n\nMy first idea for data collection would be to just walk around and look. I'd see where products are piled up, or where people are standing around. We don't need fancy numbers; common sense tells you what's wrong. Maybe someone isn't doing their job fast enough, or a machine looks old. That's enough 'data' to start.\n\nI don't think we need a model. A model is too complicated. You just see the line, and you know what's happening. Maybe you can draw a little sketch of the factory floor, but that's just a map, not a 'model' that explains things. Trying to make a complex model would take too much time and it's not practical for just getting things moving faster.\n\nFor an improvement plan, I would suggest some basic things. We could tell the workers to hurry up. Maybe we need more supervisors to keep an eye on them. Also, if a machine is slow, we should just get rid of it and buy a new, faster one. Or, if there's a particular part that causes problems, we should just stop using that part. These fixes are common sense and will definitely make the line quicker.\n\nI would communicate this plan by telling the factory manager what I saw and what I think they should do. I'd say, 'The workers need to be faster, and we need better machines.' I wouldn't have a formal report or anything, just a direct conversation about making the factory work better. It's about getting things done, not about overthinking.",
+            "feedback": {
+                "c1": "Poor. The problem definition is extremely vague ('line is slow,' 'not working right'). Data collection is dismissed as unnecessary, relying solely on uncritical observation and intuition, completely failing to outline systematic methods. (5/20)",
+                "c2": "Poor. The submission explicitly rejects the concept of process modeling as 'too complicated' and unnecessary, offering only a 'little sketch' without any theoretical explanation or analytical purpose. (4/25)",
+                "c3": "Poor. The 'optimization strategies' are irrelevant or impractical (e.g., 'tell workers to hurry up,' 'get rid of a part') and are not based on any engineering principles or theoretical understanding of process improvement. (3/15)",
+                "c4": "Poor. No clear or communicable improvement plan is provided. The submission suggests an informal conversation with unbacked opinions, entirely lacking logical structure, justification, or measurable outcomes. (12/40)",
+                "total": "24/100"
+            }
+        }
+    ]
+}

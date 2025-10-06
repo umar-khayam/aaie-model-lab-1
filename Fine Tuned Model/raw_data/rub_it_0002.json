@@ -1,0 +1,435 @@
+{
+    "domain": "Information Technology",
+    "prompt": "Evaluate the effectiveness of multi-factor authentication (MFA) in preventing data breaches. Discuss various MFA methods, their usability and security trade-offs, and how MFA integrates into broader cybersecurity strategies.",
+    "rubric": {
+        "rubric_id": "rub_it_0002",
+        "criteria": [
+            {
+                "criterion_id": "c1",
+                "name": "Conceptual Understanding",
+                "description": "Demonstrates deep understanding of the topic and related concepts.",
+                "performance_descriptors": {
+                    "excellent": "Shows precise and in-depth understanding with clear theoretical support.",
+                    "good": "Understands key concepts well with minor gaps.",
+                    "average": "Adequate explanation with some inaccuracies.",
+                    "needs_improvement": "Surface-level or confused understanding.",
+                    "poor": "Major misunderstandings or misrepresentations."
+                },
+                "weight": 15
+            },
+            {
+                "criterion_id": "c2",
+                "name": "Application to Real-World Scenarios",
+                "description": "Applies concepts meaningfully to examples or scenarios.",
+                "performance_descriptors": {
+                    "excellent": "Uses insightful and relevant examples clearly linked to concepts.",
+                    "good": "Examples mostly appropriate with some gaps in explanation.",
+                    "average": "Examples present but superficial or unclear connections.",
+                    "needs_improvement": "Vague or generic examples.",
+                    "poor": "No real-world application."
+                },
+                "weight": 20
+            },
+            {
+                "criterion_id": "c3",
+                "name": "Critical Evaluation",
+                "description": "Analyzes challenges, limitations, or trade-offs thoughtfully.",
+                "performance_descriptors": {
+                    "excellent": "Provides insightful, research-backed critical evaluation.",
+                    "good": "Reasonable evaluation but less depth.",
+                    "average": "Mentions challenges superficially.",
+                    "needs_improvement": "Unclear or irrelevant critique.",
+                    "poor": "No critical evaluation."
+                },
+                "weight": 40
+            },
+            {
+                "criterion_id": "c4",
+                "name": "Structure and Academic Writing",
+                "description": "Quality of writing, flow, citations, and tone.",
+                "performance_descriptors": {
+                    "excellent": "Clear, coherent, formal tone, flawless grammar, and proper referencing.",
+                    "good": "Mostly clear and professional; minor issues.",
+                    "average": "Organization present but inconsistent.",
+                    "needs_improvement": "Structure or tone hinder clarity; referencing weak.",
+                    "poor": "Disorganized or informal writing."
+                },
+                "weight": 25
+            }
+        ]
+    },
+    "submissions": [
+        {
+            "quality": "Excellent",
+            "authorship": "human",
+            "key_points": [
+                "Defines MFA based on the three authentication factors: knowledge, possession, and inherence.",
+                "Compares various MFA methods: SMS codes, authenticator apps (TOTP), biometrics, and hardware tokens (FIDO2/U2F).",
+                "Analyzes the security vs. usability trade-offs for each method, highlighting specific vulnerabilities like SIM swapping for SMS.",
+                "Critically evaluates modern threats that challenge MFA, such as MFA fatigue and adversary-in-the-middle (AiTM) phishing.",
+                "Integrates MFA into a defense-in-depth strategy, explaining its role alongside other controls like Zero Trust architecture and principle of least privilege.",
+                "Supports claims with evidence from real-world breaches and reputable sources like Microsoft and NIST.",
+                "Maintains a clear, logical structure, formal academic tone, and uses proper in-text citations and a reference list."
+            ],
+            "llm_questions": [
+                "Can you elaborate on the specific differences between U2F and FIDO2 hardware tokens?",
+                "How do adversary-in-the-middle (AiTM) phishing attacks specifically bypass traditional MFA methods like TOTP?",
+                "Beyond MFA fatigue, what are some of the organizational or cultural barriers to widespread MFA adoption?",
+                "What role does adaptive or risk-based authentication play in improving the user experience of MFA without compromising security?",
+                "Could you provide a specific example of a data breach where the lack of MFA was a primary contributing factor?"
+            ],
+            "llm_answers": [
+                "Certainly. U2F (Universal 2nd Factor) is an earlier standard focused solely on being a second factor of authentication. It's phishing-resistant because it binds the login to the specific website's origin. FIDO2 is the evolution of U2F; it encompasses the Client to Authenticator Protocol (CTAP) and W3C's WebAuthn. The key difference is that FIDO2 supports 'passwordless' authentication. A FIDO2 key can act as both the 'something you have' (the key itself) and, through a user action like a PIN or biometric on the key, the 'something you know/are,' effectively replacing the password entirely. This makes it a more versatile and powerful standard.",
+                "Adversary-in-the-middle (AiTM) attacks are sophisticated phishing campaigns that defeat MFA by acting as a proxy between the user and the legitimate service. The user visits a malicious site that looks identical to the real one (e.g., a fake Microsoft 365 login). When the user enters their credentials, the malicious server forwards them to the real service. The real service then requests an MFA code (like a TOTP). The user enters this code into the fake site, which the attacker captures and immediately uses to complete the login on the real site. This grants them a session cookie, which they can use to access the account, completely bypassing the protection offered by the one-time code.",
+                "Organizational barriers to MFA adoption are significant. A primary one is legacy systems; many older applications and infrastructure were not designed to support modern authentication protocols, making integration complex and costly. Another barrier is user friction and the perceived impact on productivity, which can lead to resistance from employees and even leadership. There's also a cost factor associated with deploying and managing MFA solutions, especially hardware tokens. Finally, a lack of security awareness and training means employees may not understand the importance of MFA, viewing it as an unnecessary hassle rather than a critical protection.",
+                "Adaptive or risk-based authentication is a crucial component in modern identity and access management that enhances both security and user experience. Instead of challenging the user for MFA on every login, it dynamically assesses the risk of each authentication attempt based on various signals. These signals can include the user's location, their device's health, the time of day, and typical behavior patterns. If the risk is low (e.g., a known user on a corporate device in the office), access is granted seamlessly. If the risk is high (e.g., a login from an unusual country at 3 AM), the system can step up authentication by requiring MFA or even blocking access. This reduces MFA fatigue and focuses security friction on high-risk scenarios.",
+                "A prominent example is the 2020 Twitter breach. Attackers used social engineering to gain credentials from several Twitter employees. With these credentials, they were able to access internal administrative tools. While Twitter had some security controls, the lack of robust, enforced MFA on these internal systems was a critical failure. This allowed the attackers to pivot and take over high-profile accounts, including those of Barack Obama, Joe Biden, and Elon Musk, to promote a cryptocurrency scam. This incident starkly illustrates that even with valid credentials, mandatory MFA on critical systems could have prevented the unauthorized access and subsequent damage."
+            ],
+            "final_submission": "Multi-factor authentication (MFA) has become a cornerstone of modern cybersecurity, representing a critical defense against the pervasive threat of credential compromise. Its effectiveness stems from a simple yet powerful principle: requiring users to provide two or more distinct verification factors to gain access to a resource. [AI-written paragraph]\n\nFrom practical experience, employees often find MFA prompts disruptive or confusing, particularly if multiple devices or apps are involved. Without clear guidance and training, users may develop unsafe workarounds, such as writing down codes or reusing simpler authentication methods. Supporting staff with proper instructions and ongoing communication is crucial for successful MFA adoption. [Human-written paragraph]\n\nThe fundamental strength of MFA lies in its ability to neutralize the risk of stolen passwords. Verizon's 2022 Data Breach Investigations Report consistently shows that credentials are one of the top attack vectors (Verizon, 2022). By requiring a second factor—such as something you have (e.g., a code from an authenticator app) or something you are (e.g., a fingerprint)—MFA ensures that a compromised password alone is insufficient for unauthorized access. The methods for this second factor vary widely in their robustness. SMS-based codes are convenient but vulnerable to SIM-swapping attacks. Authenticator apps using Time-based One-Time Passwords (TOTP) are more secure, but both can be defeated by sophisticated adversary-in-the-middle (AiTM) phishing attacks. The gold standard is currently phishing-resistant hardware tokens based on the FIDO2 standard, which bind authentication to the specific origin, making it nearly impossible to phish a user's credentials and token (NIST, 2020). [Hybrid paragraph]\n\nUltimately, MFA is not a panacea but a vital component of a layered cybersecurity strategy. Its true power is realized when integrated within a Zero Trust architecture, where no user or device is trusted by default and verification is required for every access request. By combining MFA with other controls like the principle of least privilege, network segmentation, and continuous monitoring, organizations can build a resilient defense that significantly reduces the likelihood and impact of data breaches. [AI-written paragraph]\n\nHowever, a successful MFA strategy must also consider human factors and usability. Adaptive or risk-based MFA policies help prevent 'MFA fatigue' by adjusting authentication requirements depending on context, such as device type or location, reducing unnecessary interruptions while maintaining security. Organizations that ignore these aspects risk poor adoption or accidental security gaps. [Human-written paragraph]\n\nIn conclusion, MFA is exceptionally effective at preventing a wide range of common attacks, but its implementation must be thoughtfully planned, considering both evolving threats and the crucial need for a balanced user experience. [Hybrid paragraph]\n\nReferences\nNIST. (2020). *Digital Identity Guidelines* (SP 800-63-3). National Institute of Standards and Technology.\nVerizon. (2022). *2022 Data Breach Investigations Report*. Verizon Enterprise Solutions.",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0, 3],
+                "human_paragraph_indices": [1, 4],
+                "hybrid_paragraph_indices": [2, 5],
+                "notes": "AI paragraphs introduce MFA concept and summarize effectiveness, Human paragraphs emphasize real-world user experience and adoption challenges, Hybrid paragraphs blend technical MFA methods with practical implications for security and usability."
+            },
+            "feedback": {
+                "c1": "Excellent. The submission demonstrates a precise and in-depth understanding of MFA, correctly identifying the three authentication factors and differentiating between various methods like TOTP and FIDO2. The explanation of how MFA mitigates password compromise is theoretically sound. (15/15)",
+                "c2": "Excellent. The essay insightfully applies concepts to real-world scenarios by referencing Verizon's DBIR to establish the prevalence of credential theft and citing the 2022 Uber breach as a concrete example of MFA fatigue. This clearly links theory to practical security incidents. (20/20)",
+                "c3": "Excellent. The critical evaluation is sophisticated and research-backed. The submission moves beyond a simple pro/con list to analyze nuanced threats like AiTM phishing and MFA fatigue, and it discusses the security-usability trade-off with maturity, supported by a reference to NIST guidelines. (40/40)",
+                "c4": "Excellent. The writing is clear, coherent, and maintains a formal academic tone throughout. The structure is logical, with a clear introduction, body paragraphs that build on each other, and a strong conclusion. Grammar is flawless, and referencing follows a proper format with both in-text citations and a reference list. (25/25)",
+                "total": "100/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "human",
+            "key_points": [
+                "Clearly defines MFA and its purpose.",
+                "Lists common MFA methods like SMS, authenticator apps, and biometrics.",
+                "Explains how MFA adds an extra layer of security against stolen passwords.",
+                "Discusses usability as a challenge for users.",
+                "Mentions that MFA is part of a larger security plan.",
+                "The analysis of trade-offs is present but not deeply explored.",
+                "Writing is professional with minor grammatical or structural issues.",
+                "Includes some references, but formatting might be slightly inconsistent."
+            ],
+            "llm_questions": [
+                "What's the difference between an authenticator app and getting a code via SMS?",
+                "Why isn't just having a strong password enough?",
+                "Is MFA 100% foolproof?",
+                "What are some examples of MFA?"
+            ],
+            "llm_answers": [
+                "The main difference is security and method of delivery. An SMS code is sent over the cellular network, which can be vulnerable to attacks like SIM swapping, where an attacker tricks the mobile carrier into transferring your phone number to their SIM card. An authenticator app, like Google Authenticator or Authy, generates a Time-based One-Time Password (TOTP) directly on your device. This code is not transmitted over an external network, making it much more secure and not susceptible to SIM swapping.",
+                "Even very strong passwords can be compromised in several ways. They can be stolen from a company's database during a data breach, captured by keylogging malware on your computer, or guessed through brute-force attacks. People also tend to reuse passwords across multiple sites, so a breach at one service can expose your accounts elsewhere. MFA provides a crucial second layer of defense, so even if an attacker has your password, they still can't get in without access to your second factor, like your phone.",
+                "No security measure is 100% foolproof, and that includes MFA. While it significantly raises the bar for attackers, it can be bypassed. As mentioned, SMS-based MFA can be defeated by SIM swapping. More advanced attackers use sophisticated phishing websites to trick users into entering both their password and their MFA code, which the attacker then uses immediately to log in. Another vector is 'MFA fatigue,' where an attacker repeatedly spams a user with login notifications, hoping they'll accidentally approve one just to make them stop. So while highly effective, it's not invincible.",
+                "Certainly. Common examples of MFA include: 1) Something you know (like a password or PIN), plus something you have, such as receiving a one-time code via an SMS text message or from an authenticator app on your smartphone. 2) Using a physical hardware key, like a YubiKey, that you plug into your computer's USB port. 3) Something you are, which involves biometrics like using your fingerprint or Face ID on your phone to approve a login attempt. Each of these pairs a password with a second, different type of factor."
+            ],
+            "final_submission": "Multi-factor authentication, or MFA, is a security measure that helps protect online accounts and data from being breached. It requires users to provide more than just a password to log in, making it much harder for hackers to access accounts even if they steal a password. [AI-written paragraph]\n\nFrom experience, employees may find MFA annoying or confusing, especially if they are unfamiliar with apps or hardware keys. Clear instructions and support are essential to ensure users adopt MFA correctly and avoid workarounds that could compromise security. [Human-written paragraph]\n\nCommon MFA methods include receiving a code via SMS, using an authenticator app like Google Authenticator, or a biometric factor such as a fingerprint. SMS is easy to use but less secure, whereas apps and hardware keys offer stronger protection. Using these methods together adds a critical layer of defense, ensuring that a stolen password alone is not enough for an attacker. [Hybrid paragraph]\n\nIn conclusion, MFA is an effective tool to prevent data breaches from stolen credentials. While it is not foolproof, it significantly increases the effort required for attackers. For maximum effectiveness, MFA should be combined with employee training, strong password policies, and complementary security measures. Companies must select MFA methods that balance security with user convenience to ensure widespread adoption. [AI-written paragraph]\n\nReferences\nKrebs, B. (2021). The Value of Multi-Factor Authentication. Krebs on Security.",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0, 3],
+                "human_paragraph_indices": [1],
+                "hybrid_paragraph_indices": [2],
+                "notes": "AI paragraphs explain MFA concept and conclusion, Human paragraph emphasizes real-world user experience, Hybrid paragraph blends technical MFA types with practical security benefit."
+            },
+            "feedback": {
+                "c1": "Good. The submission shows a solid understanding of key concepts, correctly defining MFA and its purpose. It identifies common methods, but the explanation lacks the theoretical depth seen in an excellent response, such as a discussion of the three core factor types. (12/15)",
+                "c2": "Good. The essay applies the concept of MFA's value by mentioning phishing and data breaches as real-world threats. The examples of MFA methods (SMS, apps) are appropriate, but the connection between specific breach types and how a specific MFA method would prevent it could be more explicit. (16/20)",
+                "c3": "Good. There is a reasonable evaluation of the security vs. usability trade-off. The submission correctly identifies user resistance as a challenge. However, the analysis lacks the depth of an excellent paper; it doesn't explore advanced threats like MFA fatigue or AiTM attacks. (32/40)",
+                "c4": "Good. The writing is mostly clear and professional. The structure is logical with an introduction, body, and conclusion. There are a few minor grammatical errors and the tone is slightly less formal than a top-tier academic paper. The citation is present but the reference list is minimal. (20/25)",
+                "total": "80/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "human",
+            "key_points": [
+                "Defines MFA in simple terms.",
+                "Lists a couple of MFA methods, like text messages.",
+                "States that MFA makes accounts more secure.",
+                "Mentions that some people don't like using it because it's an extra step.",
+                "Lacks detail on specific trade-offs or vulnerabilities.",
+                "The structure is basic and writing may contain several errors.",
+                "No citations or references are included."
+            ],
+            "llm_questions": [
+                "What is mfa?",
+                "Is it good for security?",
+                "Why do we need it?"
+            ],
+            "llm_answers": [
+                "MFA stands for Multi-Factor Authentication. It's a security process where you have to provide at least two different ways to prove your identity when you log in to an account. It's like having a second lock on your door. Instead of just using a password, you might also have to enter a code that gets sent to your phone or use your fingerprint.",
+                "Yes, MFA is very good for security. It makes it much harder for someone to break into your accounts. If a hacker steals your password, they still won't be able to log in because they won't have your phone to get the code or your fingerprint. It adds an extra layer of protection that stops most common types of attacks.",
+                "We need it because passwords alone are not very safe anymore. Hackers have many ways to steal passwords, like through phishing scams or by hacking into a website's database. Also, many people use weak passwords or reuse the same password for many different websites. MFA helps to fix this problem by making sure that even with a stolen password, your account stays safe."
+            ],
+            "final_submission": "Multi-factor authentication (MFA) is a security measure used by companies to protect digital accounts. It ensures that the person logging in is really who they claim to be by requiring more than one piece of information, making it harder for hackers to access accounts with just a stolen password. [AI-written paragraph]\n\nFrom experience, users may find MFA frustrating or confusing. Some might not have access to a phone for text codes, or struggle with authentication apps. Clear guidance and support from organizations help users adopt MFA successfully. [Human-written paragraph]\n\nThere are several types of MFA. The most common is a text message code sent to your phone, which you enter after your password. Another method is an app that generates codes changing every 30 seconds. Some phones allow fingerprint or face recognition, which also counts as MFA. These methods make accounts much more secure because even if a hacker knows your password, they likely don’t have your second factor. [Hybrid paragraph]\n\nIn conclusion, MFA is an effective tool to prevent data breaches. It strengthens account security by adding an extra verification step. Although it may be inconvenient for users, the benefits for important accounts, such as banking or email, outweigh the minor drawbacks. MFA should be part of a broader cybersecurity strategy. [AI-written paragraph]",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0, 3],
+                "human_paragraph_indices": [1],
+                "hybrid_paragraph_indices": [2],
+                "notes": "AI paragraphs (0,3) cover technical explanation and conclusion, Human paragraph (1) emphasizes user experience, Hybrid paragraph (2) blends types of MFA with practical security benefits."
+            },
+            "feedback": {
+                "c1": "Average. The submission provides an adequate explanation of MFA, defining it as an extra login step and listing common examples. However, there are some inaccuracies, such as grouping all methods together without distinguishing their security levels, and the understanding is not deep. (10/15)",
+                "c2": "Average. Examples of MFA methods are present (text message, app codes), but their connection to preventing specific threats is superficial. The essay states that a hacker 'probably dont have your phone' but doesn't elaborate on the scenarios where this defense works or fails. (13/20)",
+                "c3": "Average. The essay mentions the challenge of usability, stating that MFA can be 'annoying' and 'slow.' This is a superficial treatment of the security vs. convenience trade-off, lacking any analysis of why this is a significant barrier or how it might be addressed. (26/40)",
+                "c4": "Average. The essay has a basic organizational structure (intro, body, conclusion), but the flow is inconsistent and paragraphs are simplistic. There are several grammatical errors ('better then others', 'companys') and the tone is informal. No referencing is provided. (16/25)",
+                "total": "65/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "human",
+            "key_points": [
+                "Vaguely describes MFA as 'extra security'.",
+                "Confuses or incorrectly explains MFA concepts.",
+                "Makes generic statements about hackers and passwords.",
+                "Lacks a clear structure and logical flow.",
+                "Contains many grammatical and spelling errors.",
+                "Does not address most parts of the prompt, such as trade-offs or integration."
+            ],
+            "llm_questions": [
+                "how to stop hackers",
+                "what is a computer password",
+                "is mfa a software"
+            ],
+            "llm_answers": [
+                "Stopping hackers involves using a combination of tools and good habits. You should use strong, unique passwords for all your accounts, enable two-factor authentication whenever possible, be careful about clicking on links or downloading attachments in suspicious emails (phishing), and keep your software and operating system updated to patch security holes. Using antivirus software and a firewall also helps protect your computer from malware.",
+                "A computer password is a secret word, phrase, or string of characters used to confirm a user's identity. It's a form of authentication that grants you access to a computer, a file, a program, or a service. A good password should be long and complex, using a mix of uppercase and lowercase letters, numbers, and symbols to make it difficult for others to guess.",
+                "MFA, or Multi-Factor Authentication, is a security concept or system, not a single piece of software. It can be implemented using different types of software and hardware. For example, an 'authenticator app' on your phone is a piece of software that helps you use MFA. The system that sends you a text message code is also part of an MFA implementation. So, software is used to make MFA work, but MFA itself is the overall security method."
+            ],
+            "final_submission": "To prevent data breaches, companies need strong security measures. One key method is multi-factor authentication (MFA), which requires a password plus another verification factor. This ensures that even if a password is stolen, hackers cannot access accounts without the additional factor. [AI-written paragraph]\n\nFrom experience, users can find MFA confusing or inconvenient. Some may not know how to set it up, forget to carry their phone, or struggle with authentication apps. Providing clear instructions and support helps employees adopt MFA successfully. [Human-written paragraph]\n\nMFA can be implemented in various ways, such as receiving a text message code, using an authenticator app generating time-based passwords, or employing biometric methods like fingerprints and facial recognition. Each method adds a layer of security but comes with usability considerations, so organizations must balance effectiveness with user convenience. [Hybrid paragraph]\n\nIn conclusion, MFA is a practical and effective cybersecurity strategy. It strengthens account protection by adding extra verification steps. While there may be minor usability challenges, the security benefits make MFA an essential tool for preventing unauthorized access and data breaches. [AI-written paragraph]",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0, 3],
+                "human_paragraph_indices": [1],
+                "hybrid_paragraph_indices": [2],
+                "notes": "AI paragraphs (0,3) describe technical importance and conclusion, Human paragraph (1) emphasizes user experience, Hybrid paragraph (2) blends methods with usability considerations."
+            },
+            "feedback": {
+                "c1": "Needs Improvement. The submission demonstrates a surface-level understanding, describing MFA as a 'double password' or a 'second password'. It fails to explain the core concept of using different *factors* of authentication and shows confusion on the topic. (7/15)",
+                "c2": "Needs Improvement. The essay provides a vague example of a 'hacker in another country' who 'cant get the text message.' This is a generic scenario that lacks detail and doesn't meaningfully apply the concept to a real-world context or threat model like SIM swapping. (10/20)",
+                "c3": "Needs Improvement. The critique is unclear and irrelevant. It mentions that setting up MFA can be 'confusing' or that some people don't have phones, but it does not analyze these points as part of a security vs. usability trade-off. It's a simple statement of a problem without any evaluation. (20/40)",
+                "c4": "Needs Improvement. The structure is weak, and the essay reads like a series of disconnected statements. The tone is overly simplistic and informal ('bad guys'), and there are numerous grammatical errors (e.g., 'there accounts') that hinder clarity. The prompt is only partially addressed. (13/25)",
+                "total": "50/100"
+            }
+        },
+        {
+            "quality": "Poor",
+            "authorship": "human",
+            "key_points": [
+                "Fails to define or explain MFA correctly.",
+                "The submission is largely off-topic, talking generally about security.",
+                "Contains no relevant examples or analysis.",
+                "Completely disorganized and filled with severe grammatical errors.",
+                "Does not address any of the prompt's specific requirements."
+            ],
+            "llm_questions": [
+                "computer virus?",
+                "what does IT do",
+                "how to make a website"
+            ],
+            "llm_answers": [
+                "A computer virus is a type of malicious software, or malware, that, when executed, replicates itself by modifying other computer programs and inserting its own code. When this replication succeeds, the affected areas are then said to be 'infected' with a computer virus. Viruses often perform a harmful action, such as damaging data, stealing personal information, or taking control of the infected computer.",
+                "IT, or Information Technology, is a broad field that involves using computers, networks, software, and other infrastructure to manage and deliver information. IT professionals perform a wide range of tasks, including installing and managing computer networks, providing tech support to users, protecting an organization's digital assets through cybersecurity, developing software, and managing databases. Essentially, they ensure that a company's technology systems run smoothly and securely.",
+                "Making a website involves several steps. First, you need to plan its purpose and layout. Then, you'll need to register a domain name (like www.example.com) and sign up for web hosting, which is where your website's files will be stored. After that, you can build the website itself. You can do this by coding it from scratch using languages like HTML, CSS, and JavaScript, or you can use a website builder like WordPress, Wix, or Squarespace, which provide templates and drag-and-drop tools to make the process easier without needing to code."
+            ],
+            "final_submission": "Data breaches are a serious concern in cybersecurity, often resulting in stolen personal and organizational information. Hackers exploit weak passwords, unpatched systems, and human error to gain access. Implementing strong passwords and basic security controls is essential to mitigate these risks. [AI-written paragraph]\n\nFrom personal experience, many users struggle to create or remember complex passwords, often reusing them across multiple accounts. This human behavior increases vulnerability despite technological safeguards. Providing guidance, password managers, and training can help reduce this risk. [Human-written paragraph]\n\nCybersecurity requires a multi-layered approach. Tools such as firewalls, antivirus software, and multi-factor authentication (MFA) collectively improve resilience. MFA, for instance, adds an extra layer of verification, making it harder for attackers to compromise accounts even if passwords are stolen. Ensuring proper configuration and user adoption is critical, blending technical measures with practical human factors. [Hybrid paragraph]",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [1],
+                "hybrid_paragraph_indices": [2],
+                "notes": "Alternating style applied: AI (0) introduces the technical problem, Human (1) adds experiential perspective, Hybrid (2) combines technical and human considerations for practical adoption."
+            },
+            "feedback": {
+                "c1": "Poor. The submission demonstrates a major misunderstanding of the topic. It mentions the letters 'MFA' once but makes no attempt to define or explain it, focusing instead on generic concepts like passwords and firewalls. (3/15)",
+                "c2": "Poor. There is no real-world application of MFA concepts. The essay talks about passwords and firewalls in the abstract, with no concrete examples or scenarios provided, failing completely to address this part of the prompt. (4/20)",
+                "c3": "Poor. There is a complete absence of critical evaluation. The submission does not discuss any challenges, limitations, or trade-offs related to MFA or any other security control. It simply states that 'more security the better.' (8/40)",
+                "c4": "Poor. The writing is disorganized, consisting of short, disjointed sentences. The essay lacks any discernible structure, is highly informal, and fails to address the prompt in a meaningful way. Severe grammatical and spelling errors are present throughout. (5/25)",
+                "total": "20/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "human",
+            "key_points": [
+                "Clearly defines MFA types (knowledge, possession, inherence) and specific methods.",
+                "Good examples of how MFA prevents credential reuse.",
+                "Discusses usability challenges but lacks deeper critique of advanced threats or nuanced trade-offs.",
+                "Structure is clear and writing is generally professional, with some minor phrasing issues.",
+                "Mentions integration with broader strategies but doesn't elaborate."
+            ],
+            "llm_questions": [
+                "What are the primary differences between SMS-based OTP and authenticator app (TOTP) MFA in terms of security?",
+                "Can you explain the concept of 'something you have' as an MFA factor, and provide examples beyond a smartphone?",
+                "How can organizations mitigate the usability challenges associated with stronger MFA methods like hardware tokens?",
+                "What role does user education play in the effective implementation of MFA?"
+            ],
+            "llm_answers": [
+                "SMS-based OTP sends a code via cellular network, which is convenient but vulnerable to SIM-swapping and SS7 attacks, where an attacker diverts your phone number to their device to intercept the code. Authenticator app (TOTP) MFA generates a time-sensitive code directly on your device using a shared secret key, without sending it over a network. This makes TOTP significantly more secure as it's not susceptible to SIM-swapping or other network-based interception attacks.",
+                "'Something you have' refers to a physical item that only the legitimate user possesses. Besides a smartphone (used for TOTP apps or SMS), examples include: physical hardware security keys (like YubiKey or Google Titan Key) that plug into a USB port or connect via NFC/Bluetooth; smart cards requiring a card reader; or even a specific laptop or workstation with a trusted platform module (TPM) that can act as a factor.",
+                "Organizations can mitigate usability challenges by offering a range of MFA options, allowing users to choose methods that suit their workflow (e.g., authenticator app for daily use, hardware token for highly sensitive access). They can also implement risk-based or adaptive authentication, which only prompts for MFA when a login attempt is deemed high-risk (e.g., from a new location or device). Comprehensive user training that highlights the benefits of MFA and provides clear, easy-to-follow setup instructions is also crucial.",
+                "User education is paramount for effective MFA implementation. It helps users understand *why* MFA is necessary, its benefits (personal and organizational), and *how* to use different methods securely. Proper training can reduce user resistance, prevent common mistakes (like approving unsolicited MFA prompts), and make users aware of phishing tactics that try to bypass MFA, thereby transforming potential vulnerabilities into a stronger human firewall."
+            ],
+            "final_submission": "Multi-factor authentication (MFA) is an essential cybersecurity control designed to enhance the security of digital accounts by requiring users to present two or more verification factors to gain access to a resource. This fundamental principle significantly reduces the risk associated with compromised passwords, which remain a primary vector for data breaches. This essay will explore the effectiveness of MFA, detail various authentication methods, discuss their usability and security trade-offs, and briefly touch on its role within broader cybersecurity frameworks. [AI-written paragraph]\n\nAt its core, MFA leverages distinct types of authentication factors: something you know (e.g., password, PIN), something you have (e.g., physical token, smartphone), and something you are (e.g., biometric data like a fingerprint or facial scan). Common MFA methods include SMS-based one-time passcodes, hardware security keys (like YubiKeys), authenticator applications (e.g., Google Authenticator, Authy) generating Time-based One-Time Passwords (TOTP), and biometric authentication. Each method adds a layer of security, ensuring that even if a password is stolen, an attacker still requires access to a second, independent factor to breach the account. For example, if an attacker obtains a password through a phishing email, they would still be unable to log in without the physical phone or token belonging to the legitimate user. [Human-written paragraph]\n\nFrom practical experience, users often face challenges when adapting to MFA, especially across multiple devices or applications. Clear instructions, hands-on training, and explanations of why each MFA step exists can significantly improve compliance and reduce frustration. This hybrid perspective combines technical understanding with human-centered insights to ensure real-world effectiveness. [Hybrid paragraph]\n\nThe trade-off between security and usability is a constant consideration for MFA deployment. SMS-based MFA is widely adopted due to its convenience and ubiquity, as most users have a mobile phone. However, it is inherently less secure than other methods, notably vulnerable to SIM-swapping attacks where an attacker can redirect a user's phone number to their own device to intercept codes. Authenticator apps offer a more secure alternative as they don't rely on cellular networks, but they require users to install and manage an app. Hardware tokens provide the highest level of phishing resistance but can be seen as less convenient due to the need for a physical device. While these trade-offs are important, a detailed critique of how specific advanced threats like AiTM phishing or MFA fatigue specifically exploit certain methods is not fully explored here. [AI-written paragraph]\n\nIntegrating MFA into broader cybersecurity strategies involves understanding it as a critical component, not a standalone solution. It supports a 'defense-in-depth' approach, where multiple layers of security are employed to protect assets. MFA works in conjunction with strong password policies, endpoint security, and security awareness training to create a more robust security posture. It is a foundational element in modern identity and access management, bolstering protection for sensitive systems and data. In summary, MFA is undeniably effective in preventing common data breaches, offering a significant upgrade over password-only authentication, but its implementation requires a balance between different methods and user experience. [Human-written paragraph]",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0, 3],
+                "human_paragraph_indices": [1, 4],
+                "hybrid_paragraph_indices": [2],
+                "notes": "Alternating style: AI (0,3), Human (1,4), Hybrid (2) to reflect technical explanation, practical experience, and blended perspective."
+            },
+            "feedback": {
+                "c1": "Excellent. The submission demonstrates a precise and in-depth understanding of MFA, correctly identifying the three authentication factors and differentiating between various methods like TOTP and FIDO2. The explanation of how MFA mitigates password compromise is theoretically sound. (14.25/15)",
+                "c2": "Good. The essay insightfully applies concepts to real-world scenarios by referencing specific attack vectors like phishing emails and SIM-swapping attacks. The examples are relevant and clearly linked to the concepts of different MFA methods. (16/20)",
+                "c3": "Needs Improvement. The submission acknowledges the security-usability trade-off and mentions vulnerabilities like SIM-swapping. However, the critical evaluation lacks depth, failing to explore advanced threats like AiTM phishing or MFA fatigue in detail, thus missing a more nuanced analysis. (20/40)",
+                "c4": "Good. The writing is clear, coherent, and maintains a generally professional tone. The structure is logical, with a clear introduction, body paragraphs, and a concluding summary. There are minor phrasing issues but grammar is largely correct. (21.25/25)",
+                "total": "71.5/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "human",
+            "key_points": [
+                "Provides a clear and accurate definition of MFA and lists key methods.",
+                "Structure and academic writing are strong, with proper formatting and good flow.",
+                "Examples are present but sometimes generic or lack specific connections to the concepts.",
+                "Critical evaluation is weak, mentions challenges but doesn't analyze them in depth or with supporting evidence.",
+                "Mentions integration with broader strategies but with minimal detail."
+            ],
+            "llm_questions": [
+                "What are the three main types of authentication factors?",
+                "Can you give an example of an MFA method that is 'something you are'?",
+                "Why is SMS MFA considered less secure than an authenticator app?",
+                "How does MFA help prevent phishing attacks?"
+            ],
+            "llm_answers": [
+                "The three main types of authentication factors are: 'something you know' (like a password or PIN), 'something you have' (like a phone or a physical token), and 'something you are' (like a fingerprint or facial scan).",
+                "An example of an MFA method that is 'something you are' is biometrics. This includes using your fingerprint to unlock a device or approve a login, or using facial recognition like Apple's Face ID. These methods rely on unique biological characteristics of the user.",
+                "SMS MFA is considered less secure because the codes are sent over a cellular network, which can be intercepted or manipulated. Specifically, attackers can perform 'SIM swapping' attacks, where they trick a mobile carrier into transferring your phone number to their own SIM card, thereby receiving your MFA codes. Authenticator apps, on the other hand, generate codes directly on your device, making them immune to such network-based attacks.",
+                "MFA helps prevent phishing attacks by adding a second layer of defense. Even if a phishing attack successfully tricks a user into revealing their password, the attacker still needs the second factor (like a code from their phone or a fingerprint) to gain access. This makes the stolen password useless on its own, significantly reducing the success rate of phishing campaigns that rely solely on credential theft."
+            ],
+            "final_submission": "Multi-factor authentication (MFA) stands as a pivotal security control in the contemporary digital landscape, designed to fortify access mechanisms against unauthorized entry. Its fundamental premise is to demand more than a singular piece of evidence for user identity verification, thereby creating a formidable barrier against pervasive threats such as credential theft. This submission will meticulously dissect the efficacy of MFA in mitigating data breaches, enumerate and assess diverse MFA methodologies, elucidate their respective security-usability dichotomies, and contextualize MFA within overarching cybersecurity paradigms. [AI-written paragraph]\n\nThe core strength of MFA lies in its multi-layered approach to authentication. Instead of solely relying on 'something you know' (like a password), it mandates additional factors such as 'something you have' (e.g., a smartphone or hardware token) or 'something you are' (e.g., biometrics). This architectural design renders a stolen password largely ineffective without simultaneous access to the supplementary factor. Prominent MFA methods include SMS-based codes, which, while user-friendly, possess inherent vulnerabilities like SIM swapping. Authenticator applications (TOTP) offer a superior security profile by generating codes locally, independent of network interception risks. Hardware security keys, such as FIDO2-compliant devices, represent the pinnacle of phishing resistance by cryptographically binding authentication to specific web origins. The conceptual understanding of these distinctions is generally clear. [Human-written paragraph]\n\nFrom practical experience, users sometimes find MFA cumbersome, particularly when required across multiple devices or applications. Clear guidance, hands-on training, and transparent communication about why MFA steps exist can greatly reduce frustration and promote compliance. This human-centered perspective complements the technical discussion and ensures successful real-world adoption. [Hybrid paragraph]\n\nHowever, the application of these concepts to detailed, specific real-world scenarios sometimes falls short of excellence. While it is stated that MFA counters credential theft, specific examples of breaches where a particular MFA method failed or succeeded, beyond general statements, are not consistently provided to illustrate the nuances. The discussion of usability and security trade-offs, while acknowledging their existence, lacks profound critical evaluation. It notes that \"SMS is convenient but vulnerable\" and \"hardware keys are secure but less convenient,\" but does not delve into the empirical data, advanced attack vectors (like sophisticated adversary-in-the-middle phishing), or the behavioral science behind user adoption and resistance to elaborate on these trade-offs with greater depth. The essay touches upon MFA fatigue, for instance, but doesn't thoroughly explore its implications or potential mitigations. [AI-written paragraph]\n\nDespite these limitations in critical application, the overall structure and academic writing quality are commendable. The essay maintains a formal tone, employs precise terminology, and exhibits a logical flow from introduction to conclusion. Paragraphs are well-formed, and the arguments are presented coherently. The submission also correctly positions MFA as an integral component of a broader cybersecurity strategy, emphasizing its role in a defense-in-depth framework alongside other controls such as Zero Trust principles and privileged access management. While the depth of critical analysis could be enhanced, the foundational understanding and presentation are solid. [Human-written paragraph]",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0, 3],
+                "human_paragraph_indices": [1, 4],
+                "hybrid_paragraph_indices": [2],
+                "notes": "Alternating style: AI (0,3), Human (1,4), Hybrid (2) to reflect technical explanation, practical experience, and blended perspective."
+            },
+            "feedback": {
+                "c1": "Good. The submission demonstrates a clear and accurate understanding of MFA concepts, including the different factor types and various methods. The explanation is largely correct, with minor gaps in theoretical depth. (12/15)",
+                "c2": "Average. Examples of MFA's role in countering credential theft are present but tend to be somewhat generic. The submission could benefit from more specific, illustrative real-world scenarios or concrete breach examples directly linked to the success or failure of particular MFA methods. (13/20)",
+                "c3": "Needs Improvement. The discussion of security and usability trade-offs is present but superficial. While it identifies common challenges (e.g., SMS vulnerability, hardware key inconvenience), it lacks in-depth critical analysis, failing to explore advanced threats or broader implications. (22/40)",
+                "c4": "Excellent. The writing is clear, coherent, and maintains a formal academic tone. The structure is logical, with well-developed paragraphs and excellent flow. Grammar is accurate, and the language is precise, showcasing strong academic writing skills. (22.5/25)",
+                "total": "69.5/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "human",
+            "key_points": [
+                "Basic understanding of MFA as 'extra security.'",
+                "Lists a few common methods (SMS, biometrics).",
+                "Mentions password theft as a problem MFA solves.",
+                "Real-world application is vague, not specific enough.",
+                "Critical evaluation is severely lacking, mostly absent or very superficial.",
+                "Writing has clarity issues, some grammatical errors, and informal tone.",
+                "Structure is rudimentary, lacking academic conventions."
+            ],
+            "llm_questions": [
+                "What does MFA stand for?",
+                "What is one common way MFA works?",
+                "Why is just a password not enough for security?"
+            ],
+            "llm_answers": [
+                "MFA stands for Multi-Factor Authentication.",
+                "One common way MFA works is by sending a special code to your phone (like a text message) after you enter your password. You then have to type that code into the login screen to prove it's you.",
+                "Just a password is often not enough for security because passwords can be stolen in many ways. Hackers can get them from website breaches, guess them if they're too simple, or trick people into giving them away through fake emails (phishing). MFA adds an extra step so even if your password is stolen, your account is still protected by the second factor."
+            ],
+            "final_submission": "Multi-factor authentication (MFA) is a very important part of cybersecurity now. It helps to keep accounts safe from hackers. Basically, it means you need more than just your password to log in. This is good because if someone steals your password, they still can't get into your account because they don't have the other thing you need. This essay will talk about why MFA is effective, what types there are, and a little about if it's easy to use. [AI-written paragraph]\n\nThe main idea behind MFA is to add another step. So, after you type your password, the system asks for something else. This 'something else' can be a code sent to your phone as a text message. Many people use this because it's easy to set up. Another way is to use a fingerprint or face scan on your phone, which is also MFA. These methods make it harder for bad people who steal passwords from websites or through phishing emails. Without the second factor, the stolen password is useless. This is a clear improvement over just using a single password, especially since passwords can be weak or reused a lot. While the student understands the general purpose and some methods, the explanation lacks depth on *how* these factors fundamentally differ or the underlying security mechanisms. [Human-written paragraph]\n\nFrom experience, users sometimes find MFA cumbersome, especially with multiple logins or devices. Human guidance, training, and clear explanations about why MFA steps exist help reduce frustration and encourage proper adoption. Combining these human-centered practices with technical MFA measures ensures better security outcomes. [Hybrid paragraph]\n\nHowever, when it comes to applying these concepts to specific real-world problems or critically evaluating them, the submission struggles. The examples provided are quite generic, like \"hackers who steal passwords from websites,\" without delving into specific types of breaches or how different MFA methods directly counter them. The discussion about usability is very superficial. It mentions that MFA can be an \"extra step\" or \"a bit annoying\" but doesn't analyze the real trade-offs between security and user convenience or specific challenges like user fatigue or deployment costs for organizations. There is no meaningful critical evaluation of the limitations of various MFA types, such as the vulnerabilities of SMS-based MFA. [AI-written paragraph]\n\nThe overall writing quality and structure also need improvement. The tone is often informal (\"bad people,\" \"a bit annoying\"), and there are instances of grammatical errors and awkward phrasing that hinder clarity. The essay has a basic structure but lacks the coherence and academic rigor expected. Citations are absent, and the overall discussion is too simplistic to fully address the prompt's requirements for a detailed evaluation of effectiveness, trade-offs, and integration into broader strategies. [Human-written paragraph]",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0, 3],
+                "human_paragraph_indices": [1, 4],
+                "hybrid_paragraph_indices": [2],
+                "notes": "Alternating style: AI (0,3), Human (1,4), Hybrid (2) to reflect technical vs experiential vs mixed content."
+            },
+            "feedback": {
+                "c1": "Average. The submission provides a basic understanding of MFA as an 'extra step' in security and lists some common methods. However, it lacks depth in explaining the distinct nature of authentication factors and contains some oversimplifications. (10.5/15)",
+                "c2": "Needs Improvement. The essay offers vague and generic examples of MFA's application, such as 'hackers who steal passwords from websites.' It fails to provide specific real-world scenarios or detailed connections between MFA methods and actual threat mitigation. (10/20)",
+                "c3": "Poor. Critical evaluation is almost entirely absent. The submission superficially mentions MFA can be 'annoying' but does not analyze the security-usability trade-offs, specific vulnerabilities of methods, or broader challenges in implementation. (12/40)",
+                "c4": "Needs Improvement. The writing contains grammatical errors and an informal tone that detract from its academic quality. The structure is rudimentary, with underdeveloped paragraphs and a lack of coherent flow, hindering overall clarity. (11.25/25)",
+                "total": "43.75/100"
+            }
+        },
+        {
+            "quality": "Excellent",
+            "authorship": "human",
+            "key_points": [
+                "Demonstrates exceptional conceptual depth on MFA factors and specific methods, including advanced standards.",
+                "Provides a highly insightful and research-backed critical evaluation of trade-offs, advanced attacks, and strategic integration.",
+                "Structure, academic writing, and referencing are nearly flawless.",
+                "Application to real-world scenarios is very strong, but could perhaps offer one or two more direct, specific examples of how different MFA *methods* directly failed/succeeded in *named* breaches to reach absolute perfection."
+            ],
+            "llm_questions": [
+                "Beyond FIDO2, what emerging authentication standards are poised to further enhance MFA security and usability?",
+                "How do adaptive authentication systems technically evaluate risk to minimize MFA friction?",
+                "Discuss the specific technical mechanisms by which FIDO2 hardware tokens resist advanced phishing attacks like AiTM.",
+                "How does the concept of 'binding' play a role in the security of different MFA methods, particularly concerning phishing resistance?"
+            ],
+            "llm_answers": [
+                "Beyond FIDO2, WebAuthn (part of the FIDO2 standard) is already a key player, enabling passwordless and phishing-resistant authentication across browsers and devices. Future enhancements likely involve greater integration of device posture assessments and continuous authentication techniques, leveraging machine learning to constantly verify identity post-login. Passkeys, which are built upon WebAuthn, are also emerging as a significant advancement, offering a simpler, synchronized, and phishing-resistant experience across devices without needing a separate physical key for each login. Another area is decentralized identity solutions, leveraging blockchain for self-sovereign identity, though these are still more nascent.",
+                "Adaptive authentication systems technically evaluate risk by analyzing a multitude of contextual signals during a login attempt. These signals include the user's IP address (geographic location, known malicious IPs), device fingerprint (type, operating system, browser, unique identifiers), network characteristics (corporate VPN, public Wi-Fi), time of day, historical login patterns (deviations from usual behavior), and even the sensitivity of the resource being accessed. Machine learning algorithms process these signals in real-time to assign a risk score. If the score exceeds a predefined threshold, the system triggers additional authentication challenges (e.g., a specific MFA method) or blocks access entirely, while low-risk attempts proceed seamlessly, thereby minimizing friction.",
+                "FIDO2 hardware tokens resist advanced phishing attacks like Adversary-in-the-Middle (AiTM) due to their cryptographic binding to the origin (website domain). When a user registers a FIDO2 token with a website, the token generates a unique public/private key pair. During authentication, the website challenges the token, and the token cryptographically signs a message that includes the website's origin. If an attacker tries to use a phishing site (e.g., `malicious-site.com` instead of `legit-site.com`), the FIDO2 token will detect that the origin in the challenge does not match the origin it was registered with. Consequently, it will refuse to sign the authentication request, effectively preventing the attacker from proxying the session and stealing credentials or session tokens, even if the user is tricked into interacting with the fake site.",
+                "'Binding' refers to the cryptographic association between an authentication factor and the specific context of the authentication attempt. In the context of phishing resistance, stronger MFA methods bind the authentication to the specific origin or relying party. For example, FIDO2 tokens cryptographically bind the authentication assertion to the website's domain (origin). This means the token verifies the exact URL it is interacting with. If an attacker uses a phishing site with a different domain, the token will not authenticate, making it phishing-resistant. In contrast, SMS OTP or TOTP tokens do not bind to the origin; they merely provide a code. If an attacker can trick a user into entering that code on a proxy phishing site (as in AiTM), the code is still valid for the legitimate site, as the code itself doesn't contain origin information. This lack of binding is why SMS/TOTP are more susceptible to sophisticated phishing attacks, despite being effective against simple password theft."
+            ],
+            "final_submission": "Multi-factor authentication (MFA) is indisputably one of the most effective and widely adopted security controls in modern information technology, designed to fortify digital access against the relentless tide of credential-based attacks. By demanding a corroboration of identity through multiple, distinct verification factors, MFA fundamentally disrupts traditional attack chains, rendering stolen passwords significantly less potent. This essay will provide a comprehensive evaluation of MFA's efficacy in preventing data breaches, dissect its diverse methodologies, scrutinize their nuanced usability and security trade-offs, and elaborate on MFA's strategic integration within holistic cybersecurity frameworks. [AI-written paragraph]\n\nThe conceptual understanding of MFA exhibited is profound, covering the three foundational categories: knowledge (something you know), possession (something you have), and inherence (something you are). The discussion precisely delineates various MFA methods, ranging from ubiquitous SMS-based one-time passcodes (OTP) to sophisticated phishing-resistant hardware security keys utilizing the FIDO2 standard, alongside authenticator apps (TOTP) and biometric modalities. The submission not only describes these methods but also articulates their underlying cryptographic principles where relevant, distinguishing, for instance, between the symmetric key generation of TOTP and the public-key cryptography inherent in FIDO2, which is crucial for understanding their respective security postures. [Human-written paragraph]\n\nFrom experience, users often find MFA cumbersome when multiple logins or devices are involved. Human guidance, training, and clear communication about why these steps exist help reduce frustration and encourage proper adoption. Combining these human-centered practices with technical MFA measures ensures maximum effectiveness. [Hybrid paragraph]\n\nThe critical evaluation provided is exceptional. The essay masterfully navigates the intricate security-usability trade-offs, moving beyond superficial statements to analyze specific vulnerabilities inherent to each method. For example, it highlights how SMS OTPs are susceptible to SIM-swapping and SS7 attacks, while TOTP apps, though more secure, can be compromised via sophisticated adversary-in-the-middle (AiTM) phishing campaigns that proxy the authentication flow. The discussion extends to the psychological dimension of \"MFA fatigue\" and proposes adaptive authentication as a pragmatic solution to balance security rigor with user experience, effectively reducing friction for legitimate users while escalating challenges for anomalous logins. Furthermore, the integration of MFA into broader cybersecurity strategies is presented with strategic foresight, contextualizing it within a Zero Trust architecture, emphasizing continuous verification, and illustrating its synergistic role with privileged access management (PAM) and security information and event management (SIEM) systems. [AI-written paragraph]\n\nImplementing MFA can be challenging and costly. Human input is necessary to plan phased rollouts, select appropriate authentication methods for different systems, and train staff effectively. Addressing usability while maintaining security ensures practical adoption and complements technical measures. [Human-written paragraph]\n\nWhile the application to real-world scenarios is strong, it could be elevated further by incorporating a few more specific, named data breaches illustrating the success or failure of particular MFA methods rather than just general principles. For example, detailing an instance where FIDO2 prevented a breach that SMS MFA might not have, or where MFA fatigue was directly exploited in a specific attack. Nonetheless, the quality of structure and academic writing is outstanding. The essay is impeccably organized, with a clear logical progression, sophisticated vocabulary, and a consistently formal, authoritative tone. Grammatical precision is maintained throughout, and all claims are supported by appropriate academic referencing, adhering to established conventions. The overall coherence and analytical depth position this submission at the pinnacle of academic excellence. [AI-written paragraph]",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0, 3, 5],
+                "human_paragraph_indices": [1, 4],
+                "hybrid_paragraph_indices": [2],
+                "notes": "Paragraph numbers alternated: AI (0,3,5), Human (1,4), Hybrid (2)."
+            },
+            "feedback": {
+                "c1": "Excellent. The submission demonstrates an exceptionally precise and in-depth understanding of MFA, detailing not only the factors and methods but also their underlying cryptographic principles (e.g., TOTP vs. FIDO2) with superb theoretical support. (14.7/15)",
+                "c2": "Good. The essay applies concepts meaningfully to various attack vectors (credential theft, SIM-swapping, AiTM phishing). While strong, it could include a few more named, specific data breach examples to illustrate the success/failure of particular MFA *methods* in even greater detail. (17.6/20)",
+                "c3": "Excellent. The critical evaluation is outstanding, providing insightful and research-backed analysis of nuanced trade-offs, advanced threats (AiTM phishing, MFA fatigue), and strategic solutions like adaptive authentication. The depth of analysis is exemplary. (38/40)",
+                "c4": "Excellent. The writing is impeccably clear, coherent, and maintains a consistently formal, authoritative academic tone. The structure is logical, and the flow is flawless. Grammatical precision and sophisticated vocabulary are evident throughout, alongside appropriate referencing. (23.75/25)",
+                "total": "94.05/100"
+            }
+        },
+        {
+            "quality": "Poor",
+            "authorship": "human",
+            "key_points": [
+                "Attempts to define MFA but with significant confusion and oversimplification.",
+                "Lists very basic examples of security, not always MFA specific.",
+                "Lacks any meaningful application to real-world scenarios related to MFA.",
+                "No critical evaluation present.",
+                "Writing is basic, with many errors and informal tone.",
+                "Attempts a simple structure but fails to develop ideas."
+            ],
+            "llm_questions": [
+                "What is a password?",
+                "Why is security important for computers?",
+                "Can a virus steal your password?"
+            ],
+            "llm_answers": [
+                "A password is a secret word or code that you use to prove who you are when you want to get into a computer, an app, or a website. It's like a key to unlock your digital accounts.",
+                "Security is important for computers because it protects your personal information, like your photos, documents, and banking details, from being stolen or damaged by hackers or malicious software like viruses. It also ensures that only you can access your accounts.",
+                "Yes, a virus can definitely steal your password. Some types of viruses are specifically designed to do this. For example, a 'keylogger' virus can record everything you type, including your passwords. Other viruses can steal passwords directly from your web browser or other applications. That's why having good antivirus software and being careful about what you click on is important."
+            ],
+            "final_submission": "Multi-factor authentication (MFA) is a security method that helps protect accounts and digital systems by requiring more than one form of verification. Instead of relying only on a password, users must provide an additional factor, such as a code sent to their phone, a fingerprint, a face scan, or a hardware security key. MFA is effective because it makes it much harder for hackers to gain unauthorized access, even if a password is stolen. [AI-written paragraph]\n\nThe main categories of MFA factors are: something you know (password or PIN), something you have (phone, security token, or hardware key), and something you are (biometrics like fingerprint or face scan). For example, a bank may ask for a password and a one-time code sent via SMS. Even if a hacker steals the password, they cannot access the account without the second factor. This layered approach greatly reduces the risk of breaches. [AI-written paragraph]\n\nFrom experience, users often find MFA inconvenient at first, especially when multiple devices or frequent logins are involved. Human guidance, training, and clear communication about why these steps exist help reduce frustration and encourage compliance. Combining technical MFA controls with human-centered practices ensures stronger adoption and effectiveness. [Hybrid paragraph]\n\nMFA also has real-world applications in enterprise and cloud systems. Organizations can enforce FIDO2 hardware keys or authenticator apps to protect sensitive data. For instance, even if a phishing attack tricks an employee into revealing their password, the attacker cannot bypass the cryptographic security of a registered hardware key. Human decisions—like choosing which systems require MFA and which factors are acceptable—are critical to balance security and usability. [AI-written paragraph]\n\nImplementing MFA can be challenging and costly. Human input is needed to plan phased rollouts, select the most appropriate authentication methods for different systems, and train staff. Addressing user experience while maintaining robust security requires careful planning. These human-led considerations complement the technical aspects of MFA to ensure practical adoption. [Human-written paragraph]\n\nIn conclusion, MFA is a vital component of modern cybersecurity. By combining multiple authentication factors, enterprises and individuals can significantly reduce the risk of unauthorized access. The effectiveness of MFA is maximized when both advanced technical methods and human-centered strategies are applied, ensuring strong security while maintaining usability. [AI-written paragraph]",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0, 1, 3, 5],
+                "human_paragraph_indices": [4],
+                "hybrid_paragraph_indices": [2],
+                "notes": "Changes made: Added 1 hybrid paragraph (2) discussing user experience and training; added 1 human paragraph (4) emphasizing phased rollout and practical adoption. Paragraph indices updated accordingly."
+            },
+            "feedback": {
+                "c1": "Needs Improvement. The submission shows a confused and oversimplified understanding of MFA, often describing the second factor as 'another password' rather than a distinct authentication factor. The explanation is surface-level and contains inaccuracies. (7.5/15)",
+                "c2": "Poor. There is no meaningful application of MFA concepts to real-world scenarios. The examples provided are generic and abstract ('your money is safe') without linking to specific breach types or how MFA methods operate in practice. (4/20)",
+                "c3": "Poor. The essay completely lacks critical evaluation. It makes no attempt to discuss challenges, limitations, or trade-offs associated with MFA or its various methods, offering only vague statements about security being 'good'. (4/40)",
+                "c4": "Average. The submission attempts a basic structure, but the writing is often unclear, informal, and contains numerous grammatical errors and awkward phrasing. Paragraphs are underdeveloped, and the overall coherence is weak. (15/25)",
+                "total": "30.5/100"
+            }
+        }
+    ]
+}

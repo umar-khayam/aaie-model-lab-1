@@ -1,0 +1,459 @@
+{
+    "domain": "Psychology",
+    "prompt": "Analyze decision-making under uncertainty through the lens of heuristics and biases, comparing with prospect theory and dual-process models.",
+    "rubric": {
+        "rubric_id": "rub_psychology_0020",
+        "criteria": [
+            {
+                "criterion_id": "c1",
+                "name": "Core Theories",
+                "description": "Explains heuristics/biases (availability, representativeness, anchoring), prospect theory, and dual-process models.",
+                "performance_descriptors": {
+                    "excellent": "Clearly articulates value and probability weighting, loss aversion, reference dependence, and System 1/2 distinctions.",
+                    "good": "Accurate coverage with minor omissions.",
+                    "average": "General explanation; limited precision.",
+                    "needs_improvement": "Partial or confused coverage.",
+                    "poor": "Incorrect or missing theories."
+                },
+                "weight": 30
+            },
+            {
+                "criterion_id": "c2",
+                "name": "Evidence and Phenomena",
+                "description": "Integrates empirical findings and classic effects.",
+                "performance_descriptors": {
+                    "excellent": "Discusses framing, endowment effect, base-rate neglect, conjunction fallacy, and boundary conditions.",
+                    "good": "Covers several key effects with reasonable accuracy.",
+                    "average": "Mentions effects without depth.",
+                    "needs_improvement": "Sparse or inaccurate coverage.",
+                    "poor": "No relevant evidence."
+                },
+                "weight": 25
+            },
+            {
+                "criterion_id": "c3",
+                "name": "Comparative Evaluation",
+                "description": "Contrasts explanatory power and limitations of frameworks.",
+                "performance_descriptors": {
+                    "excellent": "Evaluates when each framework best applies, notes challenges from ecological rationality and expertise.",
+                    "good": "Clear comparison with some nuance.",
+                    "average": "Superficial comparison.",
+                    "needs_improvement": "Limited comparative analysis.",
+                    "poor": "No meaningful comparison."
+                },
+                "weight": 15
+            },
+            {
+                "criterion_id": "c4",
+                "name": "Applications",
+                "description": "Applies insights to policy, finance, health, or UX.",
+                "performance_descriptors": {
+                    "excellent": "Proposes concrete nudges/interventions and notes ethical considerations and debiasing evidence.",
+                    "good": "Provides relevant applications with examples.",
+                    "average": "General applications without specifics.",
+                    "needs_improvement": "Minimal applications.",
+                    "poor": "No applications."
+                },
+                "weight": 20
+            },
+            {
+                "criterion_id": "c5",
+                "name": "Clarity and Structure",
+                "description": "Logical organization and clear writing.",
+                "performance_descriptors": {
+                    "excellent": "Well-organized and precise.",
+                    "good": "Mostly clear with minor issues.",
+                    "average": "Adequate clarity.",
+                    "needs_improvement": "Disorganized.",
+                    "poor": "Incoherent."
+                },
+                "weight": 10
+            }
+        ]
+    },
+    "submissions": [
+        {
+            "quality": "Excellent",
+            "authorship": "ai",
+            "key_points": [
+                "Defines availability, representativeness, and anchoring heuristics.",
+                "Explains prospect theory: reference dependence, loss aversion, value function, and probability weighting.",
+                "Discusses framing effects, endowment effect, base-rate neglect, and the conjunction fallacy.",
+                "Compares dual-process models (System 1/2) with ecological rationality.",
+                "Designs concrete debiasing or choice architecture interventions with ethical considerations."
+            ],
+            "llm_questions": [
+                "Provide original examples of anchoring, availability, and representativeness.",
+                "Explain prospect theory’s value function and probability weighting.",
+                "How do framing effects influence health decisions?",
+                "Design a debiasing protocol for investment choices.",
+                "Compare dual-process models with ecological rationality."
+            ],
+            "llm_answers": [
+                "Anchoring: A house listed at $1.2M makes a $1.05M price seem like a deal. Availability: Media coverage of shark attacks inflates perceived risk. Representativeness: Assuming a quiet person is a librarian over a salesperson, ignoring base rates.",
+                "Prospect theory’s value function is concave for gains and convex for losses, and steeper for losses (loss aversion). Probability weighting overweights small probabilities and underweights large ones.",
+                "Gain framing ('90% survival') increases acceptance of treatments compared to an equivalent loss frame ('10% mortality').",
+                "A protocol would include defining reference portfolios, using a pre-commitment checklist, using median analyst anchors, and defaulting to diversified funds.",
+                "Dual-process models contrast fast, associative System 1 with slow, deliberative System 2. Ecological rationality argues many heuristics are adaptive tools for specific environments."
+            ],
+            "final_submission": "Under uncertainty, people often rely on heuristics that can systematically bias judgment. Availability inflates risks that are vivid; representativeness privileges similarity over base rates; anchoring tethers estimates to arbitrary starting points. Prospect theory reframes choice around reference points: losses loom larger than gains, and its value function and probability weighting explain preference reversals.\n\nDual-process models attribute these patterns to the interplay of intuitive System 1 and reflective System 2. Yet heuristics are not uniformly ‘errors’; ecological rationality shows they can be adaptive when cues map reliably to outcomes. Expertise tunes heuristics to environments.\n\nApplications follow: in health, present absolute risks and balanced frames; use defaults for organ donation. In finance, pre-commitment checklists and diversified default portfolios reduce myopic loss aversion. In policy, simplify choice sets and set wise defaults.\n\nOverall, heuristics, prospect theory, and dual-process perspectives are complementary, predicting when judgments will be accurate, biased, or malleable to intervention.",
+            "feedback": {
+                "c1": "Excellent. Clear, precise exposition of all theories. (30/30)",
+                "c2": "Excellent. Integrates key phenomena with boundary conditions. (25/25)",
+                "c3": "Excellent. Thoughtful comparison including ecological rationality. (15/15)",
+                "c4": "Excellent. Concrete, ethical interventions across domains. (20/20)",
+                "c5": "Excellent. Well-structured and concise. (10/10)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Excellent",
+            "authorship": "human",
+            "key_points": [
+                "Defines availability, representativeness, and anchoring heuristics.",
+                "Explains prospect theory: reference dependence, loss aversion, value function, and probability weighting.",
+                "Discusses framing effects, endowment effect, base-rate neglect, and the conjunction fallacy.",
+                "Compares dual-process models (System 1/2) with ecological rationality.",
+                "Designs concrete debiasing or choice architecture interventions with ethical considerations."
+            ],
+            "final_submission": "When making decisions under uncertainty, humans often deviate from pure rationality by relying on mental shortcuts, or heuristics, which can lead to systematic biases. Key among these are the availability heuristic, where perceived risk is skewed by vivid, easily recalled events; the representativeness heuristic, which favors stereotypical thinking over statistical base rates; and anchoring, which ties estimates to initial, often irrelevant, values. Prospect theory further enriches this view by explaining choice architecture around reference points, demonstrating that losses are felt more acutely than equivalent gains (loss aversion) and that our perception of probability is non-linear.\n\nDual-process models attribute these patterns to the interplay of intuitive System 1 and reflective System 2. Yet heuristics are not uniformly ‘errors’; ecological rationality shows they can be adaptive when cues map reliably to outcomes. Expertise tunes heuristics to environments.\n\nThese insights have profound applications. In healthcare, for instance, physicians can be nudged to consider a wider range of diagnoses beyond the most 'available' one by using structured checklists. In finance, automatic enrollment in retirement plans with diversified default portfolios uses an understanding of inertia and loss aversion to improve long-term outcomes for individuals. For public policy, setting beneficial defaults for organ donation or designing clearer nutritional labels are effective ways to guide behavior without restricting choice.\n\nOverall, heuristics, prospect theory, and dual-process perspectives are complementary, predicting when judgments will be accurate, biased, or malleable to intervention.",
+            "feedback": {
+                "c1": "Excellent. Clear, precise exposition of all theories. (30/30)",
+                "c2": "Excellent. Integrates key phenomena with boundary conditions. (25/25)",
+                "c3": "Excellent. Thoughtful comparison including ecological rationality. (15/15)",
+                "c4": "Excellent. Concrete, ethical interventions across domains. (20/20)",
+                "c5": "Excellent. Well-structured and concise. (10/10)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [
+                    1,
+                    3
+                ],
+                "human_paragraph_indices": [
+                    0,
+                    2
+                ],
+                "hybrid_paragraph_indices": [],
+                "notes": "Human fully rewrote the introduction and applications paragraphs."
+            }
+        },
+        {
+            "quality": "Excellent",
+            "authorship": "hybrid",
+            "key_points": [
+                "Defines availability, representativeness, and anchoring heuristics.",
+                "Explains prospect theory: reference dependence, loss aversion, value function, and probability weighting.",
+                "Discusses framing effects, endowment effect, base-rate neglect, and the conjunction fallacy.",
+                "Compares dual-process models (System 1/2) with ecological rationality.",
+                "Designs concrete debiasing or choice architecture interventions with ethical considerations."
+            ],
+            "final_submission": "Under uncertainty, people often rely on heuristics that can systematically bias judgment. Availability inflates risks that are vivid; representativeness privileges similarity over base rates; anchoring tethers estimates to arbitrary starting points. Prospect theory reframes choice around reference points: losses loom larger than gains, and its value function and probability weighting explain preference reversals.\n\nDual-process models attribute these patterns to the dynamic interplay of the automatic, intuitive System 1 and the effortful, reflective System 2. It is important to note that heuristics are not uniformly ‘errors’. The perspective of ecological rationality shows they can be highly adaptive and efficient when environmental cues map reliably to outcomes, or when time and information are scarce. Expertise, in many ways, can be seen as the development of highly tuned, accurate heuristics.\n\nApplications follow: in health, present absolute risks and balanced frames; use defaults for organ donation. In finance, pre-commitment checklists and diversified default portfolios reduce myopic loss aversion. In policy, simplify choice sets and set wise defaults.\n\nOverall, heuristics, prospect theory, and dual-process perspectives are complementary, predicting when judgments will be accurate, biased, or malleable to intervention.",
+            "feedback": {
+                "c1": "Excellent. Clear, precise exposition of all theories. (30/30)",
+                "c2": "Excellent. Integrates key phenomena with boundary conditions. (25/25)",
+                "c3": "Excellent. Thoughtful comparison including ecological rationality. (15/15)",
+                "c4": "Excellent. Concrete, ethical interventions across domains. (20/20)",
+                "c5": "Excellent. Well-structured and concise. (10/10)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [
+                    0,
+                    2,
+                    3
+                ],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [
+                    1
+                ],
+                "notes": "Slightly modified the dual-process models paragraph for better flow and clarity."
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "ai",
+            "key_points": [
+                "Accurate coverage of heuristics and prospect theory.",
+                "Explains framing and base-rate issues.",
+                "Compares dual-process with ecological rationality at a high level.",
+                "Provides practical debiasing steps.",
+                "Clear and organized."
+            ],
+            "llm_questions": [
+                "What are some examples of heuristics?",
+                "What is loss aversion in prospect theory?",
+                "What are System 1 and System 2?",
+                "How can framing affect decisions?"
+            ],
+            "llm_answers": [
+                "Anchoring (first number sways estimates), availability (recent events seem more likely), and representativeness (stereotypes guide judgments).",
+                "Loss aversion means that people dislike losses more than they like equivalent gains.",
+                "System 1 is fast, intuitive thinking; System 2 is slow, deliberate thinking.",
+                "Different wordings, like gain vs. loss frames, can change preferences for the same option."
+            ],
+            "final_submission": "Heuristics (availability, representativeness, anchoring) guide judgments but create predictable errors. Prospect theory explains risk attitudes via reference points and loss aversion. Framing shapes health choices, while base-rate neglect affects valuation. Dual-process models and ecological rationality together explain when fast intuition helps or harms. Debiasing can combine base-rate anchors and defaults with transparent framing in health decisions.",
+            "feedback": {
+                "c1": "Good. Core theories are accurate. (24/30)",
+                "c2": "Good. Key effects covered but briefly. (20/25)",
+                "c3": "Good. Compares frameworks with some nuance. (12/15)",
+                "c4": "Good. Practical, relevant interventions. (16/20)",
+                "c5": "Good. Clear and organized. (8/10)",
+                "total": "80/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [
+                    0
+                ],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "ai",
+            "key_points": [
+                "Precise articulation of all core theories.",
+                "Strong coverage of empirical findings.",
+                "Insightful comparative evaluation.",
+                "Good, relevant applications.",
+                "Disjointed paragraphs and poor flow."
+            ],
+            "llm_questions": [
+                "Define the value function and probability weighting in prospect theory.",
+                "Explain the conjunction fallacy.",
+                "Critically compare dual-process models with ecological rationality."
+            ],
+            "llm_answers": [
+                "The value function is S-shaped, concave for gains and convex for losses, with a steeper slope for losses. The probability weighting function overweights small probabilities and underweights large ones.",
+                "The conjunction fallacy occurs when typicality makes a conjunctive event seem more probable than a single constituent event.",
+                "Dual-process models emphasize cognitive architecture, while ecological rationality argues heuristics are adaptive tools fit for specific environments."
+            ],
+            "final_submission": "Decision-making under uncertainty is shaped by heuristics and biases. Availability, representativeness, and anchoring are key heuristics. Prospect theory describes choices under risk, positing that individuals evaluate outcomes relative to a reference point and are loss averse.\n\nDual-process models provide a framework with System 1 (fast, intuitive) and System 2 (slow, logical). While heuristics illuminate System 1 outputs, prospect theory models value transformations. These are contrasted with ecological rationality, which sees heuristics as adaptive.\n\nEmpirical findings like framing effects, the endowment effect, and the conjunction fallacy support these models. Applications are transformative, from public health (framing vaccinations) to finance (default options for pensions). Despite strong content, the submission suffers from poor organization, making it hard to follow.",
+            "feedback": {
+                "c1": "Excellent. Precisely articulates all core theories. (28/30)",
+                "c2": "Good. Covers several key empirical effects. (21/25)",
+                "c3": "Excellent. Provides a nuanced comparative evaluation. (14/15)",
+                "c4": "Good. Offers relevant and concrete applications. (16/20)",
+                "c5": "Needs Improvement. The submission suffers from poor organization. (5/10)",
+                "total": "84/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [
+                    0,
+                    1,
+                    2
+                ],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "ai",
+            "key_points": [
+                "General definitions of heuristics and prospect theory.",
+                "Mentions framing and base-rate neglect without depth.",
+                "High-level dual-process comparison.",
+                "Generic applications.",
+                "Simple, clear structure."
+            ],
+            "llm_questions": [
+                "What is anchoring?",
+                "What does prospect theory say about losses?",
+                "What is System 1 vs. System 2?"
+            ],
+            "llm_answers": [
+                "Anchoring is when first numbers sway estimates.",
+                "It says that people dislike losses more than they like equivalent gains.",
+                "System 1 is fast thinking; System 2 is slow thinking."
+            ],
+            "final_submission": "People use shortcuts that can bias decisions. Prospect theory adds that losses hurt more than gains and that probabilities are not weighed linearly. Framing matters for health choices. Simple steps like using defaults and base rates can help investors. Fast and slow thinking both play roles depending on the context.",
+            "feedback": {
+                "c1": "Average. Correct but simplified treatment. (20/30)",
+                "c2": "Average. Effects mentioned with little detail. (16/25)",
+                "c3": "Average. Surface-level comparison. (10/15)",
+                "c4": "Average. Generic applications. (13/20)",
+                "c5": "Average. Basic structure. (6/10)",
+                "total": "65/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [
+                    0
+                ],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "ai",
+            "key_points": [
+                "Decent grasp of core theories.",
+                "Mentions key empirical findings without deep elaboration.",
+                "Provides a surface-level comparison of frameworks.",
+                "Offers general but relevant applications.",
+                "Clear, but lacks sophisticated language."
+            ],
+            "llm_questions": [
+                "What is the anchoring effect?",
+                "How does prospect theory explain gambling?",
+                "What are the main functions of System 1 vs. System 2?"
+            ],
+            "llm_answers": [
+                "It's when an initial value influences subsequent judgments.",
+                "Its probability weighting function suggests people overweight small probabilities of large gains.",
+                "System 1 is for quick, automatic responses. System 2 is for effortful, logical tasks."
+            ],
+            "final_submission": "Human decision-making under uncertainty is influenced by cognitive shortcuts, or heuristics, which can lead to biases. The availability heuristic, for example, causes us to judge probability based on how easily examples come to mind. Prospect theory explains risky choice by positing that we evaluate outcomes relative to a reference point and are loss averse.\n\nDual-process models distinguish between fast, intuitive (System 1) and slow, deliberate (System 2) thinking, with many biases arising from unchecked System 1 processing. Empirical evidence supports these models through phenomena like framing effects and the endowment effect.\n\nUnderstanding these principles can inform various fields. In finance, awareness of anchoring can prevent overreliance on initial price targets. In health, framing messages positively can be more effective. Policymakers can leverage default options to steer citizens towards beneficial choices.",
+            "feedback": {
+                "c1": "Average. Explains core theories correctly but without depth. (21/30)",
+                "c2": "Average. Mentions relevant empirical findings but without deep discussion. (17/25)",
+                "c3": "Average. Provides a surface-level comparison. (10/15)",
+                "c4": "Average. Offers relevant but general applications. (14/20)",
+                "c5": "Average. Generally clear and organized. (7/10)",
+                "total": "69/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [
+                    0,
+                    1,
+                    2
+                ],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "ai",
+            "key_points": [
+                "Partial, sometimes confused descriptions of theories.",
+                "Sparse coverage of classic effects.",
+                "Minimal comparison of frameworks.",
+                "Thin, non-specific interventions.",
+                "Disorganized writing."
+            ],
+            "llm_questions": [
+                "What are heuristics?",
+                "What is prospect theory about?",
+                "What do dual-process models say?"
+            ],
+            "llm_answers": [
+                "Heuristics are mental shortcuts that can cause errors.",
+                "Prospect theory says people dislike risk.",
+                "They say we have fast and slow thinking."
+            ],
+            "final_submission": "Heuristics sometimes cause errors, but the details are unclear. Prospect theory mainly says people dislike risk. Framing is not very important. Investors should try not to be emotional. The different theories are basically similar.",
+            "feedback": {
+                "c1": "Needs Improvement. Inaccurate and incomplete theory coverage. (15/30)",
+                "c2": "Needs Improvement. Classic phenomena are largely omitted. (13/25)",
+                "c3": "Needs Improvement. Minimal comparative analysis. (7/15)",
+                "c4": "Needs Improvement. Vague and weak applications. (10/20)",
+                "c5": "Needs Improvement. Disorganized and imprecise writing. (5/10)",
+                "total": "50/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [
+                    0
+                ],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "ai",
+            "key_points": [
+                "Some understanding of prospect theory's basics, but confused on details.",
+                "Limited and often inaccurate coverage of heuristics and dual-process models.",
+                "Sparse and mostly incorrect evidence.",
+                "Attempts a comparison but misunderstands the frameworks.",
+                "Provides one somewhat relevant application."
+            ],
+            "llm_questions": [
+                "What is the representativeness heuristic?",
+                "What does loss aversion mean?",
+                "How does System 1 help us make decisions?"
+            ],
+            "llm_answers": [
+                "It's when you judge something by how much it looks like other things you know.",
+                "It means that losing money feels worse than winning the same amount.",
+                "It's our fast, gut feeling that helps us decide quickly without thinking too much."
+            ],
+            "final_submission": "Decision-making involves mental issues. Heuristics are simple rules but often lead to errors. Availability means we remember recent things, so we think they are more common. Representativeness is when you guess based on stereotypes.\n\nProspect theory is about risk. It says people feel losses more strongly than gains. There's also a reference point that changes how you see things.\n\nThe evidence is confusing. Framing effects show that how you say something can change a decision. Dual-process models suggest we have a fast brain (System 1) and a slow brain (System 2). It's hard to compare these ideas.\n\nKnowing about loss aversion can help with designing insurance policies, as people hate losing things and might value policies that protect them from small losses.",
+            "feedback": {
+                "c1": "Needs Improvement. Explains prospect theory's basics, but heuristics are vague. (16/30)",
+                "c2": "Poor. Provides no concrete evidence. (8/25)",
+                "c3": "Needs Improvement. Attempts a comparison but reveals a misunderstanding. (7/15)",
+                "c4": "Good. Offers a concrete and relevant application. (15/20)",
+                "c5": "Poor. The submission is disorganized and hard to follow. (3/10)",
+                "total": "49/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Poor",
+            "authorship": "ai",
+            "key_points": [
+                "Major misconceptions of all theories.",
+                "No accurate phenomena or evidence.",
+                "No comparison or applications.",
+                "Incoherent structure."
+            ],
+            "llm_questions": [
+                "Do people always decide rationally?",
+                "Does framing matter?",
+                "Are heuristics and prospect theory the same?"
+            ],
+            "llm_answers": [
+                "Yes, all models say people always decide rationally.",
+                "No, framing never matters.",
+                "Yes, there is no difference between them."
+            ],
+            "final_submission": "All models say people always decide rationally and framing never matters. There is no difference between heuristics, prospect theory, or dual-process models, and no need for applications.",
+            "feedback": {
+                "c1": "Poor. Fundamental misunderstandings. (6/30)",
+                "c2": "Poor. No valid phenomena or evidence. (5/25)",
+                "c3": "Poor. No comparative evaluation. (3/15)",
+                "c4": "Poor. No applications. (4/20)",
+                "c5": "Poor. Incoherent and inaccurate. (2/10)",
+                "total": "20/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [
+                    0
+                ],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        }
+    ]
+}

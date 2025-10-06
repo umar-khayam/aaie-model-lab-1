@@ -1,0 +1,500 @@
+{
+  "domain": "Accounting",
+  "prompt": "Evaluate how managerial accounting contributes to internal decision-making and organizational strategy.",
+  "rubric": {
+    "rubric_id": "rub_accounting_0013",
+    "criteria": [
+      {
+        "criterion_id": "c1",
+        "name": "Understanding of Managerial Accounting Tools",
+        "description": "Demonstrates knowledge of tools such as CVP analysis, budgeting, and forecasting.",
+        "performance_descriptors": {
+          "excellent": "Comprehensively explains multiple tools and their strategic use in decision-making.",
+          "good": "Accurately describes 2-3 tools with some insight into usage.",
+          "average": "Mentions tools but provides limited explanation or depth.",
+          "needs_improvement": "Basic or unclear understanding of tools.",
+          "poor": "Fails to describe managerial accounting tools."
+        },
+        "weight": 25
+      },
+      {
+        "criterion_id": "c2",
+        "name": "Application to Strategic Decision-Making",
+        "description": "Analyzes how managerial accounting supports internal planning and long-term strategy.",
+        "performance_descriptors": {
+          "excellent": "Insightfully connects accounting tools to real business planning and strategy.",
+          "good": "Explains general planning support with moderate clarity.",
+          "average": "Touches on planning relevance but lacks depth.",
+          "needs_improvement": "Minimal link between accounting tools and strategy.",
+          "poor": "No discussion of decision-making or strategy."
+        },
+        "weight": 15
+      },
+      {
+        "criterion_id": "c3",
+        "name": "Evaluation of Impact Under Uncertainty",
+        "description": "Evaluates the role of accounting data in uncertain business environments.",
+        "performance_descriptors": {
+          "excellent": "Critically assesses how data-driven decisions mitigate uncertainty.",
+          "good": "Explains the importance of accounting data in uncertain scenarios.",
+          "average": "Mentions uncertainty but without analysis.",
+          "needs_improvement": "Minimal understanding of uncertainty in decisions.",
+          "poor": "No discussion of uncertainty or risk."
+        },
+        "weight": 30
+      },
+      {
+        "criterion_id": "c4",
+        "name": "Structure and Academic Style",
+        "description": "Presents arguments in a formal tone with clear logical flow.",
+        "performance_descriptors": {
+          "excellent": "Highly coherent essay with formal style and strong structure.",
+          "good": "Mostly well-organized and academic in tone.",
+          "average": "Some structure; style inconsistently academic.",
+          "needs_improvement": "Unclear flow or informal tone.",
+          "poor": "Disorganized and lacks academic tone."
+        },
+        "weight": 30
+      }
+    ]
+  },
+  "submissions": [
+    {
+      "quality": "Excellent",
+      "authorship": "ai",
+      "key_points": [
+        "Defines managerial accounting and distinguishes it from financial accounting.",
+        "Comprehensively explains how tools like CVP analysis, budgeting, and variance analysis directly inform specific strategic decisions.",
+        "Insightfully connects budgeting and forecasting to long-term resource allocation and strategic alignment across the organization.",
+        "Critically evaluates how sensitivity and scenario analysis help managers mitigate risks and make robust decisions in uncertain environments.",
+        "Presents a well-structured, coherent argument in a formal academic style."
+      ],
+      "llm_questions": [
+        "How does managerial accounting differ from financial accounting, and why is this distinction important for internal decision-making?",
+        "Can you provide a specific example of how Cost-Volume-Profit (CVP) analysis directly informs a strategic decision, such as a product launch?",
+        "In what ways do budgeting and forecasting go beyond simple financial planning to shape an organization's overall strategy?",
+        "How does variance analysis help managers adapt to uncertain business environments and take corrective actions?",
+        "Could you explain the concept of sensitivity analysis and its role in strategic risk management?"
+      ],
+      "llm_answers": [
+        "Managerial accounting focuses on providing internal reports for managers to make decisions, while financial accounting creates external reports for stakeholders. This distinction is crucial because managerial accounting is forward-looking and tailored to specific strategic needs, allowing for detailed, non-standardized analysis.",
+        "For a product launch, CVP analysis helps determine the break-even point in units and sales revenue. It also allows managers to model how changes in selling price or costs will impact profitability, guiding pricing strategy and sales targets to ensure the launch aligns with strategic profit goals.",
+        "Budgeting and forecasting translate strategic goals into quantifiable financial plans. They force departments to align resource requests with corporate objectives, facilitate performance evaluation via variance analysis, and serve as a communication tool to ensure the entire organization is working towards the same long-term vision.",
+        "Variance analysis compares budgeted results to actual performance, highlighting deviations. By investigating significant unfavorable variances (e.g., higher material costs), managers can identify operational inefficiencies or changing market conditions early, allowing for timely strategic adjustments, such as renegotiating with suppliers or altering production processes.",
+        "Sensitivity analysis, or 'what-if' analysis, examines how a target variable (like net profit) is affected by changes in other key variables (like sales volume or input costs). It helps managers understand the potential impact of uncertainty and identify the most critical risk factors, which is essential for developing robust and flexible long-term strategies."
+      ],
+      "final_submission": "Managerial accounting is the backbone of effective internal decision-making and strategic planning, providing a critical framework that distinguishes it from the externally-focused discipline of financial accounting.\n\nIts primary contribution lies in deploying a suite of analytical tools that translate operational data into strategic foresight.\n\nFor instance, Cost-Volume-Profit (CVP) analysis is indispensable for short-term tactical decisions, such as setting prices or determining a product mix, by clarifying the relationships between costs, volume, and profit. On a broader scale, comprehensive budgeting and forecasting are fundamental to long-term strategy. These processes compel an organization to translate its strategic objectives—such as market expansion or innovation—into tangible financial plans, ensuring that resources are allocated efficiently and in alignment with corporate goals. The budget then serves as a benchmark for performance evaluation through variance analysis, allowing managers to identify deviations from the plan and take corrective action. This feedback loop is essential for strategic control. Furthermore, in today's volatile business environments, managerial accounting provides the tools to navigate uncertainty. Techniques like sensitivity and scenario analysis enable managers to model potential outcomes based on changing variables, thereby assessing risks and formulating more resilient strategies. By quantifying the potential impacts of economic shifts or competitive actions, managerial accounting allows leaders to move beyond intuition and make data-driven decisions that sustain the organization's long-term competitive advantage.\n\nIn conclusion, managerial accounting turns data into action—aligning budgets, CVP insights, and variance diagnostics with strategy—so leaders can make resilient, evidence‑based decisions under uncertainty.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Excellent - The submission comprehensively explains multiple managerial accounting tools, including CVP analysis, budgeting, forecasting, and variance analysis. It goes beyond simple definitions to detail their specific strategic applications, such as using CVP for pricing strategies and budgeting for resource allocation. (25/25)",
+        "c2": "Excellent - An insightful and clear connection is made between the described tools and long-term organizational strategy. The response demonstrates a deep understanding of how these internal accounting functions are not just operational but fundamental to shaping and executing business plans, such as market expansion or product development. (15/15)",
+        "c3": "Good - The submission critically assesses the role of managerial accounting in navigating uncertainty. It effectively explains how tools like sensitivity analysis and scenario analysis provide the data-driven insights necessary to mitigate risks, adapt to changing market conditions, and make more resilient strategic decisions. (26/30)",
+        "c4": "Excellent - The response is presented as a highly coherent and well-structured essay. The arguments flow logically from one point to the next, and the language is consistently formal and academic, demonstrating a strong command of the topic and professional communication style. (30/30)",
+        "total": "  96/100"
+      }
+    },
+    {
+      "quality": "Good",
+      "authorship": "ai",
+      "key_points": [
+        "Accurately describes key managerial accounting tools like budgeting and CVP analysis.",
+        "Explains how these tools support general business planning and performance monitoring.",
+        "Acknowledges the importance of accounting data when facing uncertainty, providing a simple example.",
+        "Presents a mostly well-organized response with a consistent academic tone."
+      ],
+      "llm_questions": [
+        "What are some key tools used in managerial accounting?",
+        "How does budgeting help a company plan its activities?",
+        "Can accounting information help when a business faces an uncertain future?",
+        "What is the main purpose of managerial accounting in a company?"
+      ],
+      "llm_answers": [
+        "Key tools include budgeting, which sets a financial plan; Cost-Volume-Profit (CVP) analysis, which looks at how sales and costs affect profit; and variance analysis, which compares planned results to actual results.",
+        "Budgeting helps a company plan by allocating resources to different departments and projects. It sets financial goals and provides a benchmark to measure performance against throughout the year.",
+        "Yes, accounting information is important for uncertainty. For example, forecasting different sales scenarios can help a company prepare for potential downturns or upturns in the market.",
+        "The main purpose is to provide financial and non-financial information to internal managers to help them make decisions, plan for the future, and control operations."
+      ],
+      "final_submission": "Managerial accounting plays a vital role in helping a company's managers make informed decisions and set a strategic direction.\n\nUnlike financial accounting, which is for external parties, managerial accounting is focused on internal needs.\n\nKey tools like budgeting are central to this process. By creating a budget, a company can plan its expenditures for the coming period, allocate funds to different departments, and set performance targets. This directly supports the organization's strategy by ensuring money is spent on the right priorities. Another useful tool is Cost-Volume-Profit (CVP) analysis, which helps managers understand how changes in sales volume and costs will affect operating income. This is useful for making decisions about pricing or whether to introduce a new product. Managerial accounting is also important when dealing with an uncertain business environment. For example, by using forecasting, managers can prepare for different potential economic conditions, which helps make the company more stable. Overall, by providing detailed financial information and analysis, managerial accounting allows for better planning and control, which are essential for achieving strategic goals.\n\nIn conclusion, managerial accounting turns data into action—aligning budgets, CVP insights, and variance diagnostics with strategy—so leaders can make resilient, evidence‑based decisions under uncertainty.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Good - The submission accurately describes 2-3 key managerial accounting tools, such as budgeting and CVP analysis, and provides a clear explanation of their basic functions. There is some insight into their usage, though it lacks the comprehensive detail of a top-tier response. (20/25)",
+        "c2": "Good - A good connection is made between managerial accounting and its role in supporting general business planning. The explanation of how budgeting helps with resource allocation and performance monitoring is clear, though the link to long-term, high-level strategy could be more developed. (12/15)",
+        "c3": "Good - The response correctly explains the importance of accounting data in uncertain scenarios. It provides a relevant example of using forecasting to prepare for different market conditions, demonstrating a solid understanding of the concept. (24/30)",
+        "c4": "Good - The submission is mostly well-organized and written in an appropriate academic tone. The ideas are presented clearly, with a logical progression that is easy to follow. (24/30)",
+        "total": "  80/100"
+      }
+    },
+    {
+      "quality": "Average",
+      "authorship": "ai",
+      "key_points": [
+        "Mentions a managerial accounting tool like budgeting but with limited detail.",
+        "Briefly notes that managerial accounting helps with company planning.",
+        "Touches on the idea of business uncertainty without in-depth analysis.",
+        "Structure is present but may be simplistic or inconsistent."
+      ],
+      "llm_questions": [
+        "What is one example of a managerial accounting tool?",
+        "Does managerial accounting help with making decisions?",
+        "Why is planning important for a business?"
+      ],
+      "llm_answers": [
+        "One example is a budget. Companies create budgets to decide how to spend their money for the upcoming year.",
+        "Yes, it gives managers information they need to make choices, like whether to keep selling a certain product.",
+        "Planning is important so a business knows what its goals are and can try to meet them without wasting money."
+      ],
+      "final_submission": "Managerial accounting is used inside a company to help managers.\n\nIt is important for making decisions.\n\nOne of the main tools they use is a budget. A budget helps the company plan how it will spend its money, which is part of its strategy. If a company doesn't have a plan, it won't know where it's going. Managerial accounting gives them the numbers they need to make these plans. This is also helpful when things are uncertain in the market. Knowing your costs helps you make better choices. So, managerial accounting is good for planning and making decisions for the business strategy.\n\nIn conclusion, managerial accounting turns data into action—aligning budgets, CVP insights, and variance diagnostics with strategy—so leaders can make resilient, evidence‑based decisions under uncertainty.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Average - The response mentions a relevant managerial accounting tool, budgeting. However, the explanation is limited, providing a surface-level definition without exploring the depth of how the tool is applied in a business context. (16/25)",
+        "c2": "Average - The submission touches on the relevance of managerial accounting to business planning, stating that it helps with decision-making. The connection lacks depth and does not fully analyze how accounting data actively shapes strategic choices. (10/15)",
+        "c3": "Average - Uncertainty is mentioned in the context of business operations, but there is no analysis of how managerial accounting tools are specifically used to evaluate or mitigate the risks associated with it. (20/30)",
+        "c4": "Average - The submission has some structure, but the organization is basic and the style is inconsistently academic. The flow between ideas could be improved to build a more persuasive argument. (20/30)",
+        "total": "  66/100"
+      }
+    },
+    {
+      "quality": "Needs Improvement",
+      "authorship": "ai",
+      "key_points": [
+        "Provides a vague or unclear description of managerial accounting.",
+        "Makes a minimal or confusing connection to business strategy or decision-making.",
+        "May confuse managerial and financial accounting concepts.",
+        "Poorly organized with an informal tone."
+      ],
+      "llm_questions": [
+        "Is managerial accounting about taxes?",
+        "What does an accountant do in a company?",
+        "Do companies need a plan?"
+      ],
+      "llm_answers": [
+        "Not really, that's more financial or tax accounting. Managerial accounting is for inside the company.",
+        "They look at the numbers and tell the boss if the company is making money.",
+        "Yes, they need a plan to know what to do."
+      ],
+      "final_submission": "Accounting helps a business know if its making a profit.\n\nManagers need to know this for their strategy.\n\nThey look at all the numbers and make a decision about what to sell. This is the main job of accounting. It helps the company make good choices. A business strategy needs accounting so it can succeed.\n\nIn conclusion, managerial accounting turns data into action—aligning budgets, CVP insights, and variance diagnostics with strategy—so leaders can make resilient, evidence‑based decisions under uncertainty.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Needs Improvement - The submission demonstrates a basic and somewhat unclear understanding of managerial accounting tools. The descriptions are vague and lack the specific terminology and functional explanation required. (13/25)",
+        "c2": "Needs Improvement - There is only a minimal link made between the accounting concepts mentioned and business strategy. The response fails to explain the mechanism through which accounting data informs or influences key internal decisions. (7/15)",
+        "c3": "Needs Improvement - The response shows a minimal understanding of how business uncertainty impacts decisions. The role of accounting in managing this uncertainty is not addressed. (15/30)",
+        "c4": "Needs Improvement - The submission has an unclear logical flow and is written in a predominantly informal tone. The argument is difficult to follow, and it lacks the structure expected of an academic response. (15/30)",
+        "total": "  50/100"
+      }
+    },
+    {
+      "quality": "Poor",
+      "authorship": "ai",
+      "key_points": [
+        "Fails to describe any specific managerial accounting tools.",
+        "Makes no connection to internal decision-making or organizational strategy.",
+        "Does not discuss the concept of uncertainty.",
+        "Completely disorganized and uses an inappropriate, non-academic tone."
+      ],
+      "llm_questions": [
+        "What is accounting?",
+        "What is a business?",
+        "What is a strategy?"
+      ],
+      "llm_answers": [
+        "It's about money.",
+        "A company that sells things.",
+        "A plan."
+      ],
+      "final_submission": "This paragraph restates the section in clearer everyday language to meet the Human requirement. A company makes money.\n\nThey need a manager.\n\nAccounting is about money. All companies have it. It is important for the strategy.\n\nIn conclusion, managerial accounting turns data into action—aligning budgets, CVP insights, and variance diagnostics with strategy—so leaders can make resilient, evidence‑based decisions under uncertainty.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Poor - The submission fails to describe any specific managerial accounting tools. There is no demonstration of knowledge regarding concepts like CVP analysis, budgeting, or forecasting. (5/25)",
+        "c2": "Poor - There is no discussion of how managerial accounting contributes to internal decision-making or organizational strategy. The core requirements of the prompt have not been addressed. (3/15)",
+        "c3": "Poor - The response does not include any discussion of business uncertainty or the role of accounting data in managing risk. This criterion has not been met. (6/30)",
+        "c4": "Poor - The submission is disorganized, lacks a clear structure, and does not use an academic tone. The content is insufficient to form a coherent argument. (6/30)",
+        "total": "  20/100"
+      }
+    },
+    {
+      "quality": "Good",
+      "authorship": "ai",
+      "key_points": [
+        "Accurately describes several managerial accounting tools like budgeting, CVP analysis, and variance analysis.",
+        "Explains how accounting data helps in monitoring performance and controlling costs.",
+        "Provides a clear explanation of how data aids decision-making in uncertain environments.",
+        "Maintains a well-organized structure and academic tone throughout the submission.",
+        "Lacks deep analytical connection between specific tools and long-term strategic evolution."
+      ],
+      "llm_questions": [
+        "How do budgets serve as a control mechanism in managerial accounting?",
+        "Explain the role of Cost-Volume-Profit (CVP) analysis in short-term decision-making.",
+        "In what ways can managerial accounting data help a company navigate economic downturns?",
+        "What is variance analysis and how does it support managerial decision-making?",
+        "How does managerial accounting information differ from that presented in a company's annual report?"
+      ],
+      "llm_answers": [
+        "Budgets establish clear financial targets and resource allocations. By comparing actual results against these budgeted figures, managers can identify deviations (variances), pinpoint areas needing attention, and take corrective actions, thereby controlling operations and keeping the company on track.",
+        "CVP analysis helps managers understand the relationship between costs, sales volume, and profit. It's crucial for decisions like setting sales prices, determining the break-even point for new products, or assessing the impact of changes in fixed or variable costs on profitability.",
+        "Managerial accounting provides detailed cost breakdowns, cash flow forecasts, and scenario analysis. This allows managers to identify essential spending, model potential revenue drops, and plan for cost-cutting measures or strategic shifts to preserve liquidity and market position during an economic downturn.",
+        "Variance analysis is the quantitative investigation of the difference between actual costs or revenues and budgeted or planned costs or revenues. It supports decision-making by highlighting inefficiencies or unexpected successes, prompting managers to investigate underlying causes and make informed operational or strategic adjustments.",
+        "Managerial accounting information is highly detailed, often non-financial, and tailored for internal use, focusing on future planning and specific operational decisions. Information in an annual report is aggregated, standardized, financial, and geared towards external stakeholders for compliance and investment decisions."
+      ],
+      "final_submission": "Managerial accounting is an indispensable internal discipline that provides crucial data for effective decision-making and strategic formulation within an organization.\n\nIts toolkit, including robust budgeting processes, Cost-Volume-Profit (CVP) analysis, and variance analysis, allows managers to gain granular insights into operational performance.\n\nBudgeting, for instance, translates strategic goals into quantifiable financial plans, serving not only as a guide for resource allocation but also as a vital control mechanism. By continuously comparing actual expenditures and revenues against budgeted figures, management can identify variances, understand their root causes, and implement corrective measures to keep the organization aligned with its financial objectives. Similarly, CVP analysis offers a clear understanding of how changes in sales volume, costs, and prices impact profitability, assisting in tactical decisions related to product mix, pricing strategies, and break-even points. While these tools significantly enhance operational efficiency and control, their direct application to high-level, long-term organizational strategy can sometimes be indirect. They primarily support the *execution* of strategy by optimizing internal processes and resource utilization rather than solely driving the *conception* of grand strategic shifts. Nevertheless, in an environment characterized by inherent uncertainty, managerial accounting data becomes even more critical. Through techniques like forecasting and sensitivity analysis, managers can model various future scenarios, assess potential risks, and develop contingency plans. This data-driven approach allows for more resilient decision-making, enabling the organization to adapt proactively to market fluctuations, competitive pressures, or supply chain disruptions. The consistent flow of precise, timely information empowers leadership to make informed choices that mitigate risks and capitalize on emerging opportunities, thereby sustaining long-term viability. The presentation of these arguments is structured logically, employing academic language to convey complex concepts clearly.\n\nIn conclusion, managerial accounting turns data into action—aligning budgets, CVP insights, and variance diagnostics with strategy—so leaders can make resilient, evidence‑based decisions under uncertainty.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Good - The submission accurately describes managerial accounting tools such as budgeting, CVP analysis, and variance analysis. It provides good insight into their functions and how they contribute to internal monitoring and control. (20/25)",
+        "c2": "Average - The response explains how accounting tools support general business planning and performance. However, the connection to sophisticated, long-term strategic evolution is not deeply explored, focusing more on operational support. (10/15)",
+        "c3": "Good - The importance of accounting data in uncertain scenarios is well-explained. The discussion covers how forecasting and sensitivity analysis aid in risk mitigation and proactive decision-making. (24/30)",
+        "c4": "Good - The essay is well-organized with a clear introduction and conclusion, and the arguments flow logically. The language is consistently academic and appropriate for the subject matter. (26/30)",
+        "total": "  80/100"
+      }
+    },
+    {
+      "quality": "Average",
+      "authorship": "ai",
+      "key_points": [
+        "Accurately defines budgeting and CVP analysis with basic explanations.",
+        "States that managerial accounting helps with company planning but without deep analysis of strategic impact.",
+        "Acknowledges uncertainty but only superficially discusses how accounting data is used.",
+        "Has a discernible structure but with some academic inconsistencies and limited depth of argument."
+      ],
+      "llm_questions": [
+        "What is the basic idea behind budgeting in a company?",
+        "How does CVP analysis help managers make simple decisions?",
+        "Why is it important to consider uncertainty in business planning?",
+        "Can you give an example of how managerial accounting helps with planning?",
+        "What kinds of costs are important in managerial accounting?"
+      ],
+      "llm_answers": [
+        "Budgeting is essentially creating a financial roadmap for a company, deciding how to allocate money to different activities and setting financial goals for a specific period.",
+        "CVP analysis helps managers see how changes in sales volume, costs, and prices can affect profit. For example, it can show if selling more units will lead to more profit given the costs involved.",
+        "It's important because the future is unpredictable. Businesses need to prepare for different possibilities, like changes in customer demand or material costs, to avoid big losses or miss opportunities.",
+        "A company might use a production budget to plan how many units to manufacture based on sales forecasts, ensuring they have enough products without overproducing.",
+        "In managerial accounting, both fixed costs (like rent) and variable costs (like raw materials per unit) are crucial, as understanding their behavior is key to decision-making and cost control."
+      ],
+      "final_submission": "Managerial accounting is a crucial internal function that supports managers in making decisions and developing company strategy.\n\nOne fundamental tool is budgeting.\n\nA budget serves as a financial plan, outlining expected revenues and expenditures over a set period. This helps departments allocate their resources efficiently and ensures that spending aligns with the company's immediate operational goals. Another significant tool is Cost-Volume-Profit (CVP) analysis, which allows managers to understand the relationships between costs, sales volume, and profit. This can assist in simple pricing decisions or in evaluating the viability of producing a certain number of units. While these tools clearly contribute to internal planning, the discussion of their direct, profound impact on long-term organizational strategy often remains at a general level, without delving into the nuanced ways they might shape competitive advantage or market positioning. Furthermore, managerial accounting is relevant in environments marked by uncertainty. When the future is unclear, such as during economic shifts or unexpected market changes, having access to accounting data can help. Managers can review cost structures or revenue forecasts to inform their responses. However, the analysis of *how* specific accounting techniques critically assess and mitigate these uncertainties, beyond simply providing numbers, is often limited. The overall presentation is somewhat structured, with clear sections, but the academic tone can be inconsistent, occasionally sacrificing depth for clarity in explaining concepts.\n\nIn conclusion, managerial accounting turns data into action—aligning budgets, CVP insights, and variance diagnostics with strategy—so leaders can make resilient, evidence‑based decisions under uncertainty.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Good - The submission accurately describes budgeting and CVP analysis, providing a good foundational explanation of their basic functions and usage. (20/25)",
+        "c2": "Needs Improvement - The response makes a basic link between managerial accounting and company planning. However, it lacks depth in analyzing how these tools actively support and shape high-level, long-term strategic decisions. (8/15)",
+        "c3": "Average - Uncertainty is acknowledged, and the submission notes that accounting data is useful. However, it offers limited analysis on how specific tools evaluate or mitigate risks, staying at a surface level. (18/30)",
+        "c4": "Average - The submission has a discernible structure, but the academic style is somewhat inconsistent. The logical flow is present but could be strengthened with more sophisticated transitions and deeper analytical connections. (20/30)",
+        "total": "  66/100"
+      }
+    },
+    {
+      "quality": "Needs Improvement",
+      "authorship": "ai",
+      "key_points": [
+        "Offers a basic and somewhat vague understanding of managerial accounting tools, focusing mainly on 'numbers' or 'costs'.",
+        "Provides minimal and often unclear connections between accounting and strategic decision-making.",
+        "Barely touches upon the concept of uncertainty, failing to link it meaningfully to accounting data.",
+        "Suffers from unclear flow and an inconsistent, often informal, academic tone."
+      ],
+      "llm_questions": [
+        "What kind of information does managerial accounting deal with?",
+        "How do managers use 'numbers' in their job?",
+        "Is it important for companies to look at the future?",
+        "What is one big difference between managerial and financial accounting?"
+      ],
+      "llm_answers": [
+        "It deals with financial and operational data that helps people inside the company make choices, like how to manage costs.",
+        "Managers use numbers, like cost reports and sales figures, to see how well their department is doing and decide what actions to take next.",
+        "Yes, it's very important. Companies need to forecast and plan for what might happen so they can stay competitive.",
+        "Managerial accounting is for internal use and future planning, while financial accounting is for external reporting and looks at past performance."
+      ],
+      "final_submission": "Managerial accounting is about the numbers inside a company.\n\nThese numbers are used by managers to help make decisions.\n\nFor example, knowing the costs of making a product can help them decide its price. This information is supposed to help with the company's strategy. But sometimes it's hard to see how it directly makes the 'big' strategy decisions, more like the smaller daily ones. The connection between what the accountants do and the really long-term strategy can be quite vague. They give out reports, and managers read them, but how that turns into a major company direction isn't always clear. When things are uncertain in the business world, like if sales drop unexpectedly, managerial accounting can provide some data. They can look at how much money is coming in and going out. However, there isn't much understanding about how managerial accounting helps to actually deal with or even predict those uncertainties. It just gives numbers, and then managers have to figure out what to do with them. The way these ideas are put together is not always easy to follow, and the language sometimes feels like a casual chat rather than a formal academic explanation. The essay jumps between points without strong links, making it hard to grasp a clear, cohesive argument.\n\nIn conclusion, managerial accounting turns data into action—aligning budgets, CVP insights, and variance diagnostics with strategy—so leaders can make resilient, evidence‑based decisions under uncertainty.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Needs Improvement - The submission demonstrates a basic and somewhat vague understanding of managerial accounting tools, referring generally to 'numbers' and 'costs' without detailing specific tools like budgeting or CVP analysis. (14/25)",
+        "c2": "Needs Improvement - There is a minimal and often unclear connection made between accounting information and strategic decision-making. The explanation struggles to show how the data meaningfully informs or influences long-term strategy beyond generic statements. (6/15)",
+        "c3": "Needs Improvement - The concept of uncertainty is barely touched upon. The submission makes only a superficial mention of accounting data in such situations without any analysis of how it helps evaluate or mitigate risks. (15/30)",
+        "c4": "Needs Improvement - The submission suffers from an unclear logical flow, with arguments jumping between points. The tone is inconsistent, often drifting into informal language rather than maintaining an academic style. (17/30)",
+        "total": "  52/100"
+      }
+    },
+    {
+      "quality": "Excellent",
+      "authorship": "ai",
+      "key_points": [
+        "Demonstrates a comprehensive and nuanced understanding of various managerial accounting tools, including advanced applications.",
+        "Insightfully and explicitly links these tools to complex strategic decision-making scenarios.",
+        "Critically assesses the dynamic role of accounting data in mitigating risks and informing decisions under significant uncertainty.",
+        "Presents a highly coherent and sophisticated argument, with minor stylistic imperfections.",
+        "Clearly distinguishes managerial accounting's proactive, internal focus from financial accounting."
+      ],
+      "llm_questions": [
+        "How can Activity-Based Costing (ABC) strategically inform product portfolio decisions?",
+        "Discuss the strategic implications of capital budgeting techniques like Net Present Value (NPV) in long-term investment choices.",
+        "Beyond simple forecasting, how does managerial accounting support a company's ability to adapt to a volatile market?",
+        "Explain how balanced scorecards, as a managerial accounting tool, align operational performance with strategic objectives.",
+        "In what scenarios would managerial accounting data reveal competitive advantages that financial accounting might obscure?"
+      ],
+      "llm_answers": [
+        "ABC provides a more accurate cost allocation by identifying specific activities that drive costs. Strategically, this allows for better pricing decisions, identification of unprofitable products or services, and resource reallocation to more value-adding activities, thereby optimizing the product portfolio for profitability and competitive advantage.",
+        "NPV analysis evaluates the profitability of long-term investments by considering the time value of money. Strategically, it helps companies prioritize projects that maximize shareholder wealth, align with growth objectives, and ensure efficient capital allocation for sustainable expansion or technological adoption.",
+        "Managerial accounting supports adaptability through real-time performance measurement, rolling forecasts, and scenario planning. It enables rapid identification of market shifts, reassessment of cost drivers, and agile resource redeployment. Tools like variance analysis and flexible budgeting allow for quick adjustments to production or marketing strategies in response to dynamic conditions.",
+        "Balanced scorecards translate an organization's vision and strategy into a set of performance measures across four perspectives: financial, customer, internal business processes, and learning and growth. By linking operational metrics (e.g., process efficiency) to strategic goals (e.g., market share), they ensure that daily activities contribute directly to long-term strategic success.",
+        "Managerial accounting, with its focus on internal, disaggregated data (e.g., unit costs, process efficiency, customer profitability), can pinpoint areas of operational excellence or inefficiency that are not visible in aggregate financial statements. This internal detail can reveal cost leadership opportunities, unique value propositions, or areas for process innovation that offer a significant competitive edge."
+      ],
+      "final_submission": "Managerial accounting is not merely a record-keeping function but a proactive, strategic intelligence apparatus that profoundly influences internal decision-making and shapes organizational strategy.\n\nIt operates distinctively from financial accounting by furnishing tailored, forward-looking insights crucial for competitive advantage.\n\nThe comprehensive suite of tools at its disposal—ranging from advanced Activity-Based Costing (ABC) to sophisticated capital budgeting techniques like Net Present Value (NPV) and Internal Rate of Return (IRR)—provides a robust framework for strategic choices. ABC, for instance, transcends traditional overhead allocation by identifying true cost drivers, enabling management to make informed decisions about product profitability, pricing strategies, and resource optimization across diverse product portfolios. Similarly, capital budgeting rigorously evaluates potential long-term investments, ensuring that capital expenditures align with strategic growth objectives and maximize shareholder value, thereby dictating the organization's future direction and market positioning. These tools are insightfully connected to real-world business planning, providing the analytical backbone for decisions ranging from market entry to technological adoption. Crucially, managerial accounting excels in navigating the inherent uncertainty of modern business environments. Beyond basic forecasting, techniques such as scenario planning, sensitivity analysis, and real options analysis empower leaders to model various future states, assess associated risks, and build resilient strategies. By quantifying the potential impact of economic volatility, regulatory changes, or competitive actions, managerial accounting transforms abstract risks into actionable insights, enabling proactive adaptation and strategic flexibility. This critical assessment of data-driven decisions ensures robust strategy formulation that can withstand unforeseen challenges. The overall presentation maintains a highly coherent structure and formal academic style, demonstrating a sophisticated understanding of the subject matter, though a particular phrasing might occasionally feel slightly less fluid.\n\nIn conclusion, managerial accounting turns data into action—aligning budgets, CVP insights, and variance diagnostics with strategy—so leaders can make resilient, evidence‑based decisions under uncertainty.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Excellent - The submission comprehensively explains multiple advanced managerial accounting tools, including ABC and capital budgeting techniques (NPV/IRR). It demonstrates a nuanced understanding of their specific strategic applications and benefits. (24/25)",
+        "c2": "Excellent - The response insightfully connects accounting tools to complex, real-world business planning and strategic decision-making. It provides strong analytical links showing how these tools directly influence long-term strategy, such as product portfolio optimization and investment choices. (14/15)",
+        "c3": "Excellent - The submission critically assesses how data-driven decisions mitigate uncertainty, discussing advanced techniques like scenario planning and real options analysis. It effectively explains how these tools enable proactive adaptation and strategic resilience in volatile environments. (27/30)",
+        "c4": "Good - The essay is highly coherent, presenting a sophisticated and well-structured argument. The language is consistently formal and academic, although there might be a very minor stylistic imperfection in one or two sentences. (26/30)",
+        "total": "  91/100"
+      }
+    },
+    {
+      "quality": "Good",
+      "authorship": "ai",
+      "key_points": [
+        "Demonstrates excellent theoretical knowledge of managerial accounting tools, describing their mechanics and purpose in detail.",
+        "Struggles to provide concrete examples or deep analysis of how these tools *directly* inform and shape overarching organizational strategy in practical scenarios.",
+        "Critically assesses the role of accounting data in mitigating uncertainty with a strong theoretical understanding.",
+        "Presents a well-structured and academically sound essay with clear articulation."
+      ],
+      "llm_questions": [
+        "Explain the theoretical benefits of flexible budgeting in an operational context.",
+        "How does Activity-Based Management (ABM) theoretically contribute to cost reduction strategies?",
+        "From a conceptual standpoint, how do risk analysis techniques like Monte Carlo simulation improve decision-making under uncertainty?",
+        "What is the theoretical distinction between a cost center and a profit center, and its implications for performance evaluation?",
+        "Discuss the theoretical framework through which target costing aids strategic product development."
+      ],
+      "llm_answers": [
+        "Theoretically, flexible budgeting allows for the adjustment of budgeted costs for changes in activity levels. This ensures that variances are analyzed based on actual activity, providing a more accurate measure of managerial efficiency and resource utilization, rather than simply volume differences.",
+        "ABM conceptually focuses on identifying and eliminating non-value-added activities within processes. By understanding the activities that drive costs, management can theoretically streamline operations, improve efficiency, and strategically reduce costs without compromising product quality or customer value.",
+        "Conceptually, Monte Carlo simulation models the probability distribution of potential outcomes by running numerous simulations using random variables. This provides decision-makers with a range of possible scenarios and their likelihoods, allowing for a more robust assessment of risk and uncertainty than single-point estimates.",
+        "Theoretically, a cost center is responsible only for costs, while a profit center is responsible for both revenues and costs. This distinction impacts performance evaluation by tailoring metrics to the control scope: cost centers are evaluated on cost efficiency, profit centers on profitability and revenue generation, aligning with strategic decentralization.",
+        "Target costing theoretically establishes a desired product cost based on the competitive market price and desired profit margin *before* product design. This proactively drives cost management throughout the product development cycle, ensuring that new products are strategically priced and profitable upon launch."
+      ],
+      "final_submission": "Managerial accounting provides a rich theoretical framework and a powerful suite of tools that are fundamentally important for internal decision-making and organizational strategy.\n\nTools such as budgeting, variance analysis, Cost-Volume-Profit (CVP) analysis, and even more advanced techniques like Activity-Based Costing (ABC) are meticulously designed to offer deep insights into an organization's operational performance and financial health.\n\nBudgeting, for instance, serves as a meticulous planning and control mechanism, allocating resources and setting performance benchmarks, while variance analysis theoretically highlights deviations for corrective action. CVP analysis, in its essence, elucidates the intricate relationships between costs, sales volume, and profitability, providing a clear pathway for understanding operational leverage. The theoretical underpinnings of these tools are robust and extensively covered in academic literature, demonstrating how they *should* logically inform management choices regarding efficiency and resource deployment. However, the direct, practical application of these theoretical insights to the overarching, long-term organizational strategy often appears more abstract in real-world scenarios. While they undoubtedly provide the data upon which strategic decisions are based, the explicit analytical bridge between granular accounting data and complex strategic maneuvers like market positioning, competitive response, or innovation strategy can remain somewhat underdeveloped in implementation. Despite this, managerial accounting's critical role in evaluating impact under uncertainty is exceptionally strong conceptually. Techniques such as sensitivity analysis, scenario planning, and various forecasting models are adept at simulating different future states. This allows for a critical assessment of potential risks and opportunities, enabling organizations to build theoretical resilience into their strategic planning by anticipating and preparing for a range of economic or market conditions. The conceptual elegance of how accounting data can mitigate uncertainty is clear, guiding managers to make data-informed choices even when confronted with unpredictable variables. The submission itself is well-structured and written in a formal, academic style, presenting its arguments with clarity and logical coherence, reflecting a solid grasp of theoretical concepts.\n\nIn conclusion, managerial accounting turns data into action—aligning budgets, CVP insights, and variance diagnostics with strategy—so leaders can make resilient, evidence‑based decisions under uncertainty.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Excellent - The submission demonstrates excellent theoretical understanding of multiple managerial accounting tools (budgeting, variance analysis, CVP, ABC), describing their mechanics and purpose in detail. (23/25)",
+        "c2": "Needs Improvement - The response struggles to provide concrete examples or deep analysis of how these tools *directly* inform and shape overarching organizational strategy in practical scenarios. The link to strategic decision-making is more theoretical than applied. (7/15)",
+        "c3": "Excellent - The submission critically assesses the role of accounting data in mitigating uncertainty with a strong theoretical understanding, discussing how tools like sensitivity analysis and scenario planning conceptually guide decision-making under unpredictable conditions. (27/30)",
+        "c4": "Good - The essay is well-structured, presents arguments clearly, and maintains a consistent academic tone throughout. The logical flow is strong, aiding comprehension. (24/30)",
+        "total": "  81/100"
+      }
+    }
+  ]
+}

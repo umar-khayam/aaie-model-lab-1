@@ -1,0 +1,370 @@
+{
+    "domain": "Engineering",
+    "prompt": "A town is facing issues with water contamination. As an environmental engineer, explain how you would define the problem, determine the appropriate treatment process and present your findings.",
+    "rubric": {
+        "rubric_id": "rub_engineering_0004",
+        "criteria": [
+            {
+                "criterion_id": "c1",
+                "name": "Problem Identification and Contaminant Analysis",
+                "description": "Identifies the contamination issue and evaluates water quality parameters.",
+                "performance_descriptors": {
+                    "excellent": "Clearly identifies contaminants and supports with data or reasonable assumptions.",
+                    "good": "Describes key water quality concerns with minor gaps.",
+                    "average": "Mentions contaminants with limited detail or specificity.",
+                    "needs_improvement": "Vague problem definition; contaminants unclear.",
+                    "poor": "Fails to identify the contamination problem or water quality issues."
+                },
+                "weight": 40
+            },
+            {
+                "criterion_id": "c2",
+                "name": "Environmental and Public Health Justification",
+                "description": "Explains the theoretical importance of addressing water contamination in terms of human health and environmental sustainability.",
+                "performance_descriptors": {
+                    "excellent": "Provides a thorough explanation of the short- and long-term health risks and environmental impacts, connecting them clearly to the need for treatment.",
+                    "good": "Explains key health or environmental consequences with some detail, though minor links to treatment rationale may be missing.",
+                    "average": "Mentions general impacts on health or environment but lacks depth or connection to the problem.",
+                    "needs_improvement": "Gives vague or minimal reasoning about why treatment is necessary.",
+                    "poor": "Fails to explain why water contamination is a concern from a health or environmental perspective."
+                },
+                "weight": 15
+            },
+            {
+                "criterion_id": "c3",
+                "name": "Treatment Method Selection",
+                "description": "Chooses suitable treatment process(es) based on contamination type and context.",
+                "performance_descriptors": {
+                    "excellent": "Selects and justifies method(s) based on type, efficiency, and practical use.",
+                    "good": "Treatment method is suitable and explained briefly.",
+                    "average": "Basic or general treatment approach mentioned.",
+                    "needs_improvement": "Poor alignment between problem and solution.",
+                    "poor": "No appropriate treatment method discussed."
+                },
+                "weight": 35
+            },
+            {
+                "criterion_id": "c4",
+                "name": "Presentation of Findings",
+                "description": "Communicates solution clearly  with  technical language.",
+                "performance_descriptors": {
+                    "excellent": "Highly structured and data  with clear explanations.",
+                    "good": "Mostly clear with explanations  and  technical summary.",
+                    "average": "Some persentaion of the solution is done, but not well explained.",
+                    "needs_improvement": "Minimal structure or weak technical language.",
+                    "poor": "Disorganized and lacks technical communication."
+                },
+                "weight": 10
+            }
+        ]
+    },
+    "submissions": [
+        {
+            "quality": "Excellent",
+            "key_points": [
+                "Municipal water commonly contains nitrates, E. coli, and heavy metals requiring targeted treatment",
+                "Treatment process is selected based on contaminant type, such as chlorination for bacteria or ion exchange for metals",
+                "Chemical dosage is calculated using standard formula: Feed Rate (lbs/day) = Flow (MGD) * Dose (mg/L) * 8.34",
+                "Flow rate estimation considers population size, daily water demand, and peak usage factors",
+                "Final reports document contaminant removal efficiency, include how the  process of flow work and list measured final concentrations"
+            ],
+            "llm_questions": [
+                "What types of contaminants are commonly found in municipal water?",
+                "How do engineers select a treatment process based on the contaminant?",
+                "What are the standard formulas for calculating chemical dosages in water treatment?",
+                "How is flow rate estimated in a small town's water system?",
+                "How should treatment results be presented in reports?"
+            ],
+            "llm_answers": [
+                "Municipal water can contain a wide range of contaminants depending on the source water (groundwater, surface water) and surrounding land use. Common categories include: 1) Microbial contaminants like bacteria (E. coli), viruses, and protozoa (Giardia, Cryptosporidium), often from sewage or animal waste. 2) Inorganic contaminants such as nitrates (from fertilizer runoff), arsenic, and heavy metals like lead and mercury (from industrial discharge or pipe corrosion). 3) Organic contaminants, including pesticides, herbicides, and volatile organic compounds (VOCs) from industrial or agricultural activities. 4) Disinfection byproducts like trihalomethanes, which form when disinfectants like chlorine react with natural organic matter.",
+                "The selection of a treatment process is a systematic, multi-step engineering task. First, engineers conduct a thorough water quality analysis to identify specific contaminants and their concentrations. Second, they determine the treatment goals, which are typically based on regulatory standards like the EPA's Maximum Contaminant Levels (MCLs). Third, they evaluate a range of viable treatment technologies. For example, microbial contaminants are targeted with disinfection (chlorine, UV light, ozone), turbidity and suspended solids are removed by coagulation and filtration, heavy metals can be addressed with ion exchange or reverse osmosis, and organic compounds are often adsorbed by granular activated carbon (GAC). The final selection is based on removal efficiency, capital and operational costs, system complexity, and potential for creating harmful byproducts.",
+                "A fundamental formula used in water treatment is for calculating the chemical feed rate, which ensures the correct dose is applied. The standard formula in the U.S. customary system is: **Feed Rate (in pounds per day) = Flow Rate (in Million Gallons per Day, MGD) × Dose (in mg/L) × 8.34**. The constant 8.34 is a conversion factor (lbs/gallon of water). This formula is essential for calculating the amount of chemicals like chlorine (for disinfection) or alum (for coagulation) needed each day to treat the water effectively and safely.",
+                "Estimating the flow rate for a small town's water system begins with population data. Engineers multiply the population by the average daily water demand per capita (e.g., 80-120 gallons per person per day). This provides the average daily flow. However, the system must be designed for peak demand. Therefore, engineers apply peaking factors. A typical maximum daily factor might be 1.5-2.0 times the average day, and a peak hourly factor can be 2.0-4.0 times the average hourly flow. Additionally, fire flow requirements, which specify the rate needed for firefighting, must be added to the maximum daily demand to size pipes and pumps correctly.",
+                "Treatment results should be presented in a clear, structured, and data-driven technical report. A standard format includes: 1) An executive summary briefly outlining the problem and solution. 2) A 'Problem Definition' section with a table showing raw water quality, listing contaminants, their measured concentrations, and the corresponding regulatory limits (e.g., MCLs). 3) A 'Proposed Solution' section describing the selected treatment train with a process flow diagram. 4) A 'Design and Performance' section with key calculations (e.g., chemical dosage, contact time, filter loading rates). 5) A final 'Results' table comparing the predicted effluent water quality against the required standards, demonstrating compliance. This data-centric approach provides a transparent and defensible justification for the engineering design."
+            ],
+            "final_submission": "To address the water contamination in the town, a systematic engineering approach is required, beginning with precise problem definition. Based on initial sampling, the primary contaminants in the town's water source have been identified as pathogenic microorganisms, specifically E. coli at concentrations of 60 CFU/100mL, and inorganic compounds, primarily nitrates at 18 mg/L and lead at 25 µg/L. These levels significantly exceed the EPA's Maximum Contaminant Levels (MCLs) of 0 CFU/100mL, 10 mg/L, and 15 µg/L, respectively.\n\nThe justification for immediate intervention is rooted in public health and environmental protection. E. coli is an indicator of fecal contamination and can cause severe gastrointestinal illnesses. Nitrates pose a significant risk, particularly to infants, causing methemoglobinemia ('blue baby syndrome'), and also contribute to eutrophication in receiving water bodies. Lead is a potent neurotoxin with severe developmental effects in children, even at low exposure levels.\n\nTo effectively address this multi-contaminant issue, a multi-barrier treatment train is proposed. The recommended process includes: 1) Pre-filtration to remove suspended solids. 2) Anion exchange resin beds specifically for nitrate removal. 3) A granular activated carbon (GAC) system for lead adsorption. 4) A final disinfection step using Ultraviolet (UV) radiation. UV disinfection is selected over chlorination to avoid the formation of disinfection byproducts and is highly effective against bacteria. The anion exchange and GAC systems are chosen for their high specificity and efficiency in removing the target inorganic contaminants.\n\nMy findings are presented as follows: The identified contaminants pose a clear and immediate threat. The proposed treatment train provides a robust, targeted solution. For a design flow rate of 0.5 MGD, the UV system would require a dose of 40 mJ/cm², ensuring greater than 4-log inactivation of bacteria. The anion exchange system will be sized for a 24-hour regeneration cycle based on the influent nitrate concentration and resin capacity. This comprehensive approach will reliably bring the town's water into full compliance with federal safety standards, protecting public health and the local environment.",
+            "feedback": {
+                "c1": "Excellent. The submission clearly identifies three specific contaminants (E. coli, nitrates, lead) and supports the problem definition with quantitative data, comparing measured concentrations directly against established EPA MCLs. (40/40)",
+                "c2": "Excellent. You have provided a thorough justification by explaining the specific short-term (illness) and long-term (neurotoxin) health risks for each contaminant, and you also correctly included the environmental impact of nitrates (eutrophication). (15/15)",
+                "c3": "Excellent. The selection of a multi-barrier treatment train (anion exchange, GAC, UV) is highly appropriate for the specified contaminants. The justification for each process is clear and demonstrates a strong understanding of their practical application and efficiency. (35/35)",
+                "c4": "Excellent. The findings are presented in a highly structured and professional manner. The use of precise technical language (CFU, µg/L, MCLs, 4-log inactivation, MGD) and inclusion of design parameters (UV dose) make the report clear, data-driven, and persuasive. (10/10)",
+                "total": "100/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "key_points": [
+                "Identifies likely contaminants from context and basic testing",
+                "Explains why selected treatment matches contaminant class",
+                "Shows a worked dosage or contact time example with reasonable assumptions",
+                "Summarizes expected effluent quality against targets"
+            ],
+            "llm_questions": [
+                "Which initial tests help narrow likely contaminants?",
+                "How do you justify a chosen treatment train in text?",
+                "What assumptions are common for small-plant dosing?",
+                "How are effluent targets stated and checked?"
+            ],
+            "llm_answers": [
+                "Initial water quality testing should focus on a broad set of parameters to quickly characterize the water and identify major issues. Key tests include: 1) General physical and chemical parameters like pH, turbidity, temperature, and total dissolved solids (TDS) to get a baseline. 2) Microbial indicators, primarily total coliforms and E. coli, which are crucial for assessing sanitary safety. 3) Key inorganic compounds based on local geology and land use, such as nitrates, arsenic, iron, and manganese. 4) A screening for heavy metals like lead and copper, especially in older towns with potentially aging infrastructure. These initial tests help guide a more targeted and comprehensive analysis if high levels are detected.",
+                "Justifying a chosen treatment train involves clearly linking each process step to a specific problem. A good justification typically follows this structure: First, state the contaminant of concern and its concentration. Second, introduce the chosen treatment method (e.g., 'To address the high bacterial count, we recommend disinfection with chlorine'). Third, briefly explain the mechanism of the treatment (e.g., 'Chlorine works by damaging the cell walls of microorganisms, rendering them inactive'). Finally, state the expected outcome (e.g., 'This will reduce E. coli levels to below the regulatory limit of 0 CFU/100mL'). This structure demonstrates a clear cause-and-effect rationale for your engineering choices.",
+                "For small water treatment plants, engineers often make several standard assumptions to simplify initial design calculations, which are later refined. Common assumptions include: 1) A constant average flow rate throughout the day, though peaking factors are added for final design. 2) Complete and instantaneous mixing of chemicals in mixing tanks. 3) Ideal plug flow conditions in contact chambers, which is used to calculate theoretical contact time (T = Volume / Flow Rate). 4) A consistent raw water quality, although real-world quality fluctuates and requires operators to adjust dosing. These assumptions provide a solid starting point for sizing equipment and estimating chemical needs before more complex modeling is performed.",
+                "Effluent targets are typically stated by listing the contaminant, the target concentration, and the relevant regulatory standard. For example: 'The target effluent quality for lead is <15 µg/L, in compliance with the EPA Lead and Copper Rule Action Level.' These targets are checked through a regular monitoring program. Treated water is sampled at a specified frequency (e.g., daily, weekly) from a designated compliance point after treatment. The samples are analyzed in a certified laboratory, and the results are documented in reports submitted to regulatory agencies to demonstrate ongoing compliance."
+            ],
+            "final_submission": "As an environmental engineer tasked with resolving the town's water contamination, my first step is to define the problem. Water testing has revealed two main issues: significant bacterial contamination, likely from agricultural runoff, and the presence of heavy metals, specifically lead, from the corrosion of old service lines. This situation presents a clear risk to public health, as bacteria can cause immediate sickness, and long-term exposure to lead is harmful, especially to children.\n\nTo ensure the water is safe for consumption, treatment is essential. The health consequences of inaction are severe, ranging from widespread gastrointestinal disease to developmental issues in the population. Environmentally, addressing runoff-related contamination is a step toward protecting the local watershed. The goal is to implement a robust and reliable system that consistently produces water meeting all state and federal safety standards.\n\nI propose a two-stage treatment process. The first stage will be an enhanced filtration system designed to remove suspended particles from the water. This step is crucial because it not only improves clarity but also removes particles that can shield bacteria from disinfection. The second stage will be disinfection using chlorine. Chlorination is a proven and cost-effective method for killing harmful bacteria and viruses. It also provides a residual disinfectant in the distribution system, protecting the water as it travels to homes. For example, to achieve adequate disinfection, a chlorine dose of 2.0 mg/L with a contact time of 30 minutes would be targeted.\n\nIn summary, my findings indicate a dual threat of microbial and heavy metal contamination. The recommended solution of filtration followed by chlorination directly addresses these threats. This process will effectively neutralize the bacterial risk and reduce particulate lead, ensuring the water delivered to residents is safe. We expect the final water quality to show non-detectable levels of harmful bacteria and lead concentrations below the EPA action level.",
+            "feedback": {
+                "c1": "Good. The submission identifies key water quality concerns (bacteria, heavy metals/lead) but could be strengthened by providing specific, quantified levels of contamination for a more complete problem definition. (32/40)",
+                "c2": "Good. You have clearly explained the key health consequences of the contaminants. The connection between the problem and the need for treatment is evident, though a more detailed discussion of long-term risks would improve it. (12/15)",
+                "c3": "Good. The selected treatment method (filtration and chlorination) is suitable for the identified problems. The explanation is brief but logical. The justification could be improved by explaining why this is preferred over other options. (28/35)",
+                "c4": "Good. The presentation is mostly clear and follows a logical structure. The inclusion of a target chlorine dose is a good technical detail. The summary effectively communicates the plan and expected outcomes. (8/10)",
+                "total": "80/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "key_points": [
+                "Mentions common contaminants and a general treatment approach",
+                "Provides approximate calculations with limited detail",
+                "Notes operational factors like contact time and residuals",
+                "Briefly states expected outcomes"
+            ],
+            "llm_questions": [
+                "What data are essential for selecting disinfection vs. filtration?",
+                "How is a rough dosage computed from a target concentration?",
+                "What operational checks keep treatment stable?",
+                "How do you summarize results in a short technical note?"
+            ],
+            "llm_answers": [
+                "The decision between disinfection and filtration (or using both) depends heavily on raw water quality data. The most critical parameter is **turbidity**, which measures water cloudiness. High turbidity can shield pathogens from disinfectants like chlorine or UV light, making disinfection ineffective on its own. Therefore, if turbidity is high, filtration is essential as a preliminary step. Another key piece of data is the type of pathogen present. Protozoa like Giardia and Cryptosporidium are highly resistant to chlorine, so filtration or other disinfectants like UV are often required. In contrast, if the water is very clear (low turbidity) and only contaminated with bacteria, disinfection alone might be sufficient.",
+                "A rough dosage is computed by working backward from the desired result. First, you determine the target residual concentration you want to have in the water after a certain amount of time (e.g., a 0.5 mg/L free chlorine residual). Then, you must account for the 'demand' of the water, which is the amount of chemical that will be consumed by reacting with organic matter and other substances. You can measure this with a lab test. The rough dosage is then: **Dosage = Desired Residual + Chemical Demand**. For example, if the chlorine demand is 1.5 mg/L and you want a 0.5 mg/L residual, you would need to dose at least 2.0 mg/L of chlorine.",
+                "To keep water treatment stable, operators perform regular operational checks. Key checks include: 1) Monitoring raw water quality for changes in turbidity or pH, which might require adjusting chemical doses. 2) Verifying chemical feed pump rates to ensure they are delivering the correct dosage. 3) Measuring treatment parameters at key points, such as the chlorine residual after the contact tank or the pH after a chemical addition. 4) Inspecting equipment like filters and pumps to ensure they are functioning correctly. These routine checks allow operators to make proactive adjustments and prevent the system from producing non-compliant water.",
+                "A short technical note summarizing results should be concise and direct. Start with a clear subject line (e.g., 'Summary of Water Treatment Pilot Test'). In the first sentence, state the main finding (e.g., 'The proposed treatment of coagulation and filtration successfully reduced turbidity to below 0.3 NTU.'). Follow this with a few bullet points of key data, presenting a simple 'before and after' comparison. For example: • Influent Turbidity: 10 NTU, • Effluent Turbidity: 0.2 NTU, • Regulatory Limit: 0.3 NTU. Conclude with a one-sentence recommendation (e.g., 'The results support moving forward with full-scale design.'). This format quickly communicates the most important information."
+            ],
+            "final_submission": "The town has a water contamination problem that needs to be solved by an engineer. After looking at the water, it seems there are some contaminants like germs and other chemicals in it. This is a problem because people need to drink safe water. If the water is dirty, it can make people sick and is also bad for the environment in general. So, we must clean the water before it gets to people's houses.\n\nThe main goal is to make the water safe. To do this, we need a treatment process. A good way to handle this is to use a standard water treatment method. I think we should use a combination of filtration and disinfection. Filters can remove the dirt and particles from the water, which makes it look cleaner. After filtering, we can use a disinfectant like chlorine to kill any germs that are left over. This is a common way that cities clean their water.\n\nTo make sure it works, we would need to add enough chlorine. For example, we might need to add a couple parts per million of it to the water and let it sit for a while. This contact time is important to make sure all the bacteria are gone. We would also need to check the water after treatment to make sure the chlorine level isn't too high but is still working.\n\nSo, my findings are that the water is contaminated, and we need to treat it. By using filtration and then adding chlorine, we can fix the problem. This will give the town clean water that is safe for everyone to use and drink every day. This should solve the contamination issue the town is facing.",
+            "feedback": {
+                "c1": "Average. The submission mentions general contaminants like 'germs' and 'chemicals' but lacks the specific detail and data needed for a thorough problem identification. (26/40)",
+                "c2": "Average. The justification that 'dirty' water can make people sick is mentioned, but it lacks depth. There is no detailed explanation of specific health risks or environmental impacts. (10/15)",
+                "c3": "Average. A basic treatment approach (filtration and disinfection) is mentioned, which is reasonable. However, the description is very general and lacks specific justification based on the (unspecified) contaminants. (23/35)",
+                "c4": "Average. Some attempt was made to present the solution, but the explanation is not very clear. The language is simplistic and lacks the technical terminology expected in an engineering report. (6/10)",
+                "total": "65/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "key_points": [
+                "Problem definition lacks specific parameters",
+                "Treatment choice is not connected to contaminants",
+                "Calculations are missing or inconsistent",
+                "Reporting does not state targets or compliance"
+            ],
+            "llm_questions": [
+                "Which water quality parameters must be stated up front?",
+                "How do you align a process step to a contaminant type?",
+                "What minimum calculations should be shown?",
+                "How do you express compliance textually without visuals?"
+            ],
+            "llm_answers": [
+                "When defining a water contamination problem, several key parameters must be stated up front to provide a clear picture. At a minimum, you must identify: 1) The specific contaminant(s) of concern (e.g., E. coli, arsenic, nitrates). 2) The concentration of each contaminant, with units (e.g., 15 mg/L). 3) The applicable regulatory limit or health advisory level (e.g., EPA MCL of 10 mg/L). Without these three pieces of information—what it is, how much there is, and how much is safe—it is impossible to properly design or justify a treatment solution.",
+                "Aligning a process step to a contaminant type is the core of treatment design. You should do this explicitly in your explanation. For example, instead of saying 'We will use filtration and disinfection,' you should say, 'To address the high turbidity of 15 NTU, we will implement a rapid sand filter. To eliminate the E. coli contamination, we will follow filtration with UV disinfection.' This shows a direct link: high turbidity is solved by filtration; E. coli is solved by disinfection. Each problem needs a specific, matched solution.",
+                "Even in a preliminary proposal, a few minimum calculations should be shown to demonstrate feasibility. The most basic and critical is a dosage calculation, even if it's simplified. For example, showing a calculation for the required chlorine dose based on a simple demand and residual target. Another useful calculation is for contact time (T = V/Q), showing how long the water must be held in a tank to achieve proper disinfection. These simple calculations show that you are thinking in quantitative, engineering terms.",
+                "To express compliance textually, you can use a clear, declarative sentence that directly compares the treated water quality to the standard. For example: 'The treatment process successfully reduced arsenic concentrations from 50 µg/L to 5 µg/L, which is below the EPA Maximum Contaminant Level of 10 µg/L, thus achieving regulatory compliance.' Another way is to state the removal efficiency: 'The system demonstrated a 90% removal efficiency for arsenic, resulting in a final concentration well within the acceptable limit.' This language is unambiguous and confirms the success of the project."
+            ],
+            "final_submission": "The town's water is bad. People are worried about it, and something needs to be done. As an engineer, I would look into this problem. The issue is contamination, which means there is stuff in the water that shouldn't be there. This is a big problem for the town. We need to make the water good again for the people.\n\nClean water is important for health. If you drink bad water, it is not good. That is why we have engineers to fix these things. The environment also needs clean water. So fixing this problem helps everyone.\n\nMy plan to fix the water is to clean it. The best way to clean water is to use a water softener. A water softener can take the bad things out of the water and make it better to use. This system would be installed at the main plant where the water comes from. It would work all the time to make sure the water is soft. This will fix the contamination issue because the water will be treated before it goes into the pipes. This is a good solution because it is a type of treatment process.\n\nSo, to present my findings, I say that the water is a problem. The solution is to install a water softener. This will clean the water and solve the problem. The people will have good water again. This is my professional recommendation for the town to follow to fix their water issues.",
+            "feedback": {
+                "c1": "Needs Improvement. The submission provides a very vague problem definition, stating the water is 'bad' and has 'stuff in it.' It does not identify any specific contaminants or water quality parameters. (20/40)",
+                "c2": "Needs Improvement. The reasoning for treatment is minimal, simply stating that 'clean water is important for health.' This lacks the necessary detail about specific risks to justify an engineering project. (7/15)",
+                "c3": "Needs Improvement. There is a poor alignment between the problem and the proposed solution. A water softener is designed to remove hardness minerals (calcium, magnesium), not the typical contaminants associated with health risks like bacteria or toxic chemicals. (18/35)",
+                "c4": "Needs Improvement. The presentation has minimal structure and uses very weak technical language. The recommendation is not supported by any data or engineering principles, making it unconvincing. (5/10)",
+                "total": "50/100"
+            }
+        },
+        {
+            "quality": "Poor",
+            "key_points": [
+                "No clear contaminants identified",
+                "No appropriate treatment proposed",
+                "No calculations or targets provided",
+                "No structured presentation of results"
+            ],
+            "llm_questions": [
+                "What is the basic structure of a treatment justification?",
+                "Which tests are non-negotiable at baseline?",
+                "Why must calculations accompany recommendations?",
+                "What should a one-page findings summary include?"
+            ],
+            "llm_answers": [
+                "The basic structure for justifying a water treatment choice has three parts: 1) **The Problem:** Clearly state the contaminant you are targeting and its concentration (e.g., 'The raw water contains E. coli at 50 CFU/100mL'). 2) **The Solution:** Name the specific treatment process you have selected (e.g., 'We will use chlorine disinfection.'). 3) **The Rationale:** Explain *why* that solution fixes that specific problem (e.g., 'Chlorine is a powerful oxidant that destroys the cell walls of bacteria like E. coli, making the water safe to drink.'). This simple 'problem-solution-rationale' structure is the foundation of any engineering recommendation.",
+                "For any municipal drinking water source, there are a few non-negotiable baseline tests that must be performed to assess safety. The most critical are tests for microbial contamination, specifically for **E. coli** or fecal coliforms, as these indicate the potential presence of dangerous pathogens. Another non-negotiable test is for **turbidity**, as it affects the efficiency of disinfection. Finally, a test for **disinfectant residual** (like chlorine) in the distribution system is essential to ensure the water remains safe on its way to the consumer. These are the absolute basics for public health protection.",
+                "Calculations must accompany recommendations because engineering is a quantitative discipline. A recommendation without calculations is just an opinion. Calculations demonstrate that the proposed solution is sized correctly, will be effective, and is based on scientific principles, not guesswork. For example, showing a dosage calculation proves you know how much chemical is needed, which is critical for both safety and cost. Showing a tank volume calculation proves the system can handle the town's water demand. Without numbers, a proposal lacks credibility and cannot be properly evaluated or implemented.",
+                "A one-page findings summary, often called an executive summary, should be a high-level overview. It must include: 1) **Problem Statement:** A brief, one- or two-sentence summary of the core issue (e.g., 'The town's well water exceeds the EPA limit for arsenic.'). 2) **Proposed Solution:** A clear statement of the recommended action (e.g., 'We recommend the installation of an adsorptive media filtration system.'). 3) **Key Justification:** A few bullet points highlighting the main benefits, such as 'Reduces arsenic below 10 µg/L,' 'Proven and reliable technology,' and 'Estimated capital cost of $X.' 4) **Conclusion/Next Steps:** A final sentence on the recommended path forward (e.g., 'We advise proceeding with a detailed design.')."
+            ],
+            "final_submission": "Water is very important for life. All towns need to have water. Sometimes the water is not good. This can be a problem. As an engineer, my job is to think about these things. The town has a water issue. The water needs to be fixed so people can use it. It is very important for the town to have good water.\n\nWhen I look at this problem, I see that the water needs help. Water can come from rivers or from the ground. It travels in pipes to get to houses. Along the way, things can happen to it. So we need to be careful. The environment is also important. We should not pollute the environment. Clean rivers are good for fish and plants. Everything is connected. Having a good town means having good water and a good environment for everyone to live in and be happy.\n\nMy findings are that water is a precious resource. We should all work together to protect it. The town should consider ways to make sure their water is the best it can be. There are many things to think about. This report is about the water. In conclusion, the water issue in the town is something that an engineer can look at. I have looked at it and the situation is clear. The problem needs a solution and we should find one.",
+            "feedback": {
+                "c1": "Poor. The submission completely fails to identify the contamination problem or any water quality issues. It speaks in generalities and does not define the engineering challenge. (8/40)",
+                "c2": "Poor. The text fails to explain why water contamination is a concern from a health or environmental perspective. It only offers vague statements like 'water is important.' (3/15)",
+                "c3": "Poor. No appropriate treatment method is discussed or proposed. The submission does not offer any solution to the undefined problem. (7/35)",
+                "c4": "Poor. The submission is completely disorganized and lacks any technical communication. It does not present findings in a structured way and reads as a collection of unrelated, generic statements. (2/10)",
+                "total": "20/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "key_points": [
+                "Identifies microbial contamination and high turbidity as primary issues.",
+                "Explains health impacts (illness) and environmental impacts (eutrophication potential).",
+                "Proposes a multi-stage treatment: coagulation, flocculation, sedimentation, filtration, and chlorination.",
+                "Provides basic technical rationale for each step but lacks specific design parameters or flow rates.",
+                "Presentation is clear and logical, but could use more technical depth in explaining process details."
+            ],
+            "llm_questions": [
+                "What are the typical indicators of microbial contamination in water?",
+                "How does turbidity impact the effectiveness of water disinfection?",
+                "Can you describe the steps of a conventional water treatment plant?",
+                "What is the role of chlorine residual in the distribution system?",
+                "How are treatment efficiency targets typically set?"
+            ],
+            "llm_answers": [
+                "The typical indicators of microbial contamination in water are total coliforms, fecal coliforms, and E. coli. While total coliforms are naturally present in the environment and are not necessarily harmful, their presence suggests a potential pathway for pathogens. Fecal coliforms and E. coli are more specific indicators of fecal contamination from humans or animals, signaling a direct risk of pathogenic bacteria, viruses, and protozoa that can cause gastrointestinal diseases.",
+                "Turbidity, which is the cloudiness or haziness of a fluid caused by individual particles that are generally invisible to the naked eye, can significantly impact the effectiveness of water disinfection. High turbidity can shield microorganisms from disinfectants like chlorine or UV light, preventing them from being effectively inactivated. These particles also consume disinfectants, increasing the chemical demand and potentially leading to inadequate disinfection throughout the system. Therefore, effective turbidity removal through coagulation, flocculation, and filtration is a critical precursor to disinfection.",
+                "A conventional water treatment plant typically follows several key steps: 1) **Coagulation and Flocculation:** Chemicals (coagulants) are added to cause small, suspended particles to stick together, forming larger, heavier particles called 'floc.' 2) **Sedimentation:** The water flows into large tanks where the heavy floc settles to the bottom by gravity. 3) **Filtration:** The water then passes through filters (e.g., sand, gravel, activated carbon) to remove any remaining suspended particles. 4) **Disinfection:** A disinfectant, usually chlorine, is added to kill any remaining bacteria, viruses, or other microorganisms. 5) **Storage and Distribution:** Treated water is stored in reservoirs and then distributed to consumers through a network of pipes.",
+                "The role of chlorine residual in the distribution system is crucial for maintaining water safety from the treatment plant to the consumer's tap. It acts as a continuous disinfectant, protecting against potential recontamination as water travels through pipes or enters storage tanks. This residual ensures that if any microorganisms are introduced into the system, they are inactivated before reaching the consumer, providing a critical barrier against waterborne disease.",
+                "Treatment efficiency targets are typically set based on a combination of factors. Primarily, they are driven by regulatory standards such as the EPA's Maximum Contaminant Levels (MCLs) for various pollutants. These are legally enforceable standards for drinking water quality. Additionally, targets might be influenced by public health advisories, the specific characteristics of the raw water source, treatability studies, and the desired level of public confidence. Engineers design systems to not only meet but often exceed these regulatory targets to provide a margin of safety and ensure robust performance under varying conditions."
+            ],
+            "final_submission": "The town's water source, a local river, has shown concerning levels of microbial contamination, with E. coli detected at 30 CFU/100mL, exceeding safe drinking water standards. Furthermore, turbidity levels frequently rise above 10 NTU, especially after rainfall, indicating a significant presence of suspended solids. These contaminants pose an immediate public health risk, as pathogenic bacteria can cause acute gastrointestinal illness. Long-term, consistent high turbidity can also harbor pathogens and complicate effective disinfection, potentially leading to chronic health issues. From an environmental perspective, the high organic load contributing to turbidity can reduce dissolved oxygen in the river downstream, harming aquatic ecosystems.\n\nAddressing this contamination is paramount for public health and environmental sustainability. Untreated water can lead to widespread outbreaks, impacting the health and economic stability of the community. Therefore, a robust and reliable water treatment process is essential to ensure the provision of safe drinking water.\n\nMy proposed treatment process is a conventional surface water treatment train designed to effectively remove both microbial contaminants and turbidity. It will consist of five main stages: \n1.  **Coagulation:** Rapid mixing where chemicals like aluminum sulfate (alum) are added to neutralize the charge of suspended particles, allowing them to clump together.\n2.  **Flocculation:** Slow mixing to encourage the small clumps to grow into larger, more settleable 'floc' particles.\n3.  **Sedimentation:** The water flows into large basins where the heavy floc settles out by gravity.\n4.  **Filtration:** Water passes through multi-media filters (e.g., sand and anthracite) to remove any remaining suspended particles and protozoa.\n5.  **Disinfection:** Chlorine is added to inactivate bacteria and viruses, ensuring a safe residual throughout the distribution system. This multi-barrier approach is proven highly effective for river water sources.\n\nIn presenting my findings, I recommend the immediate design and implementation of this conventional treatment plant. Initial design calculations indicate that a typical alum dose of 15-20 mg/L would be required for effective coagulation. The plant would be designed for a maximum daily flow of 1.0 MGD to serve the town's population. Post-treatment, we anticipate turbidity consistently below 0.3 NTU and non-detectable levels of E. coli, well within federal and state regulatory limits. This comprehensive solution will safeguard public health and restore confidence in the town's drinking water supply.",
+            "feedback": {
+                "c1": "Good. The submission identifies specific contaminants (E. coli, high turbidity) and potential sources (river, rainfall). It discusses levels but doesn't provide specific quantitative data for E.coli levels against a regulatory standard. (34/40)",
+                "c2": "Excellent. You have provided a thorough explanation of both acute health risks and the long-term challenges high turbidity poses for disinfection. The environmental impact (dissolved oxygen reduction) is also well-connected. (14/15)",
+                "c3": "Good. The selection of a conventional treatment train (coagulation, flocculation, sedimentation, filtration, chlorination) is highly suitable for a turbid river source with microbial contamination. The function of each step is explained, but a deeper justification for choosing this specific combination over alternatives could be more explicit. (28/35)",
+                "c4": "Average. The findings are presented logically, and technical terms are used. However, the explanation of how each process works could be more detailed, and the overall structure, while clear, could benefit from more formal headings and data tables for improved clarity and impact. (7/10)",
+                "total": "83/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "key_points": [
+                "Identifies nitrates and pesticides but lacks specific data.",
+                "Explains health impacts (blue baby syndrome) and environmental issues (algal blooms).",
+                "Proposes ion exchange for nitrates and GAC for pesticides.",
+                "General description of methods, lacking detailed justification or operational parameters.",
+                "Presentation has some technical language but is not well-structured or fully explained."
+            ],
+            "llm_questions": [
+                "What are common sources of nitrates and pesticides in drinking water?",
+                "What specific health concerns are associated with nitrates and pesticides?",
+                "How do ion exchange and activated carbon work to remove contaminants?",
+                "What factors influence the design of GAC and ion exchange systems?",
+                "How can the cost-effectiveness of a treatment method be presented?"
+            ],
+            "llm_answers": [
+                "Common sources of nitrates in drinking water primarily stem from agricultural runoff, particularly from fertilizers and manure. Septic systems and sewage discharges can also contribute. Pesticides originate from agricultural activities, suburban lawn and garden care, and sometimes industrial runoff, entering surface water or leaching into groundwater.",
+                "Nitrates pose a significant health risk, especially to infants, by causing methemoglobinemia, also known as 'blue baby syndrome,' which impairs the blood's ability to carry oxygen. In adults, high nitrate levels have been linked to potential cancer risks. Pesticides, depending on their type, can cause a wide range of health issues, including neurological damage, reproductive problems, endocrine disruption, and various forms of cancer with chronic exposure.",
+                "Ion exchange works by swapping undesirable ions in water (like nitrates) with harmless ions (like chloride) held on a resin bead. As water passes through the resin, the nitrates are attracted to the resin and exchange places with the chloride ions. Activated carbon (GAC) works through adsorption; its highly porous structure provides a large surface area that traps and holds organic molecules, including many pesticides, effectively removing them from the water.",
+                "Several factors influence the design of GAC and ion exchange systems. For GAC, these include the type and concentration of organic contaminants, contact time required for adsorption, flow rate, and the frequency of carbon regeneration or replacement. For ion exchange, critical factors include the target ion concentration, competing ions in the water, resin capacity, flow rate, regeneration frequency, and the management of brine waste from regeneration.",
+                "The cost-effectiveness of a treatment method can be presented by comparing the total life-cycle costs (capital and operational) against the benefits achieved, such as compliance with health standards, reduced health risks, and improved water quality. This can be quantified by calculating the cost per unit of contaminant removed or the cost per cubic meter of treated water. Including a comparison with alternative methods, highlighting the pros and cons (e.g., lower operating cost vs. higher capital cost), helps justify the chosen solution."
+            ],
+            "final_submission": "The town's well water has been found to be contaminated with elevated levels of nitrates and some trace pesticides, likely due to agricultural runoff in the surrounding area. While specific quantitative data is still being compiled, preliminary tests indicate nitrate levels are approaching 15 mg/L, exceeding the EPA MCL of 10 mg/L. The presence of pesticides, even at low concentrations, indicates a need for action due to their potential health impacts. This problem is serious as nitrates can cause 'blue baby syndrome' in infants, and various pesticides are known carcinogens or endocrine disruptors. Environmentally, excess nitrates contribute to eutrophication of nearby surface waters, leading to algal blooms and oxygen depletion.\n\nThe justification for treatment is clear: protecting vulnerable populations, especially infants, from nitrate poisoning, and safeguarding the long-term health of all residents from pesticide exposure. Furthermore, preventing nutrient runoff contributes to the overall health of the local ecosystem.\n\nTo address this dual contamination challenge, I propose a treatment approach involving two distinct processes. For nitrate removal, an **ion exchange system** is recommended. This technology is highly effective at selectively removing nitrate ions from water by exchanging them for less harmful ions, typically chloride. For pesticide removal, a **granular activated carbon (GAC) filtration system** is proposed. GAC is well-known for its ability to adsorb a wide range of organic compounds, including many common pesticides. The systems would be implemented as a multi-stage process, with ion exchange targeting nitrates and GAC handling pesticides, ensuring comprehensive removal.\n\nMy findings suggest that this combined approach offers an effective solution. The ion exchange resin will be regenerated using a salt brine solution on a scheduled basis, while the GAC will require periodic backwashing and eventual replacement of the carbon media, typically every 1-3 years depending on loading. While initial capital investment is required, the long-term benefits of safe drinking water and environmental protection outweigh the costs. We anticipate treated water to consistently meet or exceed all regulatory standards for both nitrates and pesticides, restoring public confidence in the town's water supply.",
+            "feedback": {
+                "c1": "Good. The submission identifies two specific contaminants (nitrates, pesticides) and links them to a source (agricultural runoff). It provides an approximate nitrate level but lacks precise, quantified data against a regulatory standard for both contaminants. (32/40)",
+                "c2": "Good. You have clearly explained the specific health effects of nitrates (blue baby syndrome) and general risks of pesticides (carcinogens, endocrine disruptors). The environmental impact of nitrates (eutrophication) is also well-noted. (11/15)",
+                "c3": "Average. The selection of ion exchange for nitrates and GAC for pesticides is suitable. However, the explanation of the methods, while correct, is somewhat general and lacks detailed justification of *why* these are the optimal choices for *this specific town* or a comparison with other viable alternatives. (21/35)",
+                "c4": "Needs Improvement. The presentation is somewhat disjointed; while technical terms are used, the flow is not always smooth, and the findings section could be more structured. It reads more like a detailed proposal outline than a final, well-explained report. (5/10)",
+                "total": "69/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "key_points": [
+                "Identifies heavy metals (lead) from old pipes and bacterial contamination.",
+                "Mentions general health risks, but lacks specific environmental justification.",
+                "Proposes Reverse Osmosis (RO) for lead and UV disinfection for bacteria.",
+                "Provides basic reasoning for method selection but lacks operational details or cost analysis.",
+                "Presentation is formal in tone but lacks data, structure, and a clear call to action."
+            ],
+            "llm_questions": [
+                "What are the common sources of lead contamination in drinking water?",
+                "How do UV disinfection and Reverse Osmosis (RO) differ in their treatment mechanisms?",
+                "What are the primary operational challenges for RO systems in a municipal setting?",
+                "How would a cost-benefit analysis be approached for different treatment options?",
+                "What key elements make a technical report persuasive to stakeholders?"
+            ],
+            "llm_answers": [
+                "The most common sources of lead contamination in drinking water are the corrosion of lead pipes, lead service lines connecting homes to the main water supply, and lead-containing fixtures or solder used in plumbing. Even if the municipal water is lead-free when it leaves the treatment plant, lead can leach into the water as it sits in or flows through older infrastructure within the distribution system and household plumbing.",
+                "UV disinfection works by exposing water to ultraviolet light, which damages the DNA of microorganisms like bacteria and viruses, rendering them unable to reproduce and cause infection. It's a physical process that doesn't add chemicals. Reverse Osmosis (RO), on the other hand, is a membrane separation process that uses pressure to force water molecules through a semipermeable membrane, leaving behind dissolved solids, including heavy metals like lead, as well as many organic compounds and pathogens. RO physically separates contaminants, while UV inactivates them.",
+                "Primary operational challenges for RO systems in a municipal setting include: 1) **Pretreatment requirements:** RO membranes are susceptible to fouling by suspended solids, scaling minerals (like calcium carbonate), and chlorine degradation, requiring extensive pretreatment. 2) **High energy consumption:** Pumping water at high pressures through membranes requires significant energy. 3) **Concentrate disposal:** RO produces a concentrated brine waste stream that requires careful management and disposal, which can be costly and environmentally challenging. 4) **Membrane fouling and cleaning:** Membranes require regular cleaning to maintain performance, and eventually, replacement, which adds to operational costs.",
+                "A cost-benefit analysis for different treatment options would involve: 1) **Quantifying Costs:** Estimating capital costs (equipment, construction), operational costs (energy, chemicals, labor, maintenance, waste disposal), and indirect costs (e.g., public relations, legal fees if contamination persists). 2) **Quantifying Benefits:** Monetizing the reduction in health risks (e.g., fewer illnesses, avoided medical costs), improved environmental quality, increased property values, and enhanced public trust. 3) **Comparison:** Directly comparing the total costs and benefits of each option over its lifecycle. Decision-makers can then select the option that provides the greatest net benefit or the most cost-effective way to achieve compliance.",
+                "Key elements that make a technical report persuasive to stakeholders include: 1) **Clear Problem Definition:** Quantifying the problem with data, illustrating its severity and implications. 2) **Feasible Solutions:** Presenting well-researched, technically sound options with their pros and cons. 3) **Data-Driven Justification:** Supporting recommendations with evidence, calculations, and predicted outcomes. 4) **Cost Analysis:** Providing transparent and realistic estimates of capital and operating costs. 5) **Risk Assessment:** Discussing potential risks of inaction or proposed solutions. 6) **Clear Communication:** Using accessible language, executive summaries, and visual aids (charts, diagrams) to convey complex information effectively. 7) **Actionable Recommendations:** Clearly stating the recommended path forward and next steps."
+            ],
+            "final_submission": "The town is grappling with two significant water contamination issues. Firstly, recent testing has indicated the presence of lead in the drinking water, primarily attributed to an aging infrastructure including lead service lines and older internal plumbing. While specific concentration data across the entire distribution system is still being gathered, initial samples from several homes exceeded the EPA's action level of 15 µg/L. Secondly, there have been sporadic reports of bacterial contamination, suggesting potential issues with source water protection or distribution system integrity, though specific pathogen identification is ongoing. The health implications of lead exposure, particularly for children, are severe, causing developmental delays and neurological damage. Bacterial contamination can lead to acute gastrointestinal illnesses. While direct environmental impacts are less pronounced for lead in drinking water, preventing its release is part of broader environmental stewardship.\n\nTo ensure the provision of safe and clean drinking water, targeted treatment is essential. The primary goal is to mitigate public health risks associated with lead and bacterial pathogens. Immediate action is critical to protect the health of the community.\n\nMy recommended treatment approach involves a multi-pronged strategy. For lead removal, I propose the implementation of a centralized **Reverse Osmosis (RO)** system at the main treatment facility. RO is highly effective in removing dissolved heavy metals like lead, ensuring that water entering the distribution system is compliant. For the bacterial contamination concerns, **Ultraviolet (UV) disinfection** will be employed. UV light effectively inactivates bacteria and viruses without adding chemicals, avoiding disinfection byproducts. This combination will provide a robust barrier against both identified contaminant types.\n\nMy findings highlight the necessity for this dual treatment approach. The RO system will require significant capital investment and careful management of concentrate waste, but its effectiveness in lead removal is unparalleled. The UV system offers a chemical-free, reliable method for microbial control. Detailed engineering design will include pilot testing for RO membrane performance and sizing the UV reactors for appropriate dosage to achieve 4-log inactivation of bacteria. This combined solution aims to deliver water that consistently meets all health-based standards, ensuring the safety and well-being of the town's residents. Further analysis of specific costs and operational parameters would be conducted in the next phase.",
+            "feedback": {
+                "c1": "Average. The submission identifies lead from aging pipes and bacterial contamination, but lacks specific quantitative data for either contaminant. It mentions exceeding an action level but provides no measured concentrations. (28/40)",
+                "c2": "Average. The justification mentions severe health implications for lead and acute illnesses for bacteria but lacks depth in connecting these to the broader need for treatment or specific environmental sustainability aspects beyond 'environmental stewardship'. (9/15)",
+                "c3": "Average. The proposed methods, Reverse Osmosis for lead and UV disinfection for bacteria, are generally suitable. However, the justification is somewhat general, and it lacks specific details on how these would be implemented in this particular context, or a comparison with other viable options. (23/35)",
+                "c4": "Poor. The submission attempts a formal tone but lacks a structured presentation of findings. It does not include specific data, detailed design parameters, or a clear, actionable summary. The language, while technical in places, is not integrated into a coherent and persuasive report structure. (3/10)",
+                "total": "63/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "key_points": [
+                "Vague problem definition, mentioning 'funny taste' and 'some contaminants.'",
+                "General justification: 'bad water makes people sick.'",
+                "Proposed solution: 'carbon filters' for taste/odor and 'chlorination' for germs, without strong links to identified issues.",
+                "Lacks specific technical details, calculations, or strong alignment of solutions to vague problems.",
+                "Presentation is informal, lacks structure and professional language."
+            ],
+            "llm_questions": [
+                "What are common aesthetic water quality issues and how are they addressed?",
+                "Why is it crucial to identify specific contaminants rather than just 'bad stuff'?",
+                "Can a single treatment method address a wide range of contaminants effectively?",
+                "What is the difference between primary and secondary drinking water standards?",
+                "How do you formally communicate uncertainty in preliminary findings?"
+            ],
+            "llm_answers": [
+                "Common aesthetic water quality issues include unpleasant tastes or odors (often from organic matter, chlorine, or sulfur), discoloration (from iron or manganese), and turbidity (cloudiness). These issues are primarily addressed through physical and chemical treatments. For taste and odor, activated carbon filtration is highly effective. Discoloration from metals can be removed through oxidation and filtration. Turbidity is managed with coagulation, flocculation, sedimentation, and filtration.",
+                "It is crucial to identify specific contaminants rather than just 'bad stuff' because different contaminants require different treatment approaches. For example, bacteria are killed by disinfection, while heavy metals require removal processes like ion exchange or reverse osmosis. A vague problem definition leads to generic or inappropriate solutions that may not effectively resolve the actual contamination or may even create new issues.",
+                "A single treatment method rarely addresses a wide range of contaminants effectively. Most treatment technologies are designed to target specific classes of contaminants (e.g., filtration for suspended solids, disinfection for microorganisms, adsorption for organic chemicals). For complex contamination scenarios, a 'treatment train' or multi-barrier approach, combining several different processes, is typically required to ensure comprehensive water quality improvement.",
+                "Primary drinking water standards are legally enforceable standards set by the EPA that protect public health by limiting the levels of contaminants in drinking water. These contaminants are known to cause health problems. Secondary drinking water standards are non-enforceable guidelines for contaminants that may cause cosmetic effects (like skin or tooth discoloration) or aesthetic effects (like taste, odor, or color) in drinking water. While they don't pose a health risk, they can impact public acceptance of the water.",
+                "To formally communicate uncertainty in preliminary findings, one might use phrases such as: 'Initial observations suggest...', 'Preliminary tests indicate a potential presence of...', 'Further investigation is required to confirm...', 'Based on limited sampling, it appears that...', or 'While comprehensive data is still pending, the current trends point towards...'. It's important to state the limitations of the data explicitly and outline the next steps for a more definitive assessment."
+            ],
+            "final_submission": "The town's water has been receiving complaints about a 'funny taste' and occasional odors, and initial reports suggest the presence of 'some contaminants.' As an environmental engineer, my first step would be to define this problem more clearly. While specific laboratory results are still pending, it is understood that the community's concern points to water quality issues that need resolution. The general problem is that the water is not palatable, and there is a suspicion of unsafe substances, which is leading to public distrust and potential health worries.\n\nAddressing water quality is fundamental for public health. If water tastes bad, people may turn to alternative sources that are not regulated, potentially exposing them to greater risks. While the direct health risks of the 'funny taste' might be low, the unknown 'contaminants' could pose a threat. Therefore, providing clean, aesthetically pleasing, and safe water is crucial for the community's well-being. It is also important for maintaining environmental quality standards, as poor water quality can have broader ecological impacts.\n\nMy proposed approach to treat the water involves a combination of two common methods. To address the taste and odor issues, I would recommend installing **activated carbon filters**. These filters are known to be effective at removing organic compounds that cause unpleasant tastes and smells. For any potential microbial concerns or 'germs' as suspected, a standard **chlorination system** would be implemented. Chlorination is a widely used and effective method for disinfecting water, killing most bacteria and viruses, and providing a residual disinfectant in the distribution system. This two-step process offers a practical solution to both the aesthetic and potential health-related concerns.\n\nIn my preliminary findings, I recommend a phased implementation. First, a thorough water quality analysis is needed to identify specific taste-and-odor compounds and potential pathogens. Based on these findings, the activated carbon filters would be sized to remove identified aesthetic issues, and the chlorination system would be set up to achieve appropriate disinfection. For instance, a chlorine residual of 0.5 mg/L would be targeted. While this is a general approach given the limited initial data, it represents a standard and effective strategy for improving water quality in a town facing these types of general contamination concerns, ensuring that the water is both safe to drink and pleasant to use.",
+            "feedback": {
+                "c1": "Needs Improvement. The problem definition is vague, relying on 'funny taste,' 'odors,' and 'some contaminants' without specific identification or quantification. This limits the ability to design targeted solutions. (20/40)",
+                "c2": "Average. The justification touches on public health and environmental concerns in general terms ('bad water makes people sick'), but lacks depth or specific links to the undefined contaminants' risks. (9/15)",
+                "c3": "Needs Improvement. The proposed solutions (activated carbon for taste/odor, chlorination for 'germs') are general and not strongly aligned with clearly identified, quantified problems. The text assumes the contaminants, rather than deriving treatment from a clear problem definition. (18/35)",
+                "c4": "Needs Improvement. The presentation has minimal structure and uses weak technical language, despite mentioning some technical concepts. It reads more like an informal discussion of ideas than a structured engineering report with clear findings. (5/10)",
+                "total": "52/100"
+            }
+        },
+        {
+            "quality": "Poor",
+            "key_points": [
+                "Fails to identify any specific contamination problem.",
+                "Provides generic statements about the importance of water, not specific justifications for treating contamination.",
+                "Offers no appropriate or even vaguely relevant treatment method.",
+                "Presentation is highly disorganized, lacks technical communication, and contains no actionable findings."
+            ],
+            "llm_questions": [
+                "What are the absolute minimum data points required to begin water problem definition?",
+                "Why is a specific link between contaminant and health effect crucial for engineers?",
+                "What distinguishes a 'treatment method' from a general 'idea'?",
+                "What is the purpose of an executive summary in an engineering report?",
+                "How do regulatory bodies respond to vague engineering proposals?"
+            ],
+            "llm_answers": [
+                "The absolute minimum data points required to begin defining a water contamination problem are: 1) Identification of specific contaminants (e.g., 'E. coli' or 'arsenic'), not just 'bad stuff.' 2) The measured concentration of these contaminants. 3) The relevant regulatory limit or health guideline for each contaminant. Without these, an engineer cannot determine if there is a problem, how severe it is, or what solutions might be appropriate.",
+                "A specific link between a contaminant and its health effect is crucial for engineers because it directly informs the severity of the problem, the urgency of intervention, and the target removal efficiency of the treatment system. For example, knowing that lead causes neurological damage in children drives the need for highly effective lead removal technologies and justifies the investment. Without this link, the problem lacks weight and the solution lacks clear objectives.",
+                "A 'treatment method' is a defined, scientifically proven process or technology (e.g., chlorination, reverse osmosis, activated carbon filtration) with known mechanisms of action, design parameters, and expected outcomes. A general 'idea' (e.g., 'add chemicals' or 'clean the pipes') lacks this specificity, scientific basis, and engineering detail, making it impossible to implement, evaluate, or predict its effectiveness.",
+                "The purpose of an executive summary in an engineering report is to provide a concise, high-level overview of the entire document for busy stakeholders. It summarizes the problem, the proposed solution, key findings, and recommendations, allowing readers to grasp the core message and make informed decisions quickly without reading the entire detailed report.",
+                "Regulatory bodies would typically respond to vague engineering proposals by rejecting them as incomplete. They require clear, data-driven problem definitions, specific proposed solutions with technical details, and a demonstration of how the proposed actions will achieve compliance with established standards. Vague proposals indicate a lack of understanding of the problem and an inability to design an effective and safe solution, which is unacceptable when dealing with public health and environmental protection."
+            ],
+            "final_submission": "The town is definitely having some kind of water issues. It's important to think about the water because people need to drink it and use it for things. As an engineer, I would really focus on the water situation. Everyone knows that good water is important for a good town. So, the main problem is that the water needs to be better for the people.\n\nWater is life, so it's super important. If the water isn't good, then people might not be as healthy as they could be. Also, clean water is good for nature, like plants and animals. We don't want to hurt the environment. So, fixing the water is a good thing for everybody, for health and for the environment. It's just generally a good idea to have good water.\n\nTo make the water better, we should probably do some things. Maybe we can check the pipes to see if they are old. And we could put some chemicals in the water to make it clean. I think adding some sort of cleaning agent would be a good way to get rid of the bad stuff. It's a method that makes the water clean. This will definitely help the town's water problem, because it's a way to clean it up before it gets to homes. This is my solution to the problem.\n\nSo, my findings are that the town needs better water. My plan is to make the water better by cleaning it. This will make the people happy and the environment better. It's a good solution to fix the water situation. The town should definitely do this to help everyone. We need to work together to ensure that the water is good.",
+            "feedback": {
+                "c1": "Poor. The submission completely fails to identify any specific contamination problem. It uses extremely vague terms like 'some kind of water issues,' 'bad stuff,' and 'better for the people' without defining any actual contaminants or water quality parameters. (12/40)",
+                "c2": "Needs Improvement. The text provides very generic statements about the importance of water for life and health, but it does not specifically explain why *contamination* is a concern or what specific health/environmental consequences arise from it. (7/15)",
+                "c3": "Poor. No appropriate treatment method is discussed. Vague ideas such as 'check the pipes' and 'put some chemicals in the water to make it clean' are mentioned, but these do not constitute an engineering treatment process. There is no alignment between an undefined problem and an undefined solution. (7/35)",
+                "c4": "Needs Improvement. The submission is highly disorganized, lacks any technical communication, and consists almost entirely of general, non-specific statements. It fails to present any actionable findings or a coherent plan. (5/10)",
+                "total": "31/100"
+            }
+        }
+    ]
+}
