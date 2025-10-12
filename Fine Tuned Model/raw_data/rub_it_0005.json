@@ -1,0 +1,463 @@
+{
+    "domain": "Information Technology",
+    "prompt": "Discuss the role of cybersecurity audits in compliance and risk management. Evaluate how audits help organizations identify vulnerabilities, ensure regulatory adherence, and support continuous security improvement.",
+    "rubric": {
+        "rubric_id": "rub_it_0005",
+        "criteria": [
+            {
+                "criterion_id": "c1",
+                "name": "Conceptual Understanding",
+                "description": "Demonstrates deep understanding of the topic and related concepts.",
+                "performance_descriptors": {
+                    "excellent": "Shows precise and in-depth understanding with clear theoretical support.",
+                    "good": "Understands key concepts well with minor gaps.",
+                    "average": "Adequate explanation with some inaccuracies.",
+                    "needs_improvement": "Surface-level or confused understanding.",
+                    "poor": "Major misunderstandings or misrepresentations."
+                },
+                "weight": 25
+            },
+            {
+                "criterion_id": "c2",
+                "name": "Application to Real-World Scenarios",
+                "description": "Applies concepts meaningfully to examples or scenarios.",
+                "performance_descriptors": {
+                    "excellent": "Uses insightful and relevant examples clearly linked to concepts.",
+                    "good": "Examples mostly appropriate with some gaps in explanation.",
+                    "average": "Examples present but superficial or unclear connections.",
+                    "needs_improvement": "Vague or generic examples.",
+                    "poor": "No real-world application."
+                },
+                "weight": 35
+            },
+            {
+                "criterion_id": "c3",
+                "name": "Critical Evaluation",
+                "description": "Analyzes challenges, limitations, or trade-offs thoughtfully.",
+                "performance_descriptors": {
+                    "excellent": "Provides insightful, research-backed critical evaluation.",
+                    "good": "Reasonable evaluation but less depth.",
+                    "average": "Mentions challenges superficially.",
+                    "needs_improvement": "Unclear or irrelevant critique.",
+                    "poor": "No critical evaluation."
+                },
+                "weight": 10
+            },
+            {
+                "criterion_id": "c4",
+                "name": "Structure and Academic Writing",
+                "description": "Quality of writing, flow, citations, and tone.",
+                "performance_descriptors": {
+                    "excellent": "Clear, coherent, formal tone, flawless grammar, and proper referencing.",
+                    "good": "Mostly clear and professional; minor issues.",
+                    "average": "Organization present but inconsistent.",
+                    "needs_improvement": "Structure or tone hinder clarity; referencing weak.",
+                    "poor": "Disorganized or informal writing."
+                },
+                "weight": 30
+            }
+        ]
+    },
+    "submissions": [
+        {
+            "quality": "Excellent",
+            "authorship": "human",
+            "key_points": [
+                "Define cybersecurity audits and differentiate internal, external, compliance audits.",
+                "Discuss key standards and frameworks: ISO 27001, NIST, PCI-DSS.",
+                "Explain how audits identify vulnerabilities and gaps.",
+                "Analyze role of audits in risk management and regulatory compliance.",
+                "Discuss audit limitations and recommendations for improvement.",
+                "Provide examples of audit findings leading to security enhancements.",
+                "Explain continuous monitoring and improvement cycles.",
+                "Use professional academic style with proper citations."
+            ],
+            "llm_questions": [
+                "What types of cybersecurity audits exist?",
+                "How do audits support compliance with regulations?",
+                "What frameworks guide cybersecurity audits?",
+                "How do audits identify and reduce security risks?",
+                "What are audit limitations and improvements?"
+            ],
+            "llm_answers": [
+                "Cybersecurity audits can be categorized in several ways. Internal audits are conducted by an organization's own staff to assess internal controls and prepare for external reviews. External audits are performed by independent third parties to provide an objective assessment, often for certification or regulatory purposes. Compliance audits specifically measure adherence to standards like GDPR, HIPAA, or PCI-DSS. Lastly, technical audits focus on specific systems, such as penetration testing or vulnerability assessments, to uncover technical weaknesses.",
+                "Audits are a primary mechanism for demonstrating compliance. Regulations like the Health Insurance Portability and Accountability Act (HIPAA) or the General Data Protection Regulation (GDPR) require organizations to protect sensitive data. Audits provide documented evidence that the necessary security controls are in place and operating effectively. The audit report serves as proof of due diligence for regulators, customers, and partners, helping the organization avoid fines and reputational damage.",
+                "Several established frameworks guide cybersecurity audits by providing a structured set of controls and best practices. The NIST Cybersecurity Framework (CSF) is widely adopted for its risk-based approach to managing cybersecurity. ISO/IEC 27001 is an international standard that specifies the requirements for establishing, implementing, maintaining, and continually improving an Information Security Management System (ISMS). For the payment card industry, the Payment Card Industry Data Security Standard (PCI-DSS) is mandatory and provides a very prescriptive set of controls to audit against.",
+                "Audits systematically identify risks by comparing an organization's current security posture against a defined standard or framework. This process uncovers gaps, suchs as unpatched systems, weak access controls, or inadequate incident response plans. By documenting these vulnerabilities in an audit report, management is provided with a prioritized list of issues. This enables them to allocate resources effectively to remediate the highest-priority risks, thereby strengthening the overall security posture and reducing the likelihood of a successful cyberattack.",
+                "Despite their importance, audits have limitations. They are often a point-in-time assessment and may not reflect the dynamic nature of cyber threats. This can create a false sense of security. Additionally, the scope of an audit might be too narrow, missing vulnerabilities in other areas. To improve, organizations should move towards a model of continuous auditing and monitoring, using automated tools to track compliance in real-time. This complements periodic, in-depth audits and fosters a culture of continuous security improvement rather than a 'pass-the-audit' mentality."
+            ],
+            "final_submission": "Cybersecurity audits are a cornerstone of modern information security, serving a dual function as both a diagnostic tool for risk management and a validation mechanism for regulatory compliance. These systematic evaluations of an organization's security posture are essential for identifying vulnerabilities, ensuring adherence to legal and industry standards, and fostering a culture of continuous improvement. By methodically examining policies, procedures, and technical controls against established frameworks, audits provide the objective evidence necessary for effective governance.\n\nThe primary role of a cybersecurity audit in risk management is to identify and prioritize security gaps. Auditors use frameworks like the NIST Cybersecurity Framework or ISO 27001 to assess controls across various domains, from access control to incident response. For instance, an audit might reveal that an organization lacks a formal patch management policy, leaving critical systems vulnerable to known exploits (von Solms & von Solms, 2018). The resulting audit report provides a clear, actionable roadmap for remediation, allowing the organization to allocate resources strategically to mitigate the most significant risks. This process transforms risk management from a theoretical exercise into an evidence-based practice.\n\nFrom a compliance perspective, audits are indispensable. Regulations such as GDPR in Europe and HIPAA in the United States mandate stringent data protection controls, with severe penalties for non-compliance. A third-party audit offers an independent attestation that an organization meets these requirements. For example, a healthcare provider undergoing a HIPAA audit must demonstrate that patient data is encrypted and that access is restricted to authorized personnel. The audit report serves as crucial documentation for regulators and stakeholders, proving due diligence and building trust (Janal, 2021).\n\nHowever, it is crucial to evaluate the limitations of traditional audits. As point-in-time assessments, they can create a false sense of security, as the threat landscape is constantly evolving. A system deemed secure during an audit could become vulnerable the next day. This highlights the need for a shift towards continuous security improvement. Audit findings should feed directly into a Plan-Do-Check-Act (PDCA) cycle, where identified weaknesses are remediated, and new controls are implemented and monitored. Integrating automated scanning and continuous monitoring tools complements periodic audits, providing a more dynamic and resilient security posture.\n\nIn conclusion, cybersecurity audits are a multifaceted and critical component of an organization's security strategy. They provide the necessary rigor to identify vulnerabilities for risk management, the formal evidence required for regulatory compliance, and the foundational insights needed to drive continuous security improvement. While not a panacea, when integrated into a broader culture of proactive security, audits empower organizations to navigate the complex digital landscape with confidence and resilience.\n\nReferences\nJanal, D. (2021). *The Official CMMC R.A.P. Book for CMMC 2.0*. Brandcertain Publishing.\nvon Solms, R., & von Solms, S. (2018). Cybersecurity and information security–what's the difference? *In The ISFA book on information security and privacy for the practicing manager* (pp. 3-10). Springer, Cham.",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0, 1],
+                "human_paragraph_indices": [4, 5],
+                "hybrid_paragraph_indices": [2, 3],
+                "notes": "Paragraphs 0 and 1 are purely AI (formal, technical style); paragraphs 4 and 5 are human (reflective, explanatory style with narrative elements); paragraphs 2 and 3 are hybrid (mix factual AI content with human-like interpretation and context)."
+            },
+            "feedback": {
+                "c1": "The submission demonstrates a precise and in-depth understanding of cybersecurity audits. It clearly defines the concept and situates it within risk management and compliance, referencing established frameworks like NIST and ISO 27001, which provides strong theoretical support. (25/25)",
+                "c2": "The essay uses insightful and relevant examples that are clearly linked to the concepts discussed. The mention of a HIPAA audit for a healthcare provider and the specific finding of a missing patch management policy effectively illustrate the practical application of audits in real-world scenarios. (35/35)",
+                "c3": "An insightful and research-backed critical evaluation is provided. The submission thoughtfully analyzes the limitations of point-in-time audits and proposes a shift towards continuous monitoring and improvement, demonstrating a nuanced understanding of the topic's complexities. (10/10)",
+                "c4": "The writing is clear, coherent, and maintains a formal academic tone throughout. The structure is logical, with a clear introduction, body, and conclusion. Grammar and syntax are flawless, and proper in-text citations and a reference list are included, meeting all requirements for excellent academic writing. (30/30)",
+                "total": "100/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "human",
+            "key_points": [
+                "Defines cybersecurity audits and their main purpose.",
+                "Explains the connection to compliance and risk management.",
+                "Mentions relevant regulations like GDPR and HIPAA.",
+                "Describes how audits help find weaknesses in a system.",
+                "Briefly touches on the idea of continuous improvement.",
+                "Structure is logical, but writing could be more concise.",
+                "Includes some citations to support claims."
+            ],
+            "llm_questions": [
+                "What is the main goal of a cybersecurity audit?",
+                "Can you give an example of how an audit helps with compliance?",
+                "Are all cybersecurity audits the same?",
+                "What happens after an audit finds a problem?",
+                "Why is 'continuous improvement' important in cybersecurity?"
+            ],
+            "llm_answers": [
+                "The main goal of a cybersecurity audit is to get a clear and objective picture of an organization's security health. It involves systematically reviewing security policies, technical controls, and procedures to see if they are effective and meet established standards. The audit aims to find vulnerabilities and areas of non-compliance before they can be exploited by attackers or flagged by regulators, providing a roadmap for improvement.",
+                "Certainly. Let's take the example of a retail company that must comply with the Payment Card Industry Data Security Standard (PCI-DSS). An audit would check if the company is meeting all the standard's requirements, such as using firewalls, encrypting cardholder data, and restricting access. If the audit finds that data is not encrypted correctly, it will be flagged as a high-risk compliance failure. The company can then fix this issue to avoid fines and maintain its ability to process credit card payments.",
+                "No, not all audits are the same. They can differ in scope and purpose. For example, an internal audit is done by the company's own team to check on things and prepare for an external review. An external audit is done by an independent third party for official certification. There are also compliance audits, which focus specifically on meeting legal or regulatory rules like GDPR, and technical audits, like penetration tests, that focus on finding software vulnerabilities.",
+                "When an audit identifies a problem, or a 'finding', it is documented in the final audit report. This report typically categorizes findings by severity (e.g., critical, high, medium, low). The organization's management team then reviews the report and creates a remediation plan. This plan outlines the steps, timeline, and resources needed to fix each identified issue. The goal is to address the most critical problems first to reduce the overall risk to the organization.",
+                "Continuous improvement is crucial because cyber threats are not static; they are constantly evolving. A security measure that is effective today might be obsolete tomorrow. An organization that passes an audit and then does nothing until the next one is vulnerable. Continuous improvement means security is an ongoing process, not a one-time event. It involves constantly monitoring for new threats, regularly updating defenses, and using insights from audits and other assessments to get progressively stronger over time."
+            ],
+           "final_submission": "Cybersecurity audits play a very important role in how modern companies handle their digital security. They are a formal process to check a company's security systems and make sure everything is working as it should. The main goals are to manage risks, comply with rules, and help the company get better at security over time.\n\nFor risk management, audits are key to finding weaknesses. An auditor might go through a company's network and see that some servers are missing important security updates. This is a big risk because hackers can use these weaknesses to get in. The audit report points out these problems so the IT team can fix them. By finding these issues before an attack happens, the company can save a lot of money and protect its reputation (Knapp, 2021). Audits give a structured way to look at and reduce risk across the whole organization.\n\nCompliance is another major reason for audits. Many industries have strict rules about data protection, like HIPAA for healthcare or GDPR for companies handling data of EU citizens. An audit provides proof that a company is following these rules. For example, an audit can confirm that sensitive customer data is encrypted and that only certain employees can access it. Without these audits, a company wouldn't be able to legally prove it is compliant, which could lead to large fines.\n\nFinally, audits support continuous security improvement. An audit shouldn't be seen as a final exam that you just want to pass. Instead, the findings from an audit should be used to make the company's security stronger. If an audit finds that employees are using weak passwords, the company can implement a better password policy and provide more training. This way, the audit starts a cycle of improvement where the company is always getting better at defending itself. This proactive approach is much better than just reacting to problems after they happen.\n\nIn conclusion, cybersecurity audits are essential. They help manage risk by finding vulnerabilities, ensure compliance with important regulations, and provide the information needed for continuous improvement of security measures.\n\nReferences\nKnapp, K. J. (2021). *Cybersecurity and Global Information Assurance: Threat Analysis and Response Solutions*. IGI Global.",
+           "hybrid_breakdown": {
+               "ai_paragraph_indices": [0, 1],
+               "human_paragraph_indices": [4, 5],
+               "hybrid_paragraph_indices": [2, 3],
+               "notes": "Paragraphs 0 and 1 are AI (formal, technical style); paragraphs 2 and 3 are hybrid (mix of factual content with human-like explanation); paragraphs 4 and 5 are human (reflective, explanatory style with plain language and narrative)."
+            },
+            "feedback": {
+                "c1": "The submission understands the key concepts of cybersecurity audits, risk management, and compliance well. The explanations are clear and correct, though they lack the in-depth theoretical support seen in an excellent paper. It covers the core ideas without any significant gaps. (20/25)",
+                "c2": "Examples provided, such as missing server updates and weak password policies, are appropriate and help illustrate the points. However, the connection between these examples and the broader strategic concepts could be explained in more detail. (28/35)",
+                "c3": "The submission acknowledges the role of audits in improvement, which touches on critical evaluation. However, it does not explore the limitations or challenges of the audit process itself, resulting in a reasonable but less deep evaluation. (8/10)",
+                "c4": "The essay is mostly clear and professional in tone. The structure is logical with an introduction, distinct body paragraphs, and a conclusion. There are a few minor grammatical issues and awkward phrases, but they do not significantly hinder comprehension. Referencing is present but minimal. (24/30)",
+                "total": "80/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "human",
+            "key_points": [
+                "Defines a cybersecurity audit in simple terms.",
+                "Mentions that audits are for finding problems.",
+                "States that audits help companies follow rules.",
+                "Connects audits to making security better.",
+                "The explanation is basic and lacks detail.",
+                "No specific examples or frameworks are mentioned.",
+                "Structure is present but paragraphs are underdeveloped."
+            ],
+            "llm_questions": [
+                "What is a cybersecurity audit?",
+                "Why do companies need to do audits?",
+                "What is a security vulnerability?",
+                "What does 'compliance' mean in IT?",
+                "How can a company improve its security?"
+            ],
+            "llm_answers": [
+                "A cybersecurity audit is basically a check-up for a company's computer systems and data security. It's a formal review where someone looks at the company's security practices to see if they are good enough. They check things like security policies, user access, and software to find any weak spots that could be a problem.",
+                "Companies do audits for a few main reasons. First, to find and fix security problems before they get hacked. Second, many industries have laws or rules that say they must protect customer data, so audits are needed to prove they are following those rules. Audits can also help show customers and business partners that the company takes security seriously, which is good for business.",
+                "A security vulnerability is a weakness in a computer system, network, or application that a hacker could use to cause harm. This could be a bug in the software code, a misconfigured server, or even a person making a mistake, like using an easy-to-guess password. Identifying and fixing vulnerabilities is a major part of cybersecurity.",
+                "'Compliance' in IT means following a set of rules, standards, or laws that apply to your industry or the type of data you handle. For example, a hospital has to comply with HIPAA rules to protect patient medical records. A company that processes credit cards has to comply with PCI-DSS standards. Being in compliance means you are meeting the required security controls.",
+                "A company can improve its security in many ways. After an audit, they should fix the problems that were found. Other general improvements include training employees on how to spot phishing emails, regularly updating software to patch vulnerabilities, using strong passwords and multi-factor authentication, and having a good plan for what to do if a security incident occurs."
+            ],
+            "final_submission": "A cybersecurity audit is when you check a company's security to see if its good. It is an important part of information technology today because there are many threats online. Audits help with compliance and managing risks and making things better.\n\nFirst, audits help find vulnerabilities. Vulnerabilities are weaknesses in the system. An audit will look at the company's computers and network and find these weaknesses. For example, maybe the software is old. The audit report will tell the company to update its software. This helps manage risk because it closes the holes that hackers could get through. By finding problems early, the company can avoid getting attacked.\n\nSecond, audits are for compliance. Many companies have to follow rules. These rules are there to protect people's private information. An audit will check if the company is following the rules. If they are, they pass the audit. If not, they have to fix things. This is important because companies can get big fines if they don't comply with the regulations. So audits help them stay out of trouble.\n\nAudits also help with continuous improvement. Security is not something you do just one time. It has to be done all the time. After an audit finds problems, the company can work to fix them. This makes their security stronger than it was before. Then maybe next year, they will have another audit to see if they are still doing a good job. This process helps them keep getting better at security.\n\nSo in conclusion, cybersecurity audits are useful for finding weaknesses, for making sure you follow the rules, and for overall improvement of your security.",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0, 1],
+                "human_paragraph_indices": [4],
+                "hybrid_paragraph_indices": [2, 3],
+                "notes": "Paragraphs 0 and 1 are AI (formal, factual style); paragraphs 2 and 3 are hybrid (mix of formal info with human-readable explanation); paragraph 4 is human (plain language, reflective summary)."
+            },
+            "feedback": {
+                "c1": "The submission provides an adequate explanation of what an audit is and its purpose, but the understanding is not deep. It correctly identifies the main functions but contains some inaccuracies in its oversimplified descriptions. For instance, it reduces an audit to just 'checking if security is good'. (16/25)",
+                "c2": "Examples are present but are superficial and not clearly connected to the concepts. The example of 'old software' is mentioned but not developed to show how an audit systematically identifies and reports this within a risk management framework. (23/35)",
+                "c3": "The essay mentions the idea of improvement but does so superficially. It does not analyze any challenges, trade-offs, or limitations of the audit process, which is a key part of critical evaluation. (6/10)",
+                "c4": "The organization of the essay is present, with an introduction, body, and conclusion. However, the paragraphs are short and underdeveloped, and the flow between ideas is inconsistent. The tone is overly simplistic, and there is no referencing. (20/30)",
+                "total": "65/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "human",
+            "key_points": [
+                "Attempts to define a security audit but the definition is vague.",
+                "Mentions security and rules but doesn't explain the connection.",
+                "Confuses different cybersecurity concepts.",
+                "Lacks clear structure and focus.",
+                "Contains significant grammatical errors.",
+                "Does not address all parts of the prompt.",
+                "No examples or evaluation."
+            ],
+            "llm_questions": [
+                "Could you explain what a 'security audit' is in your own words?",
+                "What is the difference between an audit and just fixing a computer?",
+                "What kind of 'rules' are you referring to when you mention compliance?",
+                "How does finding one 'vulnerability' help a whole company?",
+                "What is 'risk management'?"
+            ],
+            "llm_answers": [
+                "A security audit is like a test for a company's computers. It's when someone, maybe an expert, comes to look at your security to see if it is safe from hackers. They check your computer settings and maybe try to see if they can break in. The goal is to get a report card on your security.",
+                "Fixing a computer is usually a reaction to a problem, like when it gets a virus or stops working. An audit is proactive and more organized. It's a planned event to check the entire system, not just one broken part. An audit looks at policies, rules, and procedures, not just the technology itself, to find potential problems before they happen.",
+                "The 'rules' for compliance can come from different places. Some are laws made by governments, like GDPR in Europe, which protects personal data. Others are standards created by industries, like PCI-DSS for any business that handles credit card information. These rules set minimum security requirements that organizations must meet to operate legally and securely.",
+                "Finding one vulnerability helps the whole company because it often points to a bigger, systemic issue. For example, if an audit finds one server that hasn't been updated, it might lead to the discovery that the company has no process for updating any of its servers. Fixing that one vulnerability is good, but creating a company-wide update process (a 'patch management policy') prevents hundreds of similar vulnerabilities from occurring in the future. It improves the overall security system, not just one part.",
+                "Risk management is the process of identifying, assessing, and controlling threats to an organization. In cybersecurity, this means figuring out what your important digital assets are (like customer data), what bad things could happen to them (like a data breach), and what the likelihood and impact of those bad things are. Then, you decide what to do about each risk: you might accept it, avoid it, transfer it (e.g., with insurance), or mitigate it (by implementing security controls)."
+            ],
+         "final_submission": "Cyber security audits are a thing companies do for their IT. Its about looking for problems in the computer network. A company needs good security so it does an audit for risk management. They want to find the problems.\n\nAn audit helps with compliance. There are rules for companies, they have to follow them. If they dont they get in trouble. An audit checks the rules. So the company can say we did an audit and we are secure. This is important for business. The audit tells you what is wrong. It finds vulnerabilities.\n\nFinding vulnerabilities is the main part. A hacker can use a vulnerability to steal data. The audit is like being a good hacker to find the problems first. This is continuous improvement because when you find a vulnerability you fix it and then you are better. Then you find another one. It never stops. Because hackers never stop. So you have to keep auditing.\n\nSo the role of audits is for risk management and for compliance because of the rules and it helps a company improve. All companies with computers should do it. It protects their data and the customer data which is very important for everyone. It is a big part of the IT job.",
+         "hybrid_breakdown": {
+            "ai_paragraph_indices": [0, 1],
+            "human_paragraph_indices": [3],
+            "hybrid_paragraph_indices": [2],
+            "notes": "Paragraphs 0-1 are AI (formal explanation), paragraph 2 is hybrid (mix of formal and casual explanation), paragraph 3 is human (plain, conversational style summarizing the importance)."
+            },
+            "feedback": {
+                "c1": "The submission demonstrates a surface-level and confused understanding of the topic. It uses key terms like 'compliance' and 'vulnerability' but fails to explain them or their relationship to audits with any clarity. The definitions provided are vague and circular. (13/25)",
+                "c2": "There are no real-world examples provided to illustrate the concepts. The submission makes vague statements like 'an audit checks the rules' but does not give an example of a rule or how an audit would check it, failing to apply the concepts meaningfully. (18/35)",
+                "c3": "There is no clear or relevant critique of the audit process. The mention of continuous improvement is superficial and does not constitute a critical evaluation of the topic. It fails to discuss any limitations or challenges. (5/10)",
+                "c4": "The structure and tone of the writing significantly hinder clarity. The essay is a series of short, disconnected statements with poor grammar and sentence construction. There is no logical flow, making it difficult to follow the argument. Referencing is absent. (15/30)",
+                "total": "51/100"
+            }
+        },
+        {
+            "quality": "Poor",
+            "authorship": "human",
+            "key_points": [
+                "Fails to define or describe a cybersecurity audit.",
+                "The content is largely off-topic, focusing on hackers and viruses.",
+                "Shows a major misunderstanding of all key concepts.",
+                "Writing is disorganized and difficult to understand.",
+                "Does not address the prompt in any meaningful way.",
+                "No structure, examples, or evaluation."
+            ],
+            "llm_questions": [
+                "Let's start with the basics. What do you think an 'audit' is?",
+                "The prompt mentions 'compliance'. What does that word mean to you?",
+                "Can you describe what 'risk management' might involve for a company's computers?",
+                "What is the difference between an audit and running an anti-virus scan?",
+                "How would a company 'improve' its security?"
+            ],
+            "llm_answers": [
+                "An 'audit' is a formal, official inspection or examination of something. In finance, it's a review of accounts. In cybersecurity, it's a structured review of an organization's security systems. It's not just a quick check; it's a systematic process that compares what the company is doing against a known standard, law, or best practice to see if there are any gaps.",
+                "'Compliance' means following a rule or order. In a business context, it means adhering to laws, regulations, and standards that are relevant to your industry. For example, a bank must comply with financial regulations, and a hospital must comply with healthcare privacy laws (like HIPAA). Being non-compliant can result in fines, legal action, and loss of business.",
+                "Risk management for a company's computers involves a few steps. First, you identify your valuable assets (e.g., customer database, financial records). Second, you identify potential threats to those assets (e.g., hackers, employee error, hardware failure). Third, you analyze the vulnerabilities or weaknesses that a threat could exploit. Finally, you decide how to handle that risk, such as by adding security controls like firewalls or employee training to make an attack less likely to succeed.",
+                "Running an anti-virus scan is a single, automated technical task. It is a security control that looks for known malicious software on a computer. A cybersecurity audit is a much broader strategic assessment. An audit would check *if* the company has anti-virus software installed on all computers, *if* it is being updated regularly, and *if* there is a policy for what to do when a virus is found. The scan is one small action; the audit reviews the entire process and policy around that action.",
+                "A company would 'improve' its security based on a clear plan. This usually starts by identifying weaknesses, which can be done through an audit, penetration test, or incident review. Based on these findings, the company prioritizes the biggest risks and creates projects to fix them. Improvements could be technical (like installing a new firewall), procedural (like creating a better password policy), or educational (like training staff on cybersecurity awareness)."
+            ],
+            "final_submission": "Hackers are everywhere on the internet and they want to steal your information. That is why information technology is so important. They use viruses and malware to get into computers. If a computer gets a virus it can be very bad. It can delete all your files. Or it can be ransomware which locks your computer and you have to pay money.\n\nEvery company needs to have good IT people to stop the hackers. They need to install firewalls and antivirus software on every computer. This is risk management. The risk is the hacker and you manage it with the software. Also people need to use good passwords that are long and have symbols in them. Don't write your password down on a sticky note. That is bad security.\n\nCompliance is when you get hacked the police will come and check your computers. You have to be compliant with them. You also need to tell your customers that their data was stolen. So it is better to not get hacked.\n\nContinuous improvement is you should always update your antivirus so it can find the new viruses. If you dont update it you will get hacked. Security is a big problem and companies need to spend a lot of money on IT to be safe from all the bad people online who want to steal stuff.",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0, 1],
+                "human_paragraph_indices": [3],
+                "hybrid_paragraph_indices": [2],
+                "notes": "Paragraphs 0-1 are AI (technical explanation and risk management), paragraph 2 is hybrid (mix of casual and technical, discussing compliance), paragraph 3 is human (plain, conversational style about continuous improvement and security importance)."
+            },
+            "feedback": {
+                "c1": "The submission demonstrates major misunderstandings of the core concepts. It incorrectly defines compliance as cooperating with police after a hack and conflates the broad process of an audit with specific technical actions like running antivirus software. There is a complete misrepresentation of the prompt's topic. (5/25)",
+                "c2": "There is no real-world application of the concept of a cybersecurity audit. The submission discusses general, low-level security advice (e.g., using good passwords) but fails to connect it to the systematic, organizational-level process of an audit. (7/35)",
+                "c3": "The submission contains no critical evaluation. It does not analyze or critique any concepts, instead offering a series of disconnected and often incorrect statements about general cybersecurity threats. (2/10)",
+                "c4": "The writing is disorganized, informal, and lacks a coherent structure. The essay jumps between topics like hackers, viruses, and passwords without a logical progression, making it extremely difficult to understand. It is a poor piece of writing that completely fails to address the prompt. (6/30)",
+                "total": "20/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "human",
+            "key_points": [
+                "Good definition of audits and their role in compliance/risk.",
+                "Provides general examples of regulations and vulnerabilities.",
+                "Mentions audit types and phases but lacks specific depth in application.",
+                "Superficial analysis of limitations, no clear research-backed critique.",
+                "Well-structured writing with minor clarity issues and some missing citations."
+            ],
+            "llm_questions": [
+                "What are the primary goals of cybersecurity audits?",
+                "How do audits contribute to regulatory compliance?",
+                "Provide an example of an audit finding and its impact.",
+                "What are some common frameworks used in audits?",
+                "What are the biggest challenges organizations face during audits?"
+            ],
+            "llm_answers": [
+                "The primary goals of cybersecurity audits are multifaceted: to systematically identify security weaknesses (vulnerabilities), ensure adherence to relevant laws and industry standards (compliance), and to provide a basis for continuously improving an organization's security posture. They act as an independent verification mechanism.",
+                "Audits contribute significantly to regulatory compliance by providing objective evidence that an organization has implemented the required security controls. For instance, an audit can confirm that an organization handling financial data meets PCI-DSS requirements for encrypting cardholder data, thus demonstrating compliance to regulators and avoiding penalties.",
+                "An audit finding could be 'Lack of multi-factor authentication (MFA) on all remote access points.' The impact is a heightened risk of unauthorized access through compromised credentials. The organization would then be directed to implement MFA across all remote services, significantly reducing this attack vector.",
+                "Common frameworks include ISO/IEC 27001, which outlines requirements for an Information Security Management System (ISMS); the NIST Cybersecurity Framework (CSF), which provides a flexible, risk-based approach; and industry-specific standards like PCI-DSS for payment card processing, or HIPAA for healthcare data.",
+                "Organizations often face several challenges during audits, including resource constraints (time, budget, personnel), the complexity of modern IT environments, difficulty in demonstrating the effectiveness of controls (not just their presence), and ensuring continuous compliance rather than just a point-in-time snapshot. Remediation of identified issues can also be a significant challenge."
+            ],
+            "final_submission": "Cybersecurity audits are a fundamental component of an organization's defense strategy in the digital age. They are systematic examinations of an information system, or the management of information security, against a set of predetermined criteria, whether regulatory, contractual, or internal policy-driven. The overarching purpose is to evaluate the effectiveness of security controls, identify vulnerabilities, and ensure adherence to established security postures. This process is instrumental in both risk management and regulatory compliance, forming a crucial feedback loop for continuous security improvement.\n\nIn terms of risk management, audits serve as a critical diagnostic tool. By conducting thorough assessments, organizations can uncover latent vulnerabilities in their infrastructure, applications, and operational procedures. For example, an audit might reveal outdated software, misconfigured firewalls, or insufficient access controls that could be exploited by malicious actors. The identification of these weaknesses allows an organization to prioritize and implement remediation strategies, thereby proactively mitigating potential threats and reducing their overall risk exposure. This structured approach moves an organization from reactive problem-solving to proactive risk mitigation.\n\nAudits are also important because they make sure companies follow the rules. Every business has regulations to comply with, like keeping customer information safe. An audit checks that the company is doing what it is supposed to do. If something is missing or wrong, the company can fix it before it causes a problem. This is very practical for avoiding legal trouble and making customers trust the company. It’s like a checkpoint to make sure everything is working as it should.\n\nCompliance audits aren’t enough on their own. You also have to keep improving security all the time. That means updating software, training staff, and checking for new threats regularly. An audit shows where the problems are, but the company has to act on it. Continuous improvement is key because the digital world keeps changing, and threats evolve every day. Without ongoing effort, audits become just a piece of paper and don’t protect anything.\n\nHybrid Paragraph: While audits provide formal evidence of compliance and risk management, it’s easy to forget that they are most effective when paired with real-world testing. For instance, an organization may pass every checklist, but if employees fall for phishing attacks, the security is still weak. Combining audit findings with practical drills and simulated attacks ensures the company is actually protected, not just theoretically compliant.\n\nHybrid Paragraph: Another thing to consider is communication. Technical reports and audit metrics are great for IT teams, but managers and non-technical staff need simpler explanations. Hybrid audits, which summarize technical findings in plain language and connect them to business impact, help everyone understand why a vulnerability matters and why fixing it promptly is crucial for the organization’s overall health.\n\nHowever, it is important to note that audits, while essential, are not without their limitations. They typically offer a snapshot in time, meaning that a system deemed secure today could become vulnerable tomorrow due to rapidly evolving threats or changes in the IT environment. The scope of an audit can also be restrictive, potentially overlooking security gaps outside the defined parameters. Furthermore, the focus often shifts to 'passing the audit' rather than genuinely enhancing security. To truly support continuous security improvement, audit findings must be integrated into a broader, agile security lifecycle that includes regular monitoring, vulnerability management, and ongoing employee training, rather than being treated as a one-off event. This transition from periodic checks to a more dynamic security posture is critical for long-term resilience.\n\nIn summary, cybersecurity audits are pivotal for establishing a robust security framework. They enable organizations to identify and address risks, fulfill compliance obligations, and lay the groundwork for ongoing improvements. When approached holistically, audits provide invaluable insights that strengthen an organization’s ability to protect its assets and maintain trust in an increasingly interconnected world.",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0, 1, 7, 8],
+                "human_paragraph_indices": [2, 3],
+                "hybrid_paragraph_indices": [4, 5],
+                "notes": "Paragraphs 0,1,7,8 are AI (formal, technical); paragraphs 2,3 are human (simpler, conversational); paragraphs 4,5 are hybrid (mix of technical and plain language)."
+            },
+            "feedback": {
+                "c1": "The submission demonstrates a good understanding of cybersecurity audits, clearly defining their purpose within risk management and compliance. It touches upon key aspects like identifying vulnerabilities and adherence to standards, but lacks some of the in-depth theoretical underpinning and differentiation of audit types for an 'Excellent' rating. (20/25)",
+                "c2": "The essay provides appropriate general examples, such as outdated software and misconfigured firewalls, to illustrate how audits function in real-world scenarios. However, it doesn't delve into specific, detailed case studies or how particular frameworks are applied in practice with the depth expected for an 'Excellent' application. (28/35)",
+                "c3": "The submission identifies limitations of audits, such as their 'snapshot in time' nature and the risk of 'passing the audit' mentality. This is a reasonable evaluation, but it lacks the deeper, research-backed critical analysis or exploration of trade-offs required for a higher score. The critique is present but somewhat superficial. (5/10)",
+                "c4": "The writing is mostly clear and coherent, maintaining a professional tone. The structure is logical with a clear introduction, body paragraphs, and conclusion. There are minor instances where clarity could be improved, and while general concepts are presented well, specific academic referencing is sparse, preventing an 'Excellent' score. (22.5/30)",
+                "total": "75.5/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "human",
+            "key_points": [
+                "Basic understanding of audits as security checks.",
+                "Connects audits to finding problems and following rules but with limited detail.",
+                "Examples are generic and lack depth or specific context.",
+                "Briefly acknowledges continuous improvement, but no real critical evaluation of audits themselves.",
+                "Structure is present but flow is inconsistent, some basic writing errors."
+            ],
+            "llm_questions": [
+                "What's the difference between an internal and external audit?",
+                "How does an audit help a company manage risk?",
+                "Can you name any specific compliance rules an audit might check?",
+                "What happens to security after an audit?",
+                "What are some difficulties companies face when doing an audit?"
+            ],
+            "llm_answers": [
+                "An internal audit is conducted by an organization's own employees or an internal department to assess its security controls and compliance posture. It helps prepare for external audits and improve internal processes. An external audit is performed by an independent third party, offering an unbiased evaluation and often required for certifications or regulatory compliance.",
+                "An audit helps manage risk by systematically identifying vulnerabilities and weaknesses that could lead to security incidents. By pointing out these specific flaws, like unpatched systems or weak password policies, the audit report allows the organization to understand where its highest risks lie and allocate resources to fix them, thereby reducing the likelihood and impact of a potential breach.",
+                "Specific compliance rules an audit might check include GDPR for data privacy (e.g., how personal data is collected and stored), HIPAA for healthcare (e.g., protection of patient medical records), or PCI-DSS for any entity handling credit card data (e.g., encryption standards, network segmentation).",
+                "After an audit, the organization receives a report detailing findings, including areas of non-compliance and identified vulnerabilities. The security team or management then develops a remediation plan to address these issues. This often leads to updated policies, new technical controls, or additional staff training, all aimed at improving the overall security posture.",
+                "Companies often face difficulties during audits due to the complexity of their IT systems, the sheer volume of data and applications to assess, and the need to dedicate significant staff time and resources to the audit process. Additionally, demonstrating compliance for nuanced controls, or maintaining security while business operations continue, can be challenging."
+            ],
+           "final_submission": "Cybersecurity audits are important activities for companies in the IT world. They are basically checks to see if a company’s computer systems and data are safe. The main reasons for doing these audits are to manage risks and to make sure the company follows rules, which is called compliance. They also help improve security over time.\n\nWhen it comes to risk management, audits help by finding problems or weaknesses, known as vulnerabilities, in the company’s systems. For example, an audit might discover that some software is not up to date, which could be an entry point for hackers. By finding these issues, the company can then fix them before an actual attack happens. This makes the company less likely to suffer a data breach or other security incident. It’s like checking your house for broken windows before a storm hits.\n\nFor compliance, audits are crucial because many industries have strict rules about how they must protect sensitive information, like customer data or financial records. For instance, if a company handles credit card payments, it needs to follow rules like PCI-DSS. An audit verifies that the company is indeed following these rules. If an audit finds the company isn't compliant, it means they might face big fines or lose their ability to operate in certain areas. So, audits provide proof that a company is acting responsibly and legally.\n\nAudits also support continuous improvement. Security is not a one-time setup; it’s an ongoing process. When an audit report comes back with findings, it gives the IT team a list of things to work on. Fixing these problems makes the security better. Then, new technologies come out, and new threats appear, so the company needs to adapt. Regular audits encourage this cycle of reviewing, fixing, and upgrading, so the security posture keeps getting stronger rather than staying stagnant. This makes sure that the organization is always trying to be safer.\n\nIn conclusion, cybersecurity audits are a necessary tool for managing the various risks associated with digital operations, for ensuring compliance with important regulations, and for creating a framework for continuous enhancement of security defenses. They help companies stay safe and trustworthy in the digital landscape.",
+           "hybrid_breakdown": {
+              "ai_paragraph_indices": [0, 1],
+              "human_paragraph_indices": [4],
+              "hybrid_paragraph_indices": [2, 3],
+              "notes": "Paragraphs 0-1 are formal AI-style; paragraphs 2-3 mix technical and simple language → hybrid; paragraph 4 is human-style conclusion."
+            },
+            "feedback": {
+                "c1": "The submission provides an adequate explanation of cybersecurity audits and their role, showing a reasonable grasp of key concepts. However, the depth of understanding is somewhat limited, and it doesn't fully explore the theoretical underpinnings or different audit methodologies with sufficient detail. (16.25/25)",
+                "c2": "The essay includes generic examples like 'outdated software' and references general regulations like PCI-DSS, but these examples are not developed with specific scenarios or insightful application. The connections between abstract concepts and practical scenarios are present but superficial. (21/35)",
+                "c3": "The submission mentions continuous improvement, which is relevant to the topic. However, it does not offer a critical evaluation of the audit process itself, its challenges, or limitations, failing to provide the depth of analysis expected for a 'Good' or 'Excellent' rating. (7.5/10)",
+                "c4": "The structure is logical, with a clear introduction, body, and conclusion. However, the flow between paragraphs is sometimes inconsistent, and the writing exhibits some basic grammatical errors and repetitive phrasing. While generally clear, the academic tone is not fully sustained, and no citations are provided. (16.5/30)",
+                "total": "61.25/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "human",
+            "key_points": [
+                "Basic and somewhat confused definition of audits.",
+                "Attempts to link audits to 'rules' and 'problems' but lacks clarity.",
+                "Very vague examples, often just restating points.",
+                "No critical evaluation of challenges or limitations.",
+                "Poor structure, grammar, and informal tone.",
+                "Fails to meet word count and depth requirements."
+            ],
+            "llm_questions": [
+                "What is an 'audit' in simple terms?",
+                "Why do companies need to worry about 'rules' for computers?",
+                "What is a 'vulnerability' in cybersecurity?",
+                "How does an audit help fix security problems?",
+                "What does 'risk management' mean for cybersecurity?"
+            ],
+            "llm_answers": [
+                "An 'audit' is like a review or a check-up. For cybersecurity, it means someone looks closely at a company's computer systems and how they protect data to see if everything is safe and working correctly. It's not just a quick look, but a systematic check against standards.",
+                "Companies need to worry about 'rules' (regulations) because they often handle sensitive information, like customer credit card numbers or health records. Governments and industry bodies create these rules to protect people's data. If companies don't follow them, they can face big fines, lose customer trust, or even get sued.",
+                "A 'vulnerability' in cybersecurity is a weakness or a flaw in a system, software, or process that can be exploited by an attacker. Think of it like a weak spot in a wall that someone could break through. It could be an unpatched software bug, a default password, or a mistake in how a system is set up.",
+                "An audit helps fix security problems by identifying them clearly. The audit report lists all the vulnerabilities and non-compliance issues found. This gives the company a clear list of what needs to be fixed and often suggests how to fix them. Without an audit, these problems might go unnoticed until it's too late.",
+                "'Risk management' in cybersecurity is about figuring out what your important digital things are, what dangers they face, and how likely and bad those dangers could be. Then, you decide what to do: try to avoid the risk, reduce it (by fixing vulnerabilities), accept it, or transfer it (like with insurance). It's all about protecting what's valuable from harm."
+            ],
+            "final_submission": "Cybersecurity audits are important for companies. They help to check security. Security is very important today because of hackers. Audits help with risk and also for rules.\n\nAn audit finds problems in computers. These problems are vulnerabilities. Hackers can use vulnerabilities to get into systems. So an audit finds these problems first so the company can fix them. This is how it helps manage risk. If you fix the problems, the risk is lower. It's like finding a broken lock before someone tries to break in.\n\nThen there is compliance. Companies have to follow rules. Many rules say you have to protect customer data. An audit checks if the company follows these rules. If the company is not following rules, they could get in trouble. Like a big fine. So audits help companies obey the law. It proves they are doing what they are supposed to do.\n\nAudits also help security get better. When problems are found, you fix them. So the security gets stronger. It's a continuous thing. You always have to work on security because hackers are always trying new ways. So audits help a company keep up and not fall behind. But it is hard to keep up. It takes a lot of work.\n\nSo audits are about finding problems, following rules, and getting better at security. They are a necessary part of keeping computers and data safe for businesses today.",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0, 1],
+                "human_paragraph_indices": [4],
+                "hybrid_paragraph_indices": [2, 3],
+                "notes": "Paragraphs 0-1 are AI-style formal; paragraphs 2-3 mix simple language with technical explanation → hybrid; paragraph 4 is purely human-style, simple summary."
+            },
+            "feedback": {
+                "c1": "The submission demonstrates a needs improvement level of understanding. It attempts to define audits and their role but often uses vague and circular language ('Audits help to check security'). While core terms are present, the explanation of their meaning and interrelation is superficial and lacks precision. (12.5/25)",
+                "c2": "Examples are very generic and lack detail. The comparison of an audit to 'finding a broken lock before someone tries to break in' is a simplistic analogy but doesn't connect to specific audit processes or real-world IT scenarios. There's insufficient meaningful application of concepts. (15.75/35)",
+                "c3": "The submission includes a fleeting mention that 'it is hard to keep up' with security, but this does not constitute a critical evaluation. It fails to discuss any specific challenges, limitations, or trade-offs inherent in the audit process or its broader implications. (3/10)",
+                "c4": "The structure is somewhat present, but paragraphs are short and underdeveloped, leading to a choppy flow. The writing is informal, and there are noticeable grammatical errors and awkward phrasing that hinder clarity. There are no academic conventions like citations. (12/30)",
+                "total": "43.25/100"
+            }
+        },
+        {
+            "quality": "Excellent",
+            "authorship": "human",
+            "key_points": [
+                "Comprehensive definition and categorization of audits (internal, external, technical).",
+                "Detailed analysis of audit role in proactive risk identification and mitigation, linking to frameworks like COBIT.",
+                "Strong explanation of audit's function in compliance, referencing specific articles and industry standards.",
+                "Insightful critical evaluation of audit limitations, proposing advanced solutions like AI/ML integration.",
+                "Exceptional academic writing, coherent structure, flawless grammar, and extensive, well-cited references."
+            ],
+            "llm_questions": [
+                "Beyond identifying vulnerabilities, how do audits *proactively* manage risk?",
+                "What specific regulatory requirements make audits indispensable?",
+                "Can you elaborate on the types of audits and their distinct purposes?",
+                "How can organizations overcome the 'point-in-time' limitation of audits?",
+                "What emerging technologies could enhance future cybersecurity audits?"
+            ],
+            "llm_answers": [
+                "Audits proactively manage risk by not only identifying existing vulnerabilities but also by assessing the effectiveness of the entire control environment, including policies, procedures, and governance structures. They evaluate the *process* of security, not just its outcome. By benchmarking against mature frameworks like COBIT or NIST CSF, audits can highlight strategic gaps in risk governance, resource allocation, and threat intelligence integration, allowing organizations to implement preventative measures and foster a risk-aware culture before incidents occur. This shifts focus from reactive patching to proactive strategic alignment of security with business objectives.",
+                "Audits are indispensable for regulatory adherence, particularly with comprehensive data privacy laws. For instance, the GDPR's Article 32 mandates appropriate technical and organizational measures to ensure a level of security appropriate to the risk, which often necessitates regular security assessments. Similarly, SOX (Sarbanes-Oxley Act) for financial reporting requires robust internal controls, often verified through IT audits. HIPAA's Security Rule mandates administrative, physical, and technical safeguards for electronic protected health information (ePHI), with audits serving as primary evidence of compliance. These regulations are often prescriptive, demanding documented proof of control implementation and effectiveness, which audits provide.",
+                "Beyond internal and external categorizations, audits can be technical (e.g., penetration testing, vulnerability assessments focusing on system-level flaws), operational (evaluating security processes and procedures), or compliance-focused (specifically checking adherence to regulations like PCI-DSS or ISO 27001). Each type serves a distinct purpose, from deep-diving into specific system configurations to assessing broad organizational security management systems or ensuring legal and industry standard conformity.",
+                "To overcome the 'point-in-time' limitation, organizations are increasingly adopting continuous auditing and monitoring (CAM) strategies. This involves integrating automated tools for real-time data collection and analysis of security events, configuration changes, and policy adherence. By combining continuous technical monitoring with periodic, in-depth strategic and compliance-focused audits, organizations can achieve a more dynamic and up-to-date view of their security posture, transitioning from discrete checks to an integrated, adaptive security ecosystem.",
+                "Emerging technologies hold immense promise for enhancing cybersecurity audits. Artificial Intelligence and Machine Learning (AI/ML) can automate the analysis of vast datasets, detect anomalies, predict potential vulnerabilities, and even aid in generating audit reports more efficiently. Blockchain technology could provide immutable audit trails, enhancing transparency and integrity of security logs. Furthermore, behavioral analytics can identify insider threats or compromised accounts more effectively than traditional log reviews, offering a more intelligent and proactive approach to audit data analysis."
+            ],
+            "final_submission": "Cybersecurity audits are checks that companies do to make sure their computer systems are safe. They look at the way information is stored, who can access it, and how well security rules are followed. The goal is to find problems before they become big issues and to make sure the company is following the law.\n\nAudits are really helpful for spotting problems early. For example, if software isn’t updated or passwords are weak, auditors can catch it. Fixing these problems early helps keep hackers out and protects the company’s data. It’s like checking the locks on your doors before someone tries to break in.\n\nCompanies also have to follow rules like GDPR or HIPAA to protect customer data. Audits make sure they are following these rules. If a company isn’t compliant, it could get fined or lose trust from customers. An audit shows that the company is taking security seriously and doing what it should.\n\nAudits do have limits, though. They only show how things are at one point in time. New problems can happen later. That’s why companies combine audits with ongoing monitoring and automated checks. This hybrid approach keeps the company aware of new threats and makes security stronger over time.\n\nRegular audits, combined with continuous monitoring, give companies the best chance to keep their data safe and stay out of trouble. It’s a simple way to make sure everything works the way it should and that security keeps improving.\n\nReferences:\nENISA. (2020). *Cybersecurity Audits: Good Practices and Recommendations for European SMEs and Public Administrations*. European Union Agency for Cybersecurity.\nISACA. (2023). *COBIT 2019 Framework: Introduction and Methodology*. ISACA.\nISO/IEC 27002. (2022). *Information security, cybersecurity and privacy protection — Information security controls*.",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0, 1],
+                "hybrid_paragraph_indices": [2, 3],
+                "human_paragraph_indices": [4],
+                "notes": "Paragraphs 0-1 are AI-style formal; paragraphs 2-3 mix simple language with technical explanation → hybrid; paragraphs 4-5 are purely human-style, simple summary."
+            },
+            "feedback": {
+                "c1": "The submission demonstrates an exceptional and precise understanding of cybersecurity audits, comprehensively defining their role in risk management, compliance, and continuous improvement. It intelligently categorizes audits and links them to specific frameworks and strategic governance, providing deep theoretical and conceptual support. (23.75/25)",
+                "c2": "The essay uses highly insightful and relevant examples, such as zero-day vulnerabilities in cloud environments and deficiencies in incident response, clearly linking them to specific audit types and their impact. The discussion of GDPR Article 32, SOX, and HIPAA further enriches the application, demonstrating a nuanced understanding of real-world scenarios. (31.5/35)",
+                "c3": "An outstanding critical evaluation is provided, moving beyond typical limitations by discussing the 'point-in-time' issue and proposing advanced solutions like continuous auditing, SIEM, SOAR, and AI/ML integration. This demonstrates an insightful, research-backed, and forward-thinking analysis of the topic's complexities. (9/10)",
+                "c4": "The writing is exemplary: clear, highly coherent, and maintains a sophisticated academic tone. The structure is impeccably logical, with sophisticated sentence construction, flawless grammar, and advanced vocabulary. Extensive and proper in-text citations and a comprehensive reference list further demonstrate excellent academic rigor. (28.5/30)",
+                "total": "92.75/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "human",
+            "key_points": [
+                "Adequate definition of audits but lacks deeper theoretical grounding.",
+                "Strong in practical application, offering clear, relevant examples like unpatched servers and access controls.",
+                "Very weak critical evaluation, only briefly mentioning that audits are not perfect.",
+                "Writing is generally clear but lacks academic rigor and consistent flow, with some informal phrasing."
+            ],
+            "llm_questions": [
+                "What are the practical steps an auditor takes?",
+                "How do audit findings directly lead to risk reduction?",
+                "Which specific compliance standards are most relevant today?",
+                "What is the most crucial part of an audit for ongoing security?",
+                "What are some common pitfalls organizations face post-audit?"
+            ],
+            "llm_answers": [
+                "Practically, an auditor typically starts with planning and defining scope, then gathers evidence through documentation review (policies, procedures), interviews with staff, and technical testing (vulnerability scans, configuration reviews). They analyze this evidence against established criteria, identify findings (gaps, non-compliance), and finally report their conclusions and recommendations to management.",
+                "Audit findings directly lead to risk reduction by exposing specific vulnerabilities (e.g., an unencrypted database) or control deficiencies (e.g., lack of strong passwords). By documenting these, the audit provides a clear mandate for remediation. When these issues are fixed—e.g., encrypting the database or enforcing MFA—the identified risks are mitigated, making the organization less susceptible to attacks and data breaches.",
+                "Today, some of the most relevant compliance standards include GDPR (General Data Protection Regulation) for global data privacy, HIPAA (Health Insurance Portability and Accountability Act) for healthcare data in the U.S., PCI-DSS (Payment Card Industry Data Security Standard) for handling credit card information, and SOC 2 (Service Organization Control 2) for service providers managing customer data.",
+                "The most crucial part of an audit for ongoing security is the remediation phase and the subsequent follow-up. Identifying problems is only half the battle; actually fixing them and then verifying that the fixes are effective and sustainable is vital. An audit should trigger a cycle of continuous improvement, where lessons learned are integrated into daily security operations.",
+                "Common pitfalls post-audit include 'shelfware' (audit reports sitting unacted upon), inadequate funding or resources for remediation, a lack of clear ownership for corrective actions, and a failure to address the root causes of findings, leading to recurrence. Organizations must prioritize and track remediation efforts as diligently as the audit itself."
+            ],
+           "final_submission": "Cybersecurity audits are essential tools for any organization aiming to protect its digital assets and maintain trust. They involve a structured review of an organization's information systems and security practices to ensure that they are adequate, effective, and compliant with relevant regulations. The dual roles of risk management and compliance are deeply intertwined with the audit process, forming a backbone for continuous security improvement.\n\nIn the context of risk management, audits are instrumental in identifying vulnerabilities before they can be exploited. For instance, an audit team might discover that critical servers are running unpatched operating systems, or that network segmentation is insufficient, allowing potential lateral movement for attackers. These findings are then documented, highlighting the specific risks they pose, such as data breaches or system downtime. By having these risks clearly laid out, organizations can prioritize which vulnerabilities to address first, based on their potential impact and likelihood, thereby actively reducing their overall risk exposure. This proactive identification is far more effective than reacting to a breach after it has occurred.\n\nRegarding compliance, many industries operate under strict legal and regulatory mandates that dictate how data must be protected. The Payment Card Industry Data Security Standard (PCI-DSS) for credit card data, or the Health Insurance Portability and Accountability Act (HIPAA) for patient health information, are prime examples. An audit provides a formal, independent verification that an organization is meeting these specified requirements. If a healthcare provider undergoes a HIPAA audit, for instance, they must demonstrate that patient records are encrypted, access controls are properly configured, and staff are trained on privacy protocols. The audit report serves as official documentation for regulators, proving due diligence and preventing costly fines or legal repercussions.\n\nWhile audits are undeniably beneficial, they are not a perfect solution. One common criticism is that they often represent a snapshot in time. A system might be compliant and secure on the day of the audit, but new vulnerabilities or changes in the threat landscape could render it insecure the very next day. This limitation underscores the importance of treating audit findings as a starting point for ongoing security enhancements rather than a final destination. Continuous monitoring and regular reassessments are crucial to maintaining a robust security posture. Organizations need to build a culture where security improvements are an ongoing process, not just a response to a periodic audit.\n\nIn conclusion, cybersecurity audits are fundamental to understanding and improving an organization's security. They provide a structured way to uncover vulnerabilities for risk management, offer formal validation for regulatory compliance, and serve as a vital input for a dynamic process of continuous security improvement. Their value lies in their ability to provide an objective assessment, guiding organizations towards a more secure and resilient future.",
+           "hybrid_breakdown": {
+              "ai_paragraph_indices": [0, 1],
+              "hybrid_paragraph_indices": [2, 3],
+              "human_paragraph_indices": [4],
+              "notes": "Paragraphs 0-1 are AI-style formal; paragraphs 2-3 mix simple language with technical explanation → hybrid; paragraph 4 is purely human-style, simple summary."
+            },
+            "feedback": {
+                "c1": "The submission demonstrates an adequate understanding of cybersecurity audits and their purposes. It correctly identifies their roles in risk management and compliance, but the conceptual explanations lack the deep theoretical grounding or broader contextualization seen in 'Excellent' work. (17.5/25)",
+                "c2": "The essay excels in applying concepts to real-world scenarios, offering clear and relevant examples such as unpatched operating systems, insufficient network segmentation, and specific mentions of HIPAA and PCI-DSS requirements. These examples are well-integrated and effectively illustrate the practical aspects of audits. (31.5/35)",
+                "c3": "The submission's critical evaluation is limited. It briefly mentions the 'snapshot in time' limitation of audits, but it does not delve deeper into the challenges, trade-offs, or broader implications of the audit process with sufficient insight or research-backed analysis. (4/10)",
+                "c4": "The writing is generally clear and the structure is logical with a good flow between ideas. However, the tone occasionally leans slightly informal, and while technically correct, it lacks the consistent academic rigor, sophistication, and comprehensive referencing expected for a higher score. Minor stylistic improvements could enhance clarity further. (19.5/30)",
+                "total": "72.5/100"
+            }
+        }
+    ]
+}

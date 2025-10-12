@@ -1,0 +1,445 @@
+{
+    "domain": "Information Technology",
+    "prompt": "Explain how DNS over HTTPS (DoH) enhances user privacy. Discuss its technical mechanisms, benefits, and potential challenges in adoption.",
+    "rubric": {
+        "rubric_id": "rub_it_0010",
+        "criteria": [
+            {
+                "criterion_id": "c1",
+                "name": "Conceptual Understanding",
+                "description": "Demonstrates deep understanding of the topic and related concepts.",
+                "performance_descriptors": {
+                    "excellent": "Shows precise and in-depth understanding with clear theoretical support.",
+                    "good": "Understands key concepts well with minor gaps.",
+                    "average": "Adequate explanation with some inaccuracies.",
+                    "needs_improvement": "Surface-level or confused understanding.",
+                    "poor": "Major misunderstandings or misrepresentations."
+                },
+                "weight": 40
+            },
+            {
+                "criterion_id": "c2",
+                "name": "Application to Real-World Scenarios",
+                "description": "Applies concepts meaningfully to examples or scenarios.",
+                "performance_descriptors": {
+                    "excellent": "Uses insightful and relevant examples clearly linked to concepts.",
+                    "good": "Examples mostly appropriate with some gaps in explanation.",
+                    "average": "Examples present but superficial or unclear connections.",
+                    "needs_improvement": "Vague or generic examples.",
+                    "poor": "No real-world application."
+                },
+                "weight": 40
+            },
+            {
+                "criterion_id": "c3",
+                "name": "Critical Evaluation",
+                "description": "Analyzes challenges, limitations, or trade-offs thoughtfully.",
+                "performance_descriptors": {
+                    "excellent": "Provides insightful, research-backed critical evaluation.",
+                    "good": "Reasonable evaluation but less depth.",
+                    "average": "Mentions challenges superficially.",
+                    "needs_improvement": "Unclear or irrelevant critique.",
+                    "poor": "No critical evaluation."
+                },
+                "weight": 10
+            },
+            {
+                "criterion_id": "c4",
+                "name": "Structure and Academic Writing",
+                "description": "Quality of writing, flow, citations, and tone.",
+                "performance_descriptors": {
+                    "excellent": "Clear, coherent, formal tone, flawless grammar, and proper referencing.",
+                    "good": "Mostly clear and professional; minor issues.",
+                    "average": "Organization present but inconsistent.",
+                    "needs_improvement": "Structure or tone hinder clarity; referencing weak.",
+                    "poor": "Disorganized or informal writing."
+                },
+                "weight": 10
+            }
+        ]
+    },
+    "submissions": [
+        {
+            "quality": "Excellent",
+            "authorship": "human",
+            "key_points": [
+                "Explains how DNS over HTTPS (DoH) encrypts DNS queries to prevent snooping.",
+                "Details the technical mechanism of wrapping DNS queries in HTTPS packets sent over TCP port 443.",
+                "Discusses key privacy benefits, such as preventing ISP tracking and man-in-the-middle attacks on DNS.",
+                "Provides real-world examples, like protecting users on public Wi-Fi and bypassing DNS-based censorship.",
+                "Critically evaluates challenges, including the centralization of DNS resolvers and difficulties for enterprise network management.",
+                "Uses precise terminology and supports claims with in-text citations and a reference list.",
+                "Maintains a clear, well-organized structure and formal academic tone throughout the essay."
+            ],
+            "llm_questions": [
+                "Can you elaborate on the specific technical standard that defines DoH?",
+                "How does DoH compare to its alternative, DNS over TLS (DoT)?",
+                "What is the 'centralization' problem with DoH, and who are the major players involved?",
+                "Are there any performance implications when using DoH compared to traditional DNS?"
+            ],
+            "llm_answers": [
+                "DNS over HTTPS (DoH) is primarily defined by the Internet Engineering Task Force (IETF) in the standard RFC 8484. This document specifies how to send DNS queries and receive DNS responses via HTTPS. It details the use of HTTP/2 and the `application/dns-message` media type for the message body, ensuring that the DNS query is encapsulated within a standard, encrypted HTTPS request. This makes DoH traffic indistinguishable from other web traffic on the network, which is a key aspect of its design for enhancing privacy.",
+                "DoH and DNS over TLS (DoT) are both protocols designed to encrypt DNS queries, but they have key differences. DoT, defined in RFC 7858, runs on a dedicated TCP port (853). This makes it easy for network administrators to identify and block if needed. In contrast, DoH uses the standard HTTPS port (443), mixing its traffic with regular web browsing. This makes DoH harder to block but also presents challenges for network filtering and security policies. The choice between them often involves a trade-off between privacy through obfuscation (DoH) and more straightforward network management (DoT).",
+                "The centralization problem refers to the concern that as DoH adoption grows, a vast majority of the world's DNS queries will be handled by a small number of large technology companies. Previously, DNS resolution was decentralized, handled by thousands of different Internet Service Providers (ISPs). Now, major DoH providers include Google (8.8.8.8), Cloudflare (1.1.1.1), and Quad9. While these services enhance privacy from local network observers, they shift the position of trust from the ISP to these large corporations, giving them unprecedented visibility into global web traffic patterns, which raises significant privacy and antitrust concerns.",
+                "Yes, there can be performance implications. Traditional DNS typically uses the lightweight UDP protocol, which is very fast for simple query-response interactions. DoH, on the other hand, uses TCP and the overhead of establishing an HTTPS session, which includes a TLS handshake. This can introduce a small amount of latency, especially on the initial query. However, modern implementations mitigate this through connection reuse and optimizations in HTTP/2. For most users, the difference in latency is negligible and often outweighed by the privacy and security benefits. In some cases, if the DoH resolver is faster than the user's default ISP resolver, performance can even improve."
+            ],
+            "final_submission": "The Domain Name System (DNS) is a foundational component of the internet, translating human-readable domain names into machine-readable IP addresses. However, traditional DNS queries are sent in plaintext over UDP port 53, creating a significant privacy vulnerability. This allows Internet Service Providers (ISPs), network administrators, and malicious actors to monitor a user's browsing history, block access to specific sites, or perform man-in-the-middle attacks. DNS over HTTPS (DoH) has emerged as a critical protocol to mitigate these risks by encrypting DNS traffic. (AI)\n\nTechnically, DoH works by encapsulating standard DNS queries within an HTTPS request, as specified in IETF's RFC 8484 (Hoffman & McManus, 2018). These requests are sent over TCP port 443 to a DoH-enabled resolver. Because this traffic is indistinguishable from standard HTTPS web traffic, it effectively hides DNS lookups from network observers. This mechanism provides two primary privacy benefits. First, it prevents on-path observers, such as ISPs or operators of public Wi-Fi hotspots, from snooping on the websites a user visits. Second, it protects against DNS hijacking, where an attacker redirects a user to a malicious site by providing a fraudulent IP address. For instance, users in countries with internet censorship can use DoH to bypass DNS-based blocking of news or social media platforms. (Hybrid)\n\nDespite its benefits, the adoption of DoH faces significant challenges. A primary concern is the centralization of DNS resolution. By encouraging users to switch from their local ISP resolvers to large, centralized providers like Google and Cloudflare, DoH shifts a massive amount of internet traffic data into the hands of a few corporations (Hounsel et al., 2020). This creates a new potential point of privacy failure and raises antitrust concerns. Furthermore, DoH complicates network management. Enterprise security teams and parents who rely on DNS-based filtering for malware protection or content control find their tools bypassed, as they can no longer easily monitor or block DNS queries. (Human)\n\nIn conclusion, while DoH is a powerful tool for enhancing individual user privacy, its implementation requires a careful balancing act between privacy, security, and the decentralization that has long characterized the internet's infrastructure. (AI)",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0, 3],
+                "human_paragraph_indices": [2],
+                "hybrid_paragraph_indices": [1],
+                "notes": "Paragraph 0 and 3 are formal AI-style explanation and conclusion; paragraph 1 mixes technical explanation with example (Hybrid); paragraph 2 reads more like a human discussion of implications and concerns."
+            },
+            "feedback": {
+                "c1": "The submission demonstrates a precise and in-depth understanding of DoH. It correctly identifies the protocol (HTTPS), port (443), and the mechanism of encapsulation, supported by a reference to the relevant RFC. (15/15) (40/40)",
+                "c2": "Application to real-world scenarios is excellent. The essay provides insightful examples, such as protection on public Wi-Fi and bypassing censorship, and clearly links them back to the core technical concepts of DoH. (30/30) (40/40)",
+                "c3": "The critical evaluation is insightful and well-supported. It moves beyond a simple list of pros and cons to analyze the nuanced trade-offs between privacy from ISPs and the risks of DNS centralization, a key debate in the field. (40/40) (10/10)",
+                "c4": "The writing is exemplary. The essay is well-structured with a clear introduction, body, and conclusion. The tone is formal and academic, grammar is flawless, and proper in-text citations and a reference list are included. (15/15) (10/10)",
+                "total": "100/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "human",
+            "key_points": [
+                "Correctly explains that DoH encrypts DNS to improve privacy.",
+                "Describes the basic mechanism of using HTTPS for DNS queries.",
+                "Lists clear benefits like preventing ISP snooping.",
+                "Mentions challenges like centralization and network management.",
+                "The evaluation of challenges is present but lacks depth.",
+                "Includes some references, but they might not be fully integrated.",
+                "Writing is clear and professional with only minor grammatical errors."
+            ],
+            "llm_questions": [
+                "What does it mean for DNS traffic to be 'in plaintext'?",
+                "Why is it a problem if my ISP can see my DNS queries?",
+                "Are there any downsides to using DoH?",
+                "Is DoH the only way to make DNS private?"
+            ],
+            "llm_answers": [
+                "When we say DNS traffic is 'in plaintext,' it means the data is sent across the network in an unencrypted, human-readable format. Imagine sending a postcard through the mail; anyone who handles it can read the message. Similarly, with traditional DNS, any server or router between your computer and the DNS resolver, including your Internet Service Provider (ISP), can see exactly which websites you are trying to visit. This lack of encryption is a major privacy concern in the modern internet.",
+                "If your ISP can see your DNS queries, they can build a detailed profile of your online behavior—every website you visit, every app you use. This data can be used for targeted advertising, sold to third-party data brokers, or even shared with government agencies without a warrant. Furthermore, an ISP could use this visibility to block or redirect your access to certain websites, a practice known as DNS filtering or censorship. This compromises both your privacy and your freedom to access information online.",
+                "Yes, there are some potential downsides to DoH. One major concern is that it can centralize DNS resolution. Instead of using your local ISP's resolver, you might be using a service from a large tech company like Google or Cloudflare, giving them a lot of data. Another issue is for network administrators in businesses or schools. They often use DNS filtering to block malicious websites or enforce content policies, but DoH can bypass these controls, creating security blind spots. There can also be a minor performance hit due to the extra steps of encryption, though it's often not noticeable.",
+                "No, DoH is not the only way. Its main alternative is DNS over TLS (DoT). DoT also encrypts your DNS queries, but it does so over a specific network port (853). This makes it functionally similar to DoH in terms of security, but it's easier for network administrators to identify and manage DoT traffic. There are also other methods like DNSCrypt, which was an earlier protocol for DNS encryption, but DoH and DoT are the modern standards being widely adopted by browsers and operating systems."
+            ],
+            "final_submission": "The Domain Name System (DNS) is essential for navigating the internet, but its traditional design has a major privacy flaw: it's unencrypted. This means anyone on the network, like your Internet Service Provider (ISP), can see the websites you are looking up. DNS over HTTPS (DoH) is a modern solution designed to fix this problem by securing DNS queries. (AI)\n\nDoH enhances user privacy by taking standard DNS requests and wrapping them inside encrypted HTTPS traffic, the same technology that protects your passwords and credit card information on websites. This encrypted packet is sent to a DoH-compatible DNS server. Because the query looks like normal web traffic, it's very difficult for a network observer to see or block the specific domain you are trying to access. The primary benefit is that it prevents your ISP from logging your browsing history for advertising purposes and protects you from having your DNS queries monitored when using insecure public Wi-Fi networks. (Hybrid)\n\nHowever, DoH is not without its challenges. One of the main arguments against it is centralization. As people move to DoH providers like Google and Cloudflare, a huge amount of the world's DNS data gets concentrated in the hands of a few big tech companies, which creates its own privacy risks. Another challenge is for system administrators in corporate environments. They often rely on DNS monitoring to filter malware and enforce workplace policies, but DoH traffic bypasses these systems, making their job harder (Cloudflare, 2020). While DoH adoption by major browsers like Firefox and Chrome is growing, these issues present real obstacles to its universal acceptance. (Human)\n\nIn summary, DoH is a significant step forward for user privacy on the internet. It effectively shields browsing habits from prying eyes. But we must also consider the drawbacks, like the trend towards centralization and the new difficulties it creates for network security management. (AI)\n\nReferences\nCloudflare. (2020). *What is DNS over HTTPS?* Cloudflare Learning.",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0, 3, 4],
+                "human_paragraph_indices": [2],
+                "hybrid_paragraph_indices": [1],
+                "notes": "Paragraphs 0, 3, 4 are formal and AI-style; paragraph 1 mixes technical explanation with practical examples (Hybrid); paragraph 2 reads more like a human discussion of real-world concerns and implications."
+            },
+            "feedback": {
+                "c1": "The submission shows a good understanding of the key concepts. It correctly explains that DoH encrypts DNS using HTTPS, but it lacks the deeper technical details, such as the specific port or IETF standard. (12/15) (32/40)",
+                "c2": "The examples provided, such as protection from ISPs and on public Wi-Fi, are appropriate and relevant. However, the link between the examples and the technical mechanism could be explained more explicitly. (24/30) (32/40)",
+                "c3": "The evaluation of challenges is reasonable. It correctly identifies centralization and network management as key issues. The analysis could be more in-depth; it states the problems but doesn't fully explore their implications. (32/40) (8/10)",
+                "c4": "The writing is mostly clear and professional. The structure is logical, but there are a few minor grammatical mistakes. The inclusion of a reference is good, though a more academic source would be stronger. (12/15) (8/10)",
+                "total": "80/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "human",
+            "key_points": [
+                "States that DoH is a way to make DNS secure.",
+                "Mentions that it uses HTTPS, but doesn't explain how.",
+                "Identifies privacy from the ISP as a main benefit.",
+                "Lists a challenge, such as 'it can be complicated,' without much detail.",
+                "The structure is present but paragraphs may not connect well.",
+                "No citations or references are provided.",
+                "Writing is understandable but could be more formal."
+            ],
+            "llm_questions": [
+                "What is DNS?",
+                "Why is regular DNS not private?",
+                "How does DoH make it private?",
+                "Is DoH on by default?"
+            ],
+            "llm_answers": [
+                "DNS stands for Domain Name System. Think of it as the phonebook of the internet. When you type a website address like www.google.com into your browser, your computer doesn't know where to find it. It uses DNS to look up that name and find the corresponding IP address, which is a series of numbers (like 172.217.14.228) that computers use to identify each other on the network. Without DNS, we'd have to remember long strings of numbers for every website we want to visit.",
+                "Regular DNS is not private because the requests you send from your computer are in plaintext. This means they are not encrypted. As a result, your Internet Service Provider (ISP) and anyone else operating the network you're connected to can easily read these requests. It's like sending a postcard where the message is visible to every postal worker who handles it. They can see every website you are trying to go to, which allows them to track your activity.",
+                "DoH, or DNS over HTTPS, makes DNS private by encrypting your DNS requests. It wraps them up inside the same secure tunnel (HTTPS) that you use when you log into your bank or shop online. Because the request is encrypted, your ISP can no longer read it. They can see that you are communicating with a server, but they can't tell what website you asked for. This shields your browsing habits from being monitored by your ISP and other third parties on the network.",
+                "Whether DoH is on by default depends on your web browser and your location. Some browsers, like Mozilla Firefox, have been leaders in enabling DoH by default for users in certain countries, like the United States. Other browsers, like Google Chrome, have also been rolling it out. However, it's not universally on for everyone yet. The browser might check if your ISP's DNS server supports a similar privacy feature or if parental controls are enabled before turning it on. You can usually check and change this setting in your browser's privacy and security options."
+            ],
+            "final_submission": "DNS is how computers find websites, but it is not very private. DNS over HTTPS (DoH) is a new technology that makes it much more secure for everyday users. It is important for privacy on the internet today. (AI)\n\nThe main way DoH works is by using HTTPS. This is the same secure connection used by banking websites. It encrypts your DNS request so other people cant see it. The biggest benefit of this is privacy from your ISP. Your internet company can see all the websites you visit with old DNS. With DoH, they cannot see this information anymore. This stops them from selling your data or tracking you. (Hybrid)\n\nThere are some problems with DoH too. For companies and schools, it can be a challenge. They use DNS to block bad websites, but DoH goes around their filters, which can be a security risk. Also, some people say that DoH just moves the problem. Instead of your ISP seeing your data, a big company like Google sees it, which might not be much better. So there is a debate about whether it really solves the privacy problem completely or just changes it. (Human)\n\nIn conclusion, DoH is a good thing for privacy because it hides your information from your ISP. But it also has some downsides that people need to think about, especially for network security and who you trust with your data. It is a big change for the internet. (AI)",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0, 3],
+                "human_paragraph_indices": [2],
+                "hybrid_paragraph_indices": [1],
+                "notes": "Paragraph 0 and 3 are formal AI-style explanation; paragraph 1 mixes technical info with simple explanation (Hybrid); paragraph 2 reads like human reasoning about real-world implications."
+            },
+            "feedback": {
+                "c1": "The submission provides an adequate explanation of DoH's purpose but is vague on the technical details. It correctly identifies HTTPS as the method but offers no further explanation, leading to some inaccuracies by omission. (10/15) (26/40)",
+                "c2": "The connection to a real-world scenario (ISP tracking) is present but superficial. It doesn't explore other scenarios or clearly explain the link between the technology and the outcome. (20/30) (26/40)",
+                "c3": "The essay mentions challenges like bypassing filters and the centralization issue, but does so superficially. There is no deep analysis or evaluation of these points; they are simply stated as facts. (26/40) (6/10)",
+                "c4": "The organization is present with a basic intro/body/conclusion structure, but the flow between paragraphs is inconsistent. The tone is a bit informal, and no references are provided. (10/15) (6/10)",
+                "total": "64/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "human",
+            "key_points": [
+                "Shows a surface-level understanding, confusing DoH's scope.",
+                "Vaguely mentions encryption but is unclear on what is being encrypted.",
+                "Fails to distinguish between encrypting DNS and encrypting all web traffic.",
+                "Mentions benefits like 'safety' without specific examples.",
+                "Critique is unclear or irrelevant.",
+                "Poorly structured with grammatical errors that hinder clarity."
+            ],
+            "llm_questions": [
+                "What is HTTPS?",
+                "Does DoH hide my IP address?",
+                "Is DoH a VPN?",
+                "How do I turn on DoH?"
+            ],
+            "llm_answers": [
+                "HTTPS stands for Hypertext Transfer Protocol Secure. It's the secure version of HTTP, the protocol over which data is sent between your browser and the website you are connected to. The 'S' at the end stands for 'Secure,' and it means all communications between your browser and the website are encrypted. You can tell if a website is using HTTPS because you'll see a padlock icon in the address bar and the URL will start with 'https://' instead of 'http://'. This encryption is what keeps your personal information, like passwords and credit card numbers, safe from eavesdroppers when you're online.",
+                "No, DoH does not hide your IP address. Your IP address is your unique identifier on the internet, and it's necessary for servers to know where to send the data you request. DoH only encrypts the DNS query itself—the question your computer asks to find out the IP address of a website. While your ISP won't be able to see which website you're looking up, the website you ultimately connect to will still see your IP address. To hide your IP address, you would need to use a service like a VPN or the Tor browser, which routes your traffic through other servers.",
+                "No, DoH is not a VPN (Virtual Private Network). A VPN creates an encrypted tunnel for *all* of your internet traffic, hiding your IP address and encrypting everything you do online from your ISP. DoH is much more specific; it only encrypts your DNS traffic. This is an important distinction. With DoH, your ISP can't see the websites you look up, but they can still see the IP addresses of the websites you connect to. A VPN provides a much more comprehensive layer of privacy by encrypting everything and masking your IP.",
+                "Turning on DoH is usually done in your web browser's settings. For example, in Google Chrome, you would go to 'Settings,' then 'Privacy and security,' and look for the 'Use secure DNS' option. In Firefox, it's under 'Settings,' 'General,' and then scroll down to 'Network Settings,' where you'll find an option for 'Enable DNS over HTTPS.' The exact steps can vary between browsers and even different versions of the same browser, but it's typically found within the security or network settings. Some operating systems are also starting to offer system-wide DoH support."
+            ],
+            "final_submission": "DNS over HTTPS (DoH) is about online safety. The internet can be a dangerous place and your data can be stolen. DoH is a new tool to make things safer. It uses encryption to protect you when you are on the web. (AI)\n\nHow it works is it uses HTTPS. This makes a secure tunnel for all your internet data, so hackers can't see what you're doing. So when you go to a website, your ISP cant snoop on you. This is a big benefit because you have more privacy and you are secure. It makes you anonymous online. For example if you use a coffee shop wifi, DoH protects you from other people on the network stealing your passwords and stuff. (Hybrid)\n\nThere are not many challenges because its a very good technology. Some old systems might not support it but they will get updated. The main thing is that its making the internet better. Everyone should use it so that their data is safe and nobody can track them online. It is better than a VPN because its built into the browser and easier to use. It is the future of internet privacy. (Human)",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [2],
+                "hybrid_paragraph_indices": [1],
+                "notes": "Paragraph 0 is formal AI-style; paragraph 1 mixes technical info with casual examples (Hybrid); paragraph 2 is informal opinionated style (Human)."
+            },
+            "feedback": {
+                "c1": "The submission demonstrates a surface-level and confused understanding. It incorrectly suggests that DoH encrypts 'all your internet data' and makes you 'anonymous online,' confusing its function with that of a VPN. (7/15) (20/40)",
+                "c2": "The example of using coffee shop Wi-Fi is generic and vaguely linked to the concept. The explanation incorrectly states DoH protects passwords, which is a function of HTTPS on the website itself, not DNS. (15/30) (20/40)",
+                "c3": "The critique is irrelevant and dismissive. Stating 'there are not many challenges' and 'it is better than a VPN' shows a lack of critical evaluation and understanding of the technology's limitations and trade-offs. (20/40) (5/10)",
+                "c4": "The structure is poor, with short paragraphs and weak topic sentences. Grammatical errors and an overly informal tone ('and stuff') hinder the clarity and professionalism of the writing. (7/15) (5/10)",
+                "total": "50/100"
+            }
+        },
+        {
+            "quality": "Poor",
+            "authorship": "human",
+            "key_points": [
+                "Contains major misunderstandings about what DNS and DoH are.",
+                "Does not explain the technical mechanism or benefits correctly.",
+                "Fails to address the prompt's requirements.",
+                "No application to real-world scenarios is provided.",
+                "No critical evaluation is present.",
+                "Writing is disorganized, informal, and contains many errors."
+            ],
+            "llm_questions": [
+                "What is a computer?",
+                "How does the internet get to my house?",
+                "What is a website?",
+                "Is Google a website?"
+            ],
+            "llm_answers": [
+                "A computer is an electronic device that processes data and performs a vast range of tasks according to a set of instructions. It has hardware components, which are the physical parts like the central processing unit (CPU), memory (RAM), storage drives (like an SSD or HDD), and input/output devices (like a keyboard, mouse, and monitor). It also runs software, which includes the operating system (like Windows or macOS) and various applications (like a web browser or a word processor). Computers can be used for work, entertainment, communication, and countless other purposes.",
+                "The internet gets to your house through a series of physical connections provided by an Internet Service Provider (ISP). Typically, a physical line—which could be a coaxial cable (for cable internet), a phone line (for DSL), or a fiber-optic cable—runs from a nearby network node to your home. This line connects to a modem inside your house. The modem's job is to translate the signals from the ISP's network into a format your devices can use. From the modem, you usually connect a router, which creates your local Wi-Fi network, allowing multiple devices like laptops, phones, and smart TVs to connect to the internet wirelessly.",
+                "A website is a collection of related web pages, including multimedia content, that are typically identified with a common domain name and published on at least one web server. Websites are written in a markup language like HTML, and browsers read this code to display the content. You access a website by entering its domain name (like www.example.com) into your web browser. Websites can be created and maintained by an individual, a business, or an organization and can serve a variety of purposes, such as providing information, offering products for sale, or facilitating social interaction.",
+                "Yes, Google is a website, but it's more accurate to describe it as a web-based service or a collection of services accessible through its website, www.google.com. Its most famous service is its search engine, but Google also offers many other services through its web portal, including Gmail (email), Google Maps (navigation), Google Drive (cloud storage), and YouTube (video sharing). So, while you access it via a website, the term 'Google' often refers to the entire company and its massive ecosystem of interconnected digital products and services."
+            ],
+            "final_submission": "Dns is a bad thing on computers, it makes them slow. Dns over https is how you fix it. It is like an antivirus for your internet. You need to turn it on so you don't get hacked. (AI)\n\nIt works using http, which is a computer code. the code makes the internet go faster and be more safe. When its on, nobody can see you. You can go on any website and the goverment or your parents wont know. This is good for freedom. (Hybrid)\n\nThere are no challenges. Everyone should have it. If you dont have doh then your computer is at risk from viruses and people who want to steal your identity. It is easy to use you just click a button in chrome. So there is no reason not to. The privacy is very strong. I think it is the most important thing for computers now. (Human)",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [2],
+                "hybrid_paragraph_indices": [1],
+                "notes": "Paragraph 0 is a short, factual AI-style summary; paragraph 1 mixes casual language with technical explanation (Hybrid); paragraph 2 is opinionated and informal (Human)."
+            },
+            "feedback": {
+                "c1": "The submission demonstrates major misunderstandings. It incorrectly defines DNS as a 'bad thing that makes computers slow' and DoH as an 'antivirus,' showing a complete misrepresentation of the core concepts. (3/15) (8/40)",
+                "c2": "There is no real-world application. The submission makes vague, incorrect claims about government and parental tracking but does not ground them in any plausible technical scenario related to DoH. (6/30) (8/40)",
+                "c3": "There is no critical evaluation. The text simply dismisses the idea of challenges and makes unsubstantiated claims about the technology's perfection, failing entirely to address this part of the prompt. (8/40) (2/10)",
+                "c4": "The writing is disorganized and highly informal. The submission consists of a single block of text with severe grammatical and spelling errors, making it difficult to follow. It completely fails to meet academic writing standards. (3/15) (2/10)",
+                "total": "20/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "human",
+            "key_points": [
+                "Clearly explains DoH as encapsulating DNS queries within HTTPS to encrypt them.",
+                "Correctly identifies port 443 and the benefit of traffic obfuscation.",
+                "Provides relevant examples like preventing ISP monitoring and enhancing privacy on public Wi-Fi.",
+                "Mentions centralization and enterprise filtering as challenges but doesn't delve into the nuanced implications.",
+                "Writing is clear, well-structured, and mostly professional, with only minor stylistic issues.",
+                "Includes a basic reference to support claims."
+            ],
+            "llm_questions": [
+                "What is 'traffic obfuscation' in the context of DoH?",
+                "How does DoH impact DNS caching at the local level?",
+                "Could DoH be used by malicious actors?",
+                "What role do web browsers play in DoH adoption?"
+            ],
+            "llm_answers": [
+                "Traffic obfuscation in DoH means that DNS queries, which would normally be easily identifiable due to their plaintext nature and dedicated port (53), are instead hidden within regular HTTPS traffic on port 443. Since a vast amount of legitimate web traffic also uses HTTPS on port 443, DoH queries become difficult for network observers (like ISPs or firewalls) to distinguish from normal web browsing. This makes it harder for them to selectively monitor, block, or manipulate DNS requests, thereby enhancing user privacy by making their online activities less visible.",
+                "DoH typically bypasses local DNS caching mechanisms that might be configured on a user's operating system or router. When DoH is enabled, DNS queries are sent directly to the configured DoH resolver (e.g., Cloudflare, Google) over HTTPS, rather than first consulting local caches or the ISP's DNS server. This can sometimes lead to slightly increased latency for initial lookups if the DoH resolver is geographically distant or if the local cache was particularly efficient. However, DoH resolvers themselves employ extensive caching to minimize latency on their end.",
+                "Yes, unfortunately, DoH can be, and has been, used by malicious actors. Because DoH traffic is encrypted and blends in with regular HTTPS traffic, it can be difficult for enterprise security systems to inspect and filter it. Malware can leverage DoH to hide its command-and-control (C2) communications or to resolve domains for phishing and data exfiltration, making it harder for network defenders to detect and block these malicious activities. This is one of the significant security challenges associated with DoH adoption in corporate environments.",
+                "Web browsers play a crucial role in DoH adoption. Major browsers like Mozilla Firefox and Google Chrome have been at the forefront of implementing and, in some cases, enabling DoH by default for their users. By integrating DoH directly into the browser, they provide an easy way for users to gain privacy benefits without needing to manually configure system-wide DNS settings. This direct implementation also means that DoH traffic originates from the application layer, further enhancing its ability to bypass network-level DNS configurations."
+            ],
+            "final_submission": "The Domain Name System (DNS) is an indispensable internet service that translates human-readable domain names into IP addresses. Traditionally, DNS queries are transmitted in plaintext, leaving them vulnerable to eavesdropping, censorship, and manipulation by Internet Service Providers (ISPs) and other network intermediaries. DNS over HTTPS (DoH) addresses this privacy deficit by encrypting DNS communications. (AI)\n\nDoH operates by encapsulating DNS queries within standard HTTPS (Hypertext Transfer Protocol Secure) messages, which are then sent over TCP port 443. This is the same port used for secure web browsing, making DoH traffic virtually indistinguishable from regular encrypted web traffic. The primary technical mechanism involves a client sending an HTTP POST or GET request containing the DNS query to a DoH-enabled server. The server responds with the DNS answer, also within an HTTPS response. This approach enhances user privacy by preventing on-path observers, such as ISPs, from seeing which websites a user is visiting. For example, a user connected to an untrusted public Wi-Fi network can browse more securely, knowing their DNS lookups are protected from local snooping. It also offers a degree of resistance against DNS-based content filtering and censorship, as the queries are obscured within encrypted traffic. (Hybrid)\n\nHowever, the widespread adoption of DoH introduces several challenges. A significant concern revolves around the potential for DNS centralization. As users migrate from their ISP's default resolvers to a few large DoH providers (e.g., Google, Cloudflare), these entities gain a consolidated view of internet browsing habits, raising questions about data aggregation and trust. Furthermore, DoH can complicate network management and security in enterprise environments. Organizations often rely on inspecting DNS traffic for security purposes, such as blocking access to known malicious domains or enforcing content policies. DoH bypasses these internal DNS controls, creating blind spots for network administrators and potentially enabling malware to evade detection. While DoH represents a clear step forward for individual user privacy, its implications for the broader internet ecosystem, particularly concerning decentralization and network security, require ongoing consideration and mitigation strategies. (Human)\n\nReference:\nCloudflare. (n.d.). *What is DNS over HTTPS (DoH)?* Retrieved from [https://www.cloudflare.com/learning/dns/dns-over-https/](https://www.cloudflare.com/learning/dns/dns-over-https/)",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [2],
+                "hybrid_paragraph_indices": [1],
+                "notes": "Paragraphs 0–3 labeled according to style: AI (factual & formal), Hybrid (technical but accessible), Human (analytical & critical evaluation)."
+            },
+            "feedback": {
+                "c1": "The submission demonstrates an excellent understanding of DoH, detailing its technical mechanism of encapsulation within HTTPS and identifying the correct port. It accurately explains the privacy benefits stemming from this mechanism. (38/40)",
+                "c2": "The application to real-world scenarios is good. Examples like preventing ISP monitoring and protecting public Wi-Fi users are appropriate and clearly linked to DoH's functionality. The explanation of *how* these benefits arise is solid. (30/40)",
+                "c3": "The critical evaluation is reasonable but lacks some depth. It clearly identifies centralization and enterprise filtering as key challenges, explaining *what* they are, but doesn't fully explore the nuanced implications or propose potential solutions/trade-offs in detail. (7/10)",
+                "c4": "The writing is clear, coherent, and professional. The essay follows a logical structure with a strong introduction and conclusion. There are only minor stylistic nuances that prevent it from being flawless. A relevant reference is included. (8/10)",
+                "total": "83/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "human",
+            "key_points": [
+                "Explains DoH encrypts DNS traffic to prevent snooping.",
+                "Mentions HTTPS as the encryption method but lacks technical depth on how it encapsulates.",
+                "Highlights preventing ISP tracking as a key benefit.",
+                "Lists centralization and bypassing enterprise firewalls as challenges, but superficially.",
+                "Writing is generally understandable but contains some informal language and repetition.",
+                "The structure is basic, and references are missing."
+            ],
+            "llm_questions": [
+                "What is the difference between encryption and obfuscation?",
+                "How is DoH related to HTTP/2?",
+                "Are there any specific countries that have embraced or resisted DoH?",
+                "Does DoH make my browser faster?"
+            ],
+            "llm_answers": [
+                "Encryption is the process of converting information or data into a code, especially to prevent unauthorized access. It scrambles the data so that only authorized parties can understand it by using a decryption key. Obfuscation, on the other hand, is the act of making something unclear, unintelligible, or difficult to understand, often by hiding its true nature. In the context of DoH, DNS queries are encrypted, meaning their content is scrambled. Additionally, by wrapping these encrypted queries in HTTPS traffic, they are also obfuscated, as they blend in with other web traffic, making it harder for network observers to even identify that DNS queries are taking place.",
+                "DoH is specified to use HTTP/2 as its underlying transport protocol. HTTP/2 offers several advantages over its predecessor, HTTP/1.1, that are beneficial for DoH. These include multiplexing, which allows multiple requests and responses to be sent over a single TCP connection, reducing overhead. It also uses header compression, further optimizing efficiency. By leveraging HTTP/2, DoH can improve performance by reducing latency and increasing concurrency for DNS queries, even with the added overhead of HTTPS encryption.",
+                "Yes, several countries have shown differing attitudes towards DoH. For instance, the UK government has expressed concerns about DoH potentially bypassing national content filtering and parental control initiatives, prompting discussions with browser vendors. Some authoritarian regimes might resist DoH adoption as it makes internet censorship more difficult. Conversely, in regions with less internet freedom or high levels of surveillance, DoH is embraced by privacy advocates as a tool to bypass monitoring and censorship, though official government positions may not actively support it.",
+                "DoH might not necessarily make your browser 'faster' in terms of raw page load speed, and in some specific cases, it could even introduce a very minor initial latency due to the overhead of establishing an HTTPS connection. However, modern DoH resolvers are highly optimized, and factors like connection reuse (especially with HTTP/2) and the efficiency of the chosen DoH server can often make the performance difference negligible or even lead to perceived speed improvements if your default ISP DNS was slow or unreliable. The primary benefit of DoH is privacy and security, not speed."
+            ],
+            "final_submission": "The traditional Domain Name System (DNS) sends requests in plain text, making it easy for anyone on the network to see which websites you visit. This lack of privacy has become a major concern in the digital age. DNS over HTTPS (DoH) is a technology designed to improve this by encrypting your DNS queries. (AI)\n\nThe core mechanism of DoH involves sending DNS queries through an encrypted HTTPS connection, the same type of secure connection used by online banking and e-commerce sites. Instead of sending an unencrypted request to a DNS server, your computer or browser sends it within an HTTPS message to a DoH-compatible resolver. This effectively hides your DNS traffic from your Internet Service Provider (ISP) and other local network observers. A key benefit is enhanced user privacy, as your browsing history can no longer be easily monitored by your ISP for advertising purposes or by malicious actors on public Wi-Fi networks. This means your online activities are more private, as the 'phonebook lookups' for websites are obscured. (Hybrid)\n\nHowever, DoH also presents certain challenges. One widely discussed issue is the centralization of DNS resolvers. If most users shift to a few major DoH providers (like Google or Cloudflare), it concentrates a significant amount of user data in the hands of these few companies, raising new privacy and competition concerns. Another challenge arises for network administrators in corporate or educational settings. They often rely on DNS-based filtering to block malware, phishing sites, or inappropriate content. Since DoH traffic is encrypted and blends with regular web traffic, it can bypass these security and content filtering mechanisms, creating potential security vulnerabilities and making network management more complex. (Human)\n\nIn conclusion, DoH offers a significant upgrade to user privacy by encrypting DNS queries and making them harder to snoop on. While its benefits for individual privacy are clear, its broader adoption necessitates careful consideration of its implications for internet decentralization and network security policies. (AI)",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0, 3],
+                "human_paragraph_indices": [2],
+                "hybrid_paragraph_indices": [1],
+                "notes": "Paragraphs labeled based on style: AI (factual & formal), Hybrid (technical explanation in accessible language), Human (critical evaluation and discussion of implications)."
+            },
+            "feedback": {
+                "c1": "The submission demonstrates an adequate understanding. It correctly identifies DoH's purpose of encrypting DNS via HTTPS but lacks detailed technical explanation on encapsulation specifics or protocol versions. (28/40)",
+                "c2": "Application to real-world scenarios is present but could be stronger. It highlights preventing ISP tracking and public Wi-Fi protection, which are relevant, but the connection to the technical mechanisms could be more explicitly elaborated. (25/40)",
+                "c3": "The critical evaluation mentions centralization and enterprise filtering as challenges. However, the analysis is superficial; it states the problems without exploring their deeper implications, potential solutions, or balanced perspectives. (6/10)",
+                "c4": "The writing is generally clear and organized into paragraphs. However, it exhibits some minor informal phrasing and could benefit from more precise academic language. No references are provided to support claims. (6/10)",
+                "total": "65/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "human",
+            "key_points": [
+                "Attempts to explain DoH uses HTTPS for privacy but is vague and confusing.",
+                "Incorrectly claims DoH makes websites faster and is like a VPN.",
+                "Provides generic examples of 'security' without linking to DoH mechanisms.",
+                "Dismisses challenges, showing a lack of critical thinking.",
+                "Writing is often unclear due to convoluted sentences and a mixture of formal/informal tone.",
+                "Lacks structure and specific details."
+            ],
+            "llm_questions": [
+                "What is the primary difference between DNS and DoH?",
+                "Can DoH protect against all types of online surveillance?",
+                "Who controls the DoH servers?",
+                "Why is it important for network managers to understand DoH?"
+            ],
+            "llm_answers": [
+                "The primary difference is encryption and transport protocol. Traditional DNS queries are sent in plaintext over UDP port 53, making them vulnerable to interception and inspection. DoH, on the other hand, encrypts DNS queries by encapsulating them within HTTPS traffic over TCP port 443. This means DoH traffic looks like regular secure web browsing, making it much harder for network observers to monitor or block DNS requests, thus enhancing privacy and security.",
+                "No, DoH cannot protect against all types of online surveillance. DoH specifically encrypts your DNS queries, preventing your ISP or local network administrator from seeing which websites you're trying to resolve. However, it does not hide your IP address from the websites you visit, nor does it encrypt the content of your non-HTTPS web traffic. To achieve broader protection against online surveillance, you would typically need to combine DoH with other tools like a Virtual Private Network (VPN), which encrypts all your internet traffic and masks your IP address.",
+                "DoH servers are controlled by various entities. Major technology companies like Google, Cloudflare, and Quad9 operate large public DoH resolvers that many users opt to use. Some Internet Service Providers (ISPs) also offer their own DoH-enabled resolvers. Additionally, individuals or organizations can run their own DoH servers. The shift towards large public DoH resolvers is part of the 'centralization' challenge, as it consolidates a lot of DNS query data with a few powerful entities.",
+                "It's crucial for network managers to understand DoH because it fundamentally changes how DNS resolution works within their network. Traditional DNS is often used for security functions like content filtering, malware blocking, and policy enforcement. DoH, by encrypting queries and bypassing local DNS infrastructure, can render these security controls ineffective. Network managers need to be aware of DoH to adapt their security strategies, potentially by deploying enterprise-level DoH solutions or by implementing policies to manage or restrict its use within their controlled environments."
+            ],
+            "final_submission": "DNS over HTTPS (DoH) is an important advancement for keeping online activities private. The internet can be a place where your information is easily seen, but DoH helps to stop this. It focuses on making sure your computer's requests for websites are not spied upon. (AI)\n\nThe main idea behind DoH is to use HTTPS, which is the secure way that websites usually send information. When your computer asks for a website's address (a DNS query), DoH puts that request inside an encrypted HTTPS message. This makes it look like regular website traffic. So, if you're on a public Wi-Fi network, for example, your ISP or anyone else on that network can't easily see which specific websites you are trying to visit. This gives you more privacy and helps to prevent others from building a profile of your browsing habits. (Hybrid)\n\nHowever, implementing DoH widely isn't without its own set of challenges. One significant concern is the potential for centralizing internet traffic. If most people use DoH through a few big providers like Google or Cloudflare, these companies will have a lot of insight into global browsing patterns, which might create new privacy risks or reduce the internet's decentralized nature. Another challenge is for organizations. Companies and schools often use their own DNS servers to block harmful websites or enforce network policies. DoH can bypass these internal controls because the traffic is encrypted, making it harder for IT administrators to manage network security and content filtering effectively. This means they lose some control over what users can access. (Human)\n\nUltimately, DoH offers a valuable layer of privacy protection for individual users by encrypting DNS lookups. But as with any major change in internet infrastructure, it brings trade-offs and new considerations, especially regarding the balance between individual privacy, corporate security needs, and the overall architecture of the internet. (AI)",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0, 3],
+                "human_paragraph_indices": [2], 
+                "hybrid_paragraph_indices": [1],
+                "notes": "Paragraphs labeled based on style: AI (factual & formal), Hybrid (technical explanation in accessible language), Human (critical evaluation and discussion of implications)."
+            },
+            "feedback": {
+                "c1": "The submission demonstrates a needs improvement level of understanding. While it correctly identifies that DoH encrypts DNS via HTTPS for privacy, the explanation of technical mechanisms is vague and lacks precision (e.g., 'puts that request inside an encrypted HTTPS message'). It doesn't clearly articulate the encapsulation or port usage. (25/40)",
+                "c2": "Application to real-world scenarios is acceptable, but still somewhat generic. The example of public Wi-Fi is relevant, but the explanation of how DoH specifically addresses it could be more robust. The links between the mechanism and the outcome are not fully fleshed out. (26/40)",
+                "c3": "The critical evaluation is average. It identifies centralization and enterprise challenges but discusses them superficially without deep analysis of their implications or potential mitigations. It mostly states the problems without much thoughtful insight. (7/10)",
+                "c4": "The writing is generally understandable, with decent flow between paragraphs. The tone is mostly formal, but some sentences are a bit convoluted, affecting clarity. No references are included to bolster academic standing. (7/10)",
+                "total": "65/100"
+            }
+        },
+        {
+            "quality": "Excellent",
+            "authorship": "human",
+            "key_points": [
+                "Provides a highly detailed explanation of DoH's technical operation, including HTTP/2, RFC 8484, and specific headers.",
+                "Offers nuanced insights into the dual benefits of privacy (ISP snooping) and security (DNS manipulation).",
+                "Presents insightful real-world applications, such as bypassing deep packet inspection and protecting metadata.",
+                "Engages in a sophisticated critical evaluation, discussing policy implications, trust models, and the 'DNS firewall' dilemma.",
+                "Exemplary academic writing, logical structure, and robust referencing."
+            ],
+            "llm_questions": [
+                "How does DoH specifically thwart passive network surveillance, beyond just ISP snooping?",
+                "What are the implications of DoH for content delivery networks (CDNs) and geo-location?",
+                "Discuss the policy debate surrounding DoH and the role of network operators.",
+                "Can DoH protect against DNS-based malware attacks if the resolver itself is compromised?"
+            ],
+            "llm_answers": [
+                "DoH thwarts passive network surveillance by preventing any intermediate network observer from inspecting DNS query content. Beyond ISPs, this includes network administrators in workplaces, schools, or even malicious actors operating compromised routers. Traditional DNS queries, being plaintext, reveal significant metadata about a user's online activity. DoH encrypts this metadata within the HTTPS tunnel, making it exceedingly difficult for deep packet inspection (DPI) systems to identify and log specific domain lookups. This helps to obscure a user's digital footprint even from sophisticated network monitoring tools, thereby enhancing anonymity on a fundamental layer.",
+                "DoH has complex implications for CDNs and geo-location. CDNs rely on DNS to direct users to the nearest server based on their geographical location, optimizing performance. When a user employs a DoH resolver that is geographically distant (e.g., a user in Europe using a resolver in the US), the CDN might receive a query originating from the resolver's location, not the user's actual location. This can lead to the user being routed to a sub-optimal CDN server, potentially increasing latency and reducing performance. While some DoH resolvers use EDNS Client Subnet (ECS) to pass partial client IP information, this practice varies and is often seen as a privacy trade-off, creating a tension between performance optimization and enhanced privacy.",
+                "The policy debate around DoH is multifaceted, primarily centering on who controls DNS resolution and for what purposes. Network operators, particularly ISPs and enterprise IT departments, argue that DoH reduces their visibility and control over network traffic, complicating security measures, content filtering (e.g., parental controls, malware blocking), and regulatory compliance. They advocate for solutions that allow them to maintain some level of DNS oversight. Privacy advocates, conversely, champion DoH as a critical tool for user empowerment and protection against mass surveillance and censorship. Regulatory bodies are grappling with how to balance these competing interests, with some proposing mandates for enterprise-friendly DoH deployments or greater transparency from DoH providers, while others lean towards prioritizing user privacy by default.",
+                "DoH itself encrypts the communication *between* the client and the DoH resolver, protecting queries from on-path attackers. However, if the DoH resolver *itself* is compromised, DoH offers no protection against the resolver serving malicious or manipulated DNS responses. A compromised DoH resolver could intentionally return incorrect IP addresses, redirecting users to phishing sites or malware distribution servers. Therefore, choosing a reputable and trustworthy DoH resolver is paramount. Users must shift their trust from their ISP (in traditional DNS) to their chosen DoH provider, making the provider's security practices and privacy policies critical considerations."
+            ],
+            "final_submission": "The traditional Domain Name System (DNS) operates as the internet's directory, translating human-readable domain names into numerical IP addresses. However, its unencrypted nature, typically over UDP port 53, exposes user browsing habits to pervasive monitoring by Internet Service Providers (ISPs), network operators, and potential adversaries. DNS over HTTPS (DoH) emerges as a vital privacy-enhancing technology, encapsulating DNS queries within encrypted HTTPS traffic to mitigate these vulnerabilities.\n\nTechnically, DoH, standardized in RFC 8484, functions by sending DNS queries as HTTP/2 requests or HTTP/1.1 POST requests to a DoH-compatible resolver over TCP port 443. This mechanism integrates DNS traffic seamlessly with ordinary web traffic, making it indistinguishable from other encrypted HTTPS communications. The core technical benefit is two-fold: first, it prevents passive surveillance, such as ISP tracking of browsing history, by encrypting the DNS metadata that would otherwise reveal visited domains. Second, it enhances security against active DNS manipulation, like man-in-the-middle attacks or DNS-based censorship, by ensuring the integrity and confidentiality of the query-response exchange. For example, users in restrictive internet environments can leverage DoH to circumvent DNS-based blocking, and individuals on public Wi-Fi networks can protect their DNS lookups from local eavesdropping, thereby significantly bolstering online anonymity.\n\nHowever, the adoption of DoH is not without its intricate challenges and trade-offs. A principal concern is the potential for increased centralization of DNS resolution. By steering users towards a limited number of large DoH providers (e.g., Google, Cloudflare), DoH shifts the locus of trust from potentially numerous ISPs to a few powerful corporations. This concentration raises questions regarding data privacy, antitrust implications, and the resilience of the internet's decentralized architecture. Furthermore, DoH introduces complexities for enterprise network management and security. Organizations often implement DNS-level filtering for malware protection, compliance, and content control. DoH's encrypted nature allows user devices to bypass these internal DNS firewalls, creating significant blind spots for IT departments and potentially increasing exposure to security threats from unmonitored DNS requests. The policy debate thus involves balancing individual privacy against the operational needs of network administrators and the long-term implications for internet governance.\n\nIn conclusion, DoH represents a substantial leap forward in user privacy and security by encrypting a fundamental component of internet communication. While its technical elegance offers compelling benefits, its integration necessitates a thoughtful engagement with the challenges it poses to network decentralization, enterprise security, and the evolving trust models of the internet infrastructure. A robust future for DoH will likely require collaborative solutions that address these complex interdependencies.\n\nReferences:\n*   Hoffman, P., & McManus, P. (2018). *RFC 8484: DNS Queries over HTTPS (DoH)*. IETF. Retrieved from https://datatracker.ietf.org/doc/html/rfc8484\n*   Kouli, A., Khattak, S., & Murdoch, S. J. (2020). *An analysis of the DoH ecosystem and its impact on network monitoring*. arXiv preprint arXiv:2002.04944.",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0, 1],
+                "human_paragraph_indices": [2, 3],
+                "hybrid_paragraph_indices": [4],
+                "notes": "Paragraphs 0-1 are pure AI (technical explanation), 2-3 are human-style discussion (challenges and context), paragraph 4 is hybrid (conclusion blends AI structure with human-style reasoning)."
+            },
+            "feedback": {
+                "c1": "The submission demonstrates an excellent and precise understanding of DoH, detailing its technical mechanisms, including HTTP/2, RFC 8484, and the nuances of encapsulation. The theoretical support is robust and accurate. (39/40)",
+                "c2": "Application to real-world scenarios is insightful and well-integrated. Examples such as bypassing deep packet inspection and protecting metadata from network observers are sophisticated and clearly linked to the technical features of DoH. (38/40)",
+                "c3": "The critical evaluation is excellent. It provides a nuanced and research-backed discussion of centralization, trust models, policy implications, and the dilemma for network administrators, showcasing a deep understanding of the broader ecosystem impacts. (9/10)",
+                "c4": "The writing is exemplary: clear, coherent, and maintains a formal academic tone throughout. The structure is logical, arguments flow seamlessly, and proper in-text citations with a reference list are included. (10/10)",
+                "total": "96/100"
+            }
+        },
+        {
+            "quality": "Poor",
+            "authorship": "human",
+            "key_points": [
+                "Confuses DNS with internet speed and security settings.",
+                "Incorrectly describes DoH as a general internet 'fix' or 'tool'.",
+                "Offers no actual technical mechanism or benefits related to DoH.",
+                "Fails to provide any real-world application of DoH's privacy features.",
+                "Completely dismisses challenges, showing a lack of understanding.",
+                "Writing is extremely disorganized, informal, and contains numerous grammatical and logical errors."
+            ],
+            "llm_questions": [
+                "What is the internet for?",
+                "What is privacy online?",
+                "How do websites get to my phone?",
+                "What is a server?"
+            ],
+            "llm_answers": [
+                "The internet is a vast, global network of interconnected computer networks that allows users to share information and communicate with each other. It's used for almost everything nowadays: sending emails, browsing websites, watching videos, playing games, making video calls, shopping online, and much more. It's essentially a massive library and communication system for the entire world.",
+                "Online privacy refers to the degree to which an individual can control what information about them is collected, stored, and shared online. It's about having the power to decide who sees your personal data, your browsing habits, your messages, and your location. Good online privacy means your activities are protected from being monitored by companies, governments, or other individuals without your consent, and that you have control over your digital footprint.",
+                "Websites get to your phone through a process that involves your phone's browser, the internet, and web servers. When you type a website address into your phone, your phone sends a request to a DNS server to find the website's IP address. Once it has the IP address, your phone sends a request over the internet to the web server where the website is stored. The server then sends the website's data (like text, images, and videos) back to your phone, and your browser assembles it into the page you see.",
+                "A server is a computer program or a device that provides functionality for other programs or devices, called 'clients.' In simple terms, it 'serves' data or resources to other computers over a network. For example, a web server stores websites and delivers them to your browser. An email server handles sending and receiving emails. A DNS server stores domain names and their corresponding IP addresses. Servers are usually powerful computers that are always on and connected to the internet, ready to respond to requests from clients."
+            ],
+             "final_submission": "The DNS system on the internet can be slow and sometimes unsafe. Many people don’t understand how their data travels across networks. DoH is a new technology that helps make internet usage faster and more secure. It's like having a shield for your online activities.\n\nTechnically, DNS over HTTPS (DoH) works by encrypting your DNS queries inside standard HTTPS traffic, so network observers cannot see which websites you visit. Requests are sent to DoH-enabled servers over TCP port 443, making the traffic indistinguishable from normal web browsing. This prevents ISPs or attackers on public Wi-Fi from snooping on your activity and protects against man-in-the-middle attacks and DNS manipulation.\n\nUsing DoH provides both practical and privacy benefits. For example, if you use a public Wi-Fi network or want to protect sensitive data, DoH keeps your queries hidden while still being easy to use. However, centralizing DoH through a few major providers like Google or Cloudflare can create new privacy risks. It also bypasses traditional DNS filtering used by companies and schools, which may complicate network management. Despite these trade-offs, DoH represents a strong improvement over traditional DNS, balancing security, privacy, and usability.",
+             "hybrid_breakdown": {
+                "ai_paragraph_indices": [1],
+                "human_paragraph_indices": [0],
+                "hybrid_paragraph_indices": [2],
+                "notes": "Paragraph 0 is casual human-style, paragraph 1 is formal AI-style, paragraph 2 mixes human readability with technical explanation (hybrid)."
+            },
+            "feedback": {
+                "c1": "The submission demonstrates major misunderstandings. It incorrectly attributes internet speed issues to DNS, misrepresents DoH as a general internet 'fix' or 'antivirus', and shows no grasp of its actual function or concepts. (10/40)",
+                "c2": "There is no real-world application. The claims about 'no hackers can get your stuff' or 'freedom' are generic and not linked to any specific mechanism or benefit of DoH, failing to demonstrate application. (8/40)",
+                "c3": "The submission entirely lacks critical evaluation. It repeatedly states 'no problems with it' and makes unsubstantiated claims about universal benefits without addressing any potential challenges or limitations. (2/10)",
+                "c4": "The writing is highly disorganized and informal. Sentences are simplistic, repetitive, and contain numerous grammatical errors. The submission lacks a coherent structure, making it extremely difficult to follow or understand. (5/10)",
+                "total": "25/100"
+            }
+        }
+    ]
+}

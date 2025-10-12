@@ -1,0 +1,355 @@
+{
+    "domain": "Engineering",
+    "prompt": "Describe the complete process of designing and analyzing a simple resistive circuit (e.g., series-parallel). Include how an engineer identifies the output requirements, selects components, performs calculations, creates circuit diagrams, and ensures the solution meets specifications.",
+    "rubric": {
+        "rubric_id": "rub_engineering_0002",
+        "criteria": [
+            {
+                "criterion_id": "c1",
+                "name": "Problem Identification and Output Specification",
+                "description": "Defines the electrical problem clearly, including voltage/current needs and functional requirements.",
+                "performance_descriptors": {
+                    "excellent": "Precisely defines requirements with context and output targets.",
+                    "good": "Defines major requirements with minor omissions.",
+                    "average": "Mentions general needs with limited specificity.",
+                    "needs_improvement": "Unclear or incomplete description of output requirements.",
+                    "poor": "Fails to identify core requirements or design goals."
+                },
+                "weight": 30
+            },
+            {
+                "criterion_id": "c2",
+                "name": "Component Selection and Circuit Calculation",
+                "description": "Selects appropriate resistors and calculates circuit behavior accurately.",
+                "performance_descriptors": {
+                    "excellent": "Accurate calculations with proper component values and clear rationale.",
+                    "good": "Correct calculations and mostly appropriate components.",
+                    "average": "Some calculation errors or vague component selection.",
+                    "needs_improvement": "Minimal or incorrect calculations and vague selection.",
+                    "poor": "No evidence of valid calculation or component choice."
+                },
+                "weight": 15
+            },
+            {
+                "criterion_id": "c3",
+                "name": "Circuit Diagram basics  and Design Presentation",
+                "description": "Describes how to make a  clear, standard-compliant circuit diagram creation basics and design Principles.",
+                "performance_descriptors": {
+                    "excellent": "All the design and circuit creation principles are explained and well writtern.",
+                    "good": "Clear report  with minor issues in principles.",
+                    "average": "Report presents principles but lacks clarity or standard format.",
+                    "needs_improvement": "Report poorly structured or partially explained.",
+                    "poor": "No report or the answer is out of the topic."
+                },
+                "weight": 30
+            },
+            {
+                "criterion_id": "c4",
+                "name": "Design Validation and Communication",
+                "description": "Explains how the design is tested and validated against performance specs.",
+                "performance_descriptors": {
+                    "excellent": "Comprehensively discusses validation using theory and practical checks.",
+                    "good": "Explains validation process adequately.",
+                    "average": "Mentions testing with limited detail.",
+                    "needs_improvement": "Little explanation of validation.",
+                    "poor": "No mention of testing or validation."
+                },
+                "weight": 25
+            }
+        ]
+    },
+    "submissions": [
+        {
+            "quality": "Excellent",
+            "key_points": [
+                "Clearly describe and explain the voltage and current requirements in a circuit design",
+                "Ensure correct selection of resistors for a series-parallel configuration",
+                "Accurately apply formulas to calculate voltage drops and total resistance",
+                "Verify and validate circuit performance through testing and implementation checks"
+            ],
+            "llm_questions": [
+                "How do engineers define voltage and current needs in a circuit design?",
+                "How are resistors selected for a series-parallel configuration?",
+                "What formulas are used to calculate voltage drops and total resistance?",
+                "What tools or software are used to draw standard circuit diagrams?",
+                "How do engineers verify circuit performance before implementation?"
+            ],
+            "llm_answers": [
+                "Engineers define voltage and current needs by first understanding the overall system requirements. This involves analyzing the load the circuit will drive (e.g., an LED, a microcontroller input) to determine its operating voltage and current draw. They also consider the power source's capabilities, system-level power budgets, and any signal integrity constraints. This information is formalized into a specification document that lists precise targets, such as 'Output Voltage: 3.3V ± 2%' and 'Maximum Current Draw: 5mA,' providing clear, measurable goals for the design.",
+                "Resistor selection is a multi-step process. First, the engineer calculates the ideal resistance value needed to achieve the desired circuit behavior (e.g., a specific voltage division or current limit). Then, they consult standard resistor value lists, like the E24 or E96 series, to find the closest available commercial value. Critically, they also calculate the expected power dissipation (P = I²R) for each resistor and select a component with a power rating well above that value (e.g., a 1/4W resistor for 1/8W dissipation) to ensure reliability. Finally, they consider the required tolerance (e.g., 1% vs. 5%) based on how sensitive the circuit is to variations.",
+                "The fundamental formulas are Ohm's Law (V = IR) and Kirchhoff's Laws (Kirchhoff's Current Law, KCL, and Kirchhoff's Voltage Law, KVL). For total resistance, resistors in series are summed directly (R_total = R1 + R2 + ...). For resistors in parallel, the reciprocal of the total resistance is the sum of the reciprocals (1/R_total = 1/R1 + 1/R2 + ...). To find voltage drops across specific components, engineers use these laws, often simplifying the circuit first by finding the equivalent resistance of series and parallel sections.",
+                "Engineers use specialized software known as Electronic Design Automation (EDA) or CAD tools. For schematic capture (drawing the diagram), popular tools include Altium Designer, Cadence OrCAD, KiCad (open-source), and Autodesk EAGLE. These tools provide libraries of standard symbols (per ANSI/IEEE standards), enforce connectivity rules, and can export netlists for simulation or PCB layout. For simpler analysis and diagrams, simulation software like LTspice or Multisim is also widely used.",
+                "Verification is a two-stage process. First, engineers perform simulation using software like SPICE (Simulation Program for Integrated Circuit Emphasis). This allows them to model the circuit's behavior and confirm that calculations are correct before ordering physical parts. Second, after simulation, they build a physical prototype, often on a breadboard. Using measurement instruments like a digital multimeter (DMM) to check voltages and currents and an oscilloscope to view time-varying signals, they compare the real-world performance against the calculated and simulated results, accounting for component tolerances. This confirms the design meets all specifications."
+            ],
+            "final_submission": "Designing and analyzing a simple resistive circuit is a foundational engineering task that follows a systematic process to ensure a robust and reliable outcome. This process begins with clearly defining the problem and culminates in rigorous validation.\n\nFirst, an engineer must perform Problem Identification and Output Specification. This is the most critical phase. For example, a requirement might be to design a voltage divider that provides a stable 3.3V reference voltage to a sensor from a 9V battery. The specification must be precise, including the input voltage (9V), the target output voltage (3.3V), the acceptable tolerance (e.g., ±5%), and the maximum current the sensor will draw (e.g., 1mA). This establishes clear, measurable goals.\n\nNext is Component Selection and Circuit Calculation. Based on the 3.3V/9V requirement, the voltage divider equation V_out = V_in * (R2 / (R1 + R2)) is used. A common ratio that approximates 3.3/9 is chosen, such as R1=5.6kΩ and R2=3.3kΩ from the standard E24 series. The engineer then calculates the exact output voltage: 9V * (3.3k / (5.6k + 3.3k)) = 3.33V, which is well within a 5% tolerance. They also calculate the total current (I = 9V / 8.9kΩ ≈ 1.01mA) and the power dissipated by each resistor (P=V²/R), ensuring a standard 1/4W resistor is more than sufficient.\n\nWith components selected, a standard Circuit Diagram is created using EDA software like KiCad or LTspice. This schematic uses universally recognized symbols for the voltage source, resistors, and ground. Each component is labeled with its reference designator (R1, R2) and value (5.6kΩ, 3.3kΩ). Nodes are labeled with expected voltages. This clear, unambiguous presentation is essential for communication, debugging, and manufacturing.\n\nFinally, the process concludes with Design Validation. The design is first simulated in LTspice to verify the calculated 3.33V output. Then, a physical prototype is built on a breadboard. A calibrated digital multimeter is used to measure the input voltage from the battery and the actual output voltage across R2. If the measured value is within the specified ±5% range of the target 3.3V, the design is considered validated and meets its initial specifications.",
+            "feedback": {
+                "c1": "Excellent. The submission precisely defines the design problem by specifying input voltage (9V), target output voltage (3.3V), load current constraints (1mA), and tolerance (±5%). This provides excellent context and clear, measurable targets. (30/30)",
+                "c2": "Excellent. All calculations for the voltage divider are accurate and clearly explained. The rationale for selecting specific E24 series resistors is explicitly stated, and the inclusion of power dissipation calculations demonstrates a thorough and professional approach to component selection. (15/15)",
+                "c3": "Excellent. The description of the circuit diagram creation process is excellent. It covers the use of standard symbols, clear labeling of components and nodes, and references industry-standard EDA software, demonstrating a comprehensive understanding of design presentation principles. (30/30)",
+                "c4": "Excellent. The validation process is comprehensively discussed, covering both theoretical verification via SPICE simulation and practical, hands-on checks using a breadboard and multimeter. This dual approach shows a robust understanding of how to verify a design against its original specifications. (25/25)",
+                "total": "100/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "key_points": [
+                "Defines target voltage levels and acceptable current ranges",
+                "Selects standard resistor values and computes expected node voltages",
+                "Checks power ratings against expected dissipation",
+                "Explains tolerance effects on final outputs"
+            ],
+            "llm_questions": [
+                "How do you choose E12/E24 resistor values close to targets?",
+                "What is the method to compute equivalent resistance in mixed networks?",
+                "When do resistor power ratings become critical?",
+                "How are tolerances propagated through calculations?"
+            ],
+            "llm_answers": [
+                "First, you perform the theoretical calculation to find the ideal resistance value your circuit needs. Once you have this ideal value, you refer to a standard value chart for a common resistor series like E12 (10% tolerance) or E24 (5% tolerance). You then select the commercial value from the chart that is closest to your ideal value. For example, if your calculation requires 4.85 kΩ, you would likely choose the 4.7 kΩ resistor from the E24 series. The final step is to recalculate your circuit's output using this standard value to ensure it still performs within your acceptable limits.",
+                "The method for computing equivalent resistance in a mixed (series-parallel) network is to simplify it step-by-step. You start from the point furthest from the source and work your way back. First, identify any simple series or parallel combinations. Calculate the equivalent resistance for those small groups. For instance, combine two parallel resistors into one equivalent resistor. Then, redraw the simplified circuit. This new equivalent resistor might now be in series with another one. You repeat this process of identifying and combining series/parallel groups until the entire network is reduced to a single equivalent resistance.",
+                "Resistor power ratings become critical in any situation where a significant amount of power will be dissipated as heat. This commonly occurs when there is either high current flowing through the resistor or a large voltage drop across it, since Power = Current² × Resistance (P=I²R) or Power = Voltage² / Resistance (P=V²/R). If the calculated power dissipation exceeds the resistor's rating (e.g., 1/4W, 1/2W), the resistor will overheat, potentially changing its resistance value, damaging the circuit board, or failing completely. It is standard practice to choose a resistor with a power rating at least double the expected dissipation.",
+                "Tolerances are propagated through calculations to understand the possible range of outcomes for your circuit. The most straightforward method is worst-case analysis. For a given calculation, you substitute the minimum and maximum possible values for each component based on its tolerance (e.g., a 100Ω ±10% resistor can be 90Ω or 110Ω). By running the calculations for the best- and worst-case combinations, you can determine the maximum possible range of your circuit's output. For more complex circuits, statistical methods like the Root Sum of Squares (RSS) can be used to estimate a more probable range of variation."
+            ],
+            "final_submission": "The process of designing a simple resistive circuit involves several key engineering stages, from understanding the goal to verifying the final product. A structured approach ensures the circuit functions as intended.\n\nThe first step is to identify the output requirements. For a resistive circuit, this usually means defining the source voltage and the desired output voltage or current. For example, the goal might be to power a small LED that requires about 2V and 20mA from a 9V battery. This sets a clear target for the design.\n\nWith the requirements set, the engineer selects components and performs calculations. To limit the current for the LED, a series resistor is needed. Using Ohm's Law, the voltage drop across the resistor should be 9V - 2V = 7V. The required resistance is R = V/I = 7V / 0.020A = 350Ω. Since 350Ω is not a standard E12 value, an engineer would choose the next closest standard value, which is 330Ω. Recalculating the current gives I = 7V / 330Ω ≈ 21.2mA, which is acceptable for most LEDs. The power dissipated by the resistor (P = V*I = 7V * 0.0212A ≈ 0.15W) is checked to ensure a standard 1/4W (0.25W) resistor can be used safely.\n\nNext, a circuit diagram is created. This schematic should clearly show the 9V source, the selected 330Ω resistor (labeled R1), and the LED, all connected in series. Using standard symbols is important for anyone else who needs to read the diagram. The diagram acts as the blueprint for building the circuit.\n\nFinally, the design must be validated. The engineer would build the circuit on a breadboard using a 9V power supply, a 330Ω resistor, and the LED. They would then use a multimeter to measure the actual voltage drop across the LED and the current flowing through the circuit. If the measured values are close to the calculated 2V and 21.2mA, the design is confirmed to be working correctly and meeting its specifications. This practical test is essential to catch any miscalculations or issues with the components themselves.",
+            "feedback": {
+                "c1": "Good. The submission defines the major requirements for the design, including the input voltage (9V), and the LED's target voltage (2V) and current (20mA). It could be improved by specifying an acceptable range or tolerance for these values, which is a minor omission. (24/30)",
+                "c2": "Good. The calculations using Ohm's Law are correct, and the component selection is mostly appropriate. The choice of a standard 330Ω resistor is well-reasoned, and the power dissipation check is a good inclusion. The rationale is clear. (12/15)",
+                "c3": "Good. The report clearly explains the purpose of a circuit diagram and what it should contain. While it doesn't mention specific software or formal standards (like ANSI/IEEE), the principles of clear presentation using standard symbols are correctly identified. (24/30)",
+                "c4": "Good. The validation process is explained adequately. It correctly describes building a prototype on a breadboard and using a multimeter to measure key parameters. The explanation is sufficient to understand how the design would be tested. (20/25)",
+                "total": "80/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "key_points": [
+                "States desired supply voltage and a rough output target",
+                "Calculates total resistance with limited justification",
+                "Mentions Ohm’s law for current estimates",
+                "Briefly notes the need to check power limits"
+            ],
+            "llm_questions": [
+                "What data do you list before starting calculations?",
+                "How is current split in parallel branches?",
+                "What is the quick check for power in a resistor?",
+                "How do you record assumptions in text form?"
+            ],
+            "llm_answers": [
+                "Before starting calculations, you should list all the known information. This typically includes the input voltage (e.g., from a battery or power supply), the desired output characteristics (e.g., a specific voltage or current for a component), and any constraints or limitations. It's also good practice to list the unknown values you need to solve for, such as the required resistor values or the current in different parts of the circuit. This helps organize your thinking and ensures you don't miss any part of the problem.",
+                "In parallel branches, the total current flowing into the junction splits among the branches. According to the current divider rule, the current splits inversely proportional to the resistance of each branch. This means the branch with the lowest resistance will get the largest share of the current, and the branch with the highest resistance will get the smallest share. The voltage across all parallel branches remains the same.",
+                "A quick check for power in a resistor can be done using one of the power formulas: P = V × I, P = I² × R, or P = V² / R. If you know any two of the three variables (voltage, current, resistance), you can easily calculate the power. For example, if you've calculated a 2V drop across a 100Ω resistor, the power is P = (2V)² / 100Ω = 4 / 100 = 0.04W. You then compare this to the resistor's power rating (e.g., 0.25W) to make sure it's not overloaded.",
+                "Assumptions can be recorded in a few ways. For formal engineering reports, it's best to have a dedicated 'Assumptions' section near the beginning. Here, you can list all the conditions you've assumed for your analysis, such as 'Assuming an ideal voltage source with zero internal resistance' or 'Component tolerances are neglected for initial calculations.' For less formal work, you can state assumptions inline as you perform the calculations, for example, writing '(assuming the load draws negligible current)' right next to a formula."
+            ],
+            "final_submission": "To design a resistive circuit, an engineer has to follow a few steps. It’s all about making sure the electricity does what you want it to do safely. This process works for simple things like series-parallel circuits.\n\nFirst, you have to know what you're trying to do. This is the requirements part. You need to know your input voltage, like from a 12V power supply, and what you want the output to be. For example, maybe you need to get a lower voltage from that 12V. So you say 'the goal is to reduce the voltage.'\n\nNext, you have to pick the parts and do the math. You use resistors to control the voltage and current. Ohm's Law, V=IR, is very important here. For a series-parallel circuit, you first find the total resistance. You add resistors in series, and for parallel ones, you use the 1/R formula. For example, if two 100 ohm resistors are in parallel, their total is 50 ohms. If that is in series with another 100 ohm resistor, the grand total is 150 ohms. Then you can find the total current from the 12V source.\n\nAfter your calculations, you should draw the circuit diagram. This is a picture that shows how everything is connected. You draw symbols for the battery and the resistors and connect them with lines. This makes it easy for someone else to see your design. You should label the parts with their values, like '100Ω'.\n\nFinally, you should check your work. This means testing the circuit. You would build what you designed and then use a tool to measure the voltage at different points. This is to make sure your calculations were right and the circuit is working as you expected it to. You also have to make sure the resistors don’t get too hot, which means checking their power limits.",
+            "feedback": {
+                "c1": "Average. The submission mentions a general need, such as 'reduce the voltage' from a 12V supply, but it lacks the necessary specificity. It doesn't define a clear numerical target for the output voltage or any current constraints, making the design goal ambiguous. (20/30)",
+                "c2": "Average. The submission correctly mentions Ohm's Law and the formulas for series and parallel resistance. However, the example calculation for a mixed circuit is presented without a clear design goal, making the component selection seem illustrative rather than justified for a specific purpose. (10/15)",
+                "c3": "Average. The description of creating a diagram correctly identifies the need for symbols and labels, but the explanation lacks clarity and does not mention adherence to any standard format. The presentation of the principles is basic. (20/30)",
+                "c4": "Average. The submission mentions the need for testing and measuring voltage to confirm calculations. However, this is described with limited detail, omitting specifics on what tools to use or what constitutes a successful validation. (16/25)",
+                "total": "66/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "key_points": [
+                "Requirements are incomplete or inconsistent",
+                "Component choices are not tied to calculations",
+                "Voltage and current results are not verified",
+                "No clear explanation of limits or margins"
+            ],
+            "llm_questions": [
+                "How do you reconcile conflicting requirements?",
+                "Why must each component choice be justified?",
+                "What simple tests confirm the design meets spec?",
+                "How do you define pass/fail thresholds?"
+            ],
+            "llm_answers": [
+                "Reconciling conflicting requirements, such as a demand for both high performance and very low cost, is a core engineering challenge. The first step is to quantify the trade-offs. For example, determine exactly how much performance must be sacrificed to meet the cost target. Then, you must communicate these trade-offs clearly to all stakeholders (e.g., project managers, clients). The goal is to facilitate a discussion to prioritize the requirements. It might be decided that a slightly lower performance is acceptable, or the budget might be increased. The final, agreed-upon balance of requirements must be documented.",
+                "Every component choice must be justified to ensure the design is robust, reliable, and reviewable. Justification provides traceability, showing why a specific part was chosen over alternatives. This is critical for several reasons: it proves the component meets all performance requirements (like voltage rating, power dissipation, and speed), it helps in debugging if the circuit fails, it supports cost analysis, and it allows other engineers to understand and maintain the design later. Without justification, component selection appears arbitrary and introduces risk.",
+                "Several simple tests can confirm if a design meets its specifications. The most basic is using a digital multimeter (DMM). You can measure DC voltages at key nodes to ensure they match calculated values. You can measure current draw from the power supply to check for unexpected power consumption. You can also measure the resistance of individual components (when the circuit is unpowered) to ensure they are the correct value. These fundamental checks quickly reveal major errors in calculation or assembly.",
+                "Pass/fail thresholds are quantitative limits derived directly from the design requirements. They define the acceptable range of performance. For example, if a requirement states 'The output must be 5V with a tolerance of ±5%,' the pass/fail thresholds are 4.75V and 5.25V. During validation testing, any measured output voltage that falls outside this range constitutes a failure. These thresholds must be clearly defined and agreed upon before testing begins to ensure objective and unambiguous evaluation of the design."
+            ],
+            "final_submission": "Engineering a circuit is about using parts to get electricity to do something. You have to design it first. The process involves some steps. You need a circuit to power a thing.\n\nFirst you have to know what you want. The requirements are what the circuit is for. Maybe it needs to be 5 volts. This is the output requirement. The input could be a battery.\n\nThen you do the calculations for the parts. Resistors are used a lot. V=IR is the rule. If you put resistors in a line that is series. If you put them side by side it is parallel. The calculations are different. For a circuit, you put resistors to change the voltage. So you pick some resistors that you think will work. You might need a 100 ohm one and a 200 ohm one. You use them to get the 5 volts you want. The calculation is hard if you have a lot of parts.\n\nThen you have to show your design. This is a drawing. You draw the battery and the resistors. You use lines to connect them all up. This is the circuit diagram. It tells you how to build it.\n\nAfter you do all that, you have to see if it works. You connect the battery and the resistors. You hope the output is 5 volts. If it is, then the design is good. This is how you test it. If it doesn't work you have to change the resistors and try again. That is the complete process.",
+            "feedback": {
+                "c1": "Needs Improvement. The description of the output requirements is unclear and incomplete. It vaguely mentions a '5 volts' target but provides no context, such as the input voltage or any current limitations, which are essential for a viable design. (15/30)",
+                "c2": "Needs Improvement. The submission shows minimal and incorrect understanding of calculations. It mentions Ohm's Law and the concepts of series/parallel but does not apply them to a concrete problem. Component selection ('a 100 ohm one and a 200 ohm one') is not justified by any calculation and appears arbitrary. (7/15)",
+                "c3": "Needs Improvement. The submission is poorly structured, and the explanation of the circuit diagram is partial and overly simplistic. It fails to describe a standard or coherent method for design presentation, just mentioning 'draw the battery and the resistors.' (15/30)",
+                "c4": "Needs Improvement. There is very little explanation of design validation. The submission suggests 'see if it works' and 'hope the output is 5 volts,' which lacks any detail on the methods, tools, or success criteria required for proper engineering testing. (13/25)",
+                "total": "50/100"
+            }
+        },
+        {
+            "quality": "Poor",
+            "key_points": [
+                "No clear output targets",
+                "Missing or incorrect calculations",
+                "Components selected arbitrarily",
+                "No validation or reasoning provided"
+            ],
+            "llm_questions": [
+                "What is the minimal information needed for design?",
+                "Which errors commonly break circuit calculations?",
+                "Why is documenting calculations essential?",
+                "How do you structure a brief text summary?"
+            ],
+            "llm_answers": [
+                "To start any basic circuit design, you need at least two key pieces of information: the input and the desired output. The input specifies your power source, for example, 'a 9V DC battery' or 'a 5V USB supply.' The desired output defines what the circuit needs to accomplish, for example, 'provide 3.3V to a sensor' or 'limit the current to 15mA for an LED.' Without knowing both where you're starting from (input) and where you need to go (output), a meaningful design is impossible.",
+                "Several common errors can break circuit calculations. The most frequent is confusing the formulas for series and parallel resistors—adding reciprocals for series resistors is a classic mistake. Another common error is in applying Kirchhoff's Laws, particularly getting the signs wrong for voltage drops and rises in a loop. Simple arithmetic mistakes or unit errors, like mixing up milliamps (mA) with amps (A) or kilohms (kΩ) with ohms (Ω) without converting them properly, will also lead to incorrect results.",
+                "Documenting calculations is essential for professional engineering work. Firstly, it allows for verification and peer review; another engineer can follow your steps to check for errors. Secondly, it provides a record for future reference, which is invaluable if the design needs to be modified or debugged months later. Finally, the act of writing down the steps in a clear, logical manner often helps the designer to spot their own mistakes and clarify their thinking, leading to a better design.",
+                "A brief text summary should be structured logically to be effective. A good structure is: 1. Introduction: State the main purpose or conclusion in a single sentence. 2. Body: Provide a few bullet points or short sentences that highlight the key findings, steps taken, or most important pieces of information. 3. Conclusion: Briefly restate the main outcome or suggest the next step. Using clear headings like 'Objective,' 'Key Steps,' and 'Result' can also greatly improve readability."
+            ],
+            "final_submission": "Electricity is a very important part of engineering. Many things run on electricity. Circuits are the paths that electricity flows on. To make a circuit, you need different kinds of parts. One of the most common parts is a resistor. A resistor's job is to resist the flow of electricity. This is a very important job in a circuit. Without resistors, too much electricity might flow and break other parts, which would be bad.\n\nWhen an engineer makes a circuit, they have to choose the right resistors. Resistors come in many different sizes. Some have a lot of resistance and some have a little. The engineer has to think about what the circuit needs to do. For example, if you need to protect a light bulb, you put a resistor with it. The engineer will pick a resistor from a box of parts. They can be identified by the colored stripes on them. Each color means a different number.\n\nDrawing the circuit is also a part of the job. The drawing shows where all the parts go. It's like a map for the electricity. The lines on the drawing are the wires that connect everything together. Anyone who knows how to read these maps can build the circuit. This is a key part of the process. In conclusion, engineering with circuits involves using parts like resistors to control electricity, and it is a complex field that is vital for modern technology. You have to select components and put them together to make things work.",
+            "feedback": {
+                "c1": "Poor. The submission completely fails to identify or define any core requirements or design goals for a circuit. It speaks in generalities about electricity and does not mention any specific electrical parameters like voltage or current targets. (6/30)",
+                "c2": "Poor. There is no evidence of any valid calculations or a reasoned component choice. The text discusses resistors in a generic, descriptive sense without applying any analytical principles or formulas like Ohm's Law. (3/15)",
+                "c3": "Poor. The submission does not function as a design report and is largely off-topic. It fails to explain any of the core principles of circuit design or presentation in a way that addresses the prompt's requirements. (6/30)",
+                "c4": "Poor. There is no mention of testing, validation, or any process to ensure a design meets specifications. This critical step in the engineering design process is entirely omitted from the response. (5/25)",
+                "total": "20/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "key_points": [
+                "Precisely defines input voltage, target output voltage, and maximum load current.",
+                "Performs accurate calculations for voltage division and power dissipation, selecting appropriate standard resistors.",
+                "Acknowledges the importance of clear diagrams with standard symbols but lacks deep detail on software or formal standards.",
+                "Mentions practical testing with a multimeter but omits simulation or comprehensive validation strategies."
+            ],
+            "llm_questions": [
+                "How do you handle variable input voltage in a fixed output circuit?",
+                "What factors influence the choice of a resistor's tolerance?",
+                "What are common mistakes to avoid when drawing schematics?",
+                "How do you ensure a circuit remains stable under varying load conditions?"
+            ],
+            "llm_answers": [
+                "To handle variable input voltage while maintaining a fixed output, engineers typically use a voltage regulator. For resistive circuits, a simple Zener diode regulator can provide a stable reference voltage, or more commonly, linear regulators like the LM78xx series or switching regulators (e.g., buck converters) are employed. These components are designed to accept a fluctuating input voltage within a specified range and produce a constant output voltage, making the circuit robust against power source variations.",
+                "The choice of a resistor's tolerance is primarily influenced by the sensitivity of the circuit to resistance variations and the overall cost constraints. For precision applications, such as analog signal conditioning or reference voltage generation, a low tolerance (e.g., 1% or 0.1%) resistor is necessary to ensure the circuit operates as intended. In less critical applications, like current limiting for an LED, a higher tolerance (e.g., 5% or 10%) resistor is often acceptable due to its lower cost and readily availability.",
+                "Common mistakes in drawing schematics include unclear labeling of components and nets, inconsistent use of standard symbols, improper ground references, and messy wiring that makes the diagram difficult to follow. Additionally, forgetting to include key information like component values, part numbers, or test points can hinder troubleshooting and manufacturing. A clean, organized, and standardized schematic is crucial for effective communication and successful circuit development.",
+                "Ensuring a resistive circuit remains stable under varying load conditions involves several considerations. Firstly, the power supply must be capable of delivering the maximum required current without significant voltage drop or ripple. Secondly, for voltage dividers, if the load current is not negligible, the voltage divider rule needs to be adjusted to account for the load resistance in parallel with the lower resistor. For more complex circuits, feedback mechanisms (like those in active voltage regulators) are essential to dynamically adjust the output to maintain stability against varying loads."
+            ],
+            "final_submission": "The design of a simple resistive circuit, such as a voltage divider, starts with clearly understanding its purpose and requirements. Suppose the task is to derive a stable 5V output from a 12V battery to power a low-power microcontroller, which typically draws up to 50mA. This immediately defines the input voltage, the target output voltage, and the maximum current draw, allowing for precise component selection.\n\nMoving to component selection and calculations, a voltage divider is the most straightforward solution. We'll use two resistors, R1 and R2, in series. The output voltage across R2 would be V_out = V_in * (R2 / (R1 + R2)). For a 5V output from 12V, a ratio of approximately 5/12 is needed. We can choose R1 = 140 ohms and R2 = 100 ohms (E24 series values are often chosen for practicality). Let's verify: V_out = 12V * (100 / (140 + 100)) = 12V * (100 / 240) = 5V. This works. The total current drawn from the 12V source by the divider itself would be I_divider = 12V / 240Ω = 50mA. We must also consider the load current from the microcontroller. If the microcontroller draws 50mA, the total current through R1 will be 100mA. The power dissipated by R1 = (I_total)^2 * R1 = (0.1A)^2 * 140Ω = 1.4W. This indicates that standard 1/4W or 1/2W resistors would be insufficient, requiring at least a 2W resistor for R1, while R2 (dissipating 0.25W) could be a 1/2W part.\n\nNext, the circuit diagram should be created. Using standard symbols for the voltage source, resistors, and ground, the schematic would clearly show R1 connected to the 12V input, and R2 connected between R1 and ground, with the 5V output taken across R2. Labels for component values (e.g., R1: 140Ω, R2: 100Ω) and reference designators (R1, R2) are crucial for clarity. While specific software isn't detailed, the importance of a neat and understandable drawing is acknowledged.\n\nFinally, the design requires validation. After assembling the circuit on a breadboard, a digital multimeter (DMM) would be used to measure the actual output voltage under no-load and full-load conditions (by connecting the microcontroller or a equivalent dummy load). If the measured 5V output remains within an acceptable range (e.g., ±0.2V) under these conditions, and the resistors are not overheating, the design is considered successful. This practical measurement is essential to confirm calculations.",
+            "feedback": {
+                "c1": "Excellent. The submission precisely defines the design problem by specifying the input voltage (12V), target output voltage (5V), and maximum load current (50mA), providing clear, measurable targets. (28/30)",
+                "c2": "Excellent. The calculations for the voltage divider are accurate, and the component selection is appropriate. The inclusion of power dissipation calculations and the realization that higher-wattage resistors are needed demonstrates a thorough understanding. (14/15)",
+                "c3": "Good. The description of creating a circuit diagram is good, emphasizing standard symbols and clear labeling. It correctly identifies the principles of clarity for communication, though it does not delve into specific software or formal industry standards in depth. (20/30)",
+                "c4": "Good. The validation process adequately describes practical checks using a multimeter under both no-load and full-load conditions. However, it lacks mention of simulation or more advanced iterative testing, making it a good but not excellent explanation. (14/25)",
+                "total": "76/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "key_points": [
+                "Vague problem definition (powering an unspecified 'device').",
+                "Attempts basic calculations but makes some errors or uses unjustified component choices.",
+                "Demonstrates a strong understanding of professional circuit diagramming tools and standards.",
+                "Provides minimal to no detail on actual validation procedures or success criteria."
+            ],
+            "llm_questions": [
+                "What information is critical for defining 'output requirements'?",
+                "How do standard component values impact design?",
+                "What are the benefits of using EDA software for diagrams?",
+                "What's the difference between testing and validating a circuit?"
+            ],
+            "llm_answers": [
+                "Critical information for defining output requirements includes the precise target voltage (e.g., 3.3V, 5V), the maximum current the load will draw, any acceptable voltage ripple or noise, and the stability or accuracy needed. Functional requirements, such as whether it's a constant voltage, constant current, or a signal conditioner, are also essential. Without these specifics, an engineer cannot accurately design or select components for the circuit.",
+                "Standard component values (like those in the E12 or E24 series for resistors) significantly impact design by dictating what components are readily available commercially. Engineers often calculate an ideal component value and then select the closest standard value, requiring a recalculation to verify the chosen component still meets the design's performance criteria within acceptable tolerances. Designing with non-standard values can lead to higher costs or delays if custom parts are needed.",
+                "Electronic Design Automation (EDA) software offers numerous benefits for creating circuit diagrams. It provides libraries of standard symbols, enforces design rules, performs automatic wiring, and can generate netlists for simulation or PCB layout. This software also facilitates collaboration, version control, and generates professional-looking documentation, significantly reducing errors and speeding up the design process compared to manual drawing.",
+                "Testing generally refers to checking if a circuit *behaves* as expected under certain conditions (e.g., 'Does it power on? Is the voltage 5V?'). Validation, on the other hand, is the process of confirming that the circuit *meets all its original specifications and requirements* (e.g., 'Is the 5V output within ±2% tolerance across the entire operating temperature range and load conditions?'). Testing is a part of validation, but validation is a broader process of ensuring the design fulfills its intended purpose and specified performance criteria."
+            ],
+            "final_submission": "The journey of designing a resistive circuit begins with understanding the desired outcome, though this initial step is often the most challenging. Let's assume the goal is to power an unspecified 'device' from a common 9V battery. The specific voltage or current needs of this 'device' are not precisely known, but a general reduction of voltage is desired, perhaps to a 'lower, safer' level. This general requirement forms the vague starting point for the design process.\n\nNext, component selection and calculation involve using fundamental laws. Ohm's Law (V=IR) is key. For our 'device,' if we want a lower voltage, a simple series resistor could be used. Suppose we arbitrarily pick a 470Ω resistor to put in series with our 'device.' We might estimate the device needs, say, 20mA. Then the voltage drop across the resistor would be V_R = I * R = 0.02A * 470Ω = 9.4V. This would leave negative voltage for the device from a 9V battery, indicating a calculation error or a poor choice of resistor value without understanding the load. A correct approach would be to determine the actual voltage drop needed for the resistor (e.g., 9V - V_device) and then calculate R. However, in this scenario, the initial problem specification is so weak that meaningful calculation is hindered.\n\nWhere the process shines is in Circuit Diagram and Design Presentation. Engineers must create clear and unambiguous diagrams. This means using industry-standard symbols for components like resistors, batteries, and ground, often found in Electronic Design Automation (EDA) software like KiCad or LTspice. Each component must be clearly labeled with its reference designator (e.g., R1, B1) and its value. Wires should be drawn neatly, avoiding ambiguous crossings. This graphical representation is the blueprint for assembly and is essential for communication among engineers, ensuring everyone understands the circuit's structure. The quality of this presentation is paramount, regardless of the correctness of the underlying design.\n\nFinally, the design needs validation. With such an unspecific 'device,' validation becomes rudimentary. It might involve simply connecting the circuit and observing if the 'device' turns on or functions. There's no clear specification to test against, so measurements with a multimeter might confirm some voltages, but without targets, it's hard to definitively say the design 'meets specifications.' The process concludes with a qualitative assessment: 'It seems to work,' rather than a quantitative, data-driven validation.",
+            "feedback": {
+                "c1": "Good. The problem definition is vague, referring to an 'unspecified device' and desiring a 'lower, safer' voltage without specific numerical targets or functional constraints, leading to limited specificity. (16/30)",
+                "c2": "Average. The submission attempts basic calculations but demonstrates a significant error in applying Ohm's Law (resulting in negative voltage for the load). Component selection appears arbitrary, not justified by a clear design goal. (10/15)",
+                "c3": "Excellent. The description of circuit diagram creation is excellent. It clearly details the use of industry-standard symbols, EDA software (KiCad, LTspice), and the importance of clear labeling for professional presentation. (27/30)",
+                "c4": "Average. The explanation of validation is severely limited. It suggests qualitative observation ('It seems to work') rather than detailing specific measurement methods, comparison to quantitative specifications, or tools for rigorous testing. (10/25)",
+                "total": "63/100"
+            }
+        },
+        {
+            "quality": "Excellent",
+            "key_points": [
+                "Exemplary problem identification including environmental factors and operational parameters.",
+                "Flawless and comprehensively justified component selection with advanced considerations (e.g., thermal stability, tolerance stack-up).",
+                "Detailed explanation of professional schematic capture, documentation, and version control principles.",
+                "Robust validation strategy incorporating simulation, prototyping, and adherence to performance margins."
+            ],
+            "llm_questions": [
+                "How do you incorporate temperature stability into component selection?",
+                "What are the benefits of a tolerance stack-up analysis?",
+                "Beyond standard symbols, what makes a circuit diagram truly excellent for complex designs?",
+                "Describe a multi-stage validation process for critical circuits."
+            ],
+            "llm_answers": [
+                "Incorporating temperature stability into component selection involves choosing components with low temperature coefficients (TC). For resistors, this means selecting metal film or wire-wound resistors, which typically have TCs of ±25 ppm/°C or better, instead of carbon film. Capacitors also have different dielectric types with varying temperature stability. Additionally, passive thermal management (e.g., heat sinks, proper PCB layout) or active thermal compensation can be designed into the circuit to mitigate temperature effects on overall performance.",
+                "A tolerance stack-up analysis (worst-case analysis or statistical analysis like RSS) is critical for predicting the range of possible outputs in a circuit due to component variations. Its benefits include: identifying potential performance issues before prototyping, guiding the selection of appropriate component tolerances (avoiding over-specifying or under-specifying), improving manufacturing yield, and providing confidence that the final product will meet specifications under all foreseeable conditions. It helps manage risk and optimize cost.",
+                "For complex designs, a truly excellent circuit diagram goes beyond standard symbols. It includes hierarchical design (breaking down complex systems into manageable blocks), clear net labels, bus notation, extensive annotations explaining circuit functionality and critical waveforms, component values and part numbers for Bill of Materials (BOM) generation, and cross-references to other design documents. It also often includes block diagrams to show high-level signal flow and explicit power distribution networks.",
+                "A multi-stage validation process for critical circuits typically starts with **1. Simulation** (e.g., SPICE, behavioral modeling) to verify theoretical operation and explore corner cases. **2. Bench Prototyping** on a breadboard or perfboard to test functionality with real components. **3. PCB Prototyping** for high-fidelity electrical performance testing, including power integrity, signal integrity, and thermal analysis. **4. Environmental Testing** (e.g., temperature cycling, humidity, vibration) to assess reliability under extreme conditions. **5. Regulatory Compliance Testing** (e.g., EMC, safety standards). Each stage identifies issues, feeding back into design iterations, until all performance margins and specifications are met."
+            ],
+            "final_submission": "The rigorous process of designing and analyzing a simple resistive circuit, while seemingly elementary, demands precision at every stage to ensure reliability and performance. This process is initiated by a comprehensive Problem Identification and Output Specification.\n\nAn engineer begins by meticulously defining the electrical problem. For instance, consider designing a precision voltage reference of 2.5V from a 12V source, capable of sourcing 10mA with a voltage ripple of less than 10mV, operating stably across a temperature range of 0°C to 70°C, and maintaining an accuracy of ±1%. This detailed specification not only provides clear numerical targets but also environmental and functional constraints, which are paramount for robust design. The load characteristics, such as input impedance of the referenced system, would also be precisely quantified.\n\nWith these exacting requirements, Component Selection and Circuit Calculation become a meticulous task. A voltage divider using high-precision metal film resistors (e.g., 0.1% tolerance, low temperature coefficient) would be selected. For a 2.5V output from 12V, a resistor ratio of 2.5/9.5 (R2/R1) is needed. Values like R1 = 9.5kΩ and R2 = 2.5kΩ (using E96 series for precision) could be chosen. Each resistor's power dissipation (P = V²/R) would be calculated, ensuring chosen components (e.g., 1/4W) have sufficient derating for reliability. Furthermore, a detailed tolerance stack-up analysis would be performed to guarantee the ±1% output accuracy under worst-case component variations and temperature shifts.\n\nThe creation of a Circuit Diagram and Design Presentation would adhere to formal standards (e.g., IEEE 315). Using professional EDA software (e.g., Altium Designer, Eagle), a hierarchical schematic would be generated, with clear block diagrams for modularity. Components would be labeled with unique designators, values, and part numbers, along with detailed annotations explaining critical signal paths, test points, and operating conditions. Layers would be utilized for clarity (e.g., power, signal, ground). Version control (Git) would be employed for collaborative development and historical tracking, ensuring design integrity.\n\nFinally, Design Validation is critical. The circuit would first be thoroughly simulated using SPICE models to verify performance across specified input voltage ranges, load conditions, and temperature extremes. Following successful simulation, a physical prototype would be meticulously assembled. Precision measurement equipment, including a calibrated digital multimeter (DMM) and an oscilloscope, would be used to measure output voltage, current, and ripple. These measurements would be compared against the ±1% accuracy and 10mV ripple specifications. Environmental chamber testing would confirm stability from 0°C to 70°C. Any deviations would trigger an iterative design refinement process, ensuring the solution demonstrably meets and often exceeds the initial specifications, thereby demonstrating a comprehensive and professional engineering approach.",
+            "feedback": {
+                "c1": "Excellent. The submission provides an exemplary problem identification. It precisely defines voltage, current, ripple, accuracy, and operating temperature range, demonstrating a deep understanding of output specifications and functional requirements. (29/30)",
+                "c2": "Excellent. Calculations are flawless and exceptionally well-justified, including the selection of precision resistors, power dissipation, and the foresight to perform a tolerance stack-up analysis for accuracy. This is a comprehensive and advanced approach to component selection. (15/15)",
+                "c3": "Excellent. The explanation of circuit diagram creation is highly detailed, covering professional EDA software, hierarchical design, formal standards, meticulous labeling, annotations, and version control. It represents an excellent understanding of design presentation principles. (28/30)",
+                "c4": "Good. The validation process is robustly explained, detailing SPICE simulation, physical prototyping, use of precision equipment, and environmental chamber testing. While comprehensive, a slightly more explicit discussion of failure modes or advanced testing for resistive circuits could enhance it further. (21/25)",
+                "total": "93/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "key_points": [
+                "Identifies a general need to 'make current flow' but lacks specific output targets.",
+                "Mentions Ohm's Law and series/parallel concepts but applies them incorrectly or without justification.",
+                "Attempts to describe a diagram but misses standard symbols, labeling, and clarity principles.",
+                "Validation is almost entirely absent, with only a vague notion of 'making sure it works'."
+            ],
+            "llm_questions": [
+                "What's the difference between a load and a source?",
+                "When do you use a multimeter to check resistance?",
+                "Why are standard symbols important in a diagram?",
+                "What's the most basic way to confirm a circuit is 'working'?"
+            ],
+            "llm_answers": [
+                "In a circuit, a source is what provides electrical energy, like a battery or a power supply. It 'sources' voltage or current. A load is what consumes that energy to perform a task, such as an LED, a motor, or a resistor. It 'loads' the source. Understanding this distinction is fundamental to designing any circuit.",
+                "You use a multimeter to check resistance when the circuit is completely unpowered. Measuring resistance in a live circuit can damage the multimeter or yield incorrect readings because other components (like voltage sources or active devices) can interfere with the measurement. It's primarily used for component testing before assembly or for troubleshooting open/short circuits on an unpowered board.",
+                "Standard symbols are crucial in a circuit diagram because they create a universal language for engineers. Just like words in a sentence, standard symbols (e.g., per IEEE or IEC standards) ensure that anyone looking at the diagram, regardless of their native language or where they were trained, can understand what each component is and how it functions in the circuit. This prevents misinterpretation and aids collaboration.",
+                "The most basic way to confirm a circuit is 'working' is to simply observe its intended primary function. For an LED circuit, does the LED light up? For a motor control circuit, does the motor spin? This is a very rudimentary check and doesn't confirm if it's working *correctly* or *to specification*, but it's the absolute first step to see if any power is flowing and if the basic operation is achieved."
+            ],
+            "final_submission": "Designing a resistive circuit starts with thinking about what you want electricity to do. You have to make sure the current flows right. It's like guiding water through pipes. The first thing an engineer has to figure out is what the circuit needs to accomplish. For example, maybe you just want to make current flow to something, like a simple light. This is the output requirement: to get power to a light. The input would be from a battery, say a small one.\n\nThen comes picking the parts and doing some math. Resistors are important for controlling the flow. Ohm's Law (V=IR) is a rule that helps. If you have a battery and a light, and you want to slow down the current, you put a resistor in series. If you put two resistors side-by-side, that's parallel. The calculations are about adding or dividing numbers. For example, if you have a 9V battery and a light, you might just pick a resistor from a box, maybe a 1K ohm one, because it's a common size, without really calculating if it's the right one for that specific light. The math can get tricky if there are many resistors.\n\nAfter you have your idea and chosen parts, you need to draw the circuit. This is like a map for the electricity. You draw lines for the wires and little squares or squiggles for the resistors. You draw a big rectangle for the battery. It needs to show how everything connects. But often, these drawings don't use real symbols, they just use simple shapes. You just connect them up, and that's the diagram. It helps you build it.\n\nFinally, you need to check if your circuit works. You connect the battery to your resistors and the light. If the light turns on, then it worked. If it doesn't, you change some things and try again. This is how you test it. There isn't much more to it than that. You just plug it in and see if the desired outcome (the light turning on) happens. This confirms if your design was good enough.",
+            "feedback": {
+                "c1": "Average. The description identifies a general need ('make current flow to something, like a simple light') but lacks specific numerical targets for voltage or current, making the output requirements very incomplete and unclear. (18/30)",
+                "c2": "Needs Improvement. The submission mentions Ohm's Law and concepts of series/parallel but applies them vaguely or incorrectly. The example of picking a 1K ohm resistor is arbitrary and not justified by any calculation for a specific light. (7/15)",
+                "c3": "Needs Improvement. The description of creating a circuit diagram mentions drawing lines and shapes but fails to describe standard symbols, proper labeling conventions, or the principles of clarity required for engineering diagrams. (16/30)",
+                "c4": "Poor. The explanation of validation is extremely superficial, relying on 'if the light turns on, then it worked' and 'just plug it in.' It entirely lacks any detail on measurement, comparison to specifications, or proper testing methodology. (8/25)",
+                "total": "49/100"
+            }
+        },
+        {
+            "quality": "Poor",
+            "key_points": [
+                "Fails to define any specific electrical problem or output goals.",
+                "Demonstrates no analytical calculations or logical basis for component selection.",
+                "Provides a very rudimentary and non-standard description of circuit diagramming.",
+                "Completely omits any discussion of design validation or verification."
+            ],
+            "llm_questions": [
+                "What's the very first step in any engineering design?",
+                "Why can't you just guess resistor values?",
+                "What is the simplest way to draw a circuit?",
+                "Why is it important to check if a circuit works?"
+            ],
+            "llm_answers": [
+                "The very first step in any engineering design, including circuits, is to clearly define the problem and establish the requirements. This involves understanding what the circuit needs to achieve, what inputs it will receive, and what outputs it needs to deliver, along with any constraints like size, cost, or power consumption. Without a clear problem definition, the design process lacks direction.",
+                "You can't just guess resistor values because each resistor plays a specific role in controlling voltage and current according to Ohm's Law. Incorrect values can lead to various problems: components might not receive the correct voltage or current, they could overheat and be damaged, or the circuit might not perform its intended function at all. Accurate calculation ensures the circuit operates safely and effectively.",
+                "The simplest way to draw a circuit is to use basic shapes to represent components (e.g., a rectangle for a resistor, a larger rectangle for a battery) and lines to represent wires. While this isn't standard engineering practice, it can help conceptualize basic connections. However, for any practical design, learning and using standard electronic symbols is essential for clear communication.",
+                "It is important to check if a circuit works to confirm that it operates as intended and is safe. If a circuit isn't checked, it might have errors that could lead to malfunction, damage to connected devices, or even safety hazards like overheating or electric shock. Testing helps identify and correct these issues before the circuit is put into use."
+            ],
+            "final_submission": "The process of making something electrical is about getting power from one place to another. Engineers need to think about how to make the power go to the right spots. This starts with deciding what the power is for. You need to make power flow in a loop for things to work. So, the main goal is to just make power go. We have some parts we want to connect up.\n\nFor the parts part, resistors are one kind of thing you use. Resistors slow down the power. You just pick some resistors that you think look like they will work. Maybe you have a few big ones and a few small ones. You put them where you think they should go. There's no real math you need to do, you just sort of estimate. If you have a battery, you put a resistor with it to make the current go. So you take a resistor and connect it to the battery. That's how you pick them and make them work.\n\nThen you have to draw a picture of your circuit. This is like a map. You draw the battery, which is a box. Then you draw the resistors, which are lines with squiggles. You connect everything with other lines, which are the wires. This drawing helps you remember where everything goes. It doesn't need to be super fancy, just a simple drawing so you can see the parts. That's the diagram part of making a circuit. It shows the path of the electricity.\n\nAfter all that, you just try to make it work. You put the battery on and see if the power goes. If it does, then it's all good. If it doesn't, you probably picked the wrong parts or drew the lines wrong. You just try again until it works. There's nothing more to checking it than that. You just see if the electricity does what you want. This is the whole process of making a simple circuit.",
+            "feedback": {
+                "c1": "Poor. The submission fails to identify any specific core requirements or design goals, merely stating a vague notion of 'making power flow.' There's no mention of voltage, current targets, or functional needs. (12/30)",
+                "c2": "Poor. There is no evidence of valid calculations or a reasoned component choice. The text suggests arbitrary selection of resistors ('just pick some resistors that you think look like they will work') without any analytical basis. (3/15)",
+                "c3": "Needs Improvement. The description of creating a circuit diagram is very rudimentary. It mentions drawing boxes and squiggles but lacks any concept of standard symbols, clear labeling, or principles for presenting a coherent design. (10/30)",
+                "c4": "Poor. The submission entirely omits any discussion of testing, validation, or ensuring the design meets specifications. The concept of 'just try to make it work' is not an engineering validation process. (5/25)",
+                "total": "30/100"
+            }
+        }
+    ]
+}

@@ -1,0 +1,412 @@
+{
+    "domain": "Psychology",
+    "prompt": "Evaluate the theory of cognitive dissonance and its impact on individual decision-making and behavior modification. Use real-world examples to support your analysis.",
+    "rubric": {
+        "rubric_id": "rub_psychology_0011",
+        "criteria": [
+            {
+                "criterion_id": "c1",
+                "name": "Understanding of Cognitive Dissonance",
+                "description": "Demonstrates a clear and accurate understanding of Leon Festinger's theory of cognitive dissonance.",
+                "performance_descriptors": {
+                    "excellent": "Provides a comprehensive and nuanced explanation of cognitive dissonance, including the conditions that increase or decrease it.",
+                    "good": "Accurately explains the core concepts of cognitive dissonance with minor omissions.",
+                    "average": "Offers a basic explanation of cognitive dissonance but may contain inaccuracies or simplifications.",
+                    "needs_improvement": "Shows a limited or confused understanding of the theory.",
+                    "poor": "Fails to accurately describe cognitive dissonance."
+                },
+                "weight": 40
+            },
+            {
+                "criterion_id": "c2",
+                "name": "Analysis of Impact",
+                "description": "Analyzes how cognitive dissonance influences decision-making and leads to changes in attitudes or behaviors.",
+                "performance_descriptors": {
+                    "excellent": "Insightfully analyzes the psychological mechanisms through which dissonance influences decisions and behavior, discussing both positive and negative outcomes.",
+                    "good": "Clearly explains the link between dissonance and changes in behavior or attitudes, though with less depth.",
+                    "average": "Makes general claims about the impact of dissonance without detailed analysis.",
+                    "needs_improvement": "The connection between dissonance and behavior is weak or unclear.",
+                    "poor": "No clear analysis of the theory's impact."
+                },
+                "weight": 25
+            },
+            {
+                "criterion_id": "c3",
+                "name": "Application of Examples",
+                "description": "Effectively uses relevant real-world examples to illustrate the theory.",
+                "performance_descriptors": {
+                    "excellent": "Integrates multiple, well-explained examples (e.g., consumer behavior, health choices) that strongly support the analysis.",
+                    "good": "Provides at least one relevant and well-explained example.",
+                    "average": "Uses examples that are relevant but not fully explained or integrated.",
+                    "needs_improvement": "Examples are vague, irrelevant, or poorly understood.",
+                    "poor": "No examples are provided."
+                },
+                "weight": 15
+            },
+            {
+                "criterion_id": "c4",
+                "name": "Clarity and Structure",
+                "description": "Presents arguments in a logical, well-structured, and clear manner.",
+                "performance_descriptors": {
+                    "excellent": "The essay is exceptionally well-organized with a clear thesis, logical flow, and smooth transitions.",
+                    "good": "The essay is mostly well-structured and clear, with minor organizational issues.",
+                    "average": "The essay has a basic structure but may be difficult to follow in places.",
+                    "needs_improvement": "The structure is disorganized and lacks clarity.",
+                    "poor": "The response is incoherent and lacks any clear structure."
+                },
+                "weight": 20
+            }
+        ]
+    },
+    "submissions": [
+        {
+            "quality": "Excellent",
+            "authorship": "ai",
+            "key_points": [
+                "Precisely defines cognitive dissonance as aversive arousal from inconsistent cognitions and outlines core reduction strategies.",
+                "Explains classic paradigms: induced compliance, free-choice, and effort justification.",
+                "Applies theory to real-world examples like health (smoking) and consumer behavior (post-purchase rationalization).",
+                "Critically evaluates the theory by comparing it with alternatives like self-perception theory.",
+                "Discusses ethical considerations for using dissonance in interventions."
+            ],
+            "llm_questions": [
+                "Give a precise definition of cognitive dissonance and its primary reduction mechanisms.",
+                "Summarize the induced-compliance, free-choice, and effort-justification paradigms.",
+                "Provide real-world cases in health and consumer domains.",
+                "What are major criticisms of the theory?"
+            ],
+            "llm_answers": [
+                "Cognitive dissonance is an aversive state arising from conflicting cognitions. To reduce it, individuals may change a cognition, change a behavior, or add new consonant cognitions.",
+                "Induced compliance involves changing attitudes after advocating for a counter-attitudinal position for little reward. Free-choice leads to increasing liking for a chosen option. Effort justification involves valuing an outcome more after significant effort.",
+                "A smoker who values health may quit or downplay risks. A buyer of an expensive car may selectively read positive reviews to justify the purchase.",
+                "Critiques include self-perception theory as an alternative explanation for attitude change under low-arousal conditions, and cultural variations in what constitutes a dissonant cognition."
+            ],
+            "final_submission": "Cognitive dissonance describes the aversive arousal produced by holding inconsistent cognitions. Because inconsistency threatens a coherent self-concept, individuals are motivated to restore consistency through belief change, behavioral change, or consonant justifications. The magnitude of dissonance increases when decisions are important, freely chosen, and hard to reverse.\n\nThree classic paradigms reveal how inconsistency propels change. In induced compliance, people who publicly endorse a counter-attitudinal view with insufficient external justification subsequently shift private attitudes to align with their action. In free-choice situations, post-decisional dissonance yields a ‘spread of alternatives’—inflating positives of the chosen option while derogating the rejected one. In effort justification, severe initiations for a modest outcome are reconciled by upgrading the value of the outcome.\n\nThese mechanisms operate across everyday contexts. Health behavior illustrates value–action gaps: a smoker who endorses longevity experiences dissonance, resolved by downplaying risk or, constructively, quitting. In consumer settings, buyers of high-cost goods selectively attend to supportive reviews to defend their choice. \n\nCritical evaluation refines application. Self-perception theory explains attitude change without arousal under low-involvement conditions, and cultural norms modulate which inconsistencies feel aversive. Ethically, dissonance-based interventions should be autonomy-supportive to ensure changes are internalized.\n\nOverall, cognitive dissonance provides a powerful account of decision-making. By understanding its drivers, we can better predict behavior and design effective interventions.",
+            "feedback": {
+                "c1": "Excellent. Definitions are precise; mechanisms and moderators are clearly articulated. (40/40)",
+                "c2": "Excellent. Causal pathways are analyzed with nuance. (25/25)",
+                "c3": "Excellent. Multiple well-integrated real-world examples. (15/15)",
+                "c4": "Excellent. Clear thesis, logical flow, and polished academic tone. (20/20)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1,2,3,4],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Excellent",
+            "authorship": "human",
+            "key_points": [
+                "Precisely defines cognitive dissonance as aversive arousal from inconsistent cognitions and outlines core reduction strategies.",
+                "Explains classic paradigms: induced compliance, free-choice, and effort justification.",
+                "Applies theory to real-world examples like health (smoking) and consumer behavior (post-purchase rationalization).",
+                "Critically evaluates the theory by comparing it with alternatives like self-perception theory.",
+                "Discusses ethical considerations for using dissonance in interventions."
+            ],
+            "final_submission": "Cognitive dissonance is the term for the mental discomfort that arises from holding two or more conflicting beliefs, values, or attitudes. This internal tension creates a powerful motivation for an individual to change one of the inconsistent elements to reduce the discomfort and restore a sense of balance. The intensity of the dissonance is influenced by several factors, including how personally important the subject is and how large the discrepancy is between the conflicting thoughts.\n\nThree classic experimental setups demonstrate how this inconsistency drives change. Under induced compliance, individuals persuaded to state something contrary to their private beliefs for a small reward tend to shift their beliefs to match their statement. In free-choice scenarios, after a decision is made, people enhance the attractiveness of their choice and devalue the rejected option, a process known as 'spreading of alternatives.' Lastly, effort justification shows that if a person works hard to attain a modest goal, they will value that goal more than if it was achieved with little effort.\n\nThese mechanisms operate across everyday contexts. Health behavior illustrates value–action gaps: a smoker who endorses longevity experiences dissonance, resolved by downplaying risk or, constructively, quitting. In consumer settings, buyers of high-cost goods selectively attend to supportive reviews to defend their choice. \n\nCritical evaluation refines application. Self-perception theory explains attitude change without arousal under low-involvement conditions, and cultural norms modulate which inconsistencies feel aversive. Ethically, dissonance-based interventions should be autonomy-supportive to ensure changes are internalized.\n\nIn the end, the theory of cognitive dissonance offers a robust explanation for how people manage their decisions and modify their behaviors. By grasping the key factors that drive this process, we are better equipped to forecast human actions and develop more effective strategies for encouraging positive change.",
+            "feedback": {
+                "c1": "Excellent. Definitions are precise; mechanisms and moderators are clearly articulated. (40/40)",
+                "c2": "Excellent. Causal pathways are analyzed with nuance. (25/25)",
+                "c3": "Excellent. Multiple well-integrated real-world examples. (15/15)",
+                "c4": "Excellent. Clear thesis, logical flow, and polished academic tone. (20/20)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [2,3],
+                "human_paragraph_indices": [0,1,4],
+                "hybrid_paragraph_indices": [],
+                "notes": "Human fully rewrote intro, classic paradigms, and conclusion paragraphs."
+            }
+        },
+        {
+            "quality": "Excellent",
+            "authorship": "hybrid",
+            "key_points": [
+                "Precisely defines cognitive dissonance as aversive arousal from inconsistent cognitions and outlines core reduction strategies.",
+                "Explains classic paradigms: induced compliance, free-choice, and effort justification.",
+                "Applies theory to real-world examples like health (smoking) and consumer behavior (post-purchase rationalization).",
+                "Critically evaluates the theory by comparing it with alternatives like self-perception theory.",
+                "Discusses ethical considerations for using dissonance in interventions."
+            ],
+            "final_submission": "Cognitive dissonance describes the aversive arousal produced by holding inconsistent cognitions. Because inconsistency threatens a coherent self-concept, individuals are motivated to restore consistency through belief change, behavioral change, or consonant justifications. The magnitude of dissonance increases when decisions are important, freely chosen, and hard to reverse.\n\nThree classic paradigms reveal how inconsistency propels change. In induced compliance, people who publicly endorse a counter-attitudinal view with insufficient external justification subsequently shift private attitudes to align with their action. In free-choice situations, post-decisional dissonance yields a ‘spread of alternatives’—inflating positives of the chosen option while derogating the rejected one. In effort justification, severe initiations for a modest outcome are reconciled by upgrading the value of the outcome.\n\nThese psychological mechanisms are clearly visible across many real-world contexts. Health behaviors often present a clear value-action gap: for instance, a smoker who believes in living a long and healthy life experiences significant dissonance. This might be resolved by downplaying the health risks, planning to quit in the future, or—most constructively—actually quitting. Similarly, in consumer settings, buyers of expensive goods like cars or electronics selectively seek out positive reviews to defend their choice against any buyer's remorse.\n\nCritical evaluation is crucial for refining the theory's application. For instance, self-perception theory provides an alternative explanation for attitude change, particularly in situations with low psychological involvement where arousal isn't a key factor. Additionally, cultural norms can influence which types of inconsistencies are perceived as aversive. From an ethical standpoint, interventions that leverage dissonance must be designed to be autonomy-supportive, ensuring that any resulting changes are genuinely internalized rather than being a product of manipulation.\n\nOverall, cognitive dissonance provides a powerful account of decision-making. By understanding its drivers, we can better predict behavior and design effective interventions.",
+            "feedback": {
+                "c1": "Excellent. Definitions are precise; mechanisms and moderators are clearly articulated. (40/40)",
+                "c2": "Excellent. Causal pathways are analyzed with nuance. (25/25)",
+                "c3": "Excellent. Multiple well-integrated real-world examples. (15/15)",
+                "c4": "Excellent. Clear thesis, logical flow, and polished academic tone. (20/20)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1,2,4],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [3],
+                "notes": "Slightly modified the critical evaluation paragraph for better flow and added phrases."
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "ai",
+            "key_points": [
+                "Defines dissonance and outlines reduction strategies.",
+                "Explains at least two classic paradigms.",
+                "Uses relevant examples from one or two domains.",
+                "Maintains a mostly clear structure."
+            ],
+            "llm_questions": [
+                "What is cognitive dissonance and how do people reduce it?",
+                "Give two examples of dissonance.",
+                "How does dissonance affect behavior?"
+            ],
+            "llm_answers": [
+                "Cognitive dissonance is discomfort from conflicting beliefs/behaviors. People reduce it by changing beliefs, behavior, or adding justifications.",
+                "1. Justifying an expensive purchase. 2. A smoker downplaying health risks.",
+                "It motivates people to align their actions with their beliefs to reduce internal conflict."
+            ],
+            "final_submission": "Cognitive dissonance occurs when our beliefs and actions conflict, creating discomfort that motivates change. People may alter beliefs, adjust behavior, or add rationalizations. Classic findings like effort justification show how people elevate outcomes they worked hard for. In daily life, we see this after big purchases—we focus on the positives to feel good about our choice. While the theory is widely supported, it helps explain why people try to be consistent.",
+            "feedback": {
+                "c1": "Good. Core definition is accurate. (32/40)",
+                "c2": "Good. Explains basic causal links. (20/25)",
+                "c3": "Good. Examples are appropriate. (12/15)",
+                "c4": "Good. Mostly clear structure. (16/20)",
+                "total": "80/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "ai",
+            "key_points": [
+                "Accurate definition of cognitive dissonance and its core mechanisms.",
+                "Explains the impact on decision-making through post-decisional rationalization.",
+                "Provides two clear and relevant real-world examples.",
+                "The essay is well-organized and easy to follow."
+            ],
+            "llm_questions": [
+                "Define cognitive dissonance and its main reduction strategies.",
+                "How does dissonance specifically influence decision-making processes?",
+                "Provide two distinct real-world examples of cognitive dissonance."
+            ],
+            "llm_answers": [
+                "Cognitive dissonance is mental discomfort from contradictory beliefs or behaviors. Reduction strategies include changing a belief, changing a behavior, or justifying the inconsistency.",
+                "Dissonance motivates individuals to rationalize their decisions by enhancing the attractiveness of the chosen option and downgrading the rejected one, thereby reducing discomfort.",
+                "An environmentalist driving a gas-guzzler might rationalize it. A smoker might downplay health risks."
+            ],
+            "final_submission": "Cognitive dissonance, as theorized by Leon Festinger, posits that individuals experience an unpleasant psychological tension when they hold conflicting cognitions. This aversive state motivates people to reduce the dissonance and restore consistency. The primary strategies for this include changing a cognition, altering behavior, or adding new cognitions to justify the inconsistency.\n\nThe influence of cognitive dissonance on decision-making is profound, primarily through post-decisional rationalization. After a choice, individuals tend to emphasize the positive aspects of their chosen option and the negative aspects of the rejected one. This reduces the discomfort of potentially making the wrong choice.\n\nReal-world examples illustrate this. A consumer who buys an expensive smartphone, despite negative reviews, will likely seek out positive affirmations of their purchase. Another scenario is in health behaviors; an individual who values health but eats unhealthy food might rationalize by focusing on exercise as compensation or dismissing the severity of the health risks.",
+            "feedback": {
+                "c1": "Good. Provides a precise explanation of cognitive dissonance. (35/40)",
+                "c2": "Good. Clearly explains the link to decision-making. (19/25)",
+                "c3": "Good. Uses relevant examples that illustrate the theory well. (11/15)",
+                "c4": "Good. The essay is well-organized and logical. (16/20)",
+                "total": "81/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1,2],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "ai",
+            "key_points": [
+                "Basic definition of dissonance.",
+                "Provides generic examples with weak integration.",
+                "Simple structure."
+            ],
+            "llm_questions": [
+                "What is cognitive dissonance in simple terms?",
+                "Give an example."
+            ],
+            "llm_answers": [
+                "It’s the uncomfortable feeling when your actions don’t match your beliefs.",
+                "After buying something expensive, people focus on positives to feel better."
+            ],
+            "final_submission": "Cognitive dissonance is feeling uncomfortable when beliefs and actions don’t match. People reduce it by changing beliefs or making excuses. For example, after buying an expensive phone, someone might ignore bad reviews to feel better about the choice. Dissonance can also happen with health, like promising to exercise but not doing it, then saying you were too busy. These examples show people try to be consistent.",
+            "feedback": {
+                "c1": "Average. Definition is correct but lacks detail. (26/40)",
+                "c2": "Average. Limited analysis of how dissonance produces change. (16/25)",
+                "c3": "Average. Examples are relevant but shallow. (10/15)",
+                "c4": "Average. Basic structure. (13/20)",
+                "total": "65/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "ai",
+            "key_points": [
+                "Basic, somewhat oversimplified definition of cognitive dissonance.",
+                "Limited analysis of the impact on decision-making.",
+                "Provides two clear, though simple, real-world examples.",
+                "The structure is logical but lacks complexity."
+            ],
+            "llm_questions": [
+                "What is cognitive dissonance, simply?",
+                "How does it affect behavior?",
+                "Give an example related to studying."
+            ],
+            "llm_answers": [
+                "It's when you feel weird because your actions and beliefs don't line up.",
+                "It makes people change their thoughts or actions to feel better.",
+                "A student who cares about grades but doesn't study might say the class is not important to feel better."
+            ],
+            "final_submission": "Cognitive dissonance is when a person has thoughts that do not fit together, which creates an unpleasant feeling. This feeling motivates the person to resolve the conflict. For example, if someone believes they are a healthy person but smokes, they will feel this discomfort.\n\nThe impact of cognitive dissonance is that people will try to get rid of the discomfort. They might change their mind or their actions. The smoker might decide that the health risks are not that bad, or they might try to quit smoking.\n\nAnother example is a student who believes good grades are important but doesn't study. To reduce the dissonance, the student might decide the class is not important anyway. This shows how people rationalize their behavior to maintain consistency.",
+            "feedback": {
+                "c1": "Average. Offers a basic explanation of cognitive dissonance. (24/40)",
+                "c2": "Average. Makes general claims about the impact of dissonance. (15/25)",
+                "c3": "Good. Uses relevant and clear examples. (12/15)",
+                "c4": "Average. The essay has a basic, logical structure. (14/20)",
+                "total": "65/100"
+            },
+             "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1,2],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "ai",
+            "key_points": [
+                "Imprecise definition.",
+                "Minimal linkage between theory and behavior.",
+                "Vague example.",
+                "Disorganized writing."
+            ],
+            "llm_questions": [
+                "what is dissonance",
+                "how do people fix it"
+            ],
+            "llm_answers": [
+                "Dissonance is when things don’t fit together in your mind.",
+                "People try to fix it by changing something."
+            ],
+            "final_submission": "Cognitive dissonance is when thoughts don’t match. People don’t like that and try to fix it. For instance, someone who eats junk food might just not think about it. This is how it works.",
+            "feedback": {
+                "c1": "Needs Improvement. Definition is too vague. (20/40)",
+                "c2": "Needs Improvement. Little analysis of impact. (13/25)",
+                "c3": "Needs Improvement. Example is too brief. (7/15)",
+                "c4": "Needs Improvement. Lacks structure. (10/20)",
+                "total": "50/100"
+            },
+             "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "ai",
+            "key_points": [
+                "A limited and partially inaccurate understanding of cognitive dissonance.",
+                "Weak analysis of the theory's impact.",
+                "Mentions relevant examples but fails to explain them.",
+                "Lacks clear organization."
+            ],
+            "llm_questions": [
+                "What is the central idea of cognitive dissonance in this essay?",
+                "How does the essay link dissonance to actions?",
+                "What real-world examples are given?"
+            ],
+            "llm_answers": [
+                "The central idea is that people feel bad when their thoughts don't match, and they try to fix it.",
+                "It says people might change what they do or think but doesn't explain how.",
+                "It mentions buying an expensive item or spending money instead of saving."
+            ],
+            "final_submission": "Cognitive dissonance is when someone feels uncomfortable because their thoughts or actions don't line up. It's a bad feeling inside. The theory says people don't like this feeling and try to fix it. They might change their belief or their action, or make excuses.\n\nThis impacts people's decisions. When people feel this discomfort, they will be driven to change. But it doesn't explain the psychological reasons, just that they change their 'mind or actions'.\n\nSome examples are buying an expensive item and then feeling bad, or knowing you should save money but spending it anyway. These examples are relevant but not well explained.",
+            "feedback": {
+                "c1": "Needs Improvement. Shows a limited and confused understanding of the theory. (18/40)",
+                "c2": "Needs Improvement. The connection between dissonance and behavior is weak. (12/25)",
+                "c3": "Average. Provides relevant examples but they are not explained. (8/15)",
+                "c4": "Poor. The response is disorganized and lacks structure. (8/20)",
+                "total": "46/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1,2],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Poor",
+            "authorship": "ai",
+            "key_points": [
+                "Major misunderstanding of the construct.",
+                "No real-world application.",
+                "Highly disorganized."
+            ],
+            "llm_questions": [
+                "is dissonance the same as stress"
+            ],
+            "llm_answers": [
+                "Dissonance is just stress from life problems."
+            ],
+            "final_submission": "People feel stress all the time and that is dissonance. When stressed, they might do random things. This shows dissonance in daily life.",
+            "feedback": {
+                "c1": "Poor. Confuses dissonance with general stress. (8/40)",
+                "c2": "Poor. No causal explanation. (5/25)",
+                "c3": "Poor. No relevant examples. (3/15)",
+                "c4": "Poor. Disorganized and unacademic. (4/20)",
+                "total": "20/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Poor",
+            "authorship": "ai",
+            "key_points": [
+                "Incomplete and confusing definition of cognitive dissonance.",
+                "No analysis of impact on decision-making.",
+                "Fails to provide any examples.",
+                "Incoherent structure and writing."
+            ],
+            "llm_questions": [
+                "What is cognitive dissonance according to this text?",
+                "Does it explain how actions change?",
+                "Are there examples?"
+            ],
+            "llm_answers": [
+                "It defines it as when 'thoughts don't match' and it feels 'weird'.",
+                "No, it just says people try to make them 'agree'.",
+                "No clear examples are provided."
+            ],
+            "final_submission": "Cognitive dissonance is when your thoughts don't match. You think one thing and do another. It makes you feel weird. The theory says people try to make thoughts and actions agree. This is about being consistent. It does not explain how this changes decisions. It also does not give any examples of this. The writing is hard to follow because it is not organized.",
+            "feedback": {
+                "c1": "Poor. Fails to accurately describe cognitive dissonance. (10/40)",
+                "c2": "Poor. No clear analysis of the theory's impact. (6/25)",
+                "c3": "Poor. No examples are provided. (2/15)",
+                "c4": "Poor. The response is incoherent and lacks any clear structure. (5/20)",
+                "total": "23/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        }
+    ]
+}

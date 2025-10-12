@@ -1,0 +1,422 @@
+{
+    "domain": "Psychology",
+    "prompt": "Evaluate cognitive-behavioral therapy (CBT) as an evidence-based treatment for depression and anxiety, considering mechanisms of change, efficacy, and limitations.",
+    "rubric": {
+        "rubric_id": "rub_psychology_0015",
+        "criteria": [
+            {
+                "criterion_id": "c1",
+                "name": "Mechanisms of Change",
+                "description": "Demonstrates understanding of cognitive restructuring, behavioral activation, exposure, and skills training.",
+                "performance_descriptors": {
+                    "excellent": "Explains mechanisms with clarity, showing how cognitive and behavioral techniques interact and referencing maintenance processes (avoidance, rumination).",
+                    "good": "Covers core mechanisms with minor gaps.",
+                    "average": "General description; limited integration of mechanisms.",
+                    "needs_improvement": "Partial or superficial explanation.",
+                    "poor": "Misunderstands key mechanisms."
+                },
+                "weight": 25
+            },
+            {
+                "criterion_id": "c2",
+                "name": "Evidence and Efficacy",
+                "description": "Evaluates research support and comparative effectiveness.",
+                "performance_descriptors": {
+                    "excellent": "Accurately summarizes evidence from RCTs/meta-analyses, relapse prevention, and comparisons to medication and combined treatments.",
+                    "good": "Discusses evidence with some depth and nuance.",
+                    "average": "General claims of efficacy without detail.",
+                    "needs_improvement": "Sparse or weakly supported claims.",
+                    "poor": "No evidence provided."
+                },
+                "weight": 25
+            },
+            {
+                "criterion_id": "c3",
+                "name": "Limitations and Adaptations",
+                "description": "Addresses limitations, barriers, and cultural adaptations.",
+                "performance_descriptors": {
+                    "excellent": "Considers access, adherence, cultural tailoring, therapist competence, and condition-specific limits; mentions third-wave approaches where relevant.",
+                    "good": "Notes several limitations with some solutions.",
+                    "average": "Brief limitations; limited solutions.",
+                    "needs_improvement": "Minimal or generic limitations.",
+                    "poor": "No limitations addressed."
+                },
+                "weight": 20
+            },
+            {
+                "criterion_id": "c4",
+                "name": "Clinical Application",
+                "description": "Translates evidence into practical treatment planning.",
+                "performance_descriptors": {
+                    "excellent": "Provides a coherent case formulation and stepwise intervention plan including measurement-based care.",
+                    "good": "Offers practical steps with moderate specificity.",
+                    "average": "General guidance; lacks specificity.",
+                    "needs_improvement": "Vague application.",
+                    "poor": "No practical application."
+                },
+                "weight": 20
+            },
+            {
+                "criterion_id": "c5",
+                "name": "Structure and Clarity",
+                "description": "Organized, clear, and persuasive writing.",
+                "performance_descriptors": {
+                    "excellent": "Strong structure and precise language with smooth transitions.",
+                    "good": "Generally clear with minor lapses.",
+                    "average": "Adequate structure; occasional ambiguity.",
+                    "needs_improvement": "Disorganized or repetitive.",
+                    "poor": "Incoherent."
+                },
+                "weight": 10
+            }
+        ]
+    },
+    "submissions": [
+        {
+            "quality": "Excellent",
+            "authorship": "ai",
+            "key_points": [
+                "Explains cognitive restructuring, behavioral activation, and exposure and how they interact.",
+                "Summarizes meta-analytic evidence of CBT efficacy vs. SSRIs and combined treatments.",
+                "Discusses relapse prevention and long-term follow-up.",
+                "Addresses cultural tailoring, therapist competence, and third-wave innovations (e.g., ACT).",
+                "Describes case formulation, outcome monitoring (measurement-based care), and stepwise planning."
+            ],
+            "llm_questions": [
+                "Provide a step-by-step CBT plan for moderate depression.",
+                "What does meta-analytic evidence say about CBT for anxiety disorders?",
+                "How do exposure techniques work?",
+                "How can CBT be culturally adapted?",
+                "How is measurement-based care used in CBT?"
+            ],
+            "llm_answers": [
+                "A plan includes: 1) Assessment and case formulation, 2) Psychoeducation, 3) Cognitive restructuring, 4) Behavioral activation, 5) Skills training, 6) Relapse prevention.",
+                "Meta-analyses show CBT is highly effective for anxiety, comparable to medication, and more durable after treatment ends.",
+                "Exposure works by breaking conditioned fear associations and promoting extinction learning.",
+                "Adaptations include using locally relevant metaphors, involving family, and integrating cultural values into goals.",
+                "It involves session-by-session symptom tracking (e.g., PHQ-9, GAD-7) to review progress and adjust treatment collaboratively."
+            ],
+            "final_submission": "Cognitive-behavioral therapy (CBT) integrates cognitive and behavioral methods to treat depression and anxiety. Cognitive restructuring targets distorted beliefs, while behavioral activation and exposure counteract avoidance and inactivity. Evidence from RCTs and meta-analyses confirms CBT’s strong efficacy, often equaling pharmacological treatments and showing superior relapse prevention.\n\nLimitations include accessibility barriers, therapist competence variation, and reduced efficacy for some complex cases. Cultural tailoring and third-wave innovations (e.g., ACT, mindfulness) extend its relevance.\n\nIn practice, CBT is delivered through structured case formulation, collaborative goal-setting, outcome monitoring, and stepwise planning. Overall, CBT remains a gold-standard intervention, blending robust evidence with flexible adaptation.",
+            "feedback": {
+                "c1": "Excellent. Explains mechanisms comprehensively. (25/25)",
+                "c2": "Excellent. Strong evidence base summarized with nuance. (25/25)",
+                "c3": "Excellent. Addresses cultural adaptations and third-wave approaches. (20/20)",
+                "c4": "Excellent. Provides structured clinical application. (20/20)",
+                "c5": "Excellent. Clear and well-organized. (10/10)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1,2],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Excellent",
+            "authorship": "human",
+            "key_points": [
+                "Explains cognitive restructuring, behavioral activation, and exposure and how they interact.",
+                "Summarizes meta-analytic evidence of CBT efficacy vs. SSRIs and combined treatments.",
+                "Discusses relapse prevention and long-term follow-up.",
+                "Addresses cultural tailoring, therapist competence, and third-wave innovations (e.g., ACT).",
+                "Describes case formulation, outcome monitoring (measurement-based care), and stepwise planning."
+            ],
+            "final_submission": "Cognitive-behavioral therapy (CBT) is a leading evidence-based treatment for depression and anxiety, built on the principle that psychological distress arises from an interplay of maladaptive thoughts and behaviors. Its primary mechanisms of change include cognitive restructuring, which teaches individuals to identify and challenge their distorted beliefs, and behavioral interventions like activation and exposure, which directly target avoidance and inactivity that maintain these conditions.\n\nHowever, CBT is not a panacea. Its limitations are important to acknowledge, including significant barriers to access, such as cost and the availability of properly trained therapists. The effectiveness of CBT can also vary depending on therapist competence and the client's willingness to engage in active, and often challenging, homework. Furthermore, for individuals with complex, comorbid conditions, standard CBT protocols may be less effective. To address this, cultural adaptations and the development of third-wave approaches like Acceptance and Commitment Therapy (ACT) have been crucial in extending the therapy's reach and relevance.\n\nIn practice, CBT is delivered through structured case formulation, collaborative goal-setting, outcome monitoring, and stepwise planning. Overall, CBT remains a gold-standard intervention, blending robust evidence with flexible adaptation.",
+            "feedback": {
+                "c1": "Excellent. Explains mechanisms comprehensively. (25/25)",
+                "c2": "Excellent. Strong evidence base summarized with nuance. (25/25)",
+                "c3": "Excellent. Addresses cultural adaptations and third-wave approaches. (20/20)",
+                "c4": "Excellent. Provides structured clinical application. (20/20)",
+                "c5": "Excellent. Clear and well-organized. (10/10)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [2],
+                "human_paragraph_indices": [0,1],
+                "hybrid_paragraph_indices": [],
+                "notes": "Human fully rewrote the introduction and limitations paragraphs."
+            }
+        },
+        {
+            "quality": "Excellent",
+            "authorship": "hybrid",
+            "key_points": [
+                "Explains cognitive restructuring, behavioral activation, and exposure and how they interact.",
+                "Summarizes meta-analytic evidence of CBT efficacy vs. SSRIs and combined treatments.",
+                "Discusses relapse prevention and long-term follow-up.",
+                "Addresses cultural tailoring, therapist competence, and third-wave innovations (e.g., ACT).",
+                "Describes case formulation, outcome monitoring (measurement-based care), and stepwise planning."
+            ],
+            "final_submission": "Cognitive-behavioral therapy (CBT) integrates cognitive and behavioral methods to treat depression and anxiety. For instance, cognitive restructuring targets distorted beliefs that fuel negative emotions, while behavioral activation and exposure therapies directly counteract the patterns of avoidance and inactivity that maintain these conditions. The strong evidence base for CBT comes from numerous RCTs and meta-analyses, confirming its efficacy, which often equals pharmacological treatments and shows superior relapse prevention over the long term.\n\nLimitations include accessibility barriers, therapist competence variation, and reduced efficacy for some complex cases. Cultural tailoring and third-wave innovations (e.g., ACT, mindfulness) extend its relevance.\n\nIn practice, CBT is delivered through structured case formulation, collaborative goal-setting, outcome monitoring, and stepwise planning. Overall, CBT remains a gold-standard intervention, blending robust evidence with flexible adaptation.",
+            "feedback": {
+                "c1": "Excellent. Explains mechanisms comprehensively. (25/25)",
+                "c2": "Excellent. Strong evidence base summarized with nuance. (25/25)",
+                "c3": "Excellent. Addresses cultural adaptations and third-wave approaches. (20/20)",
+                "c4": "Excellent. Provides structured clinical application. (20/20)",
+                "c5": "Excellent. Clear and well-organized. (10/10)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [1,2],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [0],
+                "notes": "Slightly modified the introduction paragraph for better flow and added examples."
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "ai",
+            "key_points": [
+                "Explains restructuring, activation, and exposure with reasonable clarity.",
+                "References CBT efficacy broadly.",
+                "Mentions relapse prevention and cultural tailoring briefly.",
+                "Provides practical steps but with less detail.",
+                "Mostly clear structure."
+            ],
+            "llm_questions": [
+                "What is cognitive restructuring?",
+                "What is behavioral activation?",
+                "Is CBT effective?",
+                "What is a limitation of CBT?"
+            ],
+            "llm_answers": [
+                "Cognitive restructuring helps clients identify and challenge unhelpful thoughts.",
+                "Behavioral activation involves increasing engagement in rewarding activities.",
+                "Yes, research supports CBT as effective for anxiety and depression, often as good as medication.",
+                "Access can be a limitation, as it can be expensive or hard to find a trained therapist."
+            ],
+            "final_submission": "CBT combines thought change and behavior activation to address depression and anxiety. Evidence shows it is effective, often as good as medication. Exposure reduces fear, and restructuring helps correct distorted thoughts. Relapse prevention and cultural adaptations can improve outcomes. In practice, CBT involves assessment and skill-building. While strong, CBT depends on therapist competence and may not fit all clients.",
+            "feedback": {
+                "c1": "Good. Mechanisms covered with some depth. (20/25)",
+                "c2": "Good. Evidence discussed but not comprehensive. (20/25)",
+                "c3": "Good. Mentions limitations briefly. (16/20)",
+                "c4": "Good. Practical applications are clear. (16/20)",
+                "c5": "Good. Mostly clear with minor lapses. (8/10)",
+                "total": "80/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "ai",
+            "key_points": [
+                "Excellent grasp of cognitive restructuring and behavioral activation.",
+                "Good summary of empirical support.",
+                "Adequate discussion of limitations.",
+                "Application is practical but lacks depth.",
+                "Generally clear and well-structured."
+            ],
+            "llm_questions": [
+                "How does cognitive restructuring impact depression?",
+                "Elaborate on behavioral activation in CBT.",
+                "What do meta-analyses say about CBT vs. pharmacotherapy for anxiety?"
+            ],
+            "llm_answers": [
+                "It challenges negative automatic thoughts and core beliefs, which are central to depressive symptoms.",
+                "It involves increasing engagement in pleasurable or mastery-oriented activities to counteract withdrawal.",
+                "They typically show CBT to be as effective as medication, with better long-term outcomes and lower relapse rates."
+            ],
+            "final_submission": "Cognitive-behavioral therapy is an evidence-based treatment for depression and anxiety. Its mechanisms focus on cognitive restructuring and behavioral activation. Cognitive restructuring helps individuals identify and modify maladaptive thought patterns. Behavioral activation encourages engagement in rewarding activities to counteract lethargy and avoidance.\n\nThe efficacy of CBT is supported by extensive research, including meta-analyses, which consistently demonstrate its effectiveness, often finding it comparable to pharmacological treatments, particularly for anxiety disorders.\n\nHowever, CBT has limitations. Access barriers, cost, and availability of trained therapists are significant. Treatment adherence can also be a challenge. In clinical application, a CBT approach begins with a case conceptualization, guiding a treatment plan with goals like increasing social interactions. Homework, such as thought records, is integral.",
+            "feedback": {
+                "c1": "Excellent. Explains mechanisms clearly. (23/25)",
+                "c2": "Good. Summarizes empirical support well. (20/25)",
+                "c3": "Good. Discusses key limitations. (16/20)",
+                "c4": "Average. Provides practical but general application steps. (13/20)",
+                "c5": "Average. Generally clear, but some phrasing could be more precise. (7/10)",
+                "total": "79/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1,2],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "ai",
+            "key_points": [
+                "Basic mention of restructuring and activation.",
+                "States CBT works but without detail.",
+                "Limitations are vague.",
+                "General application.",
+                "Clear structure but superficial content."
+            ],
+            "llm_questions": [
+                "What is CBT in simple terms?",
+                "Does it work for anxiety?",
+                "What is a problem with CBT?"
+            ],
+            "llm_answers": [
+                "CBT is a therapy that helps people change their thinking and behaviors.",
+                "Yes, studies say CBT helps with anxiety.",
+                "It can be hard for some people to do the homework."
+            ],
+            "final_submission": "CBT is a therapy that helps people think better and do more activities. It works for depression and anxiety, according to studies. Exposure helps people face their fears. It can be adapted for different people. Therapists should ask about progress. It is a useful therapy, but the details are not explained here.",
+            "feedback": {
+                "c1": "Average. Basic mechanisms with little integration. (16/25)",
+                "c2": "Average. General claims without evidence. (16/25)",
+                "c3": "Average. Vague limitations. (13/20)",
+                "c4": "Average. Generic application. (13/20)",
+                "c5": "Average. Understandable but loosely structured. (6/10)",
+                "total": "64/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "ai",
+            "key_points": [
+                "Clear and readable structure despite content gaps.",
+                "Basic mention of cognitive and behavioral principles.",
+                "General statements on efficacy.",
+                "Adequate recognition of common limitations.",
+                "Vague clinical application."
+            ],
+            "llm_questions": [
+                "Explain the core principle of cognitive restructuring.",
+                "What is one simple behavioral technique in CBT?",
+                "What is a common barrier to accessing CBT?"
+            ],
+            "llm_answers": [
+                "The principle is that thoughts influence emotions and behaviors, so changing unhelpful thoughts can improve mood.",
+                "Activity scheduling, where clients plan and engage in pleasant activities.",
+                "Cost or lack of available therapists."
+            ],
+            "final_submission": "Cognitive-behavioral therapy (CBT) is a structured psychotherapy for depression and anxiety. Its fundamental idea is that thoughts, feelings, and behaviors are interconnected. Cognitive restructuring helps individuals address negative thought patterns. Behavioral activation focuses on increasing engagement in activities.\n\nIt is commonly stated that CBT is effective. There is a general awareness that 'studies show it works' for depression and anxiety. However, specific details about this evidence are largely absent.\n\nLimitations are addressed adequately. The submission acknowledges that CBT might not work for everyone and that access can be an issue. For clinical application, it offers some practical suggestions, like setting goals and giving homework. The submission is well-organized and generally easy to follow.",
+            "feedback": {
+                "c1": "Needs Improvement. Provides a basic description of principles. (13/25)",
+                "c2": "Average. States efficacy broadly but offers minimal detail. (17/25)",
+                "c3": "Good. Identifies common limitations with reasonable clarity. (15/20)",
+                "c4": "Needs Improvement. Offers vague guidance on clinical application. (10/20)",
+                "c5": "Good. The submission is clear and well-structured. (8/10)",
+                "total": "63/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1,2],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "ai",
+            "key_points": [
+                "Incomplete mechanism coverage.",
+                "Evidence mentioned briefly or inaccurately.",
+                "Limitations missing.",
+                "Minimal application.",
+                "Weak structure."
+            ],
+            "llm_questions": [
+                "What is CBT about?",
+                "Does it work?",
+                "What about culture?"
+            ],
+            "llm_answers": [
+                "CBT is about talking and acting differently.",
+                "It helps some people sometimes.",
+                "Culture matters in therapy."
+            ],
+            "final_submission": "CBT is about talking and acting different. It helps sometimes. Exposure is facing fears. Culture matters too. Therapists should check progress once in a while. Not much more is said here.",
+            "feedback": {
+                "c1": "Needs Improvement. Mechanisms oversimplified. (13/25)",
+                "c2": "Needs Improvement. Evidence is vague. (13/25)",
+                "c3": "Needs Improvement. No substantive discussion of limitations. (10/20)",
+                "c4": "Needs Improvement. Minimal clinical application. (10/20)",
+                "c5": "Needs Improvement. Weak structure. (5/10)",
+                "total": "51/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "ai",
+            "key_points": [
+                "Strong focus on cognitive restructuring but limited coverage of other mechanisms.",
+                "Evidence is anecdotal rather than empirical.",
+                "Limitations are generic.",
+                "Clinical application is minimal and vague.",
+                "Structure is somewhat disjointed."
+            ],
+            "llm_questions": [
+                "What is the role of thoughts in CBT for depression?",
+                "Why is it important to challenge negative thoughts?",
+                "What is one reason CBT might not work?"
+            ],
+            "llm_answers": [
+                "In CBT, thoughts are central because negative thinking contributes to depressive symptoms.",
+                "Challenging negative thoughts can reduce their emotional impact and lead to more constructive responses.",
+                "CBT might not work if someone is not ready to put in the effort."
+            ],
+            "final_submission": "Cognitive-behavioral therapy works by helping people change their thinking. The idea is that if you change how you think, you can change how you feel. For someone with depression, CBT helps them challenge thoughts like 'I'm worthless.'\n\nCBT is shown to be effective, but the submission doesn't provide specific research. It relies on general statements that 'it works'.\n\nLimitations of CBT are noted, like 'it isn't for everyone,' but without elaboration. Clinical application is vague, suggesting therapists 'help people identify their problems' without giving a structured plan. The structure is disjointed, making the argument hard to follow.",
+            "feedback": {
+                "c1": "Good. Demonstrates a good understanding of cognitive restructuring. (20/25)",
+                "c2": "Poor. Claims of efficacy are made without any specific evidence. (10/25)",
+                "c3": "Needs Improvement. Offers generic limitations. (9/20)",
+                "c4": "Poor. Provides only vague suggestions for clinical application. (5/20)",
+                "c5": "Average. The structure is somewhat disjointed. (6/10)",
+                "total": "50/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1,2],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Poor",
+            "authorship": "ai",
+            "key_points": [
+                "Misunderstands CBT.",
+                "No evidence provided.",
+                "No limitations discussed.",
+                "No application.",
+                "Incoherent writing."
+            ],
+            "llm_questions": [
+                "What is CBT?",
+                "Does it work?",
+                "Is culture relevant?"
+            ],
+            "llm_answers": [
+                "CBT is when doctors give medicine and talk.",
+                "There is no real evidence.",
+                "Culture is not relevant to therapy."
+            ],
+            "final_submission": "CBT is mostly medicine and some talking. It does not have strong evidence. Exposure is a form of punishment. Culture does not matter in therapy. There is no plan for treatment here.",
+            "feedback": {
+                "c1": "Poor. Misunderstands core CBT mechanisms. (5/25)",
+                "c2": "Poor. No valid evidence provided. (5/25)",
+                "c3": "Poor. Limitations and adaptations absent. (4/20)",
+                "c4": "Poor. No practical application. (4/20)",
+                "c5": "Poor. Incoherent and inaccurate. (2/10)",
+                "total": "20/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        }
+    ]
+}

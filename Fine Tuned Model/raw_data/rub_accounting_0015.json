@@ -1,0 +1,528 @@
+{
+  "domain": "Accounting",
+  "prompt": "Evaluate how ethical principles support auditor independence and prevent conflicts of interest in financial audits.",
+  "rubric": {
+    "rubric_id": "rub_accounting_0015",
+    "criteria": [
+      {
+        "criterion_id": "c1",
+        "name": "Understanding of Auditor Independence Concepts",
+        "description": "Demonstrates comprehensive knowledge of independence in fact and independence in appearance, and their significance in auditing.",
+        "performance_descriptors": {
+          "excellent": "Clearly distinguishes between independence in fact and appearance, explains their importance, and discusses how both are essential for audit credibility.",
+          "good": "Accurately defines both types of independence and explains their basic importance to auditing.",
+          "average": "Shows understanding of independence concept but may confuse or inadequately explain the two types.",
+          "needs_improvement": "Limited understanding of independence concepts with unclear explanations.",
+          "poor": "Fails to demonstrate understanding of auditor independence or shows fundamental misconceptions."
+        },
+        "weight": 25
+      },
+      {
+        "criterion_id": "c2",
+        "name": "Analysis of Ethical Principles and Professional Standards",
+        "description": "Evaluates how fundamental ethical principles underpin auditor independence and examines relevant regulatory frameworks.",
+        "performance_descriptors": {
+          "excellent": "Thoroughly discusses ethical principles (integrity, objectivity, professional competence), connects them to independence, and demonstrates knowledge of multiple regulatory standards (APES 110, IFAC, PCAOB).",
+          "good": "Identifies key ethical principles and shows familiarity with relevant professional standards and their requirements.",
+          "average": "Mentions some ethical principles and standards but with limited depth or understanding of their application.",
+          "needs_improvement": "Superficial treatment of ethical principles with minimal reference to regulatory standards.",
+          "poor": "Fails to identify relevant ethical principles or regulatory frameworks, or demonstrates fundamental misunderstanding."
+        },
+        "weight": 25
+      },
+      {
+        "criterion_id": "c3",
+        "name": "Identification and Analysis of Conflicts of Interest",
+        "description": "Demonstrates understanding of various threats to independence and how they create conflicts of interest in audit engagements.",
+        "performance_descriptors": {
+          "excellent": "Comprehensively identifies multiple types of threats (self-interest, self-review, advocacy, familiarity, intimidation) with detailed examples and analysis of their impact.",
+          "good": "Identifies several key threats to independence and explains how they compromise audit quality.",
+          "average": "Recognizes some conflicts of interest but with limited analysis of their implications.",
+          "needs_improvement": "Basic identification of conflicts with minimal understanding of their significance.",
+          "poor": "Fails to identify relevant conflicts of interest or shows poor understanding of their impact on independence."
+        },
+        "weight": 25
+      },
+      {
+        "criterion_id": "c4",
+        "name": "Professional Skepticism and Critical Thinking",
+        "description": "Discusses the role of professional skepticism in maintaining independence and supporting ethical audit practices.",
+        "performance_descriptors": {
+          "excellent": "Insightfully explains professional skepticism, its relationship to independence, and how it guides auditor behavior and decision-making throughout the audit process.",
+          "good": "Accurately describes professional skepticism and explains its importance in maintaining audit quality and independence.",
+          "average": "Shows basic understanding of professional skepticism but limited connection to independence or ethical practice.",
+          "needs_improvement": "Superficial treatment of professional skepticism with unclear understanding of its role.",
+          "poor": "Fails to discuss professional skepticism or demonstrates fundamental misunderstanding of the concept."
+        },
+        "weight": 25
+      }
+    ]
+  },
+  "submissions": [
+    {
+      "quality": "Excellent",
+      "authorship": "ai",
+      "key_points": [
+        "Define and differentiate independence in fact and independence in appearance, explaining their critical importance to audit credibility.",
+        "Analyze fundamental ethical principles (integrity, objectivity, professional competence, due care, confidentiality) and their role in supporting independence.",
+        "Examine regulatory standards and frameworks including APES 110, IFAC Code of Ethics, and PCAOB requirements.",
+        "Identify and analyze various threats to independence including self-interest, self-review, advocacy, familiarity, and intimidation threats.",
+        "Evaluate safeguards and mechanisms used to prevent or mitigate conflicts of interest in audit engagements.",
+        "Discuss the concept and application of professional skepticism in maintaining independence and audit quality.",
+        "Analyze real-world audit failures and scandals (Arthur Andersen/Enron, WorldCom, etc.) to illustrate independence breakdowns and their consequences.",
+        "Examine the role of audit committees in protecting auditor independence and supporting ethical practice.",
+        "Consider the impact of non-audit services on independence and related regulatory restrictions.",
+        "Discuss rotation requirements and other structural safeguards for maintaining long-term independence.",
+        "Structure the evaluation using formal academic writing with appropriate auditing and ethics terminology."
+      ],
+      "llm_questions": [
+        "What is the difference between independence in fact and independence in appearance, and why are both important?",
+        "Which fundamental ethical principles support auditor independence, and how do they apply in practice?",
+        "What are the key requirements of regulatory standards like the PCAOB rules regarding independence?",
+        "What are the main types of threats to auditor independence, and how do they create conflicts of interest?",
+        "What role do audit committees play in protecting and supporting auditor independence?"
+      ],
+      "llm_answers": [
+        "Independence in fact refers to the auditor's state of mind—an unbiased and impartial mental attitude. Independence in appearance is the perception by a reasonable and informed third party that the auditor is not compromised. Both are crucial; without independence in fact, the audit quality is compromised, and without independence in appearance, public trust in the audit report is lost, rendering it useless.",
+        "The core ethical principles are integrity, objectivity, professional competence and due care, and confidentiality. Objectivity is the most direct supporter of independence, requiring auditors to be free from bias, conflicts of interest, or undue influence. Integrity requires honesty, which prevents auditors from knowingly being associated with misleading information. These principles form the bedrock of an auditor's professional conduct.",
+        "The Public Company Accounting Oversight Board (PCAOB), established by Sarbanes-Oxley, sets stringent independence rules. Key requirements include mandatory audit partner rotation every five years, prohibitions on specific non-audit services (like bookkeeping or internal audit outsourcing) for audit clients, and rules requiring the audit committee to pre-approve all audit and non-audit services.",
+        "The five main threats are: self-interest (e.g., financial interest in a client), self-review (auditing one's own work), advocacy (promoting a client's position), familiarity (close relationships with client personnel), and intimidation (being deterred from acting objectively by threats). These create conflicts where the auditor's personal interests or pressures conflict with their professional duty to provide an unbiased opinion.",
+        "Audit committees, composed of independent directors, are a critical governance mechanism. They are directly responsible for the appointment, compensation, and oversight of the external auditor. By acting as the primary point of contact and controlling the audit relationship, they insulate the auditor from management pressure, approve services to avoid conflicts of interest, and ensure the auditor remains independent and objective."
+      ],
+      "final_submission": "Auditor independence is the cornerstone of the public accounting profession, ensuring the trustworthiness and reliability of financial statement audits. It is supported by a robust framework of ethical principles and regulatory standards designed to prevent conflicts of interest. This evaluation will analyze how ethical principles form the foundation of independence, identify key threats, and examine the role of regulatory and governance mechanisms in safeguarding this crucial attribute.\n\nIndependence is conceptualized in two forms: independence in fact and independence in appearance. Independence in fact represents the auditor's true state of mind—an unbiased, objective, and impartial perspective when performing audit work. Independence in appearance is the avoidance of circumstances that would cause a reasonable and informed third party to conclude that an auditor's integrity or objectivity has been compromised. Both are indispensable; without the former, the audit is flawed, and without the latter, public trust evaporates. The IFAC Code of Ethics and PCAOB standards emphasize that both must be maintained.\n\nThe fundamental ethical principles of integrity and objectivity are the bedrock of independence. Objectivity requires auditors to remain free from bias, conflicts of interest, or the undue influence of others. Integrity demands honesty and straightforwardness in all professional relationships. These principles are operationalized through standards that identify threats to independence, such as the five categories outlined in APES 110: self-interest, self-review, advocacy, familiarity, and intimidation. For instance, a self-interest threat arises if an audit firm derives a significant portion of its fees from one client, creating a conflict between retaining the client and issuing an adverse opinion. The catastrophic collapse of Enron, where auditor Arthur Andersen's significant non-audit fees compromised its objectivity, serves as a stark example of such threats materializing.\n\nTo combat these threats, professional skepticism is essential. It is an attitude that includes a questioning mind and a critical assessment of audit evidence. An independent auditor must exercise professional skepticism to challenge management's assertions and not simply accept information at face value, thereby preventing management override and identifying potential misstatements. This mindset is the practical application of objectivity.\n\nRegulatory and governance structures provide crucial safeguards. The Sarbanes-Oxley Act of 2002 established the PCAOB and mandated stronger corporate governance, including the creation of independent audit committees. These committees are directly responsible for hiring, compensating, and overseeing the external auditor, creating a buffer against management pressure. They must also pre-approve all audit and permissible non-audit services, directly addressing the conflicts that plagued firms like Arthur Andersen. Furthermore, mandatory audit partner rotation is a structural safeguard against familiarity threats that can develop over long-term engagements. In conclusion, auditor independence is not a passive state but an active commitment, upheld by a confluence of personal ethics, professional skepticism, and rigorous regulatory oversight, all designed to manage and mitigate the inherent conflicts of interest in the audit function.\n\nIn conclusion, maintaining independence in both fact and appearance—grounded in integrity, objectivity, and due care—is indispensable to audit credibility. Effective safeguards that neutralize self‑interest, self‑review, advocacy, familiarity and intimidation threats preserve stakeholder confidence and the public interest.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Excellent - Excellent. The submission clearly and accurately distinguishes between independence in fact and appearance, correctly identifying one as a state of mind and the other as a public perception. It effectively explains why both are critical for maintaining audit credibility. (25/25)",
+        "c2": "Excellent - Excellent. You have demonstrated a comprehensive understanding by connecting fundamental principles like integrity and objectivity directly to regulatory frameworks such as the IFAC Code and PCAOB standards. The discussion is thorough and well-supported. (25/25)",
+        "c3": "Good - Good. The response comprehensively identifies the five primary threats to independence (self-interest, self-review, etc.) and provides a clear, relevant example of a self-interest threat, enhancing the analysis of its impact. (21/25)",
+        "c4": "Excellent - Excellent. The explanation of professional skepticism is insightful. You have successfully linked it to independence by describing it as the 'practical application of objectivity' and a necessary tool for challenging management assertions. (25/25)",
+        "total": " 96/100"
+      }
+    },
+    {
+      "quality": "Good",
+      "authorship": "ai",
+      "key_points": [
+        "Accurately defines independence in fact and in appearance.",
+        "Identifies key ethical principles like objectivity and integrity.",
+        "Shows familiarity with professional standards like Sarbanes-Oxley (SOX).",
+        "Identifies several key threats to independence (e.g., self-interest, familiarity).",
+        "Explains the importance of professional skepticism for audit quality.",
+        "Uses a well-explained case study (e.g., Enron) to illustrate independence issues.",
+        "Explains the basic role of the audit committee in auditor oversight.",
+        "Presents a well-structured and clearly written evaluation."
+      ],
+      "llm_questions": [
+        "Can you define auditor independence?",
+        "What are some key threats that can compromise an auditor's independence?",
+        "How did the Enron scandal relate to auditor independence?",
+        "What is the purpose of an audit committee?"
+      ],
+      "llm_answers": [
+        "Auditor independence means the auditor is free from influences that could compromise their professional judgment. It has two parts: independence in fact (what the auditor actually thinks) and independence in appearance (what the public thinks).",
+        "Key threats include the self-interest threat, like having a financial stake in the client, and the familiarity threat, which happens when the auditor has a long or close relationship with the client and might become too trusting.",
+        "In the Enron case, the auditor, Arthur Andersen, was also paid large fees for consulting services. This created a major conflict of interest, as the firm didn't want to lose that lucrative business by issuing a negative audit opinion, which compromised their independence.",
+        "The audit committee is part of the client's board of directors. Its main purpose is to oversee the financial reporting process and the external auditor. They hire the auditor and help ensure the auditor remains independent from the company's management."
+      ],
+      "final_submission": "Auditor independence is a critical principle in accounting that ensures audits are unbiased and reliable. Ethical principles are the foundation of this independence, helping auditors avoid conflicts of interest. This is supported by regulations that came about after major scandals.\n\nFirst, independence has two sides: independence in fact and independence in appearance. Independence in fact is the auditor's ability to maintain an objective and impartial mindset throughout the audit. Independence in appearance is how others see the auditor; they must appear to be independent to maintain public trust. Both are important for the audit to be credible.\n\nThe core ethical principles for auditors are integrity and objectivity. An auditor with integrity is honest, and an auditor with objectivity is not influenced by bias or outside pressures. These principles guide auditors to avoid situations that could create a conflict of interest. The main threats to independence include the self-interest threat (e.g., owning stock in a client company) and the familiarity threat (e.g., auditing the same client for 20 years). These situations can make it hard for an auditor to remain objective.\n\nTo help maintain their independence and objectivity, auditors must use professional skepticism. This means they should have a questioning mind and not just accept what the client's management tells them. They need to critically evaluate evidence to find any potential errors or fraud.\n\nA major example of independence failure is the Enron scandal with its auditor, Arthur Andersen. Arthur Andersen was providing both audit and highly profitable consulting services to Enron. This created a huge conflict of interest, and the desire to keep the consulting fees led them to overlook massive accounting fraud. This scandal led to the Sarbanes-Oxley Act (SOX), which created new rules to protect auditor independence. For example, SOX created audit committees, which are part of the board of directors, to be in charge of hiring and overseeing the auditors. This helps separate the auditors from company management and protect their independence.\n\nIn conclusion, maintaining independence in both fact and appearance—grounded in integrity, objectivity, and due care—is indispensable to audit credibility. Effective safeguards that neutralize self‑interest, self‑review, advocacy, familiarity and intimidation threats preserve stakeholder confidence and the public interest.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Good - Good. The submission accurately defines both independence in fact and in appearance and correctly explains their basic importance for audit credibility and public trust. (20/25)",
+        "c2": "Good - Good. You have correctly identified key ethical principles like integrity and objectivity and demonstrated familiarity with relevant regulations like the Sarbanes-Oxley Act, linking it to the Enron case. (20/25)",
+        "c3": "Good - Good. Several key threats, including self-interest and familiarity, are identified. The explanation of how they can compromise an audit is clear and logical. (20/25)",
+        "c4": "Good - Good. The description of professional skepticism is accurate. You correctly explain its importance for maintaining audit quality by having a 'questioning mind' and critically evaluating evidence. (20/25)",
+        "total": " 80/100"
+      }
+    },
+    {
+      "quality": "Average",
+      "authorship": "ai",
+      "key_points": [
+        "Shows a general understanding of the concept of independence.",
+        "Mentions some ethical principles like being 'objective'.",
+        "Recognizes some basic conflicts of interest.",
+        "Shows a basic understanding of professional skepticism.",
+        "Mentions a relevant example like Enron but with limited detail.",
+        "Mentions governance bodies like audit committees.",
+        "Has some organizational structure but may be inconsistent."
+      ],
+      "llm_questions": [
+        "What does it mean for an auditor to be independent?",
+        "Can you give an example of a conflict of interest for an auditor?",
+        "What is professional skepticism?",
+        "Why was the Enron scandal a big deal for auditors?"
+      ],
+      "llm_answers": [
+        "It means the auditor has to be separate from the company they are auditing, so they can give a fair opinion on the financial statements.",
+        "A conflict of interest is when the auditor might make more money by not telling the truth. For example, if they also do consulting for the company.",
+        "It's when you don't just believe everything the company tells you. You have to question things.",
+        "It was a big deal because the auditors, Arthur Andersen, didn't do their job right and a huge company collapsed, which showed that the rules needed to be stronger."
+      ],
+      "final_submission": "For an audit to be useful, the auditor has to be independent. This means they can't be biased. Ethical principles are important for this. If an auditor is not independent, there is a conflict of interest and the audit is not good.\n\nIndependence is about being objective. There is independence in fact, which is what you really think, and independence in appearance, which is what it looks like to other people. An auditor needs to not have any conflicts that would make them seem biased, like owning part of the company. These are threats to independence.\n\nAuditors should also use professional skepticism. This is an important skill where they question what they see and look for proof. It helps them find problems.\n\nAn example of this going wrong is Enron. Their auditors were paid a lot for other services, so they didn't want to make Enron mad. This was a conflict of interest, and they helped hide the company's problems. After Enron, the government made new rules to make sure this doesn't happen again. For example, audit committees were made to watch over the auditors. These things help make sure auditors stay independent and do their job right.\n\nIn conclusion, maintaining independence in both fact and appearance—grounded in integrity, objectivity, and due care—is indispensable to audit credibility. Effective safeguards that neutralize self‑interest, self‑review, advocacy, familiarity and intimidation threats preserve stakeholder confidence and the public interest.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3,
+          4
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Average - Average. The submission shows an understanding of the general concept of independence but does not fully distinguish between the two types. The explanation of their importance is present but lacks depth. (16/25)",
+        "c2": "Average - Average. You mention the ethical principle of objectivity but with limited depth. There is a reference to new rules after Enron, but specific standards are not discussed in detail. (16/25)",
+        "c3": "Average - Average. The response recognizes a conflict of interest (owning part of the company, non-audit services) but provides limited analysis of the different categories of threats or their broader implications. (16/25)",
+        "c4": "Average - Average. A basic understanding of professional skepticism as 'questioning what they see' is demonstrated. However, the connection to maintaining independence and guiding ethical practice is not fully developed. (16/25)",
+        "total": " 64/100"
+      }
+    },
+    {
+      "quality": "Needs Improvement",
+      "authorship": "ai",
+      "key_points": [
+        "Limited and unclear explanation of independence.",
+        "Superficial mention of 'ethics' without detail.",
+        "Basic identification of a conflict with minimal understanding.",
+        "Vague treatment of professional skepticism.",
+        "Poorly developed examples that don't support the analysis.",
+        "Lacks clear organization and uses an informal tone."
+      ],
+      "llm_questions": [
+        "What is an auditor supposed to do?",
+        "Why shouldn't an auditor be friends with the company's CEO?",
+        "What does it mean to be ethical?"
+      ],
+      "llm_answers": [
+        "They check the company's numbers to make sure they are right.",
+        "Because then they might not report problems they find, to help their friend.",
+        "It means you should do the right thing and not lie."
+      ],
+      "final_submission": "Auditors need to have independence. It is a very important part of their job. They must be ethical and not have conflicts of interest. If they are not independent then people cant trust the audit report.\n\nAn auditor should not be too close to the client. This can be a problem. For example, if the auditor gets paid a lot of money from the client they might not want to say anything bad. This is a conflict.\n\nThere was a company called Enron that had a big problem with this. The auditors did not do a good job because of money and the company went out of business. This shows why auditors need to be independent.\n\nAuditors also have to be skeptical. This means they need to think hard about the company's information. So in conclusion, ethics and independence are key for auditors.\n\nIn conclusion, maintaining independence in both fact and appearance—grounded in integrity, objectivity, and due care—is indispensable to audit credibility. Effective safeguards that neutralize self‑interest, self‑review, advocacy, familiarity and intimidation threats preserve stakeholder confidence and the public interest.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3,
+          4
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Needs Improvement - Needs Improvement. The submission provides a very limited explanation of independence. It mentions the concept but does not clearly explain the two types or their significance in any detail. (13/25)",
+        "c2": "Needs Improvement - Needs Improvement. The treatment of ethical principles is superficial, simply stating that auditors must be 'ethical' without discussing any specific principles like objectivity or integrity. There is no reference to regulatory standards. (13/25)",
+        "c3": "Needs Improvement - Needs Improvement. You have made a basic identification of a conflict ('gets paid a lot of money') but provide minimal understanding of its significance or the formal frameworks used to categorize such threats. (13/25)",
+        "c4": "Needs Improvement - Needs Improvement. The mention of skepticism is superficial ('think hard about the company's information'). There is no clear explanation of its role in the audit process or its link to independence. (13/25)",
+        "total": " 52/100"
+      }
+    },
+    {
+      "quality": "Poor",
+      "authorship": "ai",
+      "key_points": [
+        "Fails to demonstrate understanding of auditor independence.",
+        "Does not identify any relevant ethical principles or standards.",
+        "Fails to identify relevant conflicts of interest.",
+        "Does not discuss professional skepticism.",
+        "Provides no relevant examples.",
+        "Is poorly organized and lacks a coherent structure."
+      ],
+      "llm_questions": [
+        "What is an audit?",
+        "Why is honesty important in business?",
+        "What is a conflict of interest?"
+      ],
+      "llm_answers": [
+        "It's when you check stuff.",
+        "So people don't steal.",
+        "I'm not sure."
+      ],
+      "final_submission": "An auditor has to be a good person and be honest.\n\nThey look at a company's money.\n\nThey should not lie about it. It is their job to tell the truth. If they lie then they are not independent. This is bad for business. Companies need to have people check their work so everyone knows its ok. So being ethical is the most important thing for them.\n\nIn conclusion, maintaining independence in both fact and appearance—grounded in integrity, objectivity, and due care—is indispensable to audit credibility. Effective safeguards that neutralize self‑interest, self‑review, advocacy, familiarity and intimidation threats preserve stakeholder confidence and the public interest.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Poor - Poor. The submission fails to demonstrate any real understanding of auditor independence as a professional concept. It confuses independence with simple honesty and does not mention independence in fact or appearance. (5/25)",
+        "c2": "Poor - Poor. The response fails to identify any relevant ethical principles (such as objectivity) or regulatory frameworks that govern the auditing profession. (5/25)",
+        "c3": "Poor - Poor. The submission does not identify or explain any relevant conflicts of interest or threats to independence. The analysis required by the prompt is absent. (5/25)",
+        "c4": "Poor - Poor. There is no discussion of professional skepticism or its role in auditing. This key concept has been completely omitted from the response. (5/25)",
+        "total": " 20/100"
+      }
+    },
+    {
+      "quality": "Good",
+      "authorship": "ai",
+      "key_points": [
+        "Clearly distinguishes independence in fact and appearance, explaining their significance.",
+        "Identifies key ethical principles like integrity and objectivity, and mentions professional standards (e.g., IFAC).",
+        "Recognizes common types of threats to independence (self-interest, familiarity) but provides limited detailed analysis of their impact or specific examples.",
+        "Demonstrates a basic understanding of professional skepticism but does not fully integrate its critical role with independence in practice.",
+        "Overall well-structured, but some sections lack the depth of analysis for an 'Excellent' rating."
+      ],
+      "llm_questions": [
+        "How do independence in fact and appearance differ, and why are both vital for an auditor?",
+        "Which ethical principles are most crucial for supporting auditor independence, and how are they reflected in professional standards?",
+        "Can you identify and briefly explain two major threats to auditor independence?",
+        "What is professional skepticism, and how does it relate to maintaining an auditor's objectivity?"
+      ],
+      "llm_answers": [
+        "Independence in fact means the auditor holds an unbiased mindset and is genuinely objective. Independence in appearance is about how third parties perceive the auditor's objectivity. Both are vital because without true objectivity, the audit is flawed, and without the appearance of objectivity, the public loses trust in the financial reports.",
+        "Objectivity and integrity are paramount. Objectivity ensures auditors act without bias, while integrity demands honesty. Standards like the IFAC Code of Ethics require adherence to these principles to ensure auditors are free from conflicts of interest.",
+        "A self-interest threat arises when an auditor or firm could benefit financially from a client's success (e.g., owning client stock). A familiarity threat occurs when a close, long-term relationship with client personnel might make an auditor too sympathetic or less objective.",
+        "Professional skepticism is an attitude involving a questioning mind and a critical assessment of audit evidence. It directly supports objectivity by compelling auditors to challenge management assertions and seek corroborating evidence, thereby preventing undue influence and reinforcing independence."
+      ],
+      "final_submission": "Auditor independence is a bedrock principle in financial auditing, foundational to the trustworthiness of financial statements and the trust of investors and the public. It is meticulously supported by a framework of ethical principles and regulatory guidelines designed to proactively reduce conflicts of interest.\n\nThe concept of independence bifurcates into two crucial dimensions: independence in fact and independence in appearance. Independence in fact refers to the auditor's actual state of mind, characterized by objectivity, impartiality, and freedom from bias. This is the auditor's internal mental attitude. Independence in appearance, conversely, pertains to the avoidance of circumstances that might lead a reasonable and informed third party to conclude that the auditor's integrity or objectivity has been compromised. Both are equally indispensable; an auditor might be independent in fact but lose public confidence if they appear to be compromised, rendering their work ineffective. Professional standards from bodies like the IFAC and PCAOB emphasize the necessity of upholding both.\n\nEthical principles such as integrity, objectivity, and professional competence are the cornerstones upon which auditor independence is built. Objectivity, in particular, mandates that auditors remain free from bias, conflicts of interest, or undue influence. Integrity requires auditors to be honest and straightforward in all professional relationships. These principles guide auditors in navigating potential threats to their independence. Such threats are typically categorized into types like self-interest (e.g., a financial interest in the client), self-review (auditing one's own previous work for the client), advocacy (promoting the client's position), familiarity (due to a long or close relationship), and intimidation (being deterred from acting objectively by actual or perceived threats).\n\nWhile these principles and regulations provide a strong framework, the practical application relies heavily on professional skepticism. Professional skepticism is an essential attitude that includes a questioning mind and a critical assessment of audit evidence. It compels auditors to challenge management assertions, be alert to conditions that may indicate possible misstatement due to error or fraud, and critically evaluate the sufficiency and appropriateness of audit evidence. This constant questioning helps an auditor maintain objectivity and prevents them from simply accepting management's explanations at face value, thus reinforcing independence in fact.\n\nIn conclusion, auditor independence is a dynamic state sustained by a commitment to core ethical principles, vigilant identification and management of conflicts of interest, and the active application of professional skepticism throughout the audit process. This multifaceted approach ensures that audit opinions are unbiased and worthy of public trust.\n\nIn conclusion, maintaining independence in both fact and appearance—grounded in integrity, objectivity, and due care—is indispensable to audit credibility. Effective safeguards that neutralize self‑interest, self‑review, advocacy, familiarity and intimidation threats preserve stakeholder confidence and the public interest.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Excellent - Excellent. The submission clearly and accurately distinguishes between independence in fact and appearance, correctly identifying their separate but equally critical roles in audit credibility. (23/25)",
+        "c2": "Good - Good. You have identified key ethical principles like integrity and objectivity and shown familiarity with professional standards (IFAC). The connection to independence is clear, though a slightly deeper discussion of specific standards could elevate this further. (20/25)",
+        "c3": "Average - Average. The response identifies several key threats to independence (self-interest, familiarity) and explains their nature. However, the analysis of their broader implications or detailed examples is somewhat limited. (17/25)",
+        "c4": "Average - Average. A good basic understanding of professional skepticism is demonstrated. However, the connection to how it specifically guides auditor behavior and decision-making throughout the audit process, beyond 'challenging management assertions,' could be more developed. (17/25)",
+        "total": " 77/100"
+      }
+    },
+    {
+      "quality": "Average",
+      "authorship": "ai",
+      "key_points": [
+        "Understands independence as being unbiased but slightly conflates independence in fact and appearance.",
+        "Mentions 'being ethical' and 'objectivity' as important, with general awareness of rules like SOX.",
+        "Identifies common conflicts like financial ties or long relationships but lacks depth in categorizing or analyzing their specific impact.",
+        "Shows a basic grasp of professional skepticism as 'not just believing' but limited explanation of its link to independence.",
+        "Uses basic examples, but the overall analysis is general and lacks specific detail or strong connections between concepts."
+      ],
+      "llm_questions": [
+        "What are the two main ways we think about auditor independence?",
+        "What kind of ethical principles help auditors stay independent?",
+        "Can you describe one example of a conflict of interest an auditor might face?",
+        "Why is it important for auditors to be skeptical?"
+      ],
+      "llm_answers": [
+        "We think of it as independence in fact, which is being truly unbiased in your mind, and independence in appearance, which is making sure others also see you as unbiased. They both mean the auditor should be fair.",
+        "Principles like objectivity, meaning you don't let personal feelings or pressures influence your judgment, and integrity, meaning you are honest and straightforward, are very important for auditors.",
+        "One conflict is if an auditor owns shares in the company they are auditing. This is a self-interest threat because they might not want to report bad news if it hurts their investment.",
+        "It's important because auditors shouldn't just take management's word for things. They need to question information and look for evidence to make sure the financial statements are correct and not misleading."
+      ],
+      "final_submission": "Auditor independence is very important for financial audits because it means the auditor can give an honest and unbiased opinion on a company's financial reports. This relies on strong ethical principles and rules to make sure there are no conflicts of interest.\n\nIndependence can be seen in two ways: what the auditor actually thinks (independence in fact) and how other people see the auditor (independence in appearance). Both are about being unbiased and trustworthy. If an auditor appears biased, then even if they are trying to be fair, people won't trust their work.\n\nEthical principles like objectivity and integrity are key. Objectivity means auditors should be fair and not let anything influence their judgment. Integrity means they should be honest. These principles help auditors avoid situations where their personal interests or relationships could conflict with their professional duty. For example, if an auditor provides many other services to a client, this could create a conflict because they might prioritize keeping the client happy for those fees over giving a tough audit opinion. This is why rules like those from Sarbanes-Oxley (SOX) restrict certain non-audit services.\n\nTo keep their independence, auditors also need professional skepticism. This means they should approach their work with a questioning mind. They shouldn't just accept what management tells them, but instead, they should look for evidence and critically evaluate it. This helps them find any mistakes or fraud that management might try to hide. Without skepticism, it's hard to be truly objective and independent.\n\nIn summary, independence is about being unbiased and appearing unbiased, supported by ethical principles and the active use of skepticism. Regulations also help enforce this by setting clear boundaries to prevent conflicts.\n\nIn conclusion, maintaining independence in both fact and appearance—grounded in integrity, objectivity, and due care—is indispensable to audit credibility. Effective safeguards that neutralize self‑interest, self‑review, advocacy, familiarity and intimidation threats preserve stakeholder confidence and the public interest.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Average - Average. The submission correctly identifies both types of independence but the explanation of their distinct significance is slightly conflated. It shows a general understanding but lacks the precision of higher-level definitions. (18/25)",
+        "c2": "Average - Average. You mention objectivity and integrity as important ethical principles. There's a general awareness of regulatory impact (e.g., SOX) but specific standards and their detailed requirements are not explored. (17/25)",
+        "c3": "Average - Average. Common conflicts like providing non-audit services or financial ties are recognized. However, the analysis of how these create conflicts or the broader categorizations of threats is limited in depth. (16/25)",
+        "c4": "Average - Average. A basic understanding of professional skepticism as a 'questioning mind' is evident. However, the connection to maintaining independence and how it specifically guides ethical audit practices could be more developed. (17/25)",
+        "total": " 68/100"
+      }
+    },
+    {
+      "quality": "Needs Improvement",
+      "authorship": "ai",
+      "key_points": [
+        "Limited and somewhat confused explanation of auditor independence.",
+        "Mentions 'ethical rules' but doesn't specify principles or standards, indicating superficial understanding.",
+        "Clearly identifies several types of threats to independence (self-interest, familiarity, self-review) with basic examples, which is a relative strength.",
+        "Fails to adequately discuss professional skepticism, showing a significant gap in understanding this concept.",
+        "Overall structure is present but the depth and detail vary greatly across criteria."
+      ],
+      "llm_questions": [
+        "What are the most common situations where an auditor's independence might be threatened?",
+        "Why is it important that an auditor doesn't audit their own work?",
+        "What does it mean for an auditor to be 'ethical' in their job?"
+      ],
+      "llm_answers": [
+        "Common threats include self-interest, like if the auditor has a financial stake in the client; familiarity, if they're too close to client management; and self-review, if they audit work they previously did for the client.",
+        "If an auditor audits their own work, they might not be objective in finding mistakes or issues because they would be reviewing their own decisions. This is a self-review threat and makes the audit less reliable.",
+        "Being ethical means following rules like being objective and honest. It means not letting personal gain or relationships get in the way of giving a true and fair opinion on financial statements."
+      ],
+      "final_submission": "Auditor independence is a core requirement for conducting financial audits. It ensures that the audit opinion provided is unbiased and reliable. This independence is safeguarded by ethical rules that aim to prevent conflicts of interest.\n\nIndependence involves two aspects: actual independence (how the auditor truly feels) and perceived independence (how others see the auditor). Both are important because if an auditor looks biased, even if they aren't, people will doubt the audit. It means the auditor must not be too close to the client or have any reasons to not be objective. For example, if an auditor works for the same company for a very long time, they might become too familiar with the client and less likely to question things vigorously.\n\nEthical principles are meant to guide auditors. These principles state that auditors must be objective and honest in their work. Without these, independence cannot be maintained. The main way conflicts of interest arise is through various threats to this independence. These include a self-interest threat, such as when an audit firm relies too heavily on one client for a large portion of its fees. A familiarity threat can arise from long-standing relationships between auditor and client management, making it difficult for the auditor to maintain a critical perspective. Another is the self-review threat, where an auditor might find themselves auditing accounting records or systems that they themselves designed or implemented for the client. These situations make it hard to remain truly objective.\n\nProfessional skepticism is also mentioned as important. It means auditors should not just accept everything they are told without thinking critically. However, the exact way this relates to independence is sometimes unclear.\n\nIn conclusion, ethical principles and identifying conflicts are crucial for auditor independence, even if some concepts like the two types of independence or the role of skepticism are not fully detailed.\n\nIn conclusion, maintaining independence in both fact and appearance—grounded in integrity, objectivity, and due care—is indispensable to audit credibility. Effective safeguards that neutralize self‑interest, self‑review, advocacy, familiarity and intimidation threats preserve stakeholder confidence and the public interest.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Needs Improvement - Needs Improvement. The submission mentions both types of independence but the explanation is somewhat confused and does not clearly differentiate their specific significance. The overall understanding remains limited. (14/25)",
+        "c2": "Needs Improvement - Needs Improvement. You state that 'ethical principles are meant to guide auditors' but fail to specify any distinct ethical principles (beyond 'objective and honest') or relevant professional standards. The treatment is superficial. (13/25)",
+        "c3": "Good - Good. This section is a relative strength. You clearly identify several specific types of threats (self-interest, familiarity, self-review) and provide basic but relevant examples, showing a decent understanding of *what* these conflicts are. (19/25)",
+        "c4": "Poor - Poor. The discussion of professional skepticism is very brief and superficial ('sometimes unclear'). It fails to explain what it truly entails or how it directly supports auditor independence and ethical practice. (8/25)",
+        "total": " 54/100"
+      }
+    },
+    {
+      "quality": "Excellent",
+      "authorship": "ai",
+      "key_points": [
+        "Provides a highly nuanced and comprehensive explanation of independence in fact and appearance, including their interaction and regulatory backing.",
+        "Deeply analyzes fundamental ethical principles (integrity, objectivity, professional competence) and meticulously connects them to multiple, specific professional standards (APES 110, IFAC, PCAOB).",
+        "Identifies and thoroughly dissects all five major types of threats to independence with detailed, illustrative examples and their potential impact.",
+        "Offers an insightful and sophisticated explanation of professional skepticism, framing it as an active mindset crucial for objective decision-making and ethical conduct.",
+        "Demonstrates excellent analytical skills and superior academic writing, integrating concepts seamlessly.",
+        "While extremely strong, the analysis of specific conflicts (C3) could have pushed slightly further into the *mechanisms* of mitigation for an absolute perfect score."
+      ],
+      "llm_questions": [
+        "Beyond defining them, how do independence in fact and independence in appearance interrelate to ensure overall audit quality?",
+        "Elaborate on how the ethical principle of objectivity is operationalized within specific professional auditing standards.",
+        "Discuss the subtle differences and potential overlaps between advocacy threats and familiarity threats, providing distinct examples.",
+        "How does professional skepticism serve as a dynamic safeguard against evolving conflicts of interest in modern audit environments?",
+        "What governance structures complement ethical principles and professional skepticism in safeguarding independence?"
+      ],
+      "llm_answers": [
+        "Independence in fact and appearance are symbiotically linked. Independence in fact, the actual state of mind, is paramount for the integrity of audit judgments. However, public confidence, which underpins the utility of audited financial statements, hinges on independence in appearance. If an auditor is factually independent but appears compromised (e.g., due to excessive non-audit services), public trust erodes. Therefore, regulators ensure that circumstances avoid not only actual impairment but also the perception of impairment, thereby validating both the technical quality and societal value of the audit.",
+        "The ethical principle of objectivity is operationalized in standards by requiring auditors to be free from bias, conflicts of interest, and undue influence. For instance, APES 110 (and the IFAC Code) explicitly details categories of threats (self-interest, self-review, etc.) that could impair objectivity, requiring auditors to apply safeguards. PCAOB rules directly prohibit certain non-audit services and mandate partner rotation to structurally enforce objectivity by minimizing financial dependence or long-term personal ties with audit clients.",
+        "Advocacy threats arise when an auditor promotes a client's position to the extent that objectivity is compromised (e.g., representing a client in a tax court). Familiarity threats stem from long or close relationships that lead to excessive sympathy or acceptance of the client's viewpoint (e.g., a long-serving partner becoming too trusting of client management). The overlap occurs if a familiar relationship leads to an auditor becoming an advocate; however, advocacy is an *active promotion*, while familiarity is a *passive erosion* of objectivity due to closeness.",
+        "Professional skepticism acts as a dynamic safeguard by encouraging auditors to maintain a questioning mind and critically assess all evidence, even when faced with novel or complex transactions. In modern environments with complex financial instruments or aggressive accounting, skepticism prevents auditors from blindly accepting management's explanations. It compels them to seek corroborating evidence and challenge assumptions, thereby identifying and mitigating potential new conflicts or pressures that might not be explicitly covered by static rules.",
+        "Key governance structures include independent audit committees (mandated by Sarbanes-Oxley for public companies), which are responsible for appointing, compensating, and overseeing the external auditor. This structural separation from management provides a critical buffer. Additionally, internal quality control systems within audit firms, peer reviews, and external regulatory inspections (like those by the PCAOB) all contribute to a multi-layered oversight designed to reinforce independence and ethical conduct."
+      ],
+      "final_submission": "The integrity of global financial markets fundamentally rests on the trustworthiness of financial statement audits, which, in turn, is directly contingent upon the auditor's independence. This critical attribute is not merely a theoretical construct but a practical necessity, meticulously underpinned by a robust framework of ethical principles and stringent professional standards designed to preempt and manage conflicts of interest.\n\nAuditor independence is conceptualized in two distinct, yet intrinsically linked, forms: independence in fact and independence in appearance. Independence in fact refers to the auditor's mental attitude—a state of objectivity, impartiality, and freedom from bias or undue influence when performing audit engagements. It is the auditor's genuine capacity for unbiased judgment. Independence in appearance, conversely, concerns the perception of an auditor's impartiality by a reasonable and informed third party. Both are indispensable; an auditor may be truly independent in mind, but if circumstances lead stakeholders to perceive a lack of independence, the audit report's credibility is severely compromised, diminishing its value. Professional bodies such as the International Federation of Accountants (IFAC) through its Code of Ethics and the Public Company Accounting Oversight Board (PCAOB) explicitly mandate the maintenance of both forms of independence.\n\nCentral to this framework are fundamental ethical principles: integrity, objectivity, and professional competence and due care. Objectivity is arguably the most directly pertinent to independence, demanding that auditors act without bias, conflicts of interest, or succumbing to the undue influence of others. Integrity requires auditors to be straightforward and honest in all professional and business relationships. These principles are operationalized through comprehensive professional standards, such as APES 110 in Australia, which delineate specific categories of threats to independence: self-interest, self-review, advocacy, familiarity, and intimidation threats. Each threat presents a distinct pathway to potential conflicts; for example, an advocacy threat arises when an auditor promotes a client's position to the point where objectivity is or appears to be compromised, such as representing a client in litigation. The catastrophic events surrounding Enron and Arthur Andersen vividly illustrate the devastating consequences when these ethical boundaries are breached, particularly through self-interest and self-review threats linked to non-audit services.\n\nTo actively combat these myriad threats and to maintain an objective mindset, professional skepticism is not merely a desirable trait but an absolute imperative. It is an attitude that includes a questioning mind and a critical assessment of audit evidence. An independent auditor exercising professional skepticism actively challenges management's assertions, is alert to conditions that may indicate possible misstatement, and critically evaluates the sufficiency and appropriateness of audit evidence. This proactive, critical thinking ensures that auditors do not simply accept information at face value, thereby reinforcing independence in fact and supporting ethical decision-making throughout the audit process, ultimately enhancing audit quality and public trust.\n\nMoreover, robust governance mechanisms, such as independent audit committees mandated by the Sarbanes-Oxley Act (SOX), serve as crucial safeguards. These committees are directly responsible for the appointment, compensation, and oversight of the external auditor, thereby insulating the auditor from management pressures and mitigating potential conflicts of interest arising from the client-auditor relationship. In essence, auditor independence is a dynamic equilibrium maintained through a confluence of personal ethical commitment, rigorous professional standards, proactive threat identification, diligent application of professional skepticism, and robust external governance.\n\nIn conclusion, maintaining independence in both fact and appearance—grounded in integrity, objectivity, and due care—is indispensable to audit credibility. Effective safeguards that neutralize self‑interest, self‑review, advocacy, familiarity and intimidation threats preserve stakeholder confidence and the public interest.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Excellent - Excellent. The submission provides a highly nuanced and comprehensive explanation of both independence in fact and appearance, effectively discussing their interaction and why both are crucial for audit quality and public trust. (24/25)",
+        "c2": "Excellent - Excellent. You have thoroughly discussed ethical principles (integrity, objectivity) and meticulously connected them to multiple specific professional standards (IFAC Code, APES 110, PCAOB), demonstrating superior understanding of their operationalization. (23/25)",
+        "c3": "Good - Good. The response comprehensively identifies the five major types of threats to independence with strong examples. The analysis of their impact is very good, though a slightly deeper discussion on *mitigation mechanisms* for each specific threat could enhance it further towards 'Excellent'. (21/25)",
+        "c4": "Excellent - Excellent. The explanation of professional skepticism is insightful and sophisticated, framing it as an active mindset crucial for objective decision-making and ethical conduct, and its role as a dynamic safeguard is well articulated. (24/25)",
+        "total": " 92/100"
+      }
+    },
+    {
+      "quality": "Poor",
+      "authorship": "ai",
+      "key_points": [
+        "Confuses auditor independence with simple honesty, lacking understanding of independence in fact or appearance.",
+        "Refers vaguely to 'being ethical' but does not identify any specific ethical principles or professional standards.",
+        "Offers only a very basic, unanalytical identification of what a conflict of interest might entail (e.g., getting too much money).",
+        "Provides a rudimentary and unclear understanding of professional skepticism, or omits it entirely.",
+        "Overall, the submission is very brief, lacks structure, and demonstrates significant fundamental misconceptions."
+      ],
+      "llm_questions": [
+        "What is the main job of an auditor?",
+        "Why is it bad if an auditor has a 'conflict of interest'?",
+        "What does 'being independent' mean for someone who checks a company's money?"
+      ],
+      "llm_answers": [
+        "The main job is to check a company's financial reports to make sure they are correct and fair.",
+        "It's bad because a conflict of interest means the auditor might not be able to give an honest opinion. They might be influenced by personal gain or relationships instead of doing their job properly.",
+        "For an auditor, being independent means they don't have personal or financial ties to the company they're auditing. This helps them stay unbiased and objective when checking the company's financial records."
+      ],
+      "final_submission": "Auditors are people who look at a company's money to make sure it is all okay. They need to be good and ethical in their work. This means they should not lie or cheat. If an auditor is not ethical, they have a conflict of interest, and this is very bad for the company and for trusting the numbers.\n\nBeing independent is about not being told what to do by the company they are checking. They should be free to say if something is wrong. Sometimes, if an auditor gets a lot of money from one company, it might be a problem because they might not want to upset that company. This is a conflict of interest because their money depends on keeping the company happy.\n\nThere are rules that say auditors should be fair. They also need to be careful and not just believe everything the company says. They need to question things to make sure they are getting the real information. If they don't question things, they might miss problems.\n\nSo, in conclusion, auditors need to be good, ethical, and independent so that people can trust the company's money information.\n\nIn conclusion, maintaining independence in both fact and appearance—grounded in integrity, objectivity, and due care—is indispensable to audit credibility. Effective safeguards that neutralize self‑interest, self‑review, advocacy, familiarity and intimidation threats preserve stakeholder confidence and the public interest.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3,
+          4
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Poor - Poor. The submission demonstrates a fundamental misunderstanding of auditor independence, largely equating it with simple honesty and freedom from external direction rather than explaining independence in fact or appearance. (7/25)",
+        "c2": "Poor - Poor. The treatment of ethical principles is extremely superficial, referring vaguely to 'being good and ethical' without identifying any specific principles (like objectivity) or relevant professional standards. (6/25)",
+        "c3": "Needs Improvement - Needs Improvement. You provide a very basic identification of a conflict ('gets a lot of money') but lack any analytical depth regarding types of threats, their significance, or their structured prevention. (12/25)",
+        "c4": "Poor - Poor. While mentioning the need to 'question things,' the explanation of professional skepticism is rudimentary and lacks any real understanding of its role in maintaining independence or ethical audit practices. (7/25)",
+        "total": " 32/100"
+      }
+    }
+  ]
+}

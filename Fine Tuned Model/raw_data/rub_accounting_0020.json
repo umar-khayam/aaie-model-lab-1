@@ -1,0 +1,520 @@
+{
+  "domain": "Accounting",
+  "prompt": "Discuss how effective internal control systems reduce the risk of fraud and support compliance in organizations.",
+  "rubric": {
+    "rubric_id": "rub_accounting_0020",
+    "criteria": [
+      {
+        "criterion_id": "c1",
+        "name": "Understanding of Internal Control Systems",
+        "description": "Demonstrates comprehensive knowledge of internal control concepts, objectives, and their role in organizational risk management.",
+        "performance_descriptors": {
+          "excellent": "Clearly defines internal controls, explains their fundamental objectives (operational effectiveness, reliable reporting, compliance), and demonstrates understanding of their integrated nature in organizational governance.",
+          "good": "Accurately describes internal controls and identifies their main purposes in preventing fraud and ensuring compliance.",
+          "average": "Shows basic understanding of internal controls but with limited detail on their comprehensive role in organizations.",
+          "needs_improvement": "Unclear or incomplete understanding of internal control concepts and objectives.",
+          "poor": "Fails to demonstrate understanding of internal controls or shows fundamental misconceptions."
+        },
+        "weight": 40
+      },
+      {
+        "criterion_id": "c2",
+        "name": "Application of COSO Framework",
+        "description": "Demonstrates knowledge of the COSO Internal Control Framework and its five components in fraud prevention.",
+        "performance_descriptors": {
+          "excellent": "Thoroughly explains all five COSO components (control environment, risk assessment, control activities, information & communication, monitoring) and analyzes how each contributes to fraud prevention and compliance.",
+          "good": "Accurately describes the COSO framework and explains how its key components work together to prevent fraud.",
+          "average": "Shows familiarity with COSO framework but limited understanding of how components integrate for fraud prevention.",
+          "needs_improvement": "Basic mention of COSO with minimal understanding of its components or application.",
+          "poor": "Fails to reference COSO framework or demonstrates fundamental misunderstanding of its structure."
+        },
+        "weight": 20
+      },
+      {
+        "criterion_id": "c3",
+        "name": "Analysis of Key Control Mechanisms",
+        "description": "Evaluates specific internal control mechanisms, particularly segregation of duties and other preventive controls.",
+        "performance_descriptors": {
+          "excellent": "Comprehensively discusses segregation of duties, authorization controls, documentation requirements, physical safeguards, and reconciliation procedures with specific examples of how each prevents fraud.",
+          "good": "Explains segregation of duties and several other key control mechanisms, demonstrating understanding of their fraud prevention role.",
+          "average": "Identifies some control mechanisms but with limited analysis of their effectiveness in fraud prevention.",
+          "needs_improvement": "Superficial treatment of control mechanisms with minimal understanding of their fraud prevention capabilities.",
+          "poor": "Fails to identify relevant control mechanisms or shows poor understanding of their purpose and function."
+        },
+        "weight": 30
+      },
+      {
+        "criterion_id": "c4",
+        "name": "Understanding of Fraud Theory and Risk Factors",
+        "description": "Demonstrates knowledge of fraud theory, including the fraud triangle, and identifies organizational risk factors that internal controls address.",
+        "performance_descriptors": {
+          "excellent": "Thoroughly explains the fraud triangle (pressure, opportunity, rationalization), analyzes how internal controls specifically address opportunity factors, and discusses additional fraud risk factors and red flags.",
+          "good": "Accurately describes the fraud triangle and explains how internal controls reduce fraud opportunities and address risk factors.",
+          "average": "Shows basic understanding of fraud theory but limited connection to how internal controls mitigate fraud risks.",
+          "needs_improvement": "Minimal discussion of fraud theory with unclear understanding of its relationship to internal controls.",
+          "poor": "Fails to address fraud theory or demonstrates fundamental misunderstanding of fraud risk factors."
+        },
+        "weight": 10
+      }
+    ]
+  },
+  "submissions": [
+    {
+      "quality": "Excellent",
+      "authorship": "ai",
+      "key_points": [
+        "Defines internal controls as a process designed to provide reasonable assurance regarding the achievement of objectives related to operations, reporting, and compliance.",
+        "Thoroughly explains all five components of the COSO Internal Control Framework (Control Environment, Risk Assessment, Control Activities, Information & Communication, Monitoring) and analyzes their synergy.",
+        "Comprehensively analyzes key control activities such as segregation of duties (SoD), authorization procedures, independent reconciliations, and physical controls with specific examples.",
+        "Explains the fraud triangle (Pressure, Opportunity, Rationalization) and critically analyzes how strong internal controls directly mitigate the 'Opportunity' element.",
+        "Details how internal controls are fundamental to complying with regulations like the Sarbanes-Oxley Act (SOX), particularly Sections 302 and 404.",
+        "Analyzes the distinct but complementary roles of internal audit (ongoing monitoring and evaluation) and external audit (independent opinion on financial statements and control effectiveness).",
+        "Integrates a detailed analysis of the Wells Fargo account fraud scandal, pinpointing failures in the control environment and monitoring activities as root causes.",
+        "Presents the discussion in a logically structured, formal academic style, employing precise and appropriate terminology throughout."
+      ],
+      "llm_questions": [
+        "How do the five components of the COSO framework interact to create a holistic internal control system?",
+        "Can you elaborate on how internal controls specifically address the 'Opportunity' component of the fraud triangle?",
+        "What is the specific role of an audit committee in overseeing internal controls and financial reporting?",
+        "Beyond SOX, what are some industry-specific compliance requirements where internal controls are critical?",
+        "What are the inherent limitations of an internal control system, and how does the concept of 'reasonable assurance' address them?"
+      ],
+      "llm_answers": [
+        "The COSO components are synergistic. A strong Control Environment ('tone at the top') provides the foundation. This enables effective Risk Assessment, which in turn informs the design of specific Control Activities. Information & Communication ensures these controls are understood, while Monitoring activities provide feedback to ensure the entire system is functioning as intended.",
+        "Internal controls primarily attack the 'Opportunity' leg of the fraud triangle. For example, segregation of duties ensures no single individual can initiate, authorize, record, and conceal a fraudulent transaction. Mandatory vacations and job rotations can uncover schemes, while independent audits create a perception of detection, all reducing the opportunity to commit fraud.",
+        "The audit committee, composed of independent board members, provides oversight of the financial reporting process, the audit process, the company's system of internal controls, and its compliance with laws and regulations. They hire and oversee the external auditor, ensuring independence and objectivity.",
+        "In healthcare, HIPAA requires strict controls over patient data. In banking, the Bank Secrecy Act (BSA) and Anti-Money Laundering (AML) regulations mandate robust controls for monitoring and reporting suspicious transactions. These are prime examples of industry-specific compliance driven by internal controls.",
+        "Inherent limitations include human error, management override, and collusion between employees. No system is foolproof. Therefore, internal controls provide 'reasonable assurance,' not absolute assurance, that objectives will be met, acknowledging that the cost of a control should not exceed its benefit."
+      ],
+      "final_submission": "Effective internal control systems are the bedrock of organizational integrity, serving as a primary defense against fraud and a critical enabler of regulatory compliance. An internal control system, as defined by the COSO Framework, is a process designed to provide reasonable assurance regarding the achievement of objectives in operational effectiveness, reliability of financial reporting, and compliance with laws. This system is not a single procedure but an integrated framework of five components: the Control Environment, Risk Assessment, Control Activities, Information & Communication, and Monitoring. The Control Environment, or 'tone at the top,' is the foundation, influencing the control consciousness of its people. A weak environment, as seen in the Wells Fargo account fraud scandal where immense pressure to meet sales quotas overrode ethical considerations, can render other controls ineffective.\n\nTo mitigate fraud, internal controls directly attack the 'Opportunity' component of the fraud triangle (Pressure, Opportunity, Rationalization). Specific control activities are designed to create checks and balances. For instance, segregation of duties (SoD) prevents a single individual from controlling a process from start to finish, such as authorizing a payment, disbursing the funds, and recording it in the ledger. Other key controls include mandatory reconciliations, physical security of assets, and formal authorization protocols. These mechanisms reduce the chance that an individual can commit and conceal fraud.\n\nFurthermore, these controls are indispensable for compliance. The Sarbanes-Oxley Act of 2002 (SOX), enacted after scandals like Enron, mandates that management assess and report on the effectiveness of internal controls over financial reporting (Section 404), with external auditors providing an independent opinion. This ensures accountability and transparency. The role of auditing is crucial; internal audit functions provide ongoing monitoring and evaluation of control effectiveness, while external auditors offer an independent validation. Continuous monitoring and regular assessments ensure the control system remains robust and adapts to changing risks. The failure at Toshiba, where management collusion overrode controls to perpetrate a massive accounting fraud, underscores that even well-designed controls require diligent monitoring and a strong ethical culture to be truly effective. In conclusion, a well-designed and consistently executed internal control system is not merely a compliance burden but a strategic imperative that protects assets, ensures data integrity, and fosters a culture of accountability, thereby reducing fraud risk and supporting sustainable organizational success.\n\nIn conclusion, a well‑designed, monitored COSO‑aligned control system reduces fraud opportunity, supports compliance, and elevates the reliability of reporting—delivering reasonable, not absolute, assurance.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Excellent: The submission clearly defines internal controls using the COSO definition and articulates the three core objectives (operations, reporting, compliance), demonstrating a deep understanding of their integrated role. (40/40)",
+        "c2": "Excellent: All five COSO components are explicitly named and their synergistic relationship is analyzed effectively. The response shows how a failure in one component (Control Environment at Wells Fargo) can undermine the entire system. (20/20)",
+        "c3": "Excellent: The submission provides a comprehensive discussion of multiple key control mechanisms, including segregation of duties, reconciliations, and authorization, with clear examples of how they function to prevent fraud. (30/30)",
+        "c4": "Good: The fraud triangle is thoroughly explained, and the analysis correctly and insightfully focuses on how internal controls are designed specifically to mitigate the 'Opportunity' element. (6/10)",
+        "total": "96/100"
+      }
+    },
+    {
+      "quality": "Good",
+      "authorship": "ai",
+      "key_points": [
+        "Accurately describes internal controls and their main purpose of fraud prevention and compliance.",
+        "Identifies the COSO framework and explains its key components.",
+        "Explains segregation of duties and other important control activities.",
+        "Describes the fraud triangle and connects it to the role of internal controls in reducing opportunity.",
+        "Discusses how internal controls help companies comply with major regulations like SOX.",
+        "Explains the role of auditors in testing internal controls.",
+        "Includes one relevant case study to illustrate the consequences of control failures.",
+        "The submission is well-organized and uses appropriate professional language."
+      ],
+      "llm_questions": [
+        "What are the main goals of an internal control system?",
+        "What are the most important components of the COSO framework for preventing fraud?",
+        "How does segregation of duties work in practice?",
+        "Why is complying with SOX important for public companies?"
+      ],
+      "llm_answers": [
+        "The main goals are to make operations efficient, ensure financial reports are reliable, and make sure the company follows all laws and regulations. A big part of this is preventing fraud.",
+        "All components are important, but the Control Environment (the company's culture and ethics) and Control Activities (like segregation of duties) are very direct in preventing fraud.",
+        "It means splitting up tasks so one person can't do everything. For example, the person who approves a purchase order shouldn't be the same person who pays the bill. This makes it harder for someone to create a fake payment for themselves.",
+        "SOX is important because it was created to protect investors from accounting fraud. It holds executives accountable for the accuracy of financial statements and the effectiveness of internal controls, which helps build trust in the market."
+      ],
+      "final_submission": "Internal control systems are a crucial part of any organization because they help reduce the risk of fraud and ensure the company is following the rules. These systems are basically the policies and procedures put in place to protect assets and ensure financial reporting is accurate. The main objectives are to have efficient operations, reliable reports, and to comply with laws.\n\nA key guide for this is the COSO framework, which has several components that work together. The most important parts are the control environment, which is the overall ethical tone set by management, and control activities, which are the specific actions taken to reduce risk. Control activities include things like segregation of duties, where you separate key tasks among different people to prevent fraud. For example, the person handling cash should not also be the one recording cash transactions. Other controls include requiring approvals for large payments and performing regular bank reconciliations.\n\nThese controls are directly related to preventing fraud, which is often explained by the fraud triangle: pressure, opportunity, and rationalization. Internal controls work by reducing the 'opportunity' for someone to commit fraud. If controls are strong, it's much harder for an employee to steal assets or manipulate records without being caught. From a compliance perspective, these systems are essential for laws like the Sarbanes-Oxley Act (SOX). SOX requires management of public companies to certify the effectiveness of their internal controls. Auditors, both internal and external, then test these controls to make sure they are working properly. A good example of what happens when controls fail is the Enron scandal, where weak controls allowed executives to hide debt and inflate earnings, leading to the company's collapse. This shows why having strong, well-monitored controls is vital for any business.\n\nIn conclusion, a well‑designed, monitored COSO‑aligned control system reduces fraud opportunity, supports compliance, and elevates the reliability of reporting—delivering reasonable, not absolute, assurance.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Good: The submission accurately describes internal controls and correctly identifies their main purposes, focusing on fraud prevention and compliance. It could be improved by further detailing the three distinct objectives of operations, reporting, and compliance. (32/40)",
+        "c2": "Good: The response accurately describes the COSO framework and correctly identifies key components like the control environment and control activities. To reach an excellent level, it should analyze all five components and how they integrate. (16/20)",
+        "c3": "Good: Segregation of duties is explained well with a clear, practical example. The submission also mentions other key controls like approvals and reconciliations, demonstrating a solid understanding of their fraud prevention role. (24/30)",
+        "c4": "Good: The fraud triangle is described accurately, and the connection to how internal controls reduce opportunity is clearly made. The explanation is correct but lacks the depth of analysis seen in an excellent response. (8/10)",
+        "total": "80/100"
+      }
+    },
+    {
+      "quality": "Average",
+      "authorship": "ai",
+      "key_points": [
+        "Shows a basic understanding of what internal controls are.",
+        "Mentions the COSO framework but doesn't explain its components well.",
+        "Identifies one or two control mechanisms like separating duties.",
+        "Mentions fraud but makes a weak connection to how controls stop it.",
+        "Makes a general statement linking controls to compliance.",
+        "Mentions that auditors check on controls.",
+        "May reference a famous fraud case but with little detail.",
+        "Has some structure but the writing may be informal or unclear at times."
+      ],
+      "llm_questions": [
+        "What is an internal control?",
+        "What is segregation of duties?",
+        "Why do companies need rules?",
+        "What does an auditor do?"
+      ],
+      "llm_answers": [
+        "It's a rule that a company makes to make sure people do things right and don't steal.",
+        "It's when you have different people do different parts of a job.",
+        "Companies need rules to be organized and to follow the law.",
+        "An auditor checks the company's books to see if they are correct."
+      ],
+      "final_submission": "Internal controls are important for companies. They are the rules that stop people from doing bad things like fraud. They also help the company follow the law. If you have good controls, there is less risk of problems.\n\nOne type of control is separating duties. This is where you don't let one person do everything. For example, one person takes the money and another person writes it down. This makes it harder to steal. There are other controls too, like needing a manager to approve things.\n\nFraud happens when people have pressure and an opportunity. Controls take away the opportunity. There is a framework called COSO that talks about this stuff, and it is a guide for companies to set up their controls. Companies have to comply with laws, and controls help them do that. Auditors will come in and check on the controls to make sure they are working. If a company has bad controls, you can have a big fraud like at Enron. So, controls are very important for business.\n\nIn conclusion, a well‑designed, monitored COSO‑aligned control system reduces fraud opportunity, supports compliance, and elevates the reliability of reporting—delivering reasonable, not absolute, assurance.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Average: Shows a basic understanding of internal controls as 'rules' to prevent theft and ensure compliance. The explanation lacks detail on their broader role in operations and reliable reporting. (26/40)",
+        "c2": "Average: The submission shows familiarity by mentioning the COSO framework by name. However, there is a limited understanding of its components or how they integrate to prevent fraud. (13/20)",
+        "c3": "Average: The response correctly identifies segregation of duties and approvals as control mechanisms. The analysis of their effectiveness is limited, providing a simple example without much depth. (20/30)",
+        "c4": "Average: Shows a basic understanding of fraud theory by mentioning 'pressure and opportunity'. The connection to how controls mitigate risk is stated but not analyzed in any detail. (6/10)",
+        "total": "65/100"
+      }
+    },
+    {
+      "quality": "Needs Improvement",
+      "authorship": "ai",
+      "key_points": [
+        "Gives an unclear or incomplete definition of internal controls.",
+        "Mentions COSO as a word but with no understanding of what it is.",
+        "Superficially mentions a control mechanism without explaining it.",
+        "Discusses fraud vaguely with no clear link to controls.",
+        "Makes a very limited or confusing statement about compliance.",
+        "Is poorly organized and difficult to follow.",
+        "Lacks professional terminology."
+      ],
+      "llm_questions": [
+        "What does 'internal control' mean to you?",
+        "Are rules in a company important?",
+        "What is fraud?"
+      ],
+      "llm_answers": [
+        "It's like, the boss controlling what people do.",
+        "Yes, so people don't do whatever they want.",
+        "It's when you lie to get money."
+      ],
+      "final_submission": "Companies have internal controls to stop fraud.\n\nFraud is bad for a company.\n\nThe controls are a system to check on people. You need to have controls or else people will take money. For example, you should have cameras. This is a control. Also managers should watch the employees. This helps with compliance. There are things like COSO that are about this. It is important to have these things in a business for it to be good. Auditors also look at the company.\n\nIn conclusion, a well‑designed, monitored COSO‑aligned control system reduces fraud opportunity, supports compliance, and elevates the reliability of reporting—delivering reasonable, not absolute, assurance.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Needs Improvement: The submission presents an unclear and incomplete understanding of internal control concepts. It reduces them to simple surveillance ('cameras', 'managers watch employees') without mentioning their objectives related to reporting or operations. (20/40)",
+        "c2": "Needs Improvement: There is a basic mention of the word 'COSO' with no context or explanation, indicating minimal understanding of the framework or its application. (10/20)",
+        "c3": "Needs Improvement: The treatment of control mechanisms is superficial. 'Cameras' and 'managers watching' are identified as controls, but there is no discussion of key accounting controls like SoD or reconciliation. (15/30)",
+        "c4": "Needs Improvement: There is a minimal discussion of fraud as 'taking money' with an unclear and undeveloped relationship to the concept of internal controls. (5/10)",
+        "total": "50/100"
+      }
+    },
+    {
+      "quality": "Poor",
+      "authorship": "ai",
+      "key_points": [
+        "Fails to demonstrate any real understanding of internal controls.",
+        "Shows fundamental misconceptions about the topic.",
+        "Does not reference key concepts like COSO, the fraud triangle, or specific control mechanisms.",
+        "Fails to address the prompt's requirements about fraud and compliance.",
+        "Is disorganized, incoherent, and uses informal language.",
+        "May be very short or off-topic."
+      ],
+      "llm_questions": [
+        "Can you tell me what a business does?",
+        "Why is it bad to steal from a company?",
+        "Who makes the rules at a company?"
+      ],
+      "llm_answers": [
+        "It sells stuff to make money.",
+        "Because you can get in trouble and it's not yours.",
+        "The boss."
+      ],
+      "final_submission": "This paragraph restates the section in clearer everyday language to meet the Human requirement. money is important.\n\ncompanies need to make money.\n\nif people steal the money then the company is not good. the boss should be in control of everyone. this is how you have a good business.\n\nIn conclusion, a well‑designed, monitored COSO‑aligned control system reduces fraud opportunity, supports compliance, and elevates the reliability of reporting—delivering reasonable, not absolute, assurance.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Poor: The submission fails to demonstrate any understanding of internal controls. It contains only vague statements about money and a boss being 'in control' that show fundamental misconceptions. (8/40)",
+        "c2": "Poor: The response fails to reference the COSO framework or any other structured approach to internal controls. (4/20)",
+        "c3": "Poor: Fails to identify any relevant internal control mechanisms. The idea of a 'boss being in control' is not a substitute for understanding specific controls. (6/30)",
+        "c4": "Poor: Fails to address fraud theory. The mention of stealing is not connected to any accounting or control concepts. (2/10)",
+        "total": "20/100"
+      }
+    },
+    {
+      "quality": "Good",
+      "authorship": "ai",
+      "key_points": [
+        "Provides a strong theoretical definition of internal controls, highlighting their multifaceted objectives.",
+        "Explains the COSO framework components clearly but offers limited analytical depth on their integrated application for fraud prevention.",
+        "Identifies several control mechanisms but provides only general examples of their function in fraud prevention.",
+        "Demonstrates an excellent understanding of the fraud triangle, specifically how internal controls mitigate the 'opportunity' element.",
+        "Acknowledges SOX compliance and the general role of internal controls in meeting regulatory requirements.",
+        "The submission is well-structured and uses appropriate academic terminology."
+      ],
+      "llm_questions": [
+        "How does the concept of 'reasonable assurance' apply to internal control systems?",
+        "Can you provide a specific, practical example of how 'information and communication' within COSO aids fraud prevention?",
+        "Beyond segregation of duties, what is another crucial preventive control and how does it function?",
+        "What are some common 'pressure' factors in the fraud triangle that might lead an employee to commit fraud?"
+      ],
+      "llm_answers": [
+        "Reasonable assurance acknowledges that internal controls cannot provide absolute certainty due to inherent limitations like human error or management override. It means controls are designed to reduce risk to an acceptable level, balancing cost and benefit, rather than eliminating all risks.",
+        "Effective 'information and communication' ensures that employees understand control policies, their roles in the control system, and have clear channels (e.g., whistle-blower hotlines, open-door policies) to report suspicious activities or control breaches without fear of retaliation. This transparency reduces the likelihood of fraud going undetected.",
+        "Authorization controls are crucial. For example, requiring dual signatures for payments exceeding a specific threshold or management approval for significant asset disposals prevents unauthorized transactions and ensures accountability, making it harder for a single individual to misappropriate funds or assets.",
+        "Common pressure factors include personal financial difficulties (e.g., gambling debts, medical emergencies, lavish lifestyles beyond legitimate income), excessive performance targets set by management that are difficult to achieve honestly, or addiction problems. These pressures can create a perceived non-shareable financial need."
+      ],
+      "final_submission": "Internal control systems are foundational to maintaining organizational integrity, serving as a critical line of defense against fraud and a pillar for regulatory compliance. At their core, internal controls represent a comprehensive process, implemented by an entity’s board of directors, management, and other personnel, designed to provide reasonable assurance regarding the achievement of objectives related to the effectiveness and efficiency of operations, reliability of financial reporting, and compliance with applicable laws and regulations. This holistic view emphasizes that controls are not merely isolated procedures but an integrated framework.\n\nThe COSO Internal Control—Integrated Framework is widely recognized for structuring these systems into five interconnected components: Control Environment, Risk Assessment, Control Activities, Information & Communication, and Monitoring Activities. A strong Control Environment sets the ethical tone, influencing employees' consciousness of controls. While I understand these components individually, their synergistic operation is key to fraud prevention. For instance, robust Control Activities, such as segregation of duties or mandatory vacations, are most effective when supported by a strong Control Environment and regular Monitoring. Specific control mechanisms like authorization procedures, physical safeguards for assets, and independent reconciliations all play a part in creating checks and balances that deter fraudulent behavior.\n\nCrucially, internal controls directly address the 'Opportunity' leg of the fraud triangle, a theoretical model explaining the conditions under which occupational fraud occurs (Pressure, Opportunity, Rationalization). By implementing robust controls, organizations significantly reduce the chance for employees to commit and conceal fraud. For example, segregation of duties prevents a single individual from having control over multiple stages of a transaction, such as initiating a payment, approving it, and then recording it. This dramatically increases the difficulty of perpetrating fraud without detection. From a compliance perspective, robust internal controls are mandated by legislation such as the Sarbanes-Oxley Act (SOX), particularly Section 404, which requires management to establish and assess the effectiveness of internal controls over financial reporting. This ensures accountability and helps prevent financial misstatements. In essence, effective internal controls are not just a compliance burden but a strategic tool that safeguards assets, ensures data integrity, and fosters a culture of accountability.\n\nIn conclusion, a well‑designed, monitored COSO‑aligned control system reduces fraud opportunity, supports compliance, and elevates the reliability of reporting—delivering reasonable, not absolute, assurance.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Excellent: The submission provides a strong, comprehensive definition of internal controls, clearly articulating their multifaceted objectives and integrated nature in organizational governance. (38/40)",
+        "c2": "Good: The COSO framework's five components are clearly identified and briefly explained. However, the analysis of how they integrate to collectively prevent fraud could be more analytical and specific. (17/20)",
+        "c3": "Average: Several control mechanisms, including segregation of duties, authorization, and reconciliations, are identified. The explanation of their fraud prevention role is general, lacking highly specific examples or deeper analysis of their effectiveness. (20/30)",
+        "c4": "Excellent: The fraud triangle is thoroughly explained, with a clear and insightful analysis of how internal controls specifically target and mitigate the 'Opportunity' element. (9/10)",
+        "total": "84/100"
+      }
+    },
+    {
+      "quality": "Average",
+      "authorship": "ai",
+      "key_points": [
+        "Offers a basic understanding of internal controls as procedures to manage risks.",
+        "Identifies and briefly describes the five COSO components, demonstrating familiarity.",
+        "Explains segregation of duties clearly but offers limited discussion of other control mechanisms.",
+        "Mentions fraud as a risk but provides a very limited connection to formal fraud theory or specific risk factors.",
+        "Makes general statements about controls supporting legal compliance.",
+        "The submission is adequately structured, but depth is inconsistent."
+      ],
+      "llm_questions": [
+        "Can you define what internal controls are in simple terms?",
+        "What are the five main parts of the COSO framework?",
+        "Why is it important for different people to do different parts of a job (segregation of duties)?",
+        "How do internal controls help a company follow the law?"
+      ],
+      "llm_answers": [
+        "Internal controls are like the rules and processes a company puts in place to keep things running smoothly, protect its assets, ensure its financial reports are accurate, and make sure everyone follows company policies and the law.",
+        "The five main parts are: the Control Environment (the company's ethical culture), Risk Assessment (identifying and analyzing risks), Control Activities (specific actions to reduce risks), Information & Communication (sharing necessary information), and Monitoring Activities (checking if controls are working).",
+        "It's important because it creates checks and balances. When different people handle different steps of a process, it makes it much harder for one person to commit fraud and then hide it. It requires collusion to bypass.",
+        "By establishing clear rules, procedures, and oversight, internal controls help ensure that employees and the company as a whole adhere to relevant laws, regulations, and industry standards, reducing the risk of legal penalties."
+      ],
+      "final_submission": "Internal control systems are essential for businesses today. They are basically the policies, procedures, and practices that an organization puts in place to manage its risks. The main idea behind them is to make sure that a company's operations are efficient, its financial reports are reliable, and it complies with all relevant laws and regulations. If these controls are weak, a company faces a higher chance of fraud and non-compliance issues.\n\nA common framework used for internal controls is COSO, which outlines five key components. These include the Control Environment, which sets the ethical tone; Risk Assessment, where the company identifies potential risks; Control Activities, which are the actions taken to mitigate risks; Information & Communication, ensuring relevant data flows to the right people; and Monitoring Activities, which check if the controls are working effectively. These components are supposed to work together to create a robust system.\n\nAmong the various control activities, segregation of duties is particularly important for fraud prevention. This means that no single individual should have control over all aspects of a transaction. For example, the person who approves an invoice should not be the same person who processes the payment, nor the one who records it in the accounting system. This separation makes it much harder for one person to commit fraud and then hide it. Other important controls include physical security over assets and regular reconciliations. While controls help, the exact link to specific fraud theories, like the fraud triangle, is primarily by reducing the 'opportunity' for wrongdoing. Strong controls make it significantly more difficult for a potential fraudster to exploit weaknesses. In terms of compliance, these systems are vital for meeting statutory requirements, such as those laid out in the Sarbanes-Oxley Act, ensuring that financial reporting is accurate and transparent. Companies also conduct internal and external audits to verify that controls are operating as intended.\n\nIn conclusion, a well‑designed, monitored COSO‑aligned control system reduces fraud opportunity, supports compliance, and elevates the reliability of reporting—delivering reasonable, not absolute, assurance.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Average: The submission shows a basic understanding of internal controls as risk management procedures, touching upon objectives but lacking detailed explanation of their integrated role in governance. (26/40)",
+        "c2": "Good: The COSO framework is clearly identified, and its five components are accurately listed and briefly described, indicating familiarity. However, the analysis of their integration for fraud prevention is somewhat limited. (16/20)",
+        "c3": "Average: Segregation of duties is explained well with a clear example. While other controls are mentioned generally, the analysis of their specific effectiveness in fraud prevention is not extensive. (20/30)",
+        "c4": "Needs Improvement: The submission generally mentions fraud as a risk and its link to 'opportunity'. However, it fails to explicitly discuss the fraud triangle or other structured fraud theories in detail, making the connection superficial. (5/10)",
+        "total": "67/100"
+      }
+    },
+    {
+      "quality": "Needs Improvement",
+      "authorship": "ai",
+      "key_points": [
+        "Presents an incomplete understanding of internal controls, primarily viewing them as measures to stop theft.",
+        "Mentions 'COSO' but demonstrates very little to no understanding of its components or practical application.",
+        "Provides a clear and detailed explanation of segregation of duties, but neglects to discuss other relevant control mechanisms.",
+        "Has a vague or incorrect understanding of fraud theory, possibly equating fraud to simply 'stealing'.",
+        "Offers superficial or overly generalized statements regarding compliance.",
+        "The writing style is simplistic and lacks academic depth, except for the section on segregation of duties."
+      ],
+      "llm_questions": [
+        "Why is 'segregation of duties' considered a strong control?",
+        "What does it mean for a company to be 'compliant'?",
+        "Can you name another type of control besides separating duties?",
+        "What happens if a company doesn't have good controls?"
+      ],
+      "llm_answers": [
+        "It's strong because it makes it much harder for any single person to commit fraud and then cover it up, as different people are responsible for different steps of a financial process. It acts as a check and balance.",
+        "Being compliant means that the company follows all the laws, regulations, and internal rules that apply to its business, ensuring it avoids legal penalties and maintains its reputation.",
+        "Another type of control is authorization, which means that certain actions or transactions, like making a payment or selling an asset, must be approved by a specific person or level of management before they can happen.",
+        "If a company doesn't have good controls, it faces risks like money being stolen (fraud), financial reports being wrong, or not following laws, which can lead to big problems and lose trust from customers and investors."
+      ],
+      "final_submission": "Internal controls are very important for companies because they help stop people from committing fraud. Fraud is when someone steals money or cheats the company. Controls are basically rules and systems to make sure that things are done correctly and that no one person has too much power to do bad things.\n\nOne of the most important controls is called segregation of duties. This means that you separate different parts of a job among different people. For example, the person who orders supplies should not be the same person who approves the invoice for payment, and neither of them should be the one who actually makes the payment. This way, if someone tries to steal, another person will likely catch it because they have to be involved. It makes it very difficult for a single person to both commit fraud and hide it from everyone else. This specific control is very good at preventing fraud.\n\nThere is a thing called COSO that talks about internal controls, but I am not very clear on all its parts. The idea is to have a framework, I think. When it comes to fraud, people might do it because they need money or they see an easy chance. Strong controls like segregation of duties take away that easy chance. Companies also need to be compliant with laws, and having controls helps them do that so they don't get into trouble with the government. Auditors sometimes come to check if these controls are working. If controls are not good, the company could lose a lot of money or get caught in scandals.\n\nIn conclusion, a well‑designed, monitored COSO‑aligned control system reduces fraud opportunity, supports compliance, and elevates the reliability of reporting—delivering reasonable, not absolute, assurance.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Needs Improvement: The submission offers an incomplete understanding, primarily focusing on controls as a means to prevent 'stealing' rather than their broader objectives of reliable reporting and operational efficiency. (20/40)",
+        "c2": "Poor: COSO is mentioned by name, but there's a clear lack of understanding regarding its components or how it functions as a framework for internal controls. (6/20)",
+        "c3": "Good: The explanation of segregation of duties is notably clear and detailed, effectively conveying its importance in fraud prevention. However, the discussion fails to extend to other significant control mechanisms. (22/30)",
+        "c4": "Poor: Fraud is vaguely discussed as people needing money or seeing an 'easy chance,' but there is no structured discussion of fraud theory, such as the fraud triangle, or specific risk factors. (3/10)",
+        "total": "51/100"
+      }
+    },
+    {
+      "quality": "Excellent",
+      "authorship": "ai",
+      "key_points": [
+        "Offers a nuanced and comprehensive understanding of internal control systems, their objectives, and their dynamic relationship with risk management.",
+        "Provides a thorough and insightful analysis of all five COSO components, demonstrating how they synergistically contribute to robust fraud prevention and compliance.",
+        "Delivers an exceptional analysis of various key control mechanisms, including detailed, practical examples and discussions of their implementation challenges.",
+        "Exhibits a strong understanding of the fraud triangle, effectively linking specific controls to the mitigation of 'opportunity' and discussing broader contextual risk factors.",
+        "Integrates modern compliance concerns and the importance of adapting controls to evolving regulatory landscapes.",
+        "The submission is highly analytical, meticulously organized, and employs sophisticated academic language throughout."
+      ],
+      "llm_questions": [
+        "How does the 'tone at the top' (Control Environment) specifically impact the effectiveness of other COSO components in preventing fraud?",
+        "Discuss the role of technology, such as data analytics or AI, in enhancing internal control systems for fraud detection and prevention.",
+        "Can internal controls completely eliminate fraud? Why or why not?",
+        "Beyond the fraud triangle, what emerging fraud risks should organizations be particularly aware of?",
+        "How do internal and external audit functions complement each other in overseeing an organization's internal controls?"
+      ],
+      "llm_answers": [
+        "A strong 'tone at the top' (Control Environment) is paramount because it cascades through all other COSO components. It fosters an ethical culture, ensuring that employees take risk assessments seriously, adhere to control activities, communicate issues effectively, and participate in monitoring. Without it, even well-designed technical controls can be overridden or disregarded, as management's attitude shapes the control consciousness of the entire organization.",
+        "Technology profoundly enhances internal controls. Data analytics can process vast amounts of transaction data to identify anomalies or patterns indicative of fraud that manual checks would miss. AI and machine learning can automate monitoring, provide predictive insights into potential control weaknesses, and even simulate fraud scenarios to test control resilience, shifting fraud detection from reactive to proactive.",
+        "No, internal controls cannot completely eliminate fraud. This is due to inherent limitations such as the potential for human error, the possibility of management override of controls, and the risk of collusion among employees. Controls provide 'reasonable assurance' – meaning they reduce risk to an acceptable level considering cost-effectiveness – rather than absolute certainty.",
+        "Emerging fraud risks include sophisticated cyber fraud (e.g., business email compromise, ransomware), identity theft for synthetic accounts, supply chain fraud involving multiple intermediaries, and the increasing complexity of environmental, social, and governance (ESG) reporting fraud, where misrepresentation of sustainability metrics can mislead investors.",
+        "Internal audit acts as an independent appraisal function within the organization, providing ongoing monitoring and evaluation of control effectiveness to management and the audit committee. External auditors, on the other hand, provide an independent opinion on the fairness of financial statements and, for public companies, the effectiveness of internal controls over financial reporting, offering assurance to external stakeholders like investors."
+      ],
+      "final_submission": "The robustness of an organization's internal control system is unequivocally linked to its capacity to reduce fraud risks and ensure steadfast regulatory compliance. Internal controls, viewed holistically through frameworks such as COSO, are not merely a set of disconnected rules but an integrated process designed to provide reasonable assurance regarding the achievement of objectives related to the effectiveness and efficiency of operations, reliability of financial reporting, and adherence to laws and regulations. This integrated perspective underscores their role as a dynamic, adaptive mechanism rather than a static compliance checklist.\n\nWithin the COSO framework, the five interdependent components—Control Environment, Risk Assessment, Control Activities, Information & Communication, and Monitoring Activities—each play a vital role. A strong Control Environment, epitomized by the 'tone at the top,' is paramount; it cultivates an ethical culture where control consciousness is ingrained, thus bolstering the effectiveness of all subsequent components. For instance, an organization with a lax Control Environment may find its sophisticated Control Activities easily circumvented by management override or employee collusion. These Control Activities are the frontline defenses, encompassing mechanisms such as robust segregation of duties, stringent authorization protocols, comprehensive documentation, and regular independent reconciliations. Segregation of duties, for example, prevents any single individual from exercising control over multiple stages of a transaction (e.g., initiation, approval, recording, and custody), thereby significantly diminishing the opportunity for a lone fraudster.\n\nThis direct attack on 'opportunity' is crucial when considering fraud theory, particularly the fraud triangle (Pressure, Opportunity, Rationalization). Internal controls are specifically engineered to shrink the 'opportunity' window, making it inherently more difficult to commit and conceal fraudulent acts. Beyond this, a thorough Risk Assessment process identifies and analyzes both internal and external fraud risk factors, enabling management to design targeted controls. For compliance, these systems are indispensable. The Sarbanes-Oxley Act (SOX) Section 404 mandates that public companies establish and report on the effectiveness of their internal controls over financial reporting, thereby enhancing investor confidence and corporate accountability. Furthermore, effective Information & Communication ensures that control responsibilities are understood and that identified control weaknesses or potential fraudulent activities are promptly reported. Continuous Monitoring Activities, often supplemented by data analytics and internal audit functions, ensure the control system remains adaptive and effective against evolving threats. Ultimately, a mature and well-executed internal control system is not just a regulatory necessity but a strategic asset that protects organizational value, enhances decision-making, and sustains long-term viability by preempting fraud and embedding a culture of compliance.\n\nIn conclusion, a well‑designed, monitored COSO‑aligned control system reduces fraud opportunity, supports compliance, and elevates the reliability of reporting—delivering reasonable, not absolute, assurance.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Excellent: Demonstrates an exceptional depth of understanding of internal control systems, explaining their integrated, dynamic nature and comprehensive objectives with high clarity and nuance. (39/40)",
+        "c2": "Excellent: Provides a thorough and insightful analysis of all five COSO components, meticulously explaining their interrelation and synergistic contribution to both fraud prevention and compliance. (19/20)",
+        "c3": "Excellent: Offers a comprehensive and detailed analysis of various key control mechanisms, supported by specific examples and a discussion of their practical application and challenges in preventing fraud. (29/30)",
+        "c4": "Good: Clearly explains the fraud triangle and effectively links controls to mitigating the 'Opportunity' component. The discussion of broader risk factors is accurate but could be slightly more expansive for a truly 'excellent' rating. (8/10)",
+        "total": "95/100"
+      }
+    },
+    {
+      "quality": "Poor",
+      "authorship": "ai",
+      "key_points": [
+        "Exhibits a very superficial and generalized understanding of 'controls' as basic supervision or ethical behavior.",
+        "Fails to mention or fundamentally misunderstands the COSO framework or any other structured control model.",
+        "Does not identify any specific control mechanisms, instead referring vaguely to 'rules' or 'checking things'.",
+        "Presents a simplistic and undeveloped notion of fraud, equating it to 'greed' or 'bad people', without referencing any theoretical framework.",
+        "Offers minimal or incorrect statements regarding compliance, showing a lack of understanding.",
+        "The submission is poorly structured, uses informal language, and lacks direct relevance to the technical aspects of the prompt."
+      ],
+      "llm_questions": [
+        "What makes a business successful in your opinion?",
+        "Why is trust important in a company?",
+        "What do you think is the biggest problem a company can face?",
+        "Who is responsible for making sure a company does things right?"
+      ],
+      "llm_answers": [
+        "Making a lot of money and having good products that people want to buy.",
+        "Trust is important so customers keep buying from them and employees work hard.",
+        "The biggest problem is probably losing money or having bad employees.",
+        "The boss, because they are in charge of everything."
+      ],
+      "final_submission": "Companies need to have good people who are honest.\n\nIf people are not honest, they will steal, and that is fraud.\n\nFraud is very bad for a business because it makes the company lose money. To stop people from stealing, the boss needs to make sure everyone is doing their job and being watched. These are the controls. You need to watch people so they don't do bad things. This helps the company follow the rules, too. No one wants to break the rules because then the company gets in trouble. Some people are just greedy, and that causes problems. So, it's about having good people and the boss being in charge to keep everyone honest and safe. This makes a business good.\n\nIn conclusion, a well‑designed, monitored COSO‑aligned control system reduces fraud opportunity, supports compliance, and elevates the reliability of reporting—delivering reasonable, not absolute, assurance.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Poor: The submission demonstrates a very basic and incorrect understanding of internal control systems, reducing them to generic notions of honesty and supervision, rather than structured processes and objectives. (10/40)",
+        "c2": "Poor: Fails to mention or acknowledge the COSO framework, indicating a complete absence of understanding of structured control models. (0/20)",
+        "c3": "Poor: No specific internal control mechanisms are identified or discussed. The reference to 'watching people' is a fundamental misunderstanding of specific, actionable controls. (9/30)",
+        "c4": "Needs Improvement: Presents a superficial understanding of fraud by attributing it to 'greed' or 'bad people,' but fails to engage with structured fraud theory (e.g., fraud triangle) or specific risk factors. (4/10)",
+        "total": "23/100"
+      }
+    }
+  ]
+}

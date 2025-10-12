@@ -1,5 +1,6 @@
 # Model Evaluation Toolkit
 
+
 A comprehensive Python toolkit for evaluating both classification and generative models, with specialized support for AI vs Human text classification using few-shot learning approaches.
 
 ## 🚀 Features
@@ -13,11 +14,13 @@ A comprehensive Python toolkit for evaluating both classification and generative
 
 ## 📦 Installation
 
+
 ```bash
 pip install torch transformers nltk rouge-score bert-score scikit-learn matplotlib seaborn pandas numpy streamlit
 ```
 
 ## 🔧 Usage
+
 
 ### 1. Classification Model Evaluation
 
@@ -85,6 +88,7 @@ evaluator.evaluate_generative_model(
 - **ROUGE Scores**: ROUGE-1, ROUGE-2, and ROUGE-L for recall-oriented evaluation
 - **BERTScore**: Semantic similarity using contextualized embeddings
 
+
 ### 3. End-to-End AI Detection Pipeline
 
 The toolkit includes a complete pipeline for AI vs Human text classification:
@@ -106,7 +110,10 @@ evaluator = EvaluateModel(dataset=data_with_predictions)
 evaluator.evaluate_classification_model(print_result=True)
 ```
 
+
 ## 🎯 Key Improvements in This PR
+
+## Key Improvements in This PR
 
 ### 1. **Enhanced Evaluation Framework**
 - **Unified Interface**: Single class handles both classification and generative model evaluation
@@ -114,6 +121,7 @@ evaluator.evaluate_classification_model(print_result=True)
 - **Comprehensive Metrics**: Industry-standard metrics for both model types
 
 ### 2. **Dual Evaluation Functions**
+
 
 #### Classification Evaluation (`evaluate_classification_model`)
 - **Multi-class Support**: Handles binary and multi-class classification
@@ -131,6 +139,7 @@ evaluator.evaluate_classification_model(print_result=True)
 - **End-to-end Processing**: From raw text to evaluation results in a single pipeline
 
 ## 📊 Output Examples
+
 
 ### Classification Results
 ```
@@ -156,6 +165,7 @@ bertscore_precision : 0.8567
 bertscore_recall    : 0.8234
 bertscore_f1        : 0.8398
 ```
+
 
 ## 🔬 Technical Details
 

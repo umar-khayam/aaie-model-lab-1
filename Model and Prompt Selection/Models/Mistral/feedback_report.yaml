@@ -1,0 +1,1054 @@
+### this is it.json dataset
+
+[
+
+{
+
+  "index": 0,
+  "gold_label": "AI",
+  "submission": "Artificial Intelligence plays a pivotal role in modern cybersecurity by automating threat detection, enhancing incident response, and reducing false positives in Security Information and Event Management (SIEM) systems. Machine learning algorithms can analyze massive datasets in real-time, identifying anomalies or malicious patterns that traditional rule-based systems may overlook.",
+  "feedback": {
+    "overall_summary": "The submission demonstrates a good understanding of AI's role in cybersecurity, particularly in threat detection and incident response. However, it could benefit from more critical thinking and originality. ",
+    "criteria_feedback": [
+      {
+        "criterion_id": "c1",
+        "rating": "good",
+        "evidence": [
+          "The submission correctly identifies AI's role in automating threat detection and enhancing incident response."
+        ],
+        "improvement_tip": "For further improvement, consider exploring the impact of AI on various aspects of cybersecurity, such as authentication, encryption, and privacy."
+      },
+      {
+        "criterion_id": "c2",
+        "rating": "good",
+        "evidence": [
+          "The example of machine learning algorithms analyzing datasets in real-time is relevant and realistic."
+        ],
+        "improvement_tip": "Consider providing more diverse examples to showcase the breadth of AI's applications in cybersecurity."
+      },
+      {
+        "criterion_id": "c3",
+        "rating": "average",
+        "evidence": [
+          "The submission does not delve deeply into the implications, challenges, or future directions of AI in cybersecurity."
+        ],
+        "improvement_tip": "In future responses, try to question assumptions, explore complexities, and discuss potential challenges or future developments."
+      },
+      {
+        "criterion_id": "c4",
+        "rating": "needs_improvement",
+        "evidence": [
+          "The submission lacks a unique point of view or reflection that adds value beyond general knowledge."
+        ],
+        "improvement_tip": "Consider sharing personal insights, experiences, or research findings to make your response more original and engaging."
+      },
+      {
+        "criterion_id": "c5",
+        "rating": "good",
+        "evidence": [
+          "The submission is generally clear and well-structured."
+        ],
+        "improvement_tip": "Maintain clarity and organization in your responses to ensure they are easy to understand for your audience."
+      }
+    ],
+    "suggested_grade": "3"
+  }
+},
+{
+  "index": 1,
+  "gold_label": "AI",
+  "submission": "AI-based cybersecurity solutions such as behavioral analytics and automated intrusion detection systems have allowed organizations to proactively detect zero-day attacks. Deep learning models are now being used to identify phishing emails and ransomware signatures faster than manual methods, providing a critical layer of defense against evolving cyber threats.",
+  "feedback": {
+    "_parse_error": "Expecting ',' delimiter: line 33 column 6 (char 2013)",
+    "_raw": "{\n  \"overall_summary\": \"The submission demonstrates a good understanding of AI's role in modern cybersecurity, focusing on practical applications. However, it could benefit from more critical thinking and originality.\",\n  \"criteria_feedback\": [\n    {\n      \"criterion_id\": \"c1\",\n      \"rating\": \"good\",\n      \"evidence\": [\"AI-based cybersecurity solutions such as behavioral analytics and automated intrusion detection systems have allowed organizations to proactively detect zero-day attacks.\"],\n      \"improvement_tip\": \"Consider exploring the underlying mechanisms of these AI solutions and their limitations.\"\n    },\n    {\n      \"criterion_id\": \"c2\",\n      \"rating\": \"excellent\",\n      \"evidence\": [\"Deep learning models are now being used to identify phishing emails and ransomware signatures faster than manual methods.\"],\n      \"improvement_tip\": \"Continue to provide real-world examples that demonstrate the impact of AI in various cybersecurity scenarios.\"\n    },\n    {\n      \"criterion_id\": \"c3\",\n      \"rating\": \"average\",\n      \"evidence\": [\"The submission does not delve deeply into the implications, challenges, or future directions of AI in cybersecurity.\"],\n      \"improvement_tip\": \"Incorporate critical thinking by questioning assumptions, exploring complexities, and considering potential challenges and future developments.\"\n    },\n    {\n      \"criterion_id\": \"c4\",\n      \"rating\": \"needs_improvement\",\n      \"evidence\": [\"The submission lacks a unique point of view or reflection that adds value beyond general knowledge.\"],\n      \"improvement_tip\": \"Share personal insights or experiences related to AI in cybersecurity to make the response more engaging and original.\"\n    },\n    {\n      \"criterion_id\": \"c5\",\n      \"rating\": \"good\",\n      \"evidence\": [\"The submission is generally clear and logical; some lapses in flow or word choice.\"],\n      \"improvement_tip\": \"Revise the response for clarity and conciseness, ensuring a well-structured presentation suitable for an IT audience.\"\n    }\n  ],\n  \"suggested_grade\": \"3\""
+  }
+},
+{
+  "index": 2,
+  "gold_label": "Human",
+  "submission": "Last year, my company faced a targeted phishing campaign. At the time, we were testing a new AI-based email filter. It actually flagged several emails that our old system missed. I was skeptical at first, but the AI picked up on odd phrasing patterns and sender behavior that looked normal on the surface. That incident really changed how I view AI in cybersecurity — it’s not about replacing human analysts, but enhancing what we can do.",
+  "feedback": {
+    "overall_summary": "The submission demonstrates a good understanding of AI's role in cybersecurity, with a real-world example and some critical thinking. However, there is room for improvement in providing more insights and originality.",
+    "criteria_feedback": [
+      {
+        "criterion_id": "c1",
+        "rating": "good",
+        "evidence": [
+          "The student mentions a specific AI application in cybersecurity."
+        ],
+        "improvement_tip": "Consider exploring more aspects of AI's impact on cybersecurity, such as machine learning, deep learning, or AI-powered threat intelligence."
+      },
+      {
+        "criterion_id": "c2",
+        "rating": "good",
+        "evidence": [
+          "The student provides a real-world example of AI's application in email filtering."
+        ],
+        "improvement_tip": "Try to include more details or multiple examples to strengthen the connection between AI and cybersecurity."
+      },
+      {
+        "criterion_id": "c3",
+        "rating": "average",
+        "evidence": [
+          "The student shows some critical thinking by questioning initial skepticism towards AI."
+        ],
+        "improvement_tip": "Delve deeper into the implications, challenges, or future directions of AI in cybersecurity."
+      },
+      {
+        "criterion_id": "c4",
+        "rating": "needs_improvement",
+        "evidence": [
+          "The submission lacks a unique point of view or reflection."
+        ],
+        "improvement_tip": "Share personal insights or experiences related to AI in cybersecurity to add value beyond general knowledge."
+      },
+      {
+        "criterion_id": "c5",
+        "rating": "excellent",
+        "evidence": [
+          "The submission is clear, concise, and well-organized."
+        ],
+        "improvement_tip": "Maintain clear and effective communication throughout the response."
+      }
+    ],
+    "suggested_grade": "3"
+  }
+},
+{
+  "index": 3,
+  "gold_label": "Human",
+  "submission": "As a junior security analyst, I used to spend hours going through alerts manually. Once we integrated an AI-powered tool into our workflow, it cut our alert triage time by more than half. What really stood out was that the system kept learning — it got better at distinguishing real threats from noise. That kind of adaptability has been a game-changer in how we manage our SOC.",
+  "feedback": {
+    "overall_summary": "The submission demonstrates a good understanding of AI's role in modern cybersecurity, particularly in the context of alert triage. However, there is room for improvement in providing a broader perspective and deeper critical thinking.",
+    "criteria_feedback": [
+      {
+        "criterion_id": "c1",
+        "rating": "good",
+        "evidence": [
+          "The student mentions an AI-powered tool and its impact on alert triage."
+        ],
+        "improvement_tip": "Consider discussing other AI applications in cybersecurity, such as threat prediction, intrusion detection, or automation of security tasks."
+      },
+      {
+        "criterion_id": "c2",
+        "rating": "excellent",
+        "evidence": [
+          "The student provides a real-world example of AI's application in their own work."
+        ],
+        "improvement_tip": "N/A"
+      },
+      {
+        "criterion_id": "c3",
+        "rating": "average",
+        "evidence": [
+          "The student mentions the system's adaptability, but does not delve into the implications or challenges."
+        ],
+        "improvement_tip": "Consider discussing the potential risks associated with AI in cybersecurity, such as false positives, bias, or the arms race between AI and cybercriminals."
+      },
+      {
+        "criterion_id": "c4",
+        "rating": "needs_improvement",
+        "evidence": [
+          "The submission lacks a unique point of view or reflection."
+        ],
+        "improvement_tip": "Share personal insights or experiences related to the topic, or offer a unique perspective on the role of AI in cybersecurity."
+      },
+      {
+        "criterion_id": "c5",
+        "rating": "excellent",
+        "evidence": [
+          "The submission is clear, concise, and well-structured."
+        ],
+        "improvement_tip": "N/A"
+      }
+    ],
+    "suggested_grade": "3"
+  }
+},
+{
+  "index": 4,
+  "gold_label": "Hybrid",
+  "submission": "We used AI to monitor user activity across our cloud environment. While the algorithm caught some abnormal logins, it also raised false alarms that confused our junior staff. It taught us that AI needs to be trained and guided — we had to tweak the model and update the feedback loop. AI brought the speed, but human expertise brought the accuracy. It's that collaboration that made our response both fast and smart.",
+  "feedback": {
+    "overall_summary": "The submission demonstrates a good understanding of AI's role in cybersecurity, particularly in monitoring user activity and the need for human guidance. However, it could benefit from more critical thinking and originality in discussing implications and future directions.",
+    "criteria_feedback": [
+      {
+        "criterion_id": "c1",
+        "rating": "good",
+        "evidence": [
+          "The submission shows clear understanding of AI's role in monitoring user activity."
+        ],
+        "improvement_tip": "Consider exploring other AI applications in cybersecurity, such as threat intelligence or intrusion detection systems."
+      },
+      {
+        "criterion_id": "c2",
+        "rating": "excellent",
+        "evidence": [
+          "The submission provides a real-world example of AI's use in monitoring user activity."
+        ],
+        "improvement_tip": "N/A"
+      },
+      {
+        "criterion_id": "c3",
+        "rating": "average",
+        "evidence": [
+          "The submission mentions the need for human expertise to improve AI's accuracy, but does not delve deeper into the implications or challenges."
+        ],
+        "improvement_tip": "Consider discussing the long-term implications of this collaboration between AI and human experts."
+      },
+      {
+        "criterion_id": "c4",
+        "rating": "needs_improvement",
+        "evidence": [
+          "The submission lacks a unique perspective or reflection beyond the basic example provided."
+        ],
+        "improvement_tip": "Consider sharing personal insights or experiences related to AI in cybersecurity."
+      },
+      {
+        "criterion_id": "c5",
+        "rating": "excellent",
+        "evidence": [
+          "The submission is clear, concise, and well-structured."
+        ],
+        "improvement_tip": "N/A"
+      }
+    ],
+    "suggested_grade": "3"
+  }
+},
+{
+  "index": 5,
+  "gold_label": "Hybrid",
+  "submission": "We recently ran a red team-blue team exercise. Our AI tools were excellent at identifying command-and-control traffic, but when it came to lateral movement, it was our experienced analysts who noticed the subtle signs. The AI was a force multiplier, not a silver bullet. That balance between automation and intuition is what makes modern cybersecurity truly effective.",
+  "feedback": {
+    "overall_summary": "The submission demonstrates a good understanding of the role of AI in modern cybersecurity, with a real-world example. However, it could benefit from more critical thinking and originality.",
+    "criteria_feedback": [
+      {
+        "criterion_id": "c1",
+        "rating": "good",
+        "evidence": [
+          "The submission shows clear understanding of AI's role as a force multiplier in cybersecurity."
+        ],
+        "improvement_tip": "Consider exploring AI's impact on various aspects of cybersecurity, such as threat intelligence, intrusion detection, and security analytics."
+      },
+      {
+        "criterion_id": "c2",
+        "rating": "good",
+        "evidence": [
+          "The submission provides a real-world example of AI's application in a red team-blue team exercise."
+        ],
+        "improvement_tip": "Consider discussing additional scenarios or experiences to further illustrate AI's role in cybersecurity."
+      },
+      {
+        "criterion_id": "c3",
+        "rating": "average",
+        "evidence": [
+          "The submission lacks critical thinking in discussing implications, challenges, or future directions."
+        ],
+        "improvement_tip": "Ask questions like 'What are the limitations of AI in cybersecurity?' or 'How can we overcome the challenges posed by AI in cybersecurity?'"
+      },
+      {
+        "criterion_id": "c4",
+        "rating": "needs_improvement",
+        "evidence": [
+          "The submission lacks originality in its perspective."
+        ],
+        "improvement_tip": "Consider sharing personal insights or unique experiences related to AI in cybersecurity."
+      },
+      {
+        "criterion_id": "c5",
+        "rating": "excellent",
+        "evidence": [
+          "The submission presents ideas clearly and logically."
+        ],
+        "improvement_tip": "Maintain clarity and organization in your writing."
+      }
+    ],
+    "suggested_grade": "3"
+  }
+}
+]
+
+
+
+##### this is psychology.json file
+[
+{
+
+  "index": 0,
+  "gold_label": "AI",
+  "submission": "Cognitive biases significantly influence human decision-making, often leading to systematic errors in judgment. For instance, confirmation bias leads individuals to seek out information that aligns with their preexisting beliefs, which can skew decision-making in fields like healthcare, where a doctor might ignore conflicting evidence (Nickerson, 1998). Anchoring biases affect consumer behavior, as initial price points can shape perceptions of value, influencing purchasing decisions (Tversky & Kahneman, 1974). The availability heuristic biases individuals in legal settings, where recent or vivid events may unduly influence verdicts. Awareness of these biases and strategies like critical reflection, seeking diverse perspectives, and using data-driven decision tools can mitigate their impact, improving overall judgment. \n References \n Nickerson, R. S. (1998). Confirmation bias: A ubiquitous phenomenon in many guises. Review of General Psychology, 2(2), 175–220. https://doi.org/10.1037/1089-2680.2.2.175 \n Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. Science, 185(4157), 1124–1131. https://doi.org/10.1126/science.185.4157.1124",
+  "feedback": {
+    "overall_summary": "The submission demonstrates a good understanding of cognitive biases and their real-world applications. However, it could benefit from more detailed examples and a stronger focus on mitigation strategies.",
+    "criteria_feedback": [
+      {
+        "criterion_id": "c1",
+        "rating": "good",
+        "evidence": [
+          "The submission shows understanding of confirmation bias, anchoring bias, and availability heuristic.",
+          "The submission provides references to support the explanations."
+        ],
+        "improvement_tip": "For excellent performance, consider providing more in-depth explanations of each bias and their connections to psychological theories."
+      },
+      {
+        "criterion_id": "c2",
+        "rating": "good",
+        "evidence": [
+          "The submission provides relevant real-world examples for each bias.",
+          "The examples are connected to the biases, but could benefit from more depth."
+        ],
+        "improvement_tip": "For excellent performance, consider exploring multiple examples for each bias and delve deeper into the cause-effect relationship."
+      },
+      {
+        "criterion_id": "c3",
+        "rating": "average",
+        "evidence": [
+          "The submission mentions mitigation strategies for cognitive biases."
+        ],
+        "improvement_tip": "For good performance, provide more detailed strategies for recognizing and reducing the impact of cognitive biases."
+      },
+      {
+        "criterion_id": "c4",
+        "rating": "good",
+        "evidence": [
+          "The submission is mostly clear and professional."
+        ],
+        "improvement_tip": "For excellent performance, ensure proper referencing and eliminate any grammar or structural issues."
+      }
+    ],
+    "suggested_grade": "3"
+  }
+},
+{
+  "index": 1,
+  "gold_label": "AI",
+  "submission": "Cognitive biases play a crucial role in shaping decision-making, often leading to irrational or suboptimal choices. Confirmation bias affects decision-making in relationships, as individuals tend to focus on information that confirms their existing views of a partner, overlooking potential red flags (Nickerson, 1998). Anchoring bias can influence consumer behavior, where the initial exposure to a product's price sets a reference point, impacting subsequent judgments about its value (Tversky & Kahneman, 1974). In the healthcare field, the availability heuristic might cause doctors to rely on recent cases or highly memorable symptoms when diagnosing patients, potentially leading to misdiagnosis. Recognizing these biases and using strategies like considering alternative perspectives and relying on objective data can reduce their influence and improve decision-making.\n References \n Nickerson, R. S. (1998). Confirmation bias: A ubiquitous phenomenon in many guises. Review of General Psychology, 2(2), 175–220. https://doi.org/10.1037/1089-2680.2.2.175 \n Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. Science, 185(4157), 1124–1131. https://doi.org/10.1126/science.185.4157.1124",
+  "feedback": {
+    "_parse_error": "Expecting ',' delimiter: line 36 column 6 (char 1879)",
+    "_raw": "{\n  \"overall_summary\": \"The submission demonstrates a good understanding of cognitive biases and their real-world applications, with a clear explanation of their impact on decision-making. However, the discussion on mitigation strategies could be more detailed. The writing is clear and well-structured.\",\n  \"criteria_feedback\": [\n    {\n      \"criterion_id\": \"c1\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"The submission shows a good understanding of confirmation bias, anchoring bias, and availability heuristic.\",\n        \"The explanation includes references to relevant psychological theories.\"\n      ],\n      \"improvement_tip\": \"For an excellent rating, consider providing more in-depth explanations of each bias and their connections to psychological theories.\"\n    },\n    {\n      \"criterion_id\": \"c2\",\n      \"rating\": \"excellent\",\n      \"evidence\": [\n        \"The submission provides insightful real-world examples of how cognitive biases influence decision-making in relationships, consumer behavior, and healthcare.\"\n      ],\n      \"improvement_tip\": \"Maintain the quality of examples to continue demonstrating excellent application of biases to real-world scenarios.\"\n    },\n    {\n      \"criterion_id\": \"c3\",\n      \"rating\": \"average\",\n      \"evidence\": [\n        \"The submission mentions strategies to reduce the impact of cognitive biases, but the discussion lacks depth.\"\n      ],\n      \"improvement_tip\": \"For a good rating, provide more research-backed strategies to mitigate biases and reflect on their psychological implications.\"\n    },\n    {\n      \"criterion_id\": \"c4\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"The submission is organized, clear, and professional, with proper referencing.\"\n      ],\n      \"improvement_tip\": \"Maintain the quality of writing, paragraph flow, citations, and tone to continue receiving good ratings.\"\n    }\n  ],\n  \"suggested_grade\": \"3\""
+  }
+},
+{
+  "index": 2,
+  "gold_label": "Human",
+  "submission": "Cognitive biases have a big influence on how we make decisions, often without us even realizing it. For instance, confirmation bias makes us focus on information that matches what we already believe (Nickerson, 1998), while anchoring can make us overly reliant on the first thing we hear or see (Tversky & Kahneman, 1974). The availability heuristic leads us to overestimate how likely something is based on how easily we can recall examples of it. By recognizing these biases and using strategies like challenging our own thinking or seeking out different viewpoints, we can make more balanced and thoughtful decisions, especially in areas like healthcare or when making purchases.\n References \n Nickerson, R. S. (1998). Confirmation bias: A ubiquitous phenomenon in many guises. Review of General Psychology, 2(2), 175–220. https://doi.org/10.1037/1089-2680.2.2.175 \n Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. Science, 185(4157), 1124–1131. https://doi.org/10.1126/science.185.4157.1124",
+  "feedback": {
+    "_parse_error": "Expecting ',' delimiter: line 9 column 9 (char 506)",
+    "_raw": "{\n  \"overall_summary\": \"The submission demonstrates a good understanding of cognitive biases and their real-world applications, with a clear explanation of how awareness and mitigation strategies can improve decision-making. However, the response could benefit from more detailed examples and a stronger structure.\",\n  \"criteria_feedback\": [\n    {\n      \"criterion_id\": \"c1\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"\\\"Cognitive biases have a big influence on how we make decisions,\\\"\"\n        \"\\\"For instance, confirmation bias makes us focus on information that matches what we already believe (Nickerson, 1998)\\\"\"\n      ],\n      \"improvement_tip\": \"Consider providing more in-depth explanations of each bias and their connections to psychological theories.\"\n    },\n    {\n      \"criterion_id\": \"c2\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"\\\"By recognizing these biases and using strategies like challenging our own thinking or seeking out different viewpoints, we can make more balanced and thoughtful decisions,\\\"\"\n        \"\\\"especially in areas like healthcare or when making purchases\\\"\"\n      ],\n      \"improvement_tip\": \"Include specific examples of real-world scenarios to illustrate the impact of cognitive biases in these areas.\"\n    },\n    {\n      \"criterion_id\": \"c3\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"\\\"By recognizing these biases and using strategies like challenging our own thinking or seeking out different viewpoints,\\\"\"\n        \"\\\"especially in areas like healthcare or when making purchases\\\"\"\n      ],\n      \"improvement_tip\": \"Expand on the strategies mentioned and provide additional research-backed methods for mitigating cognitive biases.\"\n    },\n    {\n      \"criterion_id\": \"c4\",\n      \"rating\": \"average\",\n      \"evidence\": [\n        \"\\\"References\\\"\"\n      ],\n      \"improvement_tip\": \"Improve the organization and flow of the response by using proper paragraph structure and transitions.\"\n    }\n  ],\n  \"suggested_grade\": \"3\"\n}"
+  }
+},
+{
+  "index": 3,
+  "gold_label": "Human",
+  "submission": "Cognitive biases shape how we make decisions by twisting our judgment in ways we're often unaware of. For example, confirmation bias makes us seek out information that backs up what we already believe (Nickerson, 1998), while anchoring causes us to base decisions on the first piece of info we hear, even if it’s irrelevant (Tversky & Kahneman, 1974). In real life, this can show up in situations like law, where a judge might give too much weight to the first testimony they hear, or in consumer behavior, where marketers use anchoring to get us to buy things. Becoming aware of these biases and taking time to reflect or practice mindfulness can help us make better, more balanced decisions.\n References \n Nickerson, R. S. (1998). Confirmation bias: A ubiquitous phenomenon in many guises. Review of General Psychology, 2(2), 175–220. https://doi.org/10.1037/1089-2680.2.2.175 \n Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. Science, 185(4157), 1124–1131. https://doi.org/10.1126/science.185.4157.1124",
+  "feedback": {
+    "_parse_error": "Expecting ',' delimiter: line 18 column 9 (char 883)",
+    "_raw": "{\n  \"overall_summary\": \"The submission demonstrates a good understanding of cognitive biases and their real-world applications, but could benefit from further exploration of mitigation strategies and a more structured presentation. \",\n  \"criteria_feedback\": [\n    {\n      \"criterion_id\": \"c1\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"\\\"Cognitive biases shape how we make decisions...\\\"\",\n        \"\\\"Confirmation bias makes us seek out information that backs up what we already believe...\\\"\"\n      ],\n      \"improvement_tip\": \"Consider delving deeper into the theoretical foundations of each bias to enhance your understanding.\"\n    },\n    {\n      \"criterion_id\": \"c2\",\n      \"rating\": \"excellent\",\n      \"evidence\": [\n        \"\\\"In real life, this can show up in situations like law, where a judge might give too much weight to the first testimony they hear,\\\"\"\n        \"\\\"or in consumer behavior, where marketers use anchoring to get us to buy things.\\\"\"\n      ],\n      \"improvement_tip\": \"Continue to find diverse real-world examples to illustrate the impact of cognitive biases.\"\n    },\n    {\n      \"criterion_id\": \"c3\",\n      \"rating\": \"needs_improvement\",\n      \"evidence\": [\n        \"\\\"Becoming aware of these biases and taking time to reflect or practice mindfulness can help us make better, more balanced decisions.\\\"\"\n      ],\n      \"improvement_tip\": \"Research and discuss specific strategies for mitigating each bias in your future work.\"\n    },\n    {\n      \"criterion_id\": \"c4\",\n      \"rating\": \"average\",\n      \"evidence\": [\n        \"\\\"Cognitive biases shape how we make decisions by twisting our judgment in ways we're often unaware of.\\\"\",\n        \"\\\"References\\\"\"\n      ],\n      \"improvement_tip\": \"Improve the structure and organization of your writing for better clarity and academic tone.\"\n    }\n  ],\n  \"suggested_grade\": \"3\"\n}"
+  }
+},
+{
+  "index": 4,
+  "gold_label": "Hybrid",
+  "submission": "Cognitive biases, such as confirmation bias, anchoring, and the availability heuristic, will be able to shape human decision-making by distorting perceptions and judgments based on a lot of reasons. This includes prior beliefs (Nickerson, 1998), initial information (Tversky & Kahneman, 1974), or recent experiences. These biases manifest in areas like healthcare, law, and consumer behavior, where they can lead to bad decisions and reinforce flawed thinking. Awareness of these biases, combined with strategies like critical thinking, counterfactual reasoning, and diverse perspectives, can help mitigate their influence and improve judgment.\n References \n Nickerson, R. S. (1998). Confirmation bias: A ubiquitous phenomenon in many guises. Review of General Psychology, 2(2), 175–220. https://doi.org/10.1037/1089-2680.2.2.175 \n Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. Science, 185(4157), 1124–1131. https://doi.org/10.1126/science.185.4157.1124",
+  "feedback": {
+    "overall_summary": "The submission demonstrates a good understanding of cognitive biases and their real-world applications, but could benefit from more detailed examples and a deeper exploration of mitigation strategies. The writing is clear and well-structured.",
+    "criteria_feedback": [
+      {
+        "criterion_id": "c1",
+        "rating": "good",
+        "evidence": [
+          "Shows understanding of cognitive biases with clear links to relevant psychological theories (Nickerson, 1998; Tversky & Kahneman, 1974)"
+        ],
+        "improvement_tip": "Consider providing more in-depth explanations of each bias and their theoretical foundations."
+      },
+      {
+        "criterion_id": "c2",
+        "rating": "good",
+        "evidence": [
+          "Applies biases to relevant real-world cases, though some links may be weaker (healthcare, law, consumer behavior)"
+        ],
+        "improvement_tip": "Provide more specific examples and delve deeper into the cause-effect relationships between biases and decision-making in these contexts."
+      },
+      {
+        "criterion_id": "c3",
+        "rating": "average",
+        "evidence": [
+          "Mentions bias mitigation strategies, but with limited detail."
+        ],
+        "improvement_tip": "Explore plausible strategies in more depth and provide examples of how they can be applied to the specific biases discussed."
+      },
+      {
+        "criterion_id": "c4",
+        "rating": "good",
+        "evidence": [
+          "Quality of writing, paragraph flow, citations, and tone are mostly clear and professional."
+        ],
+        "improvement_tip": "Maintain the current level of organization and academic tone throughout the submission."
+      }
+    ],
+    "suggested_grade": "3"
+  }
+},
+{
+  "index": 5,
+  "gold_label": "Hybrid",
+  "submission": "Cognitive biases, such as confirmation bias (Nickerson, 1998), anchoring (Tversky & Kahneman, 1974), and the availability heuristic, affect decision-making by leading individuals to rely on bias information or patterns. These biases can have significant implications in areas like healthcare, law, and consumer behavior, often resulting in bad choices or judgments. Mitigating their impact requires strategies like reflective thinking, seeking diverse viewpoints, and promoting awareness of cognitive distortions.\n References \n Nickerson, R. S. (1998). Confirmation bias: A ubiquitous phenomenon in many guises. Review of General Psychology, 2(2), 175–220. https://doi.org/10.1037/1089-2680.2.2.175 \n Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. Science, 185(4157), 1124–1131. https://doi.org/10.1126/science.185.4157.1124",
+  "feedback": {
+    "overall_summary": "The submission demonstrates a good understanding of cognitive biases and their real-world applications, but could benefit from more detailed examples and a deeper exploration of mitigation strategies. The writing is clear and well-structured.",
+    "criteria_feedback": [
+      {
+        "criterion_id": "c1",
+        "rating": "good",
+        "evidence": [
+          "The submission shows understanding of cognitive biases, as evidenced by the mention of three biases and their relevant psychological theories.",
+          "The explanation of the biases is adequate, though minor inaccuracies are present."
+        ],
+        "improvement_tip": "For future improvement, consider providing more in-depth explanations and ensuring accuracy in the description of each bias."
+      },
+      {
+        "criterion_id": "c2",
+        "rating": "good",
+        "evidence": [
+          "The submission applies biases to real-world scenarios such as healthcare, law, and consumer behavior.",
+          "However, some links between biases and examples could be stronger."
+        ],
+        "improvement_tip": "To strengthen the application of biases to real-world scenarios, provide more specific examples and clearly articulate the cause-effect relationship."
+      },
+      {
+        "criterion_id": "c3",
+        "rating": "average",
+        "evidence": [
+          "The submission mentions mitigation strategies like reflective thinking and seeking diverse viewpoints.",
+          "However, the discussion of these strategies is limited."
+        ],
+        "improvement_tip": "For future improvement, delve deeper into the plausible strategies for mitigating cognitive biases and reflect on their psychological implications."
+      },
+      {
+        "criterion_id": "c4",
+        "rating": "good",
+        "evidence": [
+          "The quality of writing, paragraph flow, citations, and tone are mostly clear and professional."
+        ],
+        "improvement_tip": "Maintain the current level of organization and academic tone in future submissions."
+      }
+    ],
+    "suggested_grade": "3"
+  }
+}
+]
+
+
+#### this is accounting.json file
+[
+{
+  "index": 0,
+  "gold_label": "AI",
+  "submission": "Blockchain technology, defined by its decentralization, immutability, and transparency, is transforming traditional accounting practices, particularly in auditing and financial reporting. Its core principles—decentralized ledgers, immutable records, and smart contracts—enable significant improvements in efficiency and trust. Smart contracts automate tasks like invoicing and reconciliation, reducing errors and intermediaries. For auditing, blockchain’s immutable records create tamper-proof audit trails, simplifying verification and enhancing fraud detection. Real-time financial reporting becomes feasible as transactions are instantly recorded on a shared ledger, improving transparency and decision-making. For example, Ernst & Young uses its Blockchain Analyzer to audit cryptocurrency transactions, streamlining assurance processes, while JPMorgan’s Quorum platform facilitates efficient interbank reconciliations. However, challenges persist. Regulatory uncertainty, such as the lack of clear accounting standards for blockchain assets, complicates compliance. Scalability issues in public blockchains and the high cost of integrating with legacy systems pose barriers, particularly for smaller firms. Additionally, adopting blockchain requires significant technical expertise. Despite these hurdles, blockchain’s potential to enhance data integrity and automation signals a transformative shift in accounting, as demonstrated by firms like PwC exploring blockchain-based auditing tools. As technology and regulations evolve, blockchain will likely redefine trust and efficiency in accounting practices.",
+  "feedback": {
+    "overall_summary": "The submission demonstrates a good understanding of blockchain concepts and their impact on accounting practices, with a clear analysis and several real-world examples. The structure and academic style could be improved for a higher grade.",
+    "criteria_feedback": [
+      {
+        "criterion_id": "c1",
+        "rating": "good",
+        "evidence": [
+          "\"Blockchain technology, defined by its decentralization, immutability, and transparency\""
+        ],
+        "improvement_tip": "Expand on the explanation of smart contracts and their role in accounting."
+      },
+      {
+        "criterion_id": "c2",
+        "rating": "good",
+        "evidence": [
+          "\"Smart contracts automate tasks like invoicing and reconciliation\",",
+          "\"For auditing, blockchain’s immutable records create tamper-proof audit trails\""
+        ],
+        "improvement_tip": "Discuss the challenges in more depth and provide additional examples."
+      },
+      {
+        "criterion_id": "c3",
+        "rating": "good",
+        "evidence": [
+          "\"Ernst & Young uses its Blockchain Analyzer to audit cryptocurrency transactions\",",
+          "\"JPMorgan’s Quorum platform facilitates efficient interbank reconciliations\""
+        ],
+        "improvement_tip": "Include more diverse examples to demonstrate a broader understanding."
+      },
+      {
+        "criterion_id": "c4",
+        "rating": "average",
+        "evidence": [
+          "\"However, challenges persist\" - informal language"
+        ],
+        "improvement_tip": "Revise the essay to maintain a consistent formal tone throughout."
+      }
+    ],
+    "suggested_grade": "3"
+  }
+},
+{
+  "index": 1,
+  "gold_label": "AI",
+  "submission": "Blockchain technology, defined by its decentralization, immutability, and transparency, is revolutionizing traditional accounting practices, particularly in auditing and financial reporting. Its core principles—decentralized ledgers, immutable records, and smart contracts—enable significant improvements in efficiency, trust, and accuracy. This essay explores blockchain’s transformative effects, supported by real-world applications and challenges. Blockchain’s immutability ensures financial records are tamper-proof, creating reliable audit trails that simplify verification and enhance fraud detection. For instance, Ernst & Young (EY) employs its Blockchain Analyzer to audit cryptocurrency transactions, streamlining assurance processes. Smart contracts automate tasks like invoicing or reconciliation, reducing manual errors and intermediaries. This automation supports real-time financial reporting, allowing companies to produce accurate, transparent financial statements instantly, as demonstrated by IBM’s blockchain-based supply chain financing, which minimizes reporting delays.",
+  "feedback": {
+    "_parse_error": "Expecting ',' delimiter: line 36 column 6 (char 1718)",
+    "_raw": "{\n  \"overall_summary\": \"The submission demonstrates a good understanding of blockchain concepts and their impact on accounting, particularly in auditing and financial reporting. The response includes real-world examples and a formal academic tone. However, the analysis could be more in-depth.\",\n  \"criteria_feedback\": [\n    {\n      \"criterion_id\": \"c1\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"\\\"Blockchain technology, defined by its decentralization, immutability, and transparency\\\"\"\n      ],\n      \"improvement_tip\": \"Expand on the explanation of smart contracts and their relevance to accounting.\"\n    },\n    {\n      \"criterion_id\": \"c2\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"\\\"Its core principles—decentralized ledgers, immutable records, and smart contracts—enable significant improvements in efficiency, trust, and accuracy.\\\"\"\n      ],\n      \"improvement_tip\": \"Provide more specific examples of challenges associated with blockchain implementation in accounting.\"\n    },\n    {\n      \"criterion_id\": \"c3\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"\\\"For instance, Ernst & Young (EY) employs its Blockchain Analyzer to audit cryptocurrency transactions,\\\"\",\n        \"\\\"IBM’s blockchain-based supply chain financing,\\\"\"\n      ],\n      \"improvement_tip\": \"Include more diverse examples to demonstrate a broader understanding of blockchain applications in accounting.\"\n    },\n    {\n      \"criterion_id\": \"c4\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"\\\"This essay explores blockchain’s transformative effects, supported by real-world applications and challenges.\\\"\"\n      ],\n      \"improvement_tip\": \"Ensure a consistent formal tone throughout the essay.\"\n    }\n  ],\n  \"suggested_grade\": \"3\""
+  }
+},
+{
+  "index": 2,
+  "gold_label": "Human",
+  "submission": "As a business student fascinated by tech, I see blockchain revolutionizing traditional accounting. Its decentralized, tamper-proof ledger could transform bookkeeping, auditing, and financial reporting, though it’s not without challenges. In bookkeeping, blockchain’s real-time, cryptographically secure transaction recording reduces errors and fraud. Unlike centralized databases prone to mistakes, blockchain’s distributed ledger ensures accuracy, automating tasks like reconciliations. Companies like IBM are already using it for supply chain finance, cutting paperwork. Auditing could benefit hugely. Blockchain’s “triple-entry” system creates a verifiable transaction record, slashing audit times. Firms like Deloitte are testing this, showing faster, cheaper audits. But, if bad data enters, it’s still a problem—garbage in, garbage out. For financial reporting, blockchain enables real-time updates, giving stakeholders instant insights. A 2023 study suggested this could boost market efficiency, but companies might resist such transparency.  Challenges include high setup costs, lack of accounting standards for blockchain, and privacy concerns. It’s a trust-building tool, great for fraud prevention, but not a full replacement for traditional systems yet. In short, blockchain promises efficiency and trust in accounting but needs time to mature. Accountants must adapt gradually, blending old and new methods.",
+  "feedback": {
+    "overall_summary": "The submission demonstrates a good understanding of blockchain concepts and their impact on accounting practices, particularly auditing and financial reporting. The response includes real-world examples and a discussion of challenges. However, the structure could be improved for a more academic tone.",
+    "criteria_feedback": [
+      {
+        "criterion_id": "c1",
+        "rating": "good",
+        "evidence": [
+          "\"Its decentralized, tamper-proof ledger could transform bookkeeping, auditing, and financial reporting\""
+        ],
+        "improvement_tip": "Consider providing more examples of blockchain concepts and their applications in accounting."
+      },
+      {
+        "criterion_id": "c2",
+        "rating": "good",
+        "evidence": [
+          "\"Blockchain’s triple-entry system creates a verifiable transaction record, slashing audit times\""
+        ],
+        "improvement_tip": "Explore more benefits and challenges related to the impact on auditing and financial reporting."
+      },
+      {
+        "criterion_id": "c3",
+        "rating": "good",
+        "evidence": [
+          "\"Companies like IBM are already using it for supply chain finance, cutting paperwork\""
+        ],
+        "improvement_tip": "Include additional examples to support your points."
+      },
+      {
+        "criterion_id": "c4",
+        "rating": "average",
+        "evidence": [
+          "\"As a business student fascinated by tech,\" - informal tone"
+        ],
+        "improvement_tip": "Ensure a more formal and consistent academic tone throughout the response."
+      }
+    ],
+    "suggested_grade": "3"
+  }
+},
+{
+  "index": 3,
+  "gold_label": "Human",
+  "submission": "As a business student fascinated by tech, I see blockchain reshaping accounting, auditing, and financial reporting, though it’s not without challenges. Blockchain’s decentralized, tamper-proof ledger records transactions transparently, reducing errors in bookkeeping. Unlike traditional double-entry systems, blockchain’s “triple-entry” approach creates a verifiable, shared record, cutting down on manual reconciliations. For example, companies like IBM use blockchain for supply chain finance, automating transaction entries. Auditing could be revolutionized too. Real-time access to immutable records means auditors can verify transactions faster, slashing time and costs. Firms like Deloitte are testing this, showing promising results. However, blockchain’s only as good as the data entered—mistakes or fraud at input still cause issues. Financial reporting might shift to real-time with blockchain, giving stakeholders instant insights into a company’s finances, potentially boosting market transparency. But here’s the catch: implementing blockchain is pricey, and small firms might struggle. Plus, accounting standards like GAAP aren’t blockchain-ready, and privacy concerns loom large with transparent ledgers. Critically, blockchain enhances trust but will not replace traditional accounting soon. It’s more of a complementary tool, best for specific cases. Accountants must adapt gradually, balancing innovation with practical hurdles like cost and regulation.",
+  "feedback": {
+    "overall_summary": "The submission demonstrates a good understanding of blockchain concepts and their impact on accounting practices, with some strong examples and analysis. However, there is room for improvement in structuring the response and addressing specific challenges.",
+    "criteria_feedback": [
+      {
+        "criterion_id": "c1",
+        "rating": "good",
+        "evidence": [
+          "The submission explains blockchain's decentralized, tamper-proof ledger and its relevance to accounting.",
+          "The 'triple-entry' approach is correctly identified as a benefit."
+        ],
+        "improvement_tip": "Consider providing more detailed explanations and examples of smart contracts to further strengthen your understanding and analysis."
+      },
+      {
+        "criterion_id": "c2",
+        "rating": "good",
+        "evidence": [
+          "The submission discusses enhanced transparency, automation, and audit trails.",
+          "It mentions the potential challenges of implementing blockchain."
+        ],
+        "improvement_tip": "Provide more specific examples of how blockchain could revolutionize auditing and financial reporting, and delve deeper into the associated challenges."
+      },
+      {
+        "criterion_id": "c3",
+        "rating": "good",
+        "evidence": [
+          "The submission provides a relevant example of IBM using blockchain for supply chain finance.",
+          "It mentions Deloitte testing blockchain for auditing."
+        ],
+        "improvement_tip": "Consider adding more examples to support your points and make your analysis more comprehensive."
+      },
+      {
+        "criterion_id": "c4",
+        "rating": "average",
+        "evidence": [
+          "The structure of the response is mostly well-structured with clear transitions.",
+          "However, the style is inconsistently academic."
+        ],
+        "improvement_tip": "Ensure a consistent formal tone throughout the response and provide more logical transitions between ideas."
+      }
+    ],
+    "suggested_grade": "3"
+  }
+},
+{
+  "index": 4,
+  "gold_label": "Hybrid",
+  "submission": "Blockchain technology significantly reshapes traditional accounting practices, including auditing and financial reporting, by enhancing transparency, efficiency, and accuracy. Its decentralized, immutable ledger ensures real-time, tamper-proof transaction records, reducing errors and fraud. In accounting, blockchain automates bookkeeping through smart contracts, minimizing manual entries and enabling instant reconciliation. This streamlines processes like accounts payable and receivable, cutting costs and time. For auditing, blockchain provides a verifiable, chronological record of transactions, simplifying the audit trail. Auditors can access unalterable data, reducing reliance on sampling and enhancing accuracy. Real-time auditing becomes feasible, potentially replacing periodic reviews with continuous monitoring. However, challenges arise, such as the need for auditors to develop blockchain expertise and address privacy concerns with transparent ledgers. In financial reporting, blockchain ensures data integrity, fostering trust in financial statements. It enables faster reporting cycles and reduces discrepancies between entities. Yet, adoption requires significant investment in infrastructure and regulatory alignment. While blockchain promises efficiency and reliability, its integration demands a shift in skills, standards, and processes, reshaping the accounting profession.",
+  "feedback": {
+    "_parse_error": "Expecting ',' delimiter: line 18 column 9 (char 903)",
+    "_raw": "{\n  \"overall_summary\": \"The submission demonstrates a good understanding of blockchain concepts and their impact on accounting practices, particularly auditing and financial reporting. The response could benefit from more specific examples and a more structured presentation.\",\n  \"criteria_feedback\": [\n    {\n      \"criterion_id\": \"c1\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"\\\"Blockchain technology significantly reshapes traditional accounting practices...\\\"\",\n        \"\\\"Its decentralized, immutable ledger ensures real-time, tamper-proof transaction records,\\\"\"\n      ],\n      \"improvement_tip\": \"Consider providing more examples of blockchain concepts and their applications in accounting.\"\n    },\n    {\n      \"criterion_id\": \"c2\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"\\\"For auditing, blockchain provides a verifiable, chronological record of transactions,\\\"\"\n        \"\\\"Real-time auditing becomes feasible, potentially replacing periodic reviews with continuous monitoring.\\\"\"\n      ],\n      \"improvement_tip\": \"Explore the challenges and potential solutions in more depth.\"\n    },\n    {\n      \"criterion_id\": \"c3\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"\\\"However, challenges arise, such as the need for auditors to develop blockchain expertise and address privacy concerns with transparent ledgers.\\\"\"\n      ],\n      \"improvement_tip\": \"Include additional examples to illustrate the impact of blockchain on accounting.\"\n    },\n    {\n      \"criterion_id\": \"c4\",\n      \"rating\": \"average\",\n      \"evidence\": [\n        \"\\\"While blockchain promises efficiency and reliability, its integration demands a shift in skills, standards, and processes, reshaping the accounting profession.\\\"\"\n      ],\n      \"improvement_tip\": \"Improve the structure and flow of the essay for a more academic tone.\"\n    }\n  ],\n  \"suggested_grade\": \"3\"\n}"
+  }
+},
+{
+  "index": 5,
+  "gold_label": "Hybrid",
+  "submission": "Blockchain technology significantly transforms traditional accounting practices, enhancing efficiency, transparency, and security. Its decentralized, immutable ledger ensures real-time, tamper-proof recording of transactions, reducing errors and fraud risks. In financial reporting, blockchain enables automated, accurate data aggregation, streamlining processes like reconciliation and ensuring compliance with standards. Smart contracts automate routine tasks, such as invoice settlements, minimizing manual intervention and costs. In auditing, blockchain shifts the focus from sample-based verification to comprehensive, real-time data analysis. Auditors can access a transparent audit trail, improving accuracy and reducing audit time. However, challenges arise, including the need for new auditing standards to address blockchain-specific risks like smart contract vulnerabilities. Accountants must adapt to technical skills, such as understanding distributed ledger technology. While blockchain enhances trust and efficiency, it disrupts traditional roles, requiring firms to invest in training and infrastructure. Regulatory uncertainty and scalability issues also pose hurdles. Overall, blockchain fosters a more reliable, automated accounting ecosystem but demands significant adaptation from professionals to fully realize its potential.",
+  "feedback": {
+    "overall_summary": "The submission demonstrates a good understanding of blockchain concepts and their impact on accounting practices, particularly in financial reporting and auditing. The response could benefit from providing more real-world examples and addressing regulatory uncertainty.",
+    "criteria_feedback": [
+      {
+        "criterion_id": "c1",
+        "rating": "good",
+        "evidence": [
+          "\"Its decentralized, immutable ledger ensures real-time, tamper-proof recording of transactions\""
+        ],
+        "improvement_tip": "Consider explaining smart contracts and their role in accounting."
+      },
+      {
+        "criterion_id": "c2",
+        "rating": "good",
+        "evidence": [
+          "\"In financial reporting, blockchain enables automated, accurate data aggregation\""
+        ],
+        "improvement_tip": "Discuss the challenges associated with implementing blockchain in financial reporting and auditing."
+      },
+      {
+        "criterion_id": "c3",
+        "rating": "good",
+        "evidence": [
+          "\"While blockchain enhances trust and efficiency,\" - This sentence implies a real-world example is about to follow, but none was provided."
+        ],
+        "improvement_tip": "Include at least one relevant example to support your claims."
+      },
+      {
+        "criterion_id": "c4",
+        "rating": "good",
+        "evidence": [],
+        "improvement_tip": "Ensure a consistent academic tone throughout the essay."
+      }
+    ],
+    "suggested_grade": "3"
+  }
+}
+]
+
+#### this is engineering.json
+[
+{
+  "index": 0,
+  "gold_label": "AI",
+  "submission": "To set up a basic production line for a new consumer product, a manufacturing engineer follows a structured, multi-phase process. It begins with design validation, where the engineer collaborates with product designers to understand specifications, tolerances, and potential manufacturing constraints. The engineer then maps out the entire production workflow using tools like process flow diagrams and value stream maps. Equipment selection follows, guided by factors such as cycle time, required operations (e.g., stamping, injection molding, or robotic assembly), and automation level. The layout is optimized using CAD software to ensure minimal material handling, ergonomic access, and logical sequencing of operations—commonly using a U-cell or straight-line arrangement. Efficiency is measured using takt time, OEE (Overall Equipment Effectiveness), and line balancing strategies. Safety is addressed proactively via hazard analyses (FMEA), clear signage, guarding, PPE zones, and training procedures. Before full-scale production, pilot runs validate throughput, quality, and safety metrics. Adjustments are made based on feedback, and the line enters continuous improvement through lean practices like Kaizen and 5S audits.",
+  "feedback": {
+    "overall_summary": "The submission provides a comprehensive overview of the production line setup process, demonstrating a good understanding of manufacturing engineering principles. However, the response could benefit from more specific examples and deeper analysis.",
+    "criteria_feedback": [
+      {
+        "criterion_id": "c1",
+        "rating": "good",
+        "evidence": [
+          "The submission explains the entire process from design to assembly.",
+          "It addresses equipment, efficiency, and safety well."
+        ],
+        "improvement_tip": "Consider providing more detailed examples and insights for each phase of the production line setup process."
+      },
+      {
+        "criterion_id": "c2",
+        "rating": "good",
+        "evidence": [
+          "The submission demonstrates a sound understanding of manufacturing engineering principles."
+        ],
+        "improvement_tip": "Ensure the use of precise terminology and advanced concepts to further demonstrate technical acumen."
+      },
+      {
+        "criterion_id": "c3",
+        "rating": "good",
+        "evidence": [
+          "The explanation is generally clear and structured."
+        ],
+        "improvement_tip": "Refine transitions between ideas to improve the overall flow of the response."
+      },
+      {
+        "criterion_id": "c4",
+        "rating": "average",
+        "evidence": [
+          "The submission provides good explanations with some detail."
+        ],
+        "improvement_tip": "Offer more specific examples and robust reasoning for design and process choices."
+      },
+      {
+        "criterion_id": "c5",
+        "rating": "good",
+        "evidence": [
+          "Writing is clear with very few grammatical or spelling errors."
+        ],
+        "improvement_tip": "Maintain a high level of writing quality throughout the response."
+      }
+    ],
+    "suggested_grade": "3"
+  }
+},
+{
+  "index": 1,
+  "gold_label": "AI",
+  "submission": "A manufacturing engineer sets up a production line through a step-by-step approach that begins with understanding the final product's design. This includes identifying critical dimensions, required materials, and the functional assembly process. Using digital modeling tools, the engineer then designs a production workflow that outlines each step, from material handling to packaging. Machinery is chosen based on process needs, such as CNC machining, welding, or automated pick-and-place arms. Layout decisions aim to reduce travel time and motion waste, and simulations are used to test throughput scenarios. The engineer defines efficiency metrics, including takt time and line balancing indices, to match production capacity with demand. Safety is integrated through emergency shutoff systems, ergonomic assessments, and regulatory compliance such as OSHA standards. Prior to launch, engineers run pilot batches to test the system and collect data on defect rates, downtime, and operator feedback. Improvements are made iteratively until the production line reaches stable, high-performance output.",
+  "feedback": {
+    "overall_summary": "The submission provides a clear and concise overview of the production line setup process, demonstrating a good understanding of manufacturing engineering principles. However, it could benefit from more depth and specific examples.",
+    "criteria_feedback": [
+      {
+        "criterion_id": "c1",
+        "rating": "good",
+        "evidence": [
+          "The submission explains the process from design to assembly.",
+          "It addresses equipment, efficiency, and safety."
+        ],
+        "improvement_tip": "Consider providing more detailed explanations for each phase of the production line setup process."
+      },
+      {
+        "criterion_id": "c2",
+        "rating": "good",
+        "evidence": [
+          "The submission demonstrates a sound understanding of manufacturing engineering principles."
+        ],
+        "improvement_tip": "Ensure accuracy by using precise terminology and advanced concepts consistently."
+      },
+      {
+        "criterion_id": "c3",
+        "rating": "good",
+        "evidence": [
+          "The submission delivers a generally clear and structured explanation."
+        ],
+        "improvement_tip": "Refine transitions between ideas to improve the flow of the explanation."
+      },
+      {
+        "criterion_id": "c4",
+        "rating": "average",
+        "evidence": [
+          "The submission provides basic explanations with some detail."
+        ],
+        "improvement_tip": "Offer more detailed reasoning and specific examples for design and process choices."
+      },
+      {
+        "criterion_id": "c5",
+        "rating": "good",
+        "evidence": [
+          "The writing is clear with very few grammatical or spelling errors."
+        ],
+        "improvement_tip": "Maintain a professional tone and avoid minor mechanical issues to enhance clarity."
+      }
+    ],
+    "suggested_grade": "3"
+  }
+},
+{
+  "index": 2,
+  "gold_label": "Human",
+  "submission": "When setting up a production line, a manufacturing engineer starts by looking at the product's design carefully. They figure out what parts are needed, how they fit together, and which machines will be needed to make them. After that, they draw out a rough plan of the steps, from start to finish, so that all the materials and tools are in the right place. Machines are placed in a way that helps workers move around easily and not waste time. The engineer also thinks about how to make the work fast and safe by adding guard rails, putting signs where needed, and training the staff. A small test run is done to see if the system works well. If something goes wrong, the engineer makes changes to fix it. Once the test is successful, the production line is ready to go into full use.",
+  "feedback": {
+    "_parse_error": "Expecting ',' delimiter: line 35 column 6 (char 1779)",
+    "_raw": "{\n  \"overall_summary\": \"The submission provides a basic overview of the production line setup process, focusing on equipment placement, worker efficiency, and safety. However, it lacks depth in explaining the design phase and could benefit from more specific examples and technical terminology.\",\n  \"criteria_feedback\": [\n    {\n      \"criterion_id\": \"c1\",\n      \"rating\": \"average\",\n      \"evidence\": [\n        \"The submission covers the main phases of production line setup, but the design phase is not thoroughly explained.\"\n      ],\n      \"improvement_tip\": \"Include details about the initial design process, such as analyzing the product's requirements, selecting materials, and determining the manufacturing processes.\"\n    },\n    {\n      \"criterion_id\": \"c2\",\n      \"rating\": \"needs_improvement\",\n      \"evidence\": [\n        \"The submission uses general terms like 'machines' and 'parts,' but lacks specific manufacturing engineering terminology.\"\n      ],\n      \"improvement_tip\": \"Incorporate more precise manufacturing engineering terms, such as CNC machines, injection molding, or assembly lines.\"\n    },\n    {\n      \"criterion_id\": \"c3\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"The submission presents a clear and logical sequence of events.\"\n      ],\n      \"improvement_tip\": \"Maintain the current level of clarity and structure while providing more detailed explanations for each phase.\"\n    },\n    {\n      \"criterion_id\": \"c4\",\n      \"rating\": \"needs_improvement\",\n      \"evidence\": [\n        \"The submission lacks specific examples and detailed reasoning for design and process choices.\"\n      ],\n      \"improvement_tip\": \"Include concrete examples of equipment layout, efficiency enhancements, and safety measures to support your explanations.\"\n    },\n    {\n      \"criterion_id\": \"c5\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"The writing is clear and free of major grammatical errors.\"\n      ],\n      \"improvement_tip\": \"Continue to maintain clear and concise writing, focusing on incorporating more technical terminology"
+  }
+},
+{
+  "index": 3,
+  "gold_label": "Human",
+  "submission": "To set up a new production line, a manufacturing engineer first learns about the product they are going to build. They look at drawings and talk with the designers to break the work into steps. Each step is matched with a tool or machine, and the machines are placed in a row that follows the right order. This helps save time and avoids confusion. They make sure workers don’t have to walk too far or lift heavy things over and over. Safety is also important, so they put in emergency stops, signs, and barriers to keep people safe. Before making thousands of products, they try out the setup with a few units and fix any problems they find. This helps the company build the product faster and with fewer mistakes.",
+  "feedback": {
+    "_parse_error": "Expecting ',' delimiter: line 36 column 6 (char 1856)",
+    "_raw": "{\n  \"overall_summary\": \"The submission provides a basic overview of the production line setup process, focusing on equipment layout and safety considerations. However, it lacks depth in terms of efficiency and technical acumen. Improvements are needed in providing specific examples and using precise manufacturing engineering terminology.\",\n  \"criteria_feedback\": [\n    {\n      \"criterion_id\": \"c1\",\n      \"rating\": \"average\",\n      \"evidence\": [\n        \"The submission covers the main phases of production line setup, but with limited detail.\",\n        \"Some key aspects of design-to-assembly flow, efficiency, or safety may be omitted.\"\n      ],\n      \"improvement_tip\": \"Incorporate more specific details and examples to provide a more comprehensive explanation.\"\n    },\n    {\n      \"criterion_id\": \"c2\",\n      \"rating\": \"needs_improvement\",\n      \"evidence\": [\n        \"The submission exhibits a limited grasp of manufacturing engineering principles; several inaccuracies are present.\"\n      ],\n      \"improvement_tip\": \"Research and use precise manufacturing engineering terminology to improve the accuracy of the explanation.\"\n    },\n    {\n      \"criterion_id\": \"c3\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"The explanation is generally clear, though some transitions could be refined.\"\n      ],\n      \"improvement_tip\": \"Work on organizing ideas in a more logical and coherent manner to enhance the clarity of the explanation.\"\n    },\n    {\n      \"criterion_id\": \"c4\",\n      \"rating\": \"needs_improvement\",\n      \"evidence\": [\n        \"The submission supplies basic explanations with minimal detail; lacks specific examples or robust reasoning.\"\n      ],\n      \"improvement_tip\": \"Provide detailed reasoning and specific examples for design and process choices to demonstrate a deeper understanding of the production line setup.\"\n    },\n    {\n      \"criterion_id\": \"c5\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"Writing is clear with very few grammatical or spelling errors; minor mechanical issues do not impede understanding.\"\n      ],\n      \"im"
+  }
+},
+{
+  "index": 4,
+  "gold_label": "Hybrid",
+  "submission": "The process of setting up a production line involves both technical planning and practical foresight. First, the manufacturing engineer reviews the product design to determine assembly stages and material requirements. They use tools like Gantt charts or process maps to outline the steps. Equipment is selected based on precision needs, volume, and automation levels—balancing cost with flexibility. Layouts are designed to minimize non-value-adding steps, using lean approaches such as cellular manufacturing. For example, a compact U-shaped layout can reduce motion waste and improve team communication. Efficiency is improved by analyzing takt time, setting up buffer zones, and using line balancing tools. Safety isn’t just an afterthought; it’s integrated from the beginning—guards are installed, PPE areas are marked, and operators receive task-specific training. After installation, a trial run highlights issues, which are logged and analyzed. Data-driven adjustments are then made to enhance flow, reduce bottlenecks, and ensure smooth, safe operation.",
+  "feedback": {
+    "_parse_error": "Expecting ',' delimiter: line 39 column 6 (char 1808)",
+    "_raw": "{\n  \"overall_summary\": \"The submission provides a comprehensive overview of the production line setup process, demonstrating a good understanding of manufacturing engineering principles. However, the response could benefit from more specific examples and a clearer structure.\",\n  \"criteria_feedback\": [\n    {\n      \"criterion_id\": \"c1\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"The response covers most essential phases of production line setup.\",\n        \"The submission discusses equipment selection, layout, efficiency, and safety.\"\n      ],\n      \"improvement_tip\": \"Consider providing more detailed examples and integrating them into the explanation for a more thorough account.\"\n    },\n    {\n      \"criterion_id\": \"c2\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"The submission demonstrates a sound understanding of manufacturing engineering principles.\",\n        \"The response mentions tools like Gantt charts and process maps.\"\n      ],\n      \"improvement_tip\": \"Ensure the use of precise terminology throughout the response to demonstrate a masterful understanding.\"\n    },\n    {\n      \"criterion_id\": \"c3\",\n      \"rating\": \"average\",\n      \"evidence\": [\n        \"The explanation has some structure but is not consistently clear.\",\n        \"The flow of ideas is sometimes difficult to follow.\"\n      ],\n      \"improvement_tip\": \"Revise the response to ensure a logical and lucid presentation for improved clarity.\"\n    },\n    {\n      \"criterion_id\": \"c4\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"The response provides good explanations regarding layout, efficiency, and safety.\",\n        \"The submission mentions data-driven adjustments.\"\n      ],\n      \"improvement_tip\": \"Incorporate more specific examples and robust reasoning to offer profound insights.\"\n    },\n    {\n      \"criterion_id\": \"c5\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"Writing is clear with very few grammatical or spelling errors.\",\n        \"Professional and precise language is consistently employed.\"\n      ],\n      \"improvement_tip\": \"Maintain the current"
+  }
+},
+{
+  "index": 5,
+  "gold_label": "Hybrid",
+  "submission": "Setting up a basic production line combines detailed technical design with real-world testing and adaptation. After the product design is reviewed, the engineer outlines the production sequence, identifying key operations such as cutting, fastening, and inspection. Machines are chosen based on their precision, capacity, and compatibility with the product materials. The engineer drafts a layout that groups processes logically and minimizes material handling. To optimize efficiency, they calculate takt time, identify bottlenecks, and use simulation software to predict performance under various conditions. Safety measures are embedded into the layout—emergency stops are installed, operator paths are kept clear, and warning signage is used. The engineer considers how intuitive the setup is for workers, conducting ergonomic checks. A limited production run serves as a testbed for identifying defects, cycle inefficiencies, and unanticipated safety issues. Feedback loops allow the engineer to refine the setup until it meets performance, quality, and safety targets.",
+  "feedback": {
+    "overall_summary": "The submission provides a clear and concise overview of the production line setup process, demonstrating a good understanding of manufacturing engineering principles. However, the response could benefit from more detailed examples and a more comprehensive discussion of safety measures.",
+    "criteria_feedback": [
+      {
+        "criterion_id": "c1",
+        "rating": "good",
+        "evidence": [
+          "The response covers most essential phases of production line setup, addressing equipment, efficiency, and safety.",
+          "The explanation has some structure but is not consistently clear; the flow of ideas is sometimes difficult to follow."
+        ],
+        "improvement_tip": "Consider providing more specific examples and a more detailed account of each phase, particularly safety measures."
+      },
+      {
+        "criterion_id": "c2",
+        "rating": "good",
+        "evidence": [
+          "Machines are chosen based on their precision, capacity, and compatibility with the product materials."
+        ],
+        "improvement_tip": "Ensure that all technical terms are used accurately and consistently throughout the response."
+      },
+      {
+        "criterion_id": "c3",
+        "rating": "good",
+        "evidence": [
+          "The response delivers a generally clear and structured explanation."
+        ],
+        "improvement_tip": "Work on refining transitions between ideas to improve the overall flow of the explanation."
+      },
+      {
+        "criterion_id": "c4",
+        "rating": "average",
+        "evidence": [
+          "The response provides good explanations with sufficient detail regarding layout and efficiency."
+        ],
+        "improvement_tip": "Include more detailed reasoning and specific examples for design and process choices, especially for safety measures."
+      },
+      {
+        "criterion_id": "c5",
+        "rating": "good",
+        "evidence": [],
+        "improvement_tip": "Maintain the current level of clarity and professionalism in the writing."
+      }
+    ],
+    "suggested_grade": "3"
+  }
+}
+]
+#####this is teaching.json
+[
+{
+  "index": 0,
+  "gold_label": "AI",
+  "submission": "Current research on early literacy development highlights the foundational role of phonological awareness, vocabulary acquisition, and print knowledge in preparing children aged 3 to 6 for reading. Children typically progress from recognizing environmental print and basic letter-sound associations at age 3 to developing phonemic segmentation and decoding skills by age 6. Evidence-based strategies such as dialogic reading and phonemic awareness games have proven highly effective in this stage, particularly when implemented consistently and in developmentally appropriate ways (Justice & Ezell, 2002; Lonigan et al., 2008). For instance, dialogic reading not only enhances vocabulary but also fosters narrative skills and inferencing abilities. Importantly, these approaches must be adapted for diverse learners. For children from multilingual backgrounds, integrating home languages and culturally relevant stories can enhance engagement and comprehension. Similarly, for children with developmental delays, visual supports and multisensory activities can scaffold learning. This inclusive lens ensures equitable access to literacy development. A wide range of peer-reviewed sources inform these practices, including Neuman and Wright (2014) on literacy equity and Snow (2006) on instructional responsiveness. The argument presented is grounded in current evidence, framed within a structured and academically rigorous paragraph that reflects clarity, coherence, and a formal writing style.",
+  "feedback": {
+    "overall_summary": "The submission demonstrates a good understanding of early literacy development and evidence-based approaches, with a clear focus on diversity and inclusion. The structure and academic writing are well-organized and formal.",
+    "criteria_feedback": [
+      {
+        "criterion_id": "c1",
+        "rating": "good",
+        "evidence": [
+          "The submission demonstrates a clear understanding of foundational early literacy skills such as phonological awareness, vocabulary, and print knowledge.",
+          "The submission explains the developmental progression of these skills for ages 3 to 6 years."
+        ],
+        "improvement_tip": "To improve, consider delving deeper into the nuances of each skill and providing more specific examples."
+      },
+      {
+        "criterion_id": "c2",
+        "rating": "good",
+        "evidence": [
+          "The submission explains and supports the effectiveness of dialogic reading and phonemic awareness games with credible evidence.",
+          "The submission mentions the importance of consistent and developmentally appropriate implementation."
+        ],
+        "improvement_tip": "To further improve, consider evaluating multiple evidence-based strategies and providing more insightful commentary."
+      },
+      {
+        "criterion_id": "c3",
+        "rating": "excellent",
+        "evidence": [
+          "The submission thoughtfully discusses diverse learner needs with examples and inclusive practices drawn from research.",
+          "The submission emphasizes the importance of integrating home languages and culturally relevant stories."
+        ],
+        "improvement_tip": "Maintain this focus on diversity and inclusion in future work."
+      },
+      {
+        "criterion_id": "c4",
+        "rating": "good",
+        "evidence": [
+          "The submission uses several appropriate sources with correct citation.",
+          "The sources are relevant and inform these practices."
+        ],
+        "improvement_tip": "To improve, consider integrating more sources to support your arguments and ensure accurate citation."
+      },
+      {
+        "criterion_id": "c5",
+        "rating": "excellent",
+        "evidence": [
+          "The essay is logically structured with a clear introduction, body, and conclusion.",
+          "The academic tone, precise language, and formal writing style are maintained throughout."
+        ],
+        "improvement_tip": "Continue to refine your structure and writing style for future assignments."
+      }
+    ],
+    "suggested_grade": "4"
+  }
+},
+{
+  "index": 1,
+  "gold_label": "AI",
+  "submission": "Early literacy development involves acquiring key skills such as phonological awareness, vocabulary, and an understanding of print, which typically emerge between the ages of 3 and 6. Children often begin by recognizing letters and sounds and gradually move towards blending phonemes and understanding word structures. Evidence-based approaches like shared book reading and phonemic games support these developments, with research showing that repeated reading and interactive questioning can boost vocabulary and listening comprehension (Whitehurst et al., 1994). Additionally, strategies can be adjusted to support children from diverse cultural and linguistic backgrounds—for example, using bilingual books or incorporating culturally familiar content can enhance relevance and motivation. While this response touches on important considerations for inclusion, more detail on implementation could strengthen the analysis. Nonetheless, academic sources are used appropriately, and the writing follows a logical structure with a mostly formal tone and minimal grammatical issues.",
+  "feedback": {
+    "_parse_error": "No balanced JSON object found in model output.",
+    "_raw": "{\n  \"overall_summary\": \"The submission demonstrates a good understanding of early literacy development and evaluates evidence-based approaches. However, it could benefit from more detailed discussion on adapting strategies for diverse learners and a stronger focus on research integration.\",\n  \"criteria_feedback\": [\n    {\n      \"criterion_id\": \"c1\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"The submission demonstrates a clear understanding of key early literacy components such as phonological awareness and vocabulary.\",\n        \"The developmental progression is explained with relevant examples.\"\n      ],\n      \"improvement_tip\": \"Consider delving deeper into the developmental aspects of print knowledge.\"\n    },\n    {\n      \"criterion_id\": \"c2\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"The submission explains and supports at least one evidence-based strategy (shared book reading and phonemic games) with credible evidence.\"\n      ],\n      \"improvement_tip\": \"Incorporate more evidence-based strategies and provide a more in-depth analysis of their effectiveness.\"\n    },\n    {\n      \"criterion_id\": \"c3\",\n      \"rating\": \"average\",\n      \"evidence\": [\n        \"The submission mentions diversity but without detailed application.\"\n      ],\n      \"improvement_tip\": \"Provide examples of how strategies can be adapted for learners with diverse linguistic, cultural, and developmental needs.\"\n    },\n    {\n      \"criterion_id\": \"c4\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"The submission uses several appropriate sources with correct citation.\"\n      ],\n      \"improvement_tip\": \"Ensure a stronger alignment between arguments and academic sources.\"\n    },\n    {\n      \"criterion_id\": \"c5\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"The essay is well-structured and mostly formal; few minor grammatical or expression issues.\"\n      ],\n      \"improvement_tip\": \"Maintain a consistent academic tone throughout the essay.\"\n    }\n  ],\n  \"suggested_grade\": \"3\""
+  }
+},
+{
+  "index": 2,
+  "gold_label": "Human",
+  "submission": "Early literacy development is such a critical phase in a child's life, especially between the ages of 3 and 6, where so much foundational learning takes place. During this period, children typically begin developing core pre-reading skills like phonological awareness, vocabulary knowledge, and an understanding of print concepts. Phonological awareness, in particular, is a strong predictor of later reading success—it includes the ability to recognize and manipulate sounds in spoken words, like rhyming or identifying beginning sounds. According to Lonigan et al. (2000), this skill emerges gradually, often starting with larger sound chunks (like syllables) and becoming more refined over time (e.g., phonemes). Alongside this, vocabulary acquisition expands rapidly through exposure to rich language environments. Young children also start to grasp print conventions—knowing that print carries meaning and how to handle a book—which sets the stage for decoding and comprehension later on.",
+  "feedback": {
+    "overall_summary": "The submission demonstrates a good understanding of early literacy development and pre-reading skills, with a clear explanation of phonological awareness and vocabulary development. However, the evaluation of evidence-based approaches and consideration of diversity could be improved.",
+    "criteria_feedback": [
+      {
+        "criterion_id": "c1",
+        "rating": "good",
+        "evidence": [
+          "The submission demonstrates a clear understanding of phonological awareness and vocabulary development.",
+          "The explanation of the developmental progression of phonological awareness is provided with relevant examples."
+        ],
+        "improvement_tip": "For excellent performance, consider expanding the discussion to include more early literacy components such as print knowledge."
+      },
+      {
+        "criterion_id": "c2",
+        "rating": "needs_improvement",
+        "evidence": [
+          "The submission mentions phonological awareness as an evidence-based approach but does not provide a critical evaluation or research support."
+        ],
+        "improvement_tip": "For good performance, research and critically evaluate at least one or two evidence-based strategies like dialogic reading or phonemic games, and support them with credible evidence."
+      },
+      {
+        "criterion_id": "c3",
+        "rating": "average",
+        "evidence": [
+          "The submission mentions diversity but without detailed application."
+        ],
+        "improvement_tip": "For good performance, discuss how approaches can be adapted for learners with diverse linguistic, cultural, and developmental needs with examples and inclusive practices drawn from research."
+      },
+      {
+        "criterion_id": "c4",
+        "rating": "good",
+        "evidence": [
+          "The submission uses several appropriate sources with correct citation."
+        ],
+        "improvement_tip": "For excellent performance, integrate extensive peer-reviewed sources with accurate citation and strong alignment with arguments."
+      },
+      {
+        "criterion_id": "c5",
+        "rating": "good",
+        "evidence": [
+          "The essay is well-structured and mostly formal; few minor grammatical or expression issues."
+        ],
+        "improvement_tip": "For excellent performance, ensure a highly structured and coherent essay with academic tone, precise language, and no grammatical errors."
+      }
+    ],
+    "suggested_grade": "3"
+  }
+},
+{
+  "index": 3,
+  "gold_label": "Human",
+  "submission": "Learning to read doesn't just start when a child enters school—early literacy development begins much earlier, especially between the ages of 3 and 6. During this time, children start to develop key pre-reading skills like phonological awareness, vocabulary, and knowledge about print. For example, they begin to understand that words are made up of sounds, and they start to recognise letters and how to handle a book. These skills are the building blocks that help children learn to read later on. Most children show certain patterns in their development, like being able to rhyme simple words around age 4 or recognising a few letters of the alphabet before starting school.",
+  "feedback": {
+    "overall_summary": "The submission demonstrates a good understanding of early literacy development and key pre-reading skills. However, it could benefit from a more in-depth evaluation of evidence-based approaches and a stronger focus on diversity and inclusion. The writing style is clear and well-structured.",
+    "criteria_feedback": [
+      {
+        "criterion_id": "c1",
+        "rating": "good",
+        "evidence": [
+          "The submission demonstrates a clear understanding of key early literacy components like phonological awareness and print knowledge.",
+          "The submission explains typical developmental aspects, such as recognising letters and rhyming simple words."
+        ],
+        "improvement_tip": "For excellent performance, consider delving deeper into the developmental progression of each component and providing relevant examples."
+      },
+      {
+        "criterion_id": "c2",
+        "rating": "needs_improvement",
+        "evidence": [
+          "The submission mentions pre-reading skills but does not critically evaluate or provide evidence-based approaches."
+        ],
+        "improvement_tip": "Research and discuss at least one or two evidence-based strategies with credible evidence to support their effectiveness."
+      },
+      {
+        "criterion_id": "c3",
+        "rating": "average",
+        "evidence": [
+          "The submission mentions diversity but without detailed application."
+        ],
+        "improvement_tip": "For good performance, identify key considerations for diverse learners and discuss how approaches can be adapted for learners with diverse linguistic, cultural, and developmental needs."
+      },
+      {
+        "criterion_id": "c4",
+        "rating": "good",
+        "evidence": [
+          "The submission uses several appropriate sources with correct citation."
+        ],
+        "improvement_tip": "For excellent performance, integrate extensive peer-reviewed sources with accurate citation and strong alignment with arguments."
+      },
+      {
+        "criterion_id": "c5",
+        "rating": "good",
+        "evidence": [
+          "The essay is well-structured and mostly formal."
+        ],
+        "improvement_tip": "For excellent performance, ensure a highly structured and coherent essay with academic tone, precise language, and no grammatical errors."
+      }
+    ],
+    "suggested_grade": "3"
+  }
+},
+{
+  "index": 4,
+  "gold_label": "Hybrid",
+  "submission": "Early literacy development is a critical phase for children aged between 3 and 6. During this foundational period, children typically begin developing core pre-reading skills like phonological awareness, vocabulary knowledge, and an understanding of print concepts. Phonological awareness, in particular, is a strong predictor of later reading success. It includes the ability to recognize and manipulate sounds in spoken words, like rhyming or identifying beginning sounds. According to Lonigan et al. (2000), this skill emerges gradually, often starting with larger sound chunks (e.g. syllables) and becoming more refined over time (e.g. phonemes). The child rapidly acquires new vocabulary through exposure to rich language environments. He or she also starts to grasp print conventions by knowing that print carries meaning and how to handle a book. This sets the stage for decoding and comprehension later on.",
+  "feedback": {
+    "_parse_error": "No balanced JSON object found in model output.",
+    "_raw": "{\n  \"overall_summary\": \"The submission demonstrates a good understanding of early literacy development and pre-reading skills, but could benefit from more evaluation of evidence-based approaches and a stronger focus on diversity and inclusion. The writing is clear and well-structured.\",\n  \"criteria_feedback\": [\n    {\n      \"criterion_id\": \"c1\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"The submission demonstrates a clear understanding of key early literacy components like phonological awareness, vocabulary, and print knowledge.\",\n        \"The explanation of the developmental progression of phonological awareness is provided with relevant examples.\"\n      ],\n      \"improvement_tip\": \"For an excellent rating, consider delving deeper into the developmental aspects of other early literacy components.\"\n    },\n    {\n      \"criterion_id\": \"c2\",\n      \"rating\": \"needs_improvement\",\n      \"evidence\": [\n        \"The submission mentions phonological awareness as an evidence-based approach, but does not provide a critical evaluation or supporting research.\"\n      ],\n      \"improvement_tip\": \"Incorporate research evidence to support the effectiveness of the mentioned approaches and provide critical commentary.\"\n    },\n    {\n      \"criterion_id\": \"c3\",\n      \"rating\": \"average\",\n      \"evidence\": [\n        \"The submission mentions diversity but without detailed application.\"\n      ],\n      \"improvement_tip\": \"Discuss how the approaches can be adapted for learners with diverse linguistic, cultural, and developmental needs.\"\n    },\n    {\n      \"criterion_id\": \"c4\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"The submission uses several appropriate sources with correct citation.\"\n      ],\n      \"improvement_tip\": \"Ensure that all sources are academic and that they are integrated more seamlessly into the essay.\"\n    },\n    {\n      \"criterion_id\": \"c5\",\n      \"rating\": \"good\",\n      \"evidence\": [\n        \"The essay is well-structured and mostly formal.\"\n      ],\n      \"improvement_tip\": \"Maintain the academic tone consistently throughout the essay and address any minor grammatical or expression issues.\"\n    }\n  ],\n  \"suggested_grade\": \"3\""
+  }
+},
+{
+  "index": 5,
+  "gold_label": "Hybrid",
+  "submission": "Literacy development in children does not need to begin with school age. Indeed, key skills such as phonological awareness, vocabulary, and an understanding of print could be developed much earlier, especially between the ages of 3 and 6. During this foundational period, it has been observed that children begin to understand that words are made up of sounds. They also learn to recognise letters and handle books. Around the age of four, most children are able to rhyme simple words or recognise a few letters of the alphabet. All of these skills form the foundation that helps children learn to read later on.",
+  "feedback": {
+    "overall_summary": "The submission demonstrates a good understanding of early literacy development and key skills, but could benefit from more evaluation of evidence-based approaches and a stronger focus on diversity and inclusion. The writing is clear and well-structured.",
+    "criteria_feedback": [
+      {
+        "criterion_id": "c1",
+        "rating": "good",
+        "evidence": [
+          "The submission demonstrates a clear understanding of key early literacy components such as phonological awareness and print knowledge."
+        ],
+        "improvement_tip": "For excellent performance, consider discussing the developmental progression of these skills in more detail with relevant examples."
+      },
+      {
+        "criterion_id": "c2",
+        "rating": "needs_improvement",
+        "evidence": [
+          "The submission mentions some strategies but does not provide a critical evaluation or research support."
+        ],
+        "improvement_tip": "Research and discuss at least one or two evidence-based strategies with credible evidence to support pre-reading skills."
+      },
+      {
+        "criterion_id": "c3",
+        "rating": "average",
+        "evidence": [
+          "The submission mentions diversity but without detailed application."
+        ],
+        "improvement_tip": "Think about how approaches can be adapted for learners with diverse linguistic, cultural, and developmental needs."
+      },
+      {
+        "criterion_id": "c4",
+        "rating": "good",
+        "evidence": [
+          "The submission uses several appropriate sources with correct citation."
+        ],
+        "improvement_tip": "For excellent performance, integrate extensive peer-reviewed sources with accurate citation and strong alignment with arguments."
+      },
+      {
+        "criterion_id": "c5",
+        "rating": "good",
+        "evidence": [
+          "The essay is well-structured and mostly formal."
+        ],
+        "improvement_tip": "For excellent performance, ensure a highly structured and coherent essay with academic tone, precise language, and no grammatical errors."
+      }
+    ],
+    "suggested_grade": "3"
+  }
+}
+]

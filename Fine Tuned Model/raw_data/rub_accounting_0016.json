@@ -1,0 +1,489 @@
+{
+  "domain": "Accounting",
+  "prompt": "Examine how accounting practices support environmental, social, and governance (ESG) disclosures in business reporting.",
+  "rubric": {
+    "rubric_id": "rub_accounting_0016",
+    "criteria": [
+      {
+        "criterion_id": "c1",
+        "name": "Understanding of ESG and Sustainability Concepts",
+        "description": "Demonstrates understanding of ESG components and sustainability accounting frameworks.",
+        "performance_descriptors": {
+          "excellent": "Clearly explains ESG components and links them to accounting practices.",
+          "good": "Describes ESG dimensions with some connection to accounting.",
+          "average": "Mentions ESG concepts with limited detail.",
+          "needs_improvement": "Basic understanding of ESG; unclear connection to accounting.",
+          "poor": "Fails to explain ESG or its relevance to accounting."
+        },
+        "weight": 20
+      },
+      {
+        "criterion_id": "c2",
+        "name": "Application of Reporting Standards and Frameworks",
+        "description": "Applies standards such as GRI or integrated reporting principles.",
+        "performance_descriptors": {
+          "excellent": "Effectively applies multiple reporting frameworks like GRI or TCFD.",
+          "good": "Applies at least one ESG reporting standard appropriately.",
+          "average": "Mentions frameworks with limited detail or understanding.",
+          "needs_improvement": "Minimal or incorrect reference to frameworks.",
+          "poor": "No discussion of sustainability standards."
+        },
+        "weight": 40
+      },
+      {
+        "criterion_id": "c3",
+        "name": "Analysis of ESG Accounting Practices",
+        "description": "Analyzes the role of accounting in tracking, reporting, and improving ESG performance.",
+        "performance_descriptors": {
+          "excellent": "Insightfully analyzes how accounting measures and communicates ESG performance.",
+          "good": "Explains how ESG performance is reported through accounting.",
+          "average": "Touches on ESG tracking with little analytical depth.",
+          "needs_improvement": "Limited analysis of accounting's role in ESG.",
+          "poor": "No meaningful discussion of ESG accounting practices."
+        },
+        "weight": 15
+      },
+      {
+        "criterion_id": "c4",
+        "name": "Impact on Stakeholders and Decision-Making",
+        "description": "Evaluates how ESG disclosures influence investor decisions and corporate image.",
+        "performance_descriptors": {
+          "excellent": "Clearly explains how high-quality ESG disclosures affect stakeholder trust and decisions.",
+          "good": "Explains ESG influence with minor gaps in clarity.",
+          "average": "Mentions investor reaction to ESG reporting with limited support.",
+          "needs_improvement": "Minimal or unclear explanation of ESG impact.",
+          "poor": "No discussion of ESG’s stakeholder relevance."
+        },
+        "weight": 25
+      }
+    ]
+  },
+  "submissions": [
+    {
+      "quality": "Excellent",
+      "authorship": "ai",
+      "key_points": [
+        "Define ESG and explain how each component relates to business sustainability.",
+        "Describe the role of accounting in preparing integrated and sustainability reports.",
+        "Discuss how carbon and environmental costs are tracked and reported.",
+        "Apply GRI or similar frameworks to ESG data reporting.",
+        "Evaluate how ESG transparency impacts investor trust and long-term value creation."
+      ],
+      "llm_questions": [
+        "What does ESG stand for and how does it relate to corporate sustainability?",
+        "How does accounting contribute to preparing integrated reports or sustainability disclosures?",
+        "What is the Global Reporting Initiative (GRI) and how is it used in ESG reporting?",
+        "How are environmental and carbon costs tracked in accounting systems?",
+        "How do investors respond to companies with strong ESG disclosure practices?"
+      ],
+      "llm_answers": [
+        "ESG stands for Environmental, Social, and Governance. It provides a framework for evaluating a company's performance on sustainability and ethical issues, which are critical components of long-term corporate value.",
+        "Accounting provides the data infrastructure for ESG disclosures. It involves identifying, measuring, and reporting non-financial metrics, such as carbon emissions or employee turnover, alongside financial data in integrated or standalone sustainability reports.",
+        "The GRI is a globally recognized framework that provides standardized guidelines for reporting on a wide range of sustainability topics. Companies use GRI Standards to ensure their ESG disclosures are comprehensive, consistent, and comparable.",
+        "Environmental costs are tracked through specialized methods like environmental management accounting (EMA), which allocates costs for waste management and pollution control. Carbon accounting specifically measures greenhouse gas emissions, often using protocols like the GHG Protocol, and may assign a financial value for internal decision-making or compliance.",
+        "Investors increasingly use ESG disclosures to assess risk and identify opportunities. Companies with strong, transparent ESG reporting are often perceived as less risky and better managed, which can attract long-term capital, lower the cost of borrowing, and enhance brand reputation."
+      ],
+      "final_submission": "Accounting practices are fundamental to the integrity and utility of Environmental, Social, and Governance (ESG) disclosures in modern business reporting.\n\nBy extending beyond traditional financial metrics, accounting provides the structured systems necessary to measure, verify, and report on a company's sustainability performance, thereby enabling transparent communication with stakeholders.\n\nThe environmental component involves accounting for carbon emissions, water usage, and waste management, often using specific techniques like Environmental Management Accounting (EMA) to track and allocate these costs. Social metrics, such as employee diversity, safety records, and supply chain labor standards, require robust internal control systems, similar to financial accounting, to ensure data accuracy. Governance aspects are supported by accounting through transparent reporting of executive compensation, board structure, and ethical business practices. To standardize this reporting, frameworks like the Global Reporting Initiative (GRI) and the Task Force on Climate-related Financial Disclosures (TCFD) provide crucial guidance. For instance, TCFD prompts companies to disclose climate-related risks and opportunities within their financial filings, directly linking environmental performance to financial stability. This integration of ESG data into mainstream reports, often through an Integrated Reporting (<IR>) framework, allows investors, customers, and regulators to make more informed decisions. High-quality, audited ESG disclosures enhance stakeholder trust, mitigate risk, and can lead to a lower cost of capital, demonstrating that robust accounting for sustainability is not just an ethical imperative but a source of long-term value creation.\n\nIn conclusion, disciplined accounting systems are the backbone of decision‑useful ESG disclosure—linking quantified impacts to strategy and capital allocation while strengthening stakeholder trust.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Good - Good. The submission clearly breaks down the E, S, and G components and provides specific examples of how accounting practices (e.g., EMA, internal controls) support each one. (16/20)",
+        "c2": "Excellent - Excellent. The response effectively applies multiple reporting frameworks, correctly identifying the roles of GRI, TCFD, and Integrated Reporting (<IR>) in standardizing and contextualizing ESG data. (40/40)",
+        "c3": "Excellent - Excellent. The analysis is insightful, moving beyond simple description to explain *how* accounting measures and communicates performance, linking specific accounting techniques to strategic ESG outcomes. (15/15)",
+        "c4": "Excellent - Excellent. The submission clearly explains the impact on stakeholder decisions, explicitly mentioning investors, customers, and regulators, and correctly links high-quality disclosures to tangible benefits like enhanced trust and a lower cost of capital. (25/25)",
+        "total": " 96/100"
+      }
+    },
+    {
+      "quality": "Good",
+      "authorship": "ai",
+      "key_points": [
+        "Defines the three components of ESG.",
+        "Connects accounting's role primarily to tracking and reporting.",
+        "Applies one major reporting framework, like GRI, correctly.",
+        "Explains that investors use ESG information to make decisions.",
+        "Presents information logically with a formal tone."
+      ],
+      "llm_questions": [
+        "Can you explain the 'S' in ESG and how a company might account for it?",
+        "What is one common framework used for ESG reporting?",
+        "How does an ESG report differ from a standard annual financial report?",
+        "Why are investors interested in a company's ESG performance?"
+      ],
+      "llm_answers": [
+        "The 'S' stands for Social and relates to a company's relationships with its employees, suppliers, and communities. Accounting can track metrics like employee turnover rates, workplace injury statistics, and money spent on community projects.",
+        "The Global Reporting Initiative (GRI) is a very common framework that helps companies decide what to report on for their ESG activities and provides a standard format for it.",
+        "An annual financial report focuses on a company's financial performance like revenue and profit. An ESG report includes non-financial information about the company's impact on the environment and society.",
+        "Investors are interested because bad ESG performance can signal risks that aren't visible in financial numbers, like a potential for environmental fines or losing customers due to a bad reputation."
+      ],
+      "final_submission": "Accounting practices are very important for a company's Environmental, Social, and Governance (ESG) disclosures.\n\nESG reporting is how a business shows its impact on the world beyond just making money.\n\nThe environmental part looks at things like pollution and energy use. The social part is about how it treats its workers and the community. Governance is about how the company is run, like its leadership and ethics. Accounting helps by tracking the data needed for these reports. For example, the accounting department can measure the amount of waste a factory produces or track donations to local charities. Companies can use frameworks like the Global Reporting Initiative (GRI) to guide their reports. The GRI gives them a list of topics to cover so their report is complete. This information is important for stakeholders. Investors look at ESG reports to see if a company is a risky investment. A company with poor environmental practices could face large fines in the future. Therefore, good ESG reporting, supported by accurate accounting, helps build a better corporate image and informs investor decisions.\n\nIn conclusion, disciplined accounting systems are the backbone of decision‑useful ESG disclosure—linking quantified impacts to strategy and capital allocation while strengthening stakeholder trust.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Good - Good. The submission correctly describes the three ESG dimensions and provides a clear, though not deeply detailed, connection to accounting's role in tracking relevant data. (16/20)",
+        "c2": "Good - Good. It appropriately applies one major ESG reporting standard, the GRI, and correctly explains its purpose in guiding report content. (32/40)",
+        "c3": "Good - Good. The response explains that accounting is used to report on ESG performance by tracking data points (e.g., waste, donations). The analysis could be deepened by exploring *how* this data is integrated into management systems. (12/15)",
+        "c4": "Good - Good. The influence of ESG on investors is explained clearly, using the example of environmental fines to illustrate risk. The explanation of its impact on corporate image is present but less developed. (20/25)",
+        "total": " 80/100"
+      }
+    },
+    {
+      "quality": "Average",
+      "authorship": "ai",
+      "key_points": [
+        "Briefly mentions what ESG stands for.",
+        "States that accounting is used to track ESG data.",
+        "Names a reporting framework but doesn't explain its use.",
+        "Notes that investors care about ESG.",
+        "Has a basic structure but some informal language."
+      ],
+      "llm_questions": [
+        "What is ESG reporting?",
+        "Are there rules for ESG reporting like there are for financial accounting?",
+        "Why do companies create ESG reports?"
+      ],
+      "llm_answers": [
+        "It's a report that companies make about their environmental and social activities.",
+        "Not really, there are some frameworks like GRI but it's mostly voluntary. It's not as strict as GAAP for financial reporting.",
+        "Companies create them to look good to investors and customers who care about the environment and other social issues."
+      ],
+      "final_submission": "Accounting is used to support ESG disclosures.\n\nESG means Environmental, Social, and Governance.\n\nCompanies need to report on these things to show they are responsible. For the environment, accounting can track how much the company is spending on green projects. For social, it can be about employee satisfaction. Governance is about the board of directors and making sure they are fair. Accountants are good at keeping track of numbers, so they help gather all this information for the ESG report. There are standards for this, like the GRI. These reports are important because investors look at them. If a company has a bad ESG score, investors might not want to give them money. So, accounting helps the company report its ESG performance which affects how people see the company.\n\nIn conclusion, disciplined accounting systems are the backbone of decision‑useful ESG disclosure—linking quantified impacts to strategy and capital allocation while strengthening stakeholder trust.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Average - Average. The submission mentions the ESG components but the link to accounting practices is very general ('track how much the company is spending'), lacking specific detail. (13/20)",
+        "c2": "Average - Average. It correctly mentions a framework (GRI) by name, but provides no detail on how it is applied or what it entails, demonstrating limited understanding. (26/40)",
+        "c3": "Average - Average. The response touches on the idea that accounting tracks ESG data but provides very little analytical depth. It states that accountants 'help gather all this information' without analyzing the methods or challenges. (10/15)",
+        "c4": "Average - Average. It mentions that investor reactions are influenced by ESG reporting but offers limited support or explanation for this claim, simply stating they 'might not want to give them money'. (16/25)",
+        "total": " 65/100"
+      }
+    },
+    {
+      "quality": "Needs Improvement",
+      "authorship": "ai",
+      "key_points": [
+        "Shows a basic or partial understanding of ESG.",
+        "Connection between accounting and ESG is unclear or just asserted.",
+        "Reference to frameworks is minimal or incorrect.",
+        "Impact on stakeholders is mentioned vaguely.",
+        "Structure is weak and hard to follow."
+      ],
+      "llm_questions": [
+        "Is ESG just about being good to the environment?",
+        "Does a company have to do ESG reporting?",
+        "What does accounting have to do with social issues?"
+      ],
+      "llm_answers": [
+        "Mostly, yes. It's about a company's carbon footprint and if they recycle.",
+        "I don't think so, it's something extra that they do.",
+        "I'm not sure. Maybe it's about paying people fairly, which is about numbers."
+      ],
+      "final_submission": "ESG reports are about how a company is helping the planet.\n\nAccounting helps with this because it is all about numbers.\n\nTo do ESG, a company has to count its pollution, and accountants do the counting. This is the E part of ESG. There is also S and G. Social is being nice to people. Accounting puts all this in a report. Investors read the report and decide if the company is good. If the report is good, the company gets more money. So accountants need to be good at ESG to make the report look good for the investors.\n\nIn conclusion, disciplined accounting systems are the backbone of decision‑useful ESG disclosure—linking quantified impacts to strategy and capital allocation while strengthening stakeholder trust.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Needs Improvement - Needs Improvement. The submission demonstrates a very basic and incomplete understanding of ESG, focusing almost entirely on the environmental aspect. The connection to accounting is unclear and oversimplified ('accountants do the counting'). (10/20)",
+        "c2": "Needs Improvement - Needs Improvement. There is no reference, correct or incorrect, to any specific reporting frameworks or standards, indicating a significant gap in knowledge. (20/40)",
+        "c3": "Needs Improvement - Needs Improvement. The analysis of accounting's role is extremely limited and lacks any substance. It simply asserts that accountants count things without explaining any actual practices or processes. (7/15)",
+        "c4": "Needs Improvement - Needs Improvement. The explanation of the impact on investors is minimal and circular ('If the report is good, the company gets more money'). It doesn't clarify what makes a report 'good' or why an investor would provide more money. (13/25)",
+        "total": " 50/100"
+      }
+    },
+    {
+      "quality": "Poor",
+      "authorship": "ai",
+      "key_points": [
+        "Fails to define or explain ESG.",
+        "Does not mention any reporting standards.",
+        "No meaningful discussion of accounting's role in ESG.",
+        "Does not discuss stakeholder impact.",
+        "Disorganized and lacks a formal tone."
+      ],
+      "llm_questions": [
+        "What is ESG?",
+        "What is business reporting?",
+        "Is this about taxes?"
+      ],
+      "llm_answers": [
+        "I don't know.",
+        "It's when a business makes a report.",
+        "It could be. Accounting is usually about taxes."
+      ],
+      "final_submission": "Accounting is very important for a business.\n\nAll businesses need to do accounting.\n\nThey have to track their money with debits and credits. This is put on the balance sheet and the income statement. A company needs to report its profits so it can pay the right amount of taxes to the government. If the accounting is wrong the company can get in big trouble. So good accountants are important for business reporting.\n\nIn conclusion, disciplined accounting systems are the backbone of decision‑useful ESG disclosure—linking quantified impacts to strategy and capital allocation while strengthening stakeholder trust.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Poor - Poor. The submission completely fails to explain ESG or its relevance to accounting. The response is off-topic, discussing general financial accounting instead. (4/20)",
+        "c2": "Poor - Poor. There is no discussion or mention of any sustainability standards or ESG reporting frameworks whatsoever. (8/40)",
+        "c3": "Poor - Poor. There is no meaningful discussion of ESG accounting practices. The submission describes basic financial accounting (debits, credits, balance sheets) which is not relevant to the prompt. (3/15)",
+        "c4": "Poor - Poor. The submission makes no mention of ESG's relevance to stakeholders like investors. It only mentions the government in the context of taxes. (5/25)",
+        "total": " 20/100"
+      }
+    },
+    {
+      "quality": "Excellent",
+      "authorship": "ai",
+      "key_points": [
+        "Thorough understanding of ESG components and their integration.",
+        "Strong application of multiple reporting frameworks, including emerging trends.",
+        "Good analysis of accounting's role in data integrity and performance measurement.",
+        "Excellent discussion of stakeholder impact and value creation."
+      ],
+      "llm_questions": [
+        "How do emerging frameworks like TNFD or ISSB complement traditional ESG reporting?",
+        "Beyond compliance, what strategic advantages do robust ESG accounting practices offer?",
+        "Can you elaborate on the concept of 'double materiality' in the context of ESG disclosures?",
+        "How do assurance services enhance the credibility of ESG accounting data?"
+      ],
+      "llm_answers": [
+        "Emerging frameworks like TNFD (Taskforce on Nature-related Financial Disclosures) and ISSB (International Sustainability Standards Board) aim to standardize and broaden the scope of ESG reporting. TNFD specifically focuses on nature-related risks and opportunities, while ISSB aims for a global baseline of sustainability disclosures, building on TCFD. They complement existing frameworks by providing more specific, financially-material guidance, moving towards mandatory reporting.",
+        "Robust ESG accounting offers several strategic advantages: enhanced access to capital through attracting ESG-conscious investors, improved risk management by identifying potential environmental and social liabilities early, increased operational efficiency through resource optimization, stronger brand reputation and customer loyalty, and improved employee engagement and talent acquisition.",
+        "Double materiality considers two perspectives: financial materiality (how sustainability issues affect the company's financial performance) and impact materiality (how the company's operations affect the environment and society). Both are crucial for comprehensive ESG reporting, moving beyond a sole focus on financial risks to include the company's broader impact.",
+        "Assurance services, typically provided by external auditors, enhance the credibility of ESG accounting data by independently verifying the accuracy, completeness, and reliability of the disclosed information. This provides stakeholders with greater confidence in the reports, reduces information asymmetry, and helps prevent greenwashing, thereby strengthening the company's reputation and trust."
+      ],
+      "final_submission": "The integration of accounting practices into Environmental, Social, and Governance (ESG) disclosures is no longer merely a compliance exercise but a strategic imperative that underpins corporate accountability and long-term value creation. Accounting provides the rigorous methodologies for identifying, measuring, monitoring, and reporting the financial and non-financial impacts of a company's sustainability performance. For the 'E' component, accounting is critical in quantifying carbon footprints, tracking resource consumption, and assessing climate-related risks and opportunities, often employing environmental management accounting techniques and aligning with frameworks like the Greenhouse Gas Protocol. The 'S' dimension make use ofs accounting principles to report on human capital metrics, supply chain ethics, and community investments, ensuring clarity in social impact. Finally, the 'G' aspect, traditionally entwined with financial reporting, extends to board diversity, executive compensation, and anti-corruption measures, all benefiting from robust internal controls and audit mechanisms.\n\nKey reporting standards and frameworks, such as the Global Reporting Initiative (GRI), the Sustainability Accounting Standards Board (SASB), and the Task Force on Climate-related Financial Disclosures (TCFD), provide structured guidance. Accounting professionals are instrumental in applying these frameworks to ensure data consistency, comparability, and verifiability. For instance, SASB focuses on financially material ESG issues for specific industries, requiring accountants to understand industry-specific metrics. The emerging International Sustainability Standards Board (ISSB) aims to create a global baseline for sustainability reporting, further embedding ESG into mainstream financial reporting. The robust collection and assurance of this data significantly influence stakeholders, particularly investors, who increasingly use ESG performance as a key determinant in capital allocation and risk assessment. Transparent, high-quality ESG disclosures, backed by verifiable accounting data, enhance corporate reputation, attract responsible investment, mitigate regulatory and reputational risks, and ultimately contribute to a more sustainable and resilient business model.\n\nIn conclusion, disciplined accounting systems are the backbone of decision‑useful ESG disclosure—linking quantified impacts to strategy and capital allocation while strengthening stakeholder trust.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Excellent - Excellent. The submission clearly explains ESG components with advanced integration concepts (e.g., 'strategic imperative', 'double materiality' indirectly) and strong links to accounting practices and value creation. (19/20)",
+        "c2": "Excellent - Excellent. The response effectively applies multiple frameworks (GRI, SASB, TCFD, ISSB, GHG Protocol) and demonstrates an understanding of their specific focuses and emerging roles, highlighting the accountant's instrumental role. (38/40)",
+        "c3": "Good - Good. The analysis of accounting's role is solid, covering measurement, monitoring, and reporting, and mentioning data integrity. It could delve slightly deeper into specific accounting challenges or innovative techniques for truly 'Excellent' analytical insight. (12/15)",
+        "c4": "Excellent - Excellent. The submission clearly and insightfully explains how high-quality ESG disclosures, backed by verifiable accounting data, influence investors, enhance reputation, mitigate risk, and lead to a more resilient business model. (23/25)",
+        "total": " 92/100"
+      }
+    },
+    {
+      "quality": "Good",
+      "authorship": "ai",
+      "key_points": [
+        "Clear understanding of ESG components and general connection to accounting.",
+        "Mentions key reporting frameworks (GRI, SASB) but lacks detailed application.",
+        "Decent explanation of how accounting tracks ESG data.",
+        "Recognizes stakeholder interest but with limited depth on decision-making impact."
+      ],
+      "llm_questions": [
+        "What are some common challenges companies face when collecting ESG data for reporting?",
+        "How does the concept of 'materiality' apply to ESG reporting?",
+        "Explain the difference between quantitative and qualitative ESG disclosures.",
+        "Why is it important for ESG information to be comparable across companies?"
+      ],
+      "llm_answers": [
+        "Companies often struggle with data collection due to fragmented data sources across departments, lack of standardized internal metrics, data quality issues, and the sheer volume of non-financial data required. It can also be difficult to accurately measure indirect impacts.",
+        "Materiality in ESG reporting means identifying the most significant ESG issues that could impact a company's financial performance or its stakeholders. Companies should focus their reporting on these material topics rather than trying to cover everything.",
+        "Quantitative ESG disclosures involve measurable data, such as tons of CO2 emissions, liters of water consumed, or number of employee training hours. Qualitative disclosures describe policies, strategies, and management approaches, for example, a company's diversity and inclusion policy or its approach to supply chain ethics.",
+        "Comparability is crucial because it allows investors and other stakeholders to evaluate and benchmark companies against their peers or industry averages. Without comparable data, it's very difficult to make informed investment decisions or assess relative performance."
+      ],
+      "final_submission": "Accounting practices play a crucial role in enabling transparent and reliable Environmental, Social, and Governance (ESG) disclosures. Understanding ESG begins with recognizing its three pillars: 'E' for environmental impact (like carbon emissions, resource use), 'S' for social aspects (such as employee welfare, community engagement), and 'G' for governance (including ethical leadership, board structure). Accounting departments help gather and verify the data related to these areas. For instance, they track expenditures on environmental protection, measure waste generation, or document social investments. This data forms the basis for a company’s sustainability report.\n\nSeveral frameworks guide companies in their ESG reporting. The Global Reporting Initiative (GRI) is widely used, offering comprehensive standards for a broad range of sustainability topics. Another important framework is the Sustainability Accounting Standards Board (SASB), which focuses on financially material ESG issues specific to different industries. While these frameworks provide guidance, the application can be complex, often requiring companies to adapt their internal accounting systems to capture relevant non-financial data. The role of accounting is to ensure that the reported ESG data is accurate and verifiable, similar to how financial data is treated. High-quality ESG disclosures significantly influence stakeholders. Investors, for example, increasingly consider ESG factors as part of their investment analysis, looking for companies that manage these risks and opportunities effectively. A company with strong ESG performance can enhance its reputation, attract responsible capital, and potentially improve its long-term viability, although the direct financial impacts can sometimes be hard to quantify immediately.\n\nIn conclusion, disciplined accounting systems are the backbone of decision‑useful ESG disclosure—linking quantified impacts to strategy and capital allocation while strengthening stakeholder trust.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Excellent - Excellent. The submission provides a clear and comprehensive understanding of ESG components and their general connection to accounting practices (e.g., tracking expenditures, measuring waste). (18/20)",
+        "c2": "Average - Average. While the submission correctly names and briefly describes GRI and SASB, the explanation of their *application* is limited. It notes complexity but doesn't elaborate on specific examples or methodologies of application. (27/40)",
+        "c3": "Good - Good. The response explains how accounting tracks and verifies ESG data (expenditures, waste, social investments). It discusses the need for internal system adaptation but could offer deeper analysis of the challenges or strategic integration. (12/15)",
+        "c4": "Average - Average. The submission correctly identifies investor interest and potential benefits like enhanced reputation and capital attraction. However, the explanation of *how* these disclosures specifically influence decisions or the mechanisms of impact could be more developed and supported. (16/25)",
+        "total": " 73/100"
+      }
+    },
+    {
+      "quality": "Average",
+      "authorship": "ai",
+      "key_points": [
+        "Basic understanding of ESG components.",
+        "Limited and general understanding of reporting frameworks.",
+        "Basic connection between accounting and data tracking for ESG.",
+        "Good explanation of stakeholder interest, particularly investors."
+      ],
+      "llm_questions": [
+        "What are some common environmental metrics reported in ESG?",
+        "How can accounting help track a company's social impact?",
+        "What is 'greenwashing' and why is accurate accounting important to prevent it?",
+        "Are there any legal requirements for ESG reporting in some countries?"
+      ],
+      "llm_answers": [
+        "Common environmental metrics include greenhouse gas emissions, water usage, waste generated, and energy consumption. Companies also report on renewable energy use.",
+        "Accounting can help by tracking costs associated with employee benefits, training programs, community investments, and safety initiatives. It also helps manage data for employee diversity and turnover rates.",
+        "Greenwashing is when a company makes exaggerated or misleading claims about its environmental or social performance to appear more sustainable than it actually is. Accurate accounting is crucial to prevent greenwashing by providing verifiable data that supports the claims.",
+        "Yes, some countries and regions, like the EU with its Corporate Sustainability Reporting Directive (CSRD), are implementing mandatory ESG reporting requirements, making it a legal obligation for many companies."
+      ],
+      "final_submission": "Accounting plays a supporting role in Environmental, Social, and Governance (ESG) disclosures. ESG refers to the non-financial aspects of a company's operations that impact its sustainability and ethical standing. The 'E' is for environmental, covering things like pollution and natural resource use. The 'S' is social, focusing on people like employees and communities. The 'G' is governance, which means how the company is managed fairly. Accountants help by tracking numbers related to these areas. For instance, they might track the amount of electricity used, which is an environmental metric, or the money spent on employee training, a social metric. This data then goes into the ESG report.\n\nThere are different standards that companies can use for these reports, such as the Global Reporting Initiative (GRI). These standards provide guidelines on what to include, but the details of *how* they are applied are often general or not fully explained in many company reports. The application of these frameworks is still evolving, and it's not as standardized as financial accounting rules. The main job of accounting here is to make sure the data is collected correctly, though detailed analysis of how this data directly improves ESG performance isn't always clear. However, the impact on stakeholders is quite significant. Investors, especially, pay close attention to ESG reports. They use this information to decide which companies to invest in, as a company with good ESG practices is often seen as less risky and more forward-thinking. This can affect the company's stock price and its ability to raise funds. Therefore, even if the accounting methods for ESG are still developing, the transparency provided helps build trust.\n\nIn conclusion, disciplined accounting systems are the backbone of decision‑useful ESG disclosure—linking quantified impacts to strategy and capital allocation while strengthening stakeholder trust.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Average - Average. The submission provides a basic, correct understanding of the ESG components and a general connection to accounting for data tracking. It lacks deeper insight into the integration or strategic implications. (14/20)",
+        "c2": "Needs Improvement - Needs Improvement. It correctly names GRI but describes its application as \"general\" and \"not fully explained,\" indicating a limited understanding of *how* frameworks are concretely applied in practice. (20/40)",
+        "c3": "Average - Average. The response touches on accounting's role in data collection (\"track numbers\"), but the analytical depth is limited. It notes that \"detailed analysis of how this data directly improves ESG performance isn't always clear,\" which signals a lack of deeper analytical engagement. (10/15)",
+        "c4": "Good - Good. The submission clearly explains the impact on investors, linking good ESG practices to lower risk, forward-thinking perception, and effects on stock price and funding. It could be slightly more explicit on *other* stakeholders. (19/25)",
+        "total": " 63/100"
+      }
+    },
+    {
+      "quality": "Needs Improvement",
+      "authorship": "ai",
+      "key_points": [
+        "Partial understanding of ESG, with a focus on 'E' but limited 'S' and 'G'.",
+        "Vague or no reference to specific reporting standards.",
+        "Oversimplified view of accounting's role in ESG.",
+        "Limited explanation of stakeholder impact, mainly linking to general 'goodness'."
+      ],
+      "llm_questions": [
+        "What are some basic things a company can do to be more 'socially responsible'?",
+        "Is ESG reporting expensive for companies?",
+        "What kind of jobs do accountants do in ESG?",
+        "What is the difference between environmental accounting and traditional financial accounting?"
+      ],
+      "llm_answers": [
+        "Companies can treat their employees fairly, pay good wages, donate to charities, or ensure their products are safe.",
+        "Yes, it can be, because they need to collect a lot of new data and sometimes hire experts to help them understand it and write the reports.",
+        "Accountants might help collect data, make sure numbers are right, or prepare the report. It's still a new area for many accountants.",
+        "Environmental accounting looks at things like pollution costs or benefits from saving energy, which are not usually on the main financial statements. Traditional accounting is mainly about money flowing in and out of the business."
+      ],
+      "final_submission": "ESG is a new way companies are trying to show they are good for the world. It mainly talks about the environment, like making sure they don't pollute too much. Accounting comes into this because companies need to count how much energy they use or how much waste they create. This is part of the 'Environmental' side. The 'Social' part is about being fair to workers and customers. The 'Governance' part is about running the company well. Accountants help measure these things, but it’s not always clear how they do it in a special accounting way beyond just keeping records. It feels more like reporting general company activities.\n\nThere are some standards, like the GRI, but they mostly tell you what to report, not exactly how to account for it in detail. So, the application of these standards can be a bit loose. Accounting's main job here seems to be providing the numbers. The analysis of how accounting truly impacts ESG performance is often quite shallow, just saying that having numbers makes it a report. For example, knowing how much CO2 is emitted doesn't automatically mean accounting has helped reduce it. Stakeholders, like people who might invest money, do look at these reports. They want to see if a company is 'green' or 'responsible.' If a company has a good report, it might make more people want to buy their stock. But the connection between the accounting numbers and these decisions isn't always spelled out clearly; it's more of a general idea that good reports equal a good company in the eyes of the public.\n\nIn conclusion, disciplined accounting systems are the backbone of decision‑useful ESG disclosure—linking quantified impacts to strategy and capital allocation while strengthening stakeholder trust.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Needs Improvement - Needs Improvement. The submission provides a partial understanding, focusing mainly on the environmental aspect with a superficial treatment of 'Social' and 'Governance.' The connection to specific accounting practices is vague ('count how much energy they use'). (10/20)",
+        "c2": "Poor - Poor. While it mentions GRI, it immediately diminishes its role, stating it \"mostly tells you what to report, not exactly how to account for it in detail.\" This reflects a very limited understanding of framework application. (15/40)",
+        "c3": "Needs Improvement - Needs Improvement. The analysis is oversimplified, describing accounting's role as \"providing the numbers\" and stating that \"the analysis of how accounting truly impacts ESG performance is often quite shallow.\" This shows a lack of deeper analytical engagement. (8/15)",
+        "c4": "Average - Average. The submission correctly identifies that investors look at reports and want to see if a company is 'green' or 'responsible.' However, the link between the specific accounting numbers and these decisions is described as \"not always spelled out clearly,\" indicating a limited explanation of the actual impact mechanism. (15/25)",
+        "total": " 48/100"
+      }
+    },
+    {
+      "quality": "Good",
+      "authorship": "ai",
+      "key_points": [
+        "Good understanding of ESG concepts with some practical examples.",
+        "Excellent application of multiple reporting frameworks, showing how they are used.",
+        "Average analysis of how accounting improves ESG performance.",
+        "Good explanation of stakeholder influence and benefits."
+      ],
+      "llm_questions": [
+        "How do accountants ensure the accuracy and reliability of ESG data?",
+        "What is the role of technology (e.g., AI, blockchain) in enhancing ESG accounting?",
+        "How does an Integrated Report combine financial and ESG information?",
+        "What are the benefits for a company that voluntarily adopts robust ESG reporting before it's legally mandated?"
+      ],
+      "llm_answers": [
+        "Accountants ensure accuracy through internal controls, data validation procedures, reconciliations, and sometimes engaging external assurance providers. They also apply the same rigor to non-financial data as they would to financial data.",
+        "Technology can significantly enhance ESG accounting. AI can analyze vast amounts of unstructured data (e.g., social media sentiment, satellite imagery) to identify risks and opportunities. Blockchain can create immutable records for supply chain traceability, verifying ethical sourcing or carbon offsets.",
+        "An Integrated Report (<IR>) seeks to explain how a company creates value over time by connecting its financial performance with its environmental, social, and governance performance. It uses various \"capitals\" (financial, manufactured, intellectual, human, social & relationship, natural) to show a holistic view.",
+        "Voluntary adoption can provide a competitive advantage by attracting early ESG-focused investors, building a stronger reputation, demonstrating proactive risk management, and preparing the company for future mandatory regulations, thereby reducing the compliance burden later."
+      ],
+      "final_submission": "The intricate relationship between accounting practices and Environmental, Social, and Governance (ESG) disclosures is pivotal for modern corporate clarity and accountability. Accounting provides the backbone for substantiating ESG claims, transforming qualitative intentions into measurable, reportable data. The 'E' component, for example, requires accountants to track energy consumption, water usage, and waste generation, often translating these into metrics like carbon intensity or circularity rates. The 'S' aspect involves tracking human capital metrics such as employee diversity, training hours, and compensation equity, alongside community engagement investments. For 'G,' accounting bolsters clarity in board composition, executive remuneration, and anti-bribery policies through structured reporting and robust internal controls.\n\nThe application of established reporting standards and frameworks is where accounting truly shines. Companies rigorously apply guidelines from the Global Reporting Initiative (GRI) to structure their environmental and social reports, ensuring comprehensive coverage of material topics. For financial materiality, the Sustainability Accounting Standards Board (SASB) guides the disclosure of industry-specific ESG issues that can affect enterprise value. Furthermore, the principles of Integrated Reporting (<IR>) are increasingly being used to combine financial and non-financial information into a cohesive narrative of value creation. Accountants are key in interpreting these frameworks, selecting appropriate metrics, and ensuring the integrity of the reported data, which is essential for external assurance. This commitment to robust, verifiable disclosures has a profound impact on stakeholders. Investors rely on these reports to evaluate long-term risks and opportunities, influencing capital allocation decisions. Customers are increasingly conscious of a company's ethical stance, and strong ESG performance can enhance brand loyalty. Ultimately, diligent accounting for ESG fosters trust, lowers the cost of capital, and reinforces a company's social license to operate, despite some remaining challenges in full analytical integration of these metrics.\n\nIn conclusion, disciplined accounting systems are the backbone of decision‑useful ESG disclosure—linking quantified impacts to strategy and capital allocation while strengthening stakeholder trust.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Good - Good. The submission demonstrates a good understanding of ESG components, clearly linking them to practical accounting applications (e.g., carbon intensity, circularity rates, human capital metrics). (17/20)",
+        "c2": "Excellent - Excellent. The response effectively applies multiple key frameworks (GRI, SASB, <IR>), explaining their purpose and showing how accountants are instrumental in their implementation, ensuring data integrity. (36/40)",
+        "c3": "Average - Average. While the submission explains how accounting tracks and substantiates ESG claims, the analytical depth on *how* accounting specifically improves ESG performance or the challenges of analytical integration is mentioned only briefly at the end. (10/15)",
+        "c4": "Good - Good. The submission clearly explains the impact on investors (risk, opportunities, capital allocation) and customers (brand loyalty). It also touches on broader benefits like trust and social license to operate, providing a solid explanation. (19/25)",
+        "total": " 82/100"
+      }
+    }
+  ]
+}

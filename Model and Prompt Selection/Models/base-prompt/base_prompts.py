@@ -1,4 +1,4 @@
-SYSTEM_PROMPT = "You are a careful academic assistant. Be precise and return strict JSON."
+SYSTEM_PROMPT = "You are a careful academic assistant. Be precise and give clear structured output (not JSON, not CSV, no files)."
 
 def build_detection_prompt(submission: str, few_shots: List[Dict[str, Any]]) -> List[Dict[str, str]]:
     """
@@ -11,14 +11,14 @@ def build_detection_prompt(submission: str, few_shots: List[Dict[str, Any]]) -> 
         - Role-based prompting
         - Few-shot support
         - CoT (reasoning encouraged but hidden from output)
-        - Strict JSON schema output
+        - Output in plain text 
 
-    JSON Schema (strict):
-        {
-          "label": "Human|AI|Hybrid",
-          "rationale": "1–3 short bullet points of evidence",
-          "flags": ["style_inconsistency","high_verbatim","generic_phrasing","none"]
-        }
+    Expected Output (example format in plain text):
+        Label: Human | AI | Hybrid
+        Rationale:
+        - short bullet point 1
+        - short bullet point 2
+        Flags: style_inconsistency / high_verbatim / generic_phrasing / none
     """
     # Build few-shot block
     shot_texts = []
@@ -30,22 +30,25 @@ def build_detection_prompt(submission: str, few_shots: List[Dict[str, Any]]) -> 
         )
     examples_block = "\n\n".join(shot_texts) if shot_texts else "/* no examples available */"
 
-    # User-facing content
     user = f"""
 You are an AI text-source classifier for academic integrity.
 Decide whether the student submission is Human, AI, or Hybrid (AI-assisted).
 
 Guidelines:
 - Consider discourse features (specificity, subjectivity, personal context), style consistency, local/global coherence, repetitiveness, and cliché patterns.
-- Hybrid = meaningful human writing with some AI assistance (ideas, phrasing, structure), or explicit admission of mixed use.
+- Hybrid = meaningful human writing with some AI assistance, or explicit admission of mixed use.
 
 Examples:
 {examples_block}
 
-Now analyze the NEW submission step by step and return STRICT JSON.
+Now analyze the NEW submission and respond in plain text with the following structure:
+Label: ...
+Rationale:
+- point 1
+- point 2
+Flags: ...
 NEW submission:
 \"\"\"{submission}\"\"\"\n
-Think briefly, then answer only with the JSON object.
 """
     return [
         {"role": "system", "content": SYSTEM_PROMPT},
@@ -63,34 +66,34 @@ def build_feedback_prompt(domain: str, assignment_prompt: str, rubric_text: str,
     Technique:
         - Role-based prompting
         - Rubric-grounded evaluation
-        - Structured JSON report
+        - Output in plain text 
 
-    JSON Schema (strict):
-        {
-          "overall_summary": "2–4 sentence overview",
-          "criteria_feedback": [
-              {
-                "criterion_id": "...",
-                "rating": "excellent|good|average|needs_improvement|poor",
-                "evidence": ["bullet","points"],
-                "improvement_tip": "one concrete step"
-              },
-              ...
-          ],
-          "suggested_grade": "short string (optional)"
-        }
+    Expected Output (example format in plain text):
+        Overall Summary:
+        <2–4 sentence overview>
+
+        Criteria Feedback:
+        Criterion: <criterion_id>
+        Rating: Excellent | Good | Average | Needs Improvement | Poor
+        Reason:
+        - point 1
+        - point 2
+        Improvement Tip: one concrete suggestion
+
+        Overall Rating: Excellent | Good | Average | Needs Improvement | Poor
     """
     user = f"""
 You are a supportive assessor. Provide actionable feedback aligned to the rubric.
-Return a STRUCTURED report (no extraneous text).
+Return plain structured text only (no JSON, no files).
 
-Sections:
-1) "overall_summary": 2–4 sentences on strengths and priorities.
-2) "criteria_feedback": array of items, one per rubric criterion with fields:
-   - "criterion_id"
-   - "rating": one of ["excellent","good","average","needs_improvement","poor"]
-   - "evidence": 1–3 bullet points citing concrete excerpt(s) or behaviors
-   - "improvement_tip": one concrete next step
+Sections to include:
+1) Overall Summary: 2–4 sentences on strengths and priorities.
+2) Criteria Feedback: for each rubric criterion include:
+   - Criterion
+   - Rating (excellent, good, average, needs_improvement, poor)
+   - Evidence (1–3 bullet points citing excerpts or behaviors)
+   - Improvement Tip (one concrete step)
+3) Overall Rating: Excellent | Good | Average | Needs Improvement | Poor
 
 Context:
 - Domain: {domain}
@@ -101,10 +104,6 @@ Rubric (verbatim):
 
 Student submission:
 \"\"\"{submission}\"\"\"\n
-
-Constraints:
-- Be concise but specific. Do not invent rubric fields. If evidence is insufficient, say so.
-- Output MUST be valid JSON with the exact top-level keys: overall_summary, criteria_feedback, suggested_grade.
 """
     return [
         {"role": "system", "content": SYSTEM_PROMPT},

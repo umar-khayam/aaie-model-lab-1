@@ -131,7 +131,7 @@ class EvaluateModel():
             'bertscore_recall': R.mean().item(),
             'bertscore_f1': F1.mean().item()
         }
- 
+
     #Evaluate the clasification model
     def evaluate_classification_model(self, average='macro', print_result=False):
         """

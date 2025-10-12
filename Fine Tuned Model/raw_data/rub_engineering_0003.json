@@ -1,0 +1,360 @@
+{
+    "domain": "Engineering",
+    "prompt": "Outline the logical approach a civil engineer would take to plan the construction of a pedestrian bridge over a small river. Discuss site analysis, assumptions, structural design, material selection, calculations for load-bearing capacity, and presentation of the design.",
+    "rubric": {
+        "rubric_id": "rub_engineering_0003",
+        "criteria": [
+            {
+                "criterion_id": "c1",
+                "name": "Site Assessment and Assumptions",
+                "description": "Explains how site conditions are evaluated and the assumptions made for planning.",
+                "performance_descriptors": {
+                    "excellent": "Comprehensively explains site factors (e.g., soil, terrain) and justifies assumptions.",
+                    "good": "Explains key site conditions and lists assumptions clearly.",
+                    "average": "Covers general site conditions with some assumptions.",
+                    "needs_improvement": "Mentions site conditions briefly; assumptions vague.",
+                    "poor": "Fails to assess the site or state assumptions."
+                },
+                "weight": 35
+            },
+            {
+                "criterion_id": "c2",
+                "name": "Structural Design and Material Selection",
+                "description": "Describes structural planning with rational material choices for environmental and load needs.",
+                "performance_descriptors": {
+                    "excellent": "Detailed and justified design choices with proper materials for use case.",
+                    "good": "Sound design with appropriate materials mentioned.",
+                    "average": "General design approach with minimal justification.",
+                    "needs_improvement": "Design lacks detail or rationale.",
+                    "poor": "No meaningful structural plan or material discussion."
+                },
+                "weight": 30
+            },
+            {
+                "criterion_id": "c3",
+                "name": "Load Calculations and Engineering Analysis",
+                "description": "Uses appropriate methods to estimate bridge loads and capacity.",
+                "performance_descriptors": {
+                    "excellent": "Performs relevant calculations with clear method and logic.",
+                    "good": "Performs basic calculations with minor gaps.",
+                    "average": "Attempts basic load estimation with limited accuracy.",
+                    "needs_improvement": "Misapplies or misses key calculations.",
+                    "poor": "No engineering analysis or relevant formulas used."
+                },
+                "weight": 15
+            },
+            {
+                "criterion_id": "c4",
+                "name": "Design Communication and Reporting",
+                "description": "Presents bridge design report with details & technical notes.",
+                "performance_descriptors": {
+                    "excellent": "Well-documented design report using correct measurements, and technical commentary.",
+                    "good": "Explanation present with minor omissions.",
+                    "average": "Some designed identified and partially  examined.",
+                    "needs_improvement": "Basic description with unclear or missing details .",
+                    "poor": "No structured communication of the design."
+                },
+                "weight": 20
+            }
+        ]
+    },
+    "submissions": [
+        {
+            "quality": "Excellent",
+            "key_points": [
+                "Evaluation of soil type, topography, and water levels to determine foundation needs",
+                "Use of steel and reinforced concrete for durability and strength",
+                "Load capacity identified using codes and safety factors (e.g., pedestrian density)",
+                "Common structural layouts explained includeing beam, truss, or arch designs",
+                "Bridge planning, covering site analysis, design, materials, and load capacity."
+            ],
+            "llm_questions": [
+                "How do civil engineers assess a site for a pedestrian bridge?",
+                "What materials are best for short-span pedestrian bridges?",
+                "How is load capacity calculated for small bridges?",
+                "What are common structural layouts for pedestrian crossings?",
+                "How should bridge designs be presented for approval?"
+            ],
+            "llm_answers": [
+                "Civil engineers conduct a comprehensive site assessment that includes: 1) A geotechnical investigation involving soil borings to determine soil type, bearing capacity, and stability for foundation design. 2) A topographical survey to map the terrain, elevations, and the river's cross-section, which informs the bridge's span and height. 3) A hydrological study to analyze water flow rates, scour potential, and determine the 100-year flood level to ensure the bridge's clearance. 4) An environmental impact assessment to identify sensitive habitats or protected species.",
+                "For short-span pedestrian bridges, common materials include: 1) Weathering steel (e.g., ASTM A588) for superstructures like trusses or beams, as it forms a protective rust layer, minimizing maintenance. 2) Reinforced concrete for abutments and foundations due to its high compressive strength and durability. 3) Fiber-Reinforced Polymer (FRP) composites for the deck, offering a lightweight, corrosion-resistant, and high-strength alternative. 4) Pressure-treated glulam timber for aesthetic or environmentally sensitive locations, though it requires more maintenance.",
+                "Load capacity is calculated using established engineering codes, such as the AASHTO LRFD Bridge Design Specifications. The process involves: 1) Identifying all potential loads: Dead Load (the bridge's self-weight), Live Load (pedestrians, typically specified as a uniform pressure, e.g., 90 psf), Wind Load, and Seismic Load if applicable. 2) Applying load factors to these loads to create load combinations, which represent worst-case scenarios. 3) Analyzing the structural members under these combinations to calculate stresses and deflections. 4) Ensuring these calculated values are less than the material's resistance, which also has a resistance factor applied for safety.",
+                "Common structural layouts for pedestrian crossings include: 1) Beam or Girder Bridge: The simplest form, suitable for short spans, where a deck is supported by longitudinal beams. 2) Truss Bridge: A very efficient design for medium spans, using a series of interconnected triangles to distribute loads. Common types are the Pratt and Warren trusses. 3) Arch Bridge: An aesthetically pleasing design where the load is transferred through the arch to the abutments. It can be a deck arch or a through arch. 4) Cable-Stayed or Suspension Bridge: Typically used for much longer spans, but sometimes chosen for their striking appearance even on shorter spans.",
+                "Bridge designs are presented for approval through a formal design report and a set of construction drawings. The report should include: an executive summary, a design basis explaining the codes and assumptions used, detailed site analysis findings, structural analysis and calculations (often in an appendix), material specifications, and a construction sequencing plan. The drawings should be detailed engineering plans, including plan views, elevations, cross-sections, and connection details, all with precise dimensions and technical notes for the contractor."
+            ],
+            "final_submission": "Planning the construction of a pedestrian bridge over a small river requires a systematic, multi-stage approach rooted in civil engineering principles. The initial and most critical phase is the Site Analysis. This involves a comprehensive geotechnical investigation with soil borings to determine the soil's bearing capacity, informing the foundation design for abutments. Concurrently, a hydrological study is essential to establish the 100-year flood elevation, ensuring the bridge's soffit provides adequate clearance. A topographical survey will map the river valley, defining the required span and optimal placement. Key assumptions at this stage include the design life of the bridge (e.g., 75 years) and the live load, which we'll assume based on AASHTO guidelines at 90 psf (pounds per square foot) to simulate dense pedestrian traffic.\n\nFollowing site analysis, the Structural Design and Material Selection phase begins. For a typical 50-foot span over a small river, a prefabricated steel Pratt truss bridge is an excellent choice. This design is structurally efficient and can be installed quickly. The primary material would be weathering steel (ASTM A588) for the truss members, which offers long-term corrosion resistance with minimal maintenance. The bridge deck could be cast-in-place reinforced concrete over steel formwork for durability. The abutments would be constructed from reinforced concrete, designed as gravity or cantilever retaining walls founded on spread footings, the design of which is directly informed by the geotechnical report.\n\nThe core of the engineering work lies in the Load Calculations. Using the Limit States Design methodology, we would calculate various load cases. Dead loads include the self-weight of the steel truss, the concrete deck, and any railings. The primary live load is the 90 psf pedestrian load. We would also calculate environmental loads, such as wind loads on the structure's profile and, if applicable, seismic loads. These loads are factored and combined as per AASHTO specifications to determine the maximum forces (axial, shear, moment) in each structural member. These forces dictate the required size and thickness of the steel members and the amount of reinforcement in the concrete.\n\nFinally, the Presentation of the Design is formalized in a comprehensive design report and a full set of construction drawings. The report would detail all the above aspects, from site data to the final calculations, justifying all engineering decisions. The drawings would provide plan, elevation, and section views with precise dimensions, material specifications, and connection details, serving as the official guide for construction.",
+            "feedback": {
+                "c1": "Excellent. The submission provides a comprehensive explanation of site assessment, detailing specific and relevant investigations like geotechnical borings and hydrological studies. The assumptions, such as the 75-year design life and the 90 psf live load based on AASHTO standards, are clearly stated and professionally justified. (35/35)",
+                "c2": "Excellent. The structural design choice of a Pratt truss is detailed and well-justified for the specified span. Material selection is specific (e.g., ASTM A588 weathering steel) and its rationale (low maintenance, durability) is clearly articulated, demonstrating a strong understanding of material properties and their application. (30/30)",
+                "c3": "Excellent. The discussion of load calculations is thorough and follows a clear, professional methodology (Limit States Design). It correctly identifies multiple, relevant load types (dead, live, wind) and references specific industry standards (AASHTO), showing a robust and logical approach to engineering analysis. (15/15)",
+                "c4": "Excellent. The plan for design communication is exemplary. It describes a well-documented report that covers all necessary components and mentions the creation of a 'full set of construction drawings' with specific view types. This demonstrates a complete understanding of how a design is professionally communicated. (20/20)",
+                "total": "100/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "key_points": [
+                "Describes geotechnical aspects and hydraulic considerations",
+                "Outlines a suitable short-span structural form",
+                "Provides basic load combinations and factors",
+                "Explains selection of corrosion-resistant materials"
+            ],
+            "llm_questions": [
+                "Which geotechnical tests inform footing type?",
+                "What span and clearance constraints shape the layout?",
+                "Which loads dominate pedestrian bridges?",
+                "How do you justify the chosen material in text?"
+            ],
+            "llm_answers": [
+                "The primary geotechnical tests that inform footing type are the Standard Penetration Test (SPT) and Cone Penetration Test (CPT). These tests help determine the soil's density, strength, and layering. Soil samples can also be taken for laboratory analysis to find their shear strength and compressibility. This data allows an engineer to calculate the soil's bearing capacity, which dictates whether a simple shallow foundation (like a spread footing) is sufficient or if a deep foundation (like piles) is needed to transfer the load to a stronger soil layer.",
+                "The main constraints are the required horizontal span and vertical clearance. The span is determined by the width of the river at the crossing point, plus a safe distance from the banks to place the abutments. The vertical clearance is usually dictated by the high-water level, often the 100-year flood level, to prevent the bridge from being submerged or hit by debris during a flood. You must also consider any navigational requirements if boats use the river, although this is rare for small rivers.",
+                "For most pedestrian bridges, the dominant load is the live load, which is the weight of the people using the bridge. Engineering codes specify a uniform pressure to simulate a crowd, which usually creates the highest stress in the main structural members. The bridge's own weight, or dead load, is also significant. Environmental loads like wind can be important, especially for lighter, more flexible bridge designs, but the pedestrian live load is typically the primary factor in the design.",
+                "To justify a material choice in a report, you should connect the material's properties to the project's specific needs. For example, if you choose weathering steel, you would state: 'Weathering steel (ASTM A588) was selected for the main girders due to its superior corrosion resistance. This material forms a stable, protective patina, which eliminates the need for future painting, thereby reducing long-term maintenance costs and environmental impact, making it ideal for this location.' "
+            ],
+            "final_submission": "A logical approach to planning a pedestrian bridge begins with a thorough site analysis. An engineer must visit the site to understand the topography and river characteristics. This includes conducting soil tests to see what kind of ground we are building on, which will affect the foundation design. We also need to study the river's water levels, especially the highest expected flood level, so the bridge can be built high enough to be safe. We will assume standard soil conditions capable of supporting spread footing foundations and that the river is non-navigable.\n\nNext, we move to the structural design and material selection. For a bridge over a small river, a simple steel beam bridge supported by concrete abutments at each end is a very practical and cost-effective solution. Steel is chosen for the beams because of its high strength-to-weight ratio, which makes it easy to transport and erect. We would use galvanized or painted steel to protect against rust. The abutments and foundations would be made of reinforced concrete for its strength and durability in contact with the ground and water.\n\nAfter selecting the design, load-bearing capacity must be calculated. This involves adding up all the forces the bridge must resist. First is the dead load, which is the weight of the steel beams and the concrete deck. Second is the live load, which is the weight of the pedestrians. We would use a standard value from a building code to represent a crowd of people. We also need to consider wind loads. These loads are then multiplied by safety factors and combined to find the worst-case scenario for our design. We then ensure our selected steel beams and concrete sections are strong enough to handle these calculated forces.\n\nFinally, the design must be presented clearly. This is done through a set of design drawings that show the bridge's dimensions from all angles, including details of the connections. A supporting report would also be written to explain the site conditions, the assumptions made, the materials chosen, and a summary of the load calculations. This package ensures the client understands the plan and the construction team knows exactly what to build.",
+            "feedback": {
+                "c1": "Good. The submission explains key site conditions, such as the need for soil tests and analysis of flood levels. The assumptions provided are clear and relevant to the planning process, though a more detailed justification would elevate the response. (30/35)",
+                "c2": "Good. A sound and practical design (steel beam bridge) is proposed with appropriate materials (steel and concrete). The reasoning for the material choices is provided, though it could be linked more specifically to environmental factors or design life. (24/30)",
+                "c3": "Good. The submission correctly identifies the primary load types (dead, live, wind) and the general process of applying safety factors. The explanation shows a solid understanding, but it lacks the specificity of referencing a design code or detailing the load combinations, which represents a minor gap. (12/15)",
+                "c4": "Good. The description of the design presentation is clear and includes the essential components of drawings and a supporting report. The explanation is effective but could be improved by mentioning specific types of drawings (e.g., elevation, section views) or report sections. (14/20)",
+                "total": "80/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "key_points": [
+                "Mentions site access and soil conditions briefly",
+                "Suggests a generic beam solution",
+                "Provides rough capacity estimates",
+                "Notes the need for maintenance considerations"
+            ],
+            "llm_questions": [
+                "What minimum site data should be recorded?",
+                "How are pedestrian loads typically estimated?",
+                "What simple checks confirm stability?",
+                "How is durability addressed in writing?"
+            ],
+            "llm_answers": [
+                "At a minimum, you need to record the river's width to determine the span, the height of the banks, and any obvious obstacles. You should also take notes on the soil type you can see on the surface (e.g., clay, sand, rock) and look for signs of past flooding, like debris in trees. It's also important to note accessibility for construction equipment.",
+                "Pedestrian loads are usually estimated as a uniform load, which is like spreading the weight of a crowd evenly across the bridge deck. Codes provide a standard value in pounds per square foot (psf) or kilopascals (kPa). For a simple estimate, you could assume an average person's weight and estimate how many people could fit on the bridge, but using the code value is the correct way.",
+                "Simple stability checks involve ensuring the bridge won't overturn or slide. For overturning, you check that the moments from the bridge's weight (stabilizing) are significantly greater than the moments from side loads like wind (overturning). For sliding, you check that the frictional resistance between the foundation and the soil is greater than the horizontal forces pushing the bridge.",
+                "In a design document, durability can be addressed by including a section on 'Materials and Maintenance.' Here, you would explain why you chose certain materials, linking them to longevity. For example: 'Steel girders will be galvanized to prevent corrosion and extend the service life. The concrete mix for the abutments will have a low water-cement ratio to ensure high density and resistance to water penetration and freeze-thaw cycles.' "
+            ],
+            "final_submission": "To plan a pedestrian bridge over a small river, a civil engineer has to follow several steps. First, you need to do a site analysis. This means going to the location to see what you are working with. You have to check the ground to make sure it's stable enough to build on. You also need to measure the distance across the river so you know how long the bridge needs to be. You should assume that the bridge will need to be used by many people at once.\n\nFor the structural design, a simple design is usually best for a small river. A beam bridge would work well. We could use steel beams to go across the river and then put a wooden or concrete deck on top for people to walk on. Steel is strong and concrete is durable, so these are good material choices. We need to make sure the materials can handle the weather in that area.\n\nNext, you have to think about the load-bearing capacity. This is about making sure the bridge is strong enough. You calculate the weight of the bridge itself, which is the dead load. Then you estimate the weight of all the people that could be on it at one time, which is the live load. Adding these together gives you the total load the bridge must support. The steel beams have to be big enough to hold this total load without bending too much or breaking.\n\nFinally, you have to present the design. This would involve making a simple drawing of the bridge to show what it will look like. You would also write a short report that explains the plan. The report would mention the length of the bridge, the materials you chose, and state that it is designed to be safe for pedestrians. This helps everyone understand the project before construction starts.",
+            "feedback": {
+                "c1": "Average. The submission covers general site conditions by mentioning checking the ground and measuring the river. The stated assumption ('bridge will need to be used by many people') is relevant but lacks the specificity of a quantifiable design parameter. (26/35)",
+                "c2": "Average. A general design approach (a beam bridge) is suggested, and common materials are listed. However, there is minimal justification for why this specific design or these materials are the best fit for the situation beyond generic statements like 'steel is strong'. (20/30)",
+                "c3": "Average. The submission attempts a basic load estimation by correctly identifying dead and live loads. However, the method described is overly simplified and lacks any mention of safety factors, load combinations, or environmental loads, indicating limited accuracy. (10/15)",
+                "c4": "Average. The design communication is identified as a drawing and a short report. This is a correct but partial examination of the requirement, as it lacks detail on what information the drawing or report must contain to be useful for construction or approval. (10/20)",
+                "total": "66/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "key_points": [
+                "Site analysis lacks key measurements",
+                "Structural form is not connected to constraints",
+                "Load calculations are incomplete",
+                "Reporting is fragmented and unclear"
+            ],
+            "llm_questions": [
+                "What constraints must be stated before choosing a form?",
+                "What load factors are commonly applied?",
+                "How do you justify a foundation type?",
+                "What sections belong in a clear design brief?"
+            ],
+            "llm_answers": [
+                "Before choosing a structural form, you must state key constraints like the required span (distance between supports), the available construction depth (vertical space for the structure), the foundation soil conditions, and the project budget. You also need to consider aesthetic requirements and any clearance needs under the bridge.",
+                "Load factors are numbers greater than 1.0 that are multiplied by the calculated loads to provide a margin of safety. Common load factors in building and bridge design are around 1.2 for dead loads (which are well-known) and 1.6 for live loads (which are more variable and uncertain). The exact values depend on the specific design code being used.",
+                "You justify a foundation type based on the geotechnical report. If the report shows strong soil near the surface with adequate bearing capacity, you can justify a simple spread footing by showing that the pressure from the foundation is less than what the soil can handle. If the soil is weak, you justify a deep foundation (like piles) by explaining that it's necessary to transfer the load to a deeper, stronger layer.",
+                "A clear design brief should include: 1) Project Overview: What is being built and why. 2) Site Information: Location, survey data, and geotechnical findings. 3) Design Criteria: The codes and standards to be followed, and key parameters like design life and load requirements. 4) Scope of Work: A clear list of what the design will include. 5) Deliverables: The final output, such as drawings, reports, and calculations."
+            ],
+            "final_submission": "Building a pedestrian bridge over a river is a big job. As an engineer, my logical approach would be to first look at the river. I need to see how wide it is. This is the most important part of the site analysis. I would assume that the ground is okay to build on, but maybe we should check it to be safe. We also need to think about floods.\n\nFor the design, I think a wooden bridge would look nice. Wood is a natural material and would fit in with the environment. We would need to use big logs or beams to make the bridge. The design would be just a simple walkway going from one side to the other. We would need to make sure the wood is treated so it doesn't rot from the rain.\n\nWhen it comes to calculations, safety is very important. The bridge needs to hold the weight of people. I'm not sure of the exact formula, but you would have to calculate how much weight the wood beams can hold. You also have to include the weight of the bridge itself in the calculation. The bridge must be strong enough for many people.\n\nTo present the design, I would draw a picture of the bridge. The drawing would show the wooden beams and the deck. I would also explain my plan in a meeting. This would tell the client what I am planning to do and how the bridge will be built. This is how you would plan the bridge.",
+            "feedback": {
+                "c1": "Needs Improvement. The submission mentions looking at the river's width but provides no other meaningful site assessment details. The assumption that 'the ground is okay to build on' is vague and not a valid engineering assumption without investigation. (23/35)",
+                "c2": "Needs Improvement. The design choice of a wooden bridge is mentioned, but it lacks detail and a clear rationale. The connection between the site constraints and the structural form is not made, and the plan is too simplistic to be considered a meaningful engineering design. (15/30)",
+                "c3": "Needs Improvement. The submission mentions that the bridge must hold the weight of people but misses key calculations. It fails to distinguish properly between different load types and demonstrates no understanding of how to perform an engineering analysis. (7/15)",
+                "c4": "Needs Improvement. The communication plan is a 'picture' and an explanation in a meeting. This is a very basic description that is unclear and missing the essential details of a formal design report or technical drawings required for engineering projects. (10/20)",
+                "total": "45/100"
+            }
+        },
+        {
+            "quality": "Poor",
+            "key_points": [
+                "No coherent site assessment",
+                "No justified structural solution",
+                "Missing load estimates",
+                "No structured report"
+            ],
+            "llm_questions": [
+                "What is the basic sequence of bridge planning?",
+                "Which standards guide minimum checks?",
+                "How do you express constraints textually?",
+                "What is the purpose of a design summary?"
+            ],
+            "llm_answers": [
+                "The basic sequence is: 1) Planning and feasibility (is the project possible and needed?), 2) Site investigation and data collection, 3) Preliminary design (exploring options), 4) Detailed design (finalizing one option with all calculations), and 5) Construction.",
+                "In the United States, the American Association of State Highway and Transportation Officials (AASHTO) provides the primary standards for bridge design, including pedestrian bridges. For buildings, the International Building Code (IBC) and standards from the American Society of Civil Engineers (ASCE), like ASCE 7, are used.",
+                "You express constraints in a 'Design Criteria' section of a report. For example: 'The bridge shall have a minimum clear span of 60 feet to cross the river without piers in the waterway. The vertical clearance above the 100-year flood elevation shall be no less than 3 feet.'",
+                "The purpose of a design summary, often called an executive summary, is to provide a high-level overview of the entire project for stakeholders who may not have time to read the full technical report. It should briefly describe the problem, the proposed solution, and key findings, such as the final design choice and estimated cost."
+            ],
+            "final_submission": "For a pedestrian bridge, you just need a plan. First you go to the river and decide where to put the bridge. You need a good spot where the banks are not too far apart. You can see if the ground looks hard or soft. This is the site analysis.\n\nThen you decide what to make it out of. You can use metal or wood. Metal is probably stronger so that is a good choice. You just need to make some beams that go across the river and put a floor on it so people don't fall in. The design is just a straight line across the water. It is not very hard to design a simple bridge like this. It needs to be safe for people walking.\n\nI dont know how to do the math for it but you have to make sure it is strong. The bridge has to hold itself up and also hold up the people. So you have to add those two things together. The materials you pick have to be strong enough for that. This is the calculation part of the job. Engineers have to do this to make sure it is a safe bridge. All bridges have to be safe for the public. This is the most important rule for any construction project that people will use everyday.\n\nFor the presentation, you tell the person who is paying for it what you are going to do. You show them your idea. A simple bridge is easy to explain. They will probably like the idea of a strong metal bridge.",
+            "feedback": {
+                "c1": "Poor. The submission completely fails to assess the site in any meaningful way. It suggests looking to see if the ground is 'hard or soft,' which is not a substitute for a geotechnical investigation, and no assumptions are stated. (10/35)",
+                "c2": "Poor. There is no meaningful structural plan. The submission suggests using 'metal beams' and a 'floor' but provides no discussion of a structural system, dimensions, or justification for the material beyond 'metal is probably stronger'. (6/30)",
+                "c3": "Poor. The submission acknowledges that calculations are needed but demonstrates a total lack of engineering analysis. It states 'I dont know how to do the math' and provides no relevant formulas or logical process for determining load capacity. (3/15)",
+                "c4": "Poor. There is no structured communication plan for the design. The suggestion to 'tell the person who is paying' does not meet the requirements of a technical design presentation, which should include formal reports and drawings. (6/20)",
+                "total": "25/100"
+            }
+        },
+        {
+            "quality": "Excellent",
+            "key_points": [
+                "In-depth site investigation including advanced environmental factors (wildlife corridor)",
+                "Innovative arch-suspension hybrid design for aesthetics and structural efficiency",
+                "Advanced computational modeling (FEM) for precise load analysis and optimization",
+                "Highly detailed report structure with consideration for long-term monitoring"
+            ],
+            "llm_questions": [
+                "How would an environmental impact assessment influence material choice for a bridge?",
+                "What are the benefits of a hybrid bridge design like arch-suspension for pedestrian use?",
+                "When is Finite Element Modeling (FEM) essential for bridge design, and what are its challenges?",
+                "Beyond standard technical drawings, what innovative elements can enhance design communication?",
+                "How do engineers account for long-term environmental degradation in bridge design life?"
+            ],
+            "llm_answers": [
+                "An environmental impact assessment (EIA) significantly influences material choice by identifying potential ecological sensitivities. For example, if a bridge spans a wildlife corridor or sensitive aquatic habitat, materials that leach chemicals (e.g., certain treated timbers) or require extensive, noisy construction methods might be disallowed. Preference would be given to non-toxic, locally sourced materials to reduce carbon footprint, or materials with high recycled content. Furthermore, the EIA might push for materials that blend aesthetically with the natural landscape, like natural stone or weathering steel, to minimize visual impact. Construction techniques that minimize disturbance (e.g., prefabrication) also influence material selection.",
+                "A hybrid arch-suspension design for a pedestrian bridge can offer several benefits. Aesthetically, it combines the graceful curve of an arch with the lightness of suspension cables, creating a visually striking structure that can become a landmark. Structurally, the arch effectively carries vertical loads in compression, while suspension cables provide additional support, distributing tensile forces and reducing the bending moments in the arch and deck. This combination can allow for longer spans with a shallower deck profile than a pure arch or beam bridge, optimize material usage, and enhance dynamic performance, reducing vibrations caused by pedestrian traffic.",
+                "Finite Element Modeling (FEM) becomes essential for bridge design when dealing with complex geometries, long spans, unique load conditions (e.g., dynamic pedestrian loads on slender structures, seismic events), or when optimizing material usage to reduce weight and cost. Its benefits include precise stress and strain analysis, prediction of deflection and vibration, and identifying potential failure points under various scenarios. Challenges include the need for highly skilled engineers to create and interpret models, the computational resources required for large models, ensuring accurate material properties and boundary conditions, and the time investment in model calibration and validation.",
+                "Beyond standard technical drawings (plans, elevations, sections), innovative elements to enhance design communication can include: 1) 3D BIM (Building Information Modeling) models, offering interactive walk-throughs and clash detection. 2) Virtual Reality (VR) or Augmented Reality (AR) experiences for immersive client presentations. 3) Animated construction sequencing simulations to clarify complex erection procedures. 4) Infographics and data visualizations to simplify complex analytical results for non-technical stakeholders. 5) Detailed environmental impact visualizations demonstrating how the bridge integrates with its surroundings.",
+                "Engineers account for long-term environmental degradation by selecting durable materials with known service lives and incorporating protective measures. This includes specifying corrosion-resistant materials (e.g., weathering steel, galvanized steel, FRP composites), applying protective coatings, and designing for inspectability and maintainability. For concrete, engineers specify appropriate mix designs (e.g., low water-cement ratio, air entrainment, supplementary cementitious materials) to resist freeze-thaw cycles, chloride ingress, and carbonation. They also design with sufficient cover for reinforcing steel and consider future repair/replacement cycles, often specifying a design life of 75-100 years and implementing a robust asset management plan."
+            ],
+            "final_submission": "The planning for a pedestrian bridge over a small, ecologically sensitive river requires an advanced, holistic civil engineering approach. Initial Site Assessment and Assumptions would involve not just standard geotechnical borings and hydrological studies (e.g., 100-year flood plain, scour potential) but also a comprehensive ecological survey to map sensitive flora/fauna and potential wildlife corridors. Topographical LIDAR scans would provide precise terrain data. Assumptions include a 100-year design life, AASHTO LRFD specifications for design loads (factored pedestrian live load of 90 psf), and consideration of potential seismic activity if the region warrants. Crucially, environmental impact mitigation is assumed as a primary design driver.\n\nFor Structural Design and Material Selection, an innovative arch-suspension hybrid bridge design is proposed, optimizing both aesthetics and structural performance. The main structure would feature slender, high-strength steel arches supporting the deck via a series of tensioned cables, allowing for a minimal footprint on the riverbanks. Materials would prioritize sustainability and longevity: weathering steel (ASTM A588) for the main arch and tension members for its self-protecting patina, thus eliminating painting; precast, high-performance concrete deck panels for rapid installation and durability, and fiber-reinforced polymer (FRP) decking for lightweight segments where appropriate. Abutments would be reinforced concrete on deep foundations to mitigate scour and seismic forces.\n\nLoad Calculations and Engineering Analysis would employ advanced computational tools, specifically Finite Element Modeling (FEM). This allows for a detailed analysis of complex load paths within the arch-suspension system, accounting for dead loads, factored live loads, dynamic pedestrian excitation, wind tunnel-tested aerodynamic loads, and seismic forces. Serviceability checks for deflection and vibration under live load would be rigorously performed to ensure pedestrian comfort. The FEM would also be used for optimization, minimizing material usage while maintaining strict safety factors in accordance with AISC and ACI codes for steel and concrete respectively.\n\nDesign Communication and Reporting would transcend traditional blueprints. While a comprehensive design report, technical specifications, and detailed construction drawings are fundamental, the presentation would also include a fully interactive Building Information Model (BIM) for stakeholder engagement, clash detection, and future facility management. High-resolution renderings and VR walk-throughs would convey the aesthetic integration. A dedicated section on lifecycle assessment and maintenance planning, including drone-based inspection protocols for cable tensioning and corrosion monitoring, would be integral to the final submission, reflecting a commitment to long-term performance and environmental stewardship.",
+            "feedback": {
+                "c1": "Excellent. The submission goes beyond basic site assessment, integrating advanced environmental considerations and specific data acquisition methods like LIDAR. Assumptions are clear, justified, and linked to modern engineering practices. (34/35)",
+                "c2": "Excellent. The proposed arch-suspension hybrid design demonstrates innovative thinking with a strong rationale for both aesthetics and structural performance. Material selection is detailed, specific (e.g., ASTM A588, FRP), and explicitly justified by sustainability and longevity. (29/30)",
+                "c3": "Excellent. The plan for load calculations and engineering analysis is highly advanced, explicitly mentioning Finite Element Modeling (FEM) and dynamic pedestrian excitation. This demonstrates a deep understanding of complex structural behavior and state-of-the-art analytical methods. (14/15)",
+                "c4": "Good. The communication plan is robust, including BIM, VR walk-throughs, and lifecycle assessment, which enhances standard reporting significantly. While comprehensive, a slightly more explicit mention of a formal document structure (e.g., executive summary, design criteria) could push it to excellent. (15/20)",
+                "total": "92/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "key_points": [
+                "Thorough geotechnical and hydrological site investigation outlined",
+                "Practical pre-stressed concrete beam design proposed for efficiency",
+                "Clear identification of major load types and use of safety factors",
+                "Standard design document package with some emphasis on visual clarity"
+            ],
+            "llm_questions": [
+                "What types of pre-construction surveys are most critical for bridge planning?",
+                "How does pre-stressed concrete enhance bridge performance compared to reinforced concrete?",
+                "What are the primary differences between serviceability and ultimate limit state calculations?",
+                "How can CAD drawings be best utilized for multi-disciplinary coordination?",
+                "What are the benefits of modular bridge components in construction?"
+            ],
+            "llm_answers": [
+                "The most critical pre-construction surveys for bridge planning include: 1) Topographic Survey: To map the existing terrain, river profile, and potential approach alignments. 2) Geotechnical Investigation: Involves drilling boreholes, sampling soil/rock, and laboratory testing to determine bearing capacity, settlement characteristics, and foundation design parameters. 3) Hydrological/Hydraulic Survey: To establish flood elevations, flow velocities, and scour potential, ensuring adequate bridge clearance and foundation protection. 4) Environmental Survey: To identify sensitive ecological areas, wetlands, or heritage sites that might impact alignment or construction methods.",
+                "Pre-stressed concrete significantly enhances bridge performance. It introduces internal compressive stresses to counteract the tensile stresses that will arise from external loads (dead and live loads). This keeps the concrete mostly in compression, preventing cracking, which improves durability, especially against corrosion of reinforcement. It also allows for longer spans with shallower sections, leading to more slender and aesthetically pleasing designs, and reduces long-term deflections (camber) compared to conventionally reinforced concrete.",
+                "Serviceability Limit State (SLS) calculations ensure the bridge performs satisfactorily under normal operating conditions without excessive deflection, vibration, or cracking. It uses unfactored loads and focuses on user comfort and appearance. Ultimate Limit State (ULS) calculations, conversely, ensure the bridge's structural integrity and safety under extreme (factored) loads, preventing collapse. ULS checks involve calculating the ultimate capacity of structural members (e.g., bending strength, shear strength) and ensuring they exceed the factored design loads, providing a margin of safety against failure.",
+                "CAD (Computer-Aided Design) drawings are best utilized for multi-disciplinary coordination by: 1) Serving as a common platform for all design disciplines (structural, civil, mechanical, electrical, landscape). 2) Enabling precise layering and referencing of information, allowing each discipline to work on their specific elements while viewing others. 3) Facilitating clash detection when combined with 3D modeling, identifying spatial conflicts before construction. 4) Providing accurate dimensioning and geometry for fabrication and construction, minimizing errors and rework. 5) Supporting digital review processes for comments and approvals.",
+                "The benefits of modular bridge components in construction include: 1) Accelerated construction schedule: Components are fabricated off-site simultaneously with on-site preparation, reducing overall project time. 2) Improved quality control: Factory conditions allow for higher precision and quality assurance than site construction. 3) Reduced site disruption: Less on-site work means fewer traffic delays, noise, and environmental impact. 4) Enhanced safety: More work performed in controlled factory environments leads to fewer on-site risks. 5) Cost predictability: Factory fabrication can offer better cost control and efficiency."
+            ],
+            "final_submission": "The logical planning for a pedestrian bridge over a small river begins with an extensive Site Assessment and Assumptions phase. This includes a detailed topographic survey to map the riverbanks, floodplain, and immediate surroundings, establishing precise elevation data. A comprehensive geotechnical investigation involving soil borings and laboratory testing is crucial to determine soil bearing capacity, settlement potential, and groundwater levels, which directly inform foundation design. Hydrological studies will assess historical flood data and define the 100-year flood elevation to ensure adequate vertical clearance and minimize scour potential. Key assumptions include a design life of 75 years, an AASHTO-compliant pedestrian live load of 85 psf, and consideration for future maintenance accessibility.\n\nFor Structural Design and Material Selection, a pre-stressed concrete I-girder bridge supported by reinforced concrete abutments is a highly efficient and durable solution for a small river crossing. Pre-stressed concrete girders offer superior strength-to-weight ratios and reduced deflections compared to conventionally reinforced concrete, allowing for longer, more slender spans and minimizing the need for intermediate piers. The material choice leverages concrete's inherent durability in wet environments and its low maintenance requirements. Abutments would be designed as cantilever reinforced concrete walls on spread footings, sized based on geotechnical findings. A non-slip, aesthetically pleasing concrete deck finish would be specified.\n\nLoad Calculations and Engineering Analysis would follow the Load and Resistance Factor Design (LRFD) methodology, per AASHTO specifications. This involves calculating dead loads (self-weight of girders, deck, railings), live loads (pedestrian traffic), environmental loads (wind, seismic if applicable), and hydraulic loads (water pressure, debris impact). These loads are then factored and combined into various load cases to determine the maximum internal forces and moments in all structural members. Both Ultimate Limit State (ULS) for strength and Serviceability Limit State (SLS) for deflection and vibration would be checked rigorously to ensure both safety against collapse and satisfactory long-term performance and pedestrian comfort.\n\nThe Design Communication and Reporting phase would culminate in a comprehensive design package. This includes a detailed engineering report outlining the site analysis, design criteria, material specifications, and a summary of all structural calculations. A full set of CAD-generated construction drawings would provide plan views, elevations, cross-sections, and detailed connection drawings, all with precise dimensions and technical notes. Specifications for concrete mixes, steel reinforcement, and pre-stressing tendons would also be included. An executive summary would provide a high-level overview for stakeholders, and a separate section on long-term maintenance recommendations would complete the submission.",
+            "feedback": {
+                "c1": "Excellent. The submission comprehensively explains critical pre-construction surveys, including topographic, geotechnical, and hydrological studies. Assumptions are clearly stated and appropriate for a detailed engineering project, demonstrating a strong understanding of foundational planning. (33/35)",
+                "c2": "Good. The choice of a pre-stressed concrete I-girder bridge is sound and well-justified for efficiency and durability. The explanation of pre-stressing benefits is clear, and material selection for abutments is appropriate. Detailed specific types of concrete or pre-stressing methods would enhance this further. (25/30)",
+                "c3": "Good. The submission correctly outlines the LRFD methodology and identifies key load types, including serviceability and ultimate limit states. While the overall process is clear, it could benefit from a brief example of a load combination or specific code reference beyond general AASHTO. (12/15)",
+                "c4": "Average. The description of the design communication package includes essential components like reports and CAD drawings. However, it is a standard approach and lacks innovative details or specific methods for enhanced clarity or stakeholder engagement beyond listing required documents. (10/20)",
+                "total": "80/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "key_points": [
+                "Identifies basic site features like width and soil type",
+                "Proposes a standard beam bridge with steel and concrete",
+                "Attempts to sum dead and live loads but lacks factors or specific methods",
+                "Basic drawing and informal discussion as presentation methods"
+            ],
+            "llm_questions": [
+                "What are the most common foundation types for small bridges?",
+                "What considerations drive the choice between steel and concrete for bridge decks?",
+                "How do safety factors contribute to bridge design?",
+                "What is the most important information to convey in a bridge design drawing?"
+            ],
+            "llm_answers": [
+                "The most common foundation types for small bridges are shallow foundations, such as spread footings or mat foundations, which distribute the bridge's load over a wide area directly onto strong, stable soil near the surface. If the surface soil is weak or unstable, deep foundations like piles (driven or bored) or drilled shafts are used to transfer the load to deeper, more competent soil layers or bedrock.",
+                "The choice between steel and concrete for bridge decks is driven by several considerations: Steel decks (e.g., orthotropic steel decks) are lighter, which can reduce the dead load on the main girders and foundations, and allow for faster construction with prefabricated panels. However, they are more susceptible to fatigue and often require specialized welding. Concrete decks are heavier but offer greater durability, vibration dampening, and resistance to wear and tear. They are also generally less expensive for typical pedestrian bridges and can be cast-in-place or precast.",
+                "Safety factors are crucial in bridge design because they account for uncertainties in material properties, construction quality, environmental loads, and analysis methods. They effectively multiply expected loads or divide material strengths to provide a margin of safety, ensuring the bridge can safely carry loads greater than those anticipated during its service life and preventing catastrophic failure. This is part of a reliability-based design approach.",
+                "The most important information to convey in a bridge design drawing includes: 1) Key dimensions (span, width, height, clearances). 2) Structural layout (type of girders, deck, abutments, foundations). 3) Material specifications (type of steel, concrete strength, reinforcement details). 4) Connection details (how elements are joined). 5) Reference points and elevations. Essentially, all information needed for a contractor to accurately build the bridge according to the engineer's design."
+            ],
+            "final_submission": "To logically plan a pedestrian bridge, a civil engineer starts with Site Assessment and Assumptions. This means visiting the area to look at the river's width and the banks to see if they are suitable. We'd also check the general soil type, like if it seems rocky or soft. For assumptions, we'd say the bridge will handle normal foot traffic and that the river does not flood frequently, so we don't need a super high bridge. We also assume easy access for construction equipment.\n\nNext is the Structural Design and Material Selection. For a small river, a simple steel beam bridge is often a practical choice. We would use steel I-beams as the main supports spanning the river, with a concrete deck on top for the walking surface. Steel is chosen for its strength and ability to span distances, while concrete provides a durable, solid deck. The abutments on each side would be made of reinforced concrete, providing a stable base for the steel beams. We'd consider using standard construction methods to keep costs reasonable.\n\nLoad Calculations and Engineering Analysis involves figuring out how strong the bridge needs to be. We need to account for the Dead Load, which is the weight of the bridge components themselves (steel beams, concrete deck, railings). Then there's the Live Load, which is the weight of the people using the bridge. We would estimate a reasonable number of people and their average weight to get this total. The total of these loads tells us the minimum strength required for the steel beams and concrete abutments. We'd ensure that the chosen beam sizes can safely support this total load without excessive bending.\n\nFinally, Design Communication and Reporting. The design would be presented using basic engineering sketches showing the bridge's layout, dimensions, and the main materials. A brief report would accompany these sketches, explaining the chosen design, the site considerations, and confirming that the bridge is designed to be safe for pedestrian use. This report would also mention any key assumptions made and a general timeline for the project. The aim is to provide enough information for the client to understand the proposal and for a construction team to move forward.",
+            "feedback": {
+                "c1": "Average. The submission identifies basic site features (river width, bank suitability, general soil type) and makes general assumptions. However, it lacks specific investigation methods (e.g., geotechnical reports) and quantitative parameters for the assumptions. (27/35)",
+                "c2": "Average. A standard design (steel beam bridge with concrete deck) is proposed with common materials. The justification for material choice is present but minimal, focusing on generic strength and durability rather than specific project needs. (21/30)",
+                "c3": "Average. The submission correctly identifies dead and live loads and the need to sum them. However, it lacks mention of safety factors, load combinations, or environmental loads, providing only a limited and simplified approach to engineering analysis. (10/15)",
+                "c4": "Needs Improvement. The communication plan involves 'basic engineering sketches' and a 'brief report,' which is a partial examination of the requirement. It haven't correctly identifies what should be included and also  lacks detail on formal presentation standards or depth of technical content. (10/20)",
+                "total": "68/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "key_points": [
+                "Minimal site assessment, focuses on visual aspects",
+                "Suggests a basic, generic truss design without clear rationale",
+                "Acknowledges need for load estimation but vague on method",
+                "Relies on verbal explanation and simple drawings for communication"
+            ],
+            "llm_questions": [
+                "What initial observations are critical during a site visit?",
+                "Why are truss bridges a common choice for medium spans?",
+                "How do engineers account for dynamic loads from pedestrians?",
+                "What is the role of technical specifications in design reporting?"
+            ],
+            "llm_answers": [
+                "During an initial site visit, critical observations include: the exact width of the river/obstacle, the topography of the approaches (steepness, stability), visible signs of soil type or bedrock, presence of existing utilities or obstacles, access routes for construction, evidence of past flooding, and any obvious environmental sensitivities or existing infrastructure. These help in conceptualizing feasible bridge types and alignments.",
+                "Truss bridges are a common choice for medium spans (e.g., 50 to 200 feet) because they are very efficient in distributing loads. They utilize a framework of interconnected triangular units, where members are primarily subjected to axial forces (tension or compression). This allows for efficient use of material, as bending moments are largely converted into axial forces, resulting in lighter structures compared to solid beam bridges for the same span, making them economical and practical.",
+                "Engineers account for dynamic loads from pedestrians by considering factors like walking frequency, resonant frequencies of the bridge, and crowd density. While a static live load (uniform pressure) covers the basic weight, for longer or more slender pedestrian bridges, dynamic analysis might be necessary. This can involve using dynamic load factors, performing modal analysis to determine natural frequencies, and ensuring these are sufficiently separated from typical pedestrian pacing frequencies to avoid resonance and uncomfortable vibrations.",
+                "Technical specifications in design reporting provide detailed requirements for materials, workmanship, and construction methods. They complement the drawings by describing the qualitative aspects of the project, such as the required concrete strength, type of steel, fabrication tolerances, testing procedures, and installation guidelines. Their role is to ensure that the project is built to the designer's intent, meets quality standards, and complies with relevant codes and regulations."
+            ],
+            "final_submission": "Planning a pedestrian bridge really starts with looking at the Site Assessment and Assumptions. I would go to the river to see how wide it is and check out the banks to make sure they're solid. It's important to look at the ground and guess if it's mostly rock or soft dirt. For assumptions, I'd say we need to build it strong enough for a lot of people to cross, and that we won't have problems with the river rising too high, but we should definitely build it a bit above the water level just in case.\n\nFor Structural Design and Material Selection, a simple truss bridge often looks good and is quite strong. We could use steel for the main parts of the truss because it's durable and can span distances effectively. The deck, where people walk, could be made from wood planks, which would give it a natural look and feel. We would have to make sure the steel is painted to prevent rust, and the wood is treated so it lasts a long time. The design would be a straightforward truss pattern connecting the two riverbanks.\n\nLoad Calculations and Engineering Analysis would involve figuring out the weight the bridge needs to carry. This means adding up the weight of the steel and wood (dead load), and then estimating the weight of the people walking on it (live load). I know there are standard numbers for how much weight per square foot of people, so I'd use that. The sum of these two loads tells us what the steel truss members need to be able to handle. It's about making sure the parts are strong enough not to break or bend too much when it's busy.\n\nWhen it comes to Design Communication and Reporting, I'd create a basic drawing of the truss bridge, showing the main dimensions and what materials are going to be used. This drawing would give a clear picture of the design. Along with the drawing, I'd have a meeting or write a short note explaining the choice of a truss bridge, the materials, and how we plan to make sure it's safe. It's important to convey that the bridge is functional and designed with safety in mind for the users.",
+            "feedback": {
+                "c1": "Needs Improvement. The submission mentions visual site assessment ('looking at the river's width, checking banks') and provides vague assumptions ('strong enough for a lot of people,' 'river not rising too high'). It lacks specific data collection methods or quantifiable parameters. (22/35)",
+                "c2": "Average. A generic truss bridge design is suggested, and common materials (steel, wood) are identified. However, the rationale for this specific design choice is minimal, and the connection to site needs or advanced engineering principles is weak. (17/30)",
+                "c3": "Needs Improvement. The submission correctly identifies dead and live loads but is vague about the 'standard numbers' and lacks any mention of safety factors, load combinations, or structural analysis methods to ensure adequate capacity. (7/15)",
+                "c4": "Needs Improvement. The communication plan consists of 'basic drawing' and a 'meeting or short note.' This lacks the necessary detail, formal structure, and comprehensive documentation expected for an engineering design report, with unclear technical notes. (4/20)",
+                "total": "50/100"
+            }
+        },
+        {
+            "quality": "Poor",
+            "key_points": [
+                "Superficial site description, no real assessment",
+                "Rudimentary design concept, no material justification",
+                "Complete absence of engineering analysis or load estimation",
+                "Minimal communication strategy, no formal report mentioned"
+            ],
+            "llm_questions": [
+                "What are the absolute minimum safety considerations for any bridge?",
+                "What is the basic difference between a beam and a suspension bridge?",
+                "Why is understanding the river's flow important for bridge design?",
+                "What happens if a bridge is built without proper load calculations?"
+            ],
+            "llm_answers": [
+                "The absolute minimum safety considerations for any bridge are: 1) Structural integrity: ensuring the bridge doesn't collapse under its own weight or anticipated loads. 2) Stability: preventing overturning or sliding. 3) Durability: resisting environmental factors and wear over its design life. 4) User safety: designing for safe passage, including railings and non-slip surfaces. 5) Maintainability: allowing for inspections and repairs.",
+                "A beam bridge relies on its deep beams (girders) to resist bending forces by carrying loads directly down to its supports. Its strength comes from the stiffness of these beams. A suspension bridge, however, primarily carries its deck loads through tension in main cables, which are then supported by towers and anchored into the ground. Its strength comes from these cables and the towers that transfer forces to the ground.",
+                "Understanding the river's flow is important for bridge design to: 1) Determine adequate vertical clearance: The bridge must be high enough to avoid being struck by high water or debris during floods. 2) Assess scour potential: High flow velocities can erode soil around foundations, potentially undermining them. 3) Plan for construction: Flow rates affect the feasibility and safety of in-water construction activities. 4) Account for hydraulic forces: Fast-moving water can exert significant lateral pressure on bridge piers and abutments.",
+                "If a bridge is built without proper load calculations, it is highly likely to be unsafe. It could lead to: 1) Excessive deflections or vibrations, making it uncomfortable or even dangerous for users. 2) Cracking or material failure under normal loads. 3) Catastrophic collapse under extreme but foreseeable events like heavy crowd loading, strong winds, or floods. 4) A significantly reduced service life, requiring costly early repairs or replacement, and potentially resulting in injuries or fatalities."
+            ],
+            "final_submission": "To plan a bridge for people to walk over a small river, you first need to pick a good spot. This is the Site Assessment part. You look at the river to see where it's narrowest and where the ground looks stable enough to put something on. You just need to walk around and get a feel for the area. We assume people will use it to cross the river.\n\nFor the Structural Design and Material Selection, I would suggest a very basic beam bridge. Just two strong pieces of material going across the river, with a flat surface on top for walking. Metal would be good for the beams because it's very strong. We could use thick planks of wood for the walking surface. The design is simple, just straight across, so it's easy to build. The materials just need to be sturdy.\n\nLoad Calculations and Engineering Analysis means making sure the bridge doesn't fall down. You have to consider the weight of the bridge itself and then the weight of the people who will be on it. You just add those two together. That total weight tells you how big and strong the metal beams need to be. It's important to make it strong enough, so I would pick really big beams just to be safe. It has to support everyone.\n\nFor the Presentation of the Design, I would just draw a simple picture of the bridge. It would show the metal beams and the wooden deck. Then I would tell the people who want the bridge what I'm going to build and how it will look. A simple drawing and explanation should be enough to get the idea across. It's a simple bridge so it doesn't need a lot of complicated papers.",
+            "feedback": {
+                "c1": "Poor. The submission offers only a superficial visual description of the site ('look at the river to see where it's narrowest'). There's no mention of actual assessment methods like soil testing or flood studies, and assumptions are vague and unquantified. (8/35)",
+                "c2": "Needs Improvement. A rudimentary design concept (basic beam bridge) is presented, but it lacks any detail about the structural system beyond 'two strong pieces.' Material justification is minimal ('metal would be good because it's very strong') and doesn't connect to specific needs. (12/30)",
+                "c3": "Poor. The submission acknowledges the need to consider the bridge's weight and people's weight but provides no understanding of engineering analysis. It suggests simply 'adding those two together' and picking 'really big beams' without any method, formulas, or safety factors. (5/15)",
+                "c4": "Poor. The communication strategy is extremely minimal ('simple picture,' 'tell the people'). There's no mention of formal reports, technical drawings, dimensions, or specific details necessary for a professional engineering design presentation. (10/20)",
+                "total": "35/100"
+            }
+        }
+    ]
+}

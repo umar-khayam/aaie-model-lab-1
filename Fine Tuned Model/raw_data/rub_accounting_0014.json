@@ -1,0 +1,502 @@
+{
+  "domain": "Accounting",
+  "prompt": "Compare the advantages and drawbacks of fair value and historical cost accounting in financial reporting.",
+  "rubric": {
+    "rubric_id": "rub_accounting_0014",
+    "criteria": [
+      {
+        "criterion_id": "c1",
+        "name": "Understanding of Valuation Methods",
+        "description": "Demonstrates clear knowledge of fair value and historical cost accounting concepts and their fundamental differences.",
+        "performance_descriptors": {
+          "excellent": "Clearly defines both methods, explains their theoretical foundations, and articulates key differences with precision.",
+          "good": "Accurately describes both valuation approaches and identifies main differences.",
+          "average": "Shows basic understanding of both methods but with limited detail or some confusion.",
+          "needs_improvement": "Unclear or incomplete understanding of one or both valuation methods.",
+          "poor": "Fails to demonstrate understanding of valuation concepts or shows fundamental errors."
+        },
+        "weight": 15
+      },
+      {
+        "criterion_id": "c2",
+        "name": "Critical Analysis of Advantages and Drawbacks",
+        "description": "Provides balanced evaluation of benefits and limitations of each valuation method, addressing relevance vs. reliability trade-offs.",
+        "performance_descriptors": {
+          "excellent": "Insightfully analyzes pros and cons of both methods, clearly discusses relevance vs. reliability tension, and considers stakeholder perspectives.",
+          "good": "Identifies key advantages and disadvantages of both approaches with some analytical depth.",
+          "average": "Lists some benefits and drawbacks but lacks critical analysis or depth.",
+          "needs_improvement": "Superficial treatment of advantages/disadvantages with limited analysis.",
+          "poor": "Fails to provide meaningful comparison or shows bias toward one method without justification."
+        },
+        "weight": 30
+      },
+      {
+        "criterion_id": "c3",
+        "name": "Application of Accounting Standards Knowledge",
+        "description": "Demonstrates understanding of relevant accounting standards (IAS 16, IFRS 13) and their role in asset valuation decisions.",
+        "performance_descriptors": {
+          "excellent": "Accurately references relevant standards, explains their requirements, and discusses how they guide valuation choices in different contexts.",
+          "good": "Shows familiarity with key standards and their basic requirements for asset valuation.",
+          "average": "Mentions relevant standards but with limited understanding of their specific provisions.",
+          "needs_improvement": "Minimal or incorrect reference to accounting standards.",
+          "poor": "No mention of relevant standards or demonstrates fundamental misunderstanding."
+        },
+        "weight": 40
+      },
+      {
+        "criterion_id": "c4",
+        "name": "Analysis of Market Impact and Practical Implications",
+        "description": "Evaluates how market fluctuations affect each method and considers practical implications for financial reporting and investor interpretation.",
+        "performance_descriptors": {
+          "excellent": "Thoroughly discusses market volatility effects, considers economic cycle impacts, and analyzes implications for different user groups.",
+          "good": "Explains how market changes affect valuations and considers some practical implications.",
+          "average": "Makes basic connections between market conditions and valuation methods.",
+          "needs_improvement": "Limited discussion of market impact or practical considerations.",
+          "poor": "Fails to address market fluctuation effects or practical implications."
+        },
+        "weight": 15
+      }
+    ]
+  },
+  "submissions": [
+    {
+      "quality": "Excellent",
+      "authorship": "ai",
+      "key_points": [
+        "Define and differentiate fair value and historical cost accounting methods clearly.",
+        "Analyze the advantages of fair value accounting, including relevance, current market conditions reflection, and transparency.",
+        "Evaluate the drawbacks of fair value accounting, including volatility, subjectivity, and potential manipulation.",
+        "Examine the benefits of historical cost accounting, including reliability, verifiability, and stability.",
+        "Assess the limitations of historical cost accounting, including outdated information and lack of current relevance.",
+        "Discuss the relevance versus reliability trade-off in accounting measurement.",
+        "Apply knowledge of relevant accounting standards (IAS 16, IFRS 13) to support arguments.",
+        "Analyze how market fluctuations impact each valuation method differently.",
+        "Consider investor interpretation and decision-making implications of each approach.",
+        "Provide examples from different asset classes (property, financial instruments, inventory) to illustrate concepts.",
+        "Structure the analysis as a balanced, critical comparison using formal academic writing."
+      ],
+      "llm_questions": [
+        "How do accounting standards like IFRS 13 guide the application of fair value?",
+        "What is the 'relevance versus reliability' trade-off and how does it manifest in this debate?",
+        "Can you illustrate the impact of market volatility on a company using fair value for its investment properties versus one using historical cost?",
+        "From an investor's perspective, what are the primary benefits of fair value reporting?"
+      ],
+      "llm_answers": [
+        "IFRS 13 provides a single, coherent framework for measuring fair value. It establishes a three-level hierarchy of inputs (Level 1: quoted prices in active markets; Level 2: observable inputs other than quoted prices; Level 3: unobservable inputs) to increase consistency, comparability, and transparency in fair value measurements.",
+        "The trade-off is a core qualitative characteristic of financial information. Fair value enhances relevance by providing current, market-based information that is highly useful for decision-making. However, it can be less reliable, especially for Level 3 inputs, as it often involves subjectivity and estimation. Conversely, historical cost is highly reliable and verifiable but loses relevance as asset values diverge from their original cost over time.",
+        "During a property boom, a company using fair value for investment properties (under IAS 40) would report significant unrealized gains, boosting earnings and equity. In contrast, a company using historical cost would show stable asset values, masking this economic gain. During a market crash, the fair value company would report large unrealized losses, increasing earnings volatility, while the historical cost company's financials would remain deceptively stable.",
+        "Investors primarily benefit from more relevant and timely information for valuation models and risk assessment. Fair value provides a better indication of a company's current financial position and the economic value of its assets and liabilities, allowing for more informed capital allocation decisions and a clearer understanding of a company's exposure to market risk."
+      ],
+      "final_submission": "The debate between historical cost and fair value accounting represents a fundamental tension in financial reporting, centered on the trade-off between reliability and relevance. Historical cost accounting, the traditional bedrock of financial statements, records assets and liabilities at their original transaction price. Its primary advantage is reliability; the cost is objective, verifiable through invoices and contracts, and provides a stable, consistent basis for reporting that is less susceptible to manipulation. However, its major drawback is a loss of relevance over time, especially in inflationary environments or for assets whose market value fluctuates significantly, potentially presenting a misleading picture of a company's true financial position.\n\nConversely, fair value accounting measures assets and liabilities at their current market or 'exit' price. This method's key advantage is its relevance, providing stakeholders, particularly investors, with up-to-date information that reflects current economic conditions. This is crucial for valuing financial instruments or investment properties. The main drawbacks are reduced reliability and increased subjectivity. As prescribed by IFRS 13, fair value measurement relies on a hierarchy of inputs, where Level 3 inputs (unobservable data) can require significant management judgment, opening the door to potential bias and earnings volatility. This volatility can create a pro-cyclical effect, amplifying market booms and busts, which concerns regulators.\n\nAccounting standards attempt to balance these methods. For example, IAS 16 allows for the revaluation model for Property, Plant, and Equipment (PPE), a move towards fair value, while still permitting the cost model. IFRS 9 mandates fair value for many financial instruments, recognizing that cost is irrelevant for managing market risk. From a practical standpoint, a real estate investment trust (REIT) using fair value for its property portfolio provides investors a clearer picture of its net asset value than one using historical cost. Ultimately, while historical cost offers a reliable anchor, the move towards fair value for specific asset classes reflects a demand for more relevant information to guide economic decision-making, despite the inherent challenges in its application.\n\nIn conclusion, neither fair value nor historical cost dominates in all contexts; informed policy mixes that balance relevance with reliability produce the most decision‑useful financial reports.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Excellent - The submission provides precise definitions for both valuation methods, correctly identifying their theoretical underpinnings—HC in verifiability and objectivity, and FV in current market-based exit price. (15/15)",
+        "c2": "Excellent - The analysis insightfully dissects the relevance-reliability trade-off, not just stating it but explaining its implications for different stakeholders like investors and regulators. It critically evaluates the pros and cons in a balanced manner. (30/30)",
+        "c3": "Excellent - The response accurately references key standards like IFRS 13, IAS 16, and IFRS 9. It goes beyond simple citation by explaining the role of the IFRS 13 hierarchy and how standards permit choices (e.g., IAS 16 cost vs. revaluation models). (40/40)",
+        "c4": "Good - The submission thoroughly discusses the impact of market volatility, specifically mentioning the pro-cyclical effects of fair value, and analyzes the implications for investor decision-making by highlighting the need for current information. (11/15)",
+        "total": "  96/100"
+      }
+    },
+    {
+      "quality": "Good",
+      "authorship": "ai",
+      "key_points": [
+        "Accurately describes both fair value and historical cost.",
+        "Identifies the main advantages and disadvantages of each method.",
+        "Discusses the concepts of relevance and reliability.",
+        "Shows familiarity with key accounting standards like IFRS.",
+        "Explains how market changes affect fair value.",
+        "Includes a relevant example to support the analysis.",
+        "Presents a well-structured and clearly written comparison."
+      ],
+      "llm_questions": [
+        "What is the main advantage of using fair value accounting?",
+        "What is the biggest drawback of historical cost?",
+        "Which accounting standard is most important for fair value measurement?",
+        "Why is historical cost considered more reliable?"
+      ],
+      "llm_answers": [
+        "The main advantage of fair value is its relevance; it reflects the current market value of assets, giving a more up-to-date picture of the company's financial position.",
+        "The biggest drawback of historical cost is that it can become outdated, especially for long-term assets during periods of inflation, potentially misleading users about the true value of the company.",
+        "IFRS 13, 'Fair Value Measurement', is the key standard that defines fair value and sets out a framework for measuring it.",
+        "Historical cost is considered more reliable because it is based on an actual past transaction. It is objective and can be easily verified by looking at a receipt or contract, so there is less room for estimation or manipulation."
+      ],
+      "final_submission": "In financial reporting, companies can value assets using either historical cost or fair value. Historical cost is the original price paid for an asset. Its main benefit is that it is reliable and objective because it's based on a real transaction. However, a major drawback is that this value can become outdated and not reflect what the asset is actually worth today. Fair value accounting, on the other hand, values assets at their current market price. The key advantage here is relevance. It gives investors a much better idea of the company's current worth. The disadvantage is that fair values can be volatile and sometimes subjective. When there isn't an active market for an asset, its fair value has to be estimated, which can be difficult and less reliable.\n\nThe choice between them often involves a trade-off between relevance and reliability. Fair value is more relevant, while historical cost is more reliable. Accounting standards, like IFRS, provide rules on when to use each method. For instance, IFRS 13 gives guidance on how to measure fair value. Some assets like financial securities are often reported at fair value because their market price is easily available and changes frequently. For example, a company holding shares in another publicly traded company would report them at their current stock market price (fair value), as the historical purchase price is not very useful for decision-making. This approach shows the true economic gain or loss to the company. In conclusion, both methods have valid uses, and the best choice depends on the type of asset and the information needs of financial statement users.\n\nIn conclusion, neither fair value nor historical cost dominates in all contexts; informed policy mixes that balance relevance with reliability produce the most decision‑useful financial reports.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Good - Good. The submission accurately describes both valuation approaches and correctly identifies their main differences regarding original cost versus current market price. (12/15)",
+        "c2": "Good - Good. Key advantages and disadvantages are identified for both methods with good analytical depth, correctly framing the discussion around the relevance vs. reliability trade-off. (24/30)",
+        "c3": "Good - Good. The response shows familiarity with key standards by mentioning IFRS and specifically citing IFRS 13 as the guide for fair value measurement, demonstrating a solid grasp of its purpose. (32/40)",
+        "c4": "Good - Good. The explanation of how market changes affect fair value is clear. The practical implications for investors needing current information are also considered effectively. (12/15)",
+        "total": "  80/100"
+      }
+    },
+    {
+      "quality": "Average",
+      "authorship": "ai",
+      "key_points": [
+        "Gives a basic definition of fair value and historical cost.",
+        "Lists some pros and cons for each method.",
+        "Mentions that accounting standards exist.",
+        "Notes that market prices affect fair value.",
+        "Uses a simple example.",
+        "Has a basic structure."
+      ],
+      "llm_questions": [
+        "What's the difference between fair value and historical cost?",
+        "Is fair value better?",
+        "Do companies have to use fair value?"
+      ],
+      "llm_answers": [
+        "Historical cost is what you paid for something in the past. Fair value is what it's worth now.",
+        "It depends. Fair value is more current, which can be good, but historical cost is more certain. So one isn't always better than the other.",
+        "No, not for everything. The accounting rules, like IFRS, say when you can or have to use it for certain assets."
+      ],
+      "final_submission": "Historical cost is the price that was paid for an asset when it was bought.\n\nFair value is the price it would be sold for today.\n\nThere are good and bad things for both. The good thing about historical cost is that the number is real and you can prove it with a receipt. The bad thing is it can be old and not useful. The good thing about fair value is that it is up-to-date information. But the bad thing is that prices go up and down a lot, so the value is always changing and can be just an estimate. For example, if a company buys a building, the historical cost is the purchase price. But its fair value might go up a lot over ten years. Using historical cost is easier but fair value might be more helpful to someone who wants to invest in the company. Accounting standards tell companies what to do, so they follow those rules. Overall, they both have a place in accounting.\n\nIn conclusion, neither fair value nor historical cost dominates in all contexts; informed policy mixes that balance relevance with reliability produce the most decision‑useful financial reports.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Average - Average. The submission shows a basic understanding of both methods, defining them simply as past price vs. current worth. More detail on their theoretical basis is needed. (10/15)",
+        "c2": "Average - Average. Some benefits and drawbacks are listed (e.g., 'real' vs. 'up-to-date'), but the response lacks critical analysis. The relevance vs. reliability trade-off is implied but not explicitly discussed or analyzed in depth. (20/30)",
+        "c3": "Average - Average. The response correctly mentions that accounting standards exist and guide practice, but it does so without providing specific names or details about their provisions. (26/40)",
+        "c4": "Average - Average. A basic connection is made that market conditions affect fair value ('prices go up and down'), but there is no deeper evaluation of this impact on financial reporting or users. (10/15)",
+        "total": "  66/100"
+      }
+    },
+    {
+      "quality": "Needs Improvement",
+      "authorship": "ai",
+      "key_points": [
+        "Attempts to define the two methods but with some confusion.",
+        "Lists one or two points without much explanation.",
+        "Makes a vague reference to 'rules'.",
+        "Provides a very weak example.",
+        "Lacks clear organization."
+      ],
+      "llm_questions": [
+        "What is fair value accounting?",
+        "Why do we use historical cost?",
+        "Are they the same thing?"
+      ],
+      "llm_answers": [
+        "It's when you account for stuff at its fair price.",
+        "I think because it's the original price and it is easy to find on the receipt.",
+        "No, one is the old price from the past and one is today's price."
+      ],
+      "final_submission": "Fair value and historical cost are two ways to do accounting.\n\nHistorical cost is from history.\n\nIts a cost that is old. Fair value is what is fair now. I think fair value is better because it shows the real value so people know what's going on. Historical cost can be wrong if the prices change. For example, a company asset might be worth more now. The rules say you have to use both sometimes. So companies have to report the right numbers. Fair value changes with the market but historical cost doesn't. This is why they are different.\n\nIn conclusion, neither fair value nor historical cost dominates in all contexts; informed policy mixes that balance relevance with reliability produce the most decision‑useful financial reports.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Needs Improvement - Needs Improvement. The submission demonstrates an unclear and incomplete understanding of the valuation methods. The definitions are circular ('fair value is what is fair') and lack substance. (7/15)",
+        "c2": "Needs Improvement - Needs Improvement. There is a superficial treatment of the advantages, with a simple assertion that fair value is 'better' because it's 'real'. This lacks any balanced analysis or discussion of drawbacks. (15/30)",
+        "c3": "Needs Improvement - Needs Improvement. There is a minimal, vague reference to 'rules' but no mention of specific accounting standards or their role in valuation. (20/40)",
+        "c4": "Needs Improvement - Needs Improvement. The discussion of market impact is limited to the simple statement that 'fair value changes with the market.' There are no practical considerations discussed. (7/15)",
+        "total": "  49/100"
+      }
+    },
+    {
+      "quality": "Poor",
+      "authorship": "ai",
+      "key_points": [
+        "Shows fundamental errors in understanding.",
+        "Fails to provide a meaningful comparison.",
+        "Makes no mention of accounting standards.",
+        "Does not address market impact.",
+        "Provides no examples.",
+        "Is poorly organized and lacks structure."
+      ],
+      "llm_questions": [
+        "What is accounting?",
+        "What is an asset?",
+        "What is a financial report?"
+      ],
+      "llm_answers": [
+        "It's about money and numbers for a business.",
+        "Something a company owns.",
+        "A paper that shows the company's money."
+      ],
+      "final_submission": "This paragraph restates the section in clearer everyday language to meet the Human requirement. Accounting has two costs.\n\nFair value cost and history cost.\n\nHistory cost is about the past. Fair value is the value of something. You need them for reports. Companies use them to count their assets. It is important to be accurate. One is better.\n\nIn conclusion, neither fair value nor historical cost dominates in all contexts; informed policy mixes that balance relevance with reliability produce the most decision‑useful financial reports.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Poor - Poor. The submission fails to demonstrate a basic understanding of the valuation concepts. The descriptions are inaccurate and show fundamental errors, such as referring to 'fair value cost'. (3/15)",
+        "c2": "Poor - Poor. There is no meaningful comparison of advantages or drawbacks. The submission makes a vague claim that 'one is better' without any justification or analysis. (6/30)",
+        "c3": "Poor - Poor. The response makes no mention of any relevant accounting standards that govern asset valuation. (8/40)",
+        "c4": "Poor - Poor. The submission completely fails to address how market fluctuations or other economic factors affect these valuation methods. (3/15)",
+        "total": "  20/100"
+      }
+    },
+    {
+      "quality": "Good",
+      "authorship": "ai",
+      "key_points": [
+        "Clearly defines fair value and historical cost, noting their core differences.",
+        "Analyzes advantages and drawbacks with good depth, linking to reliability vs. relevance.",
+        "Mentions relevant accounting standards but could elaborate more on specific applications.",
+        "Discusses market impact and implications for investors adequately.",
+        "Provides a coherent and well-structured argument."
+      ],
+      "llm_questions": [
+        "How does the concept of 'verifiability' relate to historical cost accounting?",
+        "For which types of assets is fair value particularly relevant, and why?",
+        "Can you explain the relevance-reliability trade-off with a specific example?",
+        "What challenges does market volatility pose for fair value reporting?"
+      ],
+      "llm_answers": [
+        "Verifiability is a key qualitative characteristic. Historical cost is highly verifiable because it's based on past transactions documented by receipts or contracts. This makes it objective and less prone to estimation bias, ensuring that different knowledgeable and independent observers could reach a consensus that the depiction is a faithful representation.",
+        "Fair value is particularly relevant for financial instruments (like shares, bonds, derivatives) and investment properties. This is because their market values fluctuate frequently, and an up-to-date valuation provides the most relevant information for investors making decisions about these highly liquid or market-sensitive assets.",
+        "Consider a piece of land bought 50 years ago for $10,000. Its historical cost is $10,000, which is highly reliable (easily verifiable). However, its current market value (fair value) might be $1,000,000. The $10,000 is not relevant for understanding the company's current financial position or its ability to generate future cash flows. The $1,000,000 is highly relevant but might be less reliable if there isn't an active market and significant estimation is involved.",
+        "Market volatility can cause significant swings in reported asset values and, consequently, in a company's earnings and equity. This can make financial statements harder to interpret, increase uncertainty for investors, and potentially amplify economic cycles as companies report large unrealized gains or losses during booms and busts, respectively."
+      ],
+      "final_submission": "Historical cost accounting records assets and liabilities at their original purchase price. Its primary advantage lies in its objectivity and verifiability; the cost is based on a past transaction that can be easily evidenced. This makes historical cost highly reliable, reducing the potential for manipulation and providing a stable basis for financial reporting over time. However, this stability comes at the cost of relevance. In dynamic economic environments, an asset's historical cost can quickly become outdated, failing to reflect its current economic value or the real economic position of the entity. For example, a building purchased decades ago for a nominal sum would be vastly understated on the balance sheet if only historical cost is used.\n\nFair value accounting, conversely, measures assets and liabilities at their current market price. Its main benefit is enhanced relevance, as it provides timely, up-to-date information that can be more useful for decision-making by investors and other stakeholders. This is especially critical for financial instruments where market values change constantly. The major drawbacks of fair value are its potential for subjectivity and volatility. When active markets don't exist, fair value must be estimated, often relying on complex models and management judgment, which can reduce reliability. Furthermore, fair value reporting can lead to significant swings in reported earnings as market prices fluctuate, creating volatility that may not reflect the underlying operational performance of the business.\n\nThe tension between relevance and reliability forms the core of the debate. While historical cost prioritizes verifiable, stable figures, fair value aims for more decision-useful, current information. Accounting standards, such as IAS 16 for Property, Plant, and Equipment (which allows for revaluation to fair value in certain circumstances) and IFRS 13 for Fair Value Measurement (which provides a framework for measuring fair value), attempt to navigate this trade-off. For instance, IFRS 13's fair value hierarchy guides preparers to use observable market inputs where possible, enhancing the reliability of fair value measurements. Ultimately, the choice or blend of methods depends on the nature of the asset and the information needs, balancing the desire for current insights with the need for verifiable data.\n\nIn conclusion, neither fair value nor historical cost dominates in all contexts; informed policy mixes that balance relevance with reliability produce the most decision‑useful financial reports.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Excellent - Excellent. The submission clearly defines both methods, accurately explaining their theoretical foundations (objectivity/verifiability vs. current market value) and articulating key differences with precision. (14/15)",
+        "c2": "Good - Good. The analysis of advantages and drawbacks is well-developed, explicitly addressing the relevance vs. reliability trade-off with good depth. It considers the implications for financial reporting stability and investor decision-making. (25/30)",
+        "c3": "Average - Average. While the submission correctly mentions IAS 16 and IFRS 13, it offers a somewhat limited understanding of their specific provisions or how they guide valuation choices in diverse contexts. More detailed application of standards would strengthen this area. (28/40)",
+        "c4": "Good - Good. The discussion effectively explains how market changes lead to volatility in fair value and considers the practical implications for financial reporting and investor interpretation, such as making earnings harder to interpret. (12/15)",
+        "total": "  79/100"
+      }
+    },
+    {
+      "quality": "Average",
+      "authorship": "ai",
+      "key_points": [
+        "Provides basic descriptions of historical cost and fair value.",
+        "Lists some pros and cons but lacks deep critical analysis or a clear link to the relevance/reliability trade-off.",
+        "Correctly identifies key accounting standards (IFRS 13, IAS 40) but does not fully elaborate on their application.",
+        "Makes a general connection between market conditions and valuation, without detailed impact analysis."
+      ],
+      "llm_questions": [
+        "What is the main purpose of IFRS 13?",
+        "How would an asset's historical cost change over time?",
+        "Can fair value ever be objective?",
+        "What is the concept of a 'fair value hierarchy' under IFRS 13?"
+      ],
+      "llm_answers": [
+        "IFRS 13 provides a single framework for measuring fair value. Its main purpose is to improve consistency and comparability of fair value measurements across different entities and financial statements.",
+        "An asset's historical cost generally does not change over time, unless it's impaired, revalued (if allowed by standards like IAS 16), or depreciated/amortized. It remains the original transaction price.",
+        "Yes, fair value can be objective, especially when it's based on observable market data, such as quoted prices for identical assets in active markets (Level 1 inputs in the fair value hierarchy). However, it becomes less objective as more unobservable inputs are used.",
+        "The fair value hierarchy classifies the inputs used in valuation techniques into three levels. Level 1 inputs are quoted prices in active markets for identical assets or liabilities, providing the most reliable evidence. Level 2 inputs are observable inputs other than Level 1 quoted prices. Level 3 inputs are unobservable inputs for the asset or liability."
+      ],
+      "final_submission": "Historical cost accounting records assets at their original acquisition price. Its main strength is that it's highly verifiable and objective, as the cost is based on actual, past transactions. This makes financial statements based on historical cost generally reliable and consistent. However, a significant drawback is that these values can become outdated, particularly for assets like property or investments whose market values change considerably over time. This can lead to a balance sheet that does not reflect the current economic reality of the business.\n\nFair value accounting, in contrast, aims to report assets and liabilities at their current market price. The primary advantage of fair value is its relevance; it provides users with up-to-date information that can be more useful for making investment and economic decisions. For example, investment properties often use fair value under IAS 40 to give a truer picture. The challenges with fair value include its potential subjectivity, especially when there are no active markets, requiring estimates. It can also introduce volatility into financial results, as changes in market prices directly impact reported profits and losses.\n\nThe decision to use historical cost or fair value often depends on the specific accounting standard and the nature of the asset. For example, IFRS 13 provides the framework for fair value measurement, detailing how companies should determine these values. While historical cost offers reliability, fair value offers relevance. However, the application of fair value can be complex, and fluctuations in market conditions directly impact reported figures. This means that while fair value can give a clearer picture of current worth, it also means a company's financial results can be more sensitive to economic cycles.\n\nIn conclusion, neither fair value nor historical cost dominates in all contexts; informed policy mixes that balance relevance with reliability produce the most decision‑useful financial reports.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Average - Average. The submission provides basic descriptions of both methods, identifying their core differences, but lacks deeper theoretical context or precision in its definitions. (10/15)",
+        "c2": "Needs Improvement - Needs Improvement. The submission lists benefits and drawbacks but offers limited critical analysis. The discussion on the relevance vs. reliability trade-off is not fully developed or integrated into the analysis. (15/30)",
+        "c3": "Good - Good. The response shows familiarity with key standards, correctly mentioning IFRS 13 and IAS 40. It understands that standards guide the choice and measurement, but could elaborate more on their specific provisions or practical implications. (30/40)",
+        "c4": "Average - Average. The submission makes a general connection between market conditions and valuation volatility for fair value, but lacks a thorough evaluation of its impacts on different user groups or specific economic cycles. (9/15)",
+        "total": "  64/100"
+      }
+    },
+    {
+      "quality": "Needs Improvement",
+      "authorship": "ai",
+      "key_points": [
+        "Offers a basic, but generally accurate, definition of both valuation methods.",
+        "Provides superficial treatment of advantages and disadvantages without critical depth.",
+        "Mentions 'accounting rules' but does not reference specific standards.",
+        "Limited discussion on how market changes affect valuation or practical implications."
+      ],
+      "llm_questions": [
+        "What is the basic idea of historical cost?",
+        "Why might fair value be considered 'better' by some?",
+        "Are all assets valued using historical cost?",
+        "What does it mean for a financial report to be 'reliable'?"
+      ],
+      "llm_answers": [
+        "The basic idea is to record an asset at the amount of cash or cash equivalents paid or the fair value of the consideration given to acquire it at the time of its acquisition.",
+        "Some might consider fair value 'better' because it provides current information, reflecting the asset's worth today, which can be more useful for making timely economic decisions.",
+        "No, not all assets are valued using historical cost. Depending on the accounting standards (like IFRS or GAAP) and the nature of the asset (e.g., financial instruments, investment property), fair value is often used.",
+        "For a financial report to be reliable, the information presented must be verifiable, neutral, and a faithful representation of the economic phenomenon it purports to represent. It means the information is free from material error and bias."
+      ],
+      "final_submission": "Historical cost accounting means that we record what we paid for something when we first bought it. The good part about this is that it's a real number from a receipt, so it's easy to check and doesn't change much. This makes it reliable. But the bad part is that the price from long ago might not show what the asset is worth today. Imagine buying a piece of land in a growing city; its original cost would be much lower than its current value.\n\nFair value accounting tries to show what an asset is worth right now in the market. The main advantage is that it gives a more up-to-date picture, which can be helpful for investors. However, the downside is that market prices can go up and down quickly, making the numbers less stable and sometimes harder to figure out accurately, especially if there isn't an active market for that specific asset. So, fair value can be less reliable because it involves more estimation and can be very volatile.\n\nCompanies have to follow accounting rules about when to use which method. For example, some assets, especially financial ones, might be shown at fair value because their market price is easy to find. Other assets, like machinery, might stick to historical cost. The choice between them is about whether current relevance is more important than stability and verifiability. Market conditions clearly affect fair value; if the market for an asset is booming, its fair value will rise, impacting the company's reported wealth. This can make financial statements fluctuate more, making it a bit harder to compare results year to year if you're not careful.\n\nIn conclusion, neither fair value nor historical cost dominates in all contexts; informed policy mixes that balance relevance with reliability produce the most decision‑useful financial reports.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Good - Good. The submission provides a reasonably clear definition of both methods, highlighting their core principles of original cost vs. current worth. The explanation of their differences is accurate. (12/15)",
+        "c2": "Poor - Poor. The analysis of advantages and disadvantages is superficial. It merely states 'good part' and 'bad part' without deeper critical evaluation or linking these points systematically to the fundamental relevance vs. reliability trade-off. (10/30)",
+        "c3": "Needs Improvement - Needs Improvement. The response makes a general reference to 'accounting rules' but fails to mention any specific accounting standards or demonstrate an understanding of their role in guiding valuation choices. (20/40)",
+        "c4": "Needs Improvement - Needs Improvement. While it makes a basic connection between market conditions and fair value, the discussion lacks thoroughness. It doesn't explore the full impact of market fluctuations or the practical implications for various user groups in detail. (8/15)",
+        "total": "  50/100"
+      }
+    },
+    {
+      "quality": "Excellent",
+      "authorship": "ai",
+      "key_points": [
+        "Exemplary understanding of both valuation methods and their theoretical foundations.",
+        "Profound critical analysis of advantages and drawbacks, including nuanced discussions of relevance vs. reliability and stakeholder impacts.",
+        "Comprehensive and accurate application of multiple accounting standards (IFRS 13, IAS 16, IAS 40, IFRS 9) with detailed explanations.",
+        "Thorough evaluation of market impact and practical implications for financial reporting and investor decision-making, considering various economic scenarios."
+      ],
+      "llm_questions": [
+        "Beyond IFRS 13, how do specific standards like IFRS 9 or IAS 40 mandate or permit fair value for particular asset classes?",
+        "Discuss the implications of the fair value option (e.g., under IFRS 9 for financial liabilities) on financial statement presentation and management incentives.",
+        "How can management bias influence fair value measurements, especially with Level 3 inputs, and what safeguards exist?",
+        "In a deflationary environment, how would historical cost and fair value present a company's asset base differently, and what are the implications for solvency analysis?"
+      ],
+      "llm_answers": [
+        "IFRS 9 mandates fair value measurement for most financial instruments, categorizing them based on business model and contractual cash flow characteristics (e.g., FVTPL, FVOCI). IAS 40 'Investment Property' allows entities to choose between a cost model and a fair value model, with the latter requiring changes in fair value to be recognized in profit or loss. These standards specify not just measurement, but also the recognition and disclosure requirements tailored to the nature and purpose of these assets.",
+        "The fair value option, particularly for financial liabilities under IFRS 9, allows entities to measure liabilities at fair value through profit or loss. This can reduce accounting mismatches, as it aligns the measurement of a liability with a related asset. However, changes in the entity’s own credit risk can impact the liability’s fair value, creating 'own credit risk gains/losses' in profit or loss (though IFRS 9 mitigates this by recognizing these in OCI). This option can influence management incentives to strategically use it to manage volatility or present a more favorable financial picture.",
+        "Management bias can significantly influence fair value measurements, particularly for Level 3 inputs (unobservable inputs) where judgment is extensive. Management might choose assumptions that result in higher asset values or lower liability values to boost reported earnings or equity. Safeguards include robust internal controls, independent valuation experts, audit scrutiny, and the requirement for extensive disclosures under IFRS 13, which demand transparency about the inputs and valuation techniques used, especially for Level 3 measurements.",
+        "In a deflationary environment, assets valued at historical cost would remain at their original cost (less depreciation), potentially overstating the economic value of assets compared to their declining market values. This could paint a misleadingly strong picture of a company's asset base. Conversely, fair value would reflect the declining market values, leading to reported losses and lower asset values on the balance sheet. For solvency analysis, historical cost could mask deteriorating asset values and overstate net assets, making a company appear more solvent than it actually is. Fair value would provide a more realistic, albeit potentially alarming, view of the company's true financial health and its ability to cover liabilities in a declining market."
+      ],
+      "final_submission": "The contrast between fair value (FV) and historical cost (HC) accounting represents a foundational philosophical divergence in financial reporting, directly impacting the relevance and reliability of financial statements. HC, rooted in the cost principle, records assets and liabilities at their original transaction price. Its paramount advantage is its verifiability and objectivity, making financial information less susceptible to subjective judgment and manipulation. This provides a stable, consistent, and auditable basis for reporting, fostering comparability over time. However, HC's primary drawback is its diminishing relevance; it fails to reflect current economic realities, especially for long-lived assets or those in dynamic markets. For instance, a property acquired decades ago would be significantly understated at HC, misrepresenting the entity's true wealth and capacity to generate future economic benefits.\n\nFV accounting, guided by market-based measurements, aims to capture the current 'exit price' of assets and liabilities. Its compelling advantage is enhanced relevance, providing timely and forward-looking information essential for investment and credit decisions. IFRS 13 delineates a fair value hierarchy (Level 1, 2, 3) to guide its measurement, emphasizing observable inputs to mitigate subjectivity. However, FV introduces significant challenges: increased volatility in reported earnings due to market fluctuations, potential for subjectivity and estimation risk (especially with Level 3 unobservable inputs), and higher measurement costs. Such volatility can obscure operational performance and complicate performance analysis, while subjectivity opens avenues for earnings management.\n\nAccounting standards strategically navigate this trade-off. IFRS 9, for example, largely mandates FV for financial instruments, acknowledging that their current market value is critical for assessing risk and return. IAS 40 allows entities to choose between the cost model and FV model for investment property, recognizing different information needs. IAS 16 permits the revaluation model for Property, Plant, and Equipment, a limited step towards FV to reflect changes in asset values while retaining the cost model as an alternative. The choice or combination of these models profoundly affects how market impact is depicted. Under FV, market booms and busts directly translate into reported gains and losses, amplifying economic cycles. HC, conversely, smooths out these fluctuations, potentially concealing underlying economic shifts but offering stable reported figures. Investors often find FV more insightful for capital allocation decisions, as it offers a more current assessment of a company's economic position and exposure to market risks, despite the inherent complexities and potential for reduced reliability in certain contexts.\n\nIn conclusion, neither fair value nor historical cost dominates in all contexts; informed policy mixes that balance relevance with reliability produce the most decision‑useful financial reports.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Excellent - Excellent. The submission provides exemplary definitions of both methods, explaining their theoretical foundations (cost principle vs. market-based measurement) and articulates key differences with exceptional precision. (15/15)",
+        "c2": "Excellent - Excellent. The analysis is profound, offering a nuanced discussion of advantages and drawbacks, explicitly dissecting the relevance-reliability tension, and considering implications for auditability, management, and stakeholders. (29/30)",
+        "c3": "Excellent - Excellent. The response demonstrates comprehensive and accurate application of multiple standards, specifically referencing IFRS 13, IFRS 9, IAS 40, and IAS 16, and explaining their roles in guiding valuation choices in different contexts with precision. (38/40)",
+        "c4": "Good - Good. The submission thoroughly evaluates how market fluctuations affect each method, considers economic cycle impacts, and analyzes implications for different user groups effectively. A slightly more creative or detailed example of a specific market scenario might push it to excellent. (13/15)",
+        "total": "  95/100"
+      }
+    },
+    {
+      "quality": "Poor",
+      "authorship": "ai",
+      "key_points": [
+        "Shows limited and somewhat confused understanding of both valuation methods.",
+        "Fails to provide a meaningful comparison of advantages and drawbacks, making unsupported claims.",
+        "Provides minimal to no mention of relevant accounting standards.",
+        "Superficial or absent discussion of market impact and practical implications."
+      ],
+      "llm_questions": [
+        "What is the basic definition of historical cost?",
+        "What does 'fair value' mean simply?",
+        "Why do businesses use different ways to value assets?",
+        "Is there a universal 'best' way to value assets?"
+      ],
+      "llm_answers": [
+        "Historical cost is just what you paid for something when you first got it, like the price on a receipt.",
+        "Fair value is basically what something is worth right now, if you were to sell it today.",
+        "Businesses use different ways because some things are better shown at their original price, and some are better shown at their current price, depending on what information is most important.",
+        "No, there isn't one best way. It really depends on the type of asset and what information the financial statements are trying to provide to people who read them."
+      ],
+      "final_submission": "Historical cost is about past money spent.\n\nIt's the original cost of an asset.\n\nFair value is a different cost, it’s about what something is worth today. I think historical cost is good because it's a real number you can prove, like an old receipt. But it's bad because the price changes a lot over time. Fair value is good because it's current, but it's bad because it's harder to get the exact number and it keeps changing with the market. For example, a house bought for $50,000 might be worth $300,000 now. So the original cost is not useful anymore. But if the market goes down, the fair value also goes down, which can make things look bad. Companies have to decide which one to use for different things, but there aren’t clear rules all the time. The market affects fair value because prices move, but it doesn't affect historical cost. This makes fair value very uncertain sometimes. They are both important for accounting reports.\n\nIn conclusion, neither fair value nor historical cost dominates in all contexts; informed policy mixes that balance relevance with reliability produce the most decision‑useful financial reports.",
+      "hybrid_breakdown": {
+        "ai_paragraph_indices": [
+          2,
+          3
+        ],
+        "human_paragraph_indices": [
+          0
+        ],
+        "hybrid_paragraph_indices": [
+          1
+        ],
+        "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+      },
+      "feedback": {
+        "c1": "Average - Average. The submission offers a basic understanding, defining HC as 'past money spent' and FV as 'what something is worth today.' While simple, it captures the essence. However, it lacks depth and theoretical foundation. (9/15)",
+        "c2": "Poor - Poor. The analysis of advantages and drawbacks is extremely superficial ('good because it's real', 'bad because price changes'). It fails to provide meaningful comparison, depth, or any discussion of the relevance vs. reliability trade-off. (8/30)",
+        "c3": "Poor - Poor. The submission makes a vague statement about 'companies have to decide which one to use... but there aren’t clear rules all the time.' This shows a fundamental misunderstanding or complete absence of knowledge regarding specific accounting standards. (15/40)",
+        "c4": "Needs Improvement - Needs Improvement. There's a limited discussion about market impact ('market affects fair value because prices move'), but it doesn't delve into practical implications or how different user groups are affected. The analysis remains basic and undeveloped. (7/15)",
+        "total": "  39/100"
+      }
+    }
+  ]
+}

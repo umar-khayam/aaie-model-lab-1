@@ -1,0 +1,357 @@
+{
+    "domain": "Engineering",
+    "prompt": "How would an automotive engineer approach the task of improving the fuel efficiency of a hybrid vehicle? Include the use of simulations, real-world constraints, energy flow calculations, and how results would be documented and presented to stakeholders.",
+    "rubric": {
+        "rubric_id": "rub_engineering_0006",
+        "criteria": [
+            {
+                "criterion_id": "c1",
+                "name": "Problem Understanding and Engineering Objectives",
+                "description": "Identifies key areas affecting fuel efficiency and defines goals clearly.",
+                "performance_descriptors": {
+                    "excellent": "Clearly outlines engineering objectives and identifies all major efficiency factors.",
+                    "good": "Defines goals and key factors with some explanation.",
+                    "average": "States general aim but lacks depth on influencing factors.",
+                    "needs_improvement": "Vague or incomplete objectives.",
+                    "poor": "Fails to define the problem or goals."
+                },
+                "weight": 20
+            },
+            {
+                "criterion_id": "c2",
+                "name": "Application of Simulation and Analytical Tools",
+                "description": "Uses simulation and modelling tools to analyze energy usage and design changes.",
+                "performance_descriptors": {
+                    "excellent": "Applies simulations effectively with clear output interpretation.",
+                    "good": "Simulation tools used with minor gaps in interpretation.",
+                    "average": "Basic simulations referenced with little detail.",
+                    "needs_improvement": "Simulation use unclear or incorrectly applied.",
+                    "poor": "No use of simulation or analytical methods."
+                },
+                "weight": 25
+            },
+            {
+                "criterion_id": "c3",
+                "name": "Energy Flow and System Optimization Calculations",
+                "description": "Performs energy-related calculations to support decisions.",
+                "performance_descriptors": {
+                    "excellent": "Accurate energy flow modeling and component optimization.",
+                    "good": "Calculations provided with reasonable assumptions.",
+                    "average": "Some calculations attempted but not comprehensive.",
+                    "needs_improvement": "Basic math with unclear links to optimization.",
+                    "poor": "No meaningful calculations included."
+                },
+                "weight": 35
+            },
+            {
+                "criterion_id": "c4",
+                "name": "Presentation and Communication of Results",
+                "description": "Presents findings using results, simulations, and technical summaries for stakeholders.",
+                "performance_descriptors": {
+                    "excellent": "Well-structured report with  outputs and professional tone.",
+                    "good": "Findings presented clearly with supporting results .",
+                    "average": "Summary provided but lacking the result outputs  or technical depth.",
+                    "needs_improvement": "Weak presentation or structure.",
+                    "poor": "Results not clearly communicated."
+                },
+                "weight": 20
+            }
+        ]
+    },
+    "submissions": [
+        {
+            "quality": "Excellent",
+            "key_points": [
+                "Fuel efficiency in hybrid vehicles is shaped by aerodynamics, rolling resistance from tires, how well the engine and motor work together, and the use of regenerative braking",
+                "Engineers rely heavily on simulations—often using tools like MATLAB and Simulink—to test different powertrain setups and driving conditions before building physical prototypes",
+                "Energy flow in hybrid systems is tracked by modeling how power moves between the engine, electric motor, battery, and wheels, taking efficiency losses into account",
+                "Vehicle optimization must consider real-world factors such as weight, cost, emission regulations, and variations in driver behavior",
+                "Results are typically presented in a clear and practical way—using concise executive summaries so stakeholders can make informed decisions"
+            ],
+            "llm_questions": [
+                "What factors influence the fuel efficiency of a hybrid vehicle?",
+                "How are simulations used in automotive engineering?",
+                "How is energy flow calculated in hybrid systems?",
+                "What real-world constraints must be considered in vehicle optimization?",
+                "How are results presented to stakeholders?"
+            ],
+            "llm_answers": [
+                "The fuel efficiency of a hybrid vehicle is a complex interplay of several factors. Primarily, there's the powertrain system, which includes the internal combustion engine (ICE) efficiency map, electric motor/generator efficiency, and battery state-of-charge (SOC) management. Vehicle-level factors include aerodynamics (drag coefficient), rolling resistance from tires, and overall vehicle mass. Finally, the control strategy, which dictates the power split between the ICE and electric motor and manages regenerative braking, is arguably the most critical factor for optimizing efficiency across various driving conditions.",
+                "Simulations are indispensable in modern automotive engineering for rapid and cost-effective development. Engineers use Model-in-the-Loop (MIL) simulations with tools like MATLAB/Simulink or GT-SUITE to create a virtual model of the vehicle's powertrain and dynamics. This allows them to test different component sizes (e.g., battery capacity, motor power) and control strategies over standardized drive cycles (like WLTP or EPA cycles) without building physical hardware. This process, known as virtual prototyping, drastically reduces development time and costs, enabling the exploration of a much wider design space.",
+                "Energy flow in a hybrid system is calculated by modeling the power path from the energy source (fuel and/or battery) to the wheels. The process starts by calculating the power required at the wheels to overcome resistive forces (aerodynamic drag, rolling resistance, and grade) for a given drive cycle. This is the tractive power. Then, working backward through the driveline, transmission, and motor/engine, engineers account for the efficiency losses at each component. For instance, if the motor is 90% efficient, it needs 1/0.90 times the power delivered to it. This analysis, often visualized with Sankey diagrams, helps pinpoint where energy is being lost and where optimization efforts should be focused.",
+                "Vehicle optimization is heavily constrained by real-world factors. Cost is a primary driver; high-efficiency components may be too expensive for a target market segment. Packaging is another, as larger batteries or motors must fit within the existing vehicle architecture. Regulatory requirements, such as emissions standards (e.g., Euro 7) and safety regulations, are non-negotiable. Additionally, engineers must balance fuel efficiency gains with other vehicle attributes like performance (acceleration), drivability, and NVH (Noise, Vibration, and Harshness), as customers will not accept a car that is efficient but unpleasant to drive.",
+                "Results are typically communicated to stakeholders through a formal technical report and presentation. This package is tailored to different audiences. For executive leadership, an executive summary highlights the key findings, the final recommended design, the percentage of fuel economy improvement, and the projected return on investment. For engineering teams, the report includes detailed sections on methodology, simulation model validation, comprehensive data analysis, graphical results (e.g., component efficiency plots, fuel consumption over time), and a discussion of trade-offs and future work. The goal is to provide clear, data-driven evidence to support decision-making."
+            ],
+            "final_submission": "Improving the fuel efficiency of a hybrid vehicle is a multifaceted engineering challenge that demands a systematic, model-based approach. The primary objective would be clearly defined at the outset, for instance, 'To achieve a 15% reduction in fuel consumption over the WLTP combined cycle without compromising performance metrics or exceeding a target cost increase of $300 per unit.'\n\nThe core of the approach involves developing a high-fidelity vehicle simulation model, typically in a platform like MATLAB/Simulink. This forward-looking dynamic model incorporates sub-models for the internal combustion engine (ICE), electric motor, battery pack, transmission, and vehicle dynamics, including aerodynamic drag and rolling resistance. This model is first validated against baseline vehicle data to ensure its accuracy.\n\nNext, we use this validated model to explore optimization strategies. The focus would be on the powertrain control strategy, which governs the power split between the ICE and the electric motor and the regenerative braking intensity. By running the simulation through standardized drive cycles, we can calculate the total energy flow from the fuel tank and battery to the wheels, accounting for all significant losses (thermal, mechanical, electrical). This allows us to quantify the impact of different control algorithms, such as optimizing the engine's on/off thresholds or adjusting the battery's target state-of-charge. We would also simulate the effect of hardware changes, like a downsized, more efficient engine or a higher-capacity battery, always considering real-world constraints such as packaging space, added weight, and component cost.\n\nFinally, the results would be compiled into a comprehensive technical report for stakeholders. This report would feature an executive summary for management, detailing the projected fuel economy gains, costs, and benefits. The main body would present the simulation methodology, key energy flow analyses (often using Sankey diagrams), and a trade-off study comparing different design options. Clear data visualizations, such as charts comparing the baseline and optimized designs, are crucial for communicating the engineering findings effectively and enabling an informed decision.",
+            "feedback": {
+                "c1": "Excellent: The response clearly outlines a specific, quantifiable engineering objective (15% reduction over WLTP) and identifies all major efficiency factors, from vehicle dynamics to powertrain control and hardware. (20/20)",
+                "c2": "Excellent: The submission demonstrates a sophisticated understanding of simulation, specifically referencing MATLAB/Simulink for high-fidelity modeling and its application in analyzing control strategies over standardized drive cycles. (25/25)",
+                "c3": "Excellent: The description of calculating total energy flow by accounting for subsystem losses is precise. The focus on optimizing the power-split strategy showcases a clear understanding of system-level energy optimization. (35/35)",
+                "c4": "Excellent: The final paragraph details a well-structured communication plan, including a technical report with an executive summary and data visualizations, demonstrating a professional approach to stakeholder communication. (20/20)",
+                "total": "100/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "key_points": [
+                "Defines target fuel improvement and constraints",
+                "Runs baseline vs. modified power split scenarios",
+                "Calculates energy use over a representative cycle",
+                "Explains trade-offs between performance and economy"
+            ],
+            "llm_questions": [
+                "How do you select a representative drive cycle?",
+                "What are common power split control strategies?",
+                "How do you compare baseline and candidate designs?",
+                "What metrics best summarize fuel economy gains?"
+            ],
+            "llm_answers": [
+                "A representative drive cycle is selected based on the vehicle's target market and regulatory requirements. For vehicles sold in Europe, the Worldwide Harmonised Light Vehicle Test Procedure (WLTP) is the standard. For the U.S. market, EPA cycles like the FTP-75 (city) and HWFET (highway) are used. These cycles are speed-versus-time profiles designed to mimic typical driving patterns. Selecting the correct, legally mandated cycle is crucial for both certifying the vehicle and making accurate, comparable performance predictions. If a specific use case is targeted, like a delivery van, engineers might even generate a custom cycle from real-world driving data.",
+                "Common power split control strategies are typically rule-based or optimization-based. A simple rule-based strategy, often called a 'thermostat' strategy, turns the engine on when the battery's state of charge (SOC) drops below a certain threshold and turns it off when it rises above another. More advanced strategies use logic based on vehicle speed and power demand to decide when to use the engine, the motor, or both. Optimization-based strategies, like the Equivalent Consumption Minimization Strategy (ECMS), use complex algorithms to make real-time decisions that minimize fuel consumption over the long term.",
+                "To compare baseline and candidate designs, engineers use a consistent set of Key Performance Indicators (KPIs). Both the baseline (current) vehicle model and the candidate (new) model are run through the exact same simulation environment and drive cycle. The primary KPI is fuel consumption (e.g., in L/100km or MPG). Other important comparison metrics include emissions (CO2, NOx), performance (0-60 mph acceleration time), and drivability scores. The results are often presented in a table that clearly shows the percentage improvement or degradation for each KPI, allowing for a balanced trade-off analysis.",
+                "The most direct metric to summarize fuel economy gains is the percentage improvement over the baseline vehicle (e.g., 'a 12% improvement in combined MPG'). This is easily understood by both technical and non-technical stakeholders. For a more detailed view, engineers will show the absolute reduction in fuel consumed over the test cycle. To make the benefit tangible for marketing and sales, this gain is often translated into annual fuel cost savings for the average consumer, based on assumed fuel prices and annual mileage. This helps justify any potential increase in the vehicle's purchase price."
+            ],
+            "final_submission": "As an automotive engineer tasked with improving a hybrid vehicle's fuel efficiency, my approach would be centered on simulation and targeted optimization. First, I would establish a clear objective: to improve the combined fuel economy by 10% while maintaining the current vehicle's acceleration performance and staying within a strict budget for new components.\n\nThe next step is to use a simulation tool to create a digital twin of the existing hybrid vehicle. This model would include the engine, electric motor, battery, and the car's physical properties. I would run this baseline model through a representative drive cycle, like the WLTP, to record its fuel consumption and energy usage. This gives us a benchmark to measure against.\n\nWith a validated baseline, I would focus on optimizing the power split control strategy. This involves modifying the software that decides when to use the engine, the electric motor, or a combination of both. I would run multiple simulation scenarios with different strategies—for example, a strategy that uses the electric motor more aggressively at low speeds where the engine is less efficient. For each scenario, I would calculate the total energy consumed from both fuel and the battery over the drive cycle. This calculation helps quantify the efficiency gains of each strategy.\n\nReal-world constraints are critical. The proposed software changes must work with the existing hardware, and any suggestions for hardware changes (like a slightly larger battery) must be evaluated for cost and weight impact. Finally, I would present the findings to stakeholders. I would use graphs to compare the fuel consumption of the baseline versus the most promising new strategy. A summary table would show the trade-offs, highlighting the 10% fuel economy gain against any minor costs, ensuring a clear, data-driven recommendation.",
+            "feedback": {
+                "c1": "Good: The submission defines a clear, quantified goal (10% improvement) and identifies the primary factor to be investigated (power split control strategy). It could be strengthened by discussing other factors like aerodynamics or rolling resistance. (16/20)",
+                "c2": "Good: The use of simulation to compare a baseline design against modified scenarios is well-described. The process is logical, though it lacks specific details about the simulation software or the complexity of the models used. (21/25)",
+                "c3": "Good: The response correctly identifies the need to calculate energy use over a standard drive cycle to quantify improvements. The assumptions are reasonable, but a more detailed breakdown of energy losses would elevate the analysis. (28/35)",
+                "c4": "Good: The plan to present findings using comparative graphs and a summary table is clear and effective. The communication is direct, but it misses the nuance of tailoring the message to different stakeholder levels (e.g., executive vs. technical).. (15/20)",
+                "total": "80/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "key_points": [
+                "States a general goal to reduce fuel use",
+                "Mentions simple simulation checks",
+                "Provides rough energy balance examples",
+                "Notes practical constraints briefly"
+            ],
+            "llm_questions": [
+                "What inputs are required for a simple model?",
+                "How can a quick sensitivity check be done?",
+                "What simple losses dominate at low speeds?",
+                "How do you justify assumptions in text?"
+            ],
+            "llm_answers": [
+                "For a simple vehicle model, you need a few key inputs. On the vehicle side, you need the total mass, the aerodynamic drag coefficient (CdA), and the rolling resistance coefficient (Crr). For the powertrain, you would need simplified efficiency numbers for the engine and motor, perhaps just a single average value for each, and the capacity of the battery. Finally, you need a drive cycle, which is essentially a list of speeds the car should follow over a period of time. These inputs are enough to get a basic estimate of energy consumption.",
+                "A quick sensitivity check is a way to see which input parameters have the biggest effect on your result. To do this, you change one input parameter at a time by a set amount, like 10%, and then re-run the simulation. For example, you could decrease vehicle mass by 10% and see how much the fuel economy improves. Then you do the same for aerodynamic drag. The parameter that causes the biggest change in the output is the one the system is most 'sensitive' to, and it's often a good candidate for optimization.",
+                "At low speeds, such as in city driving, aerodynamic drag is not very significant because it increases with the square of velocity. Instead, the dominant energy losses come from overcoming the vehicle's inertia during frequent acceleration and the energy dissipated as heat in the brakes during deceleration. Rolling resistance from the tires is also a constant factor. This is why regenerative braking is so effective in hybrids for city driving, as it recovers some of the energy that would otherwise be lost during braking.",
+                "You can justify an assumption in text by being transparent about it and providing a brief reason. For example, you could write, 'For this initial analysis, a constant motor efficiency of 90% was assumed.' To justify it, you could add, 'This value is typical for permanent magnet motors in this application and simplifies the model while providing a reasonable estimate.' This shows the reader that you've thought about the assumption and have a basis for it, even if it's a simplification."
+            ],
+            "final_submission": "To improve the fuel efficiency of a hybrid car, an automotive engineer needs to look at how the car uses energy. The main goal is to make the car use less gas. This involves looking at the engine, the electric motor, and how they work together.\n\nA good way to start is by using a computer simulation. We can make a simple model of the car on the computer. This model would have the car's weight and basic information about its engine. We would then run the simulation on a standard driving test to see how much fuel it uses. This gives us a starting point.\n\nThen, we can try changing things in the model. For example, we could adjust when the electric motor helps the engine. We can do some rough energy balance calculations to see if our changes save energy. We want the engine to run where it is most efficient and use the battery at other times. We need to make sure the battery doesn't run out of charge too quickly.\n\nOf course, there are real-world constraints. Any changes we make can't be too expensive, or the car will be too costly to sell. We also can't make the car too slow. After we find a good solution in the simulation, we would write up a summary of our findings. We would explain what we changed and show how much fuel we think it will save. This report would be given to managers so they can decide if they want to build it.",
+            "feedback": {
+                "c1": "Average: The submission states a general goal of reducing fuel use but lacks specific targets. It mentions key components like the engine and motor but doesn't go into depth on the factors influencing their interaction. (13/20)",
+                "c2": "Average: The response references using a 'simple model' for simulation but provides little detail on the methodology or how results would be interpreted beyond getting a 'starting point'. (20/25)",
+                "c3": "Average: It mentions performing 'rough energy balance calculations,' which shows awareness of the need for analysis. However, the explanation is not comprehensive and doesn't clearly link the calculations to specific optimization decisions. (25/35)",
+                "c4": "Average: A summary report is mentioned as the final step, but the description lacks technical depth. It doesn't specify what kind of data or visualizations would be included to support the conclusions for stakeholders. (13/20)",
+                "total": "65/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "key_points": [
+                "Goals not quantified",
+                "Simulation setup is unclear",
+                "Calculations are incomplete",
+                "Communication is fragmented"
+            ],
+            "llm_questions": [
+                "How do you convert a vague goal into targets?",
+                "What basic blocks must a model include?",
+                "Which calculations prove an improvement?",
+                "How do you organize a short written report?"
+            ],
+            "llm_answers": [
+                "To turn a vague goal like 'make the car more efficient' into a clear target, you should use the SMART framework. This means making it Specific, Measurable, Achievable, Relevant, and Time-bound. So, 'make it more efficient' becomes 'Reduce fuel consumption by 10% on the EPA city cycle.' This new goal is specific (10% reduction, city cycle), measurable (you can calculate the percentage), and gives you a clear pass/fail criterion for your design.",
+                "A very basic vehicle simulation model needs at least three essential blocks. First, a 'Driver' model that tries to follow a target speed (the drive cycle). Second, a 'Powertrain' model that takes the power request from the driver and uses its engine and/or motor models to produce torque. Third, a 'Vehicle Dynamics' block that takes the torque from the powertrain and calculates how the car will accelerate based on its mass, aerodynamic drag, and rolling resistance. These three blocks form a complete, if simple, virtual car.",
+                "The single most important calculation to prove an improvement is a direct comparison of the total fuel consumed. You run a simulation of your baseline (original) car over a 100-kilometer drive and record the liters of fuel used. Then, you run a simulation of your new, modified car over the exact same drive. If the new car uses fewer liters of fuel to complete the same distance, you have proven a fuel efficiency improvement. The result is often expressed as liters per 100 km (L/100km).",
+                "A simple and effective way to organize a short report is to use four sections. Start with an 'Introduction' that states the problem you are trying to solve. Follow this with a 'Method' section explaining what you did (e.g., 'we built a computer model and tested two ideas'). The third section is 'Results,' where you present your findings, ideally with a simple chart or table. Finally, a 'Conclusion' section summarizes what the results mean (e.g., 'Idea #2 saved the most fuel')."
+            ],
+            "final_submission": "To make a hybrid vehicle have better fuel efficiency, an engineer has to change some things. The goal is to make it better. A hybrid has an engine and a motor, so you have to make them work right. You can use computer simulations. You put the car information into the computer and it tells you if its good. The simulation can help you test ideas without building the car.\n\nAn engineer would look at the energy. Making the car lighter is a good idea because it takes less energy to move. This is a simple calculation. So reducing weight is one way to improve it. You could also try to capture more energy when the car brakes. This energy goes back to the battery and can be used later, which saves gas.\n\nThere are also constraints. The car cannot be too expensive. After you do the work you have to tell your boss. You would write down what you did. You show them that the car now uses less fuel. Then they can decide what to do. The results need to be documented so other people know what happened. This is important for the project.",
+            "feedback": {
+                "c1": "Needs Improvement: The objectives are vague, using phrases like 'make it better' without any quantification. While it mentions the engine and motor, it fails to identify the key engineering factors that govern their efficient operation. (10/20)",
+                "c2": "Needs Improvement: The description of simulation is overly simplistic ('it tells you if its good') and doesn't explain how it would be set up or used as an analytical tool to guide design choices. (12/25)",
+                "c3": "Needs Improvement: The submission mentions a basic principle ('less weight means less energy') but doesn't connect it to a systematic calculation or analysis of the overall hybrid system. The link to optimization is unclear. (15/35)",
+                "c4": "Needs Improvement: The response lacks a clear structure. The plan for communication is minimal ('tell your boss') and doesn't describe how results would be formally documented or presented in a professional manner. (13/20)",
+                "total": "50/100"
+            }
+        },
+        {
+            "quality": "Poor",
+            "key_points": [
+                "No clear objectives or method",
+                "No valid modeling or calculations",
+                "No rationale for changes",
+                "No communicable results"
+            ],
+            "llm_questions": [
+                "What is the baseline workflow for this study?",
+                "Which metrics are standard to report?",
+                "Why is traceability necessary?",
+                "How do you state limitations plainly?"
+            ],
+            "llm_answers": [
+                "A baseline workflow is the standard step-by-step process you follow. For this task, it would be: 1. Define the Problem: Clearly state the goal, like 'improve fuel economy by 5%.' 2. Create a Baseline: Model the current vehicle and measure its performance to have something to compare against. 3. Brainstorm Solutions: Come up with ideas for improvement (e.g., change software, reduce weight). 4. Test Solutions: Use simulation to test each idea. 5. Analyze Results: Compare the results of your new designs to the baseline. 6. Document and Report: Write down your findings and recommend the best solution.",
+                "The standard metrics to report in an automotive fuel economy study are, first and foremost, fuel consumption, usually in 'liters per 100 km' or 'miles per gallon' (MPG). It is also standard to report CO2 emissions in 'grams per kilometer,' as this is directly related to fuel consumption and is heavily regulated. You might also report on performance metrics like the 0-60 mph time to show that you haven't negatively impacted the car's drivability.",
+                "Traceability means that anyone can look at your work and follow your steps from beginning to end. It's necessary because it builds trust and ensures quality. If a manager asks, 'Why did you choose this design?' you can trace back through your simulation results and calculations to show them the data that supports your decision. It also allows other engineers to reproduce your work and build upon it, and it's essential for fixing errors if something goes wrong.",
+                "Stating limitations plainly means being honest and direct about the weaknesses of your analysis. This is important because no model is perfect. You could write, 'This study's conclusions are based on a simplified computer model. Real-world results may vary due to factors not included, such as wind conditions and driver behavior.' This is not a sign of failure; it shows that you have a professional understanding of your work and helps stakeholders make better-informed decisions based on your results."
+            ],
+            "final_submission": "Hybrid cars are very popular. They use gas and also a battery. An engineer's job is to make the car good. To improve fuel efficiency, you should make it use less gas. The car has many parts. The engine is one part. The battery is another. They have to work. An engineer can change the parts to make it better. Maybe a new engine that is smaller. Or new tires.\n\nWhen you drive the car, it uses energy. If you make the car weigh less, it will be more efficient. This is a good way to save fuel. You could use lighter materials. This is a real world constraint because some materials cost a lot of money. You have to think about this. An engineer has to document everything. They write reports. The reports tell people what was changed on the car. This is how you show your work. The car will be better and people will want to buy it.",
+            "feedback": {
+                "c1": "Poor: This submission completely fails to define an engineering problem or specific objectives. It consists of a series of disconnected, common-knowledge statements about cars without any engineering context. (4/20)",
+                "c2": "Poor: There is no mention of using simulations, models, or any analytical tools as required by the prompt. The approach described is not based on engineering analysis. (3/25)",
+                "c3": "Poor: No meaningful calculations or concepts of energy flow analysis are included. Suggestions like 'use lighter materials' are given without any quantitative reasoning or connection to the hybrid system. (5/35)",
+                "c4": "Poor: The response is unstructured and fails to communicate any clear findings or process. The mention of writing reports is generic and does not constitute a plan for presenting results to stakeholders. (8/20)",
+                "total": "20/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "key_points": [
+                "Clear and quantifiable objectives for fuel efficiency improvement",
+                "Effective use of simulation (e.g., Amesim, GT-Suite) for component and system-level analysis",
+                "Energy flow calculations are present but could delve deeper into advanced optimization algorithms",
+                "Well-structured report with visual aids and clear explanations for diverse stakeholders"
+            ],
+            "llm_questions": [
+                "How do you define specific and measurable objectives for fuel efficiency?",
+                "What are common advanced simulation tools for hybrid vehicles?",
+                "What are the limitations of typical energy flow calculations in real-world scenarios?",
+                "How do you tailor a technical report for both engineering and executive audiences?"
+            ],
+            "llm_answers": [
+                "Specific and measurable objectives involve quantifying the desired improvement against a baseline, for instance, 'Achieve a 12% reduction in fuel consumption over the EPA combined cycle (FTP-75 and HWFET) within 18 months, ensuring no degradation in 0-60 mph acceleration.' This makes the goal unambiguous and allows for clear progress tracking. Key performance indicators (KPIs) like grams of CO2 per kilometer or miles per gallon are directly measurable.",
+                "For advanced hybrid vehicle simulation, industry-standard tools include Amesim (Siemens), GT-SUITE (Gamma Technologies), and even detailed MATLAB/Simulink models with specialized toolboxes like Powertrain Blockset. These tools allow engineers to model various physical domains (mechanical, electrical, thermal) and simulate complex interactions between the engine, electric motor, battery, and control unit, often incorporating detailed maps of component efficiencies.",
+                "Typical energy flow calculations often rely on average component efficiencies or steady-state assumptions, which can be a limitation. Real-world scenarios involve highly dynamic driving, transient component behavior, thermal management effects, and aging of components, which are often simplified in initial models. Advanced calculations might also struggle to fully capture the nuances of driver behavior or variations in road conditions, leading to discrepancies between simulated and actual fuel economy.",
+                "Tailoring a technical report for different audiences requires strategic organization. For executive audiences, an executive summary, clear conclusions, and actionable recommendations (e.g., 'Proposed strategy A offers 12% fuel savings with a 3% cost increase, leading to a 2-year ROI') are paramount. For engineering teams, the report would include detailed methodology, model validation data, comprehensive simulation results (e.g., efficiency maps, SOC profiles), detailed energy loss breakdowns, and a thorough discussion of assumptions, limitations, and future work. Visualizations like Sankey diagrams are useful for both."
+            ],
+            "final_submission": "An automotive engineer tackling the improvement of a hybrid vehicle's fuel efficiency must begin with clearly articulated engineering objectives. My primary goal would be to achieve a **15% reduction in fuel consumption** over the WLTP combined cycle without compromising vehicle performance, all while adhering to a defined budget for component changes. This objective is measurable and realistic, providing a clear target for the project.\n\nTo achieve this, I would leverage advanced simulation and analytical tools. A detailed vehicle model would be developed in a multi-domain simulation platform like **Amesim or GT-SUITE**. This model would encompass the internal combustion engine (ICE) with its detailed efficiency map, the electric motor/generator, the battery pack's thermal and electrical behavior, the transmission system, and the overall vehicle dynamics (aerodynamics, rolling resistance, inertia). This high-fidelity model allows for precise investigation of various control strategies and hardware modifications in a virtual environment. We would run the model through various standardized drive cycles to establish a comprehensive baseline.\n\nEnergy flow and system optimization calculations would be central to identifying areas for improvement. While the simulation tool would handle much of the underlying physics, engineers would focus on developing and optimizing the **Energy Management System (EMS) control algorithms**. This involves designing sophisticated power-split strategies that dictate when the ICE is on/off, the level of regenerative braking, and the optimal operating points for both the engine and motor. We would calculate the energy losses at each stage of the powertrain (e.g., thermal losses in the ICE, electrical losses in the motor/inverter, chemical losses in the battery), using these insights to refine the control strategy. Although I might not delve into writing my own full optimization algorithms from scratch, I would critically evaluate and parameterize existing algorithms to suit the specific vehicle and objectives, quantifying the fuel savings for each iteration.\n\nFinally, the results would be documented and presented to stakeholders in a comprehensive yet accessible manner. A **technical report** would detail the methodology, simulation validation, and a full analysis of the optimized system's performance. For executive stakeholders, an **executive summary** would highlight the key findings, the quantified fuel efficiency gains, and a cost-benefit analysis. Visual aids, such as **Sankey diagrams** illustrating energy flow improvements and comparative charts of fuel consumption over drive cycles, would be crucial. The presentation would use clear, concise language, ensuring that both technical and non-technical audiences can understand the proposed improvements and their implications.",
+            "feedback": {
+                "c1": "Excellent: The submission clearly defines a quantifiable objective (15% reduction over WLTP) and thoroughly identifies key areas like control strategy, hardware modifications, and specific performance metrics. (18/20)",
+                "c2": "Good: The use of advanced simulation platforms like Amesim/GT-SUITE is mentioned, and the scope of the model (ICE, motor, battery, vehicle dynamics) is well-described. The interpretation of simulation outputs, while implied, could be slightly more explicit. (23/25)",
+                "c3": "Average: The discussion on energy flow focuses on developing and optimizing EMS control algorithms and calculating losses. While good, it could be more explicit about the specific types of calculations (e.g., instantaneous efficiency mapping, state-of-charge management algorithms) that underpin 'system optimization calculations' beyond just general loss analysis. (27/35)",
+                "c4": "Excellent: The communication plan is robust, detailing a technical report with an executive summary, the use of visual aids like Sankey diagrams and comparative charts, and tailoring the message for different audiences. (15/20)",
+                "total": "83/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "key_points": [
+                "Identifies major efficiency factors like powertrain and aerodynamics",
+                "Utilizes commercial simulation software for comparative analysis",
+                "Performs basic energy consumption calculations based on drive cycles",
+                "Presents results with clear graphs and cost analysis for decision-making"
+            ],
+            "llm_questions": [
+                "How are different efficiency factors weighted in a hybrid vehicle design?",
+                "What is a typical workflow for using simulation to compare two designs?",
+                "What challenges arise when calculating energy flow from theoretical models?",
+                "How do you handle dissenting opinions or questions from stakeholders during a presentation?"
+            ],
+            "llm_answers": [
+                "In hybrid vehicle design, different efficiency factors are weighted based on their impact on overall fuel economy and the cost-benefit of improving them. For instance, powertrain efficiency (engine, motor, transmission) often has a high weighting as it directly converts/transfers energy. Aerodynamics becomes more significant at higher speeds, and rolling resistance is always present. The control strategy that manages these components can have the highest 'weighting' as it can often achieve significant gains with software changes rather than expensive hardware modifications.",
+                "A typical workflow for using simulation to compare two designs starts with developing or acquiring a validated baseline model of the current vehicle. Then, the proposed design changes are implemented in a separate, or modified, version of this model. Both models are then subjected to the exact same standardized drive cycles. The simulation outputs (e.g., fuel consumption, emissions, acceleration) are collected and statistically analyzed. Finally, a comparative report is generated, highlighting the differences and improvements, often with visual aids.",
+                "Challenges when calculating energy flow from theoretical models include the accuracy of component maps (engine, motor, battery), which might not fully capture transient behavior or aging effects. Assumptions about driving conditions (temperature, humidity, road grade) can also simplify reality. Furthermore, the complexity of the control strategy can be difficult to model perfectly, and slight differences between the model and the real-world vehicle can lead to discrepancies in predicted energy flow and fuel economy.",
+                "Handling dissenting opinions or questions from stakeholders requires a calm, data-driven, and respectful approach. Firstly, listen carefully to understand their concerns. Then, refer back to the data, simulation results, and validated models to provide evidence-based answers. If a question highlights a gap in the analysis, acknowledge it and propose next steps, like further investigation or sensitivity analysis. Maintain a professional demeanor, focus on the facts, and demonstrate that all perspectives are considered, even if not immediately incorporated."
+            ],
+            "final_submission": "Improving the fuel efficiency of a hybrid vehicle involves a systematic approach, starting with a clear understanding of the contributing factors. My objective would be to enhance the combined fuel economy by at least **8%** over current figures, primarily through optimizing the powertrain's energy management, while keeping any hardware changes to a minimum to control costs. I would focus on areas like regenerative braking effectiveness, engine start-stop thresholds, and electric-only driving range.\n\nI would begin by using a commercial vehicle simulation software, such as **AVL CRUISE M™ or an equivalent tool**, to establish a baseline model of the existing hybrid vehicle. This model would incorporate validated sub-models for the engine, electric motor, battery, and transmission. Running this model through standard driving cycles (e.g., urban and highway cycles) would provide a benchmark for fuel consumption and energy usage across different modes of operation. This simulation allows for rapid testing of various ideas without the need for physical prototypes, saving time and resources.\n\nEnergy flow and system optimization calculations would primarily involve analyzing the distribution of power during different driving conditions. For instance, I would calculate how much kinetic energy is recovered through regenerative braking versus friction braking, and how efficiently the engine operates at its typical loads. This analysis would inform adjustments to the hybrid control unit's strategy, such as setting optimal points for engine activation and electric motor assist. While I might not delve into highly complex mathematical optimization algorithms, I would perform detailed power balance calculations across the system to identify the largest energy losses and propose practical solutions.\n\nFinally, the results would be compiled into a clear presentation for stakeholders. This presentation would include **graphs comparing the baseline fuel economy to the proposed improvements**, showing the percentage reduction achieved. I would also include a **simple cost-benefit analysis** of any suggested hardware or software modifications. The presentation would be concise, focusing on the key findings and recommendations, and would use visual data to support the conclusions. An executive summary would precede the detailed technical breakdown, ensuring all levels of stakeholders can grasp the core message and make informed decisions.",
+            "feedback": {
+                "c1": "Average: The submission identifies major efficiency factors (powertrain energy management, regen braking, engine start-stop) but the objective is slightly less specific (8% over 'current figures' without a clear cycle). (14/20)",
+                "c2": "Good: The plan to use commercial simulation software (AVL CRUISE M™) to establish a baseline and test ideas is well-articulated. The methodology for comparative analysis is sound. (16/25)",
+                "c3": "Average: The response describes performing power balance calculations and analyzing energy distribution, which is relevant. However, the depth of 'system optimization calculations' is stated as less complex, placing it firmly in the average category for this criterion. (28/35)",
+                "c4": "Good: The presentation plan includes clear graphs, a cost-benefit analysis, and an executive summary, demonstrating a good approach to communicating results to diverse stakeholders. (15/20)",
+                "total": "73/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "key_points": [
+                "General understanding of hybrid components",
+                "Basic simulation mentioned for testing ideas",
+                "Attempts several energy loss calculations",
+                "Presentation lacks structure and detailed outputs"
+            ],
+            "llm_questions": [
+                "What are the most common points of energy loss in a hybrid vehicle?",
+                "How would you visually represent energy flow in a simple way?",
+                "What are some basic parameters to adjust in a hybrid simulation?",
+                "When is it better to use a simple model vs. a complex one?"
+            ],
+            "llm_answers": [
+                "The most common points of energy loss in a hybrid vehicle include thermal losses from the internal combustion engine (engine inefficiency converting fuel to mechanical work), electrical losses in the motor/generator and inverter (due to resistance and switching), battery charge/discharge inefficiencies, and mechanical losses in the drivetrain (friction). Additionally, kinetic energy is lost as heat during conventional braking, though regenerative braking mitigates some of this.",
+                "A simple way to visually represent energy flow is using a Sankey diagram. This diagram uses arrows whose width is proportional to the amount of energy flowing from one point to another. You can show fuel input, conversion to mechanical power, electrical power generation, battery storage, and eventual delivery to the wheels, with arrows branching off to indicate various losses (e.g., heat from engine, braking energy lost).",
+                "Some basic parameters to adjust in a hybrid simulation include the battery's state-of-charge (SOC) operating window (e.g., 40-70%), the engine's on/off thresholds based on power demand or vehicle speed, the maximum regenerative braking torque, and the power split ratio between the engine and motor. Even simple adjustments to these parameters can significantly impact simulated fuel economy.",
+                "It's better to use a simple model when you are in the early stages of design, need quick answers, or want to understand the fundamental physics without getting bogged down in details. Simple models are faster to build and run, and they help identify the most influential factors. A complex model is better when you need high fidelity, detailed analysis for final design validation, or when investigating intricate phenomena like thermal management or transient effects, but they require more data and computational power."
+            ],
+            "final_submission": "To improve a hybrid vehicle's fuel efficiency, an engineer needs to think about how all the parts work together. The overall goal is to make the car use less fuel, which also means less pollution. This involves understanding the engine, the electric motor, and the battery, and finding ways to make them work smarter. For example, making sure the engine runs at its best efficiency point when it's on.\n\nA computer simulation can help a lot. We can build a basic model of the car to see how it performs now. This model would include the engine's power, the battery's capacity, and the car's weight. Then, we can try different ideas in the simulation. Maybe we can change the software so the electric motor helps more during acceleration, or so the car uses regenerative braking more often. We'd run these ideas through the simulation to get some numbers.\n\nI would perform some energy calculations to support these ideas. For instance, I'd estimate the amount of energy saved by a specific regenerative braking strategy by calculating the kinetic energy recovered versus dissipated as heat. I would also try to calculate the fuel savings if the engine could operate more often in its sweet spot. These calculations might not be super detailed, but they would give a good idea of which changes are promising. I'd also consider real-world limits, like the cost of a bigger battery or how much weight we can reasonably remove from the car without affecting safety.\n\nWhen it's time to show the results, I'd prepare a summary. This summary would explain what changes were tried in the simulation and what the calculated fuel savings were. I'd mention the main challenges and how the new design addresses them. I might use a few simple charts to show the 'before and after' fuel consumption figures. The aim is to clearly communicate what we found and propose the best way forward to improve the car's efficiency to the project managers and other engineers.",
+            "feedback": {
+                "c1": "Average: The submission states a general goal of reducing fuel use and pollution. It mentions the engine, motor, and battery as key components but lacks specific, quantifiable objectives or a deep analysis of influencing factors. (13/20)",
+                "c2": "Average: A basic computer simulation model is mentioned for testing ideas. However, the description is somewhat generic and doesn't detail the specific application or interpretation of simulation results beyond 'getting some numbers'. (20/25)",
+                "c3": "Good: The response attempts specific energy calculations, such as estimating energy saved by regenerative braking and fuel savings from optimal engine operation. While acknowledged as 'not super detailed,' this shows a good understanding of the type of analysis required. (23/35)",
+                "c4": "Needs Improvement: The plan for presentation describes a 'summary' with 'simple charts' but lacks detail on structure, the inclusion of technical outputs, or how it would be tailored for different stakeholders. (9/20)",
+                "total": "65/100"
+            }
+            
+        },
+        {
+            "quality": "Average",
+            "key_points": [
+                "Vague objectives for efficiency improvement",
+                "Mentions basic use of simulation for testing concepts",
+                "Limited and simplified energy calculations",
+                "Basic reporting of outcomes without strong evidence"
+            ],
+            "llm_questions": [
+                "What is the simplest way to quantify a fuel efficiency improvement?",
+                "How can a basic simulation help identify trade-offs?",
+                "What fundamental physical laws underpin energy flow calculations?",
+                "How can a presentation be structured to ensure clarity for non-experts?"
+            ],
+            "llm_answers": [
+                "The simplest way to quantify a fuel efficiency improvement is to calculate the percentage reduction in fuel consumption over a specific drive cycle. For example, if the baseline vehicle consumes 8 liters per 100 km, and the improved design consumes 7.2 liters per 100 km, that's a 10% improvement. This direct comparison is easy to understand.",
+                "A basic simulation can help identify trade-offs by showing how changing one parameter affects multiple outcomes. For instance, increasing battery size might improve electric range (good for efficiency) but also increase vehicle weight (bad for efficiency and performance). The simulation can quickly show these conflicting effects, helping engineers make informed compromises.",
+                "Energy flow calculations fundamentally rely on the First Law of Thermodynamics, which states that energy cannot be created or destroyed, only transformed. This means that all energy input (from fuel or battery) must either be converted into useful work (moving the car) or dissipated as losses (heat, friction). The Second Law of Thermodynamics explains why all energy conversions involve some loss, meaning perfect efficiency is impossible.",
+                "To ensure clarity for non-experts, a presentation should start with a clear, high-level summary of the problem and the proposed solution. Use analogies if helpful. Avoid jargon or explain it immediately. Focus on 'what it means' rather than 'how it works' in too much detail. Use simple, clean visuals (graphs, images) with minimal text. Conclude with a clear recommendation and the benefits for the stakeholders, like cost savings or environmental impact."
+            ],
+            "final_submission": "To improve the fuel efficiency of a hybrid vehicle, an engineer would need to figure out where the car is using too much energy and try to reduce it. The main idea is to make the car go further on less fuel. This means looking at things like how the engine works, how the electric motor helps, and how the car stops and starts.\n\nA simple computer simulation could be used to test some ideas. You could put in the car's basic information, like its weight and engine size, and then run a virtual driving test. This helps to see what happens when you make a change, for example, if you make the electric motor do more work at low speeds. It's a way to try things out without actually changing a real car, which costs a lot of money and time.\n\nEnergy calculations would be involved, but mostly in a basic way. For instance, thinking about how much energy is lost when the car brakes and how much can be recovered by the electric motor. Or, considering if making the car a bit lighter would save a certain amount of fuel over a trip. These wouldn't be very complex math, but just to get a general idea if an idea is worth pursuing. Real-world challenges like making sure the car is still fun to drive and safe are also important to consider.\n\nWhen presenting the results, I would put together a basic report. It would explain what was done and what the computer simulation showed. I would state if the car is expected to use less fuel and by how much. Simple charts could be used to compare the old fuel economy to the new one. The report would be for the team and managers, focusing on the main outcomes and whether the changes are practical for the production cars.",
+            "feedback": {
+                "c1": "Needs Improvement: The objectives are vague ('figure out where the car is using too much energy') and lack specificity or quantifiable targets. Key influencing factors are mentioned generally without depth. (10/20)",
+                "c2": "Average: The submission describes a 'simple computer simulation' for testing ideas and seeing 'what happens.' It shows awareness of simulation's purpose but lacks detail on its application or how results would be interpreted beyond general observations. (12/25)",
+                "c3": "Needs Improvement: The response mentions 'basic' energy calculations, like estimating energy recovered during braking or the impact of weight reduction. However, it explicitly states these are 'not very complex math' and only for 'a general idea,' indicating a lack of comprehensive or rigorous calculation. (22/35)",
+                "c4": "Average: A 'basic report' with 'simple charts' is proposed for presenting results to the team and managers. It focuses on outcomes but lacks detail on the structure, technical depth, or tailoring for various stakeholders, making it an average effort. (13/20)",
+                "total": "57/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "key_points": [
+                "Unclear and unquantified objectives",
+                "Mention of 'computer models' but no clear application of simulation",
+                "Very limited and conceptual energy calculations",
+                "Poorly structured and unspecific communication plan"
+            ],
+            "llm_questions": [
+                "Why is it important to quantify engineering objectives?",
+                "What is the difference between a simulation and a calculator?",
+                "What is regenerative braking and how does it save energy?",
+                "What are the essential elements of a professional engineering report?"
+            ],
+            "llm_answers": [
+                "Quantifying engineering objectives is crucial because it provides clear targets, allows for measurable progress tracking, and removes ambiguity. Without quantifiable goals, it's impossible to objectively assess whether a project has succeeded or failed. For instance, 'improve fuel economy' is vague, but 'reduce fuel consumption by 10% on the city cycle' is a clear, measurable target that guides all design and testing efforts.",
+                "The key difference is complexity and dynamic behavior. A calculator performs a specific arithmetic operation based on given inputs. A simulation, however, models a system's behavior over time, often involving many interacting components and complex physics. It can predict how a system will respond to various dynamic inputs (like a changing speed profile in a car) and show results that evolve over time, which a calculator cannot do.",
+                "Regenerative braking is a technology in hybrid and electric vehicles that converts kinetic energy (motion) back into electrical energy during deceleration. Instead of dissipating this energy as heat through friction brakes, the electric motor acts as a generator, charging the battery. This saved electrical energy can then be used later to assist the engine or power the vehicle electrically, thereby reducing overall fuel consumption and improving efficiency.",
+                "The essential elements of a professional engineering report typically include: 1. **Title and Abstract:** Briefly summarizing the report. 2. **Introduction:** Stating the problem, objectives, and scope. 3. **Methodology:** Detailing the approach, tools, and procedures. 4. **Results:** Presenting data, graphs, and findings. 5. **Discussion:** Interpreting results, addressing limitations, and comparing with existing work. 6. **Conclusion:** Summarizing key findings and providing recommendations. 7. **References and Appendices:** Supporting documents and data."
+            ],
+            "final_submission": "As an automotive engineer, if I wanted to make a hybrid car more fuel efficient, I would first think about what 'better' means. It means making the car use less gas. The main goal is to save fuel. You have to look at the engine and the electric motor. They work together. So, how they work together is important. Maybe making the electric motor run more often could save gas.\n\nWe could use some computer models to try out ideas. You put in numbers for the car, like how heavy it is, and the computer shows you some results. This is like a test, but on the computer. It saves time and money because you don't have to build a new car every time you have an idea. We could test if a different way of starting the engine helps. But the prompt said simulations, so I'd use some kind of simulation tool, even if basic.\n\nFor energy flow, you need to understand where the energy comes from (gas, battery) and where it goes. Some energy gets lost as heat. We want to reduce that. So, calculations would be about finding where the big losses are. For example, how much energy is lost when the car brakes, and how much could be saved with better regenerative braking. These calculations would be simple, just to see the general impact. Real-world constraints mean the car still has to accelerate well and not be too noisy.\n\nWhen telling others about the work, I would write something down. It would say what was changed and if the fuel efficiency got better. It would have a general summary. I would just present the key ideas to managers. I wouldn't do a big fancy report, just enough to show what was done. This is important so people know the project happened and if it worked.",
+            "feedback": {
+                "c1": "Needs Improvement: The objectives are very vague ('what 'better' means,' 'save fuel') and lack any quantification. While it mentions the engine and motor, it doesn't identify specific engineering factors beyond 'how they work together.' (9/20)",
+                "c2": "Poor: The submission mentions 'computer models' but the description is very superficial and doesn't demonstrate actual application or interpretation of a simulation tool. It describes it more like a calculator than a dynamic simulation. (8/25)",
+                "c3": "Needs Improvement: The response mentions understanding where energy comes from and goes, and identifying 'big losses.' It suggests 'simple' calculations for regenerative braking, but these are very conceptual and lack any specific methods or links to system optimization. (14/35)",
+                "c4": "Needs Improvement: The communication plan is weak and unstructured ('write something down,' 'general summary,' 'not a big fancy report'). It fails to describe how results would be formally documented or presented professionally to stakeholders with sufficient technical detail. (9/20)",
+                "total": "40/100"
+            }
+        }
+    ]
+}

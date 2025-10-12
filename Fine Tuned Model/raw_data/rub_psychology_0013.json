@@ -1,0 +1,410 @@
+{
+    "domain": "Psychology",
+    "prompt": "Analyze the Big Five personality traits (OCEAN) and evaluate their predictive validity for life outcomes such as academic success, job performance, health, and relationships.",
+    "rubric": {
+        "rubric_id": "rub_psychology_0013",
+        "criteria": [
+            {
+                "criterion_id": "c1",
+                "name": "Conceptual Mastery of Big Five",
+                "description": "Accurate explanation of Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism.",
+                "performance_descriptors": {
+                    "excellent": "Thoroughly defines each trait, typical behaviors, and measurement approaches (e.g., NEO-PI-R), noting trait stability and heritability.",
+                    "good": "Accurately defines the five traits with minor omissions or limited methodological detail.",
+                    "average": "Basic definitions with occasional inaccuracies or oversimplifications.",
+                    "needs_improvement": "Partial or unclear explanation with notable inaccuracies.",
+                    "poor": "Fails to correctly describe core traits."
+                },
+                "weight": 25
+            },
+            {
+                "criterion_id": "c2",
+                "name": "Predictive Validity Analysis",
+                "description": "Evaluates how traits predict outcomes across domains.",
+                "performance_descriptors": {
+                    "excellent": "Makes precise, evidence-informed claims linking traits to outcomes (e.g., Conscientiousness and job/academic performance; Neuroticism and mental health), noting effect sizes and boundary conditions.",
+                    "good": "Explains several trait-outcome links with reasonable accuracy and some nuance.",
+                    "average": "Lists general associations without depth or qualifiers.",
+                    "needs_improvement": "Sparse or unsupported associations; limited understanding of predictive scope.",
+                    "poor": "No meaningful analysis of predictive validity."
+                },
+                "weight": 20
+            },
+            {
+                "criterion_id": "c3",
+                "name": "Methodological and Cultural Considerations",
+                "description": "Addresses measurement, cross-cultural generalizability, and limitations.",
+                "performance_descriptors": {
+                    "excellent": "Critically considers measurement instruments, self-report bias, cross-cultural replication, and incremental validity over other models.",
+                    "good": "Mentions at least two methodological or cultural issues with some analysis.",
+                    "average": "Acknowledges issues superficially with limited evaluation.",
+                    "needs_improvement": "Minimal methodological reflection; lacks cultural perspective.",
+                    "poor": "No attention to methods or cultural context."
+                },
+                "weight": 15
+            },
+            {
+                "criterion_id": "c4",
+                "name": "Use of Evidence and Examples",
+                "description": "Integrates studies, meta-analytic findings, or realistic examples.",
+                "performance_descriptors": {
+                    "excellent": "Uses specific, relevant evidence or illustrative examples to support claims and contrasts conflicting findings.",
+                    "good": "Includes relevant examples or general evidence with minor gaps.",
+                    "average": "Examples are generic or weakly connected to claims.",
+                    "needs_improvement": "Sparse or poorly chosen examples.",
+                    "poor": "No examples provided."
+                },
+                "weight": 25
+            },
+            {
+                "criterion_id": "c5",
+                "name": "Organization and Clarity",
+                "description": "Logical structure, coherent flow, clear writing.",
+                "performance_descriptors": {
+                    "excellent": "Clear thesis, logical progression, smooth transitions, precise language.",
+                    "good": "Mostly clear structure with minor redundancies.",
+                    "average": "Adequate organization; some unclear passages.",
+                    "needs_improvement": "Disorganized and difficult to follow.",
+                    "poor": "Incoherent presentation."
+                },
+                "weight": 15
+            }
+        ]
+    },
+    "submissions": [
+        {
+            "quality": "Excellent",
+            "authorship": "ai",
+            "key_points": [
+                "Defines each of the Big Five traits (OCEAN) with behavioral indicators.",
+                "Highlights the strongest predictive links: Conscientiousness with job/academic performance and Neuroticism with health outcomes.",
+                "Addresses cultural replication and the limitations of self-report measures.",
+                "Applies findings to real-world contexts like HR and counseling.",
+                "Maintains a clear and academic structure."
+            ],
+            "llm_questions": [
+                "Summarize the Big Five traits with behavioral markers.",
+                "How does Conscientiousness predict academic and job performance?",
+                "What outcomes are most associated with Neuroticism?",
+                "What are the cultural and methodological critiques of Big Five research?"
+            ],
+            "llm_answers": [
+                "The Big Five are: Openness (imagination, curiosity), Conscientiousness (organization, reliability), Extraversion (sociability, assertiveness), Agreeableness (compassion, cooperation), and Neuroticism (emotional instability, anxiety).",
+                "Conscientiousness is the most consistent predictor of academic and job performance because it reflects diligence, organization, and goal orientation.",
+                "High Neuroticism predicts a greater risk of anxiety, depression, and relationship conflict. It also correlates with poorer physical health through stress.",
+                "Critiques include reliance on self-report, which can be biased, and limited generalizability across collectivist cultures, though the five-factor structure is broadly replicated."
+            ],
+            "final_submission": "The Big Five framework describes human personality in terms of Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism (OCEAN). Each dimension captures consistent patterns of thought and behavior. Conscientiousness is the most robust predictor of academic and occupational outcomes, while Neuroticism strongly predicts mental health difficulties. Openness relates to creativity, Extraversion to social leadership, and Agreeableness to relationship quality.\n\nEvidence demonstrates the model's predictive validity. However, methodological issues such as self-report bias and cultural variation warrant caution. While cross-cultural studies largely replicate the five-factor structure, the expression and importance of traits can differ.\n\nIn applied contexts, the Big Five guide employee selection, coaching, and career counseling. Understanding these traits supports tailored interventions that enhance performance and well-being. Overall, the Big Five remains a well-validated and useful model for linking personality to diverse life outcomes.",
+            "feedback": {
+                "c1": "Excellent. Detailed, accurate definitions. (25/25)",
+                "c2": "Excellent. Strong evidence-based analysis. (20/20)",
+                "c3": "Excellent. Thoughtful reflection on limitations. (15/15)",
+                "c4": "Excellent. Integrates empirical examples. (25/25)",
+                "c5": "Excellent. Clear structure and logical flow. (15/15)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1,2],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Excellent",
+            "authorship": "human",
+            "key_points": [
+                "Defines each of the Big Five traits (OCEAN) with behavioral indicators.",
+                "Highlights the strongest predictive links: Conscientiousness with job/academic performance and Neuroticism with health outcomes.",
+                "Addresses cultural replication and the limitations of self-report measures.",
+                "Applies findings to real-world contexts like HR and counseling.",
+                "Maintains a clear and academic structure."
+            ],
+            "final_submission": "The Five-Factor Model, or Big Five, provides a comprehensive framework for describing personality through five broad dimensions: Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism (often abbreviated as OCEAN). Each trait represents a continuum of individual differences. For example, Conscientiousness is not just about being organized; it also encompasses self-discipline and dutifulness, making it a powerful predictor of success in academic and professional settings. Similarly, Neuroticism is a key indicator of emotional stability and is strongly linked to mental health outcomes.\n\nNumerous studies have validated the predictive power of these traits. However, it's crucial to consider the methodological and cultural contexts of this research. The heavy reliance on self-report questionnaires like the NEO-PI-R can be a limitation, as it is susceptible to social desirability bias. Moreover, while the five-factor structure has been replicated across many cultures, the specific behaviors associated with each trait can vary, and their social value may differ, which has implications for its universal applicability.\n\nIn applied settings, the Big Five has immense practical value. It is used in everything from personnel selection in human resources to personalized therapeutic approaches in clinical psychology. By understanding an individual's personality profile, practitioners can better predict their behavior and tailor interventions to improve life outcomes. Thus, despite its limitations, the Big Five remains an indispensable tool for understanding the connection between personality and life's various challenges and successes.",
+            "feedback": {
+                "c1": "Excellent. Detailed, accurate definitions. (25/25)",
+                "c2": "Excellent. Strong evidence-based analysis. (20/20)",
+                "c3": "Excellent. Thoughtful reflection on limitations. (15/15)",
+                "c4": "Excellent. Integrates empirical examples. (25/25)",
+                "c5": "Excellent. Clear structure and logical flow. (15/15)",
+                "total": "100/100"
+            },
+             "hybrid_breakdown": {
+                "ai_paragraph_indices": [2],
+                "human_paragraph_indices": [0,1],
+                "hybrid_paragraph_indices": [],
+                "notes": "Human fully rewrote the introduction and the paragraph on methodological considerations."
+            }
+        },
+        {
+            "quality": "Excellent",
+            "authorship": "hybrid",
+            "key_points": [
+                "Defines each of the Big Five traits (OCEAN) with behavioral indicators.",
+                "Highlights the strongest predictive links: Conscientiousness with job/academic performance and Neuroticism with health outcomes.",
+                "Addresses cultural replication and the limitations of self-report measures.",
+                "Applies findings to real-world contexts like HR and counseling.",
+                "Maintains a clear and academic structure."
+            ],
+            "final_submission": "The Big Five framework describes human personality in terms of Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism (OCEAN). Each dimension captures consistent patterns of thought and behavior. Conscientiousness is arguably the most robust predictor of academic and occupational outcomes, while Neuroticism strongly predicts mental health difficulties and overall life satisfaction. Openness is related to creativity, Extraversion to social leadership, and Agreeableness to the quality of one's relationships.\n\nEvidence demonstrates the model's predictive validity. However, methodological issues such as self-report bias and cultural variation warrant caution. While cross-cultural studies largely replicate the five-factor structure, the expression and importance of traits can differ significantly, which is an important consideration.\n\nIn applied contexts, the Big Five guide employee selection, career coaching, and personal counseling. A clear understanding of these traits therefore supports tailored interventions that can enhance performance, health, and general well-being. Overall, the Big Five remains a well-validated and highly useful model for linking the complexities of personality to diverse life outcomes.",
+            "feedback": {
+                "c1": "Excellent. Detailed, accurate definitions. (25/25)",
+                "c2": "Excellent. Strong evidence-based analysis. (20/20)",
+                "c3": "Excellent. Thoughtful reflection on limitations. (15/15)",
+                "c4": "Excellent. Integrates empirical examples. (25/25)",
+                "c5": "Excellent. Clear structure and logical flow. (15/15)",
+                "total": "100/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [1],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [0,2],
+                "notes": "Slightly modified the introduction and conclusion paragraphs for better flow and added phrases."
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "ai",
+            "key_points": [
+                "Defines all five traits correctly.",
+                "Links Conscientiousness and Neuroticism to outcomes with some detail.",
+                "Briefly mentions measurement bias.",
+                "Uses general examples.",
+                "Mostly coherent structure."
+            ],
+            "llm_questions": [
+                "What are the five traits?",
+                "How do they predict success at school or work?",
+                "What is one limitation of Big Five research?"
+            ],
+            "llm_answers": [
+                "The five traits are Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism.",
+                "Conscientiousness predicts academic and job performance because organized people tend to be more goal-oriented. Neuroticism is linked to stress.",
+                "A limitation is that most studies rely on self-reports, which can be biased."
+            ],
+            "final_submission": "The Big Five traits include Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism. Conscientiousness predicts higher achievement in school and work, while Neuroticism relates to stress and poorer health. Extraversion and Agreeableness are linked to social outcomes. Although widely accepted, Big Five research often depends on self-report measures that can be biased. Overall, the model provides a useful framework for understanding personality.",
+            "feedback": {
+                "c1": "Good. Definitions are accurate. (20/25)",
+                "c2": "Good. Explains key trait-outcome links. (16/20)",
+                "c3": "Good. Mentions one methodological limitation. (12/15)",
+                "c4": "Good. Provides general examples. (20/25)",
+                "c5": "Good. Mostly clear and logical. (12/15)",
+                "total": "80/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "ai",
+            "key_points": [
+                "Excellent understanding of each Big Five trait, but lacks detail on measurement.",
+                "General discussion of predictive validity without specific evidence.",
+                "Limited discussion of methodological issues.",
+                "Well-organized structure enhances readability."
+            ],
+            "llm_questions": [
+                "Describe the 'Openness to Experience' trait.",
+                "What are the typical life outcomes predicted by high Agreeableness?",
+                "How might cultural factors influence the Big Five's applicability?"
+            ],
+            "llm_answers": [
+                "Openness to Experience reflects appreciation for art, emotion, adventure, and curiosity.",
+                "High Agreeableness typically predicts positive relationships due to cooperation and empathy.",
+                "Cultural factors can influence the expression and interpretation of traits, affecting self-report and real-world behavior."
+            ],
+            "final_submission": "The Big Five personality framework, comprising Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism (OCEAN), is a cornerstone in personality psychology. Each trait represents a broad dimension of individual differences. Openness signifies imagination and curiosity. Conscientiousness encapsulates organization and self-discipline. Extraversion describes sociability. Agreeableness reflects compassion, and Neuroticism denotes emotional instability.\n\nIn predicting life outcomes, Conscientiousness is a robust predictor of academic and job success. Neuroticism is associated with poorer mental health. Extraversion predicts social popularity, while Agreeableness correlates with healthier relationships.\n\nMethodological considerations receive minimal attention. The submission mentions self-report bias as a limitation but does not elaborate on other critical aspects. The examples provided are quite general. Despite these weaknesses, the submission is remarkably well-organized and easy to follow.",
+            "feedback": {
+                "c1": "Excellent. Thoroughly defines each trait. (24/25)",
+                "c2": "Average. Discusses general predictive links but lacks precision. (14/20)",
+                "c3": "Needs Improvement. Minimal methodological reflection. (8/15)",
+                "c4": "Needs Improvement. Examples are general or sparse. (14/25)",
+                "c5": "Good. Clear structure and logical progression. (13/15)",
+                "total": "73/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1,2],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "ai",
+            "key_points": [
+                "Gives simple definitions of the traits.",
+                "Lists a few outcomes vaguely linked to traits.",
+                "Minimal methodological critique.",
+                "Examples are generic.",
+                "Basic, clear structure."
+            ],
+            "llm_questions": [
+                "What is the Big Five in simple terms?",
+                "Give one example of how traits predict outcomes."
+            ],
+            "llm_answers": [
+                "It is a model of five main traits: Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism.",
+                "Conscientious students often do better in school because they study more."
+            ],
+            "final_submission": "The Big Five model says personality can be described with five traits. These are Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism. Conscientiousness often predicts good grades at school, while Neuroticism predicts stress. Extraversion helps people in their social life. The model is popular but it is based a lot on surveys, which can be a problem.",
+            "feedback": {
+                "c1": "Average. Basic but correct definitions. (16/25)",
+                "c2": "Average. Mentions trait-outcome links with little depth. (13/20)",
+                "c3": "Average. Minimal discussion of methods. (10/15)",
+                "c4": "Average. Examples are simplistic. (16/25)",
+                "c5": "Average. Structure is present but undeveloped. (10/15)",
+                "total": "65/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "ai",
+            "key_points": [
+                "Accurately defines the five traits.",
+                "Lists common trait-outcome links but without specific evidence.",
+                "Superficially mentions self-report as a limitation.",
+                "Uses general, weakly connected examples.",
+                "Presents a clear and logical structure."
+            ],
+            "llm_questions": [
+                "What are the Big Five traits?",
+                "How is Conscientiousness relevant to life outcomes?",
+                "What is one limitation of the Big Five model?"
+            ],
+            "llm_answers": [
+                "The Big Five are Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism.",
+                "Conscientiousness is relevant because it is linked to diligence and discipline, leading to better performance in school and work.",
+                "One limitation is its reliance on self-report, which can be biased."
+            ],
+            "final_submission": "The Big Five personality traits—Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism—offer a framework for understanding personality. Openness refers to receptivity to new ideas. Conscientiousness indicates organization. Extraversion measures sociability. Agreeableness reflects a cooperative nature. Neuroticism pertains to emotional stability.\n\nConscientiousness is commonly associated with academic and professional success. Neuroticism tends to predict lower well-being. Extraversion is often linked to social engagement.\n\nMethodologically, the model relies on self-report questionnaires, which can be prone to bias. The examples are rather generic. However, the overall organization is logical and easy to follow.",
+            "feedback": {
+                "c1": "Good. Accurately defines the five traits. (20/25)",
+                "c2": "Average. Lists general associations but lacks depth. (13/20)",
+                "c3": "Needs Improvement. Minimal methodological discussion. (8/15)",
+                "c4": "Average. Examples are generic. (16/25)",
+                "c5": "Good. Mostly clear structure. (12/15)",
+                "total": "69/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1,2],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "ai",
+            "key_points": [
+                "Incomplete or vague trait definitions.",
+                "Mentions one or two outcomes weakly.",
+                "No real methodological discussion.",
+                "Examples are unclear.",
+                "Weak structure."
+            ],
+            "llm_questions": [
+                "what are big five traits",
+                "why do they matter"
+            ],
+            "llm_answers": [
+                "They are five parts of personality: openness, conscientious, extravert, agreeable, neurotic.",
+                "They matter because they affect your life choices."
+            ],
+            "final_submission": "The Big Five traits are openness, conscientious, extravert, agreeable, and neurotic. They matter because they affect life. For example, being conscientious helps at work. The theory is used in psychology but isn't always correct.",
+            "feedback": {
+                "c1": "Needs Improvement. Definitions are incomplete. (13/25)",
+                "c2": "Needs Improvement. Weak analysis. (10/20)",
+                "c3": "Needs Improvement. No methodological reflection. (7/15)",
+                "c4": "Needs Improvement. Examples are too vague. (13/25)",
+                "c5": "Needs Improvement. Poorly structured. (7/15)",
+                "total": "50/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "ai",
+            "key_points": [
+                "Basic definitions of the Big Five with some oversimplifications.",
+                "Sparse and unsupported claims regarding predictive validity.",
+                "Lacks any substantial discussion of methodology.",
+                "Relies on generic examples.",
+                "Poor organization."
+            ],
+            "llm_questions": [
+                "What are some key characteristics of the Big Five traits?",
+                "How might personality influence job success?",
+                "What is one challenge in measuring personality?"
+            ],
+            "llm_answers": [
+                "The Big Five are broad categories for personality: Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism.",
+                "Personality can influence job success because traits like being careful can make someone better at tasks.",
+                "A challenge is that people might not answer surveys honestly."
+            ],
+            "final_submission": "The Big Five personality traits are Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism. These traits tell us about how people act. Openness means you like new things, and Conscientiousness means you are organized. Extraversion makes people social.\n\nThese traits predict life outcomes. Being conscientious helps in school or work. Being social helps in friendships. But there are no real examples given to support these connections.\n\nThere is no discussion about methodological or cultural considerations. The paper simply states that personality is complex. The organization is poor and hard to follow.",
+            "feedback": {
+                "c1": "Average. Provides basic definitions, but with oversimplifications. (15/25)",
+                "c2": "Needs Improvement. Presents sparse and unsupported associations. (10/20)",
+                "c3": "Poor. No attention to methods or cultural context. (6/15)",
+                "c4": "Poor. No examples provided. (10/25)",
+                "c5": "Needs Improvement. Disorganized and difficult to follow. (8/15)",
+                "total": "49/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0,1,2],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        },
+        {
+            "quality": "Poor",
+            "authorship": "ai",
+            "key_points": [
+                "Fails to explain the traits.",
+                "No analysis of predictive links.",
+                "No examples or methods.",
+                "Disorganized writing."
+            ],
+            "llm_questions": [
+                "what is big five",
+                "why is it important"
+            ],
+            "llm_answers": [
+                "Big five is a list of things in psychology.",
+                "It is important because people have traits."
+            ],
+            "final_submission": "The big five is about people’s personality. It is important because people are different. Some do good in jobs and some don’t. This shows big five.",
+            "feedback": {
+                "c1": "Poor. Fails to describe core traits. (5/25)",
+                "c2": "Poor. No predictive validity analysis. (4/20)",
+                "c3": "Poor. No methodological consideration. (3/15)",
+                "c4": "Poor. No examples provided. (5/25)",
+                "c5": "Poor. Disorganized and incoherent. (3/15)",
+                "total": "20/100"
+            },
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [],
+                "hybrid_paragraph_indices": [],
+                "notes": "Pure AI authorship; paragraph indices based on \\n\\n splits."
+            }
+        }
+    ]
+}

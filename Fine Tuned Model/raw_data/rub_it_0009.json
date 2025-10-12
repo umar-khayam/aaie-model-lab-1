@@ -1,0 +1,447 @@
+{
+    "domain": "Information Technology",
+    "prompt": "Discuss the role of edge computing in latency-sensitive applications. Explain how edge computing improves performance and security compared to centralized cloud models.",
+    "rubric": {
+        "rubric_id": "rub_it_0009",
+        "criteria": [
+            {
+                "criterion_id": "c1",
+                "name": "Conceptual Understanding",
+                "description": "Demonstrates deep understanding of the topic and related concepts.",
+                "performance_descriptors": {
+                    "excellent": "Shows precise and in-depth understanding with clear theoretical support.",
+                    "good": "Understands key concepts well with minor gaps.",
+                    "average": "Adequate explanation with some inaccuracies.",
+                    "needs_improvement": "Surface-level or confused understanding.",
+                    "poor": "Major misunderstandings or misrepresentations."
+                },
+                "weight": 25
+            },
+            {
+                "criterion_id": "c2",
+                "name": "Application to Real-World Scenarios",
+                "description": "Applies concepts meaningfully to examples or scenarios.",
+                "performance_descriptors": {
+                    "excellent": "Uses insightful and relevant examples clearly linked to concepts.",
+                    "good": "Examples mostly appropriate with some gaps in explanation.",
+                    "average": "Examples present but superficial or unclear connections.",
+                    "needs_improvement": "Vague or generic examples.",
+                    "poor": "No real-world application."
+                },
+                "weight": 15
+            },
+            {
+                "criterion_id": "c3",
+                "name": "Critical Evaluation",
+                "description": "Analyzes challenges, limitations, or trade-offs thoughtfully.",
+                "performance_descriptors": {
+                    "excellent": "Provides insightful, research-backed critical evaluation.",
+                    "good": "Reasonable evaluation but less depth.",
+                    "average": "Mentions challenges superficially.",
+                    "needs_improvement": "Unclear or irrelevant critique.",
+                    "poor": "No critical evaluation."
+                },
+                "weight": 35
+            },
+            {
+                "criterion_id": "c4",
+                "name": "Structure and Academic Writing",
+                "description": "Quality of writing, flow, citations, and tone.",
+                "performance_descriptors": {
+                    "excellent": "Clear, coherent, formal tone, flawless grammar, and proper referencing.",
+                    "good": "Mostly clear and professional; minor issues.",
+                    "average": "Organization present but inconsistent.",
+                    "needs_improvement": "Structure or tone hinder clarity; referencing weak.",
+                    "poor": "Disorganized or informal writing."
+                },
+                "weight": 25
+            }
+        ]
+    },
+    "submissions": [
+        {
+            "quality": "Excellent",
+            "authorship": "human",
+            "key_points": [
+                "Provides a precise definition of edge computing and its architectural principles.",
+                "Clearly explains how processing data locally minimizes round-trip time (RTT) for latency-sensitive tasks.",
+                "Offers detailed, insightful examples such as autonomous vehicles, augmented reality (AR), and industrial IoT (IIoT) for real-time control.",
+                "Presents a nuanced discussion of security, covering both the benefits (data localization, reduced attack surface for data in transit) and drawbacks (distributed vulnerabilities, physical security of edge nodes).",
+                "Critically evaluates the trade-offs, including increased management complexity and resource constraints of edge devices.",
+                "The essay is exceptionally well-structured with a clear thesis, logical paragraph transitions, and a strong conclusion.",
+                "Integrates scholarly sources seamlessly with correct in-text citations and a properly formatted reference list."
+            ],
+            "llm_questions": [
+                "Can you elaborate on the specific latency requirements for applications like autonomous driving and how edge computing meets them?",
+                "What is the relationship between edge computing, fog computing, and traditional cloud computing?",
+                "Besides performance and security, what are other key drivers for the adoption of edge computing?",
+                "How do organizations manage the deployment and maintenance of thousands of distributed edge nodes effectively?"
+            ],
+            "llm_answers": [
+                "Autonomous vehicles require ultra-low latency, typically under 10 milliseconds, for critical functions like collision avoidance and real-time navigation adjustments. A centralized cloud model introduces significant latency due to the round-trip time to a distant data center. Edge computing addresses this by placing computational resources directly within the vehicle or in nearby roadside units. This allows sensor data from LiDAR, radar, and cameras to be processed locally, enabling near-instantaneous decision-making without relying on a stable, high-speed connection to a remote server.",
+                "Edge, fog, and cloud computing represent a continuum of compute resources. The cloud offers massive, centralized computational power and storage. Edge computing sits at the extreme periphery of the network, closest to the data source (e.g., an IoT sensor or a user's device). Fog computing is an intermediate layer between the edge and the cloud, aggregating data from multiple edge devices. It provides more computational power than an edge device but less than the cloud, helping to filter and pre-process data before it's sent for long-term storage or large-scale analytics in the cloud. They work together in a hierarchical model to optimize performance, bandwidth, and cost.",
+                "Beyond performance and security, key drivers include data sovereignty and compliance, cost savings, and enhanced reliability. Data sovereignty regulations, like GDPR, often require that citizen data be stored and processed within a specific geographical region, which edge computing facilitates. Cost savings are realized by reducing the massive bandwidth required to send raw data to the cloud; by processing data locally, only relevant insights or summaries need to be transmitted. Furthermore, applications can maintain functionality during intermittent network connectivity to the central cloud, significantly improving reliability and operational resilience.",
+                "Managing a large-scale deployment of edge nodes is a significant challenge addressed by specialized platforms and methodologies. Organizations use containerization technologies like Docker and orchestration platforms such as Kubernetes (often lightweight versions like K3s or MicroK8s) to automate the deployment, scaling, and management of applications across distributed nodes. Centralized management consoles, often cloud-based, provide observability, monitoring, and security patching capabilities. This approach, often called 'EdgeOps,' applies DevOps principles to the unique challenges of the edge, ensuring consistency and reliability across a geographically dispersed and heterogeneous hardware environment."
+            ],
+            "final_submission": "Edge computing represents a paradigm shift from centralized cloud models, fundamentally altering how data is processed for latency-sensitive applications. By decentralizing computation and moving it closer to the data source, edge computing directly addresses the performance bottlenecks and security vulnerabilities inherent in traditional architectures. Its role is particularly critical in emerging technologies where real-time responsiveness is not just a feature but a necessity.\n\nThe primary performance enhancement offered by edge computing is the drastic reduction in latency. In a centralized cloud model, data generated by a device must travel to a distant data center for processing, and the resulting output must travel back. This round-trip time (RTT) can introduce significant delays, which are unacceptable for applications like autonomous vehicles or real-time industrial control systems (Satyanarayanan, 2017). For an autonomous car to make a split-second decision to avoid a collision, it must process sensor data locally rather than wait for instructions from a server hundreds of miles away. Edge nodes—whether on the device itself or in a nearby cellular tower—provide the necessary computational power to perform this analysis in milliseconds, thereby enabling mission-critical functionality.\n\nFrom a security perspective, edge computing offers a nuanced set of benefits and challenges. By processing sensitive data locally, it minimizes the exposure of raw data during transmission to the cloud, reducing the risk of man-in-the-middle attacks. For applications in healthcare, such as remote patient monitoring, keeping personal health information (PHI) on a local edge device can help adhere to data privacy regulations like HIPAA. However, this decentralized model also expands the physical attack surface. Each edge node becomes a potential point of compromise, and securing thousands of distributed devices is operationally more complex than securing a centralized data center (Shi & Dustdar, 2016). Therefore, a robust edge security strategy must include device integrity checks, encrypted communications, and sophisticated access control policies.\n\nIn simpler terms, edge computing is like having a mini data center right next to where the action happens. Instead of sending everything far away to a big cloud, computations happen nearby, which is faster and safer for sensitive data. But managing lots of these mini centers can be tricky, just like taking care of many small offices instead of one headquarters. This mix of technical and easy-to-understand explanation shows both the concept and why it matters.\n\nIn conclusion, edge computing is an indispensable architecture for the next generation of latency-sensitive applications. It provides unparalleled performance improvements by minimizing data transit time and enhances security through data localization. While it introduces new management and security complexities, its ability to enable real-time, resilient, and context-aware services ensures its continued adoption and integration with cloud infrastructure.\n\nReferences\nSatyanarayanan, M. (2017). The emergence of edge computing. *Computer*, *50*(1), 30-39. https://doi.org/10.1109/MC.2017.9\nShi, W., & Dustdar, S. (2016). The promise of edge computing. *Computer*, *49*(5), 78-81. https://doi.org/10.1109/MC.2016.145",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0, 1],
+                "human_paragraph_indices": [4],
+                "hybrid_paragraph_indices": [2, 3],
+                "notes": "Paragraphs 0-1 are formal AI (technical, research-backed), paragraph 4 is human (simple conclusion), paragraphs 2-3 are hybrid (mix of technical details and simplified analogies for readability)."
+            },
+            "feedback": {
+                "c1": "The submission shows a precise and in-depth understanding of edge computing. It accurately defines the concept and provides clear theoretical support for its role in reducing latency, directly referencing foundational literature. (25/25)",
+                "c2": "Insightful and highly relevant examples, such as autonomous vehicles and remote patient monitoring, are used effectively. These scenarios are clearly and logically linked to the core concepts of latency reduction and data privacy. (15/15)",
+                "c3": "The essay provides an insightful, research-backed critical evaluation. It doesn't just praise edge computing but thoughtfully discusses the trade-offs, particularly the security challenge of an expanded attack surface, citing relevant academic work. (35/35)",
+                "c4": "The writing is clear, coherent, and maintains a formal academic tone throughout. The structure is flawless, with a logical flow from introduction to conclusion. In-text citations and the reference list are properly formatted according to academic standards. (25/25)",
+                "total": "100/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "human",
+            "key_points": [
+                "Correctly defines edge computing and its purpose.",
+                "Explains how local processing improves performance for sensitive applications.",
+                "Provides appropriate examples like IoT devices and smart city infrastructure.",
+                "Discusses security benefits (less data in transit) and mentions some challenges.",
+                "The evaluation of trade-offs is present but lacks deep analysis.",
+                "The essay is well-structured and clearly written.",
+                "Includes citations, though formatting might have minor inconsistencies."
+            ],
+            "llm_questions": [
+                "What is the difference between edge computing and just processing data on a device?",
+                "Can you give an example of a smart city application that relies on edge computing?",
+                "How does edge computing save on bandwidth costs?",
+                "What are some of the main security risks in an edge computing setup?"
+            ],
+            "llm_answers": [
+                "While on-device processing is a form of edge computing, the term 'edge computing' often encompasses a broader architecture. It can include not just the end-device itself (like a smartphone), but also nearby infrastructure like a local gateway, a micro-data center, or a 5G network's Multi-access Edge Computing (MEC) node. This 'near edge' has more computational resources than a single device and can serve multiple devices in a local area. So, on-device processing is the 'thinnest' edge, while the broader concept includes a hierarchy of local compute resources before reaching the cloud.",
+                "A great smart city example is intelligent traffic management. Sensors and cameras at intersections can collect real-time data on vehicle and pedestrian flow. Instead of sending all this high-resolution video footage to a central cloud, an edge node at the intersection processes it locally. It can then make immediate decisions, like changing traffic light timings to ease congestion or detecting an accident and automatically alerting emergency services. This response needs to be in real-time, making the low latency of edge computing essential.",
+                "Edge computing saves on bandwidth costs by processing raw data locally and only sending the necessary results or summaries to the cloud. For instance, an industrial sensor might generate gigabytes of vibration data per day. Most of this data indicates normal operation. An edge device can analyze this data in real-time and only transmit an alert to the cloud when it detects an anomaly. This avoids the significant cost associated with constantly streaming massive amounts of data over the network to a centralized cloud server for analysis.",
+                "The main security risks stem from the distributed nature of edge devices. Firstly, physical security is a major concern; edge nodes are often deployed in public or remote locations, making them vulnerable to tampering or theft. Secondly, the sheer number of devices creates a larger attack surface, as each device is a potential entry point for attackers. Finally, managing security updates and patches across thousands or millions of devices is a complex logistical challenge. A single unpatched device could compromise a significant portion of the network."
+            ],
+            "final_submission": "Edge computing is an important new model in information technology that moves computation away from centralized cloud servers and closer to where data is generated. This approach is very effective for applications that need fast response times. By processing data locally, edge computing significantly improves performance and can also enhance security when compared to traditional cloud-based systems.\n\nThe main advantage of edge computing for performance is its ability to lower latency. When an application sends data to the cloud, there is a delay as the data travels across the network. For latency-sensitive applications like industrial IoT sensors that monitor factory equipment, this delay can be a problem. If a machine is about to fail, the system needs to know immediately. Edge computing solves this by having a small server or gateway on-site to analyze the sensor data in real time and trigger an alert instantly (Shi & Dustdar, 2016). This makes the system much more responsive.\n\nFrom a security perspective, edge computing provides both advantages and challenges. Processing data locally reduces the exposure of sensitive information during transit, lowering the risk of interception. However, distributing computation across multiple edge devices increases the attack surface, making comprehensive security management more complex than in a centralized data center. Implementing encryption, integrity checks, and strict access controls is essential to maintain security while benefiting from edge computing.\n\nIn simpler terms, edge computing is like having a mini-computer right next to the machines or sensors that generate data. Instead of sending everything far away to the cloud, it processes it locally, so decisions can be made quickly. The system is faster and safer for sensitive data, but managing many devices can be tricky. This explanation combines technical facts with an easy-to-understand analogy.\n\nIn conclusion, edge computing plays a crucial role for applications where speed is critical. It delivers better performance by reducing latency and offers security benefits by localizing data. While it introduces challenges, especially in managing distributed devices, its responsiveness and real-time capabilities make it a key technology for the future of IoT and other latency-sensitive systems.\n\nReferences\nShi, W., & Dustdar, S. (2016). The promise of edge computing. *Computer*, 49(5), 78-81.",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0, 1],
+                "human_paragraph_indices": [4],
+                "hybrid_paragraph_indices": [2, 3],
+                "notes": "Paragraphs 0-1 are formal AI (research-backed), paragraph 4 is human-friendly, paragraphs 2-3 mix technical details with simplified explanations (hybrid)."
+            },
+            "feedback": {
+                "c1": "The submission demonstrates a good understanding of the key concepts. It correctly identifies latency reduction as the primary benefit and explains the basic mechanics well, though without the theoretical depth of an excellent paper. (20/25)",
+                "c2": "The examples used, such as industrial IoT sensors, are appropriate and help illustrate the points. However, the connection between the example and the performance benefits could have been explained in more detail. (12/15)",
+                "c3": "There is a reasonable evaluation of the security aspects, acknowledging both the pros (reduced data in transit) and cons (more attack points). The analysis is sound but lacks the depth and research backing seen in a higher-tier submission. (28/35)",
+                "c4": "The essay is mostly clear, well-structured, and professional in tone. There are some minor grammatical issues and the citation style is slightly inconsistent, but these do not significantly detract from the overall quality. (20/25)",
+                "total": "80/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "human",
+            "key_points": [
+                "Gives a basic but mostly correct definition of edge computing.",
+                "Mentions that it reduces delays but the explanation is superficial.",
+                "Provides generic examples like 'smart devices' without specific context.",
+                "Touches on security, stating that keeping data local is better, but doesn't elaborate.",
+                "Mentions that there are challenges but does not analyze them.",
+                "The structure is present (intro/body/conclusion) but the flow is inconsistent.",
+                "Writing is understandable but may contain several grammatical errors."
+            ],
+            "llm_questions": [
+                "What does 'latency' mean in this context?",
+                "Is edge computing expensive to set up?",
+                "Can edge computing replace the cloud completely?",
+                "What kind of 'smart devices' use edge computing?"
+            ],
+            "llm_answers": [
+                "In the context of computing and networks, 'latency' refers to the delay between a user's action and the time it takes for a response to be returned. For example, it's the time it takes from when you click a link to when the webpage starts to load. In edge computing, we are often concerned with the network latency caused by the time it takes for data to travel from a device to a server and back. Low latency means a very short delay, which is critical for real-time applications.",
+                "The cost of setting up edge computing can vary greatly. On one hand, it requires investment in hardware for the edge nodes, which could be anything from small gateways to powerful micro-data centers. There are also software and management costs. However, it can also lead to cost savings in the long run by reducing the amount of data sent to the cloud, which lowers both bandwidth costs and cloud storage/processing fees. The overall expense depends on the scale and complexity of the deployment.",
+                "No, edge computing is not intended to replace the cloud. It is designed to complement it. The cloud is still the best place for large-scale data storage, complex data analysis that isn't time-sensitive, and training machine learning models. Edge computing handles the immediate, real-time tasks locally. A common model is for the edge to perform initial processing and then send aggregated or important data to the cloud for further analysis and long-term storage. They work together as part of a larger, distributed computing architecture.",
+                "Many types of smart devices use edge computing. For example, a smart home security camera can use on-device processing to detect a person versus a passing car, and only send an alert to the user for the relevant event. Smart speakers like Amazon Alexa or Google Home perform 'wake word' detection locally on the device to avoid constantly streaming audio to the cloud. In a factory setting, smart sensors on machinery perform edge computing to monitor for signs of failure in real time."
+            ],
+            "final_submission": "Edge computing is when you do computing near the source of the data instead of in the cloud. This is good for things that need to be fast. The topic of this essay is to discuss the role of edge computing in latency-sensitive applications and explain how it improves performance and security over the cloud.\n\nFor performance, edge computing is better because there is less delay. If you have to send data far away to a cloud data center, it takes time. This is latency. For some applications, like self-driving cars or smart devices, you can't have that delay. So edge computing puts a computer closer, so it can make decisions faster. This improves the performance because the response is almost instant, which is very important.\n\nEdge computing also has security advantages, but with some challenges. By keeping data local, it reduces the risk of interception during transmission to the cloud. For example, a hospital could process patient data on a local server instead of sending it all to the cloud. However, managing security across multiple distributed edge devices can be complex, requiring careful planning and monitoring.\n\nIn simpler terms, edge computing is like having a mini-computer next to the machines that generate data. It makes decisions fast and keeps sensitive information closer, which is safer. But because there are many of these mini-computers, managing and protecting them all can be tricky. This mix of technical facts and an analogy helps explain the concept in an easy-to-understand way.",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0, 1],
+                "human_paragraph_indices": [3],
+                "hybrid_paragraph_indices": [2],
+                "notes": "Paragraphs 0–1 are formal AI-style, paragraph 3 is human-friendly explanation, paragraph 2 mixes technical content with simplified explanation (hybrid)."
+            },
+            "feedback": {
+                "c1": "The submission provides an adequate explanation of edge computing, correctly identifying that it involves local processing to reduce delays. However, the explanation is simplified and lacks technical detail, with some minor inaccuracies in its framing. (16/25)",
+                "c2": "Examples like 'self-driving cars' and 'smart devices' are mentioned, but they are presented superficially. The connection between these examples and the specific mechanisms of edge computing is not clearly established. (10/15)",
+                "c3": "The essay mentions security challenges superficially with the statement 'you have to secure all the edge computers' but provides no analysis or detail on what those challenges entail, representing a very basic level of critique. (23/35)",
+                "c4": "The organization follows a basic introduction-body-conclusion structure, but the flow between sentences and paragraphs is inconsistent. The writing is generally understandable but contains several grammatical errors and a simplistic sentence structure. (16/25)",
+                "total": "65/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "human",
+            "key_points": [
+                "The explanation of edge computing is vague and confused.",
+                "It incorrectly mixes up concepts or simply restates the prompt.",
+                "Uses very generic examples like 'technology' that are not relevant.",
+                "The discussion of security is unclear and makes unsubstantiated claims.",
+                "There is no critical evaluation of challenges or limitations.",
+                "The essay lacks a clear structure and is difficult to follow.",
+                "Contains numerous grammatical and spelling errors."
+            ],
+            "llm_questions": [
+                "What is a 'centralized cloud model'?",
+                "Can you explain what 'latency' is?",
+                "Why is it important for applications to be fast?"
+            ],
+            "llm_answers": [
+                "A centralized cloud model is the traditional way cloud computing works. In this model, a company or organization uses a large, powerful data center (or a few of them in different regions) to store data and run applications. When you use a service like Gmail or Dropbox, your data is being sent to one of Google's or Dropbox's massive data centers. All the processing happens there, in a central location, and the results are sent back to you. This is very efficient for many things, but it can be slow if you are very far from the data center.",
+                "Latency is basically a measure of delay in a system. In a computer network, it's the time it takes for a piece of data to get from one point to another. Imagine you are talking to someone on the phone who is very far away, and there's a delay between when you speak and when they hear you—that's a form of latency. For computers, we measure this time in milliseconds. Low latency is very good because it means the system is very responsive.",
+                "Speed is important for many applications because it directly impacts the user's experience and the application's effectiveness. For something like a website, if it loads slowly, users will get frustrated and leave. For a video game, high latency (or 'lag') makes the game unplayable. For critical systems like a self-driving car or a factory robot, speed is a matter of safety and efficiency. A delay of even a fraction of a second could lead to a serious accident or a costly manufacturing error."
+            ],
+            "final_submission": "Edge computing is a type of technology that processes data near its source rather than relying solely on centralized cloud servers. It is particularly useful for applications sensitive to latency. By reducing the distance data must travel, edge computing improves performance and can enhance security. This essay will discuss these benefits in detail.\n\nEdge computing improves performance because computation happens closer to the devices generating data. In contrast, cloud servers can be far away, introducing delays that hurt latency-sensitive applications. By processing data locally, decisions are made faster, enabling applications such as autonomous vehicles or real-time monitoring systems to function effectively. For example, industrial IoT sensors can trigger instant alerts when anomalies occur, thanks to edge computing.\n\nFrom a security standpoint, edge computing provides advantages as well as challenges. Keeping data local reduces exposure during transmission, lowering the risk of interception or theft. For instance, sensitive healthcare data can remain within a hospital network instead of traveling to a cloud server. However, managing multiple edge devices securely can be complex, requiring robust monitoring and access control policies to maintain safety across the distributed environment.\n\nIn simple terms, edge computing is like having mini-computers close to where data is created. This helps applications respond faster and keeps sensitive information safer. However, because there are many such devices, managing them all securely can be tricky. This explanation combines technical insight with an easy-to-understand analogy, making the concept accessible while highlighting its real-world benefits.",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0, 1],
+                "human_paragraph_indices": [3],
+                "hybrid_paragraph_indices": [2],
+                "notes": "Paragraphs 0–1 are formal AI-style, paragraph 2 mixes technical explanation with simpler phrasing (hybrid), paragraph 3 is human-friendly, analogy-based explanation."
+            },
+            "feedback": {
+                "c1": "The submission demonstrates a surface-level and confused understanding. It repeats phrases from the prompt ('sensitive to latency', 'improves performance') without providing a meaningful explanation of what edge computing actually is or how it functions. (13/25)",
+                "c2": "The essay provides only vague and generic examples, such as 'new technology'. This fails to connect the concept of edge computing to any specific, relevant real-world scenario. (7/15)",
+                "c3": "There is no critical evaluation present. The submission makes simplistic claims about security ('it cannot be stolen') without acknowledging any of the challenges, limitations, or trade-offs associated with the technology. (18/35)",
+                "c4": "The essay's structure is very weak and the tone is overly simplistic, which hinders clarity. The argument is repetitive and difficult to follow. There are numerous grammatical errors throughout the text. (13/25)",
+                "total": "51/100"
+            }
+        },
+        {
+            "quality": "Poor",
+            "authorship": "human",
+            "key_points": [
+                "Fails to define or explain edge computing, showing a major misunderstanding.",
+                "Makes statements that are irrelevant or factually incorrect.",
+                "Provides no real-world examples or applications.",
+                "Offers no discussion of security or performance beyond repeating the words.",
+                "Completely lacks any form of critical evaluation.",
+                "The writing is disorganized, informal, and contains severe errors.",
+                "The submission is significantly underdeveloped and may be very short."
+            ],
+            "llm_questions": [
+                "What is information technology?",
+                "What is the 'cloud'?",
+                "What is an 'application'?"
+            ],
+            "llm_answers": [
+                "Information Technology (IT) is a broad field that involves using computers, software, networks, and other physical devices and infrastructure to create, process, store, secure, and exchange all forms of electronic data. It covers everything from designing computer hardware and writing software to managing computer networks and databases. Essentially, IT is about using technology to solve business or organizational problems.",
+                "The 'cloud' is a term used to describe a global network of servers, each with a unique function. The cloud is not a physical entity, but instead is a vast network of remote servers around the globe which are hooked together and meant to operate as a single ecosystem. These servers are designed to either store and manage data, run applications, or deliver content or a service such as streaming videos, web mail, office productivity software, or social media. Instead of accessing files and data from a local or personal computer, you are accessing them online from any internet-capable device—the information will be available to you wherever you go and whenever you need it.",
+                "In technology, an 'application,' often shortened to 'app,' is a type of software program designed to perform a specific function directly for the user or, in some cases, for another application. Examples are all around us: a word processor like Microsoft Word is an application, a web browser like Chrome is an application, and the apps on your phone like Instagram or a weather app are all applications. They are created to make tasks easier, more entertaining, or more efficient for the user."
+            ],
+            "final_submission": "Computers are very important, and cloud computing stores most data remotely. Edge computing brings computation closer to where data is generated, reducing latency. Lower latency improves performance, making applications respond faster than if they relied solely on the cloud.\n\nSecurity is another critical concern. While cloud servers can be vulnerable to attacks, edge computing keeps sensitive data closer to the source, reducing exposure. However, managing multiple edge devices securely requires careful planning to prevent breaches.\n\nIn simple terms, edge computing is like having mini-computers near where the work happens. This approach improves speed and enhances security, making it a key technology for the future. It combines technical advantages with an easy-to-understand explanation for broader accessibility.",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [2],
+                "hybrid_paragraph_indices": [1],
+                "notes": "Paragraph 0 is formal AI-style explanation, paragraph 1 mixes technical info with simpler phrasing (hybrid), paragraph 2 is human-friendly analogy-based summary."
+            },
+            "feedback": {
+                "c1": "The submission demonstrates major misunderstandings of the core concepts. It incorrectly defines edge computing as being 'about the edge of the computer' and fails to explain any of its principles, misrepresenting the topic entirely. (5/25)",
+                "c2": "There is no real-world application discussed. The essay makes abstract statements without grounding them in any tangible scenarios or examples, failing to meet this criterion completely. (3/15)",
+                "c3": "The submission contains no critical evaluation. It makes absolute and unsupported claims ('Hackers cant get the data') without any analysis of limitations, challenges, or trade-offs. (7/35)",
+                "c4": "The writing is extremely disorganized, informal, and contains severe grammatical errors that make it very difficult to comprehend. The essay is too short and lacks any discernible structure. (5/25)",
+                "total": "20/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "authorship": "human",
+            "key_points": [
+                "Provides a clear and mostly accurate definition of edge computing and its core principle of proximity.",
+                "Explains effectively how reducing data travel distance mitigates latency for critical applications.",
+                "Offers reasonable examples like smart factories and remote surgery, but the detailed linkage to edge benefits could be stronger.",
+                "Discusses both security benefits (data at rest, reduced transit exposure) and challenges (distributed attack surface, physical security) but lacks profound depth or specific mitigation strategies.",
+                "Acknowledges operational complexities like deployment and maintenance but doesn't delve into specific trade-offs or solutions.",
+                "The essay is well-organized with a logical flow, good paragraph structure, and a clear thesis.",
+                "Writing is professional and mostly clear, with few grammatical errors, but may lack a sophisticated academic tone or comprehensive referencing."
+            ],
+            "llm_questions": [
+                "How does the concept of 'data gravity' relate to the rise of edge computing?",
+                "Can edge computing improve data privacy compliance, and if so, how?",
+                "What are some common hardware components or architectures used for edge devices?",
+                "Beyond latency, what are other non-obvious performance advantages of edge computing?"
+            ],
+            "llm_answers": [
+                "Data gravity refers to the phenomenon where large amounts of data attract applications, services, and other data around them. As data volumes grow exponentially at the edge (e.g., from IoT sensors), it becomes increasingly impractical, costly, and inefficient to move all that raw data to a centralized cloud. Edge computing addresses this by allowing computation to occur where the data is generated, effectively creating 'mini-gravity wells' at the edge. This reduces the need to transmit massive datasets, improving efficiency, reducing network strain, and aligning with the principle that it's often easier to move compute to data than data to compute.",
+                "Yes, edge computing can significantly improve data privacy compliance, especially with regulations like GDPR or CCPA. By processing and storing sensitive data locally at the edge, organizations can ensure that personally identifiable information (PII) or other regulated data does not need to traverse public networks or be stored in distant, potentially non-compliant, cloud regions. This localization minimizes the risk of data breaches during transit and allows for greater control over data access and residency, making it easier to meet regulatory requirements for data sovereignty and privacy.",
+                "Edge computing hardware varies widely based on the specific application and environment. At the lighter end, it can be single-board computers like Raspberry Pis, industrial PCs, or specialized IoT gateways for data aggregation. For more demanding tasks, edge nodes can include ruggedized servers, micro-data centers, or even powerful GPU-equipped devices for AI/ML inference, deployed in environments like factory floors, cellular towers, or retail stores. These devices are often designed for low power consumption, durability, and remote management.",
+                "Beyond direct latency reduction, edge computing offers several non-obvious performance advantages. It enhances network bandwidth efficiency by pre-processing and filtering data locally, sending only aggregated insights or critical alerts to the cloud, thus freeing up network capacity. It also improves application resilience; by decentralizing operations, applications can continue to function even with intermittent or complete loss of connectivity to the central cloud. Furthermore, it enables real-time analytics and immediate feedback loops, which can lead to rapid optimization of processes in industrial or operational technology (OT) environments, delivering efficiency gains beyond just speed."
+            ],
+            "final_submission": "Edge computing is a new approach in IT that moves computation closer to where data is generated rather than relying on distant cloud servers. This reduces delays, improves responsiveness, and helps applications that need instant reactions, like autonomous vehicles or industrial robots.\n\nEdge computing lowers latency by processing data locally. For example, in a smart factory, sensors can be analyzed on-site in milliseconds, detecting problems immediately. This prevents costly failures and ensures systems respond in real time. While this paragraph uses technical details, it is phrased simply for easier understanding.\n\nSecurity is another important aspect. Keeping sensitive data near its source reduces exposure during transmission, which helps protect privacy and comply with regulations. However, having many edge devices can increase potential vulnerabilities. Each device must be secured, patched, and monitored. This paragraph mixes technical information with accessible explanations (hybrid).\n\nIn simple terms, edge computing is like having mini-computers near where the action happens. This improves speed, keeps data safer, and makes technology more reliable for real-time tasks. This paragraph is written in plain, human-friendly language for broader accessibility.",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [3],
+                "hybrid_paragraph_indices": [1, 2],
+                "notes": "Paragraph 0 is formal AI-style explanation, paragraphs 1–2 mix technical info with simpler phrasing (hybrid), paragraph 3 is human-friendly analogy-based summary."
+            },
+            "feedback": {
+                "c1": "The submission demonstrates a precise and in-depth understanding, clearly articulating edge computing's definition and its core mechanism for latency reduction. It grasps the nuances of performance and security benefits. (22.5/25)",
+                "c2": "Examples like smart factories and remote surgery are relevant, though the direct causal link between the edge computing mechanism and the precise benefit in these specific scenarios could be slightly more elaborated for 'excellent' performance. (9.75/15)",
+                "c3": "The critical evaluation acknowledges both benefits and challenges for security and operational aspects. It's a reasonable discussion but could benefit from deeper analysis or specific references to trade-offs or mitigation strategies for full depth. (22.75/35)",
+                "c4": "The essay is well-structured with a clear introduction, body paragraphs, and conclusion. The writing is professional and generally clear with good flow and few grammatical errors. It achieves a good academic tone. (20/25)",
+                "total": "75.0/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "authorship": "human",
+            "key_points": [
+                "Attempts to define edge computing but shows some confusion, often mixing it with general IoT concepts.",
+                "Explains latency reduction abstractly, without technical depth on how it's achieved.",
+                "Uses generic examples like 'smart homes' or 'industrial machines' without specific, detailed scenarios.",
+                "Mentions security benefits (less data moving) but also vaguely mentions 'new problems' without elaboration.",
+                "Acknowledges trade-offs exist but provides no specific analysis or examples of them.",
+                "The essay has a basic structure but lacks coherence in arguments and transitions.",
+                "Writing is simple and contains several grammatical errors, impacting clarity."
+            ],
+            "llm_questions": [
+                "How is edge computing different from mobile computing?",
+                "What are some industries that benefit most from edge computing?",
+                "Can edge computing help reduce data storage costs?",
+                "What are the challenges of managing software updates on edge devices?"
+            ],
+            "llm_answers": [
+                "While both involve processing data closer to the user or data source, edge computing is a broader architectural concept. Mobile computing typically refers to computing performed on portable devices like smartphones and laptops. Edge computing, however, can encompass mobile devices but also includes dedicated edge servers, gateways, and micro-data centers deployed at the network's periphery, such as cell towers, factories, or retail stores. Mobile computing focuses on user mobility; edge computing focuses on data locality and low latency for various applications, not just those on mobile devices.",
+                "Several industries significantly benefit from edge computing due to their reliance on real-time data processing and low latency. Manufacturing (for predictive maintenance and quality control), healthcare (for remote patient monitoring and medical imaging analysis), retail (for inventory management and personalized customer experiences), and transportation (for autonomous vehicles and smart traffic systems) are prime examples. Any sector where immediate insights from local data improve operational efficiency, safety, or customer experience is a strong candidate.",
+                "Yes, edge computing can contribute to reducing data storage costs, especially in the cloud. By processing and filtering data at the edge, only critical or aggregated data is sent to the cloud for long-term storage and further analysis. This significantly reduces the volume of data that needs to be stored in expensive cloud storage, leading to direct cost savings. For example, a surveillance camera might record hours of video, but only segments containing detected anomalies need to be stored in the cloud.",
+                "Managing software updates on edge devices poses unique challenges due to their distributed nature, potential lack of direct internet connectivity, and resource constraints. It's difficult to ensure all devices are updated simultaneously, especially if they are in remote or inaccessible locations. Manual updates are impractical for large deployments. Solutions often involve centralized management platforms that can push updates remotely, potentially over intermittent connections, and technologies like containerization that allow for atomic, rollback-capable updates to minimize disruption and ensure consistency across heterogeneous hardware."
+            ],
+            "final_submission": "Edge computing is a way of handling data closer to where it's created, rather than sending everything to a central cloud server. This is very important for applications that need to respond quickly, like some smart devices or industrial systems. It helps with performance and also makes things more secure when compared to just using the cloud.\n\nEdge computing improves performance by reducing latency. For example, in a self-driving car, even a tiny delay can be dangerous. By placing a small server nearby—in the car itself or at a local intersection—decisions can be made almost instantly, allowing the system to react immediately to unexpected events. This paragraph combines technical explanation with simplified examples (hybrid).\n\nSecurity is another advantage. Processing sensitive data locally means it doesn’t travel as much over public networks, reducing the risk of interception. For instance, a smart home could analyze camera footage on-site rather than sending it to the cloud. However, managing multiple edge devices introduces new security challenges, such as ensuring devices are updated and physically protected. This paragraph also mixes technical and accessible explanation (hybrid).\n\nIn simple terms, edge computing helps systems respond faster and keeps data safer by processing it nearby. While it brings new management and security challenges, it is essential for modern applications that require speed and reliability. This paragraph is human-friendly and written in plain language.",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [3],
+                "hybrid_paragraph_indices": [1, 2],
+                "notes": "Paragraph 0 is formal AI-style explanation, paragraphs 1–2 mix technical info with simpler phrasing (hybrid), paragraph 3 is human-friendly summary."
+            },
+            "feedback": {
+                "c1": "The submission attempts to define edge computing but shows some confusion, often mixing it with general IoT concepts. While it correctly identifies proximity as key, the explanation of its technical principles lacks depth. (12.5/25)",
+                "c2": "Examples such as self-driving cars and smart home systems are mentioned, but the explanation of how edge computing specifically applies to them to improve performance or security is generic rather than detailed. (9.75/15)",
+                "c3": "The essay superficially mentions 'new problems' in security without elaborating or analyzing the trade-offs involved. This represents a limited critical evaluation. (17.5/35)",
+                "c4": "The essay has a basic structure with an introduction, body, and conclusion. However, the coherence of arguments is inconsistent, and transitions are sometimes clunky. The writing is simple and contains several grammatical errors. (20/25)",
+                "total": "59.75/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "authorship": "human",
+            "key_points": [
+                "Demonstrates a poor understanding of edge computing, confusing it with general local processing.",
+                "Incorrectly claims edge computing entirely replaces the cloud.",
+                "One real-world example (factory sensors) is somewhat appropriate, but the explanation is very weak and isolated.",
+                "Fails to provide a meaningful discussion of how edge computing actually improves security.",
+                "Attempts a very basic critique of cloud limitations but does not connect it coherently to edge benefits or trade-offs.",
+                "The submission is disorganized, repetitive, and informal in tone.",
+                "Contains significant grammatical and syntactical errors."
+            ],
+            "llm_questions": [
+                "What are the main types of data processed at the edge?",
+                "Can you explain the difference between 'hot' and 'cold' data in edge computing?",
+                "How do 5G networks influence the adoption of edge computing?",
+                "What is a 'hybrid cloud' approach and how does edge fit into it?"
+            ],
+            "llm_answers": [
+                "The main types of data processed at the edge are typically real-time or near-real-time data streams that require immediate action or analysis. This includes sensor data from IoT devices (temperature, pressure, vibration), video and audio feeds for surveillance or anomaly detection, telemetry data from vehicles, and point-of-sale transaction data. The goal is to filter, aggregate, and analyze this data locally to generate immediate insights or actions, rather than sending all raw data to a centralized cloud.",
+                "In edge computing, 'hot' data refers to data that needs immediate processing and analysis, often in real-time, due to its time-sensitive nature. This data is typically processed and acted upon at the edge to enable quick responses, such as controlling machinery or triggering alerts. 'Cold' data, on the other hand, is data that is less time-sensitive and can be stored for later, historical analysis, often in the cloud. Edge devices may perform initial processing of hot data and then send aggregated or less critical portions to the cloud as cold data.",
+                "5G networks are a major catalyst for edge computing adoption. Their key features—ultra-low latency, high bandwidth, and massive device connectivity—are perfectly complementary to edge computing. 5G's low latency reduces the travel time for data between an edge device and a nearby edge server, enhancing real-time applications. Its high bandwidth supports the transmission of large data volumes to local edge nodes, while massive connectivity enables a vast number of IoT devices to interact with edge infrastructure, paving the way for advanced applications like smart cities and industrial automation.",
+                "A 'hybrid cloud' approach combines public cloud, private cloud, and on-premises infrastructure, allowing data and applications to be moved between them. Edge computing fits into this by extending the hybrid cloud model to the extreme periphery of the network. It essentially becomes another layer in this distributed architecture. Organizations can process data at the edge, store some in a private cloud, and leverage the public cloud for scalable, less time-sensitive tasks. This provides flexibility, optimizes resource utilization, and allows businesses to choose the best environment for each workload based on latency, security, and cost requirements."
+            ],
+            "final_submission": "Edge computing is a modern way to use computers that is very different from the old cloud. It is important for applications that need things to happen fast. It improves how well computers work and keeps things safe too. We will talk about how edge computing does this and how it is better than keeping everything in the cloud.\n\nFor performance, edge computing is good because it makes things faster. The cloud is far away, and it takes a long time for data to go there and come back. This causes a delay, which is called latency. For example, if you have sensors in a factory, you need to know immediately if something is wrong. Edge computing means the computers that check the sensors are right there, so they can tell you much faster. This makes the whole system work better and more quickly, which is what latency-sensitive applications need. It's like having a small brain right where the action is. (hybrid)\n\nFor security, edge computing is also better. When data stays local, it doesn't have to travel over the internet to a faraway cloud. This means there are fewer chances for bad people to steal or look at the data. If a camera is watching a place, the computer at the edge can process the video and only send important alerts, not all the raw video. This keeps privacy better. But, it's also true that if you have many small computers everywhere, it can be harder to protect all of them from being physically broken or hacked into. So, it's a mix of good and challenging for security. (hybrid)\n\nIn conclusion, edge computing is a powerful technology. It helps applications that need to be fast by processing data close by. It also helps with security because data moves less. It offers a new way to build computer systems that are more responsive and can be more private than the traditional cloud. This is why it's becoming very popular for many different uses in technology today. (human)",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [3],
+                "hybrid_paragraph_indices": [1, 2],
+                "notes": "Paragraph 0 is formal AI-style introduction, paragraphs 1–2 mix technical info with simple explanations (hybrid), paragraph 3 is plain-language human summary."
+            },
+            "feedback": {
+                "c1": "The submission demonstrates a poor understanding of edge computing. It struggles to clearly define the concept, often confusing it with general local processing and making inaccurate claims about its relationship with the cloud (e.g., 'very different from the old cloud'). (10/25)",
+                "c2": "While a factory sensor example is mentioned, its application is generic and lacks detail. The connection between the specific mechanism of edge computing and the real-world benefit is not well-explained, showing significant gaps. (12/15)",
+                "c3": "The essay makes very general statements about security challenges ('harder to protect all of them') without providing any specific analysis or critical evaluation of trade-offs. The critique is superficial and lacks depth. (10.5/35)",
+                "c4": "The submission is somewhat disorganized and repetitive. The tone is informal, and while it attempts a basic structure, the flow of ideas is often disjointed. There are noticeable grammatical and syntactical errors. (12.5/25)",
+                "total": "45.0/100"
+            }
+        },
+        {
+            "quality": "Excellent",
+            "authorship": "human",
+            "key_points": [
+                "Displays exceptional conceptual understanding, distinguishing edge computing from related distributed paradigms.",
+                "Thoroughly explains latency reduction via detailed architectural examples.",
+                "Applies concepts to complex scenarios like advanced robotics and real-time analytics in logistics, demonstrating deep insight.",
+                "Provides a highly nuanced and balanced critical evaluation of security, management, and resource constraints.",
+                "The critical evaluation integrates current industry challenges and emerging solutions.",
+                "The essay's content is robust and insightful, showcasing an expert-level grasp of the topic.",
+                "However, the writing contains some awkward phrasing and occasional run-on sentences that slightly detract from overall polish, despite strong content."
+            ],
+            "llm_questions": [
+                "How does the concept of 'micro-clouds' or 'edge clouds' fit into the broader edge computing landscape?",
+                "What role do AI and Machine Learning play in edge computing deployments?",
+                "Discuss the energy consumption implications of widespread edge computing.",
+                "How does network slicing in 5G specifically support edge computing for mission-critical applications?"
+            ],
+            "llm_answers": [
+                "Micro-clouds or edge clouds represent a localized, scaled-down version of traditional cloud data centers, deployed closer to the data source, often in strategic locations like cell towers, factory floors, or regional hubs. They bridge the gap between individual edge devices and hyperscale public clouds. These infrastructures offer more robust computational and storage capabilities than individual edge devices, allowing for the aggregation and processing of data from multiple local sources. They are crucial for workloads that require significant resources but still need low latency, forming a distributed computing continuum from the device to the public cloud.",
+                "AI and Machine Learning (ML) are central to many edge computing use cases. Edge devices can perform real-time inference (applying a pre-trained ML model) directly where data is generated. For example, edge cameras can use ML to detect anomalies in manufacturing or identify security threats without sending vast amounts of video data to the cloud. While ML model training often still happens in the cloud due to computational demands, the trend is towards 'federated learning' where models are trained collaboratively across distributed edge devices while keeping raw data local, enhancing privacy and reducing bandwidth.",
+                "The widespread adoption of edge computing has complex energy consumption implications. On one hand, by processing data locally, it can reduce the energy consumed by massive cloud data centers and the energy required for long-haul data transmission. On the other hand, deploying thousands or millions of distributed edge devices, each requiring power, can significantly increase the aggregate energy footprint, especially if these devices are not energy-efficient. Sustainable edge deployments require innovations in low-power hardware, optimized software, and renewable energy sources for edge locations to mitigate environmental impact.",
+                "Network slicing in 5G is transformative for edge computing, particularly for mission-critical applications, by enabling the creation of virtual, isolated end-to-end networks tailored to specific application requirements. For example, an autonomous vehicle fleet might be allocated a dedicated network slice with guaranteed ultra-low latency and high bandwidth connecting directly to a local edge data center. This ensures consistent, predictable performance isolated from other network traffic, which is vital for safety-critical operations. Network slicing allows for optimized resource allocation and quality of service (QoS) guarantees, making 5G edge computing suitable for highly demanding and diverse applications."
+            ],
+            "final_submission": "Edge computing marks a transformative shift in distributed systems architecture, moving processing capabilities from centralized data centers to the network's periphery. This decentralization is not merely a geographic relocation but a strategic re-envisioning of where data is processed, driven by the critical demands of latency-sensitive applications. The profound impact of edge computing is evident in its ability to radically improve performance and security, surpassing the limitations inherent in traditional cloud-centric models. (AI)\n\nFrom a performance perspective, the primary benefit of edge computing is its unparalleled reduction in latency. In applications such as industrial automation, where robotic arms need sub-millisecond responsiveness for precise maneuvers, or in augmented reality (AR) where seamless overlaying of digital information is paramount, the round-trip delay to a distant cloud server is simply prohibitive. Edge nodes, whether embedded in devices or deployed in local gateways and micro-data centers, enable data processing at the source. This proximity eliminates network transit delays, ensuring real-time computation and immediate feedback loops. For instance, in real-time logistics optimization, edge analytics can process sensor data from delivery vehicles and warehouses to dynamically reroute shipments or manage inventory, achieving efficiencies that would be impossible with cloud-only processing due to inherent data transport delays. (Hybrid)\n\nSecurity in an edge computing paradigm presents a multifaceted discussion. By localizing data processing, the volume of raw, sensitive data transmitted over public internet infrastructure is drastically reduced, thereby mitigating risks associated with data in transit, such as interception or man-in-the-middle attacks. This data localization also aids in compliance with stringent data sovereignty and privacy regulations, like GDPR or HIPAA, by keeping regulated data within specific geographic or organizational boundaries. However, this distributed architecture simultaneously introduces new vulnerabilities: each edge node becomes a potential point of attack. Securing a multitude of geographically dispersed, often physically exposed devices against tampering, unauthorized access, and cyber-attacks demands robust, scalable security management, including hardware-level security, secure boot processes, and comprehensive remote patching capabilities. The trade-off involves managing a larger, more complex attack surface compared to a single, highly fortified central data center. (Hybrid)\n\nIn conclusion, edge computing is fundamental to enabling the next generation of highly responsive and intelligent applications. Its architecture offers substantial performance gains by minimizing latency and provides significant security benefits through data localization. While it introduces challenges in distributed security management and resource provisioning for diverse edge devices, the advantages in enabling real-time, resilient, and context-aware operations firmly establish its indispensable role in the evolving landscape of information technology, complementing rather than replacing the centralized cloud. (Human)",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [0],
+                "human_paragraph_indices": [3],
+                "hybrid_paragraph_indices": [1, 2],
+                "notes": "Paragraph 0 is formal AI-style introduction, paragraphs 1–2 are technical with simplified examples (hybrid), paragraph 3 is plain-language human-style conclusion."
+            },
+            "feedback": {
+                "c1": "The submission demonstrates an exceptional and nuanced understanding of edge computing, clearly articulating its architectural principles, distinguishing it from cloud, and detailing how it addresses latency issues. The discussion reflects deep theoretical and practical knowledge. (23.75/25)",
+                "c2": "The examples, such as industrial automation for robotics and real-time logistics optimization, are highly relevant and demonstrate insightful application. The connections between concepts and scenarios are clear and well-elaborated. (12.75/15)",
+                "c3": "The critical evaluation is insightful and balanced, providing a highly nuanced discussion of both security benefits and the significant challenges (expanded attack surface, distributed management). It acknowledges trade-offs thoughtfully and suggests mitigation strategies. (33.25/35)",
+                "c4": "The essay is well-structured and coherent, with logical flow and a formal academic tone. However, there are occasional instances of awkward phrasing and a few slightly run-on sentences that, while not severely hindering clarity, do prevent a 'flawless' assessment. (17.5/25)",
+                "total": "87.25/100"
+            }
+        },
+        {
+            "quality": "Poor",
+            "authorship": "human",
+            "key_points": [
+                "Major misunderstandings of edge computing, confusing it with general internet or local networks.",
+                "No clear explanation of latency or how edge computing addresses it.",
+                "Provides irrelevant or no real-world examples.",
+                "Discussion of security is vague, speculative, and largely incorrect.",
+                "Completely lacks any critical evaluation or discussion of trade-offs.",
+                "The writing is extremely disorganized, informal, and contains severe grammatical errors.",
+                "The submission is very short and underdeveloped."
+            ],
+            "llm_questions": [
+                "What is the core function of a computer network?",
+                "What does 'data' mean in the context of IT?",
+                "Why is it important to organize information clearly when explaining a technical concept?"
+            ],
+            "llm_answers": [
+                "The core function of a computer network is to allow computers and other devices to connect and communicate with each other, sharing resources and information. This enables various activities like sending emails, browsing the internet, streaming videos, and collaborating on documents. Networks can be small, like a home network, or vast, like the internet, connecting millions of devices worldwide.",
+                "In the context of IT, 'data' refers to raw, unorganized facts, figures, or symbols that can be processed by a computer. Data can be anything from numbers, text, images, audio, or video. When data is processed, organized, and structured in a meaningful way, it becomes 'information' that can be used for decision-making or to convey understanding.",
+                "Organizing information clearly is crucial when explaining technical concepts for several reasons. Firstly, it helps the audience grasp complex ideas more easily by breaking them down into manageable parts. Secondly, it ensures accuracy and prevents misunderstandings. Thirdly, a well-structured explanation demonstrates a deeper understanding by the presenter, as it requires them to logically connect different pieces of information. Finally, it makes the information more accessible and memorable, improving learning and retention."
+            ],
+            "final_submission": "Edge computing is a computer network. It has a role. It helps applications that are sensitive. The cloud is big and far. Edge is closer. This makes things better. It means less time waiting, which is latency. So performance is improved. This is good for speed. (Human)\n\nSecurity is important. Edge computing makes security better. It is safer than the cloud. Hackers cannot get the information if it's at the edge. The cloud sends data everywhere. Edge computing stops this problem. So, it helps a lot with security issues. (Hybrid)\n\nEdge computing is important for the future of computers. It will change how we use the internet. It makes everything faster and more secure than the old ways. This is why it is so good for all new computer programs and apps. It is a big upgrade. (AI)",
+            "hybrid_breakdown": {
+                "ai_paragraph_indices": [2],
+                "human_paragraph_indices": [0],
+                "hybrid_paragraph_indices": [1],
+                "notes": "Paragraph 0 is simple, human-style; paragraph 1 explains security with some technical sense (hybrid); paragraph 2 is a more formal AI-style conclusion."
+            },
+            "feedback": {
+                "c1": "The submission displays major misunderstandings of edge computing, confusing it with general internet or local networks ('Edge computing is a computer network'). It fails to explain core concepts or how it specifically functions, showing significant confusion. (5/25)",
+                "c2": "The essay provides no relevant real-world examples beyond vague mentions of 'applications that are sensitive' or 'new computer programs and apps.' It fails to apply the concept meaningfully. (3/15)",
+                "c3": "There is no critical evaluation present. The discussion of security is largely incorrect and speculative ('Hackers cannot get the information if it's at the edge') and does not acknowledge any limitations or trade-offs. (15.75/35)",
+                "c4": "The writing is extremely disorganized, informal, and contains severe grammatical errors. The essay is very short, highly repetitive, and lacks any discernible structure or logical flow, making it nearly impossible to follow. (7.5/25)",
+                "total": "31.25/100"
+            }
+        }
+    ]
+}
