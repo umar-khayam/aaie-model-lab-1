@@ -1,0 +1,56 @@
+### Variables
+@baseUrl = http://localhost:8000/api/v1
+@contentType = application/json
+
+### Test Classification Endpoint
+POST {{baseUrl}}/classify
+Content-Type: {{contentType}}
+
+{
+    "text": "The impact of artificial intelligence on modern society is profound and far-reaching. It has revolutionized various sectors, from healthcare to transportation, and continues to drive innovation across industries. However, we must carefully consider the ethical implications and ensure responsible development of AI technologies.",
+    "metadata": {
+        "subject": "Technology",
+        "type": "Essay"
+    }
+}
+
+### Test Rubric Score Endpoint
+POST {{baseUrl}}/rubric-score
+Content-Type: {{contentType}}
+
+{
+    "text": "The Second World War had several major causes. First, the Treaty of Versailles created significant economic hardship and resentment in Germany. Second, the rise of fascism in several European countries led to increased militarization. Finally, the policy of appeasement allowed aggressive expansion to go unchecked. These factors combined to create conditions that made the war inevitable.",
+    "metadata": {
+        "subject": "History",
+        "type": "Essay"
+    }
+}
+
+### Test Generate Feedback Endpoint
+POST {{baseUrl}}/generate-feedback
+Content-Type: {{contentType}}
+
+{
+    "text": "Climate change poses significant challenges to our planet. Global temperatures are rising, causing ice caps to melt and sea levels to rise. This affects coastal communities and wildlife. We need to reduce carbon emissions and find renewable energy sources. Everyone should do their part to help the environment.",
+    "metadata": {
+        "subject": "Environmental Science",
+        "type": "Assignment"
+    }
+}
+
+### Test Comprehensive Evaluation Endpoint
+POST {{baseUrl}}/evaluate
+Content-Type: {{contentType}}
+
+{
+    "text": "The role of nutrition in mental health has gained increasing attention in recent research. Studies have shown strong correlations between diet quality and mental well-being. For example, diets rich in omega-3 fatty acids, vitamins, and minerals have been associated with lower rates of depression and anxiety. Additionally, the gut-brain axis plays a crucial role in this relationship, as gut bacteria can influence neurotransmitter production and mood regulation. This suggests that dietary interventions could be valuable complementary approaches in mental health treatment.",
+    "metadata": {
+        "subject": "Psychology",
+        "type": "Research Paper"
+    }
+}
+
+### Test LLM Status Endpoint
+GET {{baseUrl}}/llm-status
+Content-Type: {{contentType}}
+
