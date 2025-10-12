@@ -131,51 +131,7 @@ class EvaluateModel():
             'bertscore_recall': R.mean().item(),
             'bertscore_f1': F1.mean().item()
         }
-    def visualize_attention_heatmap(self, text, print_result = False):
-        # ---- Build prompt ----
-        prompt = self.few_shot_prompt.format(text)
-        inputs = self.tokenizer(prompt, return_tensors="pt").to(self.device)
-        # ---- Step 1: Get attentions for visualization ----
-        outputs = self.model(**inputs, output_attentions=True, return_dict=True)
-        attentions = outputs.attentions
-        tokens = self.tokenizer.convert_ids_to_tokens(inputs["input_ids"][0])
-        # ---- Find classification text segment ----
-        text_tokens = self.tokenizer.tokenize(text)
 
-        def normalize_token(t):
-            # strip leading Ġ if present
-            if t.startswith('Ġ'):
-                return t[1:]
-            return t
-
-        text_norm = [normalize_token(t) for t in text_tokens]
-
-        for i in range(len(tokens)):
-            slice_norm = [normalize_token(t) for t in tokens[i:i+len(text_tokens)]]
-            if slice_norm == text_norm:
-                start_idx = i
-                end_idx = i + len(text_norm)
-                break
-        else:
-            raise ValueError("Could not find text tokens in full prompt tokens")
-
-        # ---- Slice attention to only that segment ----
-        attn = attentions[0][0, 0].detach().cpu()
-        attn_segment = attn[start_idx:end_idx, start_idx:end_idx]
-        tokens_segment = tokens[start_idx:end_idx]
-
-        # ---- Plot ----
-        if print_result:
-            fig, ax = plt.subplots(figsize=(6, 6))
-            cax = ax.matshow(attn_segment, cmap='viridis')
-            plt.xticks(range(len(tokens_segment)), tokens_segment, rotation=90)
-            plt.yticks(range(len(tokens_segment)), tokens_segment)
-            fig.colorbar(cax)
-            plt.title("Attention for classification text segment")
-            plt.show()
-
-        return attn_segment, tokens_segment
-        
     #Evaluate the clasification model
     def evaluate_classification_model(self, average='macro', print_result=False):
         """

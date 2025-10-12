@@ -1,23 +1,26 @@
 # Model Evaluation Toolkit
 
-A comprehensive Python toolkit for evaluating both classification and generative models, with specialized support for AI vs Human text classification and attention visualization capabilities.
 
-## Features
+A comprehensive Python toolkit for evaluating both classification and generative models, with specialized support for AI vs Human text classification using few-shot learning approaches.
+
+## 🚀 Features
 
 - **Dual Evaluation Support**: Evaluate both classification and generative models with a unified interface
-- **Attention Visualization**: Interactive attention heatmaps to understand model decision-making
 - **Multiple Metrics**: Support for BLEU, ROUGE, BERTScore for generative models and standard classification metrics
 - **Automatic Label Encoding**: Seamlessly handles both string and integer labels
 - **Few-shot Learning**: Built-in support for few-shot prompting with customizable templates
-- **Visualization**: Rich plotting capabilities with confusion matrices and attention heatmaps
+- **AI Detection Pipeline**: Complete end-to-end pipeline for AI vs Human text classification
+- **Visualization**: Rich plotting capabilities with confusion matrices and detailed reports
 
-## Installation
+## 📦 Installation
+
 
 ```bash
 pip install torch transformers nltk rouge-score bert-score scikit-learn matplotlib seaborn pandas numpy streamlit
 ```
 
-## Usage
+## 🔧 Usage
+
 
 ### 1. Classification Model Evaluation
 
@@ -85,32 +88,8 @@ evaluator.evaluate_generative_model(
 - **ROUGE Scores**: ROUGE-1, ROUGE-2, and ROUGE-L for recall-oriented evaluation
 - **BERTScore**: Semantic similarity using contextualized embeddings
 
-### 3. Attention Visualization (NEW)
 
-Visualize model attention patterns to understand what the model focuses on during classification.
-
-```python
-# Initialize with model and tokenizer
-evaluator = EvaluateModel(
-    dataset=dataset,
-    model=your_model,
-    tokenizer=your_tokenizer,
-    device=device
-)
-
-# Generate attention heatmap
-attention_matrix, tokens = evaluator.visualize_attention_heatmap(
-    text="Your input text here",
-    print_result=True  # Set to True to display the heatmap
-)
-```
-
-#### Features:
-- **Interactive Heatmaps**: Visual representation of attention weights
-- **Token-level Analysis**: See exactly which tokens the model focuses on
-- **Customizable Display**: Control whether to show plots or return data only
-
-### 4. End-to-End AI Detection Pipeline
+### 3. End-to-End AI Detection Pipeline
 
 The toolkit includes a complete pipeline for AI vs Human text classification:
 
@@ -131,6 +110,9 @@ evaluator = EvaluateModel(dataset=data_with_predictions)
 evaluator.evaluate_classification_model(print_result=True)
 ```
 
+
+## 🎯 Key Improvements in This PR
+
 ## Key Improvements in This PR
 
 ### 1. **Enhanced Evaluation Framework**
@@ -138,12 +120,8 @@ evaluator.evaluate_classification_model(print_result=True)
 - **Flexible Data Structures**: Supports various input formats and automatically handles preprocessing
 - **Comprehensive Metrics**: Industry-standard metrics for both model types
 
-### 2. **Attention Visualization Addition**
-- **Model Interpretability**: New `visualize_attention_heatmap()` method for understanding model decisions
-- **Token-level Insights**: Visualize exactly which parts of the input text the model focuses on
-- **Debugging Tool**: Identify potential biases or unexpected attention patterns
+### 2. **Dual Evaluation Functions**
 
-### 3. **Dual Evaluation Functions**
 
 #### Classification Evaluation (`evaluate_classification_model`)
 - **Multi-class Support**: Handles binary and multi-class classification
@@ -155,7 +133,13 @@ evaluator.evaluate_classification_model(print_result=True)
 - **Diverse Metrics**: BLEU, ROUGE, and BERTScore in a single call
 - **Semantic Understanding**: BERTScore for meaning-based evaluation beyond n-gram matching
 
-##  Output Examples
+### 3. **AI Detection Pipeline**
+- **Few-shot Learning**: Built-in prompts for AI vs Human text classification
+- **Model Integration**: Seamless integration with Hugging Face transformers (Phi-2 example included)
+- **End-to-end Processing**: From raw text to evaluation results in a single pipeline
+
+## 📊 Output Examples
+
 
 ### Classification Results
 ```
@@ -181,3 +165,23 @@ bertscore_precision : 0.8567
 bertscore_recall    : 0.8234
 bertscore_f1        : 0.8398
 ```
+
+
+## 🔬 Technical Details
+
+- **Device Support**: Automatic GPU/MPS detection for optimal performance
+- **Memory Efficient**: Handles large datasets with batched processing
+- **Error Handling**: Comprehensive error checking and informative messages
+- **Extensible Design**: Easy to add new metrics and evaluation methods
+
+## 🤝 Contributing
+
+This toolkit is designed to be extensible. Feel free to add new metrics, visualization methods, or evaluation approaches by following the established patterns in the codebase.
+
+## 📝 License
+
+[Add your license information here]
+
+---
+
+*This evaluation toolkit provides a comprehensive solution for both classification and generative model assessment, with the added benefit of attention visualization for model interpretability.*
