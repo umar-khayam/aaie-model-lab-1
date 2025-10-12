@@ -1,0 +1,77 @@
+{
+  "engineering.json": {
+    "n": 6,
+    "det_correct": 4,
+    "fb_scores": [
+      4.0,
+      3.0,
+      3.0,
+      2.0,
+      1.0,
+      3.0
+    ],
+    "detection_accuracy": 0.667,
+    "feedback_mean": 2.66,
+    "feedback_n": 6
+  },
+  "accounting.json": {
+    "n": 6,
+    "det_correct": 3,
+    "fb_scores": [
+      3.0,
+      2.0,
+      4.0,
+      1.0,
+      2.0,
+      3.0
+    ],
+    "detection_accuracy": 0.5,
+    "feedback_mean": 2.5,
+    "feedback_n": 6
+  },
+  "it.json": {
+    "n": 6,
+    "det_correct": 3,
+    "fb_scores": [
+      3.0,
+      3.0,
+      4.0,
+      5.0,
+      4.0,
+      3.0
+    ],
+    "detection_accuracy": 0.5,
+    "feedback_mean": 3.66,
+    "feedback_n": 6
+  },
+  "psychology.json": {
+    "n": 6,
+    "det_correct": 1,
+    "fb_scores": [
+      4.0,
+      3.0,
+      4.0,
+      2.0,
+      1.0,
+      3.0
+    ],
+    "detection_accuracy": 0.167,
+    "feedback_mean": 2.88,
+    "feedback_n": 6
+  },
+  "teaching.json": {
+    "n": 6,
+    "det_correct": 3,
+    "fb_scores": [
+      3.0,
+      4.0,
+      4.0,
+      2.0,
+      1.0,
+      3.0
+    ],
+    "detection_accuracy": 0.5,
+    "feedback_mean": 2.83,
+    "feedback_n": 6
+  }
+}

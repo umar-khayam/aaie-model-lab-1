@@ -1,0 +1,31 @@
+dataset,domain,item_index,gold_label,det_ok,det_label,det_correct,det_flags,fb_ok,fb_score
+engineering.json,Manufacturing Engineering,0,AI,TRUE,ai,1,,TRUE,4
+engineering.json,Manufacturing Engineering,1,AI,TRUE,ai,1,,TRUE,3
+engineering.json,Manufacturing Engineering,2,Human,TRUE,human,1,,TRUE,3
+engineering.json,Manufacturing Engineering,3,Human,TRUE,human,1,,TRUE,2
+engineering.json,Manufacturing Engineering,4,Hybrid,FALSE,hybrid,0,,TRUE,1
+engineering.json,Manufacturing Engineering,5,Hybrid,TRUE,ai,0,,TRUE,3
+accounting.json,Accounting,0,AI,FALSE,ai,0,,TRUE,3
+accounting.json,Accounting,1,AI,TRUE,ai,1,,TRUE,2
+accounting.json,Accounting,2,Human,TRUE,human,1,,TRUE,4
+accounting.json,Accounting,3,Human,TRUE,human,1,,TRUE,1
+accounting.json,Accounting,4,Hybrid,FALSE,hybrid,0,,TRUE,2
+accounting.json,Accounting,5,Hybrid,FALSE,hybrid,0,,TRUE,3
+it.json,Information Technology,0,AI,TRUE,ai,1,,TRUE,3
+it.json,Information Technology,1,AI,TRUE,ai,1,,TRUE,3
+it.json,Information Technology,2,Human,TRUE,hybrid,0,,TRUE,4
+it.json,Information Technology,3,Human,TRUE,ai,0,,TRUE,5
+it.json,Information Technology,4,Hybrid,TRUE,hybrid,1,,TRUE,4
+it.json,Information Technology,5,Hybrid,TRUE,human,0,,TRUE,3
+psychology.json,Psychology,0,AI,FALSE,human,0,,TRUE,4
+psychology.json,Psychology,1,AI,TRUE,ai,1,,TRUE,3
+psychology.json,Psychology,2,Human,TRUE,ai,0,,TRUE,4
+psychology.json,Psychology,3,Human,TRUE,ai,0,,TRUE,2
+psychology.json,Psychology,4,Hybrid,TRUE,ai,0,,TRUE,1
+psychology.json,Psychology,5,Hybrid,TRUE,ai,0,,TRUE,3
+teaching.json,Teaching,0,AI,TRUE,ai,1,,TRUE,3
+teaching.json,Teaching,1,AI,TRUE,ai,1,,TRUE,4
+teaching.json,Teaching,2,Human,TRUE,ai,0,,TRUE,4
+teaching.json,Teaching,3,Human,TRUE,human,1,,TRUE,2
+teaching.json,Teaching,4,Hybrid,TRUE,ai,0,,TRUE,1
+teaching.json,Teaching,5,Hybrid,TRUE,human,0,,TRUE,3
