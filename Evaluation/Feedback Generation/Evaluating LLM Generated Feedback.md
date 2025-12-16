@@ -1,6 +1,6 @@
 # Evaluating LLM Generated Feedback
 
-**Version:** 1.1 - Updated to include G-Eval
+**Version:** 1.2 - Addressed additional feedback received
 **Date:** December 2025
 **Author:** Steven Christolis
 
