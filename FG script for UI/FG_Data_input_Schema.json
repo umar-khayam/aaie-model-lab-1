@@ -1,0 +1,54 @@
+{
+  "domain": "YOUR_DOMAIN_NAME",
+  "prompt": "YOUR_ASSIGNMENT_PROMPT_HERE",
+  "rubric": {
+    "rubric_id": "rub_XXXX",
+    "criteria": [
+      {
+        "criterion_id": "c1",
+        "name": "Criterion Name 1",
+        "description": "Detailed description of evaluation criterion.",
+        "performance_descriptors": {
+          "excellent": "Descriptor for excellent performance.",
+          "good": "Descriptor for good performance.",
+          "average": "Descriptor for average performance.",
+          "needs_improvement": "Descriptor for needs improvement.",
+          "poor": "Descriptor for poor performance."
+        },
+        "weight": 25
+      },
+      {
+        "criterion_id": "c2",
+        "name": "Criterion Name 2",
+        "description": "Detailed description of evaluation criterion.",
+        "performance_descriptors": {
+          "excellent": "...",
+          "good": "...",
+          "average": "...",
+          "needs_improvement": "...",
+          "poor": "..."
+        },
+        "weight": 25
+      },
+      {
+        "criterion_id": "c3",
+        "name": "Criterion Name 3",
+        "description": "...",
+        "performance_descriptors": { ... },
+        "weight": 25
+      },
+      {
+        "criterion_id": "c4",
+        "name": "Criterion Name 4",
+        "description": "...",
+        "performance_descriptors": { ... },
+        "weight": 25
+      }
+    ]
+  },
+  "submissions": [
+    {
+      "final_submission": "ANOTHER STUDENT SUBMISSION"
+    }
+  ]
+}
