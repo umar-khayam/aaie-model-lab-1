@@ -1,0 +1,8 @@
+{
+  "criteria_id": "criterion_1",
+  "prompts": [
+    "What is supply chain visibility?",
+    "Define the bullwhip effect"
+  ],
+  "engagement_depth": "surface"
+}

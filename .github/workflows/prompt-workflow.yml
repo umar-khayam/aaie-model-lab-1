@@ -1,0 +1,110 @@
+name: Prompt Registry CI
+
+on:
+  pull_request:
+    branches: [ development** ]
+    paths:
+      - 'PromptWorkflow/prompts/**'
+      - 'PromptWorkflow/schemas/**'
+      - 'PromptWorkflow/tests/**'
+      - 'PromptWorkflow/scripts/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r PromptWorkflow/requirements.txt || echo "No requirements file"
+      - name: Schema + uniqueness validation
+        run: |
+          python PromptWorkflow/scripts/validate_registry.py \
+            --candidates-dir PromptWorkflow/prompts/candidates \
+            --generated-dir PromptWorkflow/prompts/generated \
+            --registry-file PromptWorkflow/prompts/index.json \
+            --schema PromptWorkflow/schemas/prompt_manifest.schema.json
+      - name: Render sanity (no placeholders)
+        run: |
+          python PromptWorkflow/scripts/render_check.py \
+            --candidates-dir PromptWorkflow/prompts/candidates \
+            --generated-dir PromptWorkflow/prompts/generated
+
+  promote-to-staging:
+    needs: validate
+    if: ${{ needs.validate.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r PromptWorkflow/requirements.txt || echo "No requirements file"
+      - name: Revalidate against updated registry
+        run: |
+          python PromptWorkflow/scripts/validate_registry.py \
+            --candidates-dir PromptWorkflow/prompts/candidates \
+            --generated-dir PromptWorkflow/prompts/generated \
+            --registry-file PromptWorkflow/prompts/index.json \
+            --schema PromptWorkflow/schemas/prompt_manifest.schema.json
+      - name: Stage validated generated to candidates
+        run: |
+          python PromptWorkflow/scripts/stage_candidates.py \
+            --generated-dir PromptWorkflow/prompts/generated \
+            --candidates-dir PromptWorkflow/prompts/candidates
+      - name: Cleanup generated folder (git remove staged files)
+        run: |
+          if ls PromptWorkflow/prompts/generated/*.json 1> /dev/null 2>&1; then
+            echo "Generated folder not empty; skip git cleanup (staging script deletes files).";
+          else
+            # Ensure we remove any tracked files that were deleted by staging
+            git rm -rf --cached PromptWorkflow/prompts/generated || true
+            git add PromptWorkflow/prompts/candidates || true
+          fi
+      - name: Smoke test all candidates and promote or fail
+        run: |
+          python PromptWorkflow/scripts/promote_from_candidates.py \
+            --candidates-dir PromptWorkflow/prompts/candidates \
+            --registry-file PromptWorkflow/prompts/index.json
+      - name: Cleanup candidates root (git remove processed manifests)
+        run: |
+          # Remove any top-level candidate JSONs that were moved to promoted/failed
+          find PromptWorkflow/prompts/candidates -maxdepth 1 -type f -name "*.json" -print -delete || true
+          # Reflect deletions in git index; keep promoted/failed folders
+          git add PromptWorkflow/prompts/candidates/promoted PromptWorkflow/prompts/candidates/failed || true
+          files="$(git ls-files -- PromptWorkflow/prompts/candidates | grep -E '^PromptWorkflow/prompts/candidates/[^/]+\.json$' || true)"; \
+          if [ -n "$files" ]; then git rm -f $files || true; fi
+          echo "--- Candidates/promoted after cleanup ---"; ls -la PromptWorkflow/prompts/candidates/promoted || true
+          echo "--- Candidates/failed after cleanup ---"; ls -la PromptWorkflow/prompts/candidates/failed || true
+      - name: Commit registry update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A PromptWorkflow/prompts || true
+          echo "--- Git status before commit ---"
+          git status --porcelain
+          git commit -m "Promote prompts to staging via CI: ${GITHUB_SHA}" || echo "No changes"
+          git push origin HEAD:"${GITHUB_HEAD_REF}"
+      - name: Update registry summary
+        run: |
+          python PromptWorkflow/scripts/update_registry_md.py
+      - name: Commit registry summary
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add PromptWorkflow/docs/registry.md || true
+          git commit -m "Update registry summary: ${GITHUB_SHA}" || echo "No changes"
+          git push origin HEAD:"${GITHUB_HEAD_REF}"

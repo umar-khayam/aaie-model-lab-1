@@ -1,0 +1,13 @@
+{
+  "prompt_distribution": {
+    "generate_content": 0.80,
+    "revise_content": 0.10,
+    "understand_prompt": 0.05,
+    "check_quality": 0.05
+  },
+  "ps_indicators": {
+    "self_authored_turns": 0
+  },
+  "ct_indicators": {},
+  "expected_pattern": "generator_only"
+}

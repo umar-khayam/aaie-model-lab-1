@@ -1,0 +1,7 @@
+generator_only: "The student relied primarily on the AI to generate content with minimal revision or active engagement."
+
+reviser: "The student created their own drafts and used the AI to refine and revise their writing."
+
+planner_checker: "The student used the AI mainly for planning, clarification and checking quality."
+
+mixed: "The student demonstrated a balanced mix of behaviours without a dominant pattern."

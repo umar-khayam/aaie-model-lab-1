@@ -1,0 +1,416 @@
+{
+    "domain": "Accounting",
+    "prompt": "Evaluate the impact of ethical standards on financial reporting and the consequences of ethical breaches in accounting practices.",
+    "rubric": {
+      "rubric_id": "rub_accounting_0011",
+      "criteria": [
+        {
+          "criterion_id": "c1",
+          "name": "Understanding of Ethical Standards",
+          "description": "Demonstrates understanding of accounting ethics and relevant codes ofconduct (e.g., APES 110, IFAC Code).",
+          "performance_descriptors": {
+            "excellent": "Clearly explains key ethical principles and their application in accounting contexts.",
+            "good": "Explains core ethical concepts with some application to accounting.",
+            "average": "Mentions ethical concepts with limited depth.",
+            "needs_improvement": "Basic or unclear understanding of ethics in accounting.",
+            "poor": "Fails to address or misrepresents ethical principles."
+          },
+          "weight": 40
+        },
+        {
+          "criterion_id": "c2",
+          "name": "Application to Real-World Scenarios",
+          "description": "Illustrates understanding through examples of ethical or unethical financial reporting.",
+          "performance_descriptors": {
+            "excellent": "Effectively integrates multiple relevant real-world examples.",
+            "good": "Provides at least one well-explained example.",
+            "average": "Examples are mentioned but lack analysis or relevance.",
+            "needs_improvement": "Vague or unrelated examples.",
+            "poor": "No examples provided."
+          },
+          "weight": 20
+        },
+        {
+          "criterion_id": "c3",
+          "name": "Critical Evaluation of Impact",
+          "description": "Evaluates how ethical behavior influences financial transparency and stakeholder trust.",
+          "performance_descriptors": {
+            "excellent": "Insightful analysis of ethical standards’ impact on stakeholders and business outcomes.",
+            "good": "Explains general importance of ethical behavior with moderate depth.",
+            "average": "Identifies impact with little analysis.",
+            "needs_improvement": "Minimal or unclear evaluation of ethical influence.",
+            "poor": "Fails to address consequences of ethics."
+          },
+          "weight": 15
+        },
+        {
+          "criterion_id": "c4",
+          "name": "Structure and Academic Style",
+          "description": "Presents ideas logically with a formal academic tone and appropriate referencing.",
+          "performance_descriptors": {
+            "excellent": "Highly coherent, well-referenced essay with formal tone throughout.",
+            "good": "Mostly clear structure and tone; minor inconsistencies.",
+            "average": "Some structure; tone inconsistently academic.",
+            "needs_improvement": "Unclear flow or casual language.",
+            "poor": "Disorganized or inappropriate style."
+          },
+          "weight": 25
+        }
+      ]
+    },
+    "submissions": [
+      {
+        "quality": "Excellent",
+        "authorship": "ai",
+        "key_points": [
+          "Identify and explain the five fundamental ethical principles in accounting (e.g., integrity, objectivity, professional competence).",
+          "Explain the role of APES 110 and IFAC Code of Ethics in shaping ethical accounting practices.",
+          "Demonstrate how ethical lapses (e.g., Enron, WorldCom) affected financial reporting credibility.",
+          "Evaluate the impact of ethics on stakeholder trust and transparency in financial reporting.",
+          "Discuss the importance of maintaining ethics in preventing fraud and ensuring compliance."
+        ],
+        "llm_questions": [
+          "What are the core ethical principles accountants are required to follow?",
+          "How does APES 110 influence ethical conduct in financial reporting?",
+          "Can you give examples of major accounting scandals and their ethical implications?",
+          "How does ethical behavior affect investor trust and public perception?"
+        ],
+        "llm_answers": [
+          "Accountants are guided by five fundamental principles outlined in codes like APES 110: Integrity (being straightforward and honest), Objectivity (not allowing bias or conflict of interest), Professional Competence and Due Care (maintaining professional knowledge and skill), Confidentiality (respecting the privacy of information), and Professional Behavior (complying with relevant laws and avoiding actions that discredit the profession).",
+          "APES 110, the Code of Ethics for Professional Accountants in Australia, provides a conceptual framework that requires accountants to identify, evaluate, and address threats to compliance with the fundamental principles. It mandates specific actions and safeguards, ensuring that financial reporting is not just technically correct but also ethically sound, thereby upholding public trust.",
+          "Certainly. The Enron scandal involved creating off-balance-sheet entities to hide debt and inflate earnings, a clear breach of integrity and objectivity. Similarly, WorldCom capitalized operating expenses to inflate assets and net income. These cases led to massive investor losses, the collapse of the companies and their auditor Arthur Andersen, and ultimately, the enactment of stringent regulations like the Sarbanes-Oxley Act.",
+          "Ethical behavior is the bedrock of investor trust. When stakeholders believe that financial reports are prepared with integrity and objectivity, they have confidence in the presented figures, leading to stable capital markets. Conversely, ethical breaches erode this trust, causing stock price volatility, reputational damage, and a higher cost of capital for the company."
+        ],
+        "final_submission": "Ethical standards are the cornerstone of credible financial reporting, providing a framework that transcends mere compliance with accounting standards.\n\nProfessional codes, such as the IFAC Code of Ethics and APES 110, codify the five fundamental principles of integrity, objectivity, professional competence and due care, confidentiality, and professional behavior.\n\nThe application of these principles ensures that financial statements present a true and fair view of a company's performance, which is crucial for all stakeholders. The impact of ethics is most starkly illustrated by the consequences of its absence. The infamous collapses of Enron and WorldCom were not just failures of accounting rules but profound ethical breaches where the principles of integrity and objectivity were abandoned in favor of personal gain. This led to a catastrophic loss of investor confidence, the dissolution of a major accounting firm, and widespread economic damage. Consequently, ethical conduct directly bolsters financial transparency and stakeholder trust. When investors, creditors, and the public trust the numbers, capital markets function efficiently. This trust is not a byproduct but a direct outcome of a sustained commitment to ethical practices, which ultimately safeguards the reputation and long-term viability of both the company and the accounting profession itself.\n\nIn conclusion, robust ethical standards translate directly into transparent reporting and durable stakeholder trust. Where ethics are compromised, financial statements lose credibility; where ethics are embedded, markets function more efficiently.",
+        "hybrid_breakdown": {
+          "ai_paragraph_indices": [2,3,5],
+          "human_paragraph_indices": [0],
+          "hybrid_paragraph_indices": [1],
+          "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+        },
+        "feedback": {
+          "c1": "Excellent - The submission demonstrates an exceptional understanding of ethical standards. It correctly identifies and articulates the five fundamental principles from professional codes like APES 110, clearly explaining their role in ensuring sound accounting practices. (40/40)",
+          "c2": "Good - Multiple, highly relevant real-world examples (Enron, WorldCom) are seamlessly integrated into the evaluation. The analysis goes beyond merely naming the scandals to explain the specific ethical principles that were breached and the resulting consequences. (16/20)",
+          "c3": "Excellent - There is an insightful and deep analysis of the impact of ethical standards. The submission masterfully connects ethical conduct to financial transparency, stakeholder trust, and the stability of capital markets, showing a sophisticated level of critical thinking. (15/15)",
+          "c4": "Excellent - The response is structured with outstanding coherence and logical flow. It maintains a formal, academic tone throughout and presents a compelling, well-reasoned argument from start to finish. (25/25)",
+          "total": "96/100"
+        }
+      },
+      {
+        "quality": "Good",
+        "authorship": "ai",
+        "key_points": [
+          "Explains core ethical concepts like honesty and fairness in accounting.",
+          "Provides one well-explained example of an accounting scandal, such as Enron.",
+          "Discusses the general importance of ethics for maintaining trust in financial reports.",
+          "The submission is mostly clear and follows a logical structure."
+        ],
+        "llm_questions": [
+          "What is the main purpose of accounting ethics?",
+          "Can you explain the Enron scandal in simple terms?",
+          "Why is it important for financial reports to be trustworthy?"
+        ],
+        "llm_answers": [
+          "The main purpose of accounting ethics is to make sure accountants provide true and fair information. This helps people who use financial reports, like investors, to make good decisions.",
+          "In the Enron scandal, the company's top executives hid a lot of debt and faked how much profit they were making. This was a major ethical failure because they were not honest, and it made the company look much healthier than it was.",
+          "Trustworthy reports are important because investors and banks use them to decide whether to put money into a company. If the reports are wrong, those people could lose all their money, which is bad for the whole economy."
+        ],
+        "final_submission": "Ethical standards are very important for financial reporting because they ensure accountants are honest and objective.\n\nPrinciples like integrity mean that accountants should not lie on financial statements.\n\nThis is crucial for people who read these reports. A major consequence of not following these ethics can be seen in the Enron scandal. At Enron, executives hid debt and manipulated earnings, which was a huge ethical breach. This led to the company collapsing and many people losing their jobs and investments. This example shows why ethical behavior is so important. It helps build stakeholder trust. When the public and investors believe the financial information is accurate, they are more willing to invest, which helps the company and the economy. Therefore, following a strong code of ethics is necessary for reliable financial reporting.\n\nIn conclusion, robust ethical standards translate directly into transparent reporting and durable stakeholder trust. Where ethics are compromised, financial statements lose credibility; where ethics are embedded, markets function more efficiently.",
+        "hybrid_breakdown": {
+          "ai_paragraph_indices": [2,3],
+          "human_paragraph_indices": [0],
+          "hybrid_paragraph_indices": [1],
+          "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+        },
+        "feedback": {
+          "c1": "Good - The submission explains core ethical concepts like integrity and objectivity and applies them to the context of accounting. The explanation is clear, though it could benefit from referencing specific professional codes of conduct. (32/40)",
+          "c2": "Good - A relevant real-world example, Enron, is provided and well-explained. The connection between the unethical actions and their consequences is clearly established, effectively illustrating the prompt's theme. (16/20)",
+          "c3": "Good - The response explains the general importance of ethical behavior for stakeholder trust with moderate depth. It correctly identifies the link between ethics and investor confidence but could analyze the broader impact on other stakeholders or business outcomes more deeply. (12/15)",
+          "c4": "Good - The structure is mostly clear and logical, with a decent flow from principles to examples to impact. The academic tone is generally consistent, with only minor areas that could be more formal. (20/25)",
+          "total": "80/100"
+        }
+      },
+      {
+        "quality": "Average",
+        "authorship": "ai",
+        "key_points": [
+          "Mentions that ethics means being honest.",
+          "Names an accounting scandal like Enron but provides little detail.",
+          "States that ethics are important for trust without much analysis.",
+          "The structure is present but may be simplistic or disjointed."
+        ],
+        "llm_questions": [
+          "What does 'ethics in accounting' mean?",
+          "What is an example of an unethical action?",
+          "Why are ethics important?"
+        ],
+        "llm_answers": [
+          "It means accountants shouldn't lie about the numbers.",
+          "An example is when the people at Enron cheated on their financial reports.",
+          "Ethics are important so that people can trust the company."
+        ],
+        "final_submission": "Ethics has a big impact on financial reporting.\n\nAccountants need to be ethical, which means they should be honest.\n\nIf they are not honest, it can cause big problems. For example, Enron was a company that had a big scandal. They were not ethical in their accounting practices. This shows that ethical breaches are bad. The consequences are that people lose trust in the company. So, having good ethical standards helps make sure financial reports are correct and people can believe them.\n\nIn conclusion, robust ethical standards translate directly into transparent reporting and durable stakeholder trust. Where ethics are compromised, financial statements lose credibility; where ethics are embedded, markets function more efficiently.",
+        "hybrid_breakdown": {
+          "ai_paragraph_indices": [2,3],
+          "human_paragraph_indices": [0],
+          "hybrid_paragraph_indices": [1],
+          "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+        },
+        "feedback": {
+          "c1": "Average - The submission mentions the ethical concept of honesty but with limited depth. It does not elaborate on other principles or mention any formal codes of conduct, resulting in a surface-level understanding. (26/40)",
+          "c2": "Average - The Enron scandal is mentioned as an example, but it lacks any analysis or detail about the specific ethical breaches that occurred. The connection to the core argument is weak. (13/20)",
+          "c3": "Average - The impact of ethics on trust is identified, but there is very little analysis of this relationship. The submission states that trust is lost but does not explain the mechanism or broader consequences of this loss. (10/15)",
+          "c4": "Average - There is some basic structure to the response, but the flow is disjointed and ideas are presented as a series of simple statements rather than a developed argument. The tone is more casual than academic. (16/25)",
+          "total": "65/100"
+        }
+      },
+      {
+        "quality": "Needs Improvement",
+        "authorship": "ai",
+        "key_points": [
+          "Vaguely mentions that rules are important in accounting.",
+          "Gives an unclear or unrelated example of wrongdoing.",
+          "States that being unethical is 'bad' without explaining the impact on financial reporting.",
+          "The writing is disorganized and lacks a clear focus."
+        ],
+        "llm_questions": [
+          "Can you tell me one rule accountants have to follow?",
+          "Are you aware of any companies that had problems with their accounting?",
+          "What is financial reporting?"
+        ],
+        "llm_answers": [
+          "They have to follow the law and not steal money.",
+          "I think I heard about a company that got in trouble for something like that.",
+          "It's when companies make reports about their finances."
+        ],
+        "final_submission": "This paragraph restates the section in clearer everyday language to meet the Human requirement. Accounting has rules.\n\nYou have to follow them.\n\nEthical standards are about doing the right thing. If you dont do the right thing its bad for business. Companies can get in big trouble for this. People will not be happy. So financial reporting has to be good and people need to be ethical when they do it.\n\nIn conclusion, robust ethical standards translate directly into transparent reporting and durable stakeholder trust. Where ethics are compromised, financial statements lose credibility; where ethics are embedded, markets function more efficiently.",
+        "hybrid_breakdown": {
+          "ai_paragraph_indices": [2,3],
+          "human_paragraph_indices": [0],
+          "hybrid_paragraph_indices": [1],
+          "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+        },
+        "feedback": {
+          "c1": "Needs Improvement - The submission provides a very basic and unclear understanding of ethics in accounting, reducing the concept to simply 'doing the right thing' without any specific accounting context or principles. (20/40)",
+          "c2": "Needs Improvement - No specific or relevant examples of ethical breaches in financial reporting are provided. The reference to companies getting in 'big trouble' is too vague to demonstrate understanding. (10/20)",
+          "c3": "Needs Improvement - There is a minimal attempt to evaluate the influence of ethics, stating only that breaches are 'bad for business'. This evaluation is superficial and lacks any connection to financial reporting or stakeholder trust. (7/15)",
+          "c4": "Needs Improvement - The response has an unclear flow and is written in a very casual, conversational language. The ideas are not organized into a coherent argument, making it difficult to follow. (13/25)",
+          "total": "50/100"
+        }
+      },
+      {
+        "quality": "Poor",
+        "authorship": "ai",
+        "key_points": [
+          "Fails to mention or define ethical standards in an accounting context.",
+          "Provides no examples of ethical or unethical behavior.",
+          "Does not discuss the consequences of ethical breaches on financial reporting.",
+          "The submission is disorganized, off-topic, and very brief."
+        ],
+        "llm_questions": [
+          "What is accounting?",
+          "What does 'ethical' mean?",
+          "What are 'financial reports'?"
+        ],
+        "llm_answers": [
+          "It's about money and numbers.",
+          "I'm not sure.",
+          "Reports for a company."
+        ],
+        "final_submission": "This paragraph restates the section in clearer everyday language to meet the Human requirement. Money is important for companies.\n\nThey need to report things.\n\nSometimes it is wrong.\n\nIn conclusion, robust ethical standards translate directly into transparent reporting and durable stakeholder trust. Where ethics are compromised, financial statements lose credibility; where ethics are embedded, markets function more efficiently.",
+        "hybrid_breakdown": {
+          "ai_paragraph_indices": [2,3],
+          "human_paragraph_indices": [0],
+          "hybrid_paragraph_indices": [1],
+          "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+        },
+        "feedback": {
+          "c1": "Poor - The submission completely fails to address or define any ethical principles relevant to accounting. There is no evidence of understanding the topic. (8/40)",
+          "c2": "Poor - No examples of any kind, real or hypothetical, were provided to illustrate the points required by the prompt. (4/20)",
+          "c3": "Poor - The response fails to address the consequences of ethical behavior or breaches. The connection between ethics and financial reporting is not made. (3/15)",
+          "c4": "Poor - The submission is extremely disorganized and written in an inappropriate style. It is far too brief and does not resemble a proper response to the prompt. (5/25)",
+          "total": "20/100"
+        }
+      },
+      {
+        "quality": "Good",
+        "authorship": "ai",
+        "key_points": [
+          "Thorough explanation of ethical principles like integrity and objectivity, referencing professional codes.",
+          "Mentions a few real-world examples (e.g., Wells Fargo sales scandal, Theranos) but doesn't deeply analyze their accounting implications.",
+          "Explains the importance of ethics for trust and transparency in general.",
+          "Structure is somewhat logical but has occasional informal language and minor referencing gaps."
+        ],
+        "llm_questions": [
+          "Can you elaborate on the concept of professional competence and due care?",
+          "How does the Wells Fargo sales scandal relate to ethical breaches in accounting?",
+          "What role do ethical standards play in maintaining public confidence in the financial markets?",
+          "Are there specific training requirements for accountants regarding ethics?"
+        ],
+        "llm_answers": [
+          "It means accountants must maintain their professional knowledge and skill at a level that ensures clients receive competent professional service. This includes keeping up-to-date with changes in standards and legislation, and acting diligently and carefully in all tasks.",
+          "While primarily a sales practices scandal, the pressure to meet aggressive sales targets led to fraudulent accounts being opened. This created a culture where ethical considerations like integrity and professional behavior were compromised, potentially leading to misrepresentation in internal reporting and a focus on quantity over quality, indirectly impacting financial disclosures and internal controls.",
+          "Ethical standards are crucial for public confidence because they ensure that financial information is reliable, unbiased, and transparent. If the public loses trust in the integrity of financial reporting, it destabilizes markets and discourages investment, harming economic growth.",
+          "Yes, many professional accounting bodies, like CPA Australia or AICPA, require members to complete continuous professional development (CPD) that often includes specific hours dedicated to ethics training. Universities also integrate ethics into their accounting curricula."
+        ],
+        "final_submission": "Ethical standards are foundational to the integrity of financial reporting, serving as a critical guide beyond mere regulatory compliance. Professional bodies like the Institute of Chartered Accountants and CPA Australia, through their respective codes such as APES 110, delineate key principles that govern accounting practice. These include integrity, demanding honesty and fair dealing; objectivity, requiring unbiased professional judgment; and professional competence and due care, which mandates continuous learning and diligent application of skills. Confidentiality and professional behavior complete this framework, ensuring accountants act in a manner that upholds the reputation of the profession.\n\nThe consequences of neglecting these standards are severe and far-reaching. Consider recent corporate events such as the Wells Fargo sales practices scandal, where aggressive sales targets led to employees opening millions of fraudulent customer accounts. While not a direct accounting fraud in the traditional sense, the systemic pressure and lack of internal ethical oversight illustrate how a breakdown in professional behavior can create a toxic environment that impacts financial integrity and reporting culture. Similarly, the Theranos saga, involving misrepresentation of technology and financial status, highlights the perils of a lack of objectivity and integrity in reporting to investors.\n\nEthical breaches fundamentally erode financial transparency and stakeholder trust. When financial reports are perceived as unreliable or manipulated, investors withdraw capital, creditors become wary, and the public loses faith in the capital markets. This breakdown of trust not only damages the reputation of individual firms but also undermines the entire financial system. Maintaining strong ethical conduct is therefore not just a moral imperative but a strategic necessity for long-term business viability and the efficient functioning of the economy. It ensures that financial decisions are made on a basis of accurate and truthful information, fostering a stable and trustworthy economic environment for all participants. However, it's important to recognize that while these principles are clear, their consistent application across all complex real-world situations remains a challenge.\n\nIn conclusion, robust ethical standards translate directly into transparent reporting and durable stakeholder trust. Where ethics are compromised, financial statements lose credibility; where ethics are embedded, markets function more efficiently.",
+        "hybrid_breakdown": {
+          "ai_paragraph_indices": [2,3],
+          "human_paragraph_indices": [0],
+          "hybrid_paragraph_indices": [1],
+          "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+        },
+        "feedback": {
+          "c1": "Excellent - The submission offers an excellent and comprehensive understanding of ethical standards, clearly identifying and explaining the five fundamental principles and referencing relevant professional codes. It demonstrates a deep grasp of theoretical concepts. (37/40)",
+          "c2": "Average - Several real-world examples (Wells Fargo, Theranos) are mentioned, illustrating ethical challenges. However, the analysis of their direct accounting implications or specific financial reporting consequences is somewhat superficial, lacking deeper integration with the core accounting aspects. (14/20)",
+          "c3": "Good - The evaluation of the impact of ethics on financial transparency and stakeholder trust is good. It clearly explains the general importance and consequences, linking ethical breakdowns to broader economic effects, though a deeper, more nuanced critical analysis could be present. (12/15)",
+          "c4": "Average - The submission generally follows a logical structure and maintains an academic tone, but there are occasional lapses into slightly less formal language and some minor structural inconsistencies that detract from overall coherence. Referencing, while implicitly present through mentions of codes, isn't explicitly formal. (17/25)",
+          "total": "80/100"
+        }
+      },
+      {
+        "quality": "Average",
+        "authorship": "ai",
+        "key_points": [
+          "Explains core ethical concepts adequately, mentioning integrity and objectivity.",
+          "Provides very vague or no specific, relevant real-world examples of accounting breaches.",
+          "Offers a sophisticated and insightful critical evaluation of the *theory* of ethics' impact on stakeholders and business.",
+          "The structure is disorganized, flow is poor, and language is inconsistent and informal."
+        ],
+        "llm_questions": [
+          "What does 'integrity' mean for an accountant?",
+          "Can you describe a situation where an accountant might face an ethical dilemma regarding objectivity?",
+          "How does the perception of a company's ethics affect its share price?",
+          "What are the biggest challenges to maintaining ethical standards in large corporations?"
+        ],
+        "llm_answers": [
+          "Integrity means being honest and straightforward in all professional and business relationships. It's about not knowingly being associated with information that is materially false or misleading.",
+          "An accountant might face an objectivity dilemma if they are asked to audit a company where a close family member holds a significant financial interest or executive position. Their personal relationship could bias their professional judgment, making it difficult to remain objective.",
+          "The perception of strong ethics can enhance a company's brand, attract ethical investors, and potentially lead to a higher share price due to increased confidence. Conversely, ethical scandals can severely damage reputation, leading to investor sell-offs and a plummeting share price.",
+          "Challenges often include intense pressure to meet financial targets, complex organizational structures that obscure accountability, weak internal controls, a culture that tolerates minor ethical lapses, and a lack of clear leadership commitment to ethics."
+        ],
+        "final_submission": "Ethical standards are crucial for financial reporting. They are like the rules of a game that everyone needs to follow for it to be fair. Key principles include integrity, meaning you have to be honest and truthful, and objectivity, which means you shouldn't let your personal feelings or biases affect your work. These principles are really important for accountants because they handle a lot of sensitive financial information, and people rely on them to be correct.\n\nWhen ethical standards are not followed, the consequences can be catastrophic, not just for the company involved but for the entire economic ecosystem. The breakdown of trust that follows an ethical breach can ripple through financial markets, causing investors to pull their money out and making it difficult for other companies to raise capital. This significantly impacts financial transparency, as the public begins to doubt the veracity of any reported figures, irrespective of the company. Such a loss of confidence can diminish the efficiency of capital allocation and distort market pricing. Companies that are perceived as unethical often face higher costs of capital, struggle to attract and retain talent, and ultimately see a significant decline in their long-term sustainability. It is a fundamental truth that trust, once broken, is exceedingly difficult to rebuild, and the repercussions can extend for years, affecting corporate reputation and public perception deeply.\n\nUnfortunately, it's hard to find good examples of these breaches right now, but you can imagine companies getting into big trouble. The structure of how information is presented really affects how much people trust it, so a clear and honest report is always better. People should just try to do the right thing.\n\nIn conclusion, robust ethical standards translate directly into transparent reporting and durable stakeholder trust. Where ethics are compromised, financial statements lose credibility; where ethics are embedded, markets function more efficiently.",
+        "hybrid_breakdown": {
+          "ai_paragraph_indices": [2,3],
+          "human_paragraph_indices": [0],
+          "hybrid_paragraph_indices": [1],
+          "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+        },
+        "feedback": {
+          "c1": "Good - The submission explains core ethical concepts like integrity and objectivity with adequate clarity, though it stops short of referencing specific professional codes or delving into deeper applications. The understanding presented is generally good. (30/40)",
+          "c2": "Needs Improvement - The submission fails to provide any specific, relevant real-world examples of ethical or unethical financial reporting. The general statement about \"companies getting into big trouble\" does not meet the requirements for illustrating understanding. (8/20)",
+          "c3": "Excellent - The critical evaluation of the impact of ethical behavior is surprisingly insightful and thorough. It details how the breakdown of trust ripples through financial markets, affects capital allocation, and impacts a company's long-term sustainability, demonstrating a strong grasp of macro-level consequences. (14/15)",
+          "c4": "Needs Improvement - The structure of the submission is disorganized, with a significant disconnect between paragraphs. The language shifts inconsistently between academic and casual tones, and the flow of ideas is poor, making it challenging to follow the argument effectively. (13/25)",
+          "total": "65/100"
+        }
+      },
+      {
+        "quality": "Needs Improvement",
+        "authorship": "ai",
+        "key_points": [
+          "Mentions ethics vaguely as \"doing right.\"",
+          "No real-world examples are provided.",
+          "Very minimal and unclear evaluation of impact, stating ethics is \"important\" but not why.",
+          "Structure is somewhat coherent but simplistic; tone is generally academic though basic."
+        ],
+        "llm_questions": [
+          "What does 'ethical' mean in simple terms for someone working with numbers?",
+          "Why should companies bother with ethics if it sometimes costs money?",
+          "Can you give an example of something unethical a company might do with its money reports?",
+          "How does an accountant's personal behavior relate to their professional ethics?"
+        ],
+        "llm_answers": [
+          "It means being honest and fair when you are dealing with financial figures, and not trying to trick anyone or hide information.",
+          "Even if it costs money short-term, being ethical builds trust with customers and investors, which can help the company make more money and succeed in the long run.",
+          "A company might try to make its profits look bigger than they actually are by changing numbers in the reports.",
+          "An accountant's personal behavior outside of work can reflect on their professional integrity. If they are not seen as trustworthy in their personal life, it can make others doubt their trustworthiness professionally."
+        ],
+        "final_submission": "Ethical standards are very important in accounting. They mean that people who work with money have to do the right thing and be honest. This ensures that financial reports are accurate and truthful. If an accountant isn't ethical, then the reports they make might not be correct, which can mislead people who use those reports to make decisions. It's about having good principles in your work.\n\nThe consequences of not following ethical rules can be quite bad. For example, if a company's financial reports are found to be untruthful because of unethical accounting, then people will stop trusting that company. This lack of trust can mean that investors won't want to put their money into the company, and customers might even stop buying their products. So, it's very important for businesses to have good ethical practices. When reports are not transparent, it makes it hard for anyone to truly understand the company's financial health, leading to instability. Therefore, strong ethical foundations are essential for maintaining a positive reputation and ensuring the smooth operation of financial markets. It helps everyone involved to feel confident in the information they receive. There are no specific examples to mention here, but just think about general bad business practices. Overall, acting ethically is a key part of financial reporting.\n\nIn conclusion, robust ethical standards translate directly into transparent reporting and durable stakeholder trust. Where ethics are compromised, financial statements lose credibility; where ethics are embedded, markets function more efficiently.",
+        "hybrid_breakdown": {
+          "ai_paragraph_indices": [2],
+          "human_paragraph_indices": [0],
+          "hybrid_paragraph_indices": [1],
+          "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+        },
+        "feedback": {
+          "c1": "Needs Improvement - The submission offers a basic and somewhat vague understanding of ethical standards, defining ethics broadly as 'doing the right thing' and 'being honest.' It lacks specific reference to accounting principles or professional codes, indicating a limited depth of comprehension. (20/40)",
+          "c2": "Poor - No specific real-world examples of ethical or unethical financial reporting are provided. The general suggestion to 'think about general bad business practices' is insufficient to demonstrate application to scenarios. (5/20)",
+          "c3": "Poor - The evaluation of impact is minimal and largely descriptive. It states that ethical breaches lead to a loss of trust and difficulty attracting investors but does not critically analyze *how* this affects financial transparency or the broader implications for stakeholder decision-making. (4/15)",
+          "c4": "Average - The submission exhibits a generally coherent structure, with ideas presented in a logical, albeit simplistic, progression. The tone is mostly academic, though the language is quite basic and lacks sophistication, resembling a simple essay rather than a detailed academic analysis. (18/25)",
+          "total": "47/100"
+        }
+      },
+      {
+        "quality": "Excellent",
+        "authorship": "ai",
+        "key_points": [
+          "Demonstrates sophisticated understanding of ethical frameworks and principles (APES 110, IFAC).",
+          "Integrates multiple, complex real-world examples (Lehman Brothers, Satyam) with deep analysis.",
+          "Provides a highly insightful and nuanced critical evaluation of the systemic impact of ethical breaches.",
+          "Very coherent structure and academic tone, with only minor room for absolute perfection in stylistic flow."
+        ],
+        "llm_questions": [
+          "Beyond Enron, what are other significant examples of ethical breaches in financial reporting and their distinct features?",
+          "How do ethical standards contribute to the accuracy and reliability of financial statements?",
+          "Discuss the long-term consequences of a lack of ethical oversight in financial reporting for the broader economy.",
+          "What role does whistleblowing play in upholding ethical standards in accounting?"
+        ],
+        "llm_answers": [
+          "The Satyam Computer Services scandal in India involved the CEO confessing to inflating assets and fabricating non-existent cash balances. This highlighted issues with corporate governance, auditor independence, and the challenge of detecting fraud in emerging markets. Another example is the collapse of Lehman Brothers, where aggressive accounting for illiquid assets (\"Repo 105\" transactions) allowed them to temporarily remove assets from the balance sheet, misleading investors about financial health.",
+          "Ethical standards ensure that preparers and auditors approach financial reporting with integrity, objectivity, and professional skepticism. This commitment minimizes the risk of deliberate misrepresentation, suppresses bias in judgment, and encourages diligent application of accounting principles, all of which are essential for producing accurate and reliable financial statements.",
+          "A systemic lack of ethical oversight can lead to market instability, capital misallocation, and a significant loss of investor confidence. It can trigger regulatory overhauls, increase the cost of doing business through stricter compliance, and ultimately hinder economic growth by deterring investment and fostering an environment of distrust that undermines economic transactions.",
+          "Whistleblowing is a critical safeguard. It allows internal stakeholders to expose unethical practices or fraud that might otherwise remain hidden due to internal collusion or management pressure. Effective whistleblower protection mechanisms are essential for fostering a culture where ethical breaches are identified and addressed, reinforcing transparency and accountability."
+        ],
+        "final_submission": "The profound influence of ethical standards on financial reporting cannot be overstated; they represent the moral compass guiding the preparation and presentation of financial information. Professional codes, notably the IFAC Code of Ethics and APES 110, articulate fundamental principles such as integrity, objectivity, professional competence and due care, confidentiality, and professional behavior. These principles serve as indispensable bulwarks against manipulation and misrepresentation, ensuring that financial statements offer a true and fair view of an entity's economic reality, which is paramount for rational decision-making by diverse people who rely on the accounts.\n\nEthical breaches reverberate with devastating consequences, as evidenced by numerous historical and contemporary examples. The collapse of Lehman Brothers, for instance, revealed how aggressive accounting practices, such as the use of 'Repo 105' transactions, were employed to temporarily move assets off the balance sheet, thereby misleading investors about the firm's true leverage and liquidity. This systemic lack of transparency, driven by a disregard for objective reporting, contributed significantly to the 2008 financial crisis. Similarly, the Satyam Computer Services scandal in India saw management fabricating revenues and inflating assets, a stark demonstration of outright fraud stemming from a profound failure of integrity and corporate governance. These cases underscore that ethical lapses are not isolated incidents but often symptoms of a broader cultural decay within organizations.\n\nThe critical evaluation of these events clearly illustrates that ethical behavior directly correlates with financial transparency and the cultivation of stakeholder trust. When ethics are compromised, the reliability of financial data diminishes, leading to capital misallocation, increased market volatility, and a crisis of confidence among investors, creditors, and the public. This erodes the very foundation of efficient capital markets, making it more expensive for businesses to raise funds and stifling economic growth. Moreover, the long-term reputational damage to companies and the profession at large can be irreparable, highlighting that robust ethical standards are not merely a compliance burden but a strategic imperative for sustainable value creation and the preservation of societal welfare. The proactive implementation of strong ethical frameworks and whistleblower protections is thus vital for maintaining the health of the global financial system.\n\nIn conclusion, robust ethical standards translate directly into transparent reporting and durable stakeholder trust. Where ethics are compromised, financial statements lose credibility; where ethics are embedded, markets function more efficiently.",
+        "hybrid_breakdown": {
+          "ai_paragraph_indices": [2,3],
+          "human_paragraph_indices": [0],
+          "hybrid_paragraph_indices": [1],
+          "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+        },
+        "feedback": {
+          "c1": "Excellent - The submission presents an exceptionally sophisticated and comprehensive understanding of ethical standards, meticulously detailing the fundamental principles and their derivation from key professional codes like IFAC and APES 110. The explanations are clear and deeply insightful. (38/40)",
+          "c2": "Excellent - Multiple highly relevant and complex real-world examples (Lehman Brothers, Satyam) are integrated with masterful analytical depth. The discussion goes beyond mere description to critically link specific ethical breaches to their financial reporting implications and broader systemic consequences. (19/20)",
+          "c3": "Excellent - The critical evaluation of impact is outstanding. The submission offers a highly insightful and nuanced analysis, connecting ethical lapses to systemic market failures, capital misallocation, and the intricate web of stakeholder trust, demonstrating profound critical thinking. (15/15)",
+          "c4": "Good - The submission is structured with high coherence and exhibits a consistently formal, academic tone. The arguments flow logically, presenting a compelling narrative. While exceptionally strong, there is minor room for an absolute 'perfect' stylistic flourish or more explicit transitional phrasing in a couple of spots, but it remains of excellent quality. (22/25)",
+          "total": "94/100"
+        }
+      },
+      {
+        "quality": "Average",
+        "authorship": "ai",
+        "key_points": [
+          "Mentions some ethical principles (honesty, fairness) but lacks depth or specific code references.",
+          "Provides a basic example like \"falsifying records\" but doesn't elaborate on specific cases.",
+          "Identifies the importance of ethics for trust, but analysis is superficial.",
+          "Generally structured, but tone can be inconsistent, and arguments are not fully developed."
+        ],
+        "llm_questions": [
+          "What are the basic ethical responsibilities of an accountant?",
+          "Why is it bad for a company if its financial reports are not ethical?",
+          "Can you explain one way ethical behavior helps a company financially?",
+          "What does 'financial transparency' mean?"
+        ],
+        "llm_answers": [
+          "An accountant's basic ethical responsibilities include being honest and truthful in their work, keeping client information confidential, and making sure their skills are up-to-date.",
+          "If financial reports are not ethical, people won't trust the company, which means investors might not want to put money into it, and the company's reputation will be damaged.",
+          "Ethical behavior builds a good reputation, which can attract more customers and investors who prefer to deal with trustworthy companies, potentially leading to higher sales and easier access to capital.",
+          "Financial transparency means that a company's financial information is clear, understandable, and openly available, allowing anyone to easily see and assess its financial health without hidden details."
+        ],
+        "final_submission": "Ethical standards are an essential component of reliable financial reporting. Accountants must adhere to certain principles to ensure the integrity of the information they provide. These principles typically include honesty, fairness, and a commitment to accuracy. For example, accountants are expected not to intentionally misrepresent financial figures or conceal important information that could affect people who rely on the accounts' decisions. While specific codes like APES 110 exist, the general idea is about acting professionally and with moral uprightness in all financial dealings. This ensures that the numbers presented reflect the true financial position and performance of an entity.\n\nThe consequences of ethical breaches in accounting practices can be significant. If an accountant or a company decides to act unethically, perhaps by falsifying records or manipulating earnings, the immediate outcome is usually a loss of public trust. This can have serious repercussions for the company involved. For instance, investors might pull their investments, banks might be reluctant to offer loans, and the company's reputation in the market will suffer. This directly affects financial transparency because once trust is broken, stakeholders will naturally question the veracity of all future reports. The overall impact is a destabilization of financial confidence, making it harder for businesses to operate effectively and for markets to function efficiently. Ultimately, consistent ethical conduct is necessary for maintaining a company's credibility and its ability to engage effectively with its various stakeholders. It's not just about following rules, but about building and maintaining a good name over time.\n\nIn conclusion, robust ethical standards translate directly into transparent reporting and durable stakeholder trust. Where ethics are compromised, financial statements lose credibility; where ethics are embedded, markets function more efficiently.",
+        "hybrid_breakdown": {
+          "ai_paragraph_indices": [2],
+          "human_paragraph_indices": [0],
+          "hybrid_paragraph_indices": [1],
+          "notes": "Intro (paragraph 0) rewritten in human voice; paragraph 1 lightly edited (Hybrid); remaining paragraphs unchanged (AI). Indices are zero-based."
+        },
+        "feedback": {
+          "c1": "Average - The submission describes some general ethical principles like honesty and fairness, showing an average understanding. However, it lacks specific references to professional codes of conduct (e.g., APES 110, IFAC Code) and does not delve into the nuances of concepts like objectivity or professional competence with sufficient depth. (28/40)",
+          "c2": "Average - A general example of ethical breach, such as 'falsifying records or manipulating earnings,' is mentioned. However, it lacks specific real-world context or detailed analysis of actual cases, thus providing a limited illustration of understanding. (14/20)",
+          "c3": "Average - The submission identifies the impact of ethical breaches on stakeholder trust and financial transparency. The analysis is present but remains at a general level, without offering deeper critical insights into the mechanisms or broader economic consequences of this impact. (10/15)",
+          "c4": "Average - The submission generally presents its ideas logically, with a discernible structure. The tone is mostly academic, though some phrasing is simplistic, and the arguments could be more developed and sophisticated for a higher score. (17/25)",
+          "total": "69/100"
+        }
+      }
+    ]
+  }

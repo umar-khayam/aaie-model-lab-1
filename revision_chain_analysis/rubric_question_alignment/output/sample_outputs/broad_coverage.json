@@ -1,0 +1,62 @@
+{
+  "submission_id": "rc_rub_it_0001_12345678_0001",
+  "rubric_id": "rub_it_0001",
+  "domain": "Information Technology",
+  "alignment_summary": {
+    "overall_alignment": 0.76,
+    "status": "broad_coverage",
+    "total_prompts_analyzed": 8,
+    "off_topic_prompts": 0
+  },
+  "rubric_coverage": [
+    {
+      "criteria_id": "c1",
+      "criteria_name": "Understanding of Technical Debt and Its Causes",
+      "weight": 0.3,
+      "coverage_score": 0.78,
+      "status": "adequately_covered",
+      "prompts_matched": 3,
+      "engagement_depth": "moderate",
+      "gaps": [
+        "No questions about key areas (accumulation, trade-off)."
+      ]
+    },
+    {
+      "criteria_id": "c2",
+      "criteria_name": "Use of Real Examples in Long-Term Projects",
+      "weight": 0.25,
+      "coverage_score": 0.72,
+      "status": "adequately_covered",
+      "prompts_matched": 2,
+      "engagement_depth": "surface",
+      "gaps": [
+        "No questions about key areas (consequences, outages)."
+      ]
+    },
+    {
+      "criteria_id": "c3",
+      "criteria_name": "Critical Evaluation of Strategies",
+      "weight": 0.3,
+      "coverage_score": 0.81,
+      "status": "well_covered",
+      "prompts_matched": 3,
+      "engagement_depth": "deep",
+      "gaps": [
+        "No questions about key areas (limitations)."
+      ]
+    },
+    {
+      "criteria_id": "c4",
+      "criteria_name": "Structure, Clarity, and Academic Tone",
+      "weight": 0.15,
+      "coverage_score": 0.65,
+      "status": "adequately_covered",
+      "prompts_matched": 1,
+      "engagement_depth": "surface",
+      "gaps": [
+        "No questions about key areas (transitions, topic sentences)."
+      ]
+    }
+  ],
+  "flags": []
+}

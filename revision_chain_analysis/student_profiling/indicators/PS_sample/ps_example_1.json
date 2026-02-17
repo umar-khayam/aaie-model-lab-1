@@ -1,0 +1,14 @@
+{
+  "turns": [
+    {
+      "role": "student",
+      "text": "Can you break this essay into clear sections so I can rewrite each part more effectively? I want to understand how the flow should look and which parts belong together before I start drafting my improved version. This will help me plan my revisions more confidently and reduce mistakes.",
+      "prompt_type": "revise_content"
+    },
+    {
+      "role": "assistant",
+      "text": "Sure, here is a suggested structure.",
+      "prompt_type": "other"
+    }
+  ]
+}

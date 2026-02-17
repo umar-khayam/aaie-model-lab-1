@@ -1,0 +1,80 @@
+{
+  "submission_id": "rclog_rub_it_0005_partial_0002",
+  "rubric_id": "rub_it_0005",
+  "alignment_summary": {
+    "overall_alignment": 0.61,
+    "status": "partial_coverage",
+    "total_prompts_analyzed": 9,
+    "prompts_filtered": 1
+  },
+  "rubric_coverage": [
+    {
+      "criteria_id": "c1",
+      "criteria_name": "Understanding of Cybersecurity Audit Fundamentals",
+      "weight": 0.25,
+      "coverage_score": 0.72,
+      "status": "adequately_covered",
+      "prompts_matched": 3,
+      "engagement_depth": "moderate",
+      "gaps": []
+    },
+    {
+      "criteria_id": "c2",
+      "criteria_name": "Vulnerability Identification and Assessment Methodologies",
+      "weight": 0.25,
+      "coverage_score": 0.48,
+      "status": "undercovered",
+      "prompts_matched": 1,
+      "engagement_depth": "surface",
+      "gaps": [
+        "No questions about specific assessment techniques (penetration testing, vulnerability scanning)",
+        "Limited exploration of how technical vs. administrative controls are evaluated",
+        "Missing analysis of automated vs. manual testing approaches"
+      ]
+    },
+    {
+      "criteria_id": "c3",
+      "criteria_name": "Regulatory Compliance and Framework Analysis",
+      "weight": 0.25,
+      "coverage_score": 0.78,
+      "status": "adequately_covered",
+      "prompts_matched": 3,
+      "engagement_depth": "moderate",
+      "gaps": []
+    },
+    {
+      "criteria_id": "c4",
+      "criteria_name": "Continuous Security Improvement and Risk Management Integration",
+      "weight": 0.25,
+      "coverage_score": 0.45,
+      "status": "undercovered",
+      "prompts_matched": 2,
+      "engagement_depth": "surface",
+      "gaps": [
+        "No questions linking audit findings to remediation prioritization",
+        "Missing exploration of how audits support ongoing security maturity",
+        "Limited depth on metrics and measurement for improvement tracking"
+      ]
+    }
+  ],
+  "flags": [
+    {
+      "type": "rubric_gap",
+      "severity": "medium",
+      "criteria_id": "c2",
+      "message": "Vulnerability Assessment criterion undercovered (48% coverage, weight 25%)"
+    },
+    {
+      "type": "rubric_gap",
+      "severity": "medium",
+      "criteria_id": "c4",
+      "message": "Continuous Improvement criterion undercovered (45% coverage, weight 25%)"
+    },
+    {
+      "type": "coverage_issue",
+      "severity": "medium",
+      "criteria_id": null,
+      "message": "Two high-weighted criteria (50% combined weight) are undercovered with surface-level engagement"
+    }
+  ]
+}

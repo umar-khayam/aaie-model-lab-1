@@ -1,0 +1,9 @@
+{
+  "understand_prompt": 1,
+  "plan_structure": 1,
+  "generate_content": 1,
+  "revise_content": 1,
+  "polish_language": 0,
+  "check_quality": 1,
+  "unknown_prompt_type": 0
+}

@@ -1,0 +1,87 @@
+{
+  "criterion_coverages": [
+    {
+      "criteria_id": "C1",
+      "criteria_name": "Understanding of Technical Debt and Its Causes",
+      "weight": 0.3,
+      "coverage_score": 0.38,
+      "status": "undercovered",
+      "prompts_matched": 1,
+      "matched_prompt_ids": [
+        1
+      ],
+      "unmatched_keywords": [
+        "causes",
+        "intentional",
+        "unintentional",
+        "shortcuts",
+        "trade-off",
+        "accumulation"
+      ]
+    },
+    {
+      "criteria_id": "C2",
+      "criteria_name": "Use of Real Examples in Long-Term Projects",
+      "weight": 0.25,
+      "coverage_score": 0.15,
+      "status": "significantly_undercovered",
+      "prompts_matched": 0,
+      "matched_prompt_ids": [],
+      "unmatched_keywords": [
+        "examples",
+        "real-world",
+        "case study",
+        "legacy systems",
+        "consequences",
+        "long-term projects",
+        "outages",
+        "refactoring"
+      ]
+    },
+    {
+      "criteria_id": "C3",
+      "criteria_name": "Critical Evaluation of Strategies",
+      "weight": 0.3,
+      "coverage_score": 0.52,
+      "status": "adequately_covered",
+      "prompts_matched": 2,
+      "matched_prompt_ids": [
+        2,
+        3
+      ],
+      "unmatched_keywords": [
+        "code reviews",
+        "technical debt register",
+        "trade-offs",
+        "strengths",
+        "limitations",
+        "critical analysis"
+      ]
+    },
+    {
+      "criteria_id": "C4",
+      "criteria_name": "Structure, Clarity, and Academic Tone",
+      "weight": 0.15,
+      "coverage_score": 0.18,
+      "status": "significantly_undercovered",
+      "prompts_matched": 0,
+      "matched_prompt_ids": [],
+      "unmatched_keywords": [
+        "structure",
+        "introduction",
+        "conclusion",
+        "transitions",
+        "academic tone",
+        "formal language",
+        "topic sentences",
+        "logical flow"
+      ]
+    }
+  ],
+  "overall_alignment": {
+    "overall_alignment": 0.36,
+    "status": "minimal_coverage",
+    "total_prompts_analyzed": 4,
+    "off_topic_prompts": 1
+  }
+}

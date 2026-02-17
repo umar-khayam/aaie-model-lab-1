@@ -1,0 +1,165 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "StudentInteractionProfile",
+  "type": "object",
+
+  "properties": {
+
+    "submission_id": {
+      "type": "string",
+      "description": "Unique ID for the assessment submission. Follow rclog naming convention."
+    },
+
+    "profile_generated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp of profile generation"
+    },
+
+    "scores": {
+      "type": "object",
+      "properties": {
+        "critical_thinking_score": { "type": "number", "minimum": 0, "maximum": 1 },
+        "problem_solving_score": { "type": "number", "minimum": 0, "maximum": 1 },
+        "engagement_score": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "required": [
+        "critical_thinking_score",
+        "problem_solving_score",
+        "engagement_score"
+      ]
+    },
+
+    "ai_use_pattern": {
+      "type": "string",
+      "enum": ["generator_only", "reviser", "planner_checker", "mixed"],
+      "description": "Dominant pattern of AI usage based on prompt types"
+    },
+
+    "process_notes": {
+      "type": "string",
+      "description": "Natural-language summary of student behaviour and interaction pattern"
+    },
+
+    "indicator_metrics": {
+      "type": "object",
+      "description": "Raw counts used to compute dimension scores",
+      "properties": {
+
+        "critical_thinking": {
+          "type": "object",
+          "properties": {
+            "explanation_prompts": { "type": "integer" },
+            "verification_prompts": { "type": "integer" },
+            "comparison_prompts": { "type": "integer" },
+            "evidence_prompts": { "type": "integer" }
+          }
+        },
+
+        "problem_solving": {
+          "type": "object",
+          "properties": {
+            "decomposition_prompts": { "type": "integer" },
+            "iterative_revision_count": { "type": "integer" },
+            "self_proposed_content_turns": { "type": "integer" },
+            "feedback_uptake_events": { "type": "integer" }
+          }
+        },
+
+        "engagement": {
+          "type": "object",
+          "properties": {
+            "student_token_ratio": { "type": "number" },
+            "student_turn_count": { "type": "integer" },
+            "distinct_episode_types": { "type": "integer" },
+            "session_time_minutes": { "type": "number" }
+          }
+        },
+
+        "prompt_type_distribution": {
+          "type": "object",
+          "description": "Counts of prompt types based on rule-based classifier",
+          "properties": {
+            "understand_prompt": { "type": "integer" },
+            "plan_structure": { "type": "integer" },
+            "generate_content": { "type": "integer" },
+            "revise_content": { "type": "integer" },
+            "polish_language": { "type": "integer" },
+            "check_quality": { "type": "integer" }
+          }
+        }
+      }
+    },
+
+    "explainability_evidence": {
+      "type": "object",
+      "description": "Evidence excerpts and confidence scores supporting each dimension and AI Use Pattern (SRS FR-3.2.3)",
+
+      "properties": {
+
+        "critical_thinking": {
+          "type": "object",
+          "properties": {
+            "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+            "evidence": {
+              "type": "array",
+              "description": "Key excerpts used to support CT classification",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+
+        "problem_solving": {
+          "type": "object",
+          "properties": {
+            "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+            "evidence": {
+              "type": "array",
+              "description": "Excerpts illustrating PS indicators such as revisions or decomposition",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+
+        "engagement": {
+          "type": "object",
+          "properties": {
+            "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+            "evidence": {
+              "type": "array",
+              "description": "Excerpts showing behavioural engagement patterns",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+
+        "ai_use_pattern": {
+          "type": "object",
+          "properties": {
+            "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+            "evidence": {
+              "type": "array",
+              "description": "Excerpts that justify the chosen AI Use Pattern",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "required": [
+    "submission_id",
+    "scores",
+    "ai_use_pattern",
+    "process_notes"
+  ]
+}

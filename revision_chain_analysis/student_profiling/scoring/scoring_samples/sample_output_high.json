@@ -1,0 +1,23 @@
+{
+    "test_case": "high_scores",
+    "input_indicators": {
+        "critical_thinking": {
+            "explanation_prompts": 1.0,
+            "verification_prompts": 1.0,
+            "comparison_prompts": 1.0,
+            "evidence_prompts": 1.0
+        },
+        "problem_solving": {
+            "decomposition_prompts": 1.0,
+            "iterative_revision_count": 1.0,
+            "self_proposed_content_turns": 1.0,
+            "feedback_uptake_events": 1.0
+        },
+        "engagement": {
+            "student_token_ratio": 1.0,
+            "student_turn_count": 1.0,
+            "distinct_episode_types": 1.0,
+            "session_minutes": 1.0
+    }
+}
+}

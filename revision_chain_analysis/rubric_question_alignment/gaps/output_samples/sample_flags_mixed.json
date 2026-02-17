@@ -1,0 +1,39 @@
+{
+  "flags": [
+    {
+      "type": "rubric_gap",
+      "severity": "medium",
+      "criteria_id": "C1",
+      "message": "Coverage is 0.40, below 0.50 threshold."
+    },
+    {
+      "type": "coverage_issue",
+      "severity": "high",
+      "criteria_id": "C2",
+      "message": "High-weight criterion is undercovered (weight ≥ 0.70 and coverage < 0.60)."
+    },
+    {
+      "type": "coverage_issue",
+      "severity": "low",
+      "criteria_id": "C2",
+      "message": "Minimal prompts linked to this criterion (prompt count ≤ 1)."
+    },
+    {
+      "type": "coverage_issue",
+      "severity": "medium",
+      "criteria_id": null,
+      "message": "1 out of 3 criteria are undercovered."
+    },
+    {
+      "type": "off_topic_questions",
+      "severity": "medium",
+      "criteria_id": null,
+      "message": "2 prompt(s) do not match any criterion."
+    }
+  ],
+  "gaps": {
+    "C1": ["No questions about key areas (difference, trade-off)."],
+    "C2": ["No questions about key areas (penetration testing, vulnerability scanning)."],
+    "C3": []
+  }
+}

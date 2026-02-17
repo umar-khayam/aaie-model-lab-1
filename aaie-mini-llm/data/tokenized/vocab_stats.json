@@ -1,0 +1,19 @@
+{
+  "vocab": {
+    "total_tokens": 679389,
+    "unique_tokens": 22820,
+    "vocab_size": 200019,
+    "oov_rate": 0.0
+  },
+  "packing_efficiency": 0.17521626049288405,
+  "duplicates": 0,
+  "leakage": {
+    "train_val_overlap": 0,
+    "train_test_overlap": 0,
+    "val_test_overlap": 0
+  },
+  "source_balance_pct": {
+    "wikitext": 41.78607542954037,
+    "tinystories": 58.21392457045963
+  }
+}

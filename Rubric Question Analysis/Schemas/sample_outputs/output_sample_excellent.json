@@ -1,0 +1,53 @@
+{
+  "submission_id": "rclog_rub_it_0005_systematic_0001",
+  "rubric_id": "rub_it_0005",
+  "alignment_summary": {
+    "overall_alignment": 0.91,
+    "status": "systematic_coverage",
+    "total_prompts_analyzed": 16,
+    "prompts_filtered": 0
+  },
+ "rubric_coverage": [
+    {
+      "criteria_id": "c1",
+      "criteria_name": "Understanding of Cybersecurity Audit Fundamentals",
+      "weight": 0.25,
+      "coverage_score": 0.93,
+      "status": "well_covered",
+      "prompts_matched": 5,
+      "engagement_depth": "deep",
+      "gaps": []
+    },
+    {
+      "criteria_id": "c2",
+      "criteria_name": "Vulnerability Identification and Assessment Methodologies",
+      "weight": 0.25,
+      "coverage_score": 0.88,
+      "status": "well_covered",
+      "prompts_matched": 4,
+      "engagement_depth": "deep",
+      "gaps": []
+    },
+    {
+      "criteria_id": "c3",
+      "criteria_name": "Regulatory Compliance and Framework Analysis",
+      "weight": 0.25,
+      "coverage_score": 0.9,
+      "status": "well_covered",
+      "prompts_matched": 4,
+      "engagement_depth": "deep",
+      "gaps": []
+    },
+    {
+      "criteria_id": "c4",
+      "criteria_name": "Continuous Security Improvement and Risk Management Integration",
+      "weight": 0.25,
+      "coverage_score": 0.92,
+      "status": "well_covered",
+      "prompts_matched": 3,
+      "engagement_depth": "deep",
+      "gaps": []
+    }
+  ],
+  "flags": []
+}
