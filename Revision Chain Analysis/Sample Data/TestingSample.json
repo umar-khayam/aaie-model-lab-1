@@ -1,0 +1,93 @@
+{
+  "domain": "General Knowledge Chat",
+  "prompt": "User initiates a chat session requesting facts, science insights, and specific topic fun facts.",
+  "rubric": {
+    "rubric_id": "rub_chat_0001",
+    "criteria": [
+      {
+        "criterion_id": "c1",
+        "name": "Relevance & Engagement",
+        "description": "The response maintains relevance to user queries and keeps the conversation engaging.",
+        "performance_descriptors": {
+          "excellent": "Consistently on-topic, highly engaging with thoughtful, informative responses.",
+          "good": "Generally relevant and engaging, with minor lapses or less detailed content.",
+          "average": "Mostly on-topic but occasionally generic or superficial in engagement.",
+          "needs_improvement": "Frequently off-topic or lacking clear engagement with user questions.",
+          "poor": "Responses are irrelevant or disengaged from user prompts."
+        }
+      },
+      {
+        "criterion_id": "c2",
+        "name": "Accuracy & Clarity",
+        "description": "Information provided is accurate and communicated clearly.",
+        "performance_descriptors": {
+          "excellent": "All facts are accurate and presented clearly and concisely.",
+          "good": "Minor inaccuracies but generally clear communication.",
+          "average": "Some inaccuracies or unclear phrasing.",
+          "needs_improvement": "Frequent inaccuracies or confusing explanations.",
+          "poor": "Major factual errors or incoherent communication."
+        }
+      },
+      {
+        "criterion_id": "c3",
+        "name": "Depth & Insight",
+        "description": "The conversational content demonstrates depth of knowledge and insightful explanations.",
+        "performance_descriptors": {
+          "excellent": "Provides deep insights and enriching details beyond basic facts.",
+          "good": "Good level of detail and occasional insightful commentary.",
+          "average": "Basic but sufficient details, lacking deeper insight.",
+          "needs_improvement": "Shallow explanations with little elaboration.",
+          "poor": "Superficial or trivial content."
+        }
+      }
+    ]
+  },
+  "submissions": [
+    {
+      "final_submission": "User initiates a chatbot conversation demonstrating human critical thinking to generate and critically refine AI prompts about Information Technology, guiding the AI to produce comprehensive, clear, and insightful information on various IT concepts, cybersecurity threats, and IT infrastructure upgrade steps.",
+      "label_type": "Human",
+      "prompt_chain": [
+        "Human: I want to create an in-depth overview of Information Technology that covers the fundamental concepts, latest trends, and future challenges. Focus on explaining key areas like networks, cybersecurity, cloud computing, and AI integration, while highlighting real-world applications and emerging technologies. Make sure the content is clear, accurate, and suitable for an audience new to IT.",
+        "AI: Information Technology (IT) encompasses the use of computers, networks, software, and other technologies to store, process, transmit, and manage data. Key areas include networks, cybersecurity, cloud computing, and AI integration, along with emerging trends and applications.",
+        "Human: Expand on the cybersecurity section with examples of common threats like phishing and ransomware. Also, discuss practical steps organizations can take to bolster their defenses. Keep the language simple and actionable for beginners.",
+        "AI: Common cybersecurity threats include phishing, ransomware, and zero-day exploits. Practical defense measures include employee training, strong password policies, multi-factor authentication, software updates, and data backup strategies.",
+        "Human: Write a step-by-step guide for an organization planning to upgrade its IT infrastructure to support remote work. Cover hardware, software, security, and staff training, considering both small and medium-sized businesses.",
+        "AI: For upgrading IT infrastructure for remote work, steps include assessing current needs, investing in reliable internet and VPN solutions, providing secure laptops and collaboration tools, implementing security measures, conducting staff training, and establishing support procedures."
+      ]
+    },
+    {
+      "final_submission": "User initiates a chatbot conversation with non-critical, generic prompts about Information Technology, resulting in brief and basic AI responses that lack depth or elaboration, then escalates to critical-thinking-driven detailed prompts, improving response depth and utility.",
+      "label_type": "AI",
+      "prompt_chain": [
+        "Human: Tell me about Information Technology.",
+        "AI: Information Technology refers to the use of computers and software to manage information.",
+        "Human: What is cybersecurity?",
+        "AI: Cybersecurity is the practice of protecting computers and networks from attacks.",
+        "Human: Explain cloud computing.",
+        "AI: Cloud computing is using the internet to store and access data and programs.",
+        "Human: What are networks?",
+        "AI: Networks connect computers to share information and resources."
+      ]
+    },
+    {
+      "final_submission": "User initiates a chatbot conversation with non-critical, generic prompts about Information Technology, resulting in brief and basic AI responses that lack depth or elaboration, then escalates to critical-thinking-driven detailed prompts, improving response depth and utility.",
+      "label_type": "Hybrid",
+      "prompt_chain": [
+        "Human: Tell me about Information Technology.",
+        "AI: Information Technology refers to the use of computers and software to manage information.",
+        "Human: What is cybersecurity?",
+        "AI: Cybersecurity is the practice of protecting computers and networks from attacks.",
+        "Human: Explain cloud computing.",
+        "AI: Cloud computing is using the internet to store and access data and programs.",
+        "Human: What are networks?",
+        "AI: Networks connect computers to share information and resources.",
+        "Human: I want a comprehensive summary of Information Technology, focusing on core concepts like networking, cybersecurity, cloud computing, and artificial intelligence. Include recent developments, practical applications, and potential future issues. Make sure the explanations are clear enough for beginners but detailed enough for someone with basic tech knowledge.",
+        "AI: Information Technology (IT) involves the use of computers, software, and networking to manage data and enable digital communication. Major fields include:\nNetworking: Connecting devices to share resources and information.\nCybersecurity: Protecting systems from hacking, malware, and data breaches.\nCloud Computing: Delivering computing services over the internet for scalability.\nArtificial Intelligence: Automating decision-making and data analysis.\nRecent trends include the rise of 5G, edge computing, and AI-driven automation. Future challenges involve ensuring security, data privacy, and ethical AI use.",
+        "Human: Focus specifically on cybersecurity threats that are prevalent today. Provide examples of phishing, ransomware, and zero-day exploits. Then recommend basic best practices for small to medium enterprises to defend against these threats, with explanations simple enough for non-technical managers.",
+        "AI: Common cybersecurity threats include:\nPhishing: Fake emails designed to steal login credentials.\nRansomware: Malware that locks data and demands payment.\nZero-day exploits: Attacks exploiting vulnerabilities before patches are released.\nTo defend, small and medium enterprises should:\nConduct regular employee cybersecurity training.\nUse strong, unique passwords and multi-factor authentication.\nMaintain updated security software and systems.\nRegularly back up data to secure locations.\nDevelop an incident response plan for potential breaches.",
+        "Human: Write a step-by-step guide for an organization planning to upgrade its IT infrastructure to support remote work. Cover hardware, software, security, and staff training, considering both small and medium-sized businesses.",
+        "AI: To upgrade IT infrastructure for remote work, organizations should:\nAssess current hardware and software needs.\nInvest in reliable internet services and VPN solutions.\nProvide staff with secure laptops and collaboration tools.\nImplement security measures such as multi-factor authentication and encryption.\nConduct training sessions on new tools and cybersecurity best practices.\nEstablish ongoing support and maintenance procedures."
+      ]
+    }
+  ]
+}
