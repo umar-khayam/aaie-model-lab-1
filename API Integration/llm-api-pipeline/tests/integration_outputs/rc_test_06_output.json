@@ -1,0 +1,57 @@
+{
+    "chatlog_id": "rc_rub_it_0001_123456789_0002",
+    "profile_generated_at": "2026-01-26T17:30:00Z",
+    "scores": {
+      "critical_thinking_score": 0.75,
+      "problem_solving_score": 0.80,
+      "engagement_score": 0.85
+    },
+    "ai_use_pattern": "mixed",
+    "process_notes": "Mock profiling analysis for chat log rc_rub_it_0001_123456789_0002. Student shows balanced AI usage with both content generation and revision patterns. The conversation demonstrates structured academic writing process with multiple iterations for essay improvement.",
+    "indicator_metrics": {
+      "critical_thinking": {
+        "explanation_prompts": 1,
+        "verification_prompts": 0,
+        "comparison_prompts": 0,
+        "evidence_prompts": 0
+      },
+      "problem_solving": {
+        "decomposition_prompts": 0,
+        "iterative_revision_count": 2,
+        "self_proposed_content_turns": 0,
+        "feedback_uptake_events": 0
+      },
+      "engagement": {
+        "student_token_ratio": 0.6,
+        "student_turn_count": 3,
+        "distinct_episode_types": 2,
+        "session_time_minutes": 15.0
+      },
+      "prompt_type_distribution": {
+        "understand_prompt": 0,
+        "plan_structure": 1,
+        "generate_content": 1,
+        "revise_content": 1,
+        "polish_language": 0,
+        "check_quality": 0
+      }
+    },
+    "explainability_evidence": {
+      "critical_thinking": {
+        "confidence": 0.7,
+        "evidence": ["Student asked for explanation of key MFA concepts and methods"]
+      },
+      "problem_solving": {
+        "confidence": 0.8,
+        "evidence": ["Student requested structured essay outline and comparison of methods"]
+      },
+      "engagement": {
+        "confidence": 0.85,
+        "evidence": ["Student maintained consistent interaction with focused academic writing goals"]
+      },
+      "ai_use_pattern": {
+        "confidence": 0.75,
+        "evidence": ["Mixed pattern of concept explanation, structure planning, and content refinement detected"]
+      }
+    }
+  }

@@ -1,0 +1,75 @@
+{
+  "submission_id": "rc_rub_it_0001_123456789_0003",
+  "profile_generated_at": "2025-12-01T09:12:00Z",
+
+  "scores": {
+    "critical_thinking_score": 0.45,
+    "problem_solving_score": 0.78,
+    "engagement_score": 0.82
+  },
+
+  "ai_use_pattern": "reviser",
+
+  "process_notes": "The student wrote most of the content independently and used the AI repeatedly to critique and refine their paragraphs, showing strong revision behaviour and high engagement.",
+
+  "indicator_metrics": {
+    "critical_thinking": {
+      "explanation_prompts": 2,
+      "verification_prompts": 1,
+      "comparison_prompts": 0,
+      "evidence_prompts": 0
+    },
+    "problem_solving": {
+      "decomposition_prompts": 1,
+      "iterative_revision_count": 6,
+      "self_proposed_content_turns": 5,
+      "feedback_uptake_events": 3
+    },
+    "engagement": {
+      "student_token_ratio": 0.58,
+      "student_turn_count": 17,
+      "distinct_episode_types": 4,
+      "session_time_minutes": 96.3
+    },
+    "prompt_type_distribution": {
+      "understand_prompt": 1,
+      "plan_structure": 0,
+      "generate_content": 2,
+      "revise_content": 8,
+      "polish_language": 3,
+      "check_quality": 3
+    }
+  },
+
+  "explainability_evidence": {
+    "critical_thinking": {
+      "confidence": 0.50,
+      "evidence": [
+        "Can you explain why SMS-based MFA is considered weaker than app-based MFA?",
+        "Is my explanation of phishing-resistant MFA accurate, or am I missing something?"
+      ]
+    },
+    "problem_solving": {
+      "confidence": 0.90,
+      "evidence": [
+        "Here is my paragraph on usability trade-offs. Please suggest improvements but keep my main ideas.",
+        "I rewrote the second paragraph based on your feedback. Can you check if I addressed the issues you highlighted?",
+        "Break the discussion section into smaller subheadings so I can rewrite each part."
+      ]
+    },
+    "engagement": {
+      "confidence": 0.85,
+      "evidence": [
+        "Multiple long student-authored drafts were provided before each revision request.",
+        "The session spans over 90 minutes with 17 student turns that involve both drafting and revising."
+      ]
+    },
+    "ai_use_pattern": {
+      "confidence": 0.92,
+      "evidence": [
+        "revise_content prompts account for the majority of prompts, with several self_proposed_content_turns and feedback_uptake_events detected.",
+        "generate_content prompts are used sparingly and mainly for small phrasing suggestions rather than full sections."
+      ]
+    }
+  }
+}

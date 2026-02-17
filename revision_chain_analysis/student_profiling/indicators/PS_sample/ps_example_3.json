@@ -1,0 +1,24 @@
+{
+  "turns": [
+    {
+      "role": "student",
+      "text": "This is my first detailed version of the methodology section. I wrote it quickly and I am unsure whether the sampling procedure is explained clearly enough. I added extra sentences to expand the reasoning, but I would appreciate suggestions on which areas should be refined or rewritten so the section reads more logically.",
+      "prompt_type": "revise_content"
+    },
+    {
+      "role": "assistant",
+      "text": "Try clarifying the sampling process.",
+      "prompt_type": "other"
+    },
+    {
+      "role": "student",
+      "text": "I fixed the sampling explanation as you suggested.",
+      "prompt_type": "revise_content"
+    },
+    {
+      "role": "student",
+      "text": "Can we break this into steps so I can understand the data analysis part more clearly?",
+      "prompt_type": "understand_prompt"
+    }
+  ]
+}

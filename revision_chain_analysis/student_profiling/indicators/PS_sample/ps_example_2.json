@@ -1,0 +1,19 @@
+{
+  "turns": [
+    {
+      "role": "student",
+      "text": "Here is my draft paragraph explaining the limitations of the study. I expanded the ideas to make them clearer and tried to connect each sentence more smoothly. If possible, could you also review it step by step and tell me which areas need improvement or which arguments seem unclear?",
+      "prompt_type": "revise_content"
+    },
+    {
+      "role": "assistant",
+      "text": "You can strengthen the topic sentence.",
+      "prompt_type": "other"
+    },
+    {
+      "role": "student",
+      "text": "I updated the limitation section based on your suggestions. Let me know if this is better.",
+      "prompt_type": "revise_content"
+    }
+  ]
+}

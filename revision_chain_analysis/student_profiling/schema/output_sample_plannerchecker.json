@@ -1,0 +1,77 @@
+{
+  "submission_id": "rc_rub_it_0001_123456789_0004",
+  "profile_generated_at": "2025-12-01T09:15:00Z",
+
+  "scores": {
+    "critical_thinking_score": 0.88,
+    "problem_solving_score": 0.80,
+    "engagement_score": 0.66
+  },
+
+  "ai_use_pattern": "planner_checker",
+
+  "process_notes": "The student used the AI mainly to clarify concepts, plan the essay structure and critique their own reasoning, with minimal direct text generation.",
+
+  "indicator_metrics": {
+    "critical_thinking": {
+      "explanation_prompts": 6,
+      "verification_prompts": 4,
+      "comparison_prompts": 2,
+      "evidence_prompts": 1
+    },
+    "problem_solving": {
+      "decomposition_prompts": 3,
+      "iterative_revision_count": 3,
+      "self_proposed_content_turns": 4,
+      "feedback_uptake_events": 2
+    },
+    "engagement": {
+      "student_token_ratio": 0.63,
+      "student_turn_count": 15,
+      "distinct_episode_types": 6,
+      "session_time_minutes": 88.7
+    },
+    "prompt_type_distribution": {
+      "understand_prompt": 6,
+      "plan_structure": 4,
+      "generate_content": 1,
+      "revise_content": 2,
+      "polish_language": 0,
+      "check_quality": 5
+    }
+  },
+
+  "explainability_evidence": {
+    "critical_thinking": {
+      "confidence": 0.95,
+      "evidence": [
+        "Explain how zero-trust architecture is different from traditional perimeter-based security.",
+        "Compare hardware security keys and authenticator apps in terms of phishing resistance.",
+        "What evidence is there that MFA fatigue attacks are increasing in real organisations?",
+        "Can you challenge my argument here and point out weaknesses?"
+      ]
+    },
+    "problem_solving": {
+      "confidence": 0.85,
+      "evidence": [
+        "Help me break this essay into sections: background, methods, benefits, limitations and implementation challenges.",
+        "Here is my own outline. Critique it and suggest where I might be missing risks.",
+        "I have rewritten the limitation section. Does it now match the structure we planned?"
+      ]
+    },
+    "engagement": {
+      "confidence": 0.75,
+      "evidence": [
+        "The student contributes substantial text for outlines and rationale before asking for feedback.",
+        "The interaction shows repeated plan → write offline → check cycles over a time span of nearly 90 minutes."
+      ]
+    },
+    "ai_use_pattern": {
+      "confidence": 0.96,
+      "evidence": [
+        "understand_prompt and check_quality together are the dominant prompt types, with relatively few generate_content and revise_content prompts.",
+        "Most prompts request clarification, planning or critique rather than direct generation of essay paragraphs."
+      ]
+    }
+  }
+}

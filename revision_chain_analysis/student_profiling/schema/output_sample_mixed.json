@@ -1,0 +1,75 @@
+{
+  "submission_id": "rc_rub_it_0001_123456789_0001",
+  "profile_generated_at": "2025-12-01T09:18:00Z",
+
+  "scores": {
+    "critical_thinking_score": 0.60,
+    "problem_solving_score": 0.55,
+    "engagement_score": 0.70
+  },
+
+  "ai_use_pattern": "mixed",
+
+  "process_notes": "The student used a mix of generation, revision and planning prompts, showing moderate critical thinking and engagement without a single dominant interaction style.",
+
+  "indicator_metrics": {
+    "critical_thinking": {
+      "explanation_prompts": 3,
+      "verification_prompts": 1,
+      "comparison_prompts": 1,
+      "evidence_prompts": 0
+    },
+    "problem_solving": {
+      "decomposition_prompts": 1,
+      "iterative_revision_count": 2,
+      "self_proposed_content_turns": 2,
+      "feedback_uptake_events": 1
+    },
+    "engagement": {
+      "student_token_ratio": 0.42,
+      "student_turn_count": 12,
+      "distinct_episode_types": 5,
+      "session_time_minutes": 54.9
+    },
+    "prompt_type_distribution": {
+      "understand_prompt": 2,
+      "plan_structure": 1,
+      "generate_content": 4,
+      "revise_content": 3,
+      "polish_language": 1,
+      "check_quality": 2
+    }
+  },
+
+  "explainability_evidence": {
+    "critical_thinking": {
+      "confidence": 0.65,
+      "evidence": [
+        "Why is SMS considered weaker than app-based MFA?",
+        "Does my paragraph clearly explain the trade-off between security and usability?"
+      ]
+    },
+    "problem_solving": {
+      "confidence": 0.60,
+      "evidence": [
+        "Give me an outline for this essay so I can fill in each section.",
+        "Here is a paragraph I wrote. Please improve the clarity without changing the main idea.",
+        "I updated the section on implementation based on your suggestions. Can you check if it flows better?"
+      ]
+    },
+    "engagement": {
+      "confidence": 0.70,
+      "evidence": [
+        "The conversation includes both AI-generated sections and student-written paragraphs, with several back-and-forth turns.",
+        "Session duration is around 55 minutes with 12 student turns and a variety of prompt types."
+      ]
+    },
+    "ai_use_pattern": {
+      "confidence": 0.75,
+      "evidence": [
+        "Prompt type distribution is relatively balanced across generate_content, revise_content, understand_prompt and check_quality.",
+        "The student alternates between asking for new text, revising their own writing and checking understanding, so no single pattern dominates."
+      ]
+    }
+  }
+}

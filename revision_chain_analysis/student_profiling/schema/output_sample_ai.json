@@ -1,0 +1,73 @@
+{
+  "submission_id": "rc_rub_it_0001_123456789_0002",
+  "profile_generated_at": "2025-12-01T09:10:00Z",
+
+  "scores": {
+    "critical_thinking_score": 0.08,
+    "problem_solving_score": 0.05,
+    "engagement_score": 0.20
+  },
+
+  "ai_use_pattern": "generator_only",
+
+  "process_notes": "The student relied almost entirely on generation prompts to produce the essay, with very few questions, revisions or signs of independent drafting.",
+
+  "indicator_metrics": {
+    "critical_thinking": {
+      "explanation_prompts": 0,
+      "verification_prompts": 0,
+      "comparison_prompts": 0,
+      "evidence_prompts": 0
+    },
+    "problem_solving": {
+      "decomposition_prompts": 0,
+      "iterative_revision_count": 0,
+      "self_proposed_content_turns": 0,
+      "feedback_uptake_events": 0
+    },
+    "engagement": {
+      "student_token_ratio": 0.09,
+      "student_turn_count": 3,
+      "distinct_episode_types": 1,
+      "session_time_minutes": 11.4
+    },
+    "prompt_type_distribution": {
+      "understand_prompt": 0,
+      "plan_structure": 0,
+      "generate_content": 6,
+      "revise_content": 0,
+      "polish_language": 0,
+      "check_quality": 0
+    }
+  },
+
+  "explainability_evidence": {
+    "critical_thinking": {
+      "confidence": 0.05,
+      "evidence": [
+        "Write a full 1500 word essay on zero trust architecture.",
+        "Generate a conclusion for the essay."
+      ]
+    },
+    "problem_solving": {
+      "confidence": 0.65,
+      "evidence": [
+        "Write the introduction for me.",
+        "Now write the body paragraphs."
+      ]
+    },
+    "engagement": {
+      "confidence": 0.45,
+      "evidence": [
+        "The conversation contains only three student turns, each a short generation request."
+      ]
+    },
+    "ai_use_pattern": {
+      "confidence": 0.95,
+      "evidence": [
+        "Prompt type distribution is dominated by generate_content with no revise_content, understand_prompt or check_quality turns.",
+        "There are no student-authored drafts or revision cycles detected."
+      ]
+    }
+  }
+}
