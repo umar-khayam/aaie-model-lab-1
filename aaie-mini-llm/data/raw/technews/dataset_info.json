@@ -1,0 +1,51 @@
+{
+  "builder_name": "csv",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "tech_news",
+  "dataset_size": 1343299282,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/vencortex/TechNews@42e26fb77d459893a8b62f652fc4f8af01caa7d3/merged_news_dataset.csv": {
+      "num_bytes": 1331166302,
+      "checksum": null
+    }
+  },
+  "download_size": 1331166302,
+  "features": {
+    "symbol": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "title": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "text": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 2674465584,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 1343299282,
+      "num_examples": 1752331,
+      "shard_lengths": [
+        1410000,
+        250000,
+        92331
+      ],
+      "dataset_name": "tech_news"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
