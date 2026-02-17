@@ -1,0 +1,94 @@
+{
+  "prompts": [
+    {
+      "api_version": "v1",
+      "changelog": [
+        {
+          "changes": "Initial v1 evaluate prompt",
+          "date": "2025-12-05",
+          "version": "1.0.0"
+        }
+      ],
+      "created_by": "prompt-dev@deakin",
+      "endpoint": "/api/v1/evaluate",
+      "fewshot_refs": [
+        "data/accounting.json",
+        "data/it.json"
+      ],
+      "id": "evaluate-default",
+      "rollout": {
+        "domains": [
+          "Accounting",
+          "IT"
+        ]
+      },
+      "schema_ref": "schemas/feedback.json",
+      "status": "staging",
+      "system_message": "You are a fair educational evaluator...",
+      "task": "evaluate",
+      "test_cases": [
+        {
+          "assertions": [
+            {
+              "classification.label": [
+                "AI",
+                "Human",
+                "Hybrid"
+              ],
+              "feedback.criteria[].rating": [
+                "excellent",
+                "good",
+                "average",
+                "needs improvement",
+                "poor"
+              ],
+              "rubric_scores.scores[].rating": [
+                "excellent",
+                "good",
+                "average",
+                "needs improvement",
+                "poor"
+              ]
+            }
+          ],
+          "inputs": {
+            "domain": "Accounting",
+            "prompt": "Evaluate submission",
+            "rubric": {
+              "criteria": [],
+              "rubric_id": "rub_acc_001"
+            },
+            "submission": "Sample text"
+          },
+          "name": "smoke-evaluate"
+        }
+      ],
+      "user_template": "Domain: {{domain}}\nPrompt: {{prompt}}\nRubric: {{rubric}}\nSubmission: {{submission}}",
+      "variables": [
+        {
+          "name": "domain",
+          "type": "string"
+        },
+        {
+          "name": "prompt",
+          "type": "string"
+        },
+        {
+          "name": "rubric",
+          "type": "object"
+        },
+        {
+          "name": "submission",
+          "type": "string"
+        },
+        {
+          "name": "chat_log",
+          "optional": true,
+          "type": "array"
+        }
+      ],
+      "version": "1.0.0"
+    }
+  ],
+  "registry_version": "1.0.0"
+}
