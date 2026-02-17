@@ -1,0 +1,179 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RubricQuestionAlignment",
+  "type": "object",
+  "properties": {
+    "submission_id": {
+      "type": "string",
+      "description": "Unique ID for the assessment submission. Follow rclog naming convention."
+    },
+    "rubric_id": {
+      "type": "string",
+      "description": "Identifier for the rubric used in evaluation"
+    },
+    "domain": {
+      "type": "string",
+      "description": "Academic domain or subject area of the assessment"
+    },
+    "alignment_summary": {
+      "type": "object",
+      "description": "High-level summary of rubric alignment performance",
+      "properties": {
+        "overall_alignment": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Aggregate alignment score across all criteria"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "systematic_coverage",
+            "broad_coverage",
+            "partial_coverage",
+            "minimal_coverage"
+          ],
+          "description": "Categorical rating of overall alignment quality"
+        },
+        "total_prompts_analyzed": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total number of prompts included in analysis"
+        },
+        "off_topic_prompts": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of prompts not aligned with any rubric criteria"
+        }
+      },
+      "required": [
+        "overall_alignment",
+        "status",
+        "total_prompts_analyzed",
+        "off_topic_prompts"
+      ]
+    },
+    "rubric_coverage": {
+      "type": "array",
+      "description": "Detailed coverage analysis for each rubric criterion",
+      "items": {
+        "type": "object",
+        "properties": {
+          "criteria_id": {
+            "type": "string",
+            "description": "Unique identifier for the rubric criterion"
+          },
+          "criteria_name": {
+            "type": "string",
+            "description": "Human-readable name of the criterion"
+          },
+          "weight": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "description": "Relative importance weight of this criterion"
+          },
+          "coverage_score": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "description": "Score indicating how well student prompts covered this criterion"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "well_covered",
+              "adequately_covered",
+              "undercovered",
+              "significantly_undercovered"
+            ],
+            "description": "Categorical assessment of coverage quality"
+          },
+          "prompts_matched": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Number of student prompts that addressed this criterion"
+          },
+          "engagement_depth": {
+            "type": "string",
+            "enum": [
+              "surface",
+              "moderate",
+              "deep",
+              "none"
+            ],
+            "description": "Qualitative assessment of question depth and sophistication for this criterion"
+          },
+          "gaps": {
+            "type": "array",
+            "description": "List of identified coverage gaps or missing elements",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "criteria_id",
+          "criteria_name",
+          "weight",
+          "coverage_score",
+          "status",
+          "prompts_matched",
+          "engagement_depth",
+          "gaps"
+        ]
+      }
+    },
+    "flags": {
+      "type": "array",
+      "description": "Notable issues or recommendations identified during evaluation",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "rubric_gap",
+              "coverage_issue",
+              "quality_concern",
+              "off_topic_questions"
+            ],
+            "description": "Category of flag"
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ],
+            "description": "Severity level of the flagged issue"
+          },
+          "criteria_id": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Related rubric criterion identifier, if applicable (null for general flags)"
+          },
+          "message": {
+            "type": "string",
+            "description": "Detailed description of the issue or finding"
+          }
+        },
+        "required": [
+          "type",
+          "severity",
+          "message"
+        ]
+      }
+    }
+  },
+  "required": [
+    "submission_id",
+    "rubric_id",
+    "domain",
+    "alignment_summary",
+    "rubric_coverage"
+  ]
+}
