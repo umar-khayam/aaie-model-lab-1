@@ -1,0 +1,99 @@
+{
+  "submission_id": "rc_rub_it_0001_12345678_0001",
+  "rubric_id": "rub_it_0001",
+  "domain": "Information Technology",
+  "alignment_summary": {
+    "overall_alignment": 0.58,
+    "status": "partial_coverage",
+    "total_prompts_analyzed": 6,
+    "off_topic_prompts": 1
+  },
+  "rubric_coverage": [
+    {
+      "criteria_id": "c1",
+      "criteria_name": "Understanding of Technical Debt and Its Causes",
+      "weight": 0.3,
+      "coverage_score": 0.65,
+      "status": "adequately_covered",
+      "prompts_matched": 2,
+      "engagement_depth": "surface",
+      "gaps": [
+        "No questions about key areas (intentional, unintentional, accumulation, trade-off)."
+      ]
+    },
+    {
+      "criteria_id": "c2",
+      "criteria_name": "Use of Real Examples in Long-Term Projects",
+      "weight": 0.25,
+      "coverage_score": 0.48,
+      "status": "undercovered",
+      "prompts_matched": 1,
+      "engagement_depth": "surface",
+      "gaps": [
+        "No questions about key areas (real-world, case study, consequences, outages, refactoring)."
+      ]
+    },
+    {
+      "criteria_id": "c3",
+      "criteria_name": "Critical Evaluation of Strategies",
+      "weight": 0.3,
+      "coverage_score": 0.62,
+      "status": "adequately_covered",
+      "prompts_matched": 2,
+      "engagement_depth": "moderate",
+      "gaps": [
+        "No questions about key areas (trade-offs, strengths, limitations, critical analysis)."
+      ]
+    },
+    {
+      "criteria_id": "c4",
+      "criteria_name": "Structure, Clarity, and Academic Tone",
+      "weight": 0.15,
+      "coverage_score": 0.42,
+      "status": "undercovered",
+      "prompts_matched": 1,
+      "engagement_depth": "surface",
+      "gaps": [
+        "No questions about key areas (introduction, conclusion, transitions, topic sentences, logical flow)."
+      ]
+    }
+  ],
+  "flags": [
+    {
+      "type": "rubric_gap",
+      "severity": "medium",
+      "criteria_id": "c2",
+      "message": "Coverage is 0.48, below 0.50 threshold."
+    },
+    {
+      "type": "rubric_gap",
+      "severity": "medium",
+      "criteria_id": "c4",
+      "message": "Coverage is 0.42, below 0.50 threshold."
+    },
+    {
+      "type": "coverage_issue",
+      "severity": "low",
+      "criteria_id": "c2",
+      "message": "Minimal prompts linked to this criterion (prompt count ≤ 1)."
+    },
+    {
+      "type": "coverage_issue",
+      "severity": "low",
+      "criteria_id": "c4",
+      "message": "Minimal prompts linked to this criterion (prompt count ≤ 1)."
+    },
+    {
+      "type": "coverage_issue",
+      "severity": "medium",
+      "criteria_id": null,
+      "message": "2 out of 4 criteria are undercovered."
+    },
+    {
+      "type": "off_topic_questions",
+      "severity": "medium",
+      "criteria_id": null,
+      "message": "1 prompt(s) do not match any criterion."
+    }
+  ]
+}
