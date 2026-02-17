@@ -1,0 +1,21 @@
+{
+  "flags": [
+    {
+      "type": "rubric_gap",
+      "severity": "high",
+      "criteria_id": "C1",
+      "message": "Coverage is 0.22, below 0.50 threshold."
+    },
+    {
+      "type": "coverage_issue",
+      "severity": "medium",
+      "criteria_id": null,
+      "message": "1 out of 1 criteria are undercovered."
+    }
+  ],
+  "gaps": {
+    "C1": [
+      "Limited coverage for this criterion, but no unmatched keywords were provided."
+    ]
+  }
+}
