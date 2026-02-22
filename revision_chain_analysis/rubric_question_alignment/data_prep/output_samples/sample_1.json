@@ -1,0 +1,50 @@
+{
+  "parsed_chat": [
+    {
+      "prompt": "Can you elaborate on the core principles of zero-trust, beyond 'never trust, always verify'?",
+      "turn_index": 0
+    },
+    {
+      "prompt": "How does micro-segmentation work within a zero-trust framework, and what benefits does it provide?",
+      "turn_index": 1
+    },
+    {
+      "prompt": "What are the primary challenges organizations face when transitioning from a perimeter model to zero-trust?",
+      "turn_index": 2
+    },
+    {
+      "prompt": "Could you provide a specific example of how zero-trust would have mitigated a known, major data breach?",
+      "turn_index": 3
+    }
+  ],
+  "rubric_keywords": {
+    "rubric_id": "rub_it_0001",
+    "domain": "Information Technology",
+    "criteria": [
+      {
+        "criterion_id": "c1",
+        "name": "Conceptual Understanding",
+        "weight": 0.25,
+        "keywords": ["conceptual", "understanding", "demonstrates", "deep", "topic", "related", "concepts"]
+      },
+      {
+        "criterion_id": "c2",
+        "name": "Application to Real-World Scenarios",
+        "weight": 0.25,
+        "keywords": ["application", "realworld", "scenarios", "applies", "concepts", "meaningfully", "examples"]
+      },
+      {
+        "criterion_id": "c3",
+        "name": "Critical Evaluation",
+        "weight": 0.25,
+        "keywords": ["critical", "evaluation", "analyzes", "challenges", "limitations", "tradeoffs", "thoughtfully"]
+      },
+      {
+        "criterion_id": "c4",
+        "name": "Structure and Academic Writing",
+        "weight": 0.25,
+        "keywords": ["structure", "academic", "writing", "quality", "flow", "citations", "tone"]
+      }
+    ]
+  }
+}

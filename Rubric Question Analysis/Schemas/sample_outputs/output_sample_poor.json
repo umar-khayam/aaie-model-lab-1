@@ -1,0 +1,101 @@
+{
+  "submission_id": "rclog_rub_it_0005_minimal_0001",
+  "rubric_id": "rub_it_0005",
+  "domain": "Cybersecurity",
+  "alignment_summary": {
+    "overall_alignment": 0.31,
+    "status": "minimal_coverage",
+    "total_prompts_analyzed": 5,
+    "prompts_filtered": 2
+  },
+  "rubric_coverage": [
+    {
+      "criteria_id": "c1",
+      "criteria_name": "Understanding of Cybersecurity Audit Fundamentals",
+      "weight": 0.25,
+      "coverage_score": 0.38,
+      "status": "undercovered",
+      "prompts_matched": 1,
+      "engagement_depth": "surface",
+      "gaps": [
+        "No questions distinguishing between different audit types (compliance, risk-based, technical)",
+        "Missing exploration of audit objectives and scope determination",
+        "No analysis of stakeholder roles in audit process"
+      ]
+    },
+    {
+      "criteria_id": "c2",
+      "criteria_name": "Vulnerability Identification and Assessment Methodologies",
+      "weight": 0.25,
+      "coverage_score": 0.18,
+      "status": "significantly_undercovered",
+      "prompts_matched": 0,
+      "engagement_depth": "surface",
+      "gaps": [
+        "No questions addressing vulnerability assessment techniques",
+        "No exploration of risk scoring or prioritization methods",
+        "Missing discussion of remediation validation processes"
+      ]
+    },
+    {
+      "criteria_id": "c3",
+      "criteria_name": "Regulatory Compliance and Framework Analysis",
+      "weight": 0.25,
+      "coverage_score": 0.42,
+      "status": "undercovered",
+      "prompts_matched": 2,
+      "engagement_depth": "surface",
+      "gaps": [
+        "Superficial mention of regulations without framework analysis",
+        "No exploration of specific compliance requirements (GDPR, HIPAA, PCI DSS, SOC 2)",
+        "Missing discussion of evidence collection and documentation"
+      ]
+    },
+    {
+      "criteria_id": "c4",
+      "criteria_name": "Continuous Security Improvement and Risk Management Integration",
+      "weight": 0.25,
+      "coverage_score": 0.25,
+      "status": "significantly_undercovered",
+      "prompts_matched": 2,
+      "engagement_depth": "surface",
+      "gaps": [
+        "Only basic mention of improvement concept without depth",
+        "No exploration of audit frequency, scheduling, or maturity progression",
+        "Missing integration with broader risk management frameworks"
+      ]
+    }
+  ],
+  "flags": [
+    {
+      "type": "coverage_issue",
+      "severity": "high",
+      "criteria_id": null,
+      "message": "Only 5 substantive prompts analyzed - insufficient for reliable assessment"
+    },
+    {
+      "type": "off_topic_questions",
+      "severity": "high",
+      "criteria_id": null,
+      "message": "40% of questions (2/5) were not aligned with rubric criteria"
+    },
+    {
+      "type": "rubric_gap",
+      "severity": "high",
+      "criteria_id": "c2",
+      "message": "Vulnerability Assessment criterion significantly undercovered (18% coverage, weight 25%)"
+    },
+    {
+      "type": "rubric_gap",
+      "severity": "high",
+      "criteria_id": "c4",
+      "message": "Continuous Improvement criterion significantly undercovered (25% coverage, weight 25%)"
+    },
+    {
+      "type": "quality_concern",
+      "severity": "high",
+      "criteria_id": null,
+      "message": "Three of four criteria undercovered or significantly undercovered - all matched questions show surface-level engagement"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+id: "evaluate-default"
+version: "1.0.3"
+status: "dev"
+task: demo_fail
+endpoint: /api/v1/evaluate
+api_version: v1
+schema_ref: schemas/evaluate.json
+slug: bad-inputs
+created_by: demo@deakin
+variables:
+  - name: text
+    type: string
+    required: true
+user_template: "text: {{text}}"
+test_cases:
+  - name: smoke
+    inputs:
+      text: 123  # wrong type, expecting string
+changelog:
+  - date: "2025-12-12T02:20:17Z"
+    description: "This is for demo fail promotion due to fail smoke test."
+    author: "demo@deakin"

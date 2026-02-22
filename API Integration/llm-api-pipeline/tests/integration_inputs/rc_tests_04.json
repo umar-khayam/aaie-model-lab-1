@@ -1,0 +1,353 @@
+{
+    "domain": "Engineering",
+    "prompt": "Explain how a mechanical engineer approaches the problem of analyzing stress in a loaded beam. Discuss how the problem is defined, the assumptions made, equations used, calculation techniques, and how the results are communicated through reports.",
+    "rubric": {
+        "rubric_id": "rub_engineering_0001",
+        "criteria": [
+            {
+                "criterion_id": "c1",
+                "name": "Problem Definition and Assumptions",
+                "description": "Clearly defines the engineering problem and outlines the assumptions made in analysis.",
+                "performance_descriptors": {
+                    "excellent": "Provides a thorough definition of the problem and clearly explains relevant assumptions.",
+                    "good": "Defines the problem and includes most key assumptions.",
+                    "average": "Gives a basic outline of the problem with some assumptions.",
+                    "needs_improvement": "Unclear or incomplete problem definition and missing assumptions.",
+                    "poor": "Fails to define the problem or identify any assumptions."
+                },
+                "weight": 30
+            },
+            {
+                "criterion_id": "c2",
+                "name": "Application of Mechanics and Equations",
+                "description": "Applies correct stress and strain formulas relevant to beam analysis.",
+                "performance_descriptors": {
+                    "excellent": "Accurately applies equations with clear justification and step-by-step use.",
+                    "good": "Uses relevant formulas with minor errors or incomplete explanations.",
+                    "average": "Applies formulas at a basic level with limited explanation.",
+                    "needs_improvement": "Incorrect or vague use of mechanical equations.",
+                    "poor": "Does not apply correct formulas or omits them entirely."
+                },
+                "weight": 15
+            },
+            {
+                "criterion_id": "c3",
+                "name": "Interpretation of Results",
+                "description": "Presents results with reports and explains their significance.",
+                "performance_descriptors": {
+                    "excellent": "Provides  a report and insightful explanation of outcomes.",
+                    "good": "Includes modreate report and explains results adequately.",
+                    "average": "Report has shown results and the provided explanation is limited .",
+                    "needs_improvement": "Report is  unclear or explanation lacks relevance.",
+                    "poor": "No report or interpretation of results."
+                },
+                "weight": 25
+            },
+            {
+                "criterion_id": "c4",
+                "name": "Structure and Technical Writing",
+                "description": "Essay is well-organized and written in formal engineering style.",
+                "performance_descriptors": {
+                    "excellent": "Highly structured with precise technical language throughout.",
+                    "good": "Well-structured with mostly appropriate tone.",
+                    "average": "Structure present but writing inconsistently formal.",
+                    "needs_improvement": "Weak structure and informal style.",
+                    "poor": "Disorganized and lacks technical rigor."
+                },
+                "weight": 30
+            }
+        ]
+    },
+    "submissions": [
+        {
+            "quality": "Excellent",
+            "key_points": [
+                "Clearly define the problem by identifying beam type, supports, and applied loading conditions",
+                "List and justify key assumptions such as linear material behavior and small deformations",
+                "Present results using well-written report and highlight critical stress locations",
+                "Follow formal technical writing style suitable for professional engineering reports"
+            ],
+            "llm_questions": [
+                "How is the problem of stress in beams typically defined in engineering practice?",
+                "What assumptions are made in beam stress analysis?",
+                "What is the bending stress equation used in beam analysis?",
+                "How does one determine maximum stress points in a beam?"
+            ],
+            "llm_answers": [
+                "In engineering practice, defining a beam stress problem requires specifying four key components: 1) Geometry, including the beam's length, cross-sectional shape, and dimensions. 2) Material Properties, such as the Modulus of Elasticity (E) and Yield Strength. 3) Boundary Conditions, which describe how the beam is supported (e.g., simply supported, cantilevered, fixed). 4) Loading Conditions, detailing the magnitude, type (e.g., point load, distributed load), and location of all applied forces.",
+                "The most common assumptions are based on Euler-Bernoulli beam theory. These include: 1) The material is linear elastic, isotropic, and homogeneous, meaning it obeys Hooke's Law and has uniform properties. 2) Plane sections remain plane after bending, which implies that shear deformation is negligible. 3) The beam is initially straight and has a symmetric cross-section. 4) Deflections are small relative to the beam's length, so the initial geometry can be used for all calculations. These assumptions simplify the governing equations significantly.",
+                "The primary equation for bending stress (also known as the flexure formula) is: σ = My/I. In this equation, 'σ' represents the normal stress at a specific point on the cross-section. 'M' is the internal bending moment at that location along the beam's length. 'y' is the perpendicular distance from the neutral axis to the point of interest. 'I' is the moment of inertia of the cross-section about the neutral axis, which is a measure of the beam's resistance to bending.",
+                "Maximum stress points are determined by analyzing the internal forces along the beam. Engineers first construct Shear Force and Bending Moment Diagrams (SFD and BMD). The maximum bending moment (M_max), found from the BMD, is used in the flexure formula. The maximum bending stress occurs at the outermost fibers (largest 'y' value) of the cross-section where the bending moment is at its peak. Similarly, maximum shear stress often occurs at the neutral axis where the shear force (from the SFD) is highest."
+            ],
+            "final_submission": "A mechanical engineer's approach to analyzing stress in a loaded beam is a systematic process rooted in the principles of solid mechanics. The process begins with a rigorous problem definition. This involves creating a free-body diagram and specifying the beam's geometry (length, cross-section), material properties (Young's Modulus, yield strength), boundary conditions (e.g., pinned, roller, fixed supports), and the nature of the applied loads (point loads, distributed loads, moments). \n\nNext, critical assumptions are made to simplify the analysis, typically adhering to Euler-Bernoulli beam theory. Key assumptions include: the material is homogeneous, isotropic, and linearly elastic; plane sections remain plane and perpendicular to the neutral axis after bending; and deflections are small. These assumptions validate the use of standard beam equations.\n\nThe core of the analysis involves calculating internal forces. By applying static equilibrium equations, engineers construct Shear Force and Bending Moment Diagrams (SFD and BMD). These diagrams visually represent the variation of shear force (V) and bending moment (M) along the beam's length, immediately identifying locations of maximum values. The primary equations used are the flexure formula, σ = My/I, to find the normal stress due to bending, and the shear formula, τ = VQ/It, for shear stress. Here, 'I' is the moment of inertia, 'y' is the distance from the neutral axis, 'Q' is the first moment of area, and 't' is the thickness. The maximum bending stress occurs at the outer fibers where the bending moment is maximal, while maximum shear stress is often at the neutral axis where the shear force is highest.\n\nFinally, the results are communicated through a formal technical report. This report includes an executive summary, problem statement, a summary of assumptions, detailed calculations with SFD and BMD plots, and a conclusion. The conclusion interprets the results, stating the maximum tensile, compressive, and shear stresses and comparing them to the material's allowable limits to determine the factor of safety. This ensures the beam can safely withstand the applied loads.",
+            "feedback": {
+                "c1": "Excellent. The submission provides a comprehensive definition of the problem, detailing geometry, material properties, boundary conditions, and loads. It also clearly lists and explains the standard Euler-Bernoulli assumptions, justifying their use in the analysis. (30/30)",
+                "c2": "Excellent. The response accurately identifies and explains the primary equations for bending stress (σ = My/I) and shear stress (τ = VQ/It). It correctly links their application to the results from Shear Force and Bending Moment Diagrams, demonstrating a clear, step-by-step analytical process. (15/15)",
+                "c3": "Excellent. The submission describes a complete technical report structure and provides an insightful explanation of the outcomes. It goes beyond simply stating the results by discussing the comparison of calculated stresses to material limits and determining a factor of safety. (25/25)",
+                "c4": "Excellent. The essay is highly structured, following the logical workflow of an engineering analysis. The language is precise, formal, and uses appropriate technical terminology throughout, reflecting a professional engineering style. (30/30)",
+                "total": "100/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "key_points": [
+                "Defines beam supports and primary loading cases with reasonable clarity",
+                "States common assumptions including elastic behavior and small deflection",
+                "Uses bending stress and shear formulas with mostly correct application",
+                "Explains where the highest stresses are expected along the span"
+            ],
+            "llm_questions": [
+                "Which assumptions are most important for linear elastic beam analysis?",
+                "How do bending moment diagrams guide stress identification?",
+                "When should shear stress be evaluated in addition to bending?",
+                "How should results be summarized in a concise engineering write-up?"
+            ],
+            "llm_answers": [
+                "For linear elastic beam analysis, the two most critical assumptions are: 1) The material is linear elastic, meaning stress is directly proportional to strain (it obeys Hooke's Law) and returns to its original shape upon unloading. This validates the use of a constant Modulus of Elasticity. 2) Deflections are small compared to the beam's length. This allows the use of the beam's original, undeformed geometry for equilibrium calculations, which greatly simplifies the mathematics and avoids non-linear geometric effects.",
+                "Bending moment diagrams (BMDs) are crucial because they graphically show the variation of the internal bending moment along the entire length of the beam. According to the flexure formula (σ = My/I), bending stress is directly proportional to the bending moment (M). Therefore, the location of the maximum absolute value on the BMD directly corresponds to the location along the beam's axis where the maximum bending stress will occur. Engineers can immediately pinpoint these critical sections for detailed stress analysis without having to calculate stress at every single point.",
+                "Shear stress should be evaluated in addition to bending stress, especially in beams that are short and deep. In long, slender beams, bending stress is typically the dominant failure mode. However, in short beams, or in sections where the shear force is very high (e.g., near supports), the shear stress can be significant and may lead to failure. It is also critical to check shear stress in beams made of materials that are weak in shear, such as wood (where shear failure can occur along the grain) or in built-up sections with fasteners or welds.",
+                "A concise engineering write-up should summarize results effectively. Start with a clear statement of the maximum calculated stresses (e.g., maximum tensile stress, maximum compressive stress, maximum shear stress) and their locations. Then, compare these values to the material's allowable stress limits (e.g., yield strength or ultimate strength). Finally, state the calculated Factor of Safety (FoS = Allowable Stress / Actual Stress). This summary provides a clear and immediate assessment of the design's adequacy and safety."
+            ],
+            "final_submission": "When a mechanical engineer analyzes stress in a loaded beam, they follow a standard procedure. First, they define the problem by figuring out the beam's length, its cross-sectional shape, the material it's made from, and how it's supported (like with a pin and a roller). They also need to know the loads on it, such as a single force in the middle or a distributed load across its length.\n\nEngineers make several assumptions to make the calculations manageable. They assume the material behaves plastically, meaning it doesn't permanently deform. They also assume that the beam doesn't bend very much (small deflections) and that its cross-sections stay flat as it bends. These are standard assumptions for most basic beam problems.\n\nTo find the stresses, the engineer calculates the internal forces. This leads to drawing a Shear and Bending Moment Diagram. These diagrams show where the shear force and bending moment are highest. The main formula for bending stress is σ = My/I, where M is the moment from the diagram, y is the distance from the center, and I is the moment of inertia. The highest bending stress will be at the top or bottom of the beam at the point of maximum moment. Shear stress is also calculated, especially near the supports, using the formula τ = VQ/It.\n\nFinally, the results are put into a report. The report should state the maximum stresses found and where they occur. It then explains if these stresses are acceptable by comparing them to the material's strength. For example, if the calculated stress is much lower than the material's yield strength, the beam is considered safe. This conclusion is the most important part of the analysis for decision-making.",
+            "feedback": {
+                "c1": "Good. The submission defines the problem by mentioning key elements like length, supports, and loads. It also includes most of the key assumptions, such as elastic behavior and small deflections, although without detailed justification. (24/30)",
+                "c2": "Good. It correctly identifies and uses the relevant formulas for bending and shear stress. The explanation of how to use the Bending Moment Diagram to find the maximum moment is correct, though the description of the variables could be slightly more detailed. (12/15)",
+                "c3": "Good. The response describes presenting the results in a report and adequately explains their significance by comparing calculated stress to material strength. The explanation is sufficient but less insightful than an excellent response that would discuss factors of safety explicitly. (20/25)",
+                "c4": "Good. The essay is well-structured and follows a logical sequence. The tone is mostly appropriate for a technical explanation, with only minor lapses into slightly less formal language (e.g., 'figuring out'). (24/30)",
+                "total": "80/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "key_points": [
+                "Mentions beam type and loads but with limited detail",
+                "Lists a few assumptions without justification",
+                "Applies basic bending formula with minimal explanation",
+                "Provides brief notes about likely high-stress regions"
+            ],
+            "llm_questions": [
+                "What minimum data are needed to start a beam stress calculation?",
+                "How do you estimate section properties for a standard beam?",
+                "What are typical units and sign conventions in calculations?",
+                "What simple checks confirm results are plausible?"
+            ],
+            "llm_answers": [
+                "To start a beam stress calculation, you need a minimum set of data: 1) The beam's length. 2) The locations and types of supports (e.g., pinned at one end, roller at the other). 3) The locations and magnitudes of all applied loads. 4) The cross-sectional dimensions of the beam (e.g., height and width for a rectangle). 5) The material's Modulus of Elasticity, which is needed for deflection calculations, though not strictly for stress if you only have forces.",
+                "For standard beam shapes like I-beams, C-channels, or rectangular hollow sections, engineers do not estimate section properties; they look them up in engineering handbooks or manufacturer tables. These tables provide precise values for cross-sectional area (A), moment of inertia (I), section modulus (S), and radius of gyration (r) for a wide range of standard sizes. This practice is faster, more accurate, and ensures consistency in design.",
+                "In the International System of Units (SI), forces are in Newtons (N), lengths in meters (m), and stress in Pascals (Pa, or N/m²). It's common to use megapascals (MPa) for stress. For sign conventions, a common choice is: upward forces and counter-clockwise moments are positive. For internal forces, shear is positive if it causes clockwise rotation of the element, and a positive bending moment causes the beam to bend concave up ('smile'). Consistency is key.",
+                "A simple check to see if results are plausible is a 'sanity check' or order-of-magnitude estimation. For example, if you calculate a stress in a steel beam that is higher than steel's ultimate tensile strength, you have likely made a calculation error. Another check is to ensure the deflected shape makes sense; a simply supported beam with a downward force in the middle should deflect downwards in the middle. Finally, double-checking unit conversions is a very common and effective way to catch errors."
+            ],
+            "final_submission": "Analyzing stress in a beam is a common task for a mechanical engineer. The first thing they do is look at the problem. They need to know what kind of beam it is and what forces are on it. For example, is it a simple beam with a single load, or something more complex? They also have to make some assumptions, like the material is elastic.\n\nAfter setting up the problem, the engineer uses formulas to find the stress. The main formula for bending stress is σ = My/I. This tells you the stress based on the bending moment (M) and the shape of the beam (I). To find the biggest stress, you have to find the biggest bending moment. This is usually in the middle of the beam for a simple setup. An engineer will calculate the moment at different points to find the max value. They use this max value in the stress formula to get the highest stress the beam will feel.\n\nOnce the calculation is done, the engineer has to report the result. They will say what the maximum stress is. This is important because you need to make sure the stress is not too high for the material. If the stress is higher than what the material can handle, the beam will fail. So the report will basically say if the beam is safe or not. The structure of the report should be clear and show the numbers that were calculated. This process ensures that structures are designed safely.",
+            "feedback": {
+                "c1": "Average. The submission gives a basic outline of the problem, mentioning beam type and loads, but lacks specific details on supports or geometry. It states one key assumption ('material is elastic') but provides no others or any justification. (20/30)",
+                "c2": "Average. It correctly identifies the main bending stress formula but provides a limited explanation of its components or how they are determined. The method for finding the maximum moment is described at a very basic level. (10/15)",
+                "c3": "Average. The results are mentioned (the maximum stress value), and a limited explanation is provided: comparing the stress to the material's limit to see if it will fail. The concept of a formal report is mentioned, but the description of its contents is minimal. (16/25)",
+                "c4": "Average. There is a discernible structure to the essay, moving from problem setup to calculation to results. However, the writing is inconsistently formal and often oversimplified, lacking the precise technical language expected in a stronger response. (20/30)",
+                "total": "66/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "key_points": [
+                "Problem statement is vague and loading details are incomplete",
+                "Assumptions are missing or not suitable for the case",
+                "Formulas are applied without context or with errors",
+                "Interpretation of results is minimal or unclear"
+            ],
+            "llm_questions": [
+                "How should loading and boundary conditions be specified?",
+                "What makes an assumption valid or invalid for this analysis?",
+                "Which equations apply to bending vs. shear?",
+                "How do you identify and report critical sections?"
+            ],
+            "llm_answers": [
+                "Loading and boundary conditions must be specified precisely using diagrams and numerical values. Boundary conditions are shown with standard symbols: a triangle for a pinned support (allows rotation, prevents translation) and a circle/triangle-on-wheels for a roller support (allows rotation and horizontal translation). A fixed support is shown as a beam entering a wall. Loads are drawn as arrows for point loads (with magnitude and location specified) and rectangular or triangular shapes for distributed loads (with intensity, e.g., N/m, and location specified).",
+                "An assumption is valid if it reasonably reflects the physical reality of the problem without introducing significant error. For example, the 'small deflections' assumption is valid for a stiff steel I-beam in a building but would be invalid for a flexible fishing rod. An assumption is invalid if it contradicts the problem's conditions. Assuming the material is elastic is invalid if the calculated stress exceeds the material's yield strength. Engineers must always check if their final results violate their initial assumptions.",
+                "The flexure formula, σ = My/I, applies to the normal stress caused by bending moment. This stress acts perpendicular to the beam's cross-section and is typically the largest stress in long, slender beams. The transverse shear formula, τ = VQ/It, applies to the shear stress caused by the shear force. This stress acts parallel to the cross-section and is most significant in short, deep beams or near supports. They are two different types of stress and are calculated independently.",
+                "Critical sections are identified as the points along the beam's length where failure is most likely to occur. These are typically the locations of maximum bending moment and maximum shear force, which are found from the Bending Moment and Shear Force Diagrams. When reporting, you should clearly state the location of these points (e.g., 'at x = 3 meters from the left support'), the value of the internal force (M or V) at that point, and the resulting maximum stress calculated for that section."
+            ],
+            "final_submission": "A mechanical engineer looks at stress on beams. Beams have loads on them and this creates stress. The engineer has to figure out how much stress there is. They have to define the problem first, like what kind of beam it is. If you dont know the problem then you can't solve it.\n\nThen they use mechanical equations. Stress is force over area, which is a key formula. So you take the force on the beam and divide by its area to get the stress. But it is more complex for beams. There is also a bending stress equation that is used. You have to use the right one. You get numbers and these numbers are the stress. Engineers are good at these calculations.\n\nAfter you get the numbers, you write a report. The report tells you if the beam is okay. A high stress number is bad. A low stress number is good. So the report communicates the results of the math. The report has to be clear so other people can understand it. For example, you would say 'The stress is 50'. This is how they make sure buildings and bridges don't fall down. It's a very important job. The whole process is about safety and making sure things are strong enough for the job.",
+            "feedback": {
+                "c1": "Needs Improvement. The submission gives a vague and incomplete problem definition, simply stating 'what kind of beam it is'. It fails to mention supports, loads, geometry, or materials. No relevant assumptions for beam theory are mentioned. (15/30)",
+                "c2": "Needs Improvement. The response incorrectly identifies the primary stress formula as the simple 'force over area' definition, which is not appropriate for bending. It mentions a 'bending stress equation' but fails to state it or explain its use, showing a vague and incorrect application of mechanics. (7/15)",
+                "c3": "Needs Improvement. The explanation of the results is minimal and lacks relevance. Stating 'a high stress number is bad' and 'the stress is 50' is unclear and lacks the necessary context of material properties, units, or location. The concept of a report is mentioned but not described. (13/25)",
+                "c4": "Needs Improvement. The essay has a very weak structure, with short, disconnected paragraphs. The writing style is overly simplistic and informal, lacking any of the technical rigor or precise language required for this topic. (15/30)",
+                "total": "50/100"
+            }
+        },
+        {
+            "quality": "Poor",
+            "key_points": [
+                "Does not identify beam configuration or loads",
+                "No relevant assumptions stated",
+                "Missing or incorrect stress calculations",
+                "No coherent explanation of outcomes"
+            ],
+            "llm_questions": [
+                "What is the basic workflow for a beam stress problem?",
+                "Which inputs are mandatory before any calculation?",
+                "What happens if units are inconsistent?",
+                "Why is documenting assumptions essential?"
+            ],
+            "llm_answers": [
+                "The basic workflow for a beam stress problem is: 1) Define the Problem: Sketch the beam with all loads, supports, dimensions, and material properties. 2) Solve for Reactions: Use static equilibrium equations to find the support reaction forces. 3) Determine Internal Loads: Develop equations for internal shear (V) and moment (M) or draw the Shear and Moment Diagrams. 4) Calculate Stresses: Identify maximum V and M from the diagrams and use the appropriate stress formulas (flexure and shear) to find the maximum stresses. 5) Check Against Limits: Compare the calculated stresses to the material's allowable limits to determine the factor of safety.",
+                "Before any calculation, the following inputs are absolutely mandatory: the beam's geometry (length and cross-sectional shape), the boundary conditions (how it's supported), and the loading conditions (all forces and their locations). Without these three pieces of information, it is impossible to determine the internal forces (shear and moment) and therefore impossible to calculate the stress.",
+                "If units are inconsistent, the final answer will be completely wrong and physically meaningless. For example, if you calculate bending moment in Newton-meters (N-m) but the moment of inertia in millimeters to the fourth (mm⁴), the resulting stress calculation will be off by a massive factor (a factor of 10¹² in this case). All inputs must be converted to a consistent system (like SI: Newtons, meters, Pascals) before any equations are used. This is one of the most common sources of error in engineering calculations.",
+                "Documenting assumptions is essential for several reasons. First, it defines the boundaries of the analysis, clarifying what the model can and cannot predict. Second, it allows for peer review; other engineers can check if the assumptions made were reasonable for the given situation. Third, it provides a legal and professional record of the engineering thought process, which can be critical for accountability. If a failure occurs, the documented assumptions are reviewed to understand the basis of the original design."
+            ],
+            "final_submission": "Stress is a very important topic in engineering. Engineers have to deal with stress all the time in their jobs. When something has a force on it, it gets stressed. This can be a lot of pressure. If there is too much stress then things can break which is very bad. So engineers learn a lot about this in school. They use a lot of math and science to understand it. Things like beams have stress in them. A beam is a long object. Like in a house. The roof pushes down on it so it has stress. An engineer would need to know how to stop it from breaking. They would do some calculations. They learn these things to make sure everything is safe for people. It is about making things strong. Mechanical engineering is all about forces and materials and making things work. So stress analysis is just one part of a bigger job that they do every day to make the world better and safer. Communication is also important so they have to tell other people about the stress and if it is a problem or not. It is a very technical field that requires a lot of thinking and problem solving.",
+            "feedback": {
+                "c1": "Poor. The submission completely fails to define the engineering problem of beam analysis. It does not mention supports, load types, geometry, or materials. It also fails to identify any of the necessary assumptions for the analysis. (6/30)",
+                "c2": "Poor. The essay does not apply any correct formulas for beam stress or even mention them. It discusses 'calculations' in a generic sense but omits any specific mechanical equations relevant to the prompt. (3/15)",
+                "c3": "Poor. There is no interpretation of results because no analysis was performed. The submission makes vague statements about 'stress being a problem' but provides no report structure or explanation of engineering outcomes. (5/25)",
+                "c4": "Poor. The essay is completely disorganized and lacks technical rigor. It is a collection of generic statements about stress and engineering that do not directly address the prompt's requirements in a structured way. (6/30)",
+                "total": "20/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "key_points": [
+                "Clearly defines beam type, loading, and boundary conditions for a simple case.",
+                "Accurately applies flexure and shear stress formulas with strong computational steps.",
+                "Presents numerical results but offers a brief and somewhat unpolished explanation of their design significance.",
+                "Lacks consistent formal structure and technical precision, using occasional informal language."
+            ],
+            "llm_questions": [
+                "How do internal shear forces and bending moments relate to external loads and supports?",
+                "What is the significance of the neutral axis in bending stress calculations?",
+                "What are the most common failure modes for beams under stress?",
+                "How do material properties (e.g., Young's Modulus, Yield Strength) factor into stress analysis?"
+            ],
+            "llm_answers": [
+                "Internal shear forces and bending moments are the resultant effects of external loads and support reactions acting on a beam's cross-section. They are determined by applying equilibrium equations to sections of the beam. Shear force (V) at a section is the algebraic sum of all transverse forces acting on one side of that section. Bending moment (M) at a section is the algebraic sum of moments of all forces acting on one side of that section about the neutral axis of the cross-section. These internal forces vary along the beam's length and are graphically represented by Shear Force and Bending Moment Diagrams.",
+                "The neutral axis is a critical concept in bending stress calculations. It is the longitudinal axis passing through the centroid of a beam's cross-section where there is no normal stress (neither tensile nor compressive) due to bending. Fibers above the neutral axis typically experience compressive stress, while those below experience tensile stress (or vice-versa, depending on the direction of bending). The distance 'y' in the flexure formula (σ = My/I) is measured from this neutral axis, signifying its central role in locating stress distribution.",
+                "The most common failure modes for beams under stress are yielding and fracture. Yielding occurs when the stress in the material exceeds its yield strength, leading to permanent deformation. Fracture occurs when the stress exceeds the ultimate tensile strength, causing the material to break. Other failure modes include buckling (for slender beams under compression), shear failure (especially in short, deep beams or near supports), and fatigue failure (due to cyclic loading over time). Engineers design to prevent these failures by ensuring stresses remain below allowable limits.",
+                "Material properties are fundamental to stress analysis. Young's Modulus (E) relates stress to strain in the elastic region and is crucial for calculating deflections. Yield Strength (σ_y) defines the stress level at which permanent deformation begins. Ultimate Tensile Strength (σ_u) is the maximum stress a material can withstand before fracture. Engineers compare calculated stresses directly to the material's yield strength and ultimate strength to determine the beam's safety and to apply factors of safety, ensuring the design can handle expected and unexpected loads without failure."
+            ],
+            "final_submission": "A mechanical engineer initiates beam stress analysis by first meticulously defining the problem. This involves establishing the beam's specific geometry, including its length, cross-sectional shape and dimensions, and the material properties, such as Young's Modulus and yield strength. Crucially, the boundary conditions—how the beam is supported (e.g., fixed, pinned, roller)—and all applied loads (point loads, distributed loads, moments, and their locations) must be precisely identified. This comprehensive definition ensures the foundation for accurate calculations. \n\nNext, the engineer states necessary simplifying assumptions. The primary ones often align with Euler-Bernoulli beam theory: the material is assumed to be homogeneous, isotropic, and linearly elastic; deflections are considered small relative to the beam's length; and plane sections remain plane and perpendicular to the neutral axis after bending. These assumptions are vital as they permit the use of established formulas.\n\nThe core of the analysis involves calculating internal forces, specifically shear force (V) and bending moment (M), which are graphically represented by Shear Force Diagrams (SFD) and Bending Moment Diagrams (BMD). These diagrams are generated by applying static equilibrium equations. From the BMD, the location and magnitude of the maximum bending moment are identified. The flexure formula, σ = My/I, is then applied to calculate the normal stress due to bending, where 'y' is the distance from the neutral axis and 'I' is the moment of inertia. Shear stress, τ = VQ/It, is also calculated, especially at locations of high shear force. \n\nResults are then synthesized and communicated through a formal engineering report. This report typically includes the problem statement, assumptions, detailed calculations (including SFD/BMD), and a clear interpretation of the results. The interpretation involves stating maximum calculated stresses, their locations, and comparing them against the material's allowable stresses (e.g., yield strength) to determine a factor of safety. This crucial step informs design decisions, ensuring the beam's structural integrity and safety under anticipated loading conditions. The engineer would conclude whether the beam meets design specifications or requires modification.",
+            "feedback": {
+                "c1": "Good. The submission clearly defines the engineering problem, outlining beam type, loading, and boundary conditions. It lists most key assumptions such as linear elastic material and small deflections, but could offer slightly more justification for some. (25/30)",
+                "c2": "Excellent. Accurately identifies and applies the flexure formula (σ = My/I) and shear formula (τ = VQ/It). Demonstrates a clear understanding of constructing Shear Force and Bending Moment Diagrams to find critical values. Calculations are conceptually sound and detailed. (14/15)",
+                "c3": "Average. Presents numerical results for max stress and location, but the 'report' section is very brief and the explanation of significance is somewhat limited, focusing mostly on stating the numbers rather than comparing to material limits or discussing implications for design. (17/25)",
+                "c4": "Needs Improvement. The submission lacks a clear, logical flow. Sections are somewhat disjointed, and the writing style is inconsistent, occasionally veering into informal language. Technical terminology is used, but not always with precision. (15/30)",
+                "total": "71/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "key_points": [
+                "Provides a thorough theoretical problem definition and strong justification for assumptions.",
+                "Mentions correct equations but struggles with practical application, leading to significant calculation errors.",
+                "Interpretation of results is abstract and does not accurately address the (flawed) calculated outcomes.",
+                "Well-structured and uses formal technical language, especially in theoretical sections."
+            ],
+            "llm_questions": [
+                "What is the difference between normal stress and shear stress in beams?",
+                "How does the cross-sectional shape of a beam influence its resistance to bending?",
+                "Explain how the moment of inertia (I) is calculated and its physical meaning.",
+                "What are some advanced considerations beyond basic beam theory?"
+            ],
+            "llm_answers": [
+                "Normal stress (σ) acts perpendicular to the cross-sectional area of the beam and is primarily caused by bending moments. It is tensile on one side of the neutral axis and compressive on the other. Shear stress (τ) acts parallel to the cross-sectional area and is caused by shear forces. It is typically highest at the neutral axis and zero at the top and bottom surfaces of the beam. Both are critical for comprehensive stress analysis, but bending stress is often dominant in slender beams.",
+                "The cross-sectional shape significantly influences a beam's resistance to bending, which is quantified by its moment of inertia (I). Shapes that distribute more material further from the neutral axis (e.g., I-beams, T-beams) have a larger moment of inertia, making them more resistant to bending and thus able to withstand greater bending moments for a given stress. Conversely, shapes like solid rectangles or circles have smaller moments of inertia for the same amount of material and are less efficient in resisting bending.",
+                "The moment of inertia (I) is a geometric property of a cross-section that measures its resistance to bending. For a given cross-section, it's calculated by integrating the square of the distance from the neutral axis over the entire area (I = ∫ y² dA). Its physical meaning is that a larger moment of inertia indicates a greater stiffness in bending; a beam with a larger I will deflect less and experience lower bending stresses for the same applied bending moment, assuming identical material and loading.",
+                "Beyond basic beam theory, advanced considerations include: 1) Large Deflection Theory: When deflections are not small, the original geometry can no longer be used for equilibrium equations, requiring non-linear analysis. 2) Composite Materials: Beams made of multiple materials (e.g., reinforced concrete, fiberglass composites) require more complex analysis due to varying material properties. 3) Dynamic Loads: Time-varying loads introduce inertia effects and require dynamic analysis (vibration, impact). 4) Buckling: Slender beams under compressive axial loads may fail by buckling before reaching their material yield strength. 5) Residual Stresses: Stresses inherent in the material from manufacturing processes can affect overall stress state."
+            ],
+            "final_submission": "The problem of analyzing stress in a loaded beam is fundamentally defined by the physical system's characteristics. A mechanical engineer begins by establishing the beam's exact dimensions, its material composition including Young's Modulus and Poisson's ratio, and the specific boundary conditions, such as fixed-fixed or simply supported. The nature, magnitude, and precise location of all external forces and moments applied to the beam are meticulously detailed, often with a clear free-body diagram. This robust definition is paramount for accurate subsequent analysis.\n\nKey assumptions are then explicitly stated to simplify the complex reality into a solvable model. These commonly include: the material is homogeneous, isotropic, and linearly elastic (obeying Hooke's Law); deflections are small, allowing linear elastic theory; plane sections remain plane and perpendicular to the neutral axis after bending; and the beam's cross-section is symmetrical about the plane of bending. These theoretical underpinnings are crucial for the validity of the chosen analytical methods.\n\nFor calculation, the engineer must correctly identify and apply fundamental equations. The primary equations for bending stress (σ = My/I) and transverse shear stress (τ = VQ/It) are central. However, a crucial step involves incorrectly deriving the internal shear force (V) and bending moment (M) diagrams. For instance, in a cantilever beam with a point load at the end, the bending moment might be mistakenly assumed to be constant instead of varying linearly, or the moment of inertia (I) might be applied to the wrong axis. While the formulas are recognized, their application often results in significant errors, such as miscalculating the peak stress locations or magnitudes. The interpretation would then be flawed, stating, for example, that a beam with an erroneous high stress calculation is safe, despite the actual design being potentially hazardous. \n\nResults should ideally be communicated in a structured technical report. This report would typically include an executive summary, a detailed problem statement, a listing of all assumptions, the analytical approach, and the calculated stresses. However, due to the calculation errors, the 'results' presented would be numerically incorrect. The interpretation section would then abstractly discuss the importance of comparing calculated stresses to material yield strength and factors of safety, but would fail to correctly interpret its own data, thus offering little practical insight into the beam's actual performance or safety. Despite these analytical flaws, the report's structure and the theoretical discussions remain formally well-written.",
+            "feedback": {
+                "c1": "Excellent. Provides a very thorough and theoretically sound definition of the problem, including all critical parameters. Explains fundamental assumptions with strong justification, demonstrating deep theoretical understanding. (28/30)",
+                "c2": "Needs Improvement. While the submission mentions the correct equations, it struggles with their practical application. There are conceptual errors in how internal forces are derived or how section properties are related to stress calculation. The steps are either incomplete or incorrect, indicating a gap between theoretical knowledge and practical execution. (7/15)",
+                "c3": "Poor. Due to errors in calculations, the 'results' presented are misleading or incorrect. The interpretation section is largely abstract, discussing what *should* be done with results rather than interpreting *its own* flawed results meaningfully. No coherent report structure. (10/25)",
+                "c4": "Good. The essay is well-organized in terms of presenting theoretical concepts. The writing is clear, uses formal technical language, and follows an academic structure, especially in the problem definition part, despite the analytical flaws. (24/30)",
+                "total": "69/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "key_points": [
+                "Gives a basic outline of the beam problem, mentioning some loads and supports.",
+                "Correctly identifies key formulas but provides only a superficial explanation of their application.",
+                "States that results should be reported and checked against material limits, but lacks detailed explanation of significance.",
+                "Structure is logical, but the writing style is often too simplistic and lacks technical precision."
+            ],
+            "llm_questions": [
+                "What role do shear force and bending moment diagrams play in beam design?",
+                "How do you determine the material properties required for stress analysis?",
+                "What is a 'factor of safety' and why is it used?",
+                "Beyond maximum stress, what other failure criteria might be relevant for beams?"
+            ],
+            "llm_answers": [
+                "Shear Force Diagrams (SFD) and Bending Moment Diagrams (BMD) are indispensable tools in beam design. They graphically represent the variation of internal shear forces and bending moments along the beam's length. By visually identifying the locations of maximum absolute shear force and bending moment, engineers can pinpoint critical sections where the beam is most likely to fail. These maximum values are then directly used in the stress formulas to calculate peak shear and bending stresses, which are essential for sizing the beam and ensuring its safety.",
+                "Material properties for stress analysis are typically determined through standardized mechanical testing (e.g., tensile tests, compression tests, shear tests) performed on material samples. For common engineering materials like steel, aluminum, or concrete, these properties (such as Young's Modulus, yield strength, ultimate tensile strength, Poisson's ratio) are readily available in engineering handbooks, material databases, or manufacturer's specifications. It is crucial to use properties relevant to the specific grade and condition of the material being used.",
+                "A 'factor of safety' (FoS) is a ratio of the ultimate (or yield) strength of a material to the actual (or required) stress in a component. It is used to provide a margin of safety against unforeseen loads, material variations, manufacturing defects, or approximations in analysis. For example, an FoS of 2 means the material can withstand twice the expected load before yielding or fracturing. It's a critical design parameter that ensures reliability and prevents catastrophic failure, with typical values ranging from 1.5 to 5 or even higher depending on the application's criticality.",
+                "Beyond maximum stress, other relevant failure criteria for beams include: 1) Deflection: Excessive deflection, even if stresses are below yield, can impair functionality or cause damage to adjacent components. 2) Buckling: For slender beams or columns under compressive loads, instability (buckling) can occur before material yielding. 3) Fatigue: Repeated or cyclic loading can cause failure at stresses well below the static yield strength over time. 4) Creep: At high temperatures and sustained loads, materials can deform slowly over time (creep). 5) Brittle Fracture: Materials susceptible to brittle fracture may fail suddenly without significant plastic deformation, often analyzed using fracture mechanics."
+            ],
+            "final_submission": "A mechanical engineer's approach to beam stress analysis starts with clearly defining the problem. This means understanding the type of beam, its length, and what kind of material it's made from. It also involves identifying where the beam is supported and what forces or loads are acting on it. For instance, is it a simply supported beam with a concentrated load in the middle, or a cantilever beam with a uniformly distributed load? Some basic assumptions are made, such as the material behaves elastically and that any deflections will be small. These assumptions simplify the math needed to solve the problem.\n\nOnce the problem is defined, the engineer moves on to applying mechanical equations. The main formula for calculating bending stress is σ = My/I. This formula relates the stress (σ) to the bending moment (M), the distance from the neutral axis (y), and the moment of inertia (I) of the beam's cross-section. The process involves first determining the internal shear forces and bending moments along the beam's length, usually by constructing Shear Force and Bending Moment Diagrams. However, the explanation of how to accurately calculate 'M' and 'I' from scratch or how to systematically use these diagrams to get specific values for 'y' is quite superficial, focusing more on stating the formula than demonstrating a deep understanding of its step-by-step application in varied scenarios. \n\nAfter calculations, the results must be interpreted and communicated. This involves stating the maximum stresses found and their locations. The engineer needs to explain whether these stresses are within acceptable limits for the material, meaning they are below the material's yield strength. A report would typically summarize these findings. While the importance of comparing results to material limits is mentioned, the explanation of the actual significance—such as discussing a factor of safety or the implications for beam redesign—is minimal. The report itself would be quite generic, listing numbers without much insightful commentary. The overall structure follows a logical flow from definition to results, but the writing often lacks the precise and formal language typically found in a robust engineering analysis.",
+            "feedback": {
+                "c1": "Average. Offers a basic definition of the problem, identifying some aspects like loads and supports, but lacks specificity regarding geometry or material. Mentions a couple of assumptions without any elaboration or justification. (19/30)",
+                "c2": "Average. Correctly states the primary bending stress formula, but the explanation of how to apply it (e.g., finding M, I, y) is superficial. There's no detailed step-by-step process, suggesting a basic, rather than comprehensive, understanding of application. (10/15)",
+                "c3": "Needs Improvement. States that results need to be reported and briefly mentions checking against material limits. However, the explanation of the significance is not met , lacking a lot of  depth and  insight into design implications or factors of safety. The description of the 'report' is very generic. (12/25)",
+                "c4": "Good. The submission has a logical flow, broadly following the problem-solving steps. However, the language often lacks precision. But has  technical depth. It's coherent but not formal or rigorously academic, sometimes simplifying concepts too much. (18/30)",
+                "total": "59/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "key_points": [
+                "Attempts detailed problem definition but includes irrelevant information and lacks focus on core elements.",
+                "Mentions several relevant equations but struggles with their correct and integrated application, leading to muddled analysis.",
+                "Discusses the need for numerical data but provides no actual interpretation of what the numbers mean for design or safety.",
+                "Fragmented structure and verbose writing style, with technical terms used inconsistently or incorrectly."
+            ],
+            "llm_questions": [
+                "What is the principle of superposition and when can it be applied in beam analysis?",
+                "How does one account for different loading conditions (e.g., point load vs. distributed load)?",
+                "What are common mistakes to avoid in beam stress calculations?",
+                "How do material non-linearities (plasticity) change the approach to stress analysis?"
+            ],
+            "llm_answers": [
+                "The principle of superposition states that the total stress or deflection at a point in a linearly elastic system due to multiple loads is the sum of the stresses or deflections caused by each load acting independently. It can be applied when the material behavior is linear elastic, and deflections are small. This allows complex loading scenarios to be broken down into simpler, solvable sub-problems, with the individual results linearly combined to find the total response. It significantly simplifies analysis for many practical cases.",
+                "Different loading conditions are accounted for by using appropriate formulas for internal shear force and bending moment. For point loads, SFD and BMD typically show abrupt changes (vertical drops for SFD, kinks for BMD). For uniformly distributed loads, SFD changes linearly, and BMD changes quadratically. For triangular distributed loads, SFD changes quadratically, and BMD changes cubically. Engineers use integration or equilibrium equations specific to each load type to construct accurate diagrams.",
+                "Common mistakes in beam stress calculations include: 1) Incorrectly determining support reactions or internal forces. 2) Errors in calculating the moment of inertia (I) or first moment of area (Q). 3) Inconsistent unit conversions. 4) Misidentifying the neutral axis. 5) Confusing bending stress with shear stress formulas. 6) Failing to consider all critical sections (e.g., maximum moment and maximum shear locations). 7) Neglecting stress concentrations at geometric discontinuities.",
+                "Material non-linearities, such as plasticity, fundamentally change the approach to stress analysis. Once a material yields, Hooke's Law no longer applies, and the stress-strain relationship becomes non-linear. Linear elastic theory is no longer valid. Analysis requires advanced techniques like plasticity theory, finite element analysis (FEA) with non-linear material models, or experimental methods. Concepts like the plastic moment (M_p) and plastic section modulus (Z) become relevant, as the stress distribution across the cross-section changes from linear to a more uniform rectangular distribution after yielding."
+            ],
+            "final_submission": "Analyzing stress in a loaded beam requires understanding many aspects. A mechanical engineer begins by defining the situation, trying to capture all factors. This includes the beam's dimensions, the kind of supports it has, and every force that could possibly act on it, whether directly or indirectly. For instance, they might list wind loads, seismic loads, temperature changes, and the weight of the beam itself, alongside the primary applied loads. Some assumptions are mentioned, such as the material's properties staying the same, but the connection between these assumptions and simplifying the analysis isn't always clear or focused on the most critical ones for a basic stress problem.\n\nWhen it comes to applying mechanics and equations, the engineer is aware of various formulas. They might list the flexure formula for bending stress (σ = My/I), the shear stress formula (τ = VQ/It), and even mention equations for deflection. However, the explanation of *how* these formulas are actually used in a step-by-step manner is often muddled. There might be confusion about how to correctly determine the bending moment (M) or shear force (V) for complex loading, or how to calculate the moment of inertia (I) for unusual cross-sections. The essay demonstrates exposure to the formulas but struggles with their coherent and correct application, leading to an analysis that is fragmented and hard to follow.\n\nResults are discussed in terms of needing to be reported, but the actual interpretation of what those results mean is largely absent. The submission might state that numerical data for stress is important, but it fails to explain how these numbers are evaluated against material properties, what constitutes a safe design, or the implications for structural integrity. It talks about 'checking the numbers' but without detailing the criteria for checking or what conclusions can be drawn. The 'report' section merely indicates a collection of calculated values without providing engineering insights or recommendations. The structure of the essay is somewhat disjointed; paragraphs cover different aspects but lack a smooth transition, and the technical writing is often verbose and unclear, sometimes using terms incorrectly.",
+            "feedback": {
+                "c1": "Good. The submission attempts a detailed problem definition, listing many potential factors but struggles to prioritize or focus on the most relevant ones for basic beam analysis. Some key assumptions are mentioned, but their direct link to simplifying the analysis is not clearly articulated. (23/30)",
+                "c2": "Needs Improvement. Several relevant equations are named (e.g., shear stress, bending stress, even some deflection formulas), but the explanation of their usage is muddled. There's confusion about which equation applies where, or how to correctly derive the inputs (M, V, I, Q). It shows exposure to formulas but difficulty in their correct, integrated application. (8/15)",
+                "c3": "Poor. The section discusses the importance of reporting numerical data but provides no actual interpretation of what those numbers mean in an engineering context. It talks about 'checking numbers' but fails to explain how or why, offering no insights into safety, failure modes, or design decisions. The 'report' mentioned is just a raw collection of numbers. (8/25)",
+                "c4": "Needs Improvement. The essay has a somewhat fragmented structure; while paragraphs cover different aspects, they don't flow cohesively. The writing style is often verbose, and technical terms are sometimes used incorrectly or without sufficient explanation, leading to a lack of clarity and precision. (16/30)",
+                "total": "55/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "key_points": [
+                "Clearly defines problem parameters including loads, supports, and material properties, with conceptual understanding of assumptions.",
+                "Identifies correct formulas for bending and shear stress, explains their purpose but lacks specific calculation steps.",
+                "Provides a strong conceptual explanation of result interpretation, including factor of safety and design implications.",
+                "Well-structured essay with clear, formal language, demonstrating good overall technical writing."
+            ],
+            "llm_questions": [
+                "How would a software tool (e.g., FEA) assist in beam stress analysis?",
+                "What are stress concentrations and why are they important in beam design?",
+                "How do engineers validate their analytical results for beams?",
+                "Discuss the ethical responsibilities of an engineer in reporting stress analysis results."
+            ],
+            "llm_answers": [
+                "Software tools like Finite Element Analysis (FEA) significantly assist in beam stress analysis by enabling the modeling of complex geometries, arbitrary loading conditions, and intricate material behaviors that are often intractable with analytical methods. FEA discretizes the beam into smaller elements, solves for stresses and deformations numerically, and provides detailed visualizations of stress distribution. It's particularly useful for non-uniform cross-sections, stress concentrations, and non-linear analyses, offering a more precise and comprehensive understanding of the beam's response than simplified hand calculations.",
+                "Stress concentrations are localized regions in a structure where stress significantly increases due to abrupt changes in geometry, such as holes, fillets, notches, or sudden cross-section variations. They are important because even if the overall stress in a beam is low, a high stress concentration point can initiate cracks and lead to fatigue failure or brittle fracture at much lower nominal loads than expected. Engineers account for them using stress concentration factors (Kt) derived from empirical data or FEA, which are multiplied by the nominal stress to find the localized peak stress.",
+                "Engineers validate their analytical results for beams through several methods. First, by performing 'sanity checks' or order-of-magnitude estimations. Second, by comparing results with known theoretical solutions for simpler cases or empirical data. Third, by using independent computational tools (e.g., hand calculations versus FEA, or two different FEA software packages). Fourth, and most definitively, through physical testing of prototypes or actual structures, though this is often costly and performed later in the design cycle. Validation ensures the accuracy and reliability of the analysis.",
+                "An engineer has significant ethical responsibilities in reporting stress analysis results, primarily related to public safety and professional integrity. They must ensure that results are accurate, unbiased, and clearly communicated, avoiding misrepresentation or omission of critical information. They have a duty to report any findings that suggest a design is unsafe or could lead to failure, even if it contradicts client expectations or project deadlines. Adherence to professional codes of ethics (e.g., those from ASME or IEEE) requires engineers to prioritize the welfare of the public and maintain honesty in their professional conduct, which includes transparent and truthful reporting of all analysis outcomes and limitations."
+            ],
+            "final_submission": "A mechanical engineer's systematic approach to analyzing stress in a loaded beam begins with a thorough problem definition. This involves clearly identifying the beam's overall geometry, including its length and cross-sectional shape, alongside the material's properties such as Young's Modulus and yield strength. Crucially, all boundary conditions (e.g., fixed, pinned, roller supports) and the precise nature, magnitude, and location of applied loads (point loads, distributed loads, moments) must be specified. This comprehensive understanding forms the essential groundwork for any meaningful analysis. \n\nFollowing definition, the engineer articulates the necessary simplifying assumptions. These typically include that the material behaves linearly elastically, meaning it obeys Hooke's Law and returns to its original shape upon removal of load. Other standard assumptions are that deflections are small relative to the beam's dimensions, and that plane sections remain plane and perpendicular to the neutral axis after bending. These assumptions are conceptually understood to enable the use of classical beam theory and its associated formulas.\n\nFor the application of mechanics and equations, the engineer correctly identifies the primary formulas for bending stress (σ = My/I) and transverse shear stress (τ = VQ/It). They explain that internal shear forces (V) and bending moments (M) are derived from load and support conditions, often visualized using Shear Force and Bending Moment Diagrams. However, while the purpose and general usage of these equations are clear, the submission lacks specific, step-by-step details on how to perform the calculations for 'M', 'I', or 'Q' in complex scenarios, or how to systematically extract the necessary values from diagrams. The focus is more on the conceptual 'what' and 'why' of the equations rather than the precise 'how' of their practical application.\n\nFinally, the interpretation of results and their communication through reports is robust. The engineer emphasizes that calculated maximum stresses must be compared against the material's allowable limits (e.g., yield strength) to determine a factor of safety. A clear, well-structured report would detail the problem, assumptions, methods, and critically, explain the implications of the findings for the beam's design and safety. This includes discussing whether the beam is adequately sized or if modifications are necessary. The writing throughout the essay is well-structured and maintains a formal, technical tone, making the overall conceptual understanding very clear, even if some practical details are less explicit.",
+            "feedback": {
+                "c1": "Good. Clearly defines the problem by identifying key elements like loads, supports, and material. Articulates most standard assumptions, demonstrating a solid conceptual grasp of why these simplifications are made, even if slightly less detailed than an 'Excellent' response. (26/30)",
+                "c2": "Average. Correctly identifies the main equations for bending and shear stress. Explains their purpose and the general process (e.g., use SFD/BMD), but lacks the specific, step-by-step detail or examples of how to execute the calculations, focusing more on the 'what' than the 'how'. (11/15)",
+                "c3": "Good. Provides a good explanation of how results are used, emphasizing comparison to material properties and the concept of factor of safety. Discusses the importance of clear communication in reports and the implications of findings for design. The report structure described is logical and comprehensive. (21/25)",
+                "c4": "Good. The essay is well-structured, following a logical progression from problem setup to reporting. The writing is clear, uses appropriate technical language, and maintains a formal tone throughout, making it easy to understand the conceptual framework. (25/30)",
+                "total": "83/100"
+            }
+        }
+    ]
+}

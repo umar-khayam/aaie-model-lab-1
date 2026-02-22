@@ -20,6 +20,7 @@ Example:
 ```
 FG-Pipeline/
     refined_FG_Model.py               ← your script
+    updatetestingfile.py               ← your script
     rub_it_0002.json        ← your input data
 ```
 
@@ -125,6 +126,10 @@ This script expects the following data input schema:
     }
   ]
 }
+Your script expects:
+
+```python
+INPUT_PATH = "rub_it_0002.json"
 ```
 
 So make sure this file exists in the same folder as the script.

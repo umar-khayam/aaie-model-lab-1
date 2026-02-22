@@ -1,0 +1,353 @@
+understand_prompt:
+  # Asking for explanations, definitions, conceptual understanding
+  - explain
+  - explanation of
+  - what is
+  - what are
+  - why does
+  - why is
+  - how come
+  - in what way
+  - help me understand
+  - help me to understand
+  - can you clarify
+  - clarify
+  - can you walk me through
+  - walk me through
+  - briefly explain
+  - explain in simple terms
+  - explain in plain language
+  - explain like i am 5
+  - explain like i'm 5
+  - core principles
+  - background
+  - overview of
+  - big picture
+  - high level overview
+  - summarise
+  - summarize
+  - give me a summary
+  - give a quick summary
+  - define
+  - definition of
+  - concept of
+  - key concepts
+  - key idea
+  - key ideas
+  - main idea
+  - main ideas
+  - how does it work
+  - how does this work
+  - how does this concept work
+  - what do i need to understand
+  - what do i need to know
+  - describe the concept
+  - describe what this means
+  - tell me what this means
+  - foundational explanation
+  - basic explanation
+  - basic overview
+  - introductory explanation
+  - introductory overview
+  - give me some context
+  - give context
+  - provide context
+  - context for this topic
+  - non technical explanation
+  - layman terms
+  - layperson terms
+
+plan_structure:
+  # Planning, organising, outlining academic tasks
+  - outline
+  - high-level outline
+  - high level outline
+  - detailed outline
+  - refine this outline
+  - outline for this essay
+  - outline for my essay
+  - section headings
+  - headings for each section
+  - bullet points for each section
+  - bullet point plan
+  - plan the essay
+  - plan my essay
+  - plan this essay
+  - plan my response
+  - help me plan
+  - essay structure
+  - structure this essay
+  - structure my essay
+  - structure my answer
+  - structure this answer
+  - roadmap for the essay
+  - roadmap for my essay
+  - suggest sections
+  - suggest subheadings
+  - suggest headings
+  - suggest a structure
+  - suggest an outline
+  - organise the sections
+  - organize the sections
+  - organise my ideas
+  - organize my ideas
+  - propose a clear structure
+  - propose structure
+  - propose headings
+  - propose subheadings
+  - how should i structure
+  - how to structure this
+  - recommended structure
+  - recommended outline
+  - what should i cover
+  - what sections should i include
+  - what order should i cover
+  - what order should i put
+  - where should i talk about
+  - plan the paragraphs
+  - plan each paragraph
+  - intro body conclusion plan
+  - thesis and topic sentences
+  - help me break this into sections
+  - break this into sections
+
+generate_content:
+  # Asking the model to draft or generate academic text
+  - write an essay
+  - write the essay
+  - write a paragraph
+  - write the introduction
+  - write the conclusion
+  - write body paragraphs
+  - write a section
+  - write a few paragraphs
+  - write 2 paragraphs
+  - write 3 paragraphs
+  - draft an introduction
+  - draft the introduction
+  - draft the body
+  - draft body paragraphs
+  - draft the essay
+  - draft a section
+  - first draft for me
+  - create a first draft
+  - generate content
+  - generate a paragraph
+  - generate a section
+  - generate a few paragraphs
+  - generate an answer
+  - produce a paragraph
+  - produce a section
+  - produce a full answer
+  - create a paragraph
+  - create a section
+  - create an essay
+  - expand this into
+  - turn this into a paragraph
+  - turn this into an essay
+  - turn these points into a paragraph
+  - turn these notes into a paragraph
+  - fill in this section
+  - fill out this section
+  - continue the essay
+  - continue writing
+  - continue this paragraph
+  - continue this section
+  - draft 3 to 4 paragraphs
+  - draft paragraphs
+  - can you write
+  - could you write
+  - can you generate
+  - could you generate
+  - can you draft
+  - could you draft
+  - create a detailed explanation
+  - produce a detailed comparison
+  - create an academic section
+  - expand the explanation
+  - expand this section
+  - example paragraph
+  - sample paragraph
+  - sample answer
+  - model answer
+  - template answer
+  - write about
+  - write a short overview
+  - write a detailed overview
+  - write a critical evaluation
+  - write a discussion
+  - write a literature review style paragraph
+
+revise_content:
+  # Requests to refine or improve existing content (structure and meaning)
+  - refine this
+  - refine the outline
+  - refine the paragraph
+  - refine my paragraph
+  - refine the section
+  - improve this
+  - improve the paragraph
+  - improve the section
+  - improve my writing
+  - improve this part
+  - improve this answer
+  - improve the argument
+  - rewrite this
+  - rewrite the paragraph
+  - rewrite the section
+  - rewrite this to sound
+  - rewrite this so it
+  - edit this
+  - edit the paragraph
+  - edit my paragraph
+  - edit my answer
+  - fix this
+  - fix my writing
+  - fix this paragraph
+  - tighten this
+  - make this clearer
+  - make this more concise
+  - make this longer
+  - shorten this
+  - expand this paragraph
+  - expand this section
+  - expand this point
+  - expand on this idea
+  - adjust this paragraph
+  - rephrase this
+  - paraphrase this
+  - polish this paragraph
+  - polish this section
+  - improve flow
+  - make the flow better
+  - check the flow
+  - strengthen the analysis
+  - deepen the analysis
+  - strengthen this argument
+  - strengthen the argument
+  - make this more formal
+  - make this more academic
+  - enhance clarity
+  - clarify my argument
+  - refine tone
+  - adjust academic style
+  - help revise my text
+  - improve coherence
+  - make this more coherent
+  - restructure this paragraph
+  - move sentences around if needed
+  - rewrite to focus on
+  - revise this draft
+  - second draft based on this
+  - improve this draft
+
+polish_language:
+  # Surface-level language and style improvement (not major content change)
+  - polish the language
+  - polish the wording
+  - improve the language
+  - improve wording
+  - improve style
+  - make this sound better
+  - make this more formal
+  - make this more academic
+  - make it more academic
+  - fix grammar
+  - fix the grammar
+  - correct grammar
+  - correct spelling
+  - fix spelling
+  - fix punctuation
+  - correct punctuation
+  - adjust tone
+  - make tone more formal
+  - adjust the tone
+  - simplify the language
+  - make it easier to read
+  - improve readability
+  - refine language
+  - refine wording
+  - adjust word choice
+  - improve phrasing
+  - change some words
+  - remove repetition
+  - reduce repetition
+  - clean up the wording
+  - tidy up the wording
+  - tidy up the sentence
+  - smoother phrasing
+
+check_quality:
+  # Quality check, correctness, alignment with task, feedback and grading requests
+  - is this correct
+  - is this right
+  - is this accurate
+  - is this factually correct
+  - is this logically correct
+  - is this good enough
+  - is this good
+  - does this make sense
+  - does this answer the question
+  - does this answer the prompt
+  - does this address the question
+  - does this address the prompt
+  - does this fit the question
+  - check this
+  - check my work
+  - check the paragraph
+  - check the essay
+  - check this answer
+  - check if this sounds right
+  - evaluate this
+  - evaluate my answer
+  - evaluate my response
+  - evaluate this paragraph
+  - critique this
+  - critique the paragraph
+  - critique the essay
+  - critique my answer
+  - give feedback
+  - give me feedback
+  - give me specific feedback
+  - specific feedback
+  - detailed feedback
+  - constructive feedback
+  - review this
+  - review my paragraph
+  - review my essay
+  - review my answer
+  - how can i improve this
+  - how could i improve this
+  - what should i improve
+  - what i should improve
+  - what is missing here
+  - what am i missing
+  - does this cover everything
+  - does this cover the key points
+  - check the flow
+  - check the coherence
+  - tell me if anything is unclear
+  - tell me if this is unclear
+  - tell me if this is too informal
+  - academic tone check
+  - is the flow good
+  - provide feedback on clarity
+  - provide feedback on structure
+  - evaluate the structure
+  - evaluate the flow
+  - read it and then give me feedback
+  - read it and give me feedback
+  - can you read it and give feedback
+  - can you read it and then give me specific feedback
+  - does this show critical evaluation
+  - does this show enough critical evaluation
+  - is my argument strong enough
+  - does this meet the rubric
+  - does this meet the criteria
+  - does this meet the requirements
+  - check this against the rubric
+  - grade this
+  - mark this
+  - score this
+  - what mark would this get
+  - what grade would this get

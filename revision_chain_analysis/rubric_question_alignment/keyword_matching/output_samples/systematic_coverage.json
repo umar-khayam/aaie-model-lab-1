@@ -1,0 +1,68 @@
+{
+  "criterion_coverages": [
+    {
+      "criteria_id": "C1",
+      "criteria_name": "Understanding of Technical Debt and Its Causes",
+      "weight": 0.3,
+      "coverage_score": 0.94,
+      "status": "well_covered",
+      "prompts_matched": 5,
+      "matched_prompt_ids": [
+        1,
+        2,
+        3,
+        4,
+        7
+      ],
+      "unmatched_keywords": []
+    },
+    {
+      "criteria_id": "C2",
+      "criteria_name": "Use of Real Examples in Long-Term Projects",
+      "weight": 0.25,
+      "coverage_score": 0.91,
+      "status": "well_covered",
+      "prompts_matched": 3,
+      "matched_prompt_ids": [
+        5,
+        6,
+        8
+      ],
+      "unmatched_keywords": []
+    },
+    {
+      "criteria_id": "C3",
+      "criteria_name": "Critical Evaluation of Strategies",
+      "weight": 0.3,
+      "coverage_score": 0.93,
+      "status": "well_covered",
+      "prompts_matched": 4,
+      "matched_prompt_ids": [
+        2,
+        7,
+        9,
+        10
+      ],
+      "unmatched_keywords": []
+    },
+    {
+      "criteria_id": "C4",
+      "criteria_name": "Structure, Clarity, and Academic Tone",
+      "weight": 0.15,
+      "coverage_score": 0.88,
+      "status": "well_covered",
+      "prompts_matched": 2,
+      "matched_prompt_ids": [
+        2,
+        10
+      ],
+      "unmatched_keywords": []
+    }
+  ],
+  "overall_alignment": {
+    "overall_alignment": 0.92,
+    "status": "systematic_coverage",
+    "total_prompts_analyzed": 10,
+    "off_topic_prompts": 0
+  }
+}

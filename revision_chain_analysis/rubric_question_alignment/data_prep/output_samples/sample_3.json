@@ -1,0 +1,50 @@
+{
+  "parsed_chat": [
+    {
+      "prompt": "Which psychological triggers do attackers most effectively exploit in social engineering?",
+      "turn_index": 0
+    },
+    {
+      "prompt": "How do spear-phishing campaigns differ from general phishing, and why are they more dangerous?",
+      "turn_index": 1
+    },
+    {
+      "prompt": "Beyond user training, what technical controls can organizations implement to mitigate social engineering threats?",
+      "turn_index": 2
+    },
+    {
+      "prompt": "What are the primary challenges in measuring the effectiveness of a security awareness program?",
+      "turn_index": 3
+    }
+  ],
+  "rubric_keywords": {
+    "rubric_id": "rub_it_0003",
+    "domain": "Information Technology",
+    "criteria": [
+      {
+        "criterion_id": "c1",
+        "name": "Conceptual Understanding",
+        "weight": 0.25,
+        "keywords": ["conceptual", "understanding", "demonstrates", "deep", "topic", "related", "concepts"]
+      },
+      {
+        "criterion_id": "c2",
+        "name": "Application to Real-World Scenarios",
+        "weight": 0.25,
+        "keywords": ["application", "realworld", "scenarios", "applies", "concepts", "meaningfully", "examples"]
+      },
+      {
+        "criterion_id": "c3",
+        "name": "Critical Evaluation",
+        "weight": 0.25,
+        "keywords": ["critical", "evaluation", "analyzes", "challenges", "limitations", "tradeoffs", "thoughtfully"]
+      },
+      {
+        "criterion_id": "c4",
+        "name": "Structure and Academic Writing",
+        "weight": 0.25,
+        "keywords": ["structure", "academic", "writing", "quality", "flow", "citations", "tone"]
+      }
+    ]
+  }
+}

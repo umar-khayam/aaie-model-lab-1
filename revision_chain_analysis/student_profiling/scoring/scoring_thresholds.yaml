@@ -1,0 +1,17 @@
+critical_thinking:
+  explanation_prompts: 3
+  verification_prompts: 2
+  comparison_prompts: 3
+  evidence_prompts: 2
+
+problem_solving:
+  decomposition_prompts: 4
+  iterative_revision_count: 4
+  self_proposed_content_turns: 3
+  feedback_uptake_events: 3
+
+engagement:
+  student_token_ratio: 0.75
+  student_turn_count: 12
+  distinct_episode_types: 4
+  session_minutes: 60

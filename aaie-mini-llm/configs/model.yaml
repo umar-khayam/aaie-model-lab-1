@@ -1,0 +1,10 @@
+model:
+  name: "mini-gpt"
+  vocab_size: 50257
+  max_seq_len: 384
+  d_model: 1024
+  n_head: 16
+  n_layer: 24
+  d_ff: 4096
+  dropout: 0.1
+  tie_weights: true

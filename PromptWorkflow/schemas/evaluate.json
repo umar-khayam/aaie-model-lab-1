@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EvaluateResponse",
+  "type": "object",
+  "required": ["classification", "rubric_scores", "feedback"],
+  "properties": {
+    "classification": {
+      "type": "object",
+      "required": ["label"],
+      "properties": {
+        "label": {
+          "type": "string",
+          "enum": ["AI", "Human", "Hybrid"]
+        }
+      }
+    },
+    "rubric_scores": {
+      "type": "object",
+      "required": ["scores"],
+      "properties": {
+        "scores": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["criterion_id", "name", "rating"],
+            "properties": {
+              "criterion_id": { "type": "string" },
+              "name": { "type": "string" },
+              "rating": {
+                "type": "string",
+                "enum": ["excellent", "good", "average", "needs improvement", "poor"]
+              }
+            }
+          }
+        }
+      }
+    },
+    "feedback": {
+      "type": "object",
+      "required": [
+        "overall_grade",
+        "reasoning",
+        "criteria",
+        "strengths",
+        "weaknesses",
+        "improvement_tips"
+      ],
+      "properties": {
+        "overall_grade": { "type": "string" },
+        "reasoning": { "type": "string" },
+        "criteria": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["criterion_id", "name", "rating"],
+            "properties": {
+              "criterion_id": { "type": "string" },
+              "name": { "type": "string" },
+              "rating": {
+                "type": "string",
+                "enum": ["excellent", "good", "average", "needs improvement", "poor"]
+              },
+              "rationale": { "type": "string" }
+            }
+          }
+        },
+        "strengths": { "type": "string" },
+        "weaknesses": { "type": "string" },
+        "improvement_tips": { "type": "string" }
+      }
+    }
+  }
+}

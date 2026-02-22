@@ -1,0 +1,74 @@
+{
+  "criterion_coverages": [
+    {
+      "criteria_id": "C1",
+      "criteria_name": "Understanding of Technical Debt and Its Causes",
+      "weight": 0.3,
+      "coverage_score": 0.78,
+      "status": "adequately_covered",
+      "prompts_matched": 3,
+      "matched_prompt_ids": [
+        1,
+        2,
+        5
+      ],
+      "unmatched_keywords": [
+        "accumulation",
+        "trade-off"
+      ]
+    },
+    {
+      "criteria_id": "C2",
+      "criteria_name": "Use of Real Examples in Long-Term Projects",
+      "weight": 0.25,
+      "coverage_score": 0.72,
+      "status": "adequately_covered",
+      "prompts_matched": 2,
+      "matched_prompt_ids": [
+        3,
+        6
+      ],
+      "unmatched_keywords": [
+        "consequences",
+        "outages"
+      ]
+    },
+    {
+      "criteria_id": "C3",
+      "criteria_name": "Critical Evaluation of Strategies",
+      "weight": 0.3,
+      "coverage_score": 0.81,
+      "status": "well_covered",
+      "prompts_matched": 3,
+      "matched_prompt_ids": [
+        4,
+        7,
+        8
+      ],
+      "unmatched_keywords": [
+        "limitations"
+      ]
+    },
+    {
+      "criteria_id": "C4",
+      "criteria_name": "Structure, Clarity, and Academic Tone",
+      "weight": 0.15,
+      "coverage_score": 0.65,
+      "status": "adequately_covered",
+      "prompts_matched": 1,
+      "matched_prompt_ids": [
+        4
+      ],
+      "unmatched_keywords": [
+        "transitions",
+        "topic sentences"
+      ]
+    }
+  ],
+  "overall_alignment": {
+    "overall_alignment": 0.76,
+    "status": "broad_coverage",
+    "total_prompts_analyzed": 8,
+    "off_topic_prompts": 0
+  }
+}

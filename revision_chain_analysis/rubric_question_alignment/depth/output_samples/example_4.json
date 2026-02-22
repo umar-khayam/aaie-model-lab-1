@@ -1,0 +1,8 @@
+{
+  "criteria_id": "criterion_4",
+  "prompts": [
+    "What is X and how does it work?",
+    "Compare X to Y and evaluate the trade-offs"
+  ],
+  "engagement_depth": "deep"
+}

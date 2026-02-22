@@ -1,0 +1,46 @@
+none:
+  - ""  # placeholder (kept for schema alignment; counts will be zero)
+
+surface:
+  - "what is"
+  - "what does"
+  - "define"
+  - "definition"
+  - "list"
+  - "name"
+  - "describe"
+  - "identify"
+  - "give examples of"
+  - "explain what"
+
+moderate:
+  - "how"
+  - "why"
+  - "what approach"
+  - "should i"
+  - "how do i"
+  - "how can i"
+  - "what steps"
+  - "how does"
+  - "when should"
+  - "what are the benefits"
+  - "what are the risks"
+  - "recommend"
+
+deep:
+  - "compare"
+  - "contrast"
+  - "evaluate"
+  - "assess"
+  - "analyse"
+  - "analyze"
+  - "trade-offs"
+  - "pros and cons"
+  - "justify"
+  - "critique"
+  - "synthesize"
+  - "synthesise"
+  - "which is better"
+  - "best option"
+  - "optimize"
+  - "impact"

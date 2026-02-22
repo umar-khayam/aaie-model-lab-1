@@ -1,0 +1,57 @@
+{
+    "submission_id": "rub_it_0001",
+    "profile_generated_at": "2026-01-26T17:30:00Z",
+    "scores": {
+      "critical_thinking_score": 0.80,
+      "problem_solving_score": 0.85,
+      "engagement_score": 0.90
+    },
+    "ai_use_pattern": "reviser",
+    "process_notes": "Mock profiling analysis for rub_it_0001. Student shows strong revision pattern with multiple refinement cycles. Focuses on improving and polishing content through iterative feedback and enhancement requests.",
+    "indicator_metrics": {
+      "critical_thinking": {
+        "explanation_prompts": 1,
+        "verification_prompts": 2,
+        "comparison_prompts": 2,
+        "evidence_prompts": 1
+      },
+      "problem_solving": {
+        "decomposition_prompts": 1,
+        "iterative_revision_count": 4,
+        "self_proposed_content_turns": 2,
+        "feedback_uptake_events": 3
+      },
+      "engagement": {
+        "student_token_ratio": 0.8,
+        "student_turn_count": 6,
+        "distinct_episode_types": 3,
+        "session_time_minutes": 30.0
+      },
+      "prompt_type_distribution": {
+        "understand_prompt": 1,
+        "plan_structure": 1,
+        "generate_content": 2,
+        "revise_content": 4,
+        "polish_language": 2,
+        "check_quality": 1
+      }
+    },
+    "explainability_evidence": {
+      "critical_thinking": {
+        "confidence": 0.80,
+        "evidence": ["Student compared different approaches and verified implementation details"]
+      },
+      "problem_solving": {
+        "confidence": 0.85,
+        "evidence": ["Student made multiple revisions to improve system design and implementation"]
+      },
+      "engagement": {
+        "confidence": 0.90,
+        "evidence": ["High engagement with extensive revision and refinement cycles"]
+      },
+      "ai_use_pattern": {
+        "confidence": 0.85,
+        "evidence": ["Strong reviser pattern with multiple content improvement iterations"]
+      }
+    }
+  }

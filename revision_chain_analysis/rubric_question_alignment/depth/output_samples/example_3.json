@@ -1,0 +1,8 @@
+{
+  "criteria_id": "criterion_3",
+  "prompts": [
+    "Compare two forecasting approaches for solar intermittency",
+    "Evaluate the trade-offs between accuracy and interpretability"
+  ],
+  "engagement_depth": "deep"
+}

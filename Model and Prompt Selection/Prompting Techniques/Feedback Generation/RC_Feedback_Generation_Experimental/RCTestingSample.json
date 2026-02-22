@@ -1,0 +1,79 @@
+{
+  "domain": "General Knowledge Chat",
+  "prompt": "Student initiates a chat session to learn about various topics through inquiry-based conversation with an AI assistant. The goal is to demonstrate effective learning behaviors and strategic use of AI for knowledge acquisition.",
+  "rubric": {
+    "rubric_id": "rub_learning_process_001",
+    "criteria": [
+      {
+        "criterion_id": "c1",
+        "name": "Inquiry Depth & Progression",
+        "description": "Evaluates whether the student's questions show deepening understanding and strategic exploration rather than surface-level fact collection.",
+        "performance_descriptors": {
+          "excellent (5)": "Student demonstrates clear progression from broad to specific questions, builds on previous responses with follow-ups, and pursues topics in depth. Questions become more sophisticated over time. Example: 'plants' → 'carnivorous plants' → 'sundew' → 'how sundews digest prey'",
+          "good (4)": "Student shows some progression toward specificity and asks occasional follow-up questions. Topics evolve but not always with clear depth. Example: 'science' → 'biology' → 'plants' then switches to unrelated topic",
+          "adequate (3)": "Student asks related questions but with minimal progression. Questions remain at similar depth throughout. Example: 'fun fact' → 'another fun fact' → 'one more fun fact'",
+          "developing (2)": "Student asks disconnected questions with no clear progression. Jumps between unrelated topics without building understanding. Example: 'dogs' → 'space' → 'pizza' → 'history'",
+          "minimal (1)": "Student asks only one or very few questions, or all questions are identical/nearly identical. No evidence of learning progression."
+        }
+      },
+      {
+        "criterion_id": "c2",
+        "name": "Active Learning Behaviors",
+        "description": "Evaluates whether the student engages in active learning behaviors like questioning, verifying, connecting ideas, or requesting examples/explanations.",
+        "performance_descriptors": {
+          "excellent (5)": "Student demonstrates multiple active learning behaviors: asks for clarification, requests examples, makes connections between concepts, challenges or verifies information, or asks 'why/how' questions. Example: 'how does that work?' 'can you give an example?' 'how does this relate to X?'",
+          "good (4)": "Student shows some active learning behaviors such as asking for elaboration or making topic connections, but not consistently. Example: occasionally asks 'tell me more' or 'explain that'",
+          "adequate (3)": "Student occasionally requests clarification or examples but mostly accepts information passively. Minimal evidence of critical engagement. Example: mostly one-word prompts with rare 'what does that mean?'",
+          "developing (2)": "Student shows passive behavior throughout, accepting all information without question or follow-up. No requests for clarification or examples. Example: only gives topic keywords like 'cats' 'dogs' 'cars'",
+          "minimal (1)": "Student shows no evidence of engagement beyond minimal prompting. Appears to be extracting answers rather than learning."
+        }
+      },
+      {
+        "criterion_id": "c3",
+        "name": "Prompt Clarity & Intentionality",
+        "description": "Evaluates whether the student's prompts show clear learning intent and effective communication rather than vague or unclear requests.",
+        "performance_descriptors": {
+          "excellent (5)": "Student's prompts are clear, specific, and purposeful. Shows evidence of thinking about what they want to learn. Effectively guides the conversation. Example: 'explain the difference between X and Y' 'what are the causes of Z?'",
+          "good (4)": "Student's prompts are generally clear with occasional vague requests. Shows some intentionality in question design. Example: mix of specific questions and general prompts like 'tell me more'",
+          "adequate (3)": "Student's prompts are often vague or single-word, but generally understandable. Limited evidence of strategic thinking about questions. Example: mostly single words or short phrases like 'history' 'science' 'facts'",
+          "developing (2)": "Student's prompts are frequently unclear, overly vague, or require interpretation. Little evidence of purposeful question design. Example: ambiguous prompts like 'stuff' 'things' or frequent typos without correction",
+          "minimal (1)": "Student's prompts are incomprehensible, off-topic, or show no learning intent. Example: random characters, off-topic requests, or nonsensical input"
+        }
+      },
+      {
+        "criterion_id": "c4",
+        "name": "Persistence & Goal-Directedness",
+        "description": "Evaluates whether the student shows sustained focus on learning goals rather than giving up easily or randomly exploring.",
+        "performance_descriptors": {
+          "excellent (5)": "Student demonstrates sustained focus on learning topic(s), pursuing understanding through multiple related questions. Doesn't give up when encountering complexity. Example: 6+ prompts all related to understanding a complex topic in depth",
+          "good (4)": "Student shows moderate persistence, asking several related questions before moving to new topics. Generally stays on track. Example: 3-5 related prompts per topic before switching",
+          "adequate (3)": "Student shows some focus but frequently switches topics. Limited persistence when topics become complex. Example: 2-3 prompts per topic, then moves on",
+          "developing (2)": "Student shows minimal persistence, jumping between topics after single questions. Appears distracted or disengaged. Example: different topic with each prompt, no follow-through",
+          "minimal (1)": "Student shows no sustained focus or gives up immediately. Example: single prompt then stops, or all prompts are variations of 'idk' or 'whatever'"
+        }
+      }
+    ]
+  },
+  "submissions": [
+    {
+      "final_submission": "User initiates a multi-turn conversation requesting 'fun facts' about various topics, followed by informative, accurate, and engaging AI responses covering bananas as berries, stardust, brain power, plant communication, carnivorous plants, and sundews.",
+      "label_type": "Hybrid",
+      "prompt_chain": [
+        "User: tell me something",
+        "AI: Sure 😊 — what kind of “something” would you like? I can share a fun fact, a tech insight, a motivational thought, or even a random story — your pick?",
+        "User: fun fact",
+        "AI: Alright! 😄 Here’s a fun fact for you: Bananas are berries — but strawberries aren’t!...",
+        "User: science",
+        "AI: Perfect choice! 🔬 Here’s a cool science fun fact: You’re literally made of stardust....",
+        "User: bio",
+        "AI: Nice! 🧬 Here’s a biology fun fact for you: Your brain runs on as much power as a dim light bulb...",
+        "User: pants",
+        "AI: Haha 😄 I’m guessing you meant plants — unless you really want fun facts about pants! 👖 Here’s a cool plant fact for you...",
+        "User: cranvorous",
+        "AI: Excellent choice! 🪰🌿 Let’s talk carnivorous plants — nature’s sneaky little hunters...",
+        "User: sundew",
+        "AI: Awesome choice! 🍬🪴 Let’s dive into the sundew — one of nature’s sticky little hunters...."
+      ]
+    }
+  ]
+}

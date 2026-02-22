@@ -1,0 +1,11 @@
+{
+  "counts": {
+    "explanation_prompts": 1,
+    "verification_prompts": 0,
+    "comparison_prompts": 0,
+    "evidence_prompts": 0
+  },
+  "evidence": [
+    "I need to write a 1500-word academic essay on zero-trust architecture in enterprise security. Can you briefly explain the core principles of zero-trust and give me a high-level outline for the essay?"
+  ]
+}

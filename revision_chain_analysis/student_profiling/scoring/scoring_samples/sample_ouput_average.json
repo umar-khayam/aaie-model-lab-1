@@ -1,0 +1,23 @@
+{
+    "test_case": "average_scores",
+    "input_indicators": {
+        "critical_thinking": {
+            "explanation_prompts": 0.67,
+            "verification_prompts": 0.5,
+            "comparison_prompts": 0.33,
+            "evidence_prompts": 0.5
+        },
+        "problem_solving": {
+            "decomposition_prompts": 0.75,
+            "iterative_revision_count": 0.5,
+            "self_proposed_content_turns": 0.67,
+            "feedback_uptake_events": 1.0
+        },
+        "engagement": {
+            "student_token_ratio": 0.8,
+            "student_turn_count": 0.67,
+            "distinct_episode_types": 0.5,
+            "session_minutes": 0.75
+    }
+}
+}
