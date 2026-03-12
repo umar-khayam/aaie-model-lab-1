@@ -1,5 +1,6 @@
 # Evaluating LLM Generated Feedback
 
+**Version:** 1.2 - Addressed additional feedback received
 **Version:** 1.1 - Updated to include G-Eval
 **Date:** December 2025
 **Author:** Steven Christolis
@@ -193,6 +194,15 @@ The recommendation is to use **G-Eval**
 
 **Trade-offs:** Focused solely on evaluation — does not include tracing of multi-step pipelines, context inspection, or observability features like LangSmith or TruLens. While powerful for scoring, it may be too limited if you need insights into *how* an answer was produced, not just whether it was good. Also inherits the general risks of LLM-as-judge methods (e.g., bias, inconsistency unless run with multiple judges or consensus methods).
 
+### Comparison Summary
+
+| Framework | Description | Key Strengths | Trade-offs |
+| :--- | :--- | :--- | :--- |
+| **LangSmith** | Managed platform for observability & evaluation. | Production-grade tracking, human-in-the-loop support. | Higher setup overhead; paid plans for teams. |
+| **Pydantic Evals** | Code-first Python library for systematic testing. | Lightweight, reproducible, integrates with CI/CD. | Lacks built-in dashboards or production monitoring. |
+| **TruLens** | Library for tracing agents and RAG pipelines. | Traces internal logic and intermediate steps (OpenTelemetry). | Requires complex instrumentation; can be overkill. |
+| **G-Eval** | Framework for rubric-based LLM scoring. | Low overhead, specialized for multi-criteria judge tasks. | No tracing or observability of pipeline internals. |
+
 ## **5.2 Recommendation: G-Eval**
 
 Reasons for selecting G-Eval:
@@ -208,6 +218,50 @@ Reasons for selecting G-Eval:
 - It allows us to retain **full control over results**: every evaluation returns clean, structured data (scores and explanations) that can be exported, filtered, aggregated, or visualised as part of downstream analysis.
 
 - G-Eval is also being **used by the AAIE LLM Training stream** and this will allow evaluation tool standardisation and associated benefits (i.e. fewer tools too learn, greater pool of students that can support each other).
+
+## 5.3 Storage of Evaluation Outputs
+
+The outputs from the Judge LLM will be stored as **small, structured JSON** files alongside the existing Feedback Generation (FG) outputs.
+
+This approach ensures:
+
+1.  **Portability & Analysis:** JSON format allows easy loading into dataframes (e.g., Pandas) for statistical analysis, visualization, or calculation of aggregate metrics (e.g., average "Correctness" score per model).
+2.  **Model Comparison:** By storing evaluation results directly with the generated feedback, we can easily compare different feedback models or prompt versions side-by-side.
+3.  **Traceability:** Each evaluation record is tightly coupled with the specific feedback instance it assessed, providing a clear audit trail of *why* a particular piece of feedback received its score.
+
+### Sample JSON Layout
+
+```json
+{
+  "submission_id": "rub_it_0002_sub_01",
+  "feedback_id": "fg_rub_it_0002_01",
+  "judge_model": "gpt-4o",
+  "evaluation_date": "2025-12-16T10:30:00Z",
+  "overall_score": 4.6,
+  "metrics": {
+    "Accuracy": {
+      "score": 5,
+      "reasoning": "The feedback accurately identifies the error in the loop condition."
+    },
+    "Specificity": {
+      "score": 4,
+      "reasoning": "The feedback points to line 10 but could be more specific about the fix."
+    },
+    "Constructiveness": {
+      "score": 4,
+      "reasoning": "Good suggestions provided, though a code example would help."
+    },
+    "Alignment": {
+      "score": 5,
+      "reasoning": "Directly references the 'Code Efficiency' criteria from the rubric."
+    },
+    "Tone": {
+      "score": 3,
+      "reasoning": "The tone is slightly robotic and could be more encouraging."
+    }
+  }
+}
+```
 
 ### References
 
