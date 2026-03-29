@@ -1,0 +1,136 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red228\green231\blue235;\red34\green41\blue56;}
+{\*\expandedcolortbl;;\cssrgb\c91373\c92549\c93725;\cssrgb\c17647\c21569\c28235;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs21 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 # Evaluation of AI-Generated Feedback\cb1 \
+\
+\cb3 ## Introduction\cb1 \
+\
+\cb3 In the Artificial Assessment Intelligence for Educators (AAIE) system, the generation and evaluation of AI-assisted feedback are both critical components in supporting student learning. The evaluation component ensures that the produced feedback is accurate, relevant, and aligned with educational rubrics. In earlier experiments, evaluation approaches such as G-Eval and LLM-as-a-Judge were explored to assess the quality of AI-generated feedback. These methods provided a strong foundation for subjective and rubric-based evaluation using large language models. However, for this implementation, the evaluation framework is extended further by incorporating additional metrics and comparison strategies to provide a more comprehensive and reliable assessment. This report outlines the proposed evaluation framework, which combines lexical similarity metrics, semantic similarity measures, rubric-based scoring, LLM-based evaluation, and comparison against teacher-generated feedback. In the previous semesters, certain metrics were explored, but not implemented on the actual dataset [Model Evaluation Toolkit](https://github.com/InnovAIte-Deakin/aaie-model-lab/tree/main/Evaluation/EvaluationModel). This time, we are planning to assess the quality of the model using these metrics.\cb1 \
+\
+\cb3 ## Lexical Similarity Metrics\cb1 \
+\
+\cb3 Lexical similarity metrics are used as baseline quantitative measures to evaluate overlap between AI-generated feedback and reference (teacher-generated) feedback.\cb1 \
+\
+\cb3 - BLEU (Bilingual Evaluation Understudy): Measures the precision of overlapping n-grams between generated and reference texts. While useful for identifying direct textual similarity, it is limited in evaluating feedback quality because it does not account for paraphrasing or semantic equivalence.\cb1 \
+\cb3 - ROUGE (Recall-Oriented Understudy for Gisting Evaluation): Focuses on recall and evaluates how much of the reference content is captured in the generated feedback. Metrics such as ROUGE-1 and ROUGE-L help assess whether key concepts from teacher feedback are reflected.\cb1 \
+\cb3 - METEOR: Improves upon BLEU by considering synonym matching, stemming, and alignment. It is more suitable for feedback evaluation as it better captures linguistic variations while maintaining semantic meaning.\cb1 \
+\
+\cb3 Although these metrics provide useful baseline comparisons, they are insufficient on their own for evaluating quality.\cb1 \
+\
+\cb3 ## Semantic Similarity Metrics\cb1 \
+\
+\cb3 To address the limitations of lexical metrics, semantic similarity measures are incorporated.\cb1 \
+\
+\cb3 - BERTScore: BERTScore evaluates similarity using contextual embeddings derived from transformer-based models. It compares tokens based on semantic meaning rather than exact matches, making it highly effective for paraphrased feedback.\cb1 \
+\cb3 - Embedding Similarity (Cosine Similarity): Feedback and reference texts are converted into embeddings, and cosine similarity is computed to assess how semantically close they are. This is particularly useful for evaluating whether AI-generated feedback conveys similar meaning to teacher feedback, even if phrased differently.\cb1 \
+\
+\cb3 ## Rubric-Based Evaluation\cb1 \
+\
+\cb3 Rubric-based evaluation remains central to the AAIE framework, as it directly aligns feedback assessment with educational criteria. A predefined rubric will be used, derived in T2 and T3 2025, which includes criteria such as:\cb1 \
+\
+\cb3 - Accuracy\cb1 \
+\cb3 - Clarity\cb1 \
+\cb3 - Depth\cb1 \
+\cb3 - Relevance et.\cb1 \
+\
+\cb3 Each criterion is assigned a weight (e.g., Accuracy: 40%, Clarity: 30%, Depth: 30%), and feedback is scored accordingly.\cb1 \
+\
+\cb3 The evaluation process involves:\cb1 \
+\
+\cb3 - Mapping feedback content to rubric criteria\cb1 \
+\cb3 - Assigning scores for each criterion (e.g., 1-5 scale)\cb1 \
+\cb3 - Computing a weighted overall score\cb1 \
+\
+\cb3 This structured evaluation ensures that feedback is not only linguistically correct but also educationally meaningful.\cb1 \
+\
+\cb3 ## LLM-as-a-Judge and G-Eval Approach\cb1 \
+\
+\cb3 Previously, evaluation methods such as G-Eval and [LLM-as-a-Judge](https://github.com/InnovAIte-Deakin/aaie-model-lab/tree/main/Evaluation/Feedback%20Evaluation) were used to assess feedback quality. These approaches leverage large language models to simulate human-like evaluation based on predefined rubrics. In this implementation, the LLM-as-a-Judge approach is adopted as the primary evaluation method, with improvements to enhance reliability and consistency. The LLM is prompted with:\cb1 \
+\
+\cb3 - Student answers\cb1 \
+\cb3 - AI-generated feedback\cb1 \
+\cb3 - Teacher-generated reference feedback (New addition)\cb1 \
+\cb3 - Rubric definitions\cb1 \
+\
+\cb3 The model is instructed to:\cb1 \
+\
+\cb3 - Evaluate feedback across multiple rubric criteria\cb1 \
+\cb3 - Assign numerical scores (e.g., 1-5 scale)\cb1 \
+\cb3 - Justify each score\cb1 \
+\cb3 - Generate an overall evaluation score\cb1 \
+\
+\cb3 ## Comparison with Teacher-Generated Feedback (New Approch)\cb1 \
+\
+\cb3 A key component of the evaluation framework is the comparison between AI-generated feedback and teacher-generated feedback, which serves as a reference standard.\cb1 \
+\
+\cb3 This comparison is conducted using:\cb1 \
+\
+\cb3 - Lexical similarity metrics (BLEU, ROUGE, METEOR)\cb1 \
+\cb3 - Semantic similarity metrics (BERTScore, embedding cosine similarity)\cb1 \
+\
+\cb3 The objective is to assess how closely AI-generated feedback aligns with expert human feedback in terms of meaning, completeness, and instructional quality.\cb1 \
+\
+\cb3 This comparison helps identify:\cb1 \
+\
+\cb3 - Missing concepts in AI-generated feedback\cb1 \
+\cb3 - Differences in explanation depth\cb1 \
+\cb3 - Overly generic or vague responses\cb1 \
+\cb3 - Alignment with expected pedagogical standards\cb1 \
+\
+\cb3 ## Additional Feedback Quality Metrics (New Approach)\cb1 \
+\
+\cb3 Beyond similarity and rubric alignment, additional qualitative metrics are evaluated using LLM-based assessment:\cb1 \
+\
+\cb3 - Actionability: Measures whether feedback provides clear improvement guidance\cb1 \
+\cb3 - Specificity: Evaluates how detailed and targeted the feedback is\cb1 \
+\cb3 - Coherence: Assesses logical flow and readability\cb1 \
+\cb3 - Relevance: Determines whether feedback directly addresses the student's response\cb1 \
+\cb3 - Hallucination Detection: Identifies incorrect or unsupported information\cb1 \
+\
+\cb3 These metrics will be incorporated into the LLM-as-a-Judge prompt to ensure a holistic evaluation of feedback quality.\cb1 \
+\
+\cb3 ## Proposed Evaluation Framework (Final Methodology)\cb1 \
+\
+\cb3 The final evaluation approach suggested is a hybrid framework combining multiple complementary methods:\cb1 \
+\
+\cb3 - Primary Method: LLM-as-a-Judge\cb1 \
+\cb3   - Used as the main evaluation mechanism\cb1 \
+\cb3   - Provides rubric-based scoring and qualitative assessment\cb1 \
+\cb3   - Captures subjective pedagogical aspects such as clarity, depth, and actionability\cb1 \
+\cb3 - Semantic Similarity Metrics\cb1 \
+\cb3   - BERTScore\cb1 \
+\cb3   - Embedding cosine similarity\cb1 \
+\cb3   - Used to compare AI-generated feedback with teacher feedback\cb1 \
+\cb3 - Lexical Metrics (Baseline)\cb1 \
+\cb3   - BLEU\cb1 \
+\cb3   - ROUGE\cb1 \
+\cb3   - METEOR\cb1 \
+\cb3   - Used as supporting indicators of textual overlap\cb1 \
+\cb3 - Teacher Feedback Comparison\cb1 \
+\cb3   - Serves as a ground truth reference for validation\cb1 \
+\cb3   - Helps measure alignment with expert human feedback\cb1 \
+\cb3 - Feedback Quality Metrics\cb1 \
+\cb3   - Actionability, specificity, coherence, relevance, hallucination detection\cb1 \
+\cb3   - Evaluated via LLM-based scoring\cb1 \
+\cb3 - A human inclusion for assessing the quality of the generated feedback based on the rubrics\cb1 \
+\
+\cb3 This hybrid framework ensures that both quantitative similarity and qualitative educational value are captured.\cb1 \
+\
+\cb3 ## Justification of Selected Methods\cb1 \
+\
+\cb3 LLM-as-a-Judge is selected as the primary evaluation method due to its ability to evaluate subjective and context-dependent aspects of feedback that cannot be captured by traditional metrics. Lexical metrics such as BLEU and ROUGE are included for baseline comparison, but are insufficient on their own, as they do not account for semantic meaning or paraphrasing.\cb1 \
+\
+\cb3 Semantic similarity metrics such as BERTScore and embedding-based cosine similarity provide a more meaningful comparison between AI-generated and teacher-generated feedback. Combining these approaches ensures a robust evaluation pipeline that balances automated measurement with pedagogical alignment. Human evaluation is also included to assess the quality of the feedback generated by the model.\cb1 \
+\
+\cb3 ## Conclusion\cb1 \
+\
+\cb3 Evaluating AI-generated feedback in the AAIE system requires a multi-dimensional approach due to the subjective and open-ended nature of feedback quality. While earlier methods such as G-Eval, LLM-as-a-Judge provided a strong foundation, this implementation extends the evaluation framework by integrating additional lexical, semantic, and rubric-based metrics, along with direct comparison against teacher-generated feedback and human inclusion.\cb1 \
+\
+\cb3 The proposed hybrid evaluation framework ensures that feedback generated by the system is not only linguistically similar to expert feedback but also pedagogically sound, actionable, and aligned with educational objectives. By combining LLM-based evaluation with similarity metrics and human reference comparison, the system achieves a comprehensive and reliable assessment of AI-generated feedback quality.\
+}
